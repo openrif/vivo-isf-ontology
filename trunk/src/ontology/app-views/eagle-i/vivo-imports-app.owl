@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://eagle-i.org/ont/app/1.0/vivo-imports-app.owl#"
+     xml:base="http://eagle-i.org/ont/app/1.0/vivo-imports-app.owl"
+     xmlns:app="http://eagle-i.org/ont/app/1.0/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:core="http://vivoweb.org/ontology/core#">
+    <owl:Ontology rdf:about="http://eagle-i.org/ont/app/1.0/vivo-imports-app.owl">
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">${eaglei.ontology.version}</owl:versionInfo>
+        <owl:imports rdf:resource="http://eagle-i.org/ont/app/1.0/eagle-i-app-def.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ero/dev/vivo-imports.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="http://eagle-i.org/ont/app/1.0/preferredLabel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#Library">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Library</app:preferredLabel>
+        <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_ResourceProvider"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#College">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">College</app:preferredLabel>
+        <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_ResourceProvider"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#Center">
+    	<app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Center</app:preferredLabel>
+        <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_ResourceProvider"/>
+        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organization where a particular activity or service is concentrated.</app:preferredDefinition>   
+    </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#Laboratory">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Laboratory</app:preferredLabel>
+        <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_ResourceProvider"/>
+        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Material entity that performs research, provides services, or processes materials.</app:preferredDefinition>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#CoreLaboratory">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Core Laboratory</app:preferredLabel>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0000037"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Laboratory that has the mission of providing services. Core Laboratories often charge fees for services or are funded via their affiliated organizations.</app:preferredDefinition>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#School">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">School</app:preferredLabel>
+        <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_ResourceProvider"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#AcademicDepartment">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Academic Department</app:preferredLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#Division">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Division</app:preferredLabel>
+        <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_ResourceProvider"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#Department">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Department</app:preferredLabel>
+        <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_ResourceProvider"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#ExtensionUnit">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Extension unit</app:preferredLabel>
+        <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_ResourceProvider"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#Consortium">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Consortium</app:preferredLabel>
+        <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_ResourceProvider"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#Hospital">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hospital</app:preferredLabel>
+        <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_ResourceProvider"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#Foundation">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Foundation</app:preferredLabel>
+        <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_ResourceProvider"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#Institute">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Institute</app:preferredLabel>
+        <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_ResourceProvider"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#University">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University</app:preferredLabel>
+        <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_ResourceProvider"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#PrivateCompany">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Private Company</app:preferredLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#FundingOrganization">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Funding Organization</app:preferredLabel>
+        <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_ResourceProvider"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#GovernmentAgency">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Government Agency</app:preferredLabel>
+        <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_ResourceProvider"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#Association">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Association</app:preferredLabel>
+        <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_ResourceProvider"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#Museum">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Museum</app:preferredLabel>
+        <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_ResourceProvider"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#Publisher">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Publisher</app:preferredLabel>
+        <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_ResourceProvider"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#Committee">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Committee</app:preferredLabel>
+        <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_ResourceProvider"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#Team">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Team</app:preferredLabel>
+        <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_ResourceProvider"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.1.0.1642) http://owlapi.sourceforge.net -->
+

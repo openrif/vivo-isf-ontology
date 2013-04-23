@@ -1,0 +1,303 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY ns "http://www.w3.org/2003/06/sw-vocab-status/ns#" >
+    <!ENTITY vitro "http://vitro.mannlib.cornell.edu/ns/vitro/0.7#" >
+]>
+
+
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/arg/module/vocabulary/vivo-vocabulary.owl#"
+     xml:base="http://purl.obolibrary.org/obo/arg/module/vocabulary/vivo-vocabulary.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:vitro="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/arg/module/vocabulary/vivo-vocabulary.owl">
+        <owl:imports rdf:resource="http://www.w3.org/2008/05/skos-xl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&vitro;exampleAnnot"/>
+    <owl:AnnotationProperty rdf:about="&ns;term_status"/>
+    <owl:AnnotationProperty rdf:about="&vitro;shortDef"/>
+    <owl:AnnotationProperty rdf:about="&vitro;descriptionAnnot"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/ontology/bibo/DocumentStatus -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/DocumentStatus">
+        <rdfs:label xml:lang="en-us">Document Status</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <vitro:shortDef rdf:datatype="&xsd;string">The status of a document with respect to its publication.</vitro:shortDef>
+        <vitro:descriptionAnnot rdf:datatype="&xsd;string">The status of a document with respect to its publication. The statuses are represented as individuals of this class. Use the &quot;show all individuals of this class&quot; button on the class control panel to see the currently defined statuses.</vitro:descriptionAnnot>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <vitro:exampleAnnot rdf:datatype="&xsd;string">submitted; accepted; in-press; published; invited; refereed.</vitro:exampleAnnot>
+        <ns:term_status>stable</ns:term_status>
+        <rdfs:comment xml:lang="en">The status of the publication of a document.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/ThesisDegree -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/ThesisDegree">
+        <rdfs:label xml:lang="en-us">Thesis Degree</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#AcademicDegree"/>
+        <vitro:descriptionAnnot rdf:datatype="&xsd;string">Different from general academic degree, thesis degree is achieved through one&apos;s completed thesis. Thesis is a document submitted in support of candidature for a degree or professional qualification presenting the author&apos;s research and findings(http://en.wikipedia.org/wiki/Thesis_or_dissertation).</vitro:descriptionAnnot>
+        <vitro:exampleAnnot rdf:datatype="&xsd;string">Doctor of Philosophy (Ph.D.)</vitro:exampleAnnot>
+        <vitro:shortDef rdf:datatype="&xsd;string">The academic degree of a Thesis.</vitro:shortDef>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en">The academic degree of a Thesis</rdfs:comment>
+        <ns:term_status>stable</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#AcademicDegree -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#AcademicDegree">
+        <rdfs:label xml:lang="en-us">Academic Degree</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <vitro:shortDef rdf:datatype="&xsd;string">An academic degree at any level, both as reported by individuals for employment and as offered by academic degree programs.</vitro:shortDef>
+        <vitro:exampleAnnot rdf:datatype="&xsd;string">B.A. Bachelor of Arts</vitro:exampleAnnot>
+        <vitro:descriptionAnnot rdf:datatype="&xsd;string">This list may have multiple abbreviations for some degrees.</vitro:descriptionAnnot>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#Award -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Award">
+        <rdfs:label xml:lang="en-us">Award or Honor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <vitro:shortDef rdf:datatype="&xsd;string">An Award or Honor</vitro:shortDef>
+        <vitro:descriptionAnnot rdf:datatype="&xsd;string">An Award or Honor</vitro:descriptionAnnot>
+        <vitro:exampleAnnot rdf:datatype="&xsd;string">Wiley Prize in Biomedical Sciences</vitro:exampleAnnot>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#Certificate -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Certificate">
+        <rdfs:label xml:lang="en-us">Certificate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Credential"/>
+        <vitro:shortDef rdf:datatype="&xsd;string">A document confirming certain characteristics of a person or organization, usually provided by some form of external review, education, or assessment.</vitro:shortDef>
+        <vitro:descriptionAnnot rdf:datatype="&xsd;string">A document confirming certain characteristics of a person or organization, usually provided by some form of external review, education, or assessment.</vitro:descriptionAnnot>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#Credential -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Credential">
+        <rdfs:label xml:lang="en-us">Credential</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <vitro:descriptionAnnot rdf:datatype="&xsd;string">An attestation of qualification, competence, or authority issued to an individual by a third party with a relevant or  de facto authority or assumed competence to do so.</vitro:descriptionAnnot>
+        <vitro:shortDef rdf:datatype="&xsd;string">An attestation of qualification, competence, or authority issued to an individual by a third party with a relevant or  de facto authority or assumed competence to do so.</vitro:shortDef>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#DateTimeValuePrecision -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#DateTimeValuePrecision">
+        <rdfs:label xml:lang="en-us">Date/Time Value Precision</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <vitro:shortDef rdf:datatype="&xsd;string">Indicates the precision of the value of a DateTimeValue instance.</vitro:shortDef>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#License -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#License">
+        <rdfs:label xml:lang="en-us">License</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Credential"/>
+        <vitro:descriptionAnnot rdf:datatype="&xsd;string">Licenses are usually issued in order to regulate some activity that is deemed to be dangerous or a threat to the person or the public or which involves a high level of specialized skill.  See also core:Licensure.</vitro:descriptionAnnot>
+        <vitro:shortDef rdf:datatype="&xsd;string">Official or legal permission to do something</vitro:shortDef>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/ontology/bibo/accepted -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/bibo/accepted">
+        <rdf:type rdf:resource="http://purl.org/ontology/bibo/DocumentStatus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/draft -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/bibo/draft">
+        <rdf:type rdf:resource="http://purl.org/ontology/bibo/DocumentStatus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/peerReviewed -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/bibo/peerReviewed">
+        <rdf:type rdf:resource="http://purl.org/ontology/bibo/DocumentStatus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/published -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/bibo/published">
+        <rdf:type rdf:resource="http://purl.org/ontology/bibo/DocumentStatus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/rejected -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/bibo/rejected">
+        <rdf:type rdf:resource="http://purl.org/ontology/bibo/DocumentStatus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/unpublished -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/bibo/unpublished">
+        <rdf:type rdf:resource="http://purl.org/ontology/bibo/DocumentStatus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#inPress -->
+
+    <owl:NamedIndividual rdf:about="http://vivoweb.org/ontology/core#inPress">
+        <rdf:type rdf:resource="http://purl.org/ontology/bibo/DocumentStatus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#invited -->
+
+    <owl:NamedIndividual rdf:about="http://vivoweb.org/ontology/core#invited">
+        <rdf:type rdf:resource="http://purl.org/ontology/bibo/DocumentStatus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#submitted -->
+
+    <owl:NamedIndividual rdf:about="http://vivoweb.org/ontology/core#submitted">
+        <rdf:type rdf:resource="http://purl.org/ontology/bibo/DocumentStatus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#yearMonthDayPrecision -->
+
+    <owl:NamedIndividual rdf:about="http://vivoweb.org/ontology/core#yearMonthDayPrecision">
+        <rdf:type rdf:resource="http://vivoweb.org/ontology/core#DateTimeValuePrecision"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#yearMonthDayTimePrecision -->
+
+    <owl:NamedIndividual rdf:about="http://vivoweb.org/ontology/core#yearMonthDayTimePrecision">
+        <rdf:type rdf:resource="http://vivoweb.org/ontology/core#DateTimeValuePrecision"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#yearMonthPrecision -->
+
+    <owl:NamedIndividual rdf:about="http://vivoweb.org/ontology/core#yearMonthPrecision">
+        <rdf:type rdf:resource="http://vivoweb.org/ontology/core#DateTimeValuePrecision"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#yearPrecision -->
+
+    <owl:NamedIndividual rdf:about="http://vivoweb.org/ontology/core#yearPrecision">
+        <rdf:type rdf:resource="http://vivoweb.org/ontology/core#DateTimeValuePrecision"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
+

@@ -1,0 +1,257 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY dcterms "http://purl.org/dc/terms/" >
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
+    <!ENTITY vann "http://purl.org/vocab/vann/" >
+    <!ENTITY bibo "http://purl.org/ontology/bibo/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY skos "http://www.w3.org/2008/05/skos#" >
+    <!ENTITY dcelem "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY vivo "http://vivoweb.org/ontology/core#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY event "http://purl.org/NET/c4dm/event.owl#" >
+    <!ENTITY owl2 "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY skco "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY geo "http://aims.fao.org/aos/geopolitical.owl#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY swvs "http://www.w3.org/2003/06/sw-vocab-status/ns#" >
+    <!ENTITY vitro "http://vitro.mannlib.cornell.edu/ns/vitro/0.7#" >
+    <!ENTITY pvs "http://vivoweb.org/ontology/provenance-support#" >
+    <!ENTITY scirr "http://vivoweb.org/ontology/scientific-research-resource#" >
+]>
+
+
+<rdf:RDF xmlns="http://vivoweb.org/ontology/core/vivo-event-public-1.5.owl#"
+     xml:base="http://vivoweb.org/ontology/core/vivo-event-public-1.5.owl"
+     xmlns:pvs="http://vivoweb.org/ontology/provenance-support#"
+     xmlns:geo="http://aims.fao.org/aos/geopolitical.owl#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:scirr="http://vivoweb.org/ontology/scientific-research-resource#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:owl2="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:skco="http://www.w3.org/2004/02/skos/core#"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vitro="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#"
+     xmlns:event="http://purl.org/NET/c4dm/event.owl#"
+     xmlns:bibo="http://purl.org/ontology/bibo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:swvs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:skos="http://www.w3.org/2008/05/skos#"
+     xmlns:vivo="http://vivoweb.org/ontology/core#"
+     xmlns:dcelem="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://vivoweb.org/ontology/core/vivo-event-public-1.5.owl">
+        <rdfs:label xml:lang="en-us">Event Ontology</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&vitro;exampleAnnot"/>
+    <owl:AnnotationProperty rdf:about="&vitro;shortDef"/>
+    <owl:AnnotationProperty rdf:about="&vitro;descriptionAnnot"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/NET/c4dm/event.owl#isAgentIn -->
+
+    <owl:ObjectProperty rdf:about="&event;isAgentIn">
+        <rdfs:label xml:lang="en-us">is agent in</rdfs:label>
+        <rdfs:range rdf:resource="&event;Event"/>
+        <rdfs:domain rdf:resource="&foaf;Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#dateTimeInterval -->
+
+    <owl:ObjectProperty rdf:about="&vivo;dateTimeInterval"/>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#domesticGeographicFocus -->
+
+    <owl:ObjectProperty rdf:about="&vivo;domesticGeographicFocus"/>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#geographicFocus -->
+
+    <owl:ObjectProperty rdf:about="&vivo;geographicFocus"/>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#hasGeographicLocation -->
+
+    <owl:ObjectProperty rdf:about="&vivo;hasGeographicLocation"/>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#hasSubjectArea -->
+
+    <owl:ObjectProperty rdf:about="&vivo;hasSubjectArea"/>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#internationalGeographicFocus -->
+
+    <owl:ObjectProperty rdf:about="&vivo;internationalGeographicFocus"/>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#realizedRole -->
+
+    <owl:ObjectProperty rdf:about="&vivo;realizedRole"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#description -->
+
+    <owl:DatatypeProperty rdf:about="&vivo;description"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/NET/c4dm/event.owl#Event -->
+
+    <owl:Class rdf:about="&event;Event">
+        <rdfs:label xml:lang="en-us">Event</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&vivo;description"/>
+                <owl:allValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&vivo;hasSubjectArea"/>
+                <owl:allValuesFrom rdf:resource="&owl;Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&vivo;domesticGeographicFocus"/>
+                <owl:allValuesFrom rdf:resource="&vivo;GeographicRegion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&vivo;internationalGeographicFocus"/>
+                <owl:allValuesFrom rdf:resource="&vivo;GeographicRegion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&vivo;hasGeographicLocation"/>
+                <owl:allValuesFrom rdf:resource="&vivo;GeographicLocation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&vivo;dateTimeInterval"/>
+                <owl:allValuesFrom rdf:resource="&vivo;DateTimeInterval"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&vivo;geographicFocus"/>
+                <owl:allValuesFrom rdf:resource="&vivo;GeographicRegion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <vitro:exampleAnnot rdf:datatype="&xsd;string">Only use if no specific subclasses of event:Event are appropriate.</vitro:exampleAnnot>
+        <vitro:shortDef rdf:datatype="&xsd;string">Something that happens at a given place and time.</vitro:shortDef>
+        <vitro:descriptionAnnot rdf:datatype="&xsd;string">This class will also display instances of subclasses under Event, e.g. Philosophy Department Discussion Club; 2009 Racker Lecture; screening of a documentary. In addition to a location in space and time, an event may have any or all the following qualities: actively participating agents, passive factors, work products. Also, it may be in a virtual space or part of a series such as a lecture series.
+
+The previous short definition was: &quot;An arbitrary classification of a space/time region, by a cognitive agent.&quot;</vitro:descriptionAnnot>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#DateTimeInterval -->
+
+    <owl:Class rdf:about="&vivo;DateTimeInterval"/>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#GeographicLocation -->
+
+    <owl:Class rdf:about="&vivo;GeographicLocation"/>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#GeographicRegion -->
+
+    <owl:Class rdf:about="&vivo;GeographicRegion"/>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#URLLink -->
+
+    <owl:Class rdf:about="&vivo;URLLink"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+    <owl:Class rdf:about="&foaf;Agent"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
+
