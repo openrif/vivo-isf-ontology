@@ -71,7 +71,6 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000052">
         <rdfs:label>inheres in</rdfs:label>
-        <owl:equivalentProperty rdf:resource="http://vivoweb.org/ontology/core#roleOf"/>
     </owl:ObjectProperty>
     
 
@@ -81,7 +80,6 @@
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000053">
         <rdfs:label>bearer of</rdfs:label>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000052"/>
-        <owl:equivalentProperty rdf:resource="http://vivoweb.org/ontology/core#hasRole"/>
     </owl:ObjectProperty>
     
 
@@ -181,16 +179,6 @@
     
 
 
-    <!-- http://vivoweb.org/ontology/core#assignedBy -->
-
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#assignedBy">
-        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Relationship"/>
-        <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#assigns"/>
-        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://purl.org/NET/c4dm/event.owl#isAgentIn -->
 
     <rdf:Description rdf:about="http://purl.org/NET/c4dm/event.owl#isAgentIn">
@@ -261,6 +249,16 @@
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#advisorIn">
         <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#relatedBy"/>
     </rdf:Description>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#assignedBy -->
+
+    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#assignedBy">
+        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Relationship"/>
+        <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#assigns"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </owl:ObjectProperty>
     
 
 
@@ -739,9 +737,6 @@
     
 
 
-    
-
-
     <!-- http://vivoweb.org/ontology/core#dateTime -->
 
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#dateTime">
@@ -778,12 +773,6 @@
     
 
 
-    <!-- http://vivoweb.org/ontology/core#identifier -->
-
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#identifier"/>
-    
-
-
     <!-- http://vivoweb.org/ontology/core#licenseNumber -->
 
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#licenseNumber">
@@ -808,17 +797,17 @@
     
 
 
-    <!-- http://vivoweb.org/ontology/core#overview -->
-
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#overview">
-        <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#description"/>
-    </rdf:Description>
-
-
-
     <!-- http://vivoweb.org/ontology/core#outreachOverview -->
 
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#outreachOverview">
+        <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#description"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#overview -->
+
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#overview">
         <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#description"/>
     </rdf:Description>
     
@@ -863,7 +852,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000071">
         <rdfs:label>software (ERO)</rdfs:label>
-        <owl:equivalentClass rdf:resource="http://vivoweb.org/ontology/core#Software"/>
     </owl:Class>
     
 
