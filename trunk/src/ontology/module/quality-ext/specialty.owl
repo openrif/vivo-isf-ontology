@@ -48,7 +48,10 @@
 
     <!-- http://purl.obolibrary.org/obo/ARG_2000022 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000022"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000022">
+        <rdfs:label xml:lang="en">specialty</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Quality"/>
+    </owl:Class>
     
 
 
@@ -2887,6 +2890,12 @@
         <rdfs:label>board general specialty</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000022"/>
     </owl:Class>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#Quality -->
+
+    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#Quality"/>
 </rdf:RDF>
 
 
