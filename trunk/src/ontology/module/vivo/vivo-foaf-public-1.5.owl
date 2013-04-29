@@ -1,29 +1,4 @@
 <?xml version="1.0"?>
-
-
-<!DOCTYPE rdf:RDF [
-    <!ENTITY dcterms "http://purl.org/dc/terms/" >
-    <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
-    <!ENTITY vann "http://purl.org/vocab/vann/" >
-    <!ENTITY bibo "http://purl.org/ontology/bibo/" >
-    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
-    <!ENTITY skos "http://www.w3.org/2008/05/skos#" >
-    <!ENTITY dcelem "http://purl.org/dc/elements/1.1/" >
-    <!ENTITY vivo "http://vivoweb.org/ontology/core#" >
-    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
-    <!ENTITY event "http://purl.org/NET/c4dm/event.owl#" >
-    <!ENTITY owl2 "http://www.w3.org/2006/12/owl2-xml#" >
-    <!ENTITY skco "http://www.w3.org/2004/02/skos/core#" >
-    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
-    <!ENTITY geo "http://aims.fao.org/aos/geopolitical.owl#" >
-    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-    <!ENTITY swvs "http://www.w3.org/2003/06/sw-vocab-status/ns#" >
-    <!ENTITY vitro "http://vitro.mannlib.cornell.edu/ns/vitro/0.7#" >
-    <!ENTITY pvs "http://vivoweb.org/ontology/provenance-support#" >
-    <!ENTITY scirr "http://vivoweb.org/ontology/scientific-research-resource#" >
-]>
-
-
 <rdf:RDF xmlns="http://vivoweb.org/ontology/core/vivo-foaf-public-1.5.owl#"
      xml:base="http://vivoweb.org/ontology/core/vivo-foaf-public-1.5.owl"
      xmlns:pvs="http://vivoweb.org/ontology/provenance-support#"
@@ -59,10 +34,10 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <owl:AnnotationProperty rdf:about="&vitro;exampleAnnot"/>
-    <owl:AnnotationProperty rdf:about="&skos;scopeNote"/>
-    <owl:AnnotationProperty rdf:about="&vitro;shortDef"/>
-    <owl:AnnotationProperty rdf:about="&vitro;descriptionAnnot"/>
+    <owl:AnnotationProperty rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#exampleAnnot"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2008/05/skos#scopeNote"/>
+    <owl:AnnotationProperty rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#shortDef"/>
+    <owl:AnnotationProperty rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#descriptionAnnot"/>
     
 
 
@@ -90,73 +65,73 @@
 
     <!-- http://vivoweb.org/ontology/core#authorInAuthorship -->
 
-    <owl:ObjectProperty rdf:about="&vivo;authorInAuthorship"/>
+    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#authorInAuthorship"/>
     
 
 
     <!-- http://vivoweb.org/ontology/core#awardOrHonor -->
 
-    <owl:ObjectProperty rdf:about="&vivo;awardOrHonor"/>
+    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#awardOrHonor"/>
     
 
 
     <!-- http://vivoweb.org/ontology/core#contributingRole -->
 
-    <owl:ObjectProperty rdf:about="&vivo;contributingRole"/>
+    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#contributingRole"/>
     
 
 
     <!-- http://vivoweb.org/ontology/core#currentMemberOf -->
 
-    <owl:ObjectProperty rdf:about="&vivo;currentMemberOf"/>
+    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#currentMemberOf"/>
     
 
 
     <!-- http://vivoweb.org/ontology/core#dateTimeInterval -->
 
-    <owl:ObjectProperty rdf:about="&vivo;dateTimeInterval"/>
+    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#dateTimeInterval"/>
     
 
 
     <!-- http://vivoweb.org/ontology/core#domesticGeographicFocus -->
 
-    <owl:ObjectProperty rdf:about="&vivo;domesticGeographicFocus"/>
+    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#domesticGeographicFocus"/>
     
 
 
     <!-- http://vivoweb.org/ontology/core#eligibleFor -->
 
-    <owl:ObjectProperty rdf:about="&vivo;eligibleFor"/>
+    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#eligibleFor"/>
     
 
 
     <!-- http://vivoweb.org/ontology/core#geographicFocus -->
 
-    <owl:ObjectProperty rdf:about="&vivo;geographicFocus"/>
+    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#geographicFocus"/>
     
 
 
     <!-- http://vivoweb.org/ontology/core#hasCurrentMember -->
 
-    <owl:ObjectProperty rdf:about="&vivo;hasCurrentMember"/>
+    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#hasCurrentMember"/>
     
 
 
     <!-- http://vivoweb.org/ontology/core#hasGeographicLocation -->
 
-    <owl:ObjectProperty rdf:about="&vivo;hasGeographicLocation"/>
+    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#hasGeographicLocation"/>
     
 
 
     <!-- http://vivoweb.org/ontology/core#hasResearchArea -->
 
-    <owl:ObjectProperty rdf:about="&vivo;hasResearchArea"/>
+    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#hasResearchArea"/>
     
 
 
     <!-- http://vivoweb.org/ontology/core#internationalGeographicFocus -->
 
-    <owl:ObjectProperty rdf:about="&vivo;internationalGeographicFocus"/>
+    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#internationalGeographicFocus"/>
     
 
 
@@ -173,7 +148,7 @@
 
     <!-- http://vivoweb.org/ontology/core#freetextKeyword -->
 
-    <owl:DatatypeProperty rdf:about="&vivo;freetextKeyword"/>
+    <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#freetextKeyword"/>
     
 
 
@@ -190,58 +165,46 @@
 
     <!-- http://vivoweb.org/ontology/core#Authorship -->
 
-    <owl:Class rdf:about="&vivo;Authorship"/>
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Authorship"/>
     
 
 
     <!-- http://vivoweb.org/ontology/core#AwardReceipt -->
 
-    <owl:Class rdf:about="&vivo;AwardReceipt"/>
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#AwardReceipt"/>
     
 
 
     <!-- http://vivoweb.org/ontology/core#DateTimeInterval -->
 
-    <owl:Class rdf:about="&vivo;DateTimeInterval"/>
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#DateTimeInterval"/>
     
 
 
     <!-- http://vivoweb.org/ontology/core#GeographicLocation -->
 
-    <owl:Class rdf:about="&vivo;GeographicLocation"/>
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#GeographicLocation"/>
     
 
 
     <!-- http://vivoweb.org/ontology/core#GeographicRegion -->
 
-    <owl:Class rdf:about="&vivo;GeographicRegion"/>
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#GeographicRegion"/>
     
 
 
     <!-- http://vivoweb.org/ontology/core#URLLink -->
 
-    <owl:Class rdf:about="&vivo;URLLink"/>
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#URLLink"/>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/Agent -->
 
-    <owl:Class rdf:about="&foaf;Agent">
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent">
         <rdfs:label xml:lang="en-us">Agent</rdfs:label>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&vivo;freetextKeyword"/>
-                <owl:allValuesFrom rdf:resource="&rdfs;Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&vivo;authorInAuthorship"/>
-                <owl:allValuesFrom rdf:resource="&vivo;Authorship"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <vitro:shortDef rdf:datatype="&xsd;string">Agents are things that do stuff</vitro:shortDef>
-        <vitro:descriptionAnnot rdf:datatype="&xsd;string">see: http://xmlns.com/foaf/spec/#term_Agent</vitro:descriptionAnnot>
+        <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Agents are things that do stuff</vitro:shortDef>
+        <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">see: http://xmlns.com/foaf/spec/#term_Agent</vitro:descriptionAnnot>
         <skos:scopeNote xml:lang="en">Used to describe any &quot;agent&quot; related to bibliographic items. Such agents can be persons, organizations or groups of any kind.</skos:scopeNote>
     </owl:Class>
     
@@ -249,11 +212,11 @@
 
     <!-- http://xmlns.com/foaf/0.1/Group -->
 
-    <owl:Class rdf:about="&foaf;Group">
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Group">
         <rdfs:label xml:lang="en-us">Group</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&foaf;Agent"/>
-        <vitro:shortDef rdf:datatype="&xsd;string"> A collection of individual agents (and may itself play the role of a Agent, ie. something that can perform actions). </vitro:shortDef>
-        <vitro:descriptionAnnot rdf:datatype="&xsd;string">A group can also be an organization but need not be; typically used for looser associations of people or organizations acting together in some fashion, not necessarily through formal agreement or on a long-term basis. Added to the VIVO ontology to be able to support informal and perhaps even private groups of people around an idea, funding opportunity, or event.
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> A collection of individual agents (and may itself play the role of a Agent, ie. something that can perform actions). </vitro:shortDef>
+        <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A group can also be an organization but need not be; typically used for looser associations of people or organizations acting together in some fashion, not necessarily through formal agreement or on a long-term basis. Added to the VIVO ontology to be able to support informal and perhaps even private groups of people around an idea, funding opportunity, or event.
 
 see: http://xmlns.com/foaf/spec/#term_Group</vitro:descriptionAnnot>
     </owl:Class>
@@ -262,30 +225,12 @@ see: http://xmlns.com/foaf/spec/#term_Group</vitro:descriptionAnnot>
 
     <!-- http://xmlns.com/foaf/0.1/Organization -->
 
-    <owl:Class rdf:about="&foaf;Organization">
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization">
         <rdfs:label xml:lang="en-us">Organization</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&foaf;Agent"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&vivo;hasGeographicLocation"/>
-                <owl:allValuesFrom rdf:resource="&vivo;GeographicLocation"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&vivo;dateTimeInterval"/>
-                <owl:allValuesFrom rdf:resource="&vivo;DateTimeInterval"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&vivo;hasCurrentMember"/>
-                <owl:allValuesFrom rdf:resource="&foaf;Agent"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <vitro:shortDef rdf:datatype="&xsd;string">A generic class encompassing several types of organizations.</vitro:shortDef>
-        <vitro:exampleAnnot rdf:datatype="&xsd;string">Only use if no specific subclasses of foaf:organization desribe the organization.</vitro:exampleAnnot>
-        <vitro:descriptionAnnot rdf:datatype="&xsd;string">This class will display all the instances in the subclasses below it, as well as any organizations that were added as part of this generic class because there wasn&apos;t a specific class available.</vitro:descriptionAnnot>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A generic class encompassing several types of organizations.</vitro:shortDef>
+        <vitro:exampleAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Only use if no specific subclasses of foaf:organization desribe the organization.</vitro:exampleAnnot>
+        <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This class will display all the instances in the subclasses below it, as well as any organizations that were added as part of this generic class because there wasn&apos;t a specific class available.</vitro:descriptionAnnot>
         <skos:scopeNote xml:lang="en">Ued to describe an organization related to bibliographic items such as a publishing company, etc.</skos:scopeNote>
     </owl:Class>
     
@@ -293,50 +238,14 @@ see: http://xmlns.com/foaf/spec/#term_Group</vitro:descriptionAnnot>
 
     <!-- http://xmlns.com/foaf/0.1/Person -->
 
-    <owl:Class rdf:about="&foaf;Person">
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person">
         <rdfs:label xml:lang="en-us">Person</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&foaf;Agent"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&vivo;hasResearchArea"/>
-                <owl:allValuesFrom rdf:resource="&owl;Thing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&vivo;internationalGeographicFocus"/>
-                <owl:allValuesFrom rdf:resource="&vivo;GeographicRegion"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&vivo;awardOrHonor"/>
-                <owl:allValuesFrom rdf:resource="&vivo;AwardReceipt"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&vivo;domesticGeographicFocus"/>
-                <owl:allValuesFrom rdf:resource="&vivo;GeographicRegion"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&vivo;geographicFocus"/>
-                <owl:allValuesFrom rdf:resource="&vivo;GeographicRegion"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&vivo;currentMemberOf"/>
-                <owl:allValuesFrom rdf:resource="&foaf;Organization"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <vitro:shortDef rdf:datatype="&xsd;string">The most general classification of a person</vitro:shortDef>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The most general classification of a person</vitro:shortDef>
     </owl:Class>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.4.2018) http://owlapi.sourceforge.net -->
 
