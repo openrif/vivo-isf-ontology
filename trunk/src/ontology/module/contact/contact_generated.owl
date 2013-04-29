@@ -46,15 +46,6 @@
     
 
 
-    <!-- http://arg-refactoring.owl#OWLObjectProperty_3690b2ac_11f9_440f_891c_8982e6bd3a17 -->
-
-    <owl:ObjectProperty rdf:about="http://arg-refactoring.owl#OWLObjectProperty_3690b2ac_11f9_440f_891c_8982e6bd3a17">
-        <rdfs:label>context_for</rdfs:label>
-        <owl:inverseOf rdf:resource="http://arg-refactoring.owl#OWLObjectProperty_e787db5f_9f0d_4e0e_8081_98731afacfb9"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://arg-refactoring.owl#OWLObjectProperty_65542d61_e37c_4d94_91de_f52507901d49 -->
 
     <owl:ObjectProperty rdf:about="http://arg-refactoring.owl#OWLObjectProperty_65542d61_e37c_4d94_91de_f52507901d49">
@@ -68,14 +59,6 @@
     <owl:ObjectProperty rdf:about="http://arg-refactoring.owl#OWLObjectProperty_e225a444_0d7c_4391_be3d_2f705b27c769">
         <rdfs:label>url_link_for</rdfs:label>
         <owl:inverseOf rdf:resource="http://arg-refactoring.owl#OWLObjectProperty_65542d61_e37c_4d94_91de_f52507901d49"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://arg-refactoring.owl#OWLObjectProperty_e787db5f_9f0d_4e0e_8081_98731afacfb9 -->
-
-    <owl:ObjectProperty rdf:about="http://arg-refactoring.owl#OWLObjectProperty_e787db5f_9f0d_4e0e_8081_98731afacfb9">
-        <rdfs:label>has_context</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -103,6 +86,23 @@
         <rdfs:label>contact_info_for</rdfs:label>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000028"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ARG_2000379"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000390 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ARG_2000390">
+        <rdfs:label>context_for</rdfs:label>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000391"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000391 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ARG_2000391">
+        <rdfs:label>has_context</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -333,14 +333,6 @@
     
 
 
-    <!-- http://arg-refactoring.owl#OWLClass_4c0fef26_f454_4d60_bc5b_7c5d13e92c04 -->
-
-    <owl:Class rdf:about="http://arg-refactoring.owl#OWLClass_4c0fef26_f454_4d60_bc5b_7c5d13e92c04">
-        <rdfs:label>title</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/ARG_2000376 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000376">
@@ -370,6 +362,14 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000379">
         <rdfs:label>contact</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000389 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000389">
+        <rdfs:label>title</rdfs:label>
     </owl:Class>
     
 
