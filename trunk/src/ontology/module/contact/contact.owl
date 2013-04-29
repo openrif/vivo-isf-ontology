@@ -22,6 +22,14 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ARG_2000378 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ARG_2000378">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/vcard/ns#Tel"/>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ARG_2000379 -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ARG_2000379">
@@ -33,6 +41,22 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#Fax -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2006/vcard/ns#Fax">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/vcard/ns#Tel"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#Tel -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/vcard/ns#Tel">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </owl:Class>
 </rdf:RDF>
 
 
