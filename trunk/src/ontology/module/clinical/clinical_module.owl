@@ -184,7 +184,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_0000123">
         <rdfs:label>ICD-9 billing code</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
     </owl:Class>
     
 
@@ -285,12 +284,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000097">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_participant"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ARG_0000051"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
             </owl:Restriction>
@@ -299,6 +292,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_participant"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ARG_0000130"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_participant"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ARG_0000051"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
