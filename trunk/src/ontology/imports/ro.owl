@@ -117,7 +117,7 @@
     <oboInOwl:hasOBONamespace>relationship</oboInOwl:hasOBONamespace>
     <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty"/>
   </owl:ObjectProperty>
-  <owl:TransitiveProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#derives_from">
+  <owl:TransitiveProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001000">
     <rdfs:label xml:lang="en">derives_from</rdfs:label>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Derivation as a relation between instances. The temporal relation of derivation is more complex. Transformation, on the instance level, is just the relation of identity: each adult is identical to some child existing at some earlier time. Derivation on the instance-level is a relation holding between non-identicals. More precisely, it holds between distinct material continuants when one succeeds the other across a temporal divide in such a way that at least a biologically significant portion of the matter of the earlier continuant is inherited by the later. Thus we will have axioms to the effect that from c derives_from c1 we can infer that c and c1 are not identical and that there is some instant of time t such that c1 exists only prior to and c only subsequent to t. We will also be able to infer that the spatial region occupied by c as it begins to exist at t overlaps with the spatial region occupied by c1 as it ceases to exist in the same instant.</rdfs:comment>
 
@@ -187,10 +187,10 @@
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#derived_into">
-    <owl:inverseOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#derives_from"/>
+    <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0001000"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#derives_from">
+  <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001000">
     <owl:inverseOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#derived_into"/>
   </owl:ObjectProperty>
 
