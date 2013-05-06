@@ -76,14 +76,6 @@
     
 
 
-    <!-- http://aims.fao.org/aos/geopolitical.owl#hasMember -->
-
-    <owl:ObjectProperty rdf:about="http://aims.fao.org/aos/geopolitical.owl#hasMember">
-        <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#hasCurrentMember"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://aims.fao.org/aos/geopolitical.owl#isInGroup -->
 
     <owl:ObjectProperty rdf:about="http://aims.fao.org/aos/geopolitical.owl#isInGroup">
@@ -149,7 +141,6 @@
     <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#advisingContributionTo">
         <rdfs:label xml:lang="en-us">advising contribution to</rdfs:label>
         <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#AdvisingRelationship"/>
-        <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#contributingAdvising"/>
     </owl:ObjectProperty>
     
 
@@ -220,15 +211,6 @@
         <rdfs:label xml:lang="en-us">award or honor for</rdfs:label>
         <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#AwardReceipt"/>
         <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#contributingAdvising -->
-
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#contributingAdvising">
-        <rdfs:label xml:lang="en-us">contributing advising relationship</rdfs:label>
-        <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#AdvisingRelationship"/>
     </owl:ObjectProperty>
     
 
@@ -330,15 +312,6 @@
     
 
 
-    <!-- http://vivoweb.org/ontology/core#degreeEarned -->
-
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#degreeEarned">
-        <rdfs:label xml:lang="en-us">degree earned</rdfs:label>
-        <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#degreeOutcomeOf"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://vivoweb.org/ontology/core#degreeOfferedBy -->
 
     <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#degreeOfferedBy">
@@ -358,25 +331,11 @@
     
 
 
-
-    
-
-
     <!-- http://vivoweb.org/ontology/core#educationalTraining -->
 
     <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#educationalTraining">
         <rdfs:label xml:lang="en-us">education and training</rdfs:label>
-        <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#educationalTrainingOf"/>
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#educationalTrainingOf -->
-
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#educationalTrainingOf">
-        <rdfs:label xml:lang="en-us">education or training of</rdfs:label>
-        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     </owl:ObjectProperty>
     
 
@@ -397,9 +356,6 @@
         <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#DateTimeValue"/>
         <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#dateTimeValue"/>
     </owl:ObjectProperty>
-    
-
-
     
 
 
@@ -460,10 +416,10 @@
     
 
 
+    <!-- http://vivoweb.org/ontology/core#geographicLocationOf -->
+
+    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#geographicLocationOf"/>
     
-
-
-
 
 
     <!-- http://vivoweb.org/ontology/core#grantSubcontractedThrough -->
@@ -504,8 +460,6 @@
     </owl:ObjectProperty>
     
 
-    
-
 
     <!-- http://vivoweb.org/ontology/core#hasFundingVehicle -->
 
@@ -533,17 +487,6 @@
         <rdfs:label xml:lang="en-us">has prerequisite</rdfs:label>
         <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Course"/>
         <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#Course"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#hasProceedings -->
-
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#hasProceedings">
-        <rdfs:label xml:lang="en-us">proceedings</rdfs:label>
-        <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A possible working example: The conference proceeding of the SPIE was generated from the conference - International Society for Optical Engineering.</vitro:descriptionAnnot>
-        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Conference"/>
-        <rdfs:range rdf:resource="http://purl.org/ontology/bibo/Proceedings"/>
     </owl:ObjectProperty>
     
 
@@ -635,10 +578,6 @@
         <rdfs:label xml:lang="en-us">linked information resource</rdfs:label>
         <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Authorship"/>
     </owl:ObjectProperty>
-    
-
-
-
     
 
 
@@ -749,7 +688,6 @@
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A possible working example: The conference proceeding of the SPIE was generated from the conference - International Society for Optical Engineering.</vitro:descriptionAnnot>
         <rdfs:range rdf:resource="http://purl.org/ontology/bibo/Conference"/>
         <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Proceedings"/>
-        <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#hasProceedings"/>
     </owl:ObjectProperty>
     
 
@@ -907,16 +845,6 @@
         <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#Grant"/>
         <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#grantSubcontractedThrough"/>
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#trainingAtOrganization -->
-
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#trainingAtOrganization">
-        <rdfs:label xml:lang="en-us">educational organization</rdfs:label>
-        <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#organizationForTraining"/>
-        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
     </owl:ObjectProperty>
     
 

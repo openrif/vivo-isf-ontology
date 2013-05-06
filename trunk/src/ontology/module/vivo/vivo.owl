@@ -84,23 +84,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000054 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000054">
-        <rdfs:label>realized in</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000055 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000055">
-        <rdfs:label>realizes</rdfs:label>
-        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/BFO_0000056 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000056">
@@ -319,15 +302,6 @@
     
 
 
-    <!-- http://vivoweb.org/ontology/core#contributingAdvising -->
-
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#contributingAdvising">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
-        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#EducationalProcess"/>
-    </rdf:Description>
-    
-
-
     <!-- http://vivoweb.org/ontology/core#contributingRole -->
 
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#contributingRole">
@@ -360,15 +334,6 @@
     
 
 
-    <!-- http://vivoweb.org/ontology/core#degreeEarned -->
-
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#degreeEarned">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
-        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#EducationalProcess"/>
-    </rdf:Description>
-    
-
-
     <!-- http://vivoweb.org/ontology/core#degreeOutcomeOf -->
 
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#degreeOutcomeOf">
@@ -383,15 +348,6 @@
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#educationalTraining">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000056"/>
         <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#EducationalProcess"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#educationalTrainingOf -->
-
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#educationalTrainingOf">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
-        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#EducationalProcess"/>
     </rdf:Description>
     
 
@@ -429,9 +385,6 @@
     
 
 
-    
-
-
     <!-- http://vivoweb.org/ontology/core#hasCredential -->
 
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#hasCredential">
@@ -456,17 +409,6 @@
     
 
 
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#hasProceedings -->
-
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#hasProceedings">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
-    </rdf:Description>
-    
-
-
     <!-- http://vivoweb.org/ontology/core#hasPublicationVenue -->
 
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#hasPublicationVenue">
@@ -478,6 +420,7 @@
     <!-- http://vivoweb.org/ontology/core#hasRole -->
 
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#hasRole">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000053"/>
         <rdfs:range rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
     </rdf:Description>
     
@@ -668,15 +611,6 @@
 
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#sponsors">
         <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#relatedBy"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#trainingAtOrganization -->
-
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#trainingAtOrganization">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
-        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#EducationalProcess"/>
     </rdf:Description>
     
 
