@@ -92,6 +92,25 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:label xml:lang="en-us">part of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:label xml:lang="en-us">has part</rdfs:label>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.org/ontology/bibo/presentedAt -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/ontology/bibo/presentedAt"/>
@@ -184,25 +203,6 @@
     
 
 
-    <!-- http://vivoweb.org/ontology/core#awardConferred -->
-
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#awardConferred">
-        <rdfs:label xml:lang="en-us">award or honor given</rdfs:label>
-        <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#awardConferredBy"/>
-        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#awardConferredBy -->
-
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#awardConferredBy">
-        <rdfs:label xml:lang="en-us">award conferred by</rdfs:label>
-        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://vivoweb.org/ontology/core#awardOrHonor -->
 
     <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#awardOrHonor">
@@ -220,17 +220,6 @@
         <rdfs:label xml:lang="en-us">award or honor for</rdfs:label>
         <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#AwardReceipt"/>
         <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#awardsGrant -->
-
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#awardsGrant">
-        <rdfs:label xml:lang="en-us">awards grant</rdfs:label>
-        <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#Grant"/>
-        <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#grantAwardedBy"/>
-        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
     </owl:ObjectProperty>
     
 
@@ -369,24 +358,7 @@
     
 
 
-    <!-- http://vivoweb.org/ontology/core#domesticGeographicFocus -->
 
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#domesticGeographicFocus">
-        <rdfs:label xml:lang="en-us">domestic geographic focus</rdfs:label>
-        <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#GeographicRegion"/>
-        <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#geographicFocus"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#domesticGeographicFocusOf -->
-
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#domesticGeographicFocusOf">
-        <rdfs:label xml:lang="en-us">domestic geographic focus of</rdfs:label>
-        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#GeographicRegion"/>
-        <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#domesticGeographicFocus"/>
-        <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#geographicFocusOf"/>
-    </owl:ObjectProperty>
     
 
 
@@ -428,13 +400,6 @@
     
 
 
-    <!-- http://vivoweb.org/ontology/core#equipmentFor -->
-
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#equipmentFor">
-        <rdfs:label xml:lang="en-us">equipment for</rdfs:label>
-        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Equipment"/>
-        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-    </owl:ObjectProperty>
     
 
 
@@ -495,66 +460,10 @@
     
 
 
-    <!-- http://vivoweb.org/ontology/core#geographicLocationOf -->
-
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#geographicLocationOf">
-        <rdfs:label xml:lang="en-us">geographic location of</rdfs:label>
-        <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Currently being used by a restriction on organization.</vitro:descriptionAnnot>
-        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#GeographicLocation"/>
-    </owl:ObjectProperty>
     
 
 
-    <!-- http://vivoweb.org/ontology/core#geographicValidity -->
 
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#geographicValidity">
-        <rdfs:label xml:lang="en-us">geographic validity</rdfs:label>
-        <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#GeographicLocation"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#geographicallyContains -->
-
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#geographicallyContains">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:label xml:lang="en-us">geographically contains</rdfs:label>
-        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#GeographicLocation"/>
-        <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#GeographicLocation"/>
-        <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#geographicallyWithin"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#geographicallyWithin -->
-
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#geographicallyWithin">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:label xml:lang="en-us">geographically within</rdfs:label>
-        <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#GeographicLocation"/>
-        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#GeographicLocation"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#governingAuthorityFor -->
-
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#governingAuthorityFor">
-        <rdfs:label xml:lang="en-us">governing authority for</rdfs:label>
-        <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#hasGoverningAuthority"/>
-        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#grantAwardedBy -->
-
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#grantAwardedBy">
-        <rdfs:label xml:lang="en-us">grant awarded by</rdfs:label>
-        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Grant"/>
-        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-    </owl:ObjectProperty>
-    
 
 
     <!-- http://vivoweb.org/ontology/core#grantSubcontractedThrough -->
@@ -595,15 +504,6 @@
     </owl:ObjectProperty>
     
 
-
-    <!-- http://vivoweb.org/ontology/core#hasEquipment -->
-
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#hasEquipment">
-        <rdfs:label xml:lang="en-us">has equipment</rdfs:label>
-        <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#Equipment"/>
-        <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#equipmentFor"/>
-        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-    </owl:ObjectProperty>
     
 
 
@@ -623,25 +523,6 @@
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Currently being used by a restriction on organization.</vitro:descriptionAnnot>
         <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#GeographicLocation"/>
         <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#geographicLocationOf"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#hasGoverningAuthority -->
-
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#hasGoverningAuthority">
-        <rdfs:label xml:lang="en-us">governing authority</rdfs:label>
-        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:label xml:lang="en-us">has part</rdfs:label>
-        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
     </owl:ObjectProperty>
     
 
@@ -725,9 +606,7 @@
     <!-- http://vivoweb.org/ontology/core#internationalGeographicFocus -->
 
     <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#internationalGeographicFocus">
-        <rdfs:label xml:lang="en-us">international geographic focus</rdfs:label>
         <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#GeographicRegion"/>
-        <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#geographicFocus"/>
     </owl:ObjectProperty>
     
 
@@ -735,10 +614,7 @@
     <!-- http://vivoweb.org/ontology/core#internationalGeographicFocusOf -->
 
     <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#internationalGeographicFocusOf">
-        <rdfs:label xml:lang="en-us">international geographic focus of</rdfs:label>
         <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#GeographicRegion"/>
-        <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#geographicFocusOf"/>
-        <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#internationalGeographicFocus"/>
     </owl:ObjectProperty>
     
 
@@ -762,14 +638,7 @@
     
 
 
-    <!-- http://vivoweb.org/ontology/core#locationOfEquipment -->
 
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#locationOfEquipment">
-        <rdfs:label xml:lang="en-us">location of equipment</rdfs:label>
-        <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#Equipment"/>
-        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Facility"/>
-        <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#equipmentInFacility"/>
-    </owl:ObjectProperty>
     
 
 
@@ -827,15 +696,6 @@
     <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#organizationForTraining">
         <rdfs:label xml:lang="en-us">organization for training</rdfs:label>
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:label xml:lang="en-us">part of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2093,12 +1953,6 @@ This class allows for linking an author to a publication while indicating inform
 
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#FundingOrganization">
         <rdfs:label xml:lang="en-us">Funding Organization</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#awardsGrant"/>
-                <owl:someValuesFrom rdf:resource="http://vivoweb.org/ontology/core#Grant"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
         <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A defined class of organizations that fund Grants.</vitro:shortDef>
         <vitro:exampleAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">National Institute of Health (NIH)</vitro:exampleAnnot>

@@ -6,7 +6,8 @@
      xmlns:vitro="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:core="http://vivoweb.org/ontology/core#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/arg/module/vivo/vivo.owl">
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/arg/module/vocabulary/vivo-vocabulary.owl"/>
         <owl:imports rdf:resource="http://vivoweb.org/ontology/core"/>
@@ -24,6 +25,7 @@
      -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+    <owl:AnnotationProperty rdf:about="http://vivoweb.org/ontology/core#serviceProvidedBy"/>
     
 
 
@@ -47,25 +49,12 @@
      -->
 
     
-    <!-- http://vivoweb.org/ontology/core#providesService -->
 
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#providesService">
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ERO_0000005"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#serviceProvidedBy -->
-
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#serviceProvidedBy">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0000005"/>
-    </rdf:Description>
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050">
         <rdfs:label>part_of (RO)</rdfs:label>
-        <owl:equivalentProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
     </owl:ObjectProperty>
     
 
@@ -74,7 +63,6 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051">
         <rdfs:label>has_part (RO)</rdfs:label>
-        <owl:equivalentProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
     </owl:ObjectProperty>
     
 
@@ -188,6 +176,12 @@
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002350"/>
     </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/arg/module/vivo/vivo.owl/_vivo_hold_deprecate -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/arg/module/vivo/vivo.owl/_vivo_hold_deprecate"/>
     
 
 
@@ -309,22 +303,6 @@
     
 
 
-    <!-- http://vivoweb.org/ontology/core#awardConferred -->
-
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#awardConferred">
-        <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#assigns"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#awardConferredBy -->
-
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#awardConferredBy">
-        <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#assignedBy"/>
-    </rdf:Description>
-    
-
-
     <!-- http://vivoweb.org/ontology/core#awardOrHonor -->
 
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#awardOrHonor">
@@ -337,14 +315,6 @@
 
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#awardOrHonorFor">
         <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#relates"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#awardsGrant -->
-
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#awardsGrant">
-        <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#assigns"/>
     </rdf:Description>
     
 
@@ -446,6 +416,7 @@
 
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#features">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
     </rdf:Description>
     
 
@@ -458,27 +429,6 @@
     
 
 
-    <!-- http://vivoweb.org/ontology/core#geographicLocationOf -->
-
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#geographicLocationOf">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0001015"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#governingAuthorityFor -->
-
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#governingAuthorityFor">
-        <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#assigns"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#grantAwardedBy -->
-
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#grantAwardedBy">
-        <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#assignedBy"/>
-    </rdf:Description>
     
 
 
@@ -506,25 +456,6 @@
     
 
 
-    <!-- http://vivoweb.org/ontology/core#hasGeographicLocation -->
-
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#hasGeographicLocation">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#hasGoverningAuthority -->
-
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#hasGoverningAuthority">
-        <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#assignedBy"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
     
 
 
@@ -589,9 +520,9 @@
 
     <!-- http://vivoweb.org/ontology/core#locationOfEquipment -->
 
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#locationOfEquipment">
+    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#locationOfEquipment">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0001015"/>
-    </rdf:Description>
+    </owl:ObjectProperty>
     
 
 
@@ -610,12 +541,6 @@
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000056"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
     </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
     
 
 
@@ -639,6 +564,14 @@
 
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#proceedingsOf">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000056"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#providesService -->
+
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#providesService">
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ERO_0000005"/>
     </rdf:Description>
     
 
@@ -670,6 +603,7 @@
     <!-- http://vivoweb.org/ontology/core#relatedRole -->
 
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#relatedRole">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/arg/module/vivo/vivo.owl/_vivo_hold_deprecate"/>
         <rdfs:range rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
     </rdf:Description>
     
@@ -692,6 +626,7 @@
     <!-- http://vivoweb.org/ontology/core#roleIn -->
 
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#roleIn">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/arg/module/vivo/vivo.owl/_vivo_hold_deprecate"/>
         <rdfs:domain rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
     </rdf:Description>
     
@@ -709,6 +644,14 @@
 
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#roleRealizedIn">
         <rdfs:domain rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#serviceProvidedBy -->
+
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#serviceProvidedBy">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0000005"/>
     </rdf:Description>
     
 
@@ -860,25 +803,17 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000013 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000013">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000272 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000272">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
-    </rdf:Description>
-
     <!-- http://aims.fao.org/aos/geopolitical.owl#self_governing -->
 
     <rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#self_governing">
         <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#GeopoliticalEntity"/>
     </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000005"/>
     
 
 
@@ -914,6 +849,14 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000310">
         <rdfs:label>document (IAO)</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000272 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000272">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
     </owl:Class>
     
 
@@ -964,12 +907,6 @@
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
     </owl:Class>
     
-
-
-
-
-
-
 
 
     <!-- http://vivoweb.org/ontology/core#AdvisingProcess -->
