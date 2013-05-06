@@ -469,14 +469,6 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">resource_developer</rdfs:label>
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Developed</app:preferredLabel>
         <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Resource or resources developed by this person.</app:preferredDefinition>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
-                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -488,6 +480,14 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
     </owl:ObjectProperty>
     
 
@@ -3851,16 +3851,6 @@ Laboratory personnel have specific training in handling pathogenic and potential
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000384">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cardiac output measurement</app:preferredLabel>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.obofoundry.org/ro/ro.owl#location_of">
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Location of</app:preferredLabel>
-        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Resources located in the laboratory.</app:preferredDefinition>
-        <app:rangeConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/ERO_0000004</app:rangeConstraint>
-        <app:rangeConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/ERO_0000006</app:rangeConstraint>
-        <app:rangeConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/ERO_0000020</app:rangeConstraint>
-        <app:rangeConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/OBI_0100026</app:rangeConstraint>
-        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://xmlns.com/foaf/0.1/Organization</app:domainConstraint>
-    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000390">
         <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Name of the organization or laboratory performing the service.</app:preferredDefinition>
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Service Provided by</app:preferredLabel>
@@ -5450,6 +5440,16 @@ Laboratory personnel have specific training in handling pathogenic and potential
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001528">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Catalog Number</app:preferredLabel>
         <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Catalog number of a commercially manufactured reagent.</app:preferredDefinition>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0001015">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Location of</app:preferredLabel>
+        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Resources located in the laboratory.</app:preferredDefinition>
+        <app:rangeConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/ERO_0000004</app:rangeConstraint>
+        <app:rangeConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/ERO_0000006</app:rangeConstraint>
+        <app:rangeConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/ERO_0000020</app:rangeConstraint>
+        <app:rangeConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/OBI_0100026</app:rangeConstraint>
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://xmlns.com/foaf/0.1/Organization</app:domainConstraint>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001521">
         <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organization that performs the human study.</app:preferredDefinition>
