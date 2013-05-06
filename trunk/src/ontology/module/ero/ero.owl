@@ -6,9 +6,9 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ero.owl">
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/arg/module/ero/ero-original.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/arg/module/ero/ero-imports-external.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/arg/module/ero/ero-imports.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/arg/module/ero/ero-original.owl"/>
     </owl:Ontology>
     
 
@@ -50,8 +50,15 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051">
         <rdfs:label>has part (OBO/RO)</rdfs:label>
-        <owl:equivalentProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
     </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051icipant -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000051icipant">
+        <owl:equivalentProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+    </rdf:Description>
     
 
 
@@ -59,7 +66,6 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000052">
         <rdfs:label>inheres in (BFO/RO)</rdfs:label>
-        <owl:equivalentProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000052"/>
     </owl:ObjectProperty>
     
 
@@ -68,7 +74,6 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000053">
         <rdfs:label>bearer of (RO/BFO)</rdfs:label>
-        <owl:equivalentProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000053"/>
     </owl:ObjectProperty>
     
 
@@ -86,24 +91,7 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000057">
         <rdfs:label>has participant (BFO/RO)</rdfs:label>
-        <owl:equivalentProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051icipant"/>
     </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000542 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000542">
-        <owl:equivalentProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000618 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000618">
-        <owl:equivalentProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002206"/>
-    </rdf:Description>
     
 
 
@@ -125,7 +113,6 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001000">
         <rdfs:label>derives from (RO)</rdfs:label>
-        <owl:equivalentProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001000"/>
     </owl:ObjectProperty>
     
 
@@ -134,7 +121,6 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001018">
         <rdfs:label>contained in (RO)</rdfs:label>
-        <owl:equivalentProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001018"/>
     </owl:ObjectProperty>
     
 
@@ -143,15 +129,6 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001019">
         <rdfs:label>contains (RO)</rdfs:label>
-        <owl:equivalentProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001019"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0002206 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002206">
-        <rdfs:label>expressed in (RO)</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -160,64 +137,7 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002220">
         <rdfs:label>adjacent to (RO)</rdfs:label>
-        <owl:equivalentProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002220"/>
     </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0002292 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002292">
-        <rdfs:label>expresses (RO)</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000053 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000053"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000052 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000052"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0002220 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002220"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0001018 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0001018"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0001019 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0001019"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0001000 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0001000"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000051icipant -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000051icipant"/>
     
 
 
