@@ -138,13 +138,13 @@
     <rdfs:label xml:lang="en">precedes</rdfs:label>
     <oboInOwl:hasOBONamespace>relationship</oboInOwl:hasOBONamespace>
   </owl:TransitiveProperty>
-  <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051icipant">
+  <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000057">
     <rdfs:label xml:lang="en">has_participant</rdfs:label>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Has_participant is a primitive instance-level relation between a process, a continuant, and a time at which the continuant participates in some way in the process. The relation obtains, for example, when this particular process of oxygen exchange across this particular alveolar membrane has_participant this particular sample of hemoglobin at this particular time.</rdfs:comment>
 
     <oboInOwl:hasOBONamespace>relationship</oboInOwl:hasOBONamespace>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#participates_in">
+  <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000056">
     <rdfs:label xml:lang="en">participates_in</rdfs:label>
     <oboInOwl:hasOBONamespace>relationship</oboInOwl:hasOBONamespace>
   </owl:ObjectProperty>
@@ -152,12 +152,12 @@
     <rdfs:label xml:lang="en">has_agent</rdfs:label>
 
     <oboInOwl:hasOBONamespace>relationship</oboInOwl:hasOBONamespace>
-    <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051icipant"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#agent_in">
     <rdfs:label xml:lang="en">agent_in</rdfs:label>
     <oboInOwl:hasOBONamespace>relationship</oboInOwl:hasOBONamespace>
-    <rdfs:subPropertyOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#participates_in"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000056"/>
   </owl:ObjectProperty>
   <owl:TransitiveProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#has_improper_part">
     <rdfs:label xml:lang="en">has_improper_part</rdfs:label>
@@ -210,8 +210,8 @@
     <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051icipant">
-    <owl:inverseOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#participates_in"/>
+  <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000057">
+    <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000056"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#has_proper_part">
@@ -238,8 +238,8 @@
     <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#participates_in">
-    <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051icipant"/>
+  <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000056">
+    <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#preceded_by">
