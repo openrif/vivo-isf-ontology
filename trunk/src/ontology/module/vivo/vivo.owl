@@ -162,12 +162,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/arg/module/vivo/vivo.owl/_vivo_hold_deprecate -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/arg/module/vivo/vivo.owl/_vivo_hold_deprecate"/>
-    
-
-
     <!-- http://purl.org/NET/c4dm/event.owl#isAgentIn -->
 
     <rdf:Description rdf:about="http://purl.org/NET/c4dm/event.owl#isAgentIn">
@@ -302,14 +296,6 @@
     
 
 
-    <!-- http://vivoweb.org/ontology/core#contributingRole -->
-
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#contributingRole">
-        <rdfs:range rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
-    </rdf:Description>
-    
-
-
     <!-- http://vivoweb.org/ontology/core#credentialOf -->
 
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#credentialOf">
@@ -356,14 +342,6 @@
 
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#eligibleFor">
         <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#relatedBy"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#equipmentInFacility -->
-
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#equipmentInFacility">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
     </rdf:Description>
     
 
@@ -527,28 +505,11 @@
     
 
 
-    <!-- http://vivoweb.org/ontology/core#realizedRole -->
-
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#realizedRole">
-        <rdfs:range rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
-    </rdf:Description>
-    
-
-
     <!-- http://vivoweb.org/ontology/core#relatedBy -->
 
     <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#relatedBy">
         <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#relates"/>
     </owl:ObjectProperty>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#relatedRole -->
-
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#relatedRole">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/arg/module/vivo/vivo.owl/_vivo_hold_deprecate"/>
-        <rdfs:range rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
-    </rdf:Description>
     
 
 
@@ -558,34 +519,9 @@
     
 
 
-    <!-- http://vivoweb.org/ontology/core#roleContributesTo -->
-
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#roleContributesTo">
-        <rdfs:domain rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#roleIn -->
-
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#roleIn">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/arg/module/vivo/vivo.owl/_vivo_hold_deprecate"/>
-        <rdfs:domain rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
-    </rdf:Description>
-    
-
-
     <!-- http://vivoweb.org/ontology/core#roleOf -->
 
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#roleOf">
-        <rdfs:domain rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#roleRealizedIn -->
-
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#roleRealizedIn">
         <rdfs:domain rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
     </rdf:Description>
     

@@ -215,15 +215,6 @@
     
 
 
-    <!-- http://vivoweb.org/ontology/core#contributingRole -->
-
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#contributingRole">
-        <rdfs:label xml:lang="en-us">contributor</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#relatedRole"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://vivoweb.org/ontology/core#courseOfferedBy -->
 
     <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#courseOfferedBy">
@@ -355,16 +346,6 @@
         <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#DateTimeInterval"/>
         <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#DateTimeValue"/>
         <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#dateTimeValue"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#equipmentInFacility -->
-
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#equipmentInFacility">
-        <rdfs:label xml:lang="en-us">in facility</rdfs:label>
-        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Equipment"/>
-        <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#Facility"/>
     </owl:ObjectProperty>
     
 
@@ -743,58 +724,12 @@
     
 
 
-    <!-- http://vivoweb.org/ontology/core#realizedRole -->
-
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#realizedRole">
-        <rdfs:label xml:lang="en-us">participant</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#relatedRole"/>
-        <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#roleRealizedIn"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#relatedRole -->
-
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#relatedRole">
-        <rdfs:label xml:lang="en-us">related role</rdfs:label>
-        <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#roleIn"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#roleContributesTo -->
-
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#roleContributesTo">
-        <rdfs:label xml:lang="en-us">contributes to</rdfs:label>
-        <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#contributingRole"/>
-        <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#roleIn"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#roleIn -->
-
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#roleIn">
-        <rdfs:label xml:lang="en-us">role in</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://vivoweb.org/ontology/core#roleOf -->
 
     <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#roleOf">
         <rdfs:label xml:lang="en-us">role of</rdfs:label>
         <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#hasRole"/>
         <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#roleRealizedIn -->
-
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#roleRealizedIn">
-        <rdfs:label xml:lang="en-us">role in</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#roleIn"/>
     </owl:ObjectProperty>
     
 
