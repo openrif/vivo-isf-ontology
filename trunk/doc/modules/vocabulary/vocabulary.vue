@@ -1,18 +1,18 @@
-<!-- Tufts VUE 3.1.2 concept-map (vocabulary.vue) 2013-04-12 -->
+<!-- Tufts VUE 3.1.2 concept-map (vocabulary.vue) 2013-05-03 -->
 <!-- Tufts VUE: http://vue.tufts.edu/ -->
 <!-- Do Not Remove: VUE mapping @version(1.1) jar:file:/C:/Program%20Files%20(x86)/VUE/VUE.jar!/tufts/vue/resources/lw_mapping_1_1.xml -->
-<!-- Do Not Remove: Saved date Fri Apr 12 10:33:49 PDT 2013 by essaids on platform Windows 7 6.1 in JVM 1.6.0_29-b11 -->
+<!-- Do Not Remove: Saved date Fri May 03 10:23:22 PDT 2013 by essaids on platform Windows 7 6.1 in JVM 1.6.0_29-b11 -->
 <!-- Do Not Remove: Saving version @(#)VUE: built March 8 2012 at 1310 by vue on Linux 2.4.21-63.EL i386 JVM 1.5.0_06-b05(bits=32) -->
 <?xml version="1.0" encoding="US-ASCII"?>
 <LW-MAP xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="none" ID="0" label="vocabulary.vue"
     created="1365629871843" x="0.0" y="0.0" width="1.4E-45"
     height="1.4E-45" strokeWidth="0.0" autoSized="false">
-    <resource referenceCreated="1365788029672" size="38486"
-        spec="C:\s\svns\connect-isf-root\trunk\src\ontology\module\vocabulary-m\doc\vocabulary.vue"
+    <resource referenceCreated="1367601802457" size="39507"
+        spec="C:\s\svns\isf-new-layout\trunk\doc\modules\vocabulary\vocabulary.vue"
         type="1" xsi:type="URLResource">
         <title>vocabulary.vue</title>
-        <property key="File" value="C:\s\svns\connect-isf-root\trunk\src\ontology\module\vocabulary-m\doc\vocabulary.vue"/>
+        <property key="File" value="C:\s\svns\isf-new-layout\trunk\doc\modules\vocabulary\vocabulary.vue"/>
     </resource>
     <fillColor>#FFFFFF</fillColor>
     <strokeColor>#404040</strokeColor>
@@ -206,7 +206,7 @@
         <shape xsi:type="rectangle"/>
     </child>
     <child ID="42" label="http://icd9_199.11" layerID="6"
-        created="1365782650531" x="519.5" y="173.5" width="108.0"
+        created="1365782650531" x="509.10004" y="166.3" width="108.0"
         height="23.0" strokeWidth="2.0" autoSized="true" xsi:type="node">
         <fillColor>#FFFFFF</fillColor>
         <strokeColor>#33A8F5</strokeColor>
@@ -225,7 +225,7 @@
         <shape xsi:type="rectangle"/>
     </child>
     <child ID="43" label="rdf:type" layerID="6" created="1365782690041"
-        x="403.0127" y="-21.0" width="161.47467" height="195.00006"
+        x="402.7691" y="-21.0" width="151.56192" height="187.79999"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#404040</strokeColor>
@@ -241,13 +241,13 @@
             </metadata>
         </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/feff368dc0a8380100bfc25c3038fbba</URIString>
-        <point1 x="563.98737" y="173.50006"/>
-        <point2 x="403.5127" y="-20.5"/>
+        <point1 x="553.831" y="166.29999"/>
+        <point2 x="403.26907" y="-20.5"/>
         <ID1 xsi:type="node">42</ID1>
         <ID2 xsi:type="node">39</ID2>
     </child>
     <child ID="44" label="&quot;199.11&quot;^^http://datatype/icd9"
-        layerID="6" created="1365782720451" x="663.5" y="248.5"
+        layerID="6" created="1365782720451" x="701.10004" y="241.3"
         width="187.0" height="23.0" strokeWidth="2.0" autoSized="false" xsi:type="node">
         <fillColor>#FFFFFF</fillColor>
         <strokeColor>#33A8F5</strokeColor>
@@ -266,9 +266,9 @@
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
     <child ID="45" label="skos:notation" layerID="6"
-        created="1365782764761" x="601.13666" y="196.0"
-        width="128.22668" height="53.000015" strokeWidth="1.0"
-        autoSized="false" controlCount="0" arrowState="2" xsi:type="link">
+        created="1365782764761" x="598.0967" y="188.8" width="161.50665"
+        height="53.0" strokeWidth="1.0" autoSized="false"
+        controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#404040</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
@@ -282,8 +282,8 @@
             </metadata>
         </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/feff368dc0a8380100bfc25cab6010fe</URIString>
-        <point1 x="601.63666" y="196.49998"/>
-        <point2 x="728.86334" y="248.5"/>
+        <point1 x="598.5967" y="189.3"/>
+        <point2 x="759.10333" y="241.3"/>
         <ID1 xsi:type="node">42</ID1>
         <ID2 xsi:type="node">44</ID2>
     </child>
@@ -307,8 +307,8 @@
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
     <child ID="47" label="skos:preferred label" layerID="6"
-        created="1365782989415" x="596.6479" y="54.0" width="245.70422"
-        height="120.0" strokeWidth="1.0" autoSized="false"
+        created="1365782989415" x="588.3982" y="54.0" width="251.80359"
+        height="112.80002" strokeWidth="1.0" autoSized="false"
         controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#404040</strokeColor>
         <textColor>#404040</textColor>
@@ -323,8 +323,8 @@
             </metadata>
         </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/ff02bb6dc0a8380100bfc25c04a69006</URIString>
-        <point1 x="597.1479" y="173.5"/>
-        <point2 x="841.8521" y="54.5"/>
+        <point1 x="588.8982" y="166.30002"/>
+        <point2 x="839.7018" y="54.5"/>
         <ID1 xsi:type="node">42</ID1>
         <ID2 xsi:type="node">60</ID2>
     </child>
@@ -348,7 +348,7 @@
         <shape xsi:type="rectangle"/>
     </child>
     <child ID="49" label="rdf:type" layerID="6" created="1365783032735"
-        x="601.75" y="377.0" width="39.0" height="74.0"
+        x="602.25" y="377.0" width="38.0" height="74.0"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#404040</strokeColor>
@@ -370,8 +370,8 @@
         <ID2 xsi:type="node">40</ID2>
     </child>
     <child ID="50" label="skos:is in scheme" layerID="6"
-        created="1365783039265" x="549.75" y="196.0" width="87.0"
-        height="159.00024" strokeWidth="1.0" autoSized="false"
+        created="1365783039265" x="545.05005" y="188.80005" width="86.0"
+        height="166.19995" strokeWidth="1.0" autoSized="false"
         controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#404040</strokeColor>
         <textColor>#404040</textColor>
@@ -386,14 +386,14 @@
             </metadata>
         </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/ff038147c0a8380100bfc25c426815f0</URIString>
-        <point1 x="576.00964" y="196.5"/>
-        <point2 x="610.49036" y="354.50024"/>
+        <point1 x="566.1492" y="189.30005"/>
+        <point2 x="609.95087" y="354.5"/>
         <ID1 xsi:type="node">42</ID1>
         <ID2 xsi:type="node">48</ID2>
     </child>
     <child ID="51" label="http://icd9_000.00" layerID="6"
-        created="1365783065085" x="340.5" y="253.5" width="108.0"
-        height="23.0" strokeWidth="2.0" autoSized="true" xsi:type="node">
+        created="1365783065085" x="343.69998" y="241.49997"
+        width="108.0" height="23.0" strokeWidth="2.0" autoSized="true" xsi:type="node">
         <fillColor>#FFFFFF</fillColor>
         <strokeColor>#33A8F5</strokeColor>
         <textColor>#000000</textColor>
@@ -411,7 +411,7 @@
         <shape xsi:type="rectangle"/>
     </child>
     <child ID="52" label="rdf:type" layerID="6" created="1365783065085"
-        x="374.75" y="-21.015625" width="39.0" height="275.01562"
+        x="376.84998" y="-21.0" width="38.0" height="263.0"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#404040</strokeColor>
@@ -427,14 +427,14 @@
             </metadata>
         </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/ff04955fc0a8380100bfc25c9103af91</URIString>
-        <point1 x="394.48065" y="253.5"/>
-        <point2 x="394.01935" y="-20.515625"/>
+        <point1 x="397.5507" y="241.5"/>
+        <point2 x="394.1493" y="-20.5"/>
         <ID1 xsi:type="node">51</ID1>
         <ID2 xsi:type="node">39</ID2>
     </child>
     <child ID="53" label="skos:has broader" layerID="6"
-        created="1365783083265" x="419.73126" y="196.0"
-        width="128.53748" height="58.0" strokeWidth="1.0"
+        created="1365783083265" x="422.4939" y="188.80002"
+        width="115.812225" height="53.19995" strokeWidth="1.0"
         autoSized="false" controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#404040</strokeColor>
         <textColor>#404040</textColor>
@@ -449,14 +449,14 @@
             </metadata>
         </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/ff049569c0a8380100bfc25c1fcf667f</URIString>
-        <point1 x="547.76874" y="196.5"/>
-        <point2 x="420.23126" y="253.5"/>
+        <point1 x="537.80615" y="189.30002"/>
+        <point2 x="422.99393" y="241.49997"/>
         <ID1 xsi:type="node">42</ID1>
         <ID2 xsi:type="node">51</ID2>
     </child>
     <child ID="54" label="skos:is top in scheme" layerID="6"
-        created="1365783104695" x="418.87866" y="276.0"
-        width="169.74265" height="79.0" strokeWidth="1.0"
+        created="1365783104695" x="419.11102" y="264.0"
+        width="172.47787" height="91.0" strokeWidth="1.0"
         autoSized="false" controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#404040</strokeColor>
         <textColor>#404040</textColor>
@@ -471,8 +471,8 @@
             </metadata>
         </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/ff049569c0a8380100bfc25cf0e7017b</URIString>
-        <point1 x="419.3787" y="276.5"/>
-        <point2 x="588.12134" y="354.5"/>
+        <point1 x="419.61105" y="264.5"/>
+        <point2 x="591.0889" y="354.5"/>
         <ID1 xsi:type="node">51</ID1>
         <ID2 xsi:type="node">48</ID2>
     </child>
@@ -515,7 +515,7 @@
         <shape xsi:type="rectangle"/>
     </child>
     <child ID="57" label="rdf:type" layerID="6" created="1365783202685"
-        x="622.75" y="-44.0" width="39.0" height="55.0"
+        x="623.25" y="-44.0" width="38.0" height="55.0"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
         <strokeColor>#404040</strokeColor>
@@ -537,8 +537,8 @@
         <ID2 xsi:type="node">41</ID2>
     </child>
     <child ID="59" label="skos:has member" layerID="6"
-        created="1365783231365" x="563.75" y="33.0" width="86.0"
-        height="141.0" strokeWidth="1.0" autoSized="false"
+        created="1365783231365" x="559.05005" y="33.0" width="85.0"
+        height="133.80005" strokeWidth="1.0" autoSized="false"
         controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#404040</strokeColor>
         <textColor>#404040</textColor>
@@ -553,8 +553,8 @@
             </metadata>
         </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/ff0670cdc0a8380100bfc25c321eb785</URIString>
-        <point1 x="635.3083" y="33.5"/>
-        <point2 x="578.1917" y="173.5"/>
+        <point1 x="634.3238" y="33.5"/>
+        <point2 x="568.77625" y="166.30005"/>
         <ID1 xsi:type="node">56</ID1>
         <ID2 xsi:type="node">42</ID2>
     </child>
@@ -578,7 +578,7 @@
         <shape xsi:type="rectangle"/>
     </child>
     <child ID="61" label="rdf:type" layerID="6" created="1365783290916"
-        x="846.0" y="-14.0" width="39.0" height="46.0" strokeWidth="1.0"
+        x="846.5" y="-14.0" width="38.0" height="46.0" strokeWidth="1.0"
         autoSized="false" controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#404040</strokeColor>
         <textColor>#404040</textColor>
@@ -599,7 +599,7 @@
         <ID2 xsi:type="node">55</ID2>
     </child>
     <child ID="62" label="skosxl:literal form" layerID="6"
-        created="1365783379976" x="803.5" y="54.0" width="85.0"
+        created="1365783379976" x="804.0" y="54.0" width="84.0"
         height="118.0" strokeWidth="1.0" autoSized="false"
         controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#404040</strokeColor>
@@ -664,9 +664,9 @@
         <ctrlPoint0 x="1015.5" y="364.5" xsi:type="point"/>
     </child>
     <child ID="65" label="skos:preferred label" layerID="6"
-        created="1365788017325" x="627.0" y="177.0079" width="144.0"
-        height="14.0" strokeWidth="1.0" autoSized="false"
-        controlCount="0" arrowState="2" xsi:type="link">
+        created="1365788017325" x="616.6001" y="173.38025"
+        width="154.39996" height="14.0" strokeWidth="1.0"
+        autoSized="false" controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#404040</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
@@ -680,8 +680,8 @@
             </metadata>
         </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/ff4f72f2c0a8380100bfc25cd7564f71</URIString>
-        <point1 x="627.5" y="184.57312"/>
-        <point2 x="770.5" y="183.44269"/>
+        <point1 x="617.10004" y="178.86606"/>
+        <point2 x="770.5" y="181.89445"/>
         <ID1 xsi:type="node">42</ID1>
         <ID2 xsi:type="node">46</ID2>
     </child>
@@ -701,8 +701,8 @@
         </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/f5e5c486c0a8380101fffa73a87f9d15</URIString>
     </layer>
-    <userZoom>1.0</userZoom>
-    <userOrigin x="-267.5" y="-85.5"/>
+    <userZoom>1.25</userZoom>
+    <userOrigin x="-312.375" y="-171.70758"/>
     <presentationBackground>#202020</presentationBackground>
     <PathwayList currentPathway="0" revealerIndex="-1">
         <pathway ID="0" label="Untitled Pathway" created="1365629871828"
@@ -775,6 +775,6 @@
     <date>2013-04-10</date>
     <mapFilterModel/>
     <modelVersion>5</modelVersion>
-    <saveLocation>C:\s\svns\connect-isf-root\trunk\src\ontology\module\vocabulary-m\doc</saveLocation>
-    <saveFile>C:\s\svns\connect-isf-root\trunk\src\ontology\module\vocabulary-m\doc\vocabulary.vue</saveFile>
+    <saveLocation>C:\s\svns\isf-new-layout\trunk\doc\modules\vocabulary</saveLocation>
+    <saveFile>C:\s\svns\isf-new-layout\trunk\doc\modules\vocabulary\vocabulary.vue</saveFile>
 </LW-MAP>
