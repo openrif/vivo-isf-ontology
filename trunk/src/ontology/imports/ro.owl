@@ -47,13 +47,13 @@
     <oboInOwl:hasOBONamespace>relationship</oboInOwl:hasOBONamespace>
     <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty"/>
   </owl:ObjectProperty>
-  <owl:TransitiveProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#part_of">
+  <owl:TransitiveProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050">
     <rdfs:label xml:lang="en">part_of</rdfs:label>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Parthood as a relation between instances: The primitive instance-level relation p part_of p1 is illustrated in assertions such as: this instance of rhodopsin mediated phototransduction part_of this instance of visual perception.    This relation satisfies at least the following standard axioms of mereology: reflexivity (for all p, p part_of p); anti-symmetry (for all p, p1, if p part_of p1 and p1 part_of p then p and p1 are identical); and transitivity (for all p, p1, p2, if p part_of p1 and p1 part_of p2, then p part_of p2). Analogous axioms hold also for parthood as a relation between spatial regions.    For parthood as a relation between continuants, these axioms need to be modified to take account of the incorporation of a temporal argument. Thus for example the axiom of transitivity for continuants will assert that if c part_of c1 at t and c1 part_of c2 at t, then also c part_of c2 at t.    Parthood as a relation between classes: To define part_of as a relation between classes we again need to distinguish the two cases of continuants and processes, even though the explicit reference to instants of time now falls away. For continuants, we have C part_of C1 if and only if any instance of C at any time is an instance-level part of some instance of C1 at that time, as for example in: cell nucleus part_ of cell.</rdfs:comment>
 
     <oboInOwl:hasOBONamespace>relationship</oboInOwl:hasOBONamespace>
   </owl:TransitiveProperty>
-  <owl:TransitiveProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#has_part">
+  <owl:TransitiveProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051">
     <rdfs:label xml:lang="en">has_part</rdfs:label>
     <oboInOwl:hasOBONamespace>relationship</oboInOwl:hasOBONamespace>
   </owl:TransitiveProperty>
@@ -61,23 +61,23 @@
     <rdfs:label xml:lang="en">integral_part_of</rdfs:label>
 
     <oboInOwl:hasOBONamespace>relationship</oboInOwl:hasOBONamespace>
-    <rdfs:subPropertyOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#part_of"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
   </owl:TransitiveProperty>
   <owl:TransitiveProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#has_integral_part">
     <rdfs:label xml:lang="en">has_integral_part</rdfs:label>
     <oboInOwl:hasOBONamespace>relationship</oboInOwl:hasOBONamespace>
-    <rdfs:subPropertyOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
   </owl:TransitiveProperty>
   <owl:TransitiveProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#proper_part_of">
     <rdfs:label xml:lang="en">proper_part_of</rdfs:label>
 
     <oboInOwl:hasOBONamespace>relationship</oboInOwl:hasOBONamespace>
-    <rdfs:subPropertyOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#part_of"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
   </owl:TransitiveProperty>
   <owl:TransitiveProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#has_proper_part">
     <rdfs:label xml:lang="en">has_proper_part</rdfs:label>
     <oboInOwl:hasOBONamespace>relationship</oboInOwl:hasOBONamespace>
-    <rdfs:subPropertyOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
   </owl:TransitiveProperty>
   <owl:TransitiveProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#located_in">
     <rdfs:label xml:lang="en">located_in</rdfs:label>
@@ -138,7 +138,7 @@
     <rdfs:label xml:lang="en">precedes</rdfs:label>
     <oboInOwl:hasOBONamespace>relationship</oboInOwl:hasOBONamespace>
   </owl:TransitiveProperty>
-  <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#has_participant">
+  <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051icipant">
     <rdfs:label xml:lang="en">has_participant</rdfs:label>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Has_participant is a primitive instance-level relation between a process, a continuant, and a time at which the continuant participates in some way in the process. The relation obtains, for example, when this particular process of oxygen exchange across this particular alveolar membrane has_participant this particular sample of hemoglobin at this particular time.</rdfs:comment>
 
@@ -152,7 +152,7 @@
     <rdfs:label xml:lang="en">has_agent</rdfs:label>
 
     <oboInOwl:hasOBONamespace>relationship</oboInOwl:hasOBONamespace>
-    <rdfs:subPropertyOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_participant"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051icipant"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#agent_in">
     <rdfs:label xml:lang="en">agent_in</rdfs:label>
@@ -164,7 +164,7 @@
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">See reasons for obsoletion of improper_part_of</rdfs:comment>
     <oboInOwl:hasOBONamespace>relationship</oboInOwl:hasOBONamespace>
     <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
   </owl:TransitiveProperty>
   <owl:TransitiveProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#improper_part_of">
     <rdfs:label xml:lang="en">improper_part_of</rdfs:label>
@@ -172,7 +172,7 @@
 
     <oboInOwl:hasOBONamespace>relationship</oboInOwl:hasOBONamespace>
     <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#part_of"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
   </owl:TransitiveProperty>
   <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#agent_in">
     <owl:inverseOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_agent"/>
@@ -206,11 +206,11 @@
     <owl:inverseOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#integral_part_of"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#has_part">
-    <owl:inverseOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#part_of"/>
+  <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051">
+    <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#has_participant">
+  <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051icipant">
     <owl:inverseOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#participates_in"/>
   </owl:ObjectProperty>
 
@@ -234,12 +234,12 @@
     <owl:inverseOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#located_in"/>
   </owl:ObjectProperty>
 
-  <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#part_of">
-    <owl:inverseOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+  <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050">
+    <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#participates_in">
-    <owl:inverseOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_participant"/>
+    <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051icipant"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#preceded_by">

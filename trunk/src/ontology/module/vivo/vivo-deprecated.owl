@@ -638,7 +638,7 @@ Examples of a Publisher include a person, an organization, or a service. Typical
         <rdfs:domain rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
         <rdfs:range rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
         <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#includesEvent"/>
-        <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#partOf"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
     </owl:ObjectProperty>
     
 
@@ -850,9 +850,9 @@ Examples of a Publisher include a person, an organization, or a service. Typical
     
 
 
-    <!-- http://vivoweb.org/ontology/core#hasPart -->
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
 
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#hasPart"/>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
     
 
 
@@ -940,7 +940,7 @@ Examples of a Publisher include a person, an organization, or a service. Typical
         <rdfs:subPropertyOf rdf:resource="http://isf/deprecated_op"/>
         <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Building"/>
         <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#Room"/>
-        <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#hasPart"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#roomWithinBuilding"/>
     </owl:ObjectProperty>
     
@@ -965,7 +965,7 @@ Examples of a Publisher include a person, an organization, or a service. Typical
         <rdfs:subPropertyOf rdf:resource="http://isf/deprecated_op"/>
         <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Grant"/>
         <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#Grant"/>
-        <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#hasPart"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#subGrantOf"/>
     </owl:ObjectProperty>
     
@@ -977,7 +977,7 @@ Examples of a Publisher include a person, an organization, or a service. Typical
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:label xml:lang="en-us">has sub-organization</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://isf/deprecated_op"/>
-        <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#hasPart"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#subOrganizationWithin"/>
         <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
@@ -1017,7 +1017,7 @@ Examples of a Publisher include a person, an organization, or a service. Typical
         <rdfs:subPropertyOf rdf:resource="http://isf/deprecated_op"/>
         <rdfs:domain rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
         <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#EventSeries"/>
-        <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#partOf"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
         <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#seriesForEvent"/>
     </owl:ObjectProperty>
     
@@ -1030,7 +1030,7 @@ Examples of a Publisher include a person, an organization, or a service. Typical
         <rdfs:subPropertyOf rdf:resource="http://isf/deprecated_op"/>
         <rdfs:range rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
         <rdfs:domain rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
-        <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#hasPart"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
     </owl:ObjectProperty>
     
 
@@ -1245,9 +1245,9 @@ Examples of a Publisher include a person, an organization, or a service. Typical
     
 
 
-    <!-- http://vivoweb.org/ontology/core#partOf -->
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
 
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#partOf"/>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
     
 
 
@@ -1350,7 +1350,7 @@ Examples of a Publisher include a person, an organization, or a service. Typical
         <rdfs:range rdf:resource="http://purl.org/ontology/bibo/Document"/>
         <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
         <owl:inverseOf rdf:resource="http://purl.org/ontology/bibo/reproducedIn"/>
-        <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#hasPart"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
     </owl:ObjectProperty>
     
 
@@ -1439,7 +1439,7 @@ Examples of a Publisher include a person, an organization, or a service. Typical
         <rdfs:subPropertyOf rdf:resource="http://isf/deprecated_op"/>
         <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#Building"/>
         <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Room"/>
-        <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#partOf"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
     </owl:ObjectProperty>
     
 
@@ -1451,7 +1451,7 @@ Examples of a Publisher include a person, an organization, or a service. Typical
         <rdfs:subPropertyOf rdf:resource="http://isf/deprecated_op"/>
         <rdfs:range rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
         <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#EventSeries"/>
-        <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#hasPart"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
     </owl:ObjectProperty>
     
 
@@ -1492,7 +1492,7 @@ Examples of a Publisher include a person, an organization, or a service. Typical
         <rdfs:subPropertyOf rdf:resource="http://isf/deprecated_op"/>
         <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Grant"/>
         <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#Grant"/>
-        <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#partOf"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
     </owl:ObjectProperty>
     
 
@@ -1503,7 +1503,7 @@ Examples of a Publisher include a person, an organization, or a service. Typical
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:label xml:lang="en-us">organization within</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://isf/deprecated_op"/>
-        <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#partOf"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
         <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
     </owl:ObjectProperty>
