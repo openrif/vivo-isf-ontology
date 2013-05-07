@@ -10,19 +10,19 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vitro="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#"
      xmlns:event="http://purl.org/NET/c4dm/event.owl#"
-     xmlns:swvs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
-     xmlns:c4o="http://purl.org/spar/c4o/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:dcelem="http://purl.org/dc/elements/1.1/"
+     xmlns:c4o="http://purl.org/spar/c4o/"
+     xmlns:swvs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:vivo="http://vivoweb.org/ontology/core#"
-     xmlns:geo="http://aims.fao.org/aos/geopolitical.owl#"
+     xmlns:dcelem="http://purl.org/dc/elements/1.1/"
      xmlns:pvs="http://vivoweb.org/ontology/provenance-support#"
+     xmlns:geo="http://aims.fao.org/aos/geopolitical.owl#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:fabio="http://purl.org/spar/fabio/"
      xmlns:skco="http://www.w3.org/2004/02/skos/core#"
      xmlns:bibo="http://purl.org/ontology/bibo/"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:vitro-public="http://vitro.mannlib.cornell.edu/ns/vitro/public#"
      xmlns:skos="http://www.w3.org/2008/05/skos#"
      xmlns:ero="http://purl.obolibrary.org/obo/">
@@ -274,8 +274,8 @@
 
     <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#hasPrerequisite">
         <rdfs:label xml:lang="en-us">has prerequisite</rdfs:label>
-        <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#Course"/>
         <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Course"/>
+        <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#Course"/>
     </owl:ObjectProperty>
     
 
@@ -310,8 +310,8 @@
 
     <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#hasSuccessorOrganization">
         <rdfs:label xml:lang="en-us">successor organization</rdfs:label>
-        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
         <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
     </owl:ObjectProperty>
     
 
@@ -332,15 +332,13 @@
     </owl:ObjectProperty>
     
 
-    
-
 
     <!-- http://vivoweb.org/ontology/core#prerequisiteFor -->
 
     <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#prerequisiteFor">
         <rdfs:label xml:lang="en-us">prerequisite for</rdfs:label>
-        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Course"/>
         <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#Course"/>
+        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Course"/>
         <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#hasPrerequisite"/>
     </owl:ObjectProperty>
     
@@ -351,8 +349,8 @@
     <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#providesFundingThrough">
         <rdfs:label xml:lang="en-us">provides funding through</rdfs:label>
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">For example, National Science Foundation providesFundingThrough Graduate Research Fellowship Program; National Institutes of Health providesFundingThrough National Center for Research Resources. </vitro:descriptionAnnot>
-        <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#FundingOrganization"/>
         <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#FundingOrganization"/>
+        <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#FundingOrganization"/>
     </owl:ObjectProperty>
     
 
@@ -801,6 +799,17 @@ See also core:localAwardId.
 
     <owl:Class rdf:about="http://aims.fao.org/aos/geopolitical.owl#territory">
         <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#GeopoliticalEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000012">
+        <rdfs:label xml:lang="en-us">Service Provider Role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
+        <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An role of an individual within his or her profession or institution; use outreach provider role for community service or other activities outside the profession.</vitro:shortDef>
+        <vitro:exampleAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Member of the International Conference on Complex Systems Organizing Committee</vitro:exampleAnnot>
     </owl:Class>
     
 
@@ -1311,8 +1320,8 @@ This class allows for linking an author to a publication while indicating inform
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#EditorRole">
         <rdfs:label xml:lang="en-us">Editor Role</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
-        <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ongoing editorial responsibility for a bibo:Collection, such as a Journal or Series</vitro:shortDef>
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ongoing editorial responsibility for a bibo:Collection, such as a Journal or Series</vitro:descriptionAnnot>
+        <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ongoing editorial responsibility for a bibo:Collection, such as a Journal or Series</vitro:shortDef>
     </owl:Class>
     
 
@@ -2029,17 +2038,6 @@ Contents
     
 
 
-    <!-- http://vivoweb.org/ontology/core#ServiceProviderRole -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#ServiceProviderRole">
-        <rdfs:label xml:lang="en-us">Service Provider Role</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
-        <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An role of an individual within his or her profession or institution; use outreach provider role for community service or other activities outside the profession.</vitro:shortDef>
-        <vitro:exampleAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Member of the International Conference on Complex Systems Organizing Committee</vitro:exampleAnnot>
-    </owl:Class>
-    
-
-
     <!-- http://vivoweb.org/ontology/core#ServiceProvidingLaboratory -->
 
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#ServiceProvidingLaboratory">
@@ -2240,5 +2238,5 @@ Contents
 
 
 
-<!-- Generated by the OWL API (version 3.4.2018) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
 
