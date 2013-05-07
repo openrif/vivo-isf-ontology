@@ -57,6 +57,9 @@
     <owl:AnnotationProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#precedes">
         <oboInOwl:hasOBONamespace>relationship</oboInOwl:hasOBONamespace>
     </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001025">
+        <oboInOwl:hasOBONamespace>relationship</oboInOwl:hasOBONamespace>
+    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000056">
         <oboInOwl:hasOBONamespace>relationship</oboInOwl:hasOBONamespace>
@@ -70,9 +73,6 @@
         <oboInOwl:hasOBONamespace>relationship</oboInOwl:hasOBONamespace>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDefaultNamespace"/>
-    <owl:AnnotationProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#located_in">
-        <oboInOwl:hasOBONamespace>relationship</oboInOwl:hasOBONamespace>
-    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#consider"/>
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDefinition"/>
@@ -142,6 +142,16 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RO_0001025 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001025">
+        <oboInOwl:hasOBONamespace>relationship</oboInOwl:hasOBONamespace>
+        <rdfs:domain rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Continuant"/>
+        <rdfs:range rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Continuant"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty -->
 
     <owl:ObjectProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty"/>
@@ -164,16 +174,6 @@
         <oboInOwl:hasOBONamespace>relationship</oboInOwl:hasOBONamespace>
         <rdfs:range rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Continuant"/>
         <rdfs:domain rdf:resource="http://www.ifomis.org/bfo/1.1/span#Occurrent"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.obofoundry.org/ro/ro.owl#located_in -->
-
-    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#located_in">
-        <oboInOwl:hasOBONamespace>relationship</oboInOwl:hasOBONamespace>
-        <rdfs:range rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Continuant"/>
-        <rdfs:domain rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Continuant"/>
     </owl:ObjectProperty>
     
 
