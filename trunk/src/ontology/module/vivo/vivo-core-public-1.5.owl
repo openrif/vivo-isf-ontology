@@ -297,15 +297,6 @@
     
 
 
-    <!-- http://vivoweb.org/ontology/core#hasRole -->
-
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#hasRole">
-        <rdfs:label xml:lang="en-us">has role</rdfs:label>
-        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://vivoweb.org/ontology/core#hasSubjectArea -->
 
     <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#hasSubjectArea">
@@ -322,7 +313,6 @@
         <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
     </owl:ObjectProperty>
-    
     
 
 
@@ -412,16 +402,6 @@
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Public Definition source (http://www.answers.com/topic/publisher).</vitro:descriptionAnnot>
         <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#publisher"/>
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#roleOf -->
-
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#roleOf">
-        <rdfs:label xml:lang="en-us">role of</rdfs:label>
-        <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#hasRole"/>
-        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
     </owl:ObjectProperty>
     
 

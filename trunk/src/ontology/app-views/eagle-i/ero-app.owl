@@ -440,14 +440,6 @@
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Developed by</app:preferredLabel>
         <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person or organization that developed or helped develop the resource.</app:preferredDefinition>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001720"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
-                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -459,6 +451,14 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -2406,11 +2406,11 @@ Laboratory personnel have specific training in handling pathogenic and potential
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001400">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stem cell derived cell line</app:preferredLabel>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000606">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Psychological and behavioral intervention</app:preferredLabel>
-    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001407">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fluid pressure measurement system</app:preferredLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000606">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Psychological and behavioral intervention</app:preferredLabel>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000605">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prevention and control intervention</app:preferredLabel>
@@ -2486,6 +2486,10 @@ Laboratory personnel have specific training in handling pathogenic and potential
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001738">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Immunochemiluminescence</app:preferredLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002351">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Additional members</app:preferredLabel>
+        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Name(s) of any additional people associated with this organization who are not listed elsewhere.</app:preferredDefinition>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001737">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Air monitoring</app:preferredLabel>
@@ -2867,10 +2871,6 @@ Laboratory personnel have specific training in handling pathogenic and potential
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001767">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Psychoeducational test administration</app:preferredLabel>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001768">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Additional members</app:preferredLabel>
-        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Name(s) of any additional people associated with this organization who are not listed elsewhere.</app:preferredDefinition>
-    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001765">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anthropometric analysis</app:preferredLabel>
     </rdf:Description>
@@ -2929,9 +2929,6 @@ Laboratory personnel have specific training in handling pathogenic and potential
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000299">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Overlapping peptide peptide library</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/obo/owl/OBO_REL#role_of">
-        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000294">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yeast two-hybrid library</app:preferredLabel>
@@ -4781,11 +4778,11 @@ Laboratory personnel have specific training in handling pathogenic and potential
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000420">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Charge-coupled device detector</app:preferredLabel>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001942">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Digital sleep recorder</app:preferredLabel>
-    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000810">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tabletop centrifuge</app:preferredLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001942">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Digital sleep recorder</app:preferredLabel>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001941">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Split Gal4 assay</app:preferredLabel>
@@ -5062,9 +5059,6 @@ Laboratory personnel have specific training in handling pathogenic and potential
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDate">
-        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.obofoundry.org/ro/ro.owl#agent_in">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000499">
