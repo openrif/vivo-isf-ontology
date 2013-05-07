@@ -26,10 +26,6 @@
     <owl:AnnotationProperty rdf:about="http://eagle-i.org/ont/app/1.0/domainConstraint"/>
     
 
-
-    <!-- http://eagle-i.org/ont/app/1.0/inPropertyGroup -->
-
-    <owl:AnnotationProperty rdf:about="http://eagle-i.org/ont/app/1.0/inPropertyGroup"/>
     
 
 
@@ -47,74 +43,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#publisher">
-        <app:domainConstraint>http://purl.org/ontology/bibo/Document</app:domainConstraint>
-        <app:rangeConstraint>http://vivoweb.org/ontology/core#Publisher</app:rangeConstraint>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#hasSubjectArea">
-        <app:domainConstraint>http://vivoweb.org/ontology/core#EventSeries</app:domainConstraint>
-        <app:domainConstraint>http://vivoweb.org/ontology/core#Agreement</app:domainConstraint>
-        <app:domainConstraint>http://vivoweb.org/ontology/core#IssuedCredential</app:domainConstraint>
-        <app:domainConstraint>http://purl.org/NET/c4dm/event.owl#Event</app:domainConstraint>
-        <app:domainConstraint>http://vivoweb.org/ontology/core#Credential</app:domainConstraint>
-        <app:domainConstraint>http://vivoweb.org/ontology/core#InformationResource</app:domainConstraint>
-        <app:domainConstraint>http://vivoweb.org/ontology/core#hasSubjectArea</app:domainConstraint>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#related">
-        <app:domainConstraint>http://www.w3.org/2004/02/skos/core#Concept</app:domainConstraint>
-        <app:rangeConstraint>http://www.w3.org/2004/02/skos/core#Concept</app:rangeConstraint>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002350">
-        <app:rangeConstraint>http://xmlns.com/foaf/0.1/Group</app:rangeConstraint>
-        <app:domainConstraint>http://xmlns.com/foaf/0.1/Agent</app:domainConstraint>
-        <app:rangeConstraint>http://xmlns.com/foaf/0.1/Organization</app:rangeConstraint>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#hasPublicationVenue">
-        <app:domainConstraint>http://vivoweb.org/ontology/core#BlogPosting</app:domainConstraint>
-        <app:rangeConstraint>http://purl.org/ontology/bibo/Journal</app:rangeConstraint>
-        <app:rangeConstraint>http://vivoweb.org/ontology/core#Blog</app:rangeConstraint>
-        <app:domainConstraint>http://vivoweb.org/ontology/core#hasPublicationVenue</app:domainConstraint>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002351">
-        <app:domainConstraint>http://xmlns.com/foaf/0.1/Organization</app:domainConstraint>
-        <app:rangeConstraint>http://xmlns.com/foaf/0.1/Agent</app:rangeConstraint>
-        <app:domainConstraint>http://xmlns.com/foaf/0.1/Group</app:domainConstraint>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002234">
-        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#broader">
-        <app:rangeConstraint>http://www.w3.org/2004/02/skos/core#Concept</app:rangeConstraint>
-        <app:domainConstraint>http://www.w3.org/2004/02/skos/core#Concept</app:domainConstraint>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002353">
-        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#narrower">
-        <app:rangeConstraint>http://www.w3.org/2004/02/skos/core#Concept</app:rangeConstraint>
-        <app:domainConstraint>http://www.w3.org/2004/02/skos/core#Concept</app:domainConstraint>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#publisherOf">
-        <app:rangeConstraint>http://purl.org/ontology/bibo/Document</app:rangeConstraint>
-        <app:domainConstraint>http://vivoweb.org/ontology/core#Publisher</app:domainConstraint>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/spar/c4o/hasGlobalCitationFrequency">
-        <app:domainConstraint>http://purl.org/ontology/bibo/Document</app:domainConstraint>
-        <app:rangeConstraint>http://purl.org/spar/c4o/GlobalCitationCount</app:rangeConstraint>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#hasGeographicLocation">
-        <app:rangeConstraint>http://vivoweb.org/ontology/core#GeographicLocation</app:rangeConstraint>
-        <app:domainConstraint>http://purl.org/NET/c4dm/event.owl#Event</app:domainConstraint>
-        <app:domainConstraint>http://xmlns.com/foaf/0.1/Organization</app:domainConstraint>
-        <app:domainConstraint>http://vivoweb.org/ontology/core#Address</app:domainConstraint>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/ontology/bibo/status">
-        <app:domainConstraint>http://purl.org/ontology/bibo/DocumentStatus</app:domainConstraint>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#hasResearchArea">
-        <app:domainConstraint>http://xmlns.com/foaf/0.1/Person</app:domainConstraint>
-        <app:rangeConstraint>http://www.w3.org/2004/02/skos/core#Concept</app:rangeConstraint>
-    </rdf:Description>
+ 
 </rdf:RDF>
 
 

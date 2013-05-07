@@ -21,7 +21,74 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+       <rdf:Description rdf:about="http://vivoweb.org/ontology/core#publisher">
+        <app:domainConstraint>http://purl.org/ontology/bibo/Document</app:domainConstraint>
+        <app:rangeConstraint>http://vivoweb.org/ontology/core#Publisher</app:rangeConstraint>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#hasSubjectArea">
+        <app:domainConstraint>http://vivoweb.org/ontology/core#EventSeries</app:domainConstraint>
+        <app:domainConstraint>http://vivoweb.org/ontology/core#Agreement</app:domainConstraint>
+        <app:domainConstraint>http://vivoweb.org/ontology/core#IssuedCredential</app:domainConstraint>
+        <app:domainConstraint>http://purl.org/NET/c4dm/event.owl#Event</app:domainConstraint>
+        <app:domainConstraint>http://vivoweb.org/ontology/core#Credential</app:domainConstraint>
+        <app:domainConstraint>http://vivoweb.org/ontology/core#InformationResource</app:domainConstraint>
+        <app:domainConstraint>http://vivoweb.org/ontology/core#hasSubjectArea</app:domainConstraint>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#related">
+        <app:domainConstraint>http://www.w3.org/2004/02/skos/core#Concept</app:domainConstraint>
+        <app:rangeConstraint>http://www.w3.org/2004/02/skos/core#Concept</app:rangeConstraint>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002350">
+        <app:rangeConstraint>http://xmlns.com/foaf/0.1/Group</app:rangeConstraint>
+        <app:domainConstraint>http://xmlns.com/foaf/0.1/Agent</app:domainConstraint>
+        <app:rangeConstraint>http://xmlns.com/foaf/0.1/Organization</app:rangeConstraint>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#hasPublicationVenue">
+        <app:domainConstraint>http://vivoweb.org/ontology/core#BlogPosting</app:domainConstraint>
+        <app:rangeConstraint>http://purl.org/ontology/bibo/Journal</app:rangeConstraint>
+        <app:rangeConstraint>http://vivoweb.org/ontology/core#Blog</app:rangeConstraint>
+        <app:domainConstraint>http://vivoweb.org/ontology/core#hasPublicationVenue</app:domainConstraint>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002351">
+        <app:domainConstraint>http://xmlns.com/foaf/0.1/Organization</app:domainConstraint>
+        <app:rangeConstraint>http://xmlns.com/foaf/0.1/Agent</app:rangeConstraint>
+        <app:domainConstraint>http://xmlns.com/foaf/0.1/Group</app:domainConstraint>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002234">
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#broader">
+        <app:rangeConstraint>http://www.w3.org/2004/02/skos/core#Concept</app:rangeConstraint>
+        <app:domainConstraint>http://www.w3.org/2004/02/skos/core#Concept</app:domainConstraint>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002353">
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#narrower">
+        <app:rangeConstraint>http://www.w3.org/2004/02/skos/core#Concept</app:rangeConstraint>
+        <app:domainConstraint>http://www.w3.org/2004/02/skos/core#Concept</app:domainConstraint>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#publisherOf">
+        <app:rangeConstraint>http://purl.org/ontology/bibo/Document</app:rangeConstraint>
+        <app:domainConstraint>http://vivoweb.org/ontology/core#Publisher</app:domainConstraint>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/spar/c4o/hasGlobalCitationFrequency">
+        <app:domainConstraint>http://purl.org/ontology/bibo/Document</app:domainConstraint>
+        <app:rangeConstraint>http://purl.org/spar/c4o/GlobalCitationCount</app:rangeConstraint>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#hasGeographicLocation">
+        <app:rangeConstraint>http://vivoweb.org/ontology/core#GeographicLocation</app:rangeConstraint>
+        <app:domainConstraint>http://purl.org/NET/c4dm/event.owl#Event</app:domainConstraint>
+        <app:domainConstraint>http://xmlns.com/foaf/0.1/Organization</app:domainConstraint>
+        <app:domainConstraint>http://vivoweb.org/ontology/core#Address</app:domainConstraint>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/ontology/bibo/status">
+        <app:domainConstraint>http://purl.org/ontology/bibo/DocumentStatus</app:domainConstraint>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#hasResearchArea">
+        <app:domainConstraint>http://xmlns.com/foaf/0.1/Person</app:domainConstraint>
+        <app:rangeConstraint>http://www.w3.org/2004/02/skos/core#Concept</app:rangeConstraint>
+    </rdf:Description>
 
 
     <!-- 
@@ -124,12 +191,6 @@
     
 
 
-  
-
-
-    
-
-
     <!-- http://vivoweb.org/ontology/core#expirationDate -->
 
     <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#expirationDate"/>
@@ -144,19 +205,36 @@
 
     <!-- http://vivoweb.org/ontology/core#geographicFocus -->
 
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#geographicFocus"/>
+    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#geographicFocus">
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.org/NET/c4dm/event.owl#Event</app:domainConstraint>
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vivoweb.org/ontology/core#Agreement</app:domainConstraint>
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vivoweb.org/ontology/core#EventSeries</app:domainConstraint>
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vivoweb.org/ontology/core#InformationResource</app:domainConstraint>
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vivoweb.org/ontology/core#Project</app:domainConstraint>
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://xmlns.com/foaf/0.1/Person</app:domainConstraint>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://vivoweb.org/ontology/core#geographicFocusOf -->
 
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#geographicFocusOf"/>
+    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#geographicFocusOf">
+        <app:rangeConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.org/NET/c4dm/event.owl#Event</app:rangeConstraint>
+        <app:rangeConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vivoweb.org/ontology/core#Agreement</app:rangeConstraint>
+        <app:rangeConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vivoweb.org/ontology/core#EventSeries</app:rangeConstraint>
+        <app:rangeConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vivoweb.org/ontology/core#InformationResource</app:rangeConstraint>
+        <app:rangeConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vivoweb.org/ontology/core#Project</app:rangeConstraint>
+        <app:rangeConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://xmlns.com/foaf/0.1/Person</app:rangeConstraint>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://vivoweb.org/ontology/core#geographicallyWithin -->
 
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#geographicallyWithin"/>
+    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#geographicallyWithin">
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vivoweb.org/ontology/core#County</app:domainConstraint>
+        <app:rangeConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vivoweb.org/ontology/core#StateOrProvince</app:rangeConstraint>
+    </owl:ObjectProperty>
     
 
 
@@ -293,7 +371,11 @@
 
     <!-- http://vivoweb.org/ontology/core#abbreviation -->
 
-    <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#abbreviation"/>
+    <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#abbreviation">
+        <app:domainConstraint>http://purl.org/ontology/bibo/Conference</app:domainConstraint>
+        <app:domainConstraint>http://purl.org/ontology/bibo/Journal</app:domainConstraint>
+        <app:domainConstraint>http://purl.org/ontology/bibo/Thesis</app:domainConstraint>
+    </owl:DatatypeProperty>
     
 
 
@@ -343,14 +425,14 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000595">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#hasFundingVehicle"/>
-                <owl:allValuesFrom rdf:resource="http://vivoweb.org/ontology/core#Grant"/>
+                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#description"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#description"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#hasFundingVehicle"/>
+                <owl:allValuesFrom rdf:resource="http://vivoweb.org/ontology/core#Grant"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -368,8 +450,20 @@
     <owl:Class rdf:about="http://purl.org/NET/c4dm/event.owl#Event">
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#hasGeographicLocation"/>
+                <owl:allValuesFrom rdf:resource="http://vivoweb.org/ontology/core#GeographicLocation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#geographicFocus"/>
                 <owl:allValuesFrom rdf:resource="http://vivoweb.org/ontology/core#GeographicRegion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#dateTimeInterval"/>
+                <owl:allValuesFrom rdf:resource="http://vivoweb.org/ontology/core#DateTimeInterval"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -384,18 +478,6 @@
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#dateTimeInterval"/>
-                <owl:allValuesFrom rdf:resource="http://vivoweb.org/ontology/core#DateTimeInterval"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#hasGeographicLocation"/>
-                <owl:allValuesFrom rdf:resource="http://vivoweb.org/ontology/core#GeographicLocation"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -405,14 +487,14 @@
     <owl:Class rdf:about="http://purl.org/ontology/bibo/AcademicArticle">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#hasPublicationVenue"/>
-                <owl:allValuesFrom rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/eanucc13"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/eanucc13"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#hasPublicationVenue"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/ontology/bibo/Journal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -424,13 +506,13 @@
     <owl:Class rdf:about="http://purl.org/ontology/bibo/Article">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/doi"/>
+                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/pageStart"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/pageStart"/>
+                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/doi"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -449,7 +531,19 @@
     <owl:Class rdf:about="http://purl.org/ontology/bibo/Book">
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#placeOfPublication"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/edition"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/numPages"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -465,18 +559,6 @@
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#placeOfPublication"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/numPages"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -486,7 +568,7 @@
     <owl:Class rdf:about="http://purl.org/ontology/bibo/BookSection">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/pageEnd"/>
+                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/pageStart"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -498,7 +580,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/pageStart"/>
+                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/pageEnd"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -550,7 +632,7 @@
     <owl:Class rdf:about="http://purl.org/ontology/bibo/Document">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/abstract"/>
+                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/oclcnum"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -562,20 +644,20 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/oclcnum"/>
+                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/abstract"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/spar/c4o/hasGlobalCitationFrequency"/>
-                <owl:allValuesFrom rdf:resource="http://purl.org/spar/c4o/GlobalCitationCount"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                 <owl:allValuesFrom rdf:resource="http://purl.org/ontology/bibo/DocumentPart"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/spar/c4o/hasGlobalCitationFrequency"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/spar/c4o/GlobalCitationCount"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -585,12 +667,6 @@
     <!-- http://purl.org/ontology/bibo/DocumentPart -->
 
     <owl:Class rdf:about="http://purl.org/ontology/bibo/DocumentPart">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#placeOfPublication"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -603,6 +679,12 @@
                 <owl:allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#placeOfPublication"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -612,8 +694,8 @@
     <owl:Class rdf:about="http://purl.org/ontology/bibo/EditedBook">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#publisher"/>
-                <owl:allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#placeOfPublication"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -624,8 +706,8 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#placeOfPublication"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#publisher"/>
+                <owl:allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -669,6 +751,12 @@
     <owl:Class rdf:about="http://purl.org/ontology/bibo/Periodical">
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/issn"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/eissn"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
@@ -677,12 +765,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#publisher"/>
                 <owl:allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/issn"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -782,6 +864,12 @@
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#AwardReceipt">
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#dateTimeInterval"/>
+                <owl:allValuesFrom rdf:resource="http://vivoweb.org/ontology/core#DateTimeInterval"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#dateTimeValue"/>
                 <owl:allValuesFrom rdf:resource="http://vivoweb.org/ontology/core#DateTimeValue"/>
             </owl:Restriction>
@@ -790,12 +878,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#description"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#dateTimeInterval"/>
-                <owl:allValuesFrom rdf:resource="http://vivoweb.org/ontology/core#DateTimeInterval"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -926,19 +1008,6 @@
     <!-- http://vivoweb.org/ontology/core#EventSeries -->
 
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#EventSeries">
-
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#hasSubjectArea"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#dateTimeInterval"/>
-                <owl:allValuesFrom rdf:resource="http://vivoweb.org/ontology/core#DateTimeInterval"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#geographicFocus"/>
@@ -947,8 +1016,20 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#hasSubjectArea"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#description"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#dateTimeInterval"/>
+                <owl:allValuesFrom rdf:resource="http://vivoweb.org/ontology/core#DateTimeInterval"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -998,14 +1079,14 @@
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#Grant">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#grantAwardedBy"/>
-                <owl:allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/abstract"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/abstract"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#grantAwardedBy"/>
+                <owl:allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1017,8 +1098,8 @@
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#IssuedCredential">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#dateIssued"/>
-                <owl:allValuesFrom rdf:resource="http://vivoweb.org/ontology/core#DateTimeValue"/>
+                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#hasSubjectArea"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1029,14 +1110,14 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#expirationDate"/>
+                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#dateIssued"/>
                 <owl:allValuesFrom rdf:resource="http://vivoweb.org/ontology/core#DateTimeValue"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#hasSubjectArea"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#expirationDate"/>
+                <owl:allValuesFrom rdf:resource="http://vivoweb.org/ontology/core#DateTimeValue"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1093,14 +1174,14 @@
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#Position">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#rank"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#dateTimeInterval"/>
+                <owl:allValuesFrom rdf:resource="http://vivoweb.org/ontology/core#DateTimeInterval"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#dateTimeInterval"/>
-                <owl:allValuesFrom rdf:resource="http://vivoweb.org/ontology/core#DateTimeInterval"/>
+                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#rank"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1116,8 +1197,6 @@
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-
-
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#dateTimeInterval"/>
@@ -1197,8 +1276,8 @@
     <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#dateTimeInterval"/>
-                <owl:allValuesFrom rdf:resource="http://vivoweb.org/ontology/core#DateTimeInterval"/>
+                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#hasGeographicLocation"/>
+                <owl:allValuesFrom rdf:resource="http://vivoweb.org/ontology/core#GeographicLocation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1209,8 +1288,8 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#hasGeographicLocation"/>
-                <owl:allValuesFrom rdf:resource="http://vivoweb.org/ontology/core#GeographicLocation"/>
+                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#dateTimeInterval"/>
+                <owl:allValuesFrom rdf:resource="http://vivoweb.org/ontology/core#DateTimeInterval"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1232,7 +1311,6 @@
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#geographicFocus"/>
