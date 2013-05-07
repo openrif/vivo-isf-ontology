@@ -26,8 +26,6 @@
     <owl:AnnotationProperty rdf:about="http://eagle-i.org/ont/app/1.0/domainConstraint"/>
     
 
-    
-
 
     <!-- http://eagle-i.org/ont/app/1.0/rangeConstraint -->
 
@@ -43,7 +41,63 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
- 
+    <rdf:Description rdf:about="http://purl.org/ontology/bibo/eanucc13">
+        <app:domainConstraint>http://purl.org/ontology/bibo/AcademicArticle</app:domainConstraint>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/ontology/bibo/numPages">
+        <app:domainConstraint>http://purl.org/ontology/bibo/Book</app:domainConstraint>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#rank">
+        <app:domainConstraint>http://vivoweb.org/ontology/core#URLLink</app:domainConstraint>
+        <app:domainConstraint>http://vivoweb.org/ontology/core#Position</app:domainConstraint>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/ontology/bibo/pageEnd">
+        <app:domainConstraint>http://purl.org/ontology/bibo/Article</app:domainConstraint>
+        <app:domainConstraint>http://purl.org/ontology/bibo/BookSection</app:domainConstraint>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/ontology/bibo/lccn">
+        <app:domainConstraint>http://purl.org/ontology/bibo/Book</app:domainConstraint>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#placeOfPublication">
+        <app:domainConstraint>http://vivoweb.org/ontology/core#WorkingPaper</app:domainConstraint>
+        <app:domainConstraint>http://vivoweb.org/ontology/core#Catalog</app:domainConstraint>
+        <app:domainConstraint>http://purl.org/ontology/bibo/Book</app:domainConstraint>
+        <app:domainConstraint>http://purl.org/ontology/bibo/DocumentPart</app:domainConstraint>
+        <app:domainConstraint>http://purl.org/ontology/bibo/EditedBook</app:domainConstraint>
+        <app:domainConstraint>http://purl.org/ontology/bibo/Thesis</app:domainConstraint>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/ontology/bibo/oclcnum">
+        <app:domainConstraint>http://purl.org/ontology/bibo/Collection</app:domainConstraint>
+        <app:domainConstraint>http://purl.org/ontology/bibo/Document</app:domainConstraint>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#supplementalInformation">
+        <app:domainConstraint>http://vivoweb.org/ontology/core#EducationalTraining</app:domainConstraint>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/ontology/bibo/doi">
+        <app:domainConstraint>http://purl.org/ontology/bibo/Article</app:domainConstraint>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/ontology/bibo/edition">
+        <app:domainConstraint>http://purl.org/ontology/bibo/EditedBook</app:domainConstraint>
+        <app:domainConstraint>http://purl.org/ontology/bibo/BookSection</app:domainConstraint>
+        <app:domainConstraint>http://purl.org/ontology/bibo/Book</app:domainConstraint>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/ontology/bibo/eissn">
+        <app:domainConstraint>http://purl.org/ontology/bibo/Periodical</app:domainConstraint>
+        <app:domainConstraint>http://purl.org/ontology/bibo/Series</app:domainConstraint>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/ontology/bibo/pageStart">
+        <app:domainConstraint>http://purl.org/ontology/bibo/Article</app:domainConstraint>
+        <app:domainConstraint>http://purl.org/ontology/bibo/BookSection</app:domainConstraint>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/ontology/bibo/issn">
+        <app:domainConstraint>http://purl.org/ontology/bibo/Series</app:domainConstraint>
+        <app:domainConstraint>http://purl.org/ontology/bibo/Periodical</app:domainConstraint>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#freetextKeyword">
+        <app:domainConstraint>http://vivoweb.org/ontology/core#InformationResource</app:domainConstraint>
+        <app:domainConstraint>http://xmlns.com/foaf/0.1/Agent</app:domainConstraint>
+        <app:domainConstraint>http://vivoweb.org/ontology/core#Equipment</app:domainConstraint>
+    </rdf:Description>
 </rdf:RDF>
 
 
