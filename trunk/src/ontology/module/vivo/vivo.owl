@@ -558,25 +558,6 @@
     
 
 
-    <!-- http://vivoweb.org/ontology/core#AdvisingRelationship -->
-
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#AdvisingRelationship">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#hasSubjectArea"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#dateTimeInterval"/>
-                <owl:allValuesFrom rdf:resource="http://vivoweb.org/ontology/core#DateTimeInterval"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </rdf:Description>
-    
-
-
     <!-- http://vivoweb.org/ontology/core#AttendeeRole -->
 
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#AttendeeRole">
@@ -597,30 +578,6 @@
 
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#AwardReceipt">
         <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Relationship"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#awardConferredBy"/>
-                <owl:allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#dateTimeInterval"/>
-                <owl:allValuesFrom rdf:resource="http://vivoweb.org/ontology/core#DateTimeInterval"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#description"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#dateTimeValue"/>
-                <owl:allValuesFrom rdf:resource="http://vivoweb.org/ontology/core#DateTimeValue"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </rdf:Description>
     
 
@@ -637,32 +594,6 @@
 
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#Campus">
         <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#GeographicLocation"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#Committee -->
-
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#Committee">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#hasCurrentMember"/>
-                <owl:allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </rdf:Description>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#Consortium -->
-
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#Consortium">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#hasCurrentMember"/>
-                <owl:allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </rdf:Description>
     
 
@@ -747,32 +678,6 @@
     
 
 
-    <!-- http://vivoweb.org/ontology/core#FacultyAdministrativePosition -->
-
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#FacultyAdministrativePosition">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#positionInOrganization"/>
-                <owl:allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </rdf:Description>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#FacultyPosition -->
-
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#FacultyPosition">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#positionInOrganization"/>
-                <owl:allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </rdf:Description>
-    
-
-
     <!-- http://vivoweb.org/ontology/core#GeographicRegion -->
 
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#GeographicRegion">
@@ -785,18 +690,6 @@
 
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#Grant">
         <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Relationship"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/abstract"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#grantAwardedBy"/>
-                <owl:allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </rdf:Description>
     
 
@@ -813,43 +706,6 @@
 
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#IssuedCredential">
         <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Relationship"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#dateIssued"/>
-                <owl:allValuesFrom rdf:resource="http://vivoweb.org/ontology/core#DateTimeValue"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#hasSubjectArea"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#description"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#expirationDate"/>
-                <owl:allValuesFrom rdf:resource="http://vivoweb.org/ontology/core#DateTimeValue"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </rdf:Description>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#LibrarianPosition -->
-
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#LibrarianPosition">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#positionInOrganization"/>
-                <owl:allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </rdf:Description>
     
 
@@ -870,32 +726,6 @@
     
 
 
-    <!-- http://vivoweb.org/ontology/core#NonAcademicPosition -->
-
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#NonAcademicPosition">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#positionInOrganization"/>
-                <owl:allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </rdf:Description>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#NonFacultyAcademicPosition -->
-
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#NonFacultyAcademicPosition">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#positionInOrganization"/>
-                <owl:allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </rdf:Description>
-    
-
-
     <!-- http://vivoweb.org/ontology/core#OrganizingProcess -->
 
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#OrganizingProcess">
@@ -908,18 +738,6 @@
 
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#Position">
         <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Relationship"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#rank"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#dateTimeInterval"/>
-                <owl:allValuesFrom rdf:resource="http://vivoweb.org/ontology/core#DateTimeInterval"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </rdf:Description>
     
 
@@ -952,19 +770,6 @@
 
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#Relationship">
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#Team -->
-
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#Team">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#hasCurrentMember"/>
-                <owl:allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </rdf:Description>
     
 
@@ -1013,66 +818,10 @@
 
     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Agent">
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#freetextKeyword"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </rdf:Description>
-    
-
-
-    <!-- http://xmlns.com/foaf/0.1/Organization -->
-
-    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#dateTimeInterval"/>
-                <owl:allValuesFrom rdf:resource="http://vivoweb.org/ontology/core#DateTimeInterval"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#hasGeographicLocation"/>
-                <owl:allValuesFrom rdf:resource="http://vivoweb.org/ontology/core#GeographicLocation"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#hasCurrentMember"/>
-                <owl:allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </rdf:Description>
-    
-
-
-    <!-- http://xmlns.com/foaf/0.1/Person -->
-
-    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#currentMemberOf"/>
-                <owl:allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#hasResearchArea"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#geographicFocus"/>
-                <owl:allValuesFrom rdf:resource="http://vivoweb.org/ontology/core#GeographicRegion"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </rdf:Description>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.4.2018) http://owlapi.sourceforge.net -->
 

@@ -36,12 +36,12 @@
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2008/05/skos#editorialNote"/>
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2008/05/skos#example"/>
-    <owl:AnnotationProperty rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#exampleAnnot"/>
     <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/reviewOf">
         <rdfs:label xml:lang="en-us">review of</rdfs:label>
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The bibo:reviewOf public description was found here: http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html .  As of 26 May 2010, bibo:reviewOf is used with the class Review, but core:reviewIn doesn&apos;t seem to be being used.</vitro:descriptionAnnot>
         <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Review"/>
     </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#exampleAnnot"/>
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
     <owl:AnnotationProperty rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#descriptionAnnot"/>
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2006/12/owl2-xml#term_status"/>
@@ -51,8 +51,8 @@
         <rdfs:label xml:lang="en-us">name suffix</rdfs:label>
         <vitro:exampleAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jr.; III;; M.D.</vitro:exampleAnnot>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <swvs:term_status>stable</swvs:term_status>
         <rdfs:comment xml:lang="en">The suffix of a name</rdfs:comment>
+        <swvs:term_status>stable</swvs:term_status>
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     </owl:AnnotationProperty>
     
@@ -124,8 +124,8 @@
         <rdfs:label xml:lang="en-us">annotates</rdfs:label>
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The public description source is: http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html.</vitro:descriptionAnnot>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <swvs:term_status>stable</swvs:term_status>
         <rdfs:comment xml:lang="en">Critical or explanatory note for a Document.</rdfs:comment>
+        <swvs:term_status>stable</swvs:term_status>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
         <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Note"/>
     </owl:ObjectProperty>
@@ -136,8 +136,8 @@
 
     <owl:ObjectProperty rdf:about="http://purl.org/ontology/bibo/citedBy">
         <rdfs:label xml:lang="en-us">cited by</rdfs:label>
-        <rdfs:range rdf:resource="http://purl.org/ontology/bibo/Document"/>
         <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/bibo/Document"/>
     </owl:ObjectProperty>
     
 
@@ -146,8 +146,8 @@
 
     <owl:ObjectProperty rdf:about="http://purl.org/ontology/bibo/cites">
         <rdfs:label xml:lang="en-us">cites</rdfs:label>
-        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
         <rdfs:range rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
         <owl:inverseOf rdf:resource="http://purl.org/ontology/bibo/citedBy"/>
     </owl:ObjectProperty>
     
@@ -159,8 +159,8 @@
         <rdfs:label xml:lang="en-us">court</rdfs:label>
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Public description take from: http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html.  Bibo considers this property &quot;unstable&quot;.</vitro:descriptionAnnot>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <swvs:term_status>unstable</swvs:term_status>
         <rdfs:comment xml:lang="en">A court associated with a legal document; for example, that which issues a decision.</rdfs:comment>
+        <swvs:term_status>unstable</swvs:term_status>
         <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/LegalDocument"/>
         <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
     </owl:ObjectProperty>
@@ -173,9 +173,9 @@
         <rdfs:label xml:lang="en-us">related degree</rdfs:label>
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The source of the public description and this info is found here:  http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html.  Bibo considers this term &quot;unstable&quot;.  The bibo editorial note is: &quot;We are not defining, using an enumeration, the range of the bibo:degree to the defined list of bibo:ThesisDegree. We won&apos;t do it because we want people to be able to define new degress if needed by some special usecases. Creating such an enumeration would restrict this to happen.&quot;</vitro:descriptionAnnot>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <swvs:term_status>unstable</swvs:term_status>
         <rdfs:comment xml:lang="en">The thesis degree.</rdfs:comment>
         <skos:editorialNote xml:lang="en">We are not defining, using an enumeration, the range of the bibo:degree to the defined list of bibo:ThesisDegree. We won&apos;t do it because we want people to be able to define new degress if needed by some special usecases. Creating such an enumeration would restrict this to happen.</skos:editorialNote>
-        <swvs:term_status>unstable</swvs:term_status>
         <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Thesis"/>
     </owl:ObjectProperty>
     
@@ -187,8 +187,8 @@
         <rdfs:label xml:lang="en-us">director</rdfs:label>
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Definition take from this site: http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html .</vitro:descriptionAnnot>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <rdfs:comment xml:lang="en">A Film director.</rdfs:comment>
         <swvs:term_status>stable</swvs:term_status>
+        <rdfs:comment xml:lang="en">A Film director.</rdfs:comment>
         <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
     </owl:ObjectProperty>
     
@@ -199,8 +199,8 @@
     <owl:ObjectProperty rdf:about="http://purl.org/ontology/bibo/interviewee">
         <rdfs:label xml:lang="en-us">interviewee</rdfs:label>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <swvs:term_status>stable</swvs:term_status>
         <rdfs:comment xml:lang="en">An agent that is interviewed by another agent.</rdfs:comment>
+        <swvs:term_status>stable</swvs:term_status>
         <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
     </owl:ObjectProperty>
     
@@ -211,8 +211,8 @@
     <owl:ObjectProperty rdf:about="http://purl.org/ontology/bibo/interviewer">
         <rdfs:label xml:lang="en-us">interviewer</rdfs:label>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <swvs:term_status>stable</swvs:term_status>
         <rdfs:comment xml:lang="en">An agent that interview another agent.</rdfs:comment>
+        <swvs:term_status>stable</swvs:term_status>
         <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
     </owl:ObjectProperty>
     
@@ -224,8 +224,8 @@
         <rdfs:label xml:lang="en-us">issuer</rdfs:label>
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An entity responsible for issuing often informally published documents such as press releases, reports, etc. This term is classified as unstable by bibo.</vitro:descriptionAnnot>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <rdfs:comment>An entity responsible for issuing often informally published documents such as press releases, reports, etc.</rdfs:comment>
         <swvs:term_status>unstable</swvs:term_status>
+        <rdfs:comment>An entity responsible for issuing often informally published documents such as press releases, reports, etc.</rdfs:comment>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/publisher"/>
         <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
     </owl:ObjectProperty>
@@ -250,8 +250,8 @@
         <rdfs:label xml:lang="en-us">related documents</rdfs:label>
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Public Description from source: http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html .  Bibo considers the bibo:presents and the bibo:presentedAt unstable terms.  It also indicates that bibo:presents is a sub-property of event:product.</vitro:descriptionAnnot>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <rdfs:comment xml:lang="en">Relates an event to associated documents; for example, conference to a paper.</rdfs:comment>
         <swvs:term_status>unstable</swvs:term_status>
+        <rdfs:comment xml:lang="en">Relates an event to associated documents; for example, conference to a paper.</rdfs:comment>
         <rdfs:domain rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
         <rdfs:range rdf:resource="http://purl.org/ontology/bibo/Document"/>
     </owl:ObjectProperty>
@@ -263,8 +263,8 @@
     <owl:ObjectProperty rdf:about="http://purl.org/ontology/bibo/recipient">
         <rdfs:label xml:lang="en-us">recipient</rdfs:label>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <swvs:term_status>stable</swvs:term_status>
         <rdfs:comment xml:lang="en">An agent that receives a communication document.</rdfs:comment>
+        <swvs:term_status>stable</swvs:term_status>
         <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
     </owl:ObjectProperty>
     
@@ -275,8 +275,8 @@
     <owl:ObjectProperty rdf:about="http://purl.org/ontology/bibo/reproducedIn">
         <rdfs:label xml:lang="en-us">reproduced in</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-        <rdfs:range rdf:resource="http://purl.org/ontology/bibo/Document"/>
         <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/bibo/Document"/>
     </owl:ObjectProperty>
     
 
@@ -323,8 +323,8 @@
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Public description is from comments of this object property in bibo ontology located here: http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html</vitro:descriptionAnnot>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
         <rdfs:comment xml:lang="en">A legal decision on appeal that takes action on a case (affirming it, reversing it, etc.).</rdfs:comment>
-        <rdfs:range rdf:resource="http://purl.org/ontology/bibo/LegalDecision"/>
         <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/LegalDecision"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/bibo/LegalDecision"/>
     </owl:ObjectProperty>
     
 
@@ -335,8 +335,8 @@
         <rdfs:label xml:lang="en-us">transcript of</rdfs:label>
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The bibo:transcriptOf public description was found here:  http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html .  Bibo considers this term unstable.</vitro:descriptionAnnot>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <rdfs:comment xml:lang="en">Relates a document to some transcribed original.</rdfs:comment>
         <swvs:term_status>unstable</swvs:term_status>
+        <rdfs:comment xml:lang="en">Relates a document to some transcribed original.</rdfs:comment>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
         <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
     </owl:ObjectProperty>
@@ -349,8 +349,8 @@
         <rdfs:label xml:lang="en-us">translation of</rdfs:label>
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Examples shows a book has French language version. Public description source: http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html .</vitro:descriptionAnnot>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <rdfs:comment xml:lang="en">Relates a translated document to the original document.</rdfs:comment>
         <swvs:term_status>stable</swvs:term_status>
+        <rdfs:comment xml:lang="en">Relates a translated document to the original document.</rdfs:comment>
         <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#hasTranslation"/>
     </owl:ObjectProperty>
     
@@ -437,8 +437,8 @@
         <rdfs:label xml:lang="en-us">abstract</rdfs:label>
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html</vitro:descriptionAnnot>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/dc/terms/</rdfs:isDefinedBy>
-        <rdfs:comment>A summary of the resource.</rdfs:comment>
         <swvs:term_status>stable</swvs:term_status>
+        <rdfs:comment>A summary of the resource.</rdfs:comment>
         <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#description"/>
     </owl:DatatypeProperty>
     
@@ -452,8 +452,8 @@
         <vitro:exampleAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">020530902X</vitro:exampleAnnot>
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amazon standard identification number. Source: http://en.wikipedia.org/wiki/Amazon_Standard_Identification_Number.</vitro:descriptionAnnot>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <rdfs:comment xml:lang="en">Amazon Standard Identification Number</rdfs:comment>
         <swvs:term_status>stable</swvs:term_status>
+        <rdfs:comment xml:lang="en">Amazon Standard Identification Number</rdfs:comment>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/identifier"/>
     </owl:DatatypeProperty>
     
@@ -465,8 +465,8 @@
         <rdfs:label xml:lang="en-us">chapter</rdfs:label>
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Title of the chapter (this individual) currently should be entered in the individual name (rdfs:label). Title of the book belongs on a separate Book individual related to the chapter via the core:partOf property (or its child property bibo:reproducedIn).  The core:title field is deprecated and should no longer be used as of version 1.1 -- we will want to map rdfs:label to dc:title for query or linked data requests in the future</vitro:descriptionAnnot>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <rdfs:comment xml:lang="en">An chapter number</rdfs:comment>
         <swvs:term_status>unstable</swvs:term_status>
+        <rdfs:comment xml:lang="en">An chapter number</rdfs:comment>
         <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/BookSection"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/locator"/>
     </owl:DatatypeProperty>
@@ -480,8 +480,8 @@
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CODEN became particularly common in the scientific community as a citation system for periodicals cited in technical- as well in chemistry-related publications and as a search tool in many bibliographic catalogues.
 Definition and description came from Wikipedia here: http://en.wikipedia.org/wiki/CODEN </vitro:descriptionAnnot>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <rdfs:comment xml:lang="en">An identifier of serials, still in use by libraries, but replaced by ISSN for any new work</rdfs:comment>
         <swvs:term_status>stable</swvs:term_status>
+        <rdfs:comment xml:lang="en">An identifier of serials, still in use by libraries, but replaced by ISSN for any new work</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -491,8 +491,8 @@ Definition and description came from Wikipedia here: http://en.wikipedia.org/wik
     <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/doi">
         <rdfs:label xml:lang="en-us">Digital Object Identifier (DOI)</rdfs:label>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <swvs:term_status>stable</swvs:term_status>
         <rdfs:comment xml:lang="en">Digital Object Identifier</rdfs:comment>
+        <swvs:term_status>stable</swvs:term_status>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/identifier"/>
     </owl:DatatypeProperty>
     
@@ -505,8 +505,8 @@ Definition and description came from Wikipedia here: http://en.wikipedia.org/wik
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Definition source: http://en.wikipedia.org/wiki/European_Article_Numbering-Uniform_Code_Council.
 The Uniform Code Council (UCC) was the Numbering Organization in the USA to administer and manage the EAN.UCC System. In 2005 the UCC changed its name to GS1 US.</vitro:descriptionAnnot>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <rdfs:comment xml:lang="en">European Article Number/Uniform Commercier Code 13</rdfs:comment>
         <swvs:term_status>stable</swvs:term_status>
+        <rdfs:comment xml:lang="en">European Article Number/Uniform Commercier Code 13</rdfs:comment>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/identifier"/>
     </owl:DatatypeProperty>
     
@@ -517,8 +517,8 @@ The Uniform Code Council (UCC) was the Numbering Organization in the USA to admi
     <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/edition">
         <rdfs:label xml:lang="en-us">edition</rdfs:label>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <rdfs:comment xml:lang="en">The name defining a special edition of a document. Normally its a literal value composed of a version number and words.</rdfs:comment>
         <swvs:term_status>stable</swvs:term_status>
+        <rdfs:comment xml:lang="en">The name defining a special edition of a document. Normally its a literal value composed of a version number and words.</rdfs:comment>
         <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
     </owl:DatatypeProperty>
     
@@ -543,8 +543,8 @@ The Uniform Code Council (UCC) was the Numbering Organization in the USA to admi
         <rdfs:label xml:lang="en-us">gtin14</rdfs:label>
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Global_Trade_Item_Number.</vitro:descriptionAnnot>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <swvs:term_status>stable</swvs:term_status>
         <rdfs:comment xml:lang="en">Global Trade Item Number 14</rdfs:comment>
+        <swvs:term_status>stable</swvs:term_status>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/identifier"/>
     </owl:DatatypeProperty>
     
@@ -597,8 +597,8 @@ The Uniform Code Council (UCC) was the Numbering Organization in the USA to admi
         <rdfs:label xml:lang="en-us">International Standard Serial Number (ISSN)</rdfs:label>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">source: http://en.wikipedia.org/wiki/Issn</vitro:descriptionAnnot>
-        <swvs:term_status>stable</swvs:term_status>
         <rdfs:comment xml:lang="en">International Standard Serial Number</rdfs:comment>
+        <swvs:term_status>stable</swvs:term_status>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/identifier"/>
     </owl:DatatypeProperty>
     
@@ -621,8 +621,8 @@ The Uniform Code Council (UCC) was the Numbering Organization in the USA to admi
         <rdfs:label xml:lang="en-us">Library of Congress Control Number (LCCN)</rdfs:label>
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Source: http://en.wikipedia.org/wiki/Library_of_Congress_Control_Number.</vitro:descriptionAnnot>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <swvs:term_status>stable</swvs:term_status>
         <rdfs:comment xml:lang="en">Library of Congress Control Number</rdfs:comment>
+        <swvs:term_status>stable</swvs:term_status>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/identifier"/>
     </owl:DatatypeProperty>
     
@@ -634,8 +634,8 @@ The Uniform Code Council (UCC) was the Numbering Organization in the USA to admi
         <rdfs:label xml:lang="en-us">locator</rdfs:label>
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition from: http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html</vitro:descriptionAnnot>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <swvs:term_status>stable</swvs:term_status>
         <rdfs:comment xml:lang="en">A description (often numeric) that locates an item within a containing document or collection.</rdfs:comment>
+        <swvs:term_status>stable</swvs:term_status>
         <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
     </owl:DatatypeProperty>
     
@@ -670,8 +670,8 @@ The Uniform Code Council (UCC) was the Numbering Organization in the USA to admi
 
 bibo has the domain of this property set to the union of Collection and Document.</vitro:descriptionAnnot>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <swvs:term_status>stable</swvs:term_status>
         <rdfs:comment xml:lang="en">OCLC Identifier</rdfs:comment>
+        <swvs:term_status>stable</swvs:term_status>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/identifier"/>
     </owl:DatatypeProperty>
     
@@ -683,8 +683,8 @@ bibo has the domain of this property set to the union of Collection and Document
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:label xml:lang="en-us">end page</rdfs:label>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <swvs:term_status>stable</swvs:term_status>
         <rdfs:comment xml:lang="en">Ending page number within a continuous page range.</rdfs:comment>
+        <swvs:term_status>stable</swvs:term_status>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/locator"/>
     </owl:DatatypeProperty>
     
@@ -696,8 +696,8 @@ bibo has the domain of this property set to the union of Collection and Document
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:label xml:lang="en-us">start page</rdfs:label>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <swvs:term_status>stable</swvs:term_status>
         <rdfs:comment xml:lang="en">Starting page number within a continuous page range.</rdfs:comment>
+        <swvs:term_status>stable</swvs:term_status>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/locator"/>
     </owl:DatatypeProperty>
     
@@ -709,8 +709,8 @@ bibo has the domain of this property set to the union of Collection and Document
         <rdfs:label xml:lang="en-us">PubMed Identifier</rdfs:label>
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The PubMed ID (PMID) identifies a citation record (rather than full-text) in the PubMed database. It is not evidence of compliance with the NIH Public Access Policy, because it does not identify a full-text submission of any kind.</vitro:descriptionAnnot>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <swvs:term_status>stable</swvs:term_status>
         <rdfs:comment xml:lang="en">PubMed Identifier</rdfs:comment>
+        <swvs:term_status>stable</swvs:term_status>
         <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/identifier"/>
     </owl:DatatypeProperty>
@@ -725,8 +725,8 @@ bibo has the domain of this property set to the union of Collection and Document
         <vitro:exampleAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mr; Ms; Mrs</vitro:exampleAnnot>
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://dictionary.reference.com/browse/prefix</vitro:descriptionAnnot>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <swvs:term_status>stable</swvs:term_status>
         <rdfs:comment xml:lang="en">The prefix of a name</rdfs:comment>
+        <swvs:term_status>stable</swvs:term_status>
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     </owl:DatatypeProperty>
     
@@ -737,11 +737,11 @@ bibo has the domain of this property set to the union of Collection and Document
     <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/section">
         <rdfs:label xml:lang="en-us">section</rdfs:label>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <swvs:term_status>unstable</swvs:term_status>
         <rdfs:comment xml:lang="en">An section number</rdfs:comment>
         <skos:example xml:lang="en">Di Rado, Alicia. 1995. Trekking through college: Classes explore
 modern society using the world of Star trek. Los Angeles Times, March
 15, sec. A, p. 3.</skos:example>
-        <swvs:term_status>unstable</swvs:term_status>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/locator"/>
     </owl:DatatypeProperty>
     
@@ -753,8 +753,8 @@ modern society using the world of Star trek. Los Angeles Times, March
         <rdfs:label xml:lang="en-us">short description</rdfs:label>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
         <rdfs:comment>A short description of the resource.</rdfs:comment>
-        <swvs:term_status>unstable</swvs:term_status>
         <skos:scopeNote xml:lang="en">The idea here is that while dcterms:description may involve length descriptions, this for short (two or three word) descriptions that could go in a bibliographic entry.</skos:scopeNote>
+        <swvs:term_status>unstable</swvs:term_status>
         <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#description"/>
     </owl:DatatypeProperty>
     
@@ -766,8 +766,8 @@ modern society using the world of Star trek. Los Angeles Times, March
         <rdfs:label xml:lang="en-us">sici</rdfs:label>
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A sub property of identifier (http://en.wikipedia.org/wiki/SICI).</vitro:descriptionAnnot>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <rdfs:comment xml:lang="en">Serial Item and Contribution Identifier</rdfs:comment>
         <swvs:term_status>stable</swvs:term_status>
+        <rdfs:comment xml:lang="en">Serial Item and Contribution Identifier</rdfs:comment>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/identifier"/>
     </owl:DatatypeProperty>
     
@@ -780,8 +780,8 @@ modern society using the world of Star trek. Los Angeles Times, March
         <rdfs:label xml:lang="en-us">name suffix</rdfs:label>
         <vitro:exampleAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jr.; III;; M.D.</vitro:exampleAnnot>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <swvs:term_status>stable</swvs:term_status>
         <rdfs:comment xml:lang="en">The suffix of a name</rdfs:comment>
+        <swvs:term_status>stable</swvs:term_status>
     </owl:DatatypeProperty>
     
 
@@ -792,8 +792,8 @@ modern society using the world of Star trek. Los Angeles Times, March
         <rdfs:label xml:lang="en-us">upc</rdfs:label>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">source for public description: http://en.wikipedia.org/wiki/Universal_Product_Code.</vitro:descriptionAnnot>
-        <swvs:term_status>stable</swvs:term_status>
         <rdfs:comment xml:lang="en">Universal Product Code</rdfs:comment>
+        <swvs:term_status>stable</swvs:term_status>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/identifier"/>
     </owl:DatatypeProperty>
     
@@ -870,8 +870,8 @@ modern society using the world of Star trek. Los Angeles Times, March
         <vitro:exampleAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A specific academic journal article</vitro:exampleAnnot>
         <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Written by scholars for other scholars, typically published in an academic journal with an abstract and bibliography</vitro:shortDef>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <rdfs:comment xml:lang="en">A scholarly academic article, typically published in a journal.</rdfs:comment>
         <swvs:term_status>stable</swvs:term_status>
+        <rdfs:comment xml:lang="en">A scholarly academic article, typically published in a journal.</rdfs:comment>
     </owl:Class>
     
 
@@ -885,8 +885,8 @@ modern society using the world of Star trek. Los Angeles Times, March
         <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A written composition in prose, usually nonfiction, on a specific topic, forming an independent part of a periodical or book</vitro:shortDef>
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Short Definition modified from the bibo ontology.</vitro:descriptionAnnot>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <swvs:term_status>stable</swvs:term_status>
         <rdfs:comment xml:lang="en">A written composition in prose, usually nonfiction, on a specific topic, forming an independent part of a book or other publication, as a newspaper or magazine.</rdfs:comment>
+        <swvs:term_status>stable</swvs:term_status>
     </owl:Class>
     
 
@@ -899,8 +899,8 @@ modern society using the world of Star trek. Los Angeles Times, March
         <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Recorded audio in any format</vitro:shortDef>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
         <vitro:exampleAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phonograph record; tape; CD; DVD; DAT</vitro:exampleAnnot>
-        <swvs:term_status>stable</swvs:term_status>
         <rdfs:comment xml:lang="en">An audio document; aka record.</rdfs:comment>
+        <swvs:term_status>stable</swvs:term_status>
     </owl:Class>
     
 
@@ -913,8 +913,8 @@ modern society using the world of Star trek. Los Angeles Times, March
         <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Audiovisual recording in any format</vitro:shortDef>
         <vitro:exampleAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">film; video; Blu-ray</vitro:exampleAnnot>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <rdfs:comment xml:lang="en">An audio-visual document; film, video, and so forth.</rdfs:comment>
         <swvs:term_status>stable</swvs:term_status>
+        <rdfs:comment xml:lang="en">An audio-visual document; film, video, and so forth.</rdfs:comment>
     </owl:Class>
     
 
@@ -927,8 +927,8 @@ modern society using the world of Star trek. Los Angeles Times, March
         <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Draft legislation presented for discussion to a legal body</vitro:shortDef>
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Short Definition from the bibo ontology</vitro:descriptionAnnot>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <swvs:term_status>stable</swvs:term_status>
         <rdfs:comment xml:lang="en">Draft legislation presented for discussion to a legal body.</rdfs:comment>
+        <swvs:term_status>stable</swvs:term_status>
     </owl:Class>
     
 
@@ -941,8 +941,8 @@ modern society using the world of Star trek. Los Angeles Times, March
         <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A written or printed work of fiction or nonfiction, usually on sheets of paper fastened or bound together within covers</vitro:shortDef>
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Short Definition copied from bibo ontology</vitro:descriptionAnnot>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <rdfs:comment xml:lang="en">A written or printed work of fiction or nonfiction, usually on sheets of paper fastened or bound together within covers.</rdfs:comment>
         <swvs:term_status>stable</swvs:term_status>
+        <rdfs:comment xml:lang="en">A written or printed work of fiction or nonfiction, usually on sheets of paper fastened or bound together within covers.</rdfs:comment>
     </owl:Class>
     
 
@@ -955,8 +955,8 @@ modern society using the world of Star trek. Los Angeles Times, March
         <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A section of a book</vitro:shortDef>
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Short Definition from the bibo ontology </vitro:descriptionAnnot>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <swvs:term_status>unstable</swvs:term_status>
         <rdfs:comment xml:lang="en">A section of a book.</rdfs:comment>
+        <swvs:term_status>unstable</swvs:term_status>
     </owl:Class>
     
 
@@ -968,8 +968,8 @@ modern society using the world of Star trek. Los Angeles Times, March
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/LegalCaseDocument"/>
         <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A document stating the facts and points of law of a client&apos;s case</vitro:shortDef>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <swvs:term_status>unstable</swvs:term_status>
         <rdfs:comment xml:lang="en">A written argument submitted to a court.</rdfs:comment>
+        <swvs:term_status>unstable</swvs:term_status>
     </owl:Class>
     
 
@@ -981,8 +981,8 @@ modern society using the world of Star trek. Los Angeles Times, March
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/BookSection"/>
         <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A main division of a book</vitro:shortDef>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <rdfs:comment xml:lang="en">A chapter of a book.</rdfs:comment>
         <swvs:term_status>unstable</swvs:term_status>
+        <rdfs:comment xml:lang="en">A chapter of a book.</rdfs:comment>
     </owl:Class>
     
 
@@ -996,8 +996,8 @@ modern society using the world of Star trek. Los Angeles Times, March
         <vitro:exampleAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Code of Federal Regulations</vitro:exampleAnnot>
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Short Definition from OCLC Input Standards, EntW</vitro:descriptionAnnot>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <rdfs:comment xml:lang="en">A collection of statutes.</rdfs:comment>
         <swvs:term_status>stable</swvs:term_status>
+        <rdfs:comment xml:lang="en">A collection of statutes.</rdfs:comment>
     </owl:Class>
     
 
@@ -1010,8 +1010,8 @@ modern society using the world of Star trek. Los Angeles Times, March
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Short Definition is the Medical Subject Heading (MeSH) definition</vitro:descriptionAnnot>
         <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Work consisting of collections of previously published works</vitro:shortDef>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <swvs:term_status>stable</swvs:term_status>
         <rdfs:comment xml:lang="en">A document that simultaneously contains other documents.</rdfs:comment>
+        <swvs:term_status>stable</swvs:term_status>
     </owl:Class>
     
 
@@ -1024,8 +1024,8 @@ modern society using the world of Star trek. Los Angeles Times, March
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Collection of information resources that have a unified identity. Archives, museums and libraries often acquire collections on specific subjects and from distinguished authors or researchers. Also includes collections of resources bundled into a license.</vitro:descriptionAnnot>
         <vitro:exampleAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hill Ornithology Collection; Wiley Interscience Online Books Biochemisty Collection</vitro:exampleAnnot>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <swvs:term_status>stable</swvs:term_status>
         <rdfs:comment xml:lang="en">A collection of Documents or Collections</rdfs:comment>
+        <swvs:term_status>stable</swvs:term_status>
     </owl:Class>
     
 
@@ -1039,8 +1039,8 @@ modern society using the world of Star trek. Los Angeles Times, March
         <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A meeting for consultation or discussion.</vitro:shortDef>
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">core:Seminar and bibo:Conference are very similar.</vitro:descriptionAnnot>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <rdfs:comment xml:lang="en">A meeting for consultation or discussion.</rdfs:comment>
         <swvs:term_status>stable</swvs:term_status>
+        <rdfs:comment xml:lang="en">A meeting for consultation or discussion.</rdfs:comment>
     </owl:Class>
     
 
@@ -1053,8 +1053,8 @@ modern society using the world of Star trek. Los Angeles Times, March
         <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Collection of legal cases</vitro:shortDef>
         <vitro:exampleAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Supreme Court Reporter</vitro:exampleAnnot>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <swvs:term_status>stable</swvs:term_status>
         <rdfs:comment xml:lang="en">A collection of legal cases.</rdfs:comment>
+        <swvs:term_status>stable</swvs:term_status>
     </owl:Class>
     
 
@@ -1066,8 +1066,8 @@ modern society using the world of Star trek. Los Angeles Times, March
         <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bounded physical representation of a body of information designed with the capacity (and usually intent) to communicate</vitro:shortDef>
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Short Definition from the bibo ontology</vitro:descriptionAnnot>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <rdfs:comment xml:lang="en">A document (noun) is a bounded physical representation of body of information designed with the capacity (and usually intent) to communicate. A document may manifest symbolic, diagrammatic or sensory-representational information.</rdfs:comment>
         <owl2:term_status>stable</owl2:term_status>
+        <rdfs:comment xml:lang="en">A document (noun) is a bounded physical representation of body of information designed with the capacity (and usually intent) to communicate. A document may manifest symbolic, diagrammatic or sensory-representational information.</rdfs:comment>
     </owl:Class>
     
 
@@ -1080,8 +1080,8 @@ modern society using the world of Star trek. Los Angeles Times, March
         <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A distinct part of a larger document or collected document</vitro:shortDef>
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Short Definition from the bibo ontology </vitro:descriptionAnnot>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <rdfs:comment xml:lang="en">a distinct part of a larger document or collected document.</rdfs:comment>
         <swvs:term_status>unstable</swvs:term_status>
+        <rdfs:comment xml:lang="en">a distinct part of a larger document or collected document.</rdfs:comment>
     </owl:Class>
     
 
@@ -1094,8 +1094,8 @@ modern society using the world of Star trek. Los Angeles Times, March
         <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An edited collection of stand-alone articles published as a book</vitro:shortDef>
         <vitro:exampleAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Best American Science Writing 2009</vitro:exampleAnnot>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <swvs:term_status>stable</swvs:term_status>
         <rdfs:comment xml:lang="en">An edited book.</rdfs:comment>
+        <swvs:term_status>stable</swvs:term_status>
     </owl:Class>
     
 
@@ -1108,8 +1108,8 @@ modern society using the world of Star trek. Los Angeles Times, March
         <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A passage selected from a larger work</vitro:shortDef>
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Short Definition from the bibo ontology</vitro:descriptionAnnot>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <swvs:term_status>stable</swvs:term_status>
         <rdfs:comment xml:lang="en">A passage selected from a larger work.</rdfs:comment>
+        <swvs:term_status>stable</swvs:term_status>
     </owl:Class>
     
 
@@ -1121,8 +1121,8 @@ modern society using the world of Star trek. Los Angeles Times, March
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/AudioVisualDocument"/>
         <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Audiovisual recording in film format</vitro:shortDef>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <rdfs:comment xml:lang="en">aka movie.</rdfs:comment>
         <swvs:term_status>stable</swvs:term_status>
+        <rdfs:comment xml:lang="en">aka movie.</rdfs:comment>
     </owl:Class>
     
 
@@ -1135,8 +1135,8 @@ modern society using the world of Star trek. Los Angeles Times, March
         <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An instance or a session in which testimony and arguments are presented, esp. before an official, as a judge in a lawsuit.</vitro:shortDef>
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Definiton from Bibo here: http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html</vitro:descriptionAnnot>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <rdfs:comment xml:lang="en">An instance or a session in which testimony and arguments are presented, esp. before an official, as a judge in a lawsuit.</rdfs:comment>
         <swvs:term_status>stable</swvs:term_status>
+        <rdfs:comment xml:lang="en">An instance or a session in which testimony and arguments are presented, esp. before an official, as a judge in a lawsuit.</rdfs:comment>
     </owl:Class>
     
 
@@ -1165,8 +1165,8 @@ modern society using the world of Star trek. Los Angeles Times, March
         <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A conversation between two or more people where questions are asked by the interviewer to obtain information from the interviewee.</vitro:shortDef>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
         <vitro:exampleAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radio or newspaper interview</vitro:exampleAnnot>
-        <rdfs:comment xml:lang="en">A formalized discussion between two or more people.</rdfs:comment>
         <swvs:term_status>stable</swvs:term_status>
+        <rdfs:comment xml:lang="en">A formalized discussion between two or more people.</rdfs:comment>
     </owl:Class>
     
 
@@ -1179,8 +1179,8 @@ modern society using the world of Star trek. Los Angeles Times, March
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Short Definition from the bibo ontology</vitro:descriptionAnnot>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
         <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">something that is printed or published and distributed, esp. a given number of a periodical</vitro:shortDef>
-        <rdfs:comment xml:lang="en">something that is printed or published and distributed, esp. a given number of a periodical</rdfs:comment>
         <swvs:term_status>stable</swvs:term_status>
+        <rdfs:comment xml:lang="en">something that is printed or published and distributed, esp. a given number of a periodical</rdfs:comment>
     </owl:Class>
     
 
@@ -1194,8 +1194,8 @@ modern society using the world of Star trek. Los Angeles Times, March
         <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contains original scholarly research or review articles by experts in the field</vitro:shortDef>
         <vitro:exampleAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Journal of Information Science; IEEE Intelligent System; Scientometrics</vitro:exampleAnnot>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <swvs:term_status>stable</swvs:term_status>
         <rdfs:comment xml:lang="en">A periodical of scholarly journal Articles.</rdfs:comment>
+        <swvs:term_status>stable</swvs:term_status>
     </owl:Class>
     
 
@@ -1207,8 +1207,8 @@ modern society using the world of Star trek. Los Angeles Times, March
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/LegalDocument"/>
         <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Official court  papers for a case</vitro:shortDef>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <rdfs:comment xml:lang="en">A document accompanying a legal case.</rdfs:comment>
         <swvs:term_status>unstable</swvs:term_status>
+        <rdfs:comment xml:lang="en">A document accompanying a legal case.</rdfs:comment>
     </owl:Class>
     
 
@@ -1220,8 +1220,8 @@ modern society using the world of Star trek. Los Angeles Times, March
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/LegalCaseDocument"/>
         <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The written determination of a case, motion or claim by a court or tribunal</vitro:shortDef>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <swvs:term_status>unstable</swvs:term_status>
         <rdfs:comment xml:lang="en">A document containing an authoritative determination (as a decree or judgment) made after consideration of facts or law.</rdfs:comment>
+        <swvs:term_status>unstable</swvs:term_status>
     </owl:Class>
     
 
@@ -1233,8 +1233,8 @@ modern society using the world of Star trek. Los Angeles Times, March
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
         <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a document that states some contractual relationship or grants some right</vitro:shortDef>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <rdfs:comment xml:lang="en">A legal document; for example, a court decision, a brief, and so forth.</rdfs:comment>
         <swvs:term_status>stable</swvs:term_status>
+        <rdfs:comment xml:lang="en">A legal document; for example, a court decision, a brief, and so forth.</rdfs:comment>
     </owl:Class>
     
 
@@ -1247,8 +1247,8 @@ modern society using the world of Star trek. Los Angeles Times, March
         <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Enactments of legislative bodies, published in either statute or code form</vitro:shortDef>
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">From OCLC Input Standards, EntW</vitro:descriptionAnnot>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <rdfs:comment xml:lang="en">A legal document proposing or enacting a law or a group of laws.</rdfs:comment>
         <swvs:term_status>unstable</swvs:term_status>
+        <rdfs:comment xml:lang="en">A legal document proposing or enacting a law or a group of laws.</rdfs:comment>
     </owl:Class>
     
 
@@ -1258,8 +1258,8 @@ modern society using the world of Star trek. Los Angeles Times, March
     <owl:Class rdf:about="http://purl.org/ontology/bibo/Letter">
         <rdfs:label xml:lang="en-us">Letter</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/PersonalCommunicationDocument"/>
-        <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A written or printed communication addressed to a person or organization and usually transmitted by mail</vitro:shortDef>
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A written or printed communication addressed to a person or organization and usually transmitted by mail</vitro:descriptionAnnot>
+        <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A written or printed communication addressed to a person or organization and usually transmitted by mail</vitro:shortDef>
     </owl:Class>
     
 
@@ -1273,8 +1273,8 @@ modern society using the world of Star trek. Los Angeles Times, March
         <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contains articles of current events or general interest, geared to the reading public as being informative or recreational</vitro:shortDef>
         <vitro:exampleAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">New Yorker</vitro:exampleAnnot>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <rdfs:comment xml:lang="en">A periodical of magazine Articles. A magazine is a publication that is issued periodically, usually bound in a paper cover, and typically contains essays, stories, poems, etc., by many writers, and often photographs and drawings, frequently specializing in a particular subject or area, as hobbies, news, or sports.</rdfs:comment>
         <swvs:term_status>stable</swvs:term_status>
+        <rdfs:comment xml:lang="en">A periodical of magazine Articles. A magazine is a publication that is issued periodically, usually bound in a paper cover, and typically contains essays, stories, poems, etc., by many writers, and often photographs and drawings, frequently specializing in a particular subject or area, as hobbies, news, or sports.</rdfs:comment>
     </owl:Class>
     
 
@@ -1287,8 +1287,8 @@ modern society using the world of Star trek. Los Angeles Times, March
         <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A book of instructions or guide to a specific topic</vitro:shortDef>
         <vitro:exampleAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SDB User Manual</vitro:exampleAnnot>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <rdfs:comment xml:lang="en">A small reference book, especially one giving instructions.</rdfs:comment>
         <swvs:term_status>unstable</swvs:term_status>
+        <rdfs:comment xml:lang="en">A small reference book, especially one giving instructions.</rdfs:comment>
     </owl:Class>
     
 
@@ -1301,8 +1301,8 @@ modern society using the world of Star trek. Los Angeles Times, March
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Short Definition is the Medical Subject Heading (MeSH) definition</vitro:descriptionAnnot>
         <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Works prepared by hand including handwritten or typescript drafts of pre-publication papers or works not otherwise reproduced in multiple copies</vitro:shortDef>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <rdfs:comment xml:lang="en">An unpublished Document, which may also be submitted to a publisher for publication.</rdfs:comment>
         <swvs:term_status>stable</swvs:term_status>
+        <rdfs:comment xml:lang="en">An unpublished Document, which may also be submitted to a publisher for publication.</rdfs:comment>
     </owl:Class>
     
 
@@ -1315,8 +1315,8 @@ modern society using the world of Star trek. Los Angeles Times, March
         <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A graphical depiction of geographic features, scientific discipline, scientific data analytical results</vitro:shortDef>
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Short Definition is how the bibo ontology defines Map. It has been extended to include more broader concept of map which includes science maps, social network maps.</vitro:descriptionAnnot>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <rdfs:comment xml:lang="en">A graphical depiction of geographic features.</rdfs:comment>
         <swvs:term_status>unstable</swvs:term_status>
+        <rdfs:comment xml:lang="en">A graphical depiction of geographic features.</rdfs:comment>
     </owl:Class>
     
 
@@ -1329,8 +1329,8 @@ modern society using the world of Star trek. Los Angeles Times, March
         <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contains news articles, opinions, features, advertising, and is usually issued daily or weekly</vitro:shortDef>
         <vitro:exampleAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">USA Today</vitro:exampleAnnot>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <swvs:term_status>stable</swvs:term_status>
         <rdfs:comment xml:lang="en">A periodical of documents, usually issued daily or weekly, containing current news, editorials, feature articles, and usually advertising.</rdfs:comment>
+        <swvs:term_status>stable</swvs:term_status>
     </owl:Class>
     
 
@@ -1343,8 +1343,8 @@ modern society using the world of Star trek. Los Angeles Times, March
         <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Notes or annotations about a resource</vitro:shortDef>
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Short Definition from bibo ontology</vitro:descriptionAnnot>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <swvs:term_status>stable</swvs:term_status>
         <rdfs:comment xml:lang="en">Notes or annotations about a resource.</rdfs:comment>
+        <swvs:term_status>stable</swvs:term_status>
     </owl:Class>
     
 
@@ -1357,8 +1357,8 @@ modern society using the world of Star trek. Los Angeles Times, March
         <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(from BIBO) A document describing the exclusive right granted by a government to an inventor to manufacture, use, or sell an invention for a certain number of years</vitro:shortDef>
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A patent is an exclusive right granted for an invention, which is a product or a process that provides, in general, a new way of doing something, or offers a new technical solution to a problem.  In order to be patentable, the invention must fulfill certain conditions. (http://www.wipo.int/patentscope/en/)</vitro:descriptionAnnot>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <swvs:term_status>stable</swvs:term_status>
         <rdfs:comment xml:lang="en">A document describing the exclusive right granted by a government to an inventor to manufacture, use, or sell an invention for a certain number of years.</rdfs:comment>
+        <swvs:term_status>stable</swvs:term_status>
     </owl:Class>
     
 
@@ -1370,8 +1370,8 @@ modern society using the world of Star trek. Los Angeles Times, March
         <rdfs:subClassOf rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
         <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Something carried out, acted or rendered.</vitro:shortDef>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <swvs:term_status>unstable</swvs:term_status>
         <rdfs:comment xml:lang="en">A public performance.</rdfs:comment>
+        <swvs:term_status>unstable</swvs:term_status>
     </owl:Class>
     
 
@@ -1382,8 +1382,8 @@ modern society using the world of Star trek. Los Angeles Times, March
         <rdfs:label xml:lang="en-us">Periodical</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Collection"/>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <swvs:term_status>stable</swvs:term_status>
         <rdfs:comment xml:lang="en">A group of related documents issued at regular intervals.</rdfs:comment>
+        <swvs:term_status>stable</swvs:term_status>
     </owl:Class>
     
 
@@ -1393,8 +1393,8 @@ modern society using the world of Star trek. Los Angeles Times, March
     <owl:Class rdf:about="http://purl.org/ontology/bibo/PersonalCommunicationDocument">
         <rdfs:label xml:lang="en-us">Personal Communication Document</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
-        <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A personal communication manifested in some document.</vitro:descriptionAnnot>
         <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A personal communication manifested in some document.</vitro:shortDef>
+        <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A personal communication manifested in some document.</vitro:descriptionAnnot>
     </owl:Class>
     
 
@@ -1407,8 +1407,8 @@ modern society using the world of Star trek. Los Angeles Times, March
         <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A compilation of documents published from an event, such as a conference</vitro:shortDef>
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Short Definition copied from bibo ontology</vitro:descriptionAnnot>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <swvs:term_status>unstable</swvs:term_status>
         <rdfs:comment xml:lang="en">A compilation of documents published from an event, such as a conference.</rdfs:comment>
+        <swvs:term_status>unstable</swvs:term_status>
     </owl:Class>
     
 
@@ -1421,8 +1421,8 @@ modern society using the world of Star trek. Los Angeles Times, March
         <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An excerpted collection of words</vitro:shortDef>
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Short Definition from the bibo ontology</vitro:descriptionAnnot>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <rdfs:comment xml:lang="en">An excerpted collection of words.</rdfs:comment>
         <swvs:term_status>stable</swvs:term_status>
+        <rdfs:comment xml:lang="en">An excerpted collection of words.</rdfs:comment>
     </owl:Class>
     
 
@@ -1435,8 +1435,8 @@ modern society using the world of Star trek. Los Angeles Times, March
         <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A document that presents authoritative reference information, such as a dictionary or encylopedia</vitro:shortDef>
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Short Definition from the bibo ontology</vitro:descriptionAnnot>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <swvs:term_status>unstable</swvs:term_status>
         <rdfs:comment xml:lang="en">A document that presents authoritative reference information, such as a dictionary or encylopedia .</rdfs:comment>
+        <swvs:term_status>unstable</swvs:term_status>
     </owl:Class>
     
 
@@ -1449,8 +1449,8 @@ modern society using the world of Star trek. Los Angeles Times, March
         <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A document describing an account or statement describing in detail an event, situation, or the like, usually as the result of observation, inquiry, etc.</vitro:shortDef>
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medical Subject Heading (MeSH) definition of Technical Report: Work consisting of a formal report giving details of the investigation and results of a medical or other scientific problem. When issued by a government agency or comparable official body, its contents may be classified, unclassified, or declassified with regard to security clearance. This publication type may also cover a scientific paper or article that records the current state or current position of scientific research and development. If so labeled by the editor or publisher, this publication type may be properly used for journal articles.</vitro:descriptionAnnot>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <swvs:term_status>stable</swvs:term_status>
         <rdfs:comment xml:lang="en">A document describing an account or statement describing in detail an event, situation, or the like, usually as the result of observation, inquiry, etc..</rdfs:comment>
+        <swvs:term_status>stable</swvs:term_status>
     </owl:Class>
     
 
@@ -1463,8 +1463,8 @@ modern society using the world of Star trek. Los Angeles Times, March
         <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A thematic collection of documents, usually books, issued at regular or irregular intervals</vitro:shortDef>
         <vitro:exampleAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Methods in Molecular Biology</vitro:exampleAnnot>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <rdfs:comment xml:lang="en">A loose, thematic, collection of Documents, often Books.</rdfs:comment>
         <swvs:term_status>stable</swvs:term_status>
+        <rdfs:comment xml:lang="en">A loose, thematic, collection of Documents, often Books.</rdfs:comment>
     </owl:Class>
     
 
@@ -1477,8 +1477,8 @@ modern society using the world of Star trek. Los Angeles Times, March
         <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A slide in a slideshow</vitro:shortDef>
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Short Definition from the bibo ontology</vitro:descriptionAnnot>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <rdfs:comment xml:lang="en">A slide in a slideshow</rdfs:comment>
         <swvs:term_status>unstable</swvs:term_status>
+        <rdfs:comment xml:lang="en">A slide in a slideshow</rdfs:comment>
     </owl:Class>
     
 
@@ -1491,8 +1491,8 @@ modern society using the world of Star trek. Los Angeles Times, March
         <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A presentation of a series of slides, usually presented in front of an audience with written text and images</vitro:shortDef>
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Short Definition from the bibo ontology</vitro:descriptionAnnot>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <rdfs:comment xml:lang="en">A presentation of a series of slides, usually presented in front of an audience with written text and images.</rdfs:comment>
         <swvs:term_status>stable</swvs:term_status>
+        <rdfs:comment xml:lang="en">A presentation of a series of slides, usually presented in front of an audience with written text and images.</rdfs:comment>
     </owl:Class>
     
 
@@ -1505,8 +1505,8 @@ modern society using the world of Star trek. Los Angeles Times, March
         <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A specification giving a precise statement of a process or a service requirement, often sanctioned by a nation or industry</vitro:shortDef>
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Short Definition from OCLC Input Standards, EntW</vitro:descriptionAnnot>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <rdfs:comment xml:lang="en">A document describing a standard</rdfs:comment>
         <swvs:term_status>stable</swvs:term_status>
+        <rdfs:comment xml:lang="en">A document describing a standard</rdfs:comment>
     </owl:Class>
     
 
@@ -1519,8 +1519,8 @@ modern society using the world of Star trek. Los Angeles Times, March
         <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bill enacted into law</vitro:shortDef>
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Short Definition from bibo ontology</vitro:descriptionAnnot>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <rdfs:comment xml:lang="en">A bill enacted into law.</rdfs:comment>
         <swvs:term_status>stable</swvs:term_status>
+        <rdfs:comment xml:lang="en">A bill enacted into law.</rdfs:comment>
     </owl:Class>
     
 
@@ -1533,8 +1533,8 @@ modern society using the world of Star trek. Los Angeles Times, March
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Short Definition from OCLC Input Standards, EntW</vitro:descriptionAnnot>
         <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Works created to satisfy the requirements for an academic certification or degree; also called dissertation</vitro:shortDef>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <rdfs:comment xml:lang="en">A document created to summarize research findings associated with the completion of an academic degree.</rdfs:comment>
         <swvs:term_status>stable</swvs:term_status>
+        <rdfs:comment xml:lang="en">A document created to summarize research findings associated with the completion of an academic degree.</rdfs:comment>
     </owl:Class>
     
 
@@ -1546,8 +1546,8 @@ modern society using the world of Star trek. Los Angeles Times, March
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
         <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One section of a website that appears at a unique address within the parent site&apos;s address or URL on the World Wide Web </vitro:shortDef>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <rdfs:comment xml:lang="en">A web page is an online document available (at least initially) on the world wide web. A web page is written first and foremost to appear on the web, as distinct from other online resources such as books, manuscripts or audio documents which use the web primarily as a distribution mechanism alongside other more traditional methods such as print.</rdfs:comment>
         <swvs:term_status>unstable</swvs:term_status>
+        <rdfs:comment xml:lang="en">A web page is an online document available (at least initially) on the world wide web. A web page is written first and foremost to appear on the web, as distinct from other online resources such as books, manuscripts or audio documents which use the web primarily as a distribution mechanism alongside other more traditional methods such as print.</rdfs:comment>
     </owl:Class>
     
 
@@ -1560,8 +1560,8 @@ modern society using the world of Star trek. Los Angeles Times, March
         <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A group of webpages available within a specific parent address or URL on the World Wide Web</vitro:shortDef>
         <vitro:exampleAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Facebook; VIVOweb.org; Flickr</vitro:exampleAnnot>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <rdfs:comment xml:lang="en">A group of Webpages accessible on the Web.</rdfs:comment>
         <swvs:term_status>unstable</swvs:term_status>
+        <rdfs:comment xml:lang="en">A group of Webpages accessible on the Web.</rdfs:comment>
     </owl:Class>
     
 
@@ -1573,8 +1573,8 @@ modern society using the world of Star trek. Los Angeles Times, March
         <rdfs:subClassOf rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
         <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bibo Definition: A seminar, discussion group, or the like, that emphasizes exchange of ideas and the demonstration and application of techniques, skills, etc.</vitro:shortDef>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <rdfs:comment xml:lang="en">A seminar, discussion group, or the like, that emphasizes zxchange of ideas and the demonstration and application of techniques, skills, etc.</rdfs:comment>
         <swvs:term_status>stable</swvs:term_status>
+        <rdfs:comment xml:lang="en">A seminar, discussion group, or the like, that emphasizes zxchange of ideas and the demonstration and application of techniques, skills, etc.</rdfs:comment>
     </owl:Class>
     
 
@@ -1610,5 +1610,5 @@ modern society using the world of Star trek. Los Angeles Times, March
 
 
 
-<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.4.2018) http://owlapi.sourceforge.net -->
 
