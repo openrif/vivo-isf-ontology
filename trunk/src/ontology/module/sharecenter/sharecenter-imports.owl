@@ -225,6 +225,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_0000007">
         <rdfs:label xml:lang="en">communication material</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An information resource that is designed to convey information to a targeted group of individuals. </obo:IAO_0000115>
     </owl:Class>
     
@@ -562,13 +563,13 @@ The idea is that an instance of a class in this hierarchy represents a portion o
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://vivoweb.org/ontology/core#Video"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000333"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000333"/>
+                <owl:someValuesFrom rdf:resource="http://vivoweb.org/ontology/core#Video"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
