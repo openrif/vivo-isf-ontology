@@ -216,6 +216,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_0000006">
         <rdfs:label xml:lang="en">training opportunity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#RealizableEntity"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A planned process carried out by a person or organization with the objective of training an individual or individual(s) in a specific task or function.</obo:IAO_0000115>
     </owl:Class>
     
@@ -563,13 +564,13 @@ The idea is that an instance of a class in this hierarchy represents a portion o
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000333"/>
+                <owl:someValuesFrom rdf:resource="http://vivoweb.org/ontology/core#Video"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://vivoweb.org/ontology/core#Video"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000333"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -852,6 +853,12 @@ The idea is that an instance of a class in this hierarchy represents a portion o
     <!-- http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant -->
 
     <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant"/>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#RealizableEntity -->
+
+    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#RealizableEntity"/>
     
 
 
