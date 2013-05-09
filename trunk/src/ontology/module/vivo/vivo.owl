@@ -331,7 +331,6 @@
         <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#hasValue"/>
     </rdf:Description>
     
-  
 
 
     <!-- http://vivoweb.org/ontology/core#grantDirectCosts -->
@@ -439,7 +438,10 @@
 
     <!-- http://purl.obolibrary.org/obo/ERO_0000005 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000005"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000005">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Service</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </owl:Class>
     
 
 
@@ -447,6 +449,24 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000071">
         <rdfs:label>software (ERO)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000595 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000595">
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#RealizableEntity"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001554 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001554">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
     </owl:Class>
     
 
@@ -466,6 +486,14 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030">
         <rdfs:label>information content entity (IAO)</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000032">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">scalar measurement datum</rdfs:label>
     </owl:Class>
     
 
@@ -523,6 +551,14 @@
 
     <rdf:Description rdf:about="http://purl.org/ontology/bibo/Image">
         <owl:equivalentClass rdf:resource="http://www.ebi.ac.uk/efo/swo/SWO_0000580"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/spar/c4o/GlobalCitationCount -->
+
+    <rdf:Description rdf:about="http://purl.org/spar/c4o/GlobalCitationCount">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
     </rdf:Description>
     
 
@@ -795,6 +831,7 @@
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000580">
         <rdfs:label>image (ERO/SWO)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001554"/>
     </owl:Class>
     
 
