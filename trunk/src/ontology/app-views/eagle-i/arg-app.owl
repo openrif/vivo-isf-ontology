@@ -595,11 +595,11 @@
     <rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#GDPUnit">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#hasSubjectArea">
+        <app:rangeConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2004/02/skos/core#Concept</app:rangeConstraint>
+    </rdf:Description>
     <rdf:Description rdf:about="http://www.w3.org/2008/05/skos-xl#altLabel">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#hasSubjectArea">
-        <app:rangeConstraint rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/ontology/bibo/degree">
         <app:rangeConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vivoweb.org/ontology/core#AcademicDegree</app:rangeConstraint>
@@ -815,7 +815,7 @@
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ARG_2000029">
-        <app:rangeConstraint>http://www.w3.org/2002/07/owl#Thing</app:rangeConstraint>
+        <app:rangeConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2002/07/owl#Thing</app:rangeConstraint>
     </rdf:Description>
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#faxNumber">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
