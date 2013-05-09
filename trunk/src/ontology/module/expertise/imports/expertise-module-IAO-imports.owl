@@ -66,13 +66,19 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000039 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000039">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:label xml:lang="en">has measurement unit label</rdfs:label>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
     </owl:ObjectProperty>
     
 
@@ -157,12 +163,6 @@ there is a measurement process p that has specified output m, a measurement datu
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000221"/>
     </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
     
 
 
@@ -324,7 +324,7 @@ this case we explicitly refer to the singular form</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">person:Chris Stoeckert</obo:IAO_0000117>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
     </owl:Class>
-        
+    
 
 
     <!-- http://www.ifomis.org/bfo/1.1#Entity -->

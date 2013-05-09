@@ -26,7 +26,13 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <rdf:Description rdf:about="http://eagle-i.org/ont/app/1.0/domainConstraint">
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
     <owl:AnnotationProperty rdf:about="http://eagle-i.org/ont/app/1.0/inClassGroup"/>
+    <rdf:Description rdf:about="http://eagle-i.org/ont/app/1.0/rangeConstraint">
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
     <rdf:Description rdf:about="http://eagle-i.org/ont/app/1.0/referencedTaxonomyIRI">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
@@ -110,10 +116,16 @@
     <rdf:Description rdf:about="http://purl.org/dc/terms/relation">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000569">
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.org/ontology/bibo/Document</app:domainConstraint>
+    </rdf:Description>
     <rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#countryArea">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#logotypeImage">
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#exactMatch">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#address3">
@@ -137,6 +149,9 @@
     <rdf:Description rdf:about="http://www.w3.org/2008/05/skos#example">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#hasMonetaryAmount">
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#preferredDisplayOrder">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
@@ -158,6 +173,12 @@
     <rdf:Description rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#rootTab">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#mappingRelation">
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2006/vcard/ns#family-name">
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2006/vcard/ns#Name</app:domainConstraint>
+    </rdf:Description>
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#featuredIn">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
@@ -170,16 +191,25 @@
     <rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#nameShortAR">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ARG_2000391">
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/ontology/bibo/director">
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#notation">
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2004/02/skos/core#Concept</app:domainConstraint>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#codeUNDP">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#addressPostalCode">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#codeUNDP">
+    <rdf:Description rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#username">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#username">
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ARG_2000390">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#agriculturalArea">
@@ -191,10 +221,17 @@
     <rdf:Description rdf:about="http://purl.org/dc/terms/isReferencedBy">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#termType">
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ARG_2000397">
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vivoweb.org/ontology/core#URLLink</app:domainConstraint>
+        <app:rangeConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2002/07/owl#Thing</app:rangeConstraint>
+    </rdf:Description>
     <rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#countryAreaUnit">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#termType">
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ARG_2000398">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#HDITotal">
@@ -248,8 +285,14 @@
     <rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#countryAreaYear">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/ontology/bibo/reproducedIn">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2006/vcard/ns#given-name">
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2006/vcard/ns#Name</app:domainConstraint>
     </rdf:Description>
     <rdf:Description rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#logotypeWidth">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
@@ -267,16 +310,30 @@
     <rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#nameCurrencyFR">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2006/vcard/ns#organization-name">
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2006/vcard/ns#Organization</app:domainConstraint>
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://xmlns.com/foaf/0.1/Organization</app:domainConstraint>
+    </rdf:Description>
     <rdf:Description rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#rootBreadCrumbURL">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#rootBreadCrumbAnchor">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2006/vcard/ns#tel">
+        <app:rangeConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2006/vcard/ns#Tel</app:rangeConstraint>
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2006/vcard/ns#VCard</app:domainConstraint>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#supplementalInformation">
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#fundingVehicleFor">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#addressCountry">
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000741">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#features">
@@ -303,6 +360,9 @@
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#offeredBy">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2006/vcard/ns#honorific-suffix">
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2006/vcard/ns#Name</app:domainConstraint>
+    </rdf:Description>
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#DateTimeValue">
         <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_InstanceCreate"/>
     </rdf:Description>
@@ -327,17 +387,27 @@
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#governingAuthorityFor">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#inputOf">
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#subjectAreaFor">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#populationYear">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#relates">
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vivoweb.org/ontology/core#Relationship</app:domainConstraint>
+        <app:rangeConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ifomis.org/bfo/1.1/snap#Continuant</app:rangeConstraint>
+    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ARG_0000016">
         <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_InstanceCreate"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ARG_0000015">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2006/vcard/ns#region">
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2006/vcard/ns#Address</app:domainConstraint>
     </rdf:Description>
     <rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#HDINotes">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
@@ -348,10 +418,10 @@
     <rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#hasMinLatitude">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/ontology/bibo/isbn13">
+    <rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#nameShortFR">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#nameShortFR">
+    <rdf:Description rdf:about="http://purl.org/ontology/bibo/isbn13">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#hasTeacherRole">
@@ -373,9 +443,6 @@
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#nameOfficialIT">
-        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://eagle-i.org/ont/app/1.0/rangeConstraint">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#aboutText">
@@ -447,6 +514,9 @@
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#primaryPhoneNumber">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002233">
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
     <rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#nameCurrencyIT">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
@@ -480,13 +550,16 @@
     <rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#HDI">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000482">
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#hasClinicalRole">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000050">
+    <rdf:Description rdf:about="http://purl.org/ontology/bibo/interviewer">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/ontology/bibo/interviewer">
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000050">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#GDPTotalInCurrentPrices">
@@ -498,19 +571,34 @@
     <rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#GDPUnit">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2008/05/skos-xl#altLabel">
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#hasSubjectArea">
+        <app:rangeConstraint rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/ontology/bibo/degree">
+        <app:rangeConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vivoweb.org/ontology/core#AcademicDegree</app:rangeConstraint>
+    </rdf:Description>
     <rdf:Description rdf:about="http://eagle-i.org/ont/app/1.0/preferredDefinition">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#populationTotal">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#addressState">
+    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#broader">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#namespaceURI">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#addressState">
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
     <rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#hasStatistics">
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#narrower">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#conceptAssociatedWith">
@@ -540,10 +628,16 @@
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#outcomeOf">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2008/05/skos-xl#hiddenLabel">
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#preferredTitle">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#HDIUnit">
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#contributingAdvising">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#outreachOverview">
@@ -573,11 +667,20 @@
     <rdf:Description rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#inScheme">
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#researchAreaOf">
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ARG_2000012">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#mailingAddressFor">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2008/05/skos-xl#prefLabel">
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2004/02/skos/core#Concept</app:domainConstraint>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/ontology/bibo/doi">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
@@ -607,6 +710,9 @@
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#reproduces">
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#closeMatch">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#nameShortIT">
@@ -642,6 +748,9 @@
     <rdf:Description rdf:about="http://purl.org/ontology/bibo/translationOf">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#grantAwardedBy">
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
     <rdf:Description rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#md5password">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
@@ -654,10 +763,10 @@
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#hasPrincipalInvestigatorRole">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#researchOverview">
+    <rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#populationNotes">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#populationNotes">
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#researchOverview">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#landArea">
@@ -672,13 +781,22 @@
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#translatorOf">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topDataProperty">
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#scopusId">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ARG_2000029">
+        <app:rangeConstraint rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#agriculturalAreaUnit">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#faxNumber">
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#grantDirectCosts">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#expirationDate">
@@ -695,6 +813,10 @@
     </rdf:Description>
     <rdf:Description rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#firstTime">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#relatedBy">
+        <app:rangeConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vivoweb.org/ontology/core#Relationship</app:rangeConstraint>
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ifomis.org/bfo/1.1/snap#Continuant</app:domainConstraint>
     </rdf:Description>
     <rdf:Description rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#copyrightURL">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
@@ -723,17 +845,20 @@
     <rdf:Description rdf:about="http://purl.org/ontology/bibo/Document">
         <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_InstanceCreate"/>
     </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#EducationalProcess">
+        <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_InstanceCreate"/>
+    </rdf:Description>
     <rdf:Description rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#loginCount">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#countryAreaTotal">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#EducationalProcess">
-        <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_InstanceCreate"/>
-    </rdf:Description>
     <rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#landAreaUnit">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ARG_2000028">
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant</app:domainConstraint>
     </rdf:Description>
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#hasLeaderRole">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
@@ -753,7 +878,16 @@
     <rdf:Description rdf:about="http://purl.org/NET/c4dm/event.owl#Event">
         <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_InstanceCreate"/>
     </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#related">
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#narrowerTransitive">
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/ontology/bibo/translator">
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#semanticRelation">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/ontology/bibo/coden">
@@ -792,6 +926,12 @@
     <rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#hasMaxLongitude">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#broadMatch">
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#hasValue">
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#eRACommonsId">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
@@ -801,11 +941,14 @@
     <rdf:Description rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#contactMail">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
+    <rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#nameCurrencyRU">
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/ontology/bibo/locator">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#nameCurrencyRU">
-        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    <rdf:Description rdf:about="http://www.w3.org/2006/vcard/ns#title">
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2006/vcard/ns#VCard</app:domainConstraint>
     </rdf:Description>
     <rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#GDPYear">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
@@ -825,14 +968,23 @@
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#supports">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#relatedMatch">
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
     <rdf:Description rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#roleURI">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#patentNumber">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2006/vcard/ns#postal-code">
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2006/vcard/ns#Address</app:domainConstraint>
+    </rdf:Description>
     <rdf:Description rdf:about="http://www.w3.org/2008/05/skos#editorialNote">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2006/vcard/ns#honorific-prefix">
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2006/vcard/ns#Name</app:domainConstraint>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/ontology/bibo/asin">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
@@ -891,8 +1043,12 @@
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#hasGoverningAuthority">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://eagle-i.org/ont/app/1.0/domainConstraint">
-        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    <rdf:Description rdf:about="http://www.w3.org/2006/vcard/ns#locality">
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2006/vcard/ns#Address</app:domainConstraint>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000417">
+        <app:rangeConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/IAO_0000109</app:rangeConstraint>
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ifomis.org/bfo/1.1/snap#Quality</app:domainConstraint>
     </rdf:Description>
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#hasOrganizerRole">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
@@ -939,6 +1095,9 @@
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000136">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#broaderTransitive">
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#orcidId">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
@@ -966,6 +1125,9 @@
     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/based_near">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2006/vcard/ns#nickname">
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2006/vcard/ns#VCard</app:domainConstraint>
+    </rdf:Description>
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#awardConferredBy">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
@@ -978,8 +1140,14 @@
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#administeredBy">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#narrowMatch">
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ARG_0000052">
         <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_InstanceCreate"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2006/vcard/ns#post-office-box">
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2006/vcard/ns#Address</app:domainConstraint>
     </rdf:Description>
     <rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#agriculturalAreaTotal">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
