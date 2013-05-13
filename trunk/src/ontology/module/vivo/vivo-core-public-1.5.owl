@@ -101,15 +101,6 @@
     
 
 
-    <!-- http://vivoweb.org/ontology/core#currentMemberOf -->
-
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#currentMemberOf">
-        <rdfs:label xml:lang="en-us">current member of</rdfs:label>
-        <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Since we have defined geopolitical.owl.hasMember to be a subproperty of core:hasMember, we should not make changes to this property that would change the definition of geopolitical.owl.hasMember in ways that may make it inconsistent with its usage in other ontologies.</vitro:descriptionAnnot>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://vivoweb.org/ontology/core#dateFiled -->
 
     <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#dateFiled">
@@ -187,16 +178,6 @@
     
 
 
-    <!-- http://vivoweb.org/ontology/core#fundingVehicleFor -->
-
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#fundingVehicleFor">
-        <rdfs:label xml:lang="en-us">provides funding for</rdfs:label>
-        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Grant"/>
-        <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#hasFundingVehicle"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://vivoweb.org/ontology/core#geographicFocus -->
 
     <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#geographicFocus">
@@ -240,25 +221,6 @@
     
 
 
-    <!-- http://vivoweb.org/ontology/core#hasCurrentMember -->
-
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#hasCurrentMember">
-        <rdfs:label xml:lang="en-us">has current member</rdfs:label>
-        <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Since we have defined geopolitical.owl.hasMember to be a subproperty of core:hasMember, we should not make changes to this property that would change the definition of geopolitical.owl.hasMember in ways that may make it inconsistent with its usage in other ontologies.</vitro:descriptionAnnot>
-        <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#currentMemberOf"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#hasFundingVehicle -->
-
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#hasFundingVehicle">
-        <rdfs:label xml:lang="en-us">funding provided via</rdfs:label>
-        <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#Grant"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://vivoweb.org/ontology/core#hasGeographicLocation -->
 
     <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#hasGeographicLocation">
@@ -284,24 +246,6 @@
 
     <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#hasPublicationVenue">
         <rdfs:label xml:lang="en-us">published in</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#hasResearchArea -->
-
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#hasResearchArea">
-        <rdfs:label xml:lang="en-us">research areas</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#hasAssociatedConcept"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#hasSubjectArea -->
-
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#hasSubjectArea">
-        <rdfs:label xml:lang="en-us">has subject area</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#hasAssociatedConcept"/>
     </owl:ObjectProperty>
     
 
@@ -467,9 +411,6 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     </owl:DatatypeProperty>
     
-
-
-   
 
 
     <!-- http://vivoweb.org/ontology/core#description -->
@@ -1167,12 +1108,6 @@ This class allows for linking an author to a publication while indicating inform
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#Consortium">
         <rdfs:label xml:lang="en-us">Consortium</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#hasCurrentMember"/>
-                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <vitro:exampleAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Committee on Institutional Cooperation (CIC); The Five Colleges of Ohio</vitro:exampleAnnot>
         <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Independent organizations formally working together toward a common goal, under an expressed agreement</vitro:shortDef>
     </owl:Class>

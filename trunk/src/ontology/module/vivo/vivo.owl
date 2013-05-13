@@ -222,20 +222,6 @@
     
 
 
-    <!-- http://vivoweb.org/ontology/core#awardConferredBy -->
-
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#awardConferredBy"/>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#currentMemberOf -->
-
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#currentMemberOf">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002350"/>
-    </rdf:Description>
-    
-
-
     <!-- http://vivoweb.org/ontology/core#features -->
 
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#features">
@@ -245,50 +231,11 @@
     
 
 
-    <!-- http://vivoweb.org/ontology/core#fundingVehicleFor -->
-
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#fundingVehicleFor">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000056"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#grantAwardedBy -->
-
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#grantAwardedBy"/>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#hasCurrentMember -->
-
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#hasCurrentMember">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002351"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#hasFundingVehicle -->
-
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#hasFundingVehicle">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
-    </rdf:Description>
-    
-
-
     <!-- http://vivoweb.org/ontology/core#hasPublicationVenue -->
 
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#hasPublicationVenue">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
     </rdf:Description>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#inputOf -->
-
-    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#inputOf">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000056"/>
-        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
-    </owl:ObjectProperty>
     
 
 
@@ -439,7 +386,7 @@
     <!-- http://purl.obolibrary.org/obo/ERO_0000005 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000005">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Service</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">service</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
     </owl:Class>
     
@@ -448,7 +395,7 @@
     <!-- http://purl.obolibrary.org/obo/ERO_0000071 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000071">
-        <rdfs:label>software (ERO)</rdfs:label>
+        <rdfs:label>software</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
     </owl:Class>
     
@@ -476,7 +423,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000013">
         <rdfs:label>journal article (IAO)</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
     </owl:Class>
     
 
@@ -494,15 +440,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000032">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">scalar measurement datum</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000310 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000310">
-        <rdfs:label>document (IAO)</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
     </owl:Class>
     
 
@@ -541,9 +478,10 @@
 
     <!-- http://purl.org/ontology/bibo/Document -->
 
-    <rdf:Description rdf:about="http://purl.org/ontology/bibo/Document">
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Document">
+        <rdfs:label>document (IAO)</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -678,7 +616,7 @@
     <!-- http://vivoweb.org/ontology/core#Equipment -->
 
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#Equipment">
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Object"/>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
     </rdf:Description>
     
 

@@ -775,8 +775,8 @@
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000015"/>
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000020"/>
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000071"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000310"/>
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0100026"/>
+                    <rdf:Description rdf:about="http://purl.org/ontology/bibo/Document"/>
                     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
                     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
                 </owl:unionOf>
@@ -843,8 +843,8 @@
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000071"/>
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000595"/>
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001716"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000310"/>
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0100026"/>
+                    <rdf:Description rdf:about="http://purl.org/ontology/bibo/Document"/>
                     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#Laboratory"/>
                 </owl:unionOf>
             </owl:Class>
@@ -894,8 +894,8 @@
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000595"/>
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001716"/>
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001828"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000310"/>
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0100026"/>
+                    <rdf:Description rdf:about="http://purl.org/ontology/bibo/Document"/>
                     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
                     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
                 </owl:unionOf>
@@ -938,9 +938,9 @@
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000071"/>
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000595"/>
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001716"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000310"/>
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0100026"/>
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SO_0001059"/>
+                    <rdf:Description rdf:about="http://purl.org/ontology/bibo/Document"/>
                     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
                     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
                 </owl:unionOf>
@@ -958,6 +958,15 @@
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Website(s)</app:preferredLabel>
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_SearchIndexExclude"/>
     </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000569 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000569">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed ID</app:preferredLabel>
+        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unique numerical identifier assigned to citation of life sciences and biomedical scientific journal articles in the PubMed database.  Annotate the full URL, which includes the ID.</app:preferredDefinition>
+    </owl:DatatypeProperty>
     
 
 
@@ -1007,8 +1016,8 @@
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000006"/>
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000015"/>
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000020"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000310"/>
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000410"/>
+                    <rdf:Description rdf:about="http://purl.org/ontology/bibo/Document"/>
                     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
                     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
                 </owl:unionOf>
@@ -5450,9 +5459,9 @@ Laboratory personnel have specific training in handling pathogenic and potential
         <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organism or virus from which the resource is derived.</app:preferredDefinition>
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Source Organism or Virus</app:preferredLabel>
         <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/ERO_0000160</app:domainConstraint>
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/ERO_0000630</app:domainConstraint>
         <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/ERO_0001551</app:domainConstraint>
         <app:rangeConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/OBI_0100026</app:rangeConstraint>
-        <app:domainConstraint  rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/ERO_0000630</app:domainConstraint>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0001018">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
@@ -6528,10 +6537,6 @@ Laboratory personnel have specific training in handling pathogenic and potential
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000568">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Animal physiology monitoring system</app:preferredLabel>
     </rdf:Description>
-    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000569">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed ID</app:preferredLabel>
-        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unique numerical identifier assigned to citation of life sciences and biomedical scientific journal articles in the PubMed database.  Annotate the full URL, which includes the ID.</app:preferredDefinition>
-    </owl:DatatypeProperty>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000560">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analog-to-digital converter</app:preferredLabel>
     </rdf:Description>
