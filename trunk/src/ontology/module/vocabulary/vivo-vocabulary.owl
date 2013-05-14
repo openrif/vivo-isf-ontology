@@ -1,18 +1,7 @@
 <?xml version="1.0"?>
-
-
-<!DOCTYPE rdf:RDF [
-    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
-    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
-    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
-    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-    <!ENTITY ns "http://www.w3.org/2003/06/sw-vocab-status/ns#" >
-    <!ENTITY vitro "http://vitro.mannlib.cornell.edu/ns/vitro/0.7#" >
-]>
-
-
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/arg/module/vocabulary/vivo-vocabulary.owl#"
      xml:base="http://purl.obolibrary.org/obo/arg/module/vocabulary/vivo-vocabulary.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:vitro="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#"
@@ -33,10 +22,9 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <owl:AnnotationProperty rdf:about="&vitro;exampleAnnot"/>
-    <owl:AnnotationProperty rdf:about="&ns;term_status"/>
-    <owl:AnnotationProperty rdf:about="&vitro;shortDef"/>
-    <owl:AnnotationProperty rdf:about="&vitro;descriptionAnnot"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
     
 
 
@@ -48,30 +36,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Object Properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Data properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
     
 
 
@@ -91,10 +55,10 @@
     <owl:Class rdf:about="http://purl.org/ontology/bibo/DocumentStatus">
         <rdfs:label xml:lang="en-us">Document Status</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <vitro:shortDef rdf:datatype="&xsd;string">The status of a document with respect to its publication.</vitro:shortDef>
-        <vitro:descriptionAnnot rdf:datatype="&xsd;string">The status of a document with respect to its publication. The statuses are represented as individuals of this class. Use the &quot;show all individuals of this class&quot; button on the class control panel to see the currently defined statuses.</vitro:descriptionAnnot>
-        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <vitro:exampleAnnot rdf:datatype="&xsd;string">submitted; accepted; in-press; published; invited; refereed.</vitro:exampleAnnot>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The status of a document with respect to its publication.</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The status of a document with respect to its publication. The statuses are represented as individuals of this class. Use the &quot;show all individuals of this class&quot; button on the class control panel to see the currently defined statuses.</obo:IAO_0000112>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">submitted; accepted; in-press; published; invited; refereed.</obo:IAO_0000112>
         <ns:term_status>stable</ns:term_status>
         <rdfs:comment xml:lang="en">The status of the publication of a document.</rdfs:comment>
     </owl:Class>
@@ -106,10 +70,10 @@
     <owl:Class rdf:about="http://purl.org/ontology/bibo/ThesisDegree">
         <rdfs:label xml:lang="en-us">Thesis Degree</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#AcademicDegree"/>
-        <vitro:descriptionAnnot rdf:datatype="&xsd;string">Different from general academic degree, thesis degree is achieved through one&apos;s completed thesis. Thesis is a document submitted in support of candidature for a degree or professional qualification presenting the author&apos;s research and findings(http://en.wikipedia.org/wiki/Thesis_or_dissertation).</vitro:descriptionAnnot>
-        <vitro:exampleAnnot rdf:datatype="&xsd;string">Doctor of Philosophy (Ph.D.)</vitro:exampleAnnot>
-        <vitro:shortDef rdf:datatype="&xsd;string">The academic degree of a Thesis.</vitro:shortDef>
-        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Different from general academic degree, thesis degree is achieved through one&apos;s completed thesis. Thesis is a document submitted in support of candidature for a degree or professional qualification presenting the author&apos;s research and findings(http://en.wikipedia.org/wiki/Thesis_or_dissertation).</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor of Philosophy (Ph.D.)</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The academic degree of a Thesis.</obo:IAO_0000115>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
         <rdfs:comment xml:lang="en">The academic degree of a Thesis</rdfs:comment>
         <ns:term_status>stable</ns:term_status>
     </owl:Class>
@@ -121,9 +85,9 @@
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#AcademicDegree">
         <rdfs:label xml:lang="en-us">Academic Degree</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <vitro:shortDef rdf:datatype="&xsd;string">An academic degree at any level, both as reported by individuals for employment and as offered by academic degree programs.</vitro:shortDef>
-        <vitro:exampleAnnot rdf:datatype="&xsd;string">B.A. Bachelor of Arts</vitro:exampleAnnot>
-        <vitro:descriptionAnnot rdf:datatype="&xsd;string">This list may have multiple abbreviations for some degrees.</vitro:descriptionAnnot>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An academic degree at any level, both as reported by individuals for employment and as offered by academic degree programs.</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">B.A. Bachelor of Arts</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This list may have multiple abbreviations for some degrees.</obo:IAO_0000112>
     </owl:Class>
     
 
@@ -133,9 +97,9 @@
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#Award">
         <rdfs:label xml:lang="en-us">Award or Honor</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <vitro:shortDef rdf:datatype="&xsd;string">An Award or Honor</vitro:shortDef>
-        <vitro:descriptionAnnot rdf:datatype="&xsd;string">An Award or Honor</vitro:descriptionAnnot>
-        <vitro:exampleAnnot rdf:datatype="&xsd;string">Wiley Prize in Biomedical Sciences</vitro:exampleAnnot>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An Award or Honor</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An Award or Honor</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wiley Prize in Biomedical Sciences</obo:IAO_0000112>
     </owl:Class>
     
 
@@ -145,8 +109,8 @@
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#Certificate">
         <rdfs:label xml:lang="en-us">Certificate</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Credential"/>
-        <vitro:shortDef rdf:datatype="&xsd;string">A document confirming certain characteristics of a person or organization, usually provided by some form of external review, education, or assessment.</vitro:shortDef>
-        <vitro:descriptionAnnot rdf:datatype="&xsd;string">A document confirming certain characteristics of a person or organization, usually provided by some form of external review, education, or assessment.</vitro:descriptionAnnot>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A document confirming certain characteristics of a person or organization, usually provided by some form of external review, education, or assessment.</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A document confirming certain characteristics of a person or organization, usually provided by some form of external review, education, or assessment.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -156,8 +120,8 @@
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#Credential">
         <rdfs:label xml:lang="en-us">Credential</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <vitro:descriptionAnnot rdf:datatype="&xsd;string">An attestation of qualification, competence, or authority issued to an individual by a third party with a relevant or  de facto authority or assumed competence to do so.</vitro:descriptionAnnot>
-        <vitro:shortDef rdf:datatype="&xsd;string">An attestation of qualification, competence, or authority issued to an individual by a third party with a relevant or  de facto authority or assumed competence to do so.</vitro:shortDef>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An attestation of qualification, competence, or authority issued to an individual by a third party with a relevant or  de facto authority or assumed competence to do so.</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An attestation of qualification, competence, or authority issued to an individual by a third party with a relevant or  de facto authority or assumed competence to do so.</obo:IAO_0000112>
     </owl:Class>
     
 
@@ -167,7 +131,7 @@
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#DateTimeValuePrecision">
         <rdfs:label xml:lang="en-us">Date/Time Value Precision</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <vitro:shortDef rdf:datatype="&xsd;string">Indicates the precision of the value of a DateTimeValue instance.</vitro:shortDef>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indicates the precision of the value of a DateTimeValue instance.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -177,8 +141,8 @@
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#License">
         <rdfs:label xml:lang="en-us">License</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Credential"/>
-        <vitro:descriptionAnnot rdf:datatype="&xsd;string">Licenses are usually issued in order to regulate some activity that is deemed to be dangerous or a threat to the person or the public or which involves a high level of specialized skill.  See also core:Licensure.</vitro:descriptionAnnot>
-        <vitro:shortDef rdf:datatype="&xsd;string">Official or legal permission to do something</vitro:shortDef>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Licenses are usually issued in order to regulate some activity that is deemed to be dangerous or a threat to the person or the public or which involves a high level of specialized skill.  See also core:Licensure.</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Official or legal permission to do something</obo:IAO_0000115>
     </owl:Class>
     
 

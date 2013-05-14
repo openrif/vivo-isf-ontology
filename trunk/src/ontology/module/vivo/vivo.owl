@@ -487,9 +487,6 @@
     
 
 
-
-
-
     <!-- http://purl.org/spar/c4o/GlobalCitationCount -->
 
     <rdf:Description rdf:about="http://purl.org/spar/c4o/GlobalCitationCount">
@@ -541,7 +538,9 @@
     <!-- http://vivoweb.org/ontology/core#AwardedDegree -->
 
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#AwardedDegree">
+        <rdfs:label>awarded degree</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Relationship"/>
+        <obo:IAO_0000115>The awarding of a degree by an agent to another agent. It is mostly for academic degrees.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -597,7 +596,9 @@
     <!-- http://vivoweb.org/ontology/core#Editorship -->
 
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#Editorship">
+        <rdfs:label>editorship</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Relationship"/>
+        <obo:IAO_0000115>A relationship that represents the recognition of an agent as an editor.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -760,9 +761,6 @@
         <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#DateTimeValue"/>
     </owl:Class>
     
-
-
-
 
 
     <!-- http://xmlns.com/foaf/0.1/Agent -->
