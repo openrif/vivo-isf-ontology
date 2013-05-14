@@ -2084,12 +2084,6 @@ Contents
 
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#URLLink">
         <rdfs:label xml:lang="en-us">URLLink</rdfs:label>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vivoweb.org/ontology/core#linkURI"/>
-                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The full URL.</vitro:descriptionAnnot>
         <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Uniform Resource Locator (URL) specifies where an identified resource is available and the mechanism for retrieving it.</vitro:shortDef>
         <vitro:exampleAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://info.slis.indiana.edu/~katy/</vitro:exampleAnnot>
