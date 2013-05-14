@@ -299,13 +299,17 @@
 
     <!-- http://vivoweb.org/ontology/core#hasMonetaryAmount -->
 
-    <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#hasMonetaryAmount"/>
+    <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#hasMonetaryAmount">
+        <rdfs:label>has_monetary_amount</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://vivoweb.org/ontology/core#hasValue -->
 
-    <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#hasValue"/>
+    <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#hasValue">
+        <rdfs:label>has_value</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
@@ -786,8 +790,20 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <rdf:Description rdf:about="http://purl.org/spar/c4o/hasGlobalCitationFrequency">
+        <rdfs:label>has_global_citation_frequency</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#geographicLocationOf">
+        <rdfs:label>geographic_location_of</rdfs:label>
+    </rdf:Description>
     <rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#geographical_region">
         <rdfs:label>geographical region</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#reviewedIn">
+        <rdfs:label>reviewed_in</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#geographicallyWithin">
+        <rdfs:label>geographically_within</rdfs:label>
     </rdf:Description>
 </rdf:RDF>
 
