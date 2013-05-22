@@ -137,6 +137,31 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ERO_0000480 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000480">
+        <rdfs:label>has_url</rdfs:label>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000004"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000005"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000006"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000014"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001716"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0100026"/>
+                    <rdf:Description rdf:about="http://purl.org/ontology/bibo/Document"/>
+                    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#Database"/>
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://vivoweb.org/ontology/core#description -->
 
     <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#description"/>
@@ -165,6 +190,12 @@
     <!-- http://purl.org/ontology/bibo/Image -->
 
     <owl:Class rdf:about="http://purl.org/ontology/bibo/Image"/>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#Database -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Database"/>
     
 
 
