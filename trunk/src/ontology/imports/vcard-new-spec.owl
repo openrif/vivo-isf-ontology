@@ -1,0 +1,2718 @@
+@prefix : <http://www.w3.org/2006/vcard/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2006/vcard/ns> .
+
+<http://www.w3.org/2006/vcard/ns> rdf:type owl:Ontology ;
+                                  
+                                  rdfs:label "Ontology for vCard based on RFC6350"^^xsd:string ;
+                                  
+                                  rdfs:comment "Based on RFC6350 "^^xsd:string ;
+                                  
+                                  owl:versionInfo "Draft"^^xsd:string .
+
+
+#################################################################
+#
+#    Annotation properties
+#
+#################################################################
+
+
+
+
+#################################################################
+#
+#    Datatypes
+#
+#################################################################
+
+
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://www.w3.org/2006/vcard/ns#hasAddress
+
+:hasAddress rdf:type owl:ObjectProperty ;
+            
+            rdfs:label "has address"^^xsd:string ;
+            
+            rdfs:range :Address .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#hasCalendarLink
+
+:hasCalendarLink rdf:type owl:ObjectProperty ;
+                 
+                 rdfs:label "has calendar link"^^xsd:string ;
+                 
+                 rdfs:range :CalendarLink .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#hasCalendarRequest
+
+:hasCalendarRequest rdf:type owl:ObjectProperty ;
+                    
+                    rdfs:label "has calendar request"^^xsd:string ;
+                    
+                    rdfs:range :CalendarRequest .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#hasCalenderBusy
+
+:hasCalenderBusy rdf:type owl:ObjectProperty ;
+                 
+                 rdfs:label "has calender busy"^^xsd:string ;
+                 
+                 rdfs:range :CalendarBusy .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#hasCategory
+
+:hasCategory rdf:type owl:ObjectProperty ;
+             
+             rdfs:label "has category"^^xsd:string ;
+             
+             rdfs:range :Category .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#hasEmail
+
+:hasEmail rdf:type owl:ObjectProperty ;
+          
+          rdfs:label "has email"^^xsd:string ;
+          
+          rdfs:range :Email .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#hasFormattedName
+
+:hasFormattedName rdf:type owl:ObjectProperty ;
+                  
+                  rdfs:label "has formatted name"^^xsd:string ;
+                  
+                  rdfs:range :FormattedName .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#hasGeo
+
+:hasGeo rdf:type owl:ObjectProperty ;
+        
+        rdfs:label "has geo"^^xsd:string ;
+        
+        rdfs:range :Geo .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#hasInstantMessage
+
+:hasInstantMessage rdf:type owl:ObjectProperty ;
+                   
+                   rdfs:label "has messaging"^^xsd:string ;
+                   
+                   rdfs:range :InstantMessage .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#hasKey
+
+:hasKey rdf:type owl:ObjectProperty ;
+        
+        rdfs:label "has key"^^xsd:string ;
+        
+        rdfs:range :Key .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#hasLanguage
+
+:hasLanguage rdf:type owl:ObjectProperty ;
+             
+             rdfs:label "has language"^^xsd:string ;
+             
+             rdfs:range :Language .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#hasLogo
+
+:hasLogo rdf:type owl:ObjectProperty ;
+         
+         rdfs:label "has logo"^^xsd:string ;
+         
+         rdfs:range :Logo .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#hasMember
+
+:hasMember rdf:type owl:ObjectProperty ;
+           
+           rdfs:label "member"^^xsd:string ;
+           
+           rdfs:comment "To include a member in the group this vCard represents"^^xsd:string ;
+           
+           rdfs:domain :Group ;
+           
+           rdfs:range [ rdf:type owl:Class ;
+                        owl:unionOf ( :Individual
+                                      :Location
+                                      :Organization
+                                    )
+                      ] .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#hasName
+
+:hasName rdf:type owl:ObjectProperty ;
+         
+         rdfs:label "has Name"^^xsd:string ;
+         
+         rdfs:range :Name .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#hasNickname
+
+:hasNickname rdf:type owl:ObjectProperty ;
+             
+             rdfs:label "has nickname"^^xsd:string ;
+             
+             rdfs:range :Nickname .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#hasNote
+
+:hasNote rdf:type owl:ObjectProperty ;
+         
+         rdfs:label "Has note"^^xsd:string ;
+         
+         rdfs:range :Note .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#hasOrganizationName
+
+:hasOrganizationName rdf:type owl:ObjectProperty ;
+                     
+                     rdfs:label "has organization name"^^xsd:string ;
+                     
+                     rdfs:range :OrganizationName .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#hasOrganizationalUnitName
+
+:hasOrganizationalUnitName rdf:type owl:ObjectProperty ;
+                           
+                           rdfs:label "has organisational unit name"^^xsd:string ;
+                           
+                           rdfs:range :OrganizationUnitName .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#hasPhoto
+
+:hasPhoto rdf:type owl:ObjectProperty ;
+          
+          rdfs:label "has photo"^^xsd:string ;
+          
+          rdfs:range :Photo .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#hasRelated
+
+:hasRelated rdf:type owl:ObjectProperty ;
+            
+            rdfs:label "has related"^^xsd:string ;
+            
+            rdfs:range :Related .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#hasRole
+
+:hasRole rdf:type owl:ObjectProperty ;
+         
+         rdfs:label "has role"^^xsd:string ;
+         
+         rdfs:range :Role .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#hasSound
+
+:hasSound rdf:type owl:ObjectProperty ;
+          
+          rdfs:label "has sound"^^xsd:string ;
+          
+          rdfs:range :Sound .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#hasTelephone
+
+:hasTelephone rdf:type owl:ObjectProperty ;
+              
+              rdfs:label "has telephone"^^xsd:string ;
+              
+              rdfs:range :Telephone .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#hasTimeZone
+
+:hasTimeZone rdf:type owl:ObjectProperty ;
+             
+             rdfs:label "has time zone"^^xsd:string ;
+             
+             rdfs:range :TimeZone .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#hasTitle
+
+:hasTitle rdf:type owl:ObjectProperty ;
+          
+          rdfs:label "has title"^^xsd:string ;
+          
+          rdfs:range :Title .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#hasURL
+
+:hasURL rdf:type owl:ObjectProperty ;
+        
+        rdfs:label "has URL"^^xsd:string ;
+        
+        rdfs:range :URL .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://www.w3.org/2006/vcard/ns#additionalName
+
+:additionalName rdf:type owl:DatatypeProperty ;
+                
+                rdfs:label " Additional name"^^xsd:string ;
+                
+                rdfs:range xsd:string ;
+                
+                rdfs:domain :Name .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#anniversary
+
+:anniversary rdf:type owl:DatatypeProperty ;
+             
+             rdfs:label "anniversary"^^xsd:string ;
+             
+             rdfs:comment "The date of marriage, or equivalent, of the object the  vCard represents"^^xsd:string ;
+             
+             rdfs:range xsd:dateTime ;
+             
+             rdfs:domain :Individual .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#birthdate
+
+:birthdate rdf:type owl:DatatypeProperty ;
+           
+           rdfs:label "birthdate"^^xsd:string ;
+           
+           rdfs:comment "To specify the birth date of the object the vCard represents"^^xsd:string ;
+           
+           rdfs:range xsd:dateTime ;
+           
+           rdfs:domain :Individual .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#calendarBusy
+
+:calendarBusy rdf:type owl:DatatypeProperty ;
+              
+              rdfs:label "calendar busy"^^xsd:string ;
+              
+              rdfs:range xsd:anyURI ;
+              
+              rdfs:domain :CalendarBusy .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#calendarLink
+
+:calendarLink rdf:type owl:DatatypeProperty ;
+              
+              rdfs:label "calendar link"^^xsd:string ;
+              
+              rdfs:range xsd:anyURI ;
+              
+              rdfs:domain :CalendarLink .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#calendarRequest
+
+:calendarRequest rdf:type owl:DatatypeProperty ;
+                 
+                 rdfs:label "calendar request"^^xsd:string ;
+                 
+                 rdfs:range xsd:anyURI ;
+                 
+                 rdfs:domain :CalendarRequest .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#category
+
+:category rdf:type owl:DatatypeProperty ;
+          
+          rdfs:label "category"^^xsd:string ;
+          
+          rdfs:range xsd:string ;
+          
+          rdfs:domain :Category .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#country
+
+:country rdf:type owl:DatatypeProperty ;
+         
+         rdfs:label "Country"^^xsd:string ;
+         
+         rdfs:range xsd:string ;
+         
+         rdfs:domain :Address .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#email
+
+:email rdf:type owl:DatatypeProperty ;
+       
+       rdfs:label "email"^^xsd:string ;
+       
+       rdfs:range xsd:string ;
+       
+       rdfs:domain :Email .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#familyName
+
+:familyName rdf:type owl:DatatypeProperty ;
+            
+            rdfs:label "has last name"^^xsd:string ;
+            
+            rdfs:comment "Called Family Name in vCard"^^xsd:string ;
+            
+            rdfs:range xsd:string ;
+            
+            rdfs:domain :Name .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#formattedName
+
+:formattedName rdf:type owl:DatatypeProperty ;
+               
+               rdfs:label "has format name"^^xsd:string ;
+               
+               rdfs:range xsd:string ;
+               
+               rdfs:domain :FormattedName .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#gender
+
+:gender rdf:type owl:DatatypeProperty ;
+        
+        rdfs:label "gender"^^xsd:string ;
+        
+        rdfs:comment """To specify the components of the sex and gender identity of the object the vCard represents.
+To enable other Gender/Sex codes to be used, this dataproperty has range URI. The vCard gender code classes are defined under Code/Gender"""^^xsd:string ;
+        
+        rdfs:range xsd:anyURI ;
+        
+        rdfs:domain :Individual .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#geo
+
+:geo rdf:type owl:DatatypeProperty ;
+     
+     rdfs:label "geo"^^xsd:string ;
+     
+     rdfs:comment "Must use the geo URI scheme RFC5870"^^xsd:string ;
+     
+     rdfs:range xsd:anyURI ;
+     
+     rdfs:domain :Geo .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#givenName
+
+:givenName rdf:type owl:DatatypeProperty ;
+           
+           rdfs:label "first name"^^xsd:string ;
+           
+           rdfs:comment "called Given Name invCard"^^xsd:string ;
+           
+           rdfs:range xsd:string ;
+           
+           rdfs:domain :Name .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#honorificPrefix
+
+:honorificPrefix rdf:type owl:DatatypeProperty ;
+                 
+                 rdfs:label "has prefix name"^^xsd:string ;
+                 
+                 rdfs:comment "Called Honorific Prefix in vCard"^^xsd:string ;
+                 
+                 rdfs:range xsd:string ;
+                 
+                 rdfs:domain :Name .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#honorificSuffix
+
+:honorificSuffix rdf:type owl:DatatypeProperty ;
+                 
+                 rdfs:label "honorific suffix name"^^xsd:string ;
+                 
+                 rdfs:range xsd:string ;
+                 
+                 rdfs:domain :Name .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#instantMessage
+
+:instantMessage rdf:type owl:DatatypeProperty ;
+                
+                rdfs:label "Instant Message"^^xsd:string ;
+                
+                rdfs:range xsd:anyURI ;
+                
+                rdfs:domain :InstantMessage .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#key
+
+:key rdf:type owl:DatatypeProperty ;
+     
+     rdfs:label "key"^^xsd:string ;
+     
+     rdfs:range xsd:anyURI ;
+     
+     rdfs:domain :Key .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#language
+
+:language rdf:type owl:DatatypeProperty ;
+          
+          rdfs:label "has language"^^xsd:string ;
+          
+          rdfs:comment "Use 2 char language code from RFC5646"^^xsd:string ;
+          
+          rdfs:range xsd:string .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#locality
+
+:locality rdf:type owl:DatatypeProperty ;
+          
+          rdfs:label "locality"^^xsd:string ;
+          
+          rdfs:range xsd:string ;
+          
+          rdfs:domain :Address .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#logo
+
+:logo rdf:type owl:DatatypeProperty ;
+      
+      rdfs:label "logo"^^xsd:string ;
+      
+      rdfs:range xsd:anyURI ;
+      
+      rdfs:domain :Logo .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#nickName
+
+:nickName rdf:type owl:DatatypeProperty ;
+          
+          rdfs:label "nick name"^^xsd:string ;
+          
+          rdfs:range xsd:string ;
+          
+          rdfs:domain :Nickname .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#note
+
+:note rdf:type owl:DatatypeProperty ;
+      
+      rdfs:label "note"^^xsd:string ;
+      
+      rdfs:range xsd:string ;
+      
+      rdfs:domain :Note .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#organizationName
+
+:organizationName rdf:type owl:DatatypeProperty ;
+                  
+                  rdfs:label "organization name"^^xsd:string ;
+                  
+                  rdfs:range xsd:string ;
+                  
+                  rdfs:domain :OrganizationName .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#organizationalUnitName
+
+:organizationalUnitName rdf:type owl:DatatypeProperty ;
+                        
+                        rdfs:label "organizational unit name"^^xsd:string ;
+                        
+                        rdfs:range xsd:string ;
+                        
+                        rdfs:domain :OrganizationUnitName .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#photo
+
+:photo rdf:type owl:DatatypeProperty ;
+       
+       rdfs:label "photo"^^xsd:string ;
+       
+       rdfs:range xsd:anyURI ;
+       
+       rdfs:domain :Photo .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#postalCode
+
+:postalCode rdf:type owl:DatatypeProperty ;
+            
+            rdfs:label "postal code"^^xsd:string ;
+            
+            rdfs:range xsd:string ;
+            
+            rdfs:domain :Address .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#productId
+
+:productId rdf:type owl:DatatypeProperty ;
+           
+           rdfs:label "product id"^^xsd:string ;
+           
+           rdfs:range xsd:string .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#region
+
+:region rdf:type owl:DatatypeProperty ;
+        
+        rdfs:label "region"^^xsd:string ;
+        
+        rdfs:range xsd:string ;
+        
+        rdfs:domain :Address .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#related
+
+:related rdf:type owl:DatatypeProperty ;
+         
+         rdfs:label "related"^^xsd:string ;
+         
+         rdfs:range xsd:anyURI ;
+         
+         rdfs:domain :Related .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#revision
+
+:revision rdf:type owl:DatatypeProperty ;
+          
+          rdfs:label "revision"^^xsd:string ;
+          
+          rdfs:range xsd:dateTime .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#role
+
+:role rdf:type owl:DatatypeProperty ;
+      
+      rdfs:label "role"^^xsd:string ;
+      
+      rdfs:range xsd:string ;
+      
+      rdfs:domain :Role .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#sortAs
+
+:sortAs rdf:type owl:DatatypeProperty ;
+        
+        rdfs:label "sort as"^^xsd:string ;
+        
+        rdfs:range xsd:string .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#sound
+
+:sound rdf:type owl:DatatypeProperty ;
+       
+       rdfs:label "sound"^^xsd:string ;
+       
+       rdfs:range xsd:anyURI ;
+       
+       rdfs:domain :Sound .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#source
+
+:source rdf:type owl:DatatypeProperty ;
+        
+        rdfs:label "source"^^xsd:string ;
+        
+        rdfs:range xsd:string .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#streetAddress
+
+:streetAddress rdf:type owl:DatatypeProperty ;
+               
+               rdfs:label "street address"^^xsd:string ;
+               
+               rdfs:range xsd:string ;
+               
+               rdfs:domain :Address .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#telephone
+
+:telephone rdf:type owl:DatatypeProperty ;
+           
+           rdfs:label "telephone"^^xsd:string ;
+           
+           rdfs:range xsd:anyURI .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#timeZone
+
+:timeZone rdf:type owl:DatatypeProperty ;
+          
+          rdfs:label "timezone"^^xsd:string ;
+          
+          rdfs:range xsd:string ;
+          
+          rdfs:domain :TimeZone .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#title
+
+:title rdf:type owl:DatatypeProperty ;
+       
+       rdfs:label "title"^^xsd:string ;
+       
+       rdfs:range xsd:string ;
+       
+       rdfs:domain :Title .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#uid
+
+:uid rdf:type owl:DatatypeProperty ;
+     
+     rdfs:label "uid"^^xsd:string ;
+     
+     rdfs:comment "To specify a value that represents a globally unique identifier corresponding to the entity associated with the vCard"^^xsd:string ;
+     
+     rdfs:range xsd:anyURI .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#url
+
+:url rdf:type owl:DatatypeProperty ;
+     
+     rdfs:label "url"^^xsd:string ;
+     
+     rdfs:range xsd:anyURI .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://www.w3.org/2006/vcard/ns#Acquaintance
+
+:Acquaintance rdf:type owl:Class ;
+              
+              rdfs:label "Acquaintance"^^xsd:string ;
+              
+              rdfs:subClassOf :RelatedType .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Address
+
+:Address rdf:type owl:Class ;
+         
+         rdfs:label "Address"^^xsd:string ;
+         
+         owl:equivalentClass [ rdf:type owl:Class ;
+                               owl:unionOf ( [ rdf:type owl:Class ;
+                                               owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty :country ;
+                                                                      owl:someValuesFrom xsd:string
+                                                                    ]
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty :country ;
+                                                                      owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                                    ]
+                                                                  )
+                                             ]
+                                             [ rdf:type owl:Class ;
+                                               owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty :locality ;
+                                                                      owl:someValuesFrom xsd:string
+                                                                    ]
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty :locality ;
+                                                                      owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                                    ]
+                                                                  )
+                                             ]
+                                             [ rdf:type owl:Class ;
+                                               owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty :postalCode ;
+                                                                      owl:someValuesFrom xsd:string
+                                                                    ]
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty :postalCode ;
+                                                                      owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                                    ]
+                                                                  )
+                                             ]
+                                             [ rdf:type owl:Class ;
+                                               owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty :region ;
+                                                                      owl:someValuesFrom xsd:string
+                                                                    ]
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty :region ;
+                                                                      owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                                    ]
+                                                                  )
+                                             ]
+                                             [ rdf:type owl:Class ;
+                                               owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty :streetAddress ;
+                                                                      owl:someValuesFrom xsd:string
+                                                                    ]
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty :streetAddress ;
+                                                                      owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                                    ]
+                                                                  )
+                                             ]
+                                           )
+                             ] ;
+         
+         rdfs:subClassOf :Addressing ;
+         
+         rdfs:comment "To specify the components of the delivery address for the vCard object"^^xsd:string .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Addressing
+
+:Addressing rdf:type owl:Class ;
+            
+            rdfs:label "Addressing"^^xsd:string ;
+            
+            owl:equivalentClass [ rdf:type owl:Class ;
+                                  owl:unionOf ( [ rdf:type owl:Class ;
+                                                  owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty :geo ;
+                                                                         owl:someValuesFrom xsd:anyURI
+                                                                       ]
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty :geo ;
+                                                                         owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                                       ]
+                                                                     )
+                                                ]
+                                                [ rdf:type owl:Class ;
+                                                  owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty :timeZone ;
+                                                                         owl:someValuesFrom xsd:string
+                                                                       ]
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty :timeZone ;
+                                                                         owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                                       ]
+                                                                     )
+                                                ]
+                                                [ rdf:type owl:Class ;
+                                                  owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty :language ;
+                                                                         owl:allValuesFrom xsd:string
+                                                                       ]
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty :language ;
+                                                                         owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                                       ]
+                                                                     )
+                                                ]
+                                                [ rdf:type owl:Class ;
+                                                  owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty :sortAs ;
+                                                                         owl:allValuesFrom xsd:string
+                                                                       ]
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty :sortAs ;
+                                                                         owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                                       ]
+                                                                     )
+                                                ]
+                                              )
+                                ] ;
+            
+            rdfs:comment "These types are concerned with information related to the delivery addressing or label for the vCard object"^^xsd:string .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Agent
+
+:Agent rdf:type owl:Class ;
+       
+       rdfs:label "Agent"^^xsd:string ;
+       
+       rdfs:subClassOf :RelatedType .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Calendar
+
+:Calendar rdf:type owl:Class ;
+          
+          rdfs:label "Calendar"^^xsd:string ;
+          
+          owl:equivalentClass [ rdf:type owl:Class ;
+                                owl:unionOf ( [ rdf:type owl:Class ;
+                                                owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty :geo ;
+                                                                       owl:someValuesFrom xsd:anyURI
+                                                                     ]
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty :geo ;
+                                                                       owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                                     ]
+                                                                   )
+                                              ]
+                                              [ rdf:type owl:Class ;
+                                                owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty :timeZone ;
+                                                                       owl:someValuesFrom xsd:string
+                                                                     ]
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty :timeZone ;
+                                                                       owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                                     ]
+                                                                   )
+                                              ]
+                                            )
+                              ] .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#CalendarBusy
+
+:CalendarBusy rdf:type owl:Class ;
+              
+              rdfs:label "Calendar Busy"^^xsd:string ;
+              
+              owl:equivalentClass [ rdf:type owl:Class ;
+                                    owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                           owl:onProperty :calendarBusy ;
+                                                           owl:someValuesFrom xsd:anyURI
+                                                         ]
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty :calendarBusy ;
+                                                           owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                                         ]
+                                                       )
+                                  ] ;
+              
+              rdfs:subClassOf :Calendar ;
+              
+              rdfs:comment """To specify the URI for the busy time associated with the object that the vCard represents.
+Was called FBURI in vCard"""^^xsd:string .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#CalendarLink
+
+:CalendarLink rdf:type owl:Class ;
+              
+              rdfs:label "Calendar link"^^xsd:string ;
+              
+              owl:equivalentClass [ rdf:type owl:Class ;
+                                    owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                           owl:onProperty :calendarLink ;
+                                                           owl:someValuesFrom xsd:anyURI
+                                                         ]
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty :calendarLink ;
+                                                           owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                                         ]
+                                                       )
+                                  ] ;
+              
+              rdfs:subClassOf :Calendar ;
+              
+              rdfs:comment """To specify the URI for a calendar associated with the object represented by the vCard.
+Was called CALURI in vCard."""^^xsd:string .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#CalendarRequest
+
+:CalendarRequest rdf:type owl:Class ;
+                 
+                 rdfs:label "Calendar request"^^xsd:string ;
+                 
+                 owl:equivalentClass [ rdf:type owl:Class ;
+                                       owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                              owl:onProperty :calendarRequest ;
+                                                              owl:someValuesFrom xsd:anyURI
+                                                            ]
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty :calendarRequest ;
+                                                              owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                                            ]
+                                                          )
+                                     ] ;
+                 
+                 rdfs:subClassOf :Calendar ;
+                 
+                 rdfs:comment """To specify the calendar user address [RFC5545] to which a scheduling request [RFC5546] should be sent for the object represented by the vCard. 
+Was called CALADRURI in vCard"""^^xsd:string .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Category
+
+:Category rdf:type owl:Class ;
+          
+          rdfs:label "Category"^^xsd:string ;
+          
+          owl:equivalentClass [ rdf:type owl:Class ;
+                                owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                       owl:onProperty :category ;
+                                                       owl:allValuesFrom xsd:string
+                                                     ]
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty :category ;
+                                                       owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                                     ]
+                                                   )
+                              ] ;
+          
+          rdfs:subClassOf :Explanatory ;
+          
+          rdfs:comment "To specify application category information about the vCard, also known as tags. This was called CATEGORIES in vCard."^^xsd:string .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Cell
+
+:Cell rdf:type owl:Class ;
+      
+      rdfs:label "Cell"^^xsd:string ;
+      
+      rdfs:subClassOf :TelephoneType ;
+      
+      rdfs:comment "Also called mobile telephone"^^xsd:string .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Child
+
+:Child rdf:type owl:Class ;
+       
+       rdfs:label "Child"^^xsd:string ;
+       
+       rdfs:subClassOf :RelatedType .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Code
+
+:Code rdf:type owl:Class ;
+      
+      rdfs:label "Code"^^xsd:string ;
+      
+      rdfs:comment "Contains all the Code related Classes that are used to indicate vCard Types"^^xsd:string .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Colleague
+
+:Colleague rdf:type owl:Class ;
+           
+           rdfs:label "Colleague"^^xsd:string ;
+           
+           rdfs:subClassOf :RelatedType .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Communication
+
+:Communication rdf:type owl:Class ;
+               
+               rdfs:label "Communication"^^xsd:string ;
+               
+               owl:equivalentClass [ rdf:type owl:Class ;
+                                     owl:unionOf ( [ rdf:type owl:Class ;
+                                                     owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty :geo ;
+                                                                            owl:someValuesFrom xsd:anyURI
+                                                                          ]
+                                                                          [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty :geo ;
+                                                                            owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                                          ]
+                                                                        )
+                                                   ]
+                                                   [ rdf:type owl:Class ;
+                                                     owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty :timeZone ;
+                                                                            owl:someValuesFrom xsd:string
+                                                                          ]
+                                                                          [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty :timeZone ;
+                                                                            owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                                          ]
+                                                                        )
+                                                   ]
+                                                   [ rdf:type owl:Class ;
+                                                     owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty :language ;
+                                                                            owl:allValuesFrom xsd:string
+                                                                          ]
+                                                                          [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty :language ;
+                                                                            owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                                          ]
+                                                                        )
+                                                   ]
+                                                   [ rdf:type owl:Class ;
+                                                     owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty :sortAs ;
+                                                                            owl:allValuesFrom xsd:string
+                                                                          ]
+                                                                          [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty :sortAs ;
+                                                                            owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                                          ]
+                                                                        )
+                                                   ]
+                                                 )
+                                   ] ;
+               
+               rdfs:comment "These properties describe information about how to communicate with the object the vCard represents"^^xsd:string .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Contact
+
+:Contact rdf:type owl:Class ;
+         
+         rdfs:label "Contact"^^xsd:string ;
+         
+         rdfs:subClassOf :RelatedType .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Coresident
+
+:Coresident rdf:type owl:Class ;
+            
+            rdfs:label "Coresident"^^xsd:string ;
+            
+            rdfs:subClassOf :RelatedType .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Coworker
+
+:Coworker rdf:type owl:Class ;
+          
+          rdfs:label "Coworker"^^xsd:string ;
+          
+          rdfs:subClassOf :RelatedType .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Crush
+
+:Crush rdf:type owl:Class ;
+       
+       rdfs:label "Crush"^^xsd:string ;
+       
+       rdfs:subClassOf :RelatedType .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Date
+
+:Date rdf:type owl:Class ;
+      
+      rdfs:label "Date"^^xsd:string ;
+      
+      rdfs:subClassOf :RelatedType .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Email
+
+:Email rdf:type owl:Class ;
+       
+       rdfs:label "Email"^^xsd:string ;
+       
+       owl:equivalentClass [ rdf:type owl:Class ;
+                             owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :email ;
+                                                    owl:allValuesFrom xsd:string
+                                                  ]
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :email ;
+                                                    owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                                  ]
+                                                )
+                           ] ;
+       
+       rdfs:subClassOf :Communication ;
+       
+       rdfs:comment "To specify the electronic mail address for communication with the object the vCard represents"^^xsd:string .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Emergency
+
+:Emergency rdf:type owl:Class ;
+           
+           rdfs:label "Emergency"^^xsd:string ;
+           
+           rdfs:subClassOf :RelatedType .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Explanatory
+
+:Explanatory rdf:type owl:Class ;
+             
+             rdfs:label "Explanatory"^^xsd:string ;
+             
+             owl:equivalentClass [ rdf:type owl:Class ;
+                                   owl:unionOf ( [ rdf:type owl:Class ;
+                                                   owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty :geo ;
+                                                                          owl:someValuesFrom xsd:anyURI
+                                                                        ]
+                                                                        [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty :geo ;
+                                                                          owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                                        ]
+                                                                      )
+                                                 ]
+                                                 [ rdf:type owl:Class ;
+                                                   owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty :timeZone ;
+                                                                          owl:someValuesFrom xsd:string
+                                                                        ]
+                                                                        [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty :timeZone ;
+                                                                          owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                                        ]
+                                                                      )
+                                                 ]
+                                                 [ rdf:type owl:Class ;
+                                                   owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty :language ;
+                                                                          owl:allValuesFrom xsd:string
+                                                                        ]
+                                                                        [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty :language ;
+                                                                          owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                                        ]
+                                                                      )
+                                                 ]
+                                                 [ rdf:type owl:Class ;
+                                                   owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty :sortAs ;
+                                                                          owl:allValuesFrom xsd:string
+                                                                        ]
+                                                                        [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty :sortAs ;
+                                                                          owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                                        ]
+                                                                      )
+                                                 ]
+                                               )
+                                 ] ;
+             
+             rdfs:comment "These properties are concerned with additional explanations, such as that related to informational notes or revisions specific to the  vCard"^^xsd:string .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Fax
+
+:Fax rdf:type owl:Class ;
+     
+     rdfs:label "Fax"^^xsd:string ;
+     
+     rdfs:subClassOf :TelephoneType .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Female
+
+:Female rdf:type owl:Class ;
+        
+        rdfs:label "Female"^^xsd:string ;
+        
+        rdfs:subClassOf :Gender .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#FormattedName
+
+:FormattedName rdf:type owl:Class ;
+               
+               rdfs:label "Formatted name"^^xsd:string ;
+               
+               owl:equivalentClass [ rdf:type owl:Class ;
+                                     owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                            owl:onProperty :formattedName ;
+                                                            owl:someValuesFrom xsd:string
+                                                          ]
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty :formattedName ;
+                                                            owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                          ]
+                                                        )
+                                   ] ;
+               
+               rdfs:subClassOf :Identification ;
+               
+               rdfs:comment "Specifies the formatted text corresponding to the name of the object the vCard represents"^^xsd:string .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Friend
+
+:Friend rdf:type owl:Class ;
+        
+        rdfs:label "Friend"^^xsd:string ;
+        
+        rdfs:subClassOf :RelatedType .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Gender
+
+:Gender rdf:type owl:Class ;
+        
+        rdfs:label "Gender"^^xsd:string ;
+        
+        rdfs:subClassOf :Code .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Geo
+
+:Geo rdf:type owl:Class ;
+     
+     rdfs:label "Geo"^^xsd:string ;
+     
+     owl:equivalentClass [ rdf:type owl:Class ;
+                           owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :geo ;
+                                                  owl:someValuesFrom xsd:anyURI
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :geo ;
+                                                  owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                                ]
+                                              )
+                         ] ;
+     
+     rdfs:subClassOf :Geographical ;
+     
+     rdfs:comment "Used to indicate global positioning  information that is specific to an address"^^xsd:string .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Geographical
+
+:Geographical rdf:type owl:Class ;
+              
+              rdfs:label "Geographical"^^xsd:string ;
+              
+              owl:equivalentClass [ rdf:type owl:Class ;
+                                    owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                           owl:onProperty :sortAs ;
+                                                           owl:allValuesFrom xsd:string
+                                                         ]
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty :sortAs ;
+                                                           owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                         ]
+                                                       )
+                                  ] ;
+              
+              rdfs:comment "These properties are concerned with information associated with  geographical positions or regions associated with the object the vCard represents"^^xsd:string .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Group
+
+:Group rdf:type owl:Class ;
+       
+       rdfs:label "Group"^^xsd:string ;
+       
+       owl:equivalentClass [ rdf:type owl:Class ;
+                             owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :hasMember ;
+                                                    owl:someValuesFrom :Kind
+                                                  ]
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :hasMember ;
+                                                    owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                                  ]
+                                                )
+                           ] ;
+       
+       rdfs:subClassOf :Kind ;
+       
+       owl:disjointWith :Individual ,
+                        :Location ,
+                        :Organization ;
+       
+       rdfs:comment "Defines all the properties required to be a Group of Individuals or  Organizations"^^xsd:string .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Home
+
+:Home rdf:type owl:Class ;
+      
+      rdfs:label "Home"^^xsd:string ;
+      
+      rdfs:subClassOf :Type ;
+      
+      rdfs:comment "This implies that the property is related to an individual's personal life"^^xsd:string .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Identification
+
+:Identification rdf:type owl:Class ;
+                
+                rdfs:label "Identification"^^xsd:string ;
+                
+                owl:equivalentClass [ rdf:type owl:Class ;
+                                      owl:unionOf ( [ rdf:type owl:Class ;
+                                                      owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty :geo ;
+                                                                             owl:someValuesFrom xsd:anyURI
+                                                                           ]
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty :geo ;
+                                                                             owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                                           ]
+                                                                         )
+                                                    ]
+                                                    [ rdf:type owl:Class ;
+                                                      owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty :timeZone ;
+                                                                             owl:someValuesFrom xsd:string
+                                                                           ]
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty :timeZone ;
+                                                                             owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                                           ]
+                                                                         )
+                                                    ]
+                                                    [ rdf:type owl:Class ;
+                                                      owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty :language ;
+                                                                             owl:allValuesFrom xsd:string
+                                                                           ]
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty :language ;
+                                                                             owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                                           ]
+                                                                         )
+                                                    ]
+                                                    [ rdf:type owl:Class ;
+                                                      owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty :sortAs ;
+                                                                             owl:allValuesFrom xsd:string
+                                                                           ]
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty :sortAs ;
+                                                                             owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                                           ]
+                                                                         )
+                                                    ]
+                                                  )
+                                    ] ;
+                
+                rdfs:comment "These types are used to capture information associated with the identification and naming of the entity associated with the vCard"^^xsd:string .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Individual
+
+:Individual rdf:type owl:Class ;
+            
+            rdfs:label "Individual"^^xsd:string ;
+            
+            owl:equivalentClass [ rdf:type owl:Class ;
+                                  owl:unionOf ( [ rdf:type owl:Class ;
+                                                  owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty :hasName ;
+                                                                         owl:someValuesFrom :Name
+                                                                       ]
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty :hasName ;
+                                                                         owl:minCardinality "0"^^xsd:nonNegativeInteger
+                                                                       ]
+                                                                     )
+                                                ]
+                                                [ rdf:type owl:Class ;
+                                                  owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty :anniversary ;
+                                                                         owl:someValuesFrom xsd:dateTime
+                                                                       ]
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty :anniversary ;
+                                                                         owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                                       ]
+                                                                     )
+                                                ]
+                                                [ rdf:type owl:Class ;
+                                                  owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty :birthdate ;
+                                                                         owl:someValuesFrom xsd:dateTime
+                                                                       ]
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty :birthdate ;
+                                                                         owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                                       ]
+                                                                     )
+                                                ]
+                                                [ rdf:type owl:Class ;
+                                                  owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty :gender ;
+                                                                         owl:someValuesFrom xsd:anyURI
+                                                                       ]
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty :gender ;
+                                                                         owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                                       ]
+                                                                     )
+                                                ]
+                                              )
+                                ] ;
+            
+            rdfs:subClassOf :Kind ;
+            
+            owl:disjointWith :Location ,
+                             :Organization ;
+            
+            rdfs:comment "Defines all the properties required to be an Individual"^^xsd:string .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#InstantMessage
+
+:InstantMessage rdf:type owl:Class ;
+                
+                rdfs:label "Messaging"^^xsd:string ;
+                
+                owl:equivalentClass [ rdf:type owl:Class ;
+                                      owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :instantMessage ;
+                                                             owl:allValuesFrom xsd:anyURI
+                                                           ]
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :instantMessage ;
+                                                             owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                                           ]
+                                                         )
+                                    ] ;
+                
+                rdfs:subClassOf :Communication ;
+                
+                rdfs:comment """To specify the URI for instant messaging and presence protocol communications with the object the vCard represents. 
+Was called IMPP in vCard."""^^xsd:string .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Key
+
+:Key rdf:type owl:Class ;
+     
+     rdfs:label "Key"^^xsd:string ;
+     
+     owl:equivalentClass [ rdf:type owl:Class ;
+                           owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :key ;
+                                                  owl:someValuesFrom xsd:anyURI
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :key ;
+                                                  owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                                ]
+                                              )
+                         ] ;
+     
+     rdfs:subClassOf :Security .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Kin
+
+:Kin rdf:type owl:Class ;
+     
+     rdfs:label "Kin"^^xsd:string ;
+     
+     rdfs:subClassOf :RelatedType .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Kind
+
+:Kind rdf:type owl:Class ;
+      
+      rdfs:label "vCard Kind"^^xsd:string ;
+      
+      owl:equivalentClass [ rdf:type owl:Class ;
+                            owl:unionOf ( [ rdf:type owl:Class ;
+                                            owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :hasAddress ;
+                                                                   owl:someValuesFrom :Address
+                                                                 ]
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :hasAddress ;
+                                                                   owl:minCardinality "0"^^xsd:nonNegativeInteger
+                                                                 ]
+                                                               )
+                                          ]
+                                          [ rdf:type owl:Class ;
+                                            owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :hasCalendarLink ;
+                                                                   owl:someValuesFrom :CalendarLink
+                                                                 ]
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :hasCalendarLink ;
+                                                                   owl:minCardinality "0"^^xsd:nonNegativeInteger
+                                                                 ]
+                                                               )
+                                          ]
+                                          [ rdf:type owl:Class ;
+                                            owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :hasCalendarRequest ;
+                                                                   owl:someValuesFrom :CalendarRequest
+                                                                 ]
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :hasCalendarRequest ;
+                                                                   owl:minCardinality "0"^^xsd:nonNegativeInteger
+                                                                 ]
+                                                               )
+                                          ]
+                                          [ rdf:type owl:Class ;
+                                            owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :hasCalenderBusy ;
+                                                                   owl:someValuesFrom :CalendarBusy
+                                                                 ]
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :hasCalenderBusy ;
+                                                                   owl:minCardinality "0"^^xsd:nonNegativeInteger
+                                                                 ]
+                                                               )
+                                          ]
+                                          [ rdf:type owl:Class ;
+                                            owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :hasCategory ;
+                                                                   owl:someValuesFrom :Category
+                                                                 ]
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :hasCategory ;
+                                                                   owl:minCardinality "0"^^xsd:nonNegativeInteger
+                                                                 ]
+                                                               )
+                                          ]
+                                          [ rdf:type owl:Class ;
+                                            owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :hasEmail ;
+                                                                   owl:someValuesFrom :Email
+                                                                 ]
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :hasEmail ;
+                                                                   owl:minCardinality "0"^^xsd:nonNegativeInteger
+                                                                 ]
+                                                               )
+                                          ]
+                                          [ rdf:type owl:Class ;
+                                            owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :hasFormattedName ;
+                                                                   owl:someValuesFrom :FormattedName
+                                                                 ]
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :hasFormattedName ;
+                                                                   owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                                 ]
+                                                               )
+                                          ]
+                                          [ rdf:type owl:Class ;
+                                            owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :hasGeo ;
+                                                                   owl:someValuesFrom :Geo
+                                                                 ]
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :hasGeo ;
+                                                                   owl:minCardinality "0"^^xsd:nonNegativeInteger
+                                                                 ]
+                                                               )
+                                          ]
+                                          [ rdf:type owl:Class ;
+                                            owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :hasInstantMessage ;
+                                                                   owl:someValuesFrom :InstantMessage
+                                                                 ]
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :hasInstantMessage ;
+                                                                   owl:minCardinality "0"^^xsd:nonNegativeInteger
+                                                                 ]
+                                                               )
+                                          ]
+                                          [ rdf:type owl:Class ;
+                                            owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :hasKey ;
+                                                                   owl:someValuesFrom :Key
+                                                                 ]
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :hasKey ;
+                                                                   owl:minCardinality "0"^^xsd:nonNegativeInteger
+                                                                 ]
+                                                               )
+                                          ]
+                                          [ rdf:type owl:Class ;
+                                            owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :hasLanguage ;
+                                                                   owl:someValuesFrom :Language
+                                                                 ]
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :hasLanguage ;
+                                                                   owl:minCardinality "0"^^xsd:nonNegativeInteger
+                                                                 ]
+                                                               )
+                                          ]
+                                          [ rdf:type owl:Class ;
+                                            owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :hasLogo ;
+                                                                   owl:someValuesFrom :Logo
+                                                                 ]
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :hasLogo ;
+                                                                   owl:minCardinality "0"^^xsd:nonNegativeInteger
+                                                                 ]
+                                                               )
+                                          ]
+                                          [ rdf:type owl:Class ;
+                                            owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :hasNickname ;
+                                                                   owl:someValuesFrom :Nickname
+                                                                 ]
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :hasNickname ;
+                                                                   owl:minCardinality "0"^^xsd:nonNegativeInteger
+                                                                 ]
+                                                               )
+                                          ]
+                                          [ rdf:type owl:Class ;
+                                            owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :hasNote ;
+                                                                   owl:someValuesFrom :Note
+                                                                 ]
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :hasNote ;
+                                                                   owl:minCardinality "0"^^xsd:nonNegativeInteger
+                                                                 ]
+                                                               )
+                                          ]
+                                          [ rdf:type owl:Class ;
+                                            owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :hasPhoto ;
+                                                                   owl:someValuesFrom :Photo
+                                                                 ]
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :hasPhoto ;
+                                                                   owl:minCardinality "0"^^xsd:nonNegativeInteger
+                                                                 ]
+                                                               )
+                                          ]
+                                          [ rdf:type owl:Class ;
+                                            owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :hasRelated ;
+                                                                   owl:someValuesFrom :Related
+                                                                 ]
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :hasRelated ;
+                                                                   owl:minCardinality "0"^^xsd:nonNegativeInteger
+                                                                 ]
+                                                               )
+                                          ]
+                                          [ rdf:type owl:Class ;
+                                            owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :hasRole ;
+                                                                   owl:someValuesFrom :Role
+                                                                 ]
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :hasRole ;
+                                                                   owl:minCardinality "0"^^xsd:nonNegativeInteger
+                                                                 ]
+                                                               )
+                                          ]
+                                          [ rdf:type owl:Class ;
+                                            owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :hasSound ;
+                                                                   owl:someValuesFrom :Sound
+                                                                 ]
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :hasSound ;
+                                                                   owl:minCardinality "0"^^xsd:nonNegativeInteger
+                                                                 ]
+                                                               )
+                                          ]
+                                          [ rdf:type owl:Class ;
+                                            owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :hasTelephone ;
+                                                                   owl:someValuesFrom :Telephone
+                                                                 ]
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :hasTelephone ;
+                                                                   owl:minCardinality "0"^^xsd:nonNegativeInteger
+                                                                 ]
+                                                               )
+                                          ]
+                                          [ rdf:type owl:Class ;
+                                            owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :hasTimeZone ;
+                                                                   owl:someValuesFrom :TimeZone
+                                                                 ]
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :hasTimeZone ;
+                                                                   owl:minCardinality "0"^^xsd:nonNegativeInteger
+                                                                 ]
+                                                               )
+                                          ]
+                                          [ rdf:type owl:Class ;
+                                            owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :hasTitle ;
+                                                                   owl:someValuesFrom :Title
+                                                                 ]
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :hasTitle ;
+                                                                   owl:minCardinality "0"^^xsd:nonNegativeInteger
+                                                                 ]
+                                                               )
+                                          ]
+                                          [ rdf:type owl:Class ;
+                                            owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :hasURL ;
+                                                                   owl:someValuesFrom :URL
+                                                                 ]
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :hasURL ;
+                                                                   owl:minCardinality "0"^^xsd:nonNegativeInteger
+                                                                 ]
+                                                               )
+                                          ]
+                                          [ rdf:type owl:Class ;
+                                            owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :productId ;
+                                                                   owl:someValuesFrom xsd:string
+                                                                 ]
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :productId ;
+                                                                   owl:minCardinality "0"^^xsd:nonNegativeInteger
+                                                                 ]
+                                                               )
+                                          ]
+                                          [ rdf:type owl:Class ;
+                                            owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :revision ;
+                                                                   owl:someValuesFrom xsd:dateTime
+                                                                 ]
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :revision ;
+                                                                   owl:minCardinality "0"^^xsd:nonNegativeInteger
+                                                                 ]
+                                                               )
+                                          ]
+                                          [ rdf:type owl:Class ;
+                                            owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :uid ;
+                                                                   owl:someValuesFrom xsd:anyURI
+                                                                 ]
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :uid ;
+                                                                   owl:minCardinality "0"^^xsd:nonNegativeInteger
+                                                                 ]
+                                                               )
+                                          ]
+                                        )
+                          ] ;
+      
+      rdfs:comment "The parent class for all vCard Objects"^^xsd:string .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Language
+
+:Language rdf:type owl:Class ;
+          
+          rdfs:label "Language"^^xsd:string ;
+          
+          owl:equivalentClass [ rdf:type owl:Class ;
+                                owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                       owl:onProperty :language ;
+                                                       owl:allValuesFrom xsd:string
+                                                     ]
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty :language ;
+                                                       owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                     ]
+                                                   )
+                              ] ;
+          
+          rdfs:subClassOf :Communication ;
+          
+          rdfs:comment "To specify the language(s) that may be used for contacting the entity associated with the vCard."^^xsd:string .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Location
+
+:Location rdf:type owl:Class ;
+          
+          rdfs:label "Location"^^xsd:string ;
+          
+          rdfs:subClassOf :Kind ;
+          
+          owl:disjointWith :Organization ;
+          
+          rdfs:comment "Defines all the properties required to be a Location"^^xsd:string .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Logo
+
+:Logo rdf:type owl:Class ;
+      
+      rdfs:label "Logo"^^xsd:string ;
+      
+      owl:equivalentClass [ rdf:type owl:Class ;
+                            owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :logo ;
+                                                   owl:someValuesFrom xsd:anyURI
+                                                 ]
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :logo ;
+                                                   owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                                 ]
+                                               )
+                          ] ;
+      
+      rdfs:subClassOf :Organizational ;
+      
+      rdfs:comment "To specify a graphic image of a logo associated with the  object the vCard represents"^^xsd:string .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Male
+
+:Male rdf:type owl:Class ;
+      
+      rdfs:label "Male"^^xsd:string ;
+      
+      rdfs:subClassOf :Gender .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Me
+
+:Me rdf:type owl:Class ;
+    
+    rdfs:label "Me"^^xsd:string ;
+    
+    rdfs:subClassOf :RelatedType .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Met
+
+:Met rdf:type owl:Class ;
+     
+     rdfs:label "Met"^^xsd:string ;
+     
+     rdfs:subClassOf :RelatedType .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Muse
+
+:Muse rdf:type owl:Class ;
+      
+      rdfs:label "Muse"^^xsd:string ;
+      
+      rdfs:subClassOf :RelatedType .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Name
+
+:Name rdf:type owl:Class ;
+      
+      rdfs:label "Name"^^xsd:string ;
+      
+      owl:equivalentClass [ rdf:type owl:Class ;
+                            owl:unionOf ( [ rdf:type owl:Class ;
+                                            owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :additionalName ;
+                                                                   owl:someValuesFrom xsd:string
+                                                                 ]
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :additionalName ;
+                                                                   owl:minCardinality "0"^^xsd:nonNegativeInteger
+                                                                 ]
+                                                               )
+                                          ]
+                                          [ rdf:type owl:Class ;
+                                            owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :familyName ;
+                                                                   owl:someValuesFrom xsd:string
+                                                                 ]
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :familyName ;
+                                                                   owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                                 ]
+                                                               )
+                                          ]
+                                          [ rdf:type owl:Class ;
+                                            owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :givenName ;
+                                                                   owl:someValuesFrom xsd:string
+                                                                 ]
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :givenName ;
+                                                                   owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                                 ]
+                                                               )
+                                          ]
+                                          [ rdf:type owl:Class ;
+                                            owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :honorificPrefix ;
+                                                                   owl:someValuesFrom xsd:string
+                                                                 ]
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :honorificPrefix ;
+                                                                   owl:minCardinality "0"^^xsd:nonNegativeInteger
+                                                                 ]
+                                                               )
+                                          ]
+                                          [ rdf:type owl:Class ;
+                                            owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :honorificSuffix ;
+                                                                   owl:someValuesFrom xsd:string
+                                                                 ]
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :honorificSuffix ;
+                                                                   owl:minCardinality "0"^^xsd:nonNegativeInteger
+                                                                 ]
+                                                               )
+                                          ]
+                                        )
+                          ] ;
+      
+      rdfs:subClassOf :Identification ;
+      
+      rdfs:comment "Specifies the components of the name of the object the  vCard represents"^^xsd:string .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Neighbor
+
+:Neighbor rdf:type owl:Class ;
+          
+          rdfs:label "Neighbor"^^xsd:string ;
+          
+          rdfs:subClassOf :RelatedType .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Nickname
+
+:Nickname rdf:type owl:Class ;
+          
+          rdfs:label "Nickname"^^xsd:string ;
+          
+          owl:equivalentClass [ rdf:type owl:Class ;
+                                owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                       owl:onProperty :nickName ;
+                                                       owl:someValuesFrom xsd:string
+                                                     ]
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty :nickName ;
+                                                       owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                                     ]
+                                                   )
+                              ] ;
+          
+          rdfs:subClassOf :Identification ;
+          
+          rdfs:comment "Specifies the text corresponding to the nickname of the object the vCard represents"^^xsd:string .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#None
+
+:None rdf:type owl:Class ;
+      
+      rdfs:label "None"^^xsd:string ;
+      
+      rdfs:subClassOf :Gender .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Note
+
+:Note rdf:type owl:Class ;
+      
+      rdfs:label "Note"^^xsd:string ;
+      
+      owl:equivalentClass [ rdf:type owl:Class ;
+                            owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :note ;
+                                                   owl:allValuesFrom xsd:string
+                                                 ]
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :note ;
+                                                   owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                                 ]
+                                               )
+                          ] ;
+      
+      rdfs:subClassOf :Explanatory ;
+      
+      rdfs:comment "To specify supplemental information or a comment that is associated with the vCard"^^xsd:string .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Organization
+
+:Organization rdf:type owl:Class ;
+              
+              rdfs:label "Org"^^xsd:string ,
+                         "Organization"^^xsd:string ;
+              
+              rdfs:subClassOf :Kind ;
+              
+              rdfs:comment "Defines all the properties required to be an  Organization"^^xsd:string ,
+                           "To specify the organizational name  associated with the vCard"^^xsd:string .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#OrganizationName
+
+:OrganizationName rdf:type owl:Class ;
+                  
+                  rdfs:label "vCard Kind"^^xsd:string ;
+                  
+                  owl:equivalentClass [ rdf:type owl:Class ;
+                                        owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :organizationName ;
+                                                               owl:someValuesFrom xsd:string
+                                                             ]
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :organizationName ;
+                                                               owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                                             ]
+                                                           )
+                                      ] ;
+                  
+                  rdfs:subClassOf :Organizational .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#OrganizationUnitName
+
+:OrganizationUnitName rdf:type owl:Class ;
+                      
+                      rdfs:label "Organizational Unit Name"^^xsd:string ;
+                      
+                      owl:equivalentClass [ rdf:type owl:Class ;
+                                            owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :organizationalUnitName ;
+                                                                   owl:someValuesFrom xsd:string
+                                                                 ]
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :organizationalUnitName ;
+                                                                   owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                                                 ]
+                                                               )
+                                          ] ;
+                      
+                      rdfs:subClassOf :OrganizationName .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Organizational
+
+:Organizational rdf:type owl:Class ;
+                
+                rdfs:label "Organisational"^^xsd:string ;
+                
+                owl:equivalentClass [ rdf:type owl:Class ;
+                                      owl:unionOf ( [ rdf:type owl:Class ;
+                                                      owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty :geo ;
+                                                                             owl:someValuesFrom xsd:anyURI
+                                                                           ]
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty :geo ;
+                                                                             owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                                           ]
+                                                                         )
+                                                    ]
+                                                    [ rdf:type owl:Class ;
+                                                      owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty :timeZone ;
+                                                                             owl:someValuesFrom xsd:string
+                                                                           ]
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty :timeZone ;
+                                                                             owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                                           ]
+                                                                         )
+                                                    ]
+                                                    [ rdf:type owl:Class ;
+                                                      owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty :language ;
+                                                                             owl:allValuesFrom xsd:string
+                                                                           ]
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty :language ;
+                                                                             owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                                           ]
+                                                                         )
+                                                    ]
+                                                    [ rdf:type owl:Class ;
+                                                      owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty :sortAs ;
+                                                                             owl:allValuesFrom xsd:string
+                                                                           ]
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty :sortAs ;
+                                                                             owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                                           ]
+                                                                         )
+                                                    ]
+                                                  )
+                                    ] ;
+                
+                rdfs:comment "These properties are concerned with information associated with characteristics of the organization or organizational units of the object that the vCard represents"^^xsd:string .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Other
+
+:Other rdf:type owl:Class ;
+       
+       rdfs:label "Other"^^xsd:string ;
+       
+       rdfs:subClassOf :Gender .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Pager
+
+:Pager rdf:type owl:Class ;
+       
+       rdfs:label "Pager"^^xsd:string ;
+       
+       rdfs:subClassOf :TelephoneType .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Parent
+
+:Parent rdf:type owl:Class ;
+        
+        rdfs:label "Parent"^^xsd:string ;
+        
+        rdfs:subClassOf :RelatedType .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Photo
+
+:Photo rdf:type owl:Class ;
+       
+       rdfs:label "Photo"^^xsd:string ;
+       
+       owl:equivalentClass [ rdf:type owl:Class ;
+                             owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :photo ;
+                                                    owl:someValuesFrom xsd:anyURI
+                                                  ]
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :photo ;
+                                                    owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                                  ]
+                                                )
+                           ] ;
+       
+       rdfs:subClassOf :Identification ;
+       
+       rdfs:comment "Specifies an image or photograph information that annotates some aspect of the object the vCard represents"^^xsd:string .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Related
+
+:Related rdf:type owl:Class ;
+         
+         rdfs:label "Related"^^xsd:string ;
+         
+         owl:equivalentClass [ rdf:type owl:Class ;
+                               owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :related ;
+                                                      owl:someValuesFrom xsd:anyURI
+                                                    ]
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :related ;
+                                                      owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                                    ]
+                                                  )
+                             ] ;
+         
+         rdfs:subClassOf :Organizational ;
+         
+         rdfs:comment "To specify a relationship between another entity and the entity represented by this vCard"^^xsd:string .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#RelatedType
+
+:RelatedType rdf:type owl:Class ;
+             
+             rdfs:label "Relation Type"^^xsd:string ;
+             
+             rdfs:subClassOf :Code .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Role
+
+:Role rdf:type owl:Class ;
+      
+      rdfs:label "Role"^^xsd:string ;
+      
+      owl:equivalentClass [ rdf:type owl:Class ;
+                            owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :role ;
+                                                   owl:someValuesFrom xsd:string
+                                                 ]
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :role ;
+                                                   owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                                 ]
+                                               )
+                          ] ;
+      
+      rdfs:subClassOf :Organizational ;
+      
+      rdfs:comment "To specify the function or part played in a particular situation by the object the vCard represents"^^xsd:string .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Security
+
+:Security rdf:type owl:Class ;
+          
+          rdfs:label "Security"^^xsd:string ;
+          
+          owl:equivalentClass [ rdf:type owl:Class ;
+                                owl:unionOf ( [ rdf:type owl:Class ;
+                                                owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty :geo ;
+                                                                       owl:someValuesFrom xsd:anyURI
+                                                                     ]
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty :geo ;
+                                                                       owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                                     ]
+                                                                   )
+                                              ]
+                                              [ rdf:type owl:Class ;
+                                                owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty :timeZone ;
+                                                                       owl:someValuesFrom xsd:string
+                                                                     ]
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty :timeZone ;
+                                                                       owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                                     ]
+                                                                   )
+                                              ]
+                                              [ rdf:type owl:Class ;
+                                                owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty :sortAs ;
+                                                                       owl:allValuesFrom xsd:string
+                                                                     ]
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty :sortAs ;
+                                                                       owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                                     ]
+                                                                   )
+                                              ]
+                                            )
+                              ] ;
+          
+          rdfs:comment "Contains all the Security related Classes"^^xsd:string .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Sibling
+
+:Sibling rdf:type owl:Class ;
+         
+         rdfs:label "Sibling"^^xsd:string ;
+         
+         rdfs:subClassOf :RelatedType .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Sound
+
+:Sound rdf:type owl:Class ;
+       
+       rdfs:label "Sound"^^xsd:string ;
+       
+       owl:equivalentClass [ rdf:type owl:Class ;
+                             owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :sound ;
+                                                    owl:allValuesFrom xsd:anyURI
+                                                  ]
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :sound ;
+                                                    owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                                  ]
+                                                )
+                           ] ;
+       
+       rdfs:subClassOf :Explanatory ;
+       
+       rdfs:comment "To specify a digital sound content information that annotates some aspect of the vCard.  This property is often used to specify the proper pronunciation of the name property value of the vCard"^^xsd:string .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Spouse
+
+:Spouse rdf:type owl:Class ;
+        
+        rdfs:label "Spouse"^^xsd:string ;
+        
+        rdfs:subClassOf :RelatedType .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Sweetheart
+
+:Sweetheart rdf:type owl:Class ;
+            
+            rdfs:label "Sweetheart"^^xsd:string ;
+            
+            rdfs:subClassOf :RelatedType .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Telephone
+
+:Telephone rdf:type owl:Class ;
+           
+           rdfs:label "Telephone"^^xsd:string ;
+           
+           owl:equivalentClass [ rdf:type owl:Class ;
+                                 owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                        owl:onProperty :telephone ;
+                                                        owl:allValuesFrom xsd:anyURI
+                                                      ]
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty :telephone ;
+                                                        owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                                      ]
+                                                    )
+                               ] ;
+           
+           rdfs:subClassOf :Communication .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#TelephoneType
+
+:TelephoneType rdf:type owl:Class ;
+               
+               rdfs:label "Phone"^^xsd:string ;
+               
+               rdfs:subClassOf :Code .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Text
+
+:Text rdf:type owl:Class ;
+      
+      rdfs:label "Text"^^xsd:string ;
+      
+      rdfs:subClassOf :TelephoneType ;
+      
+      rdfs:comment "Also called sms telephone"^^xsd:string .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#TextPhone
+
+:TextPhone rdf:type owl:Class ;
+           
+           rdfs:label "Text phone"^^xsd:string ;
+           
+           rdfs:subClassOf :TelephoneType .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#TimeZone
+
+:TimeZone rdf:type owl:Class ;
+          
+          rdfs:label "Time zone"^^xsd:string ;
+          
+          owl:equivalentClass [ rdf:type owl:Class ;
+                                owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                       owl:onProperty :timeZone ;
+                                                       owl:someValuesFrom xsd:string
+                                                     ]
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty :timeZone ;
+                                                       owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                                     ]
+                                                   )
+                              ] ;
+          
+          rdfs:subClassOf :Geographical ;
+          
+          rdfs:comment "Used to indicate time zone information that is specific to a location or address"^^xsd:string .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Title
+
+:Title rdf:type owl:Class ;
+       
+       rdfs:label "Title"^^xsd:string ;
+       
+       owl:equivalentClass [ rdf:type owl:Class ;
+                             owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :title ;
+                                                    owl:someValuesFrom xsd:string
+                                                  ]
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :title ;
+                                                    owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                                  ]
+                                                )
+                           ] ;
+       
+       rdfs:subClassOf :Organizational ;
+       
+       rdfs:comment "To specify the position or job of the object the vCard represents"^^xsd:string .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Type
+
+:Type rdf:type owl:Class ;
+      
+      rdfs:label "Type"^^xsd:string ;
+      
+      rdfs:subClassOf :Code ;
+      
+      rdfs:comment "This is called TYPE in vCard but renamed here to Context for less confusion (with types/class)"^^xsd:string .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#URL
+
+:URL rdf:type owl:Class ;
+     
+     rdfs:label "URL"^^xsd:string ;
+     
+     owl:equivalentClass [ rdf:type owl:Class ;
+                           owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :url ;
+                                                  owl:allValuesFrom xsd:anyURI
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :url ;
+                                                  owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                                ]
+                                              )
+                         ] ;
+     
+     rdfs:subClassOf :Explanatory ;
+     
+     rdfs:comment "To specify a uniform resource locator associated with the object to which the vCard refers.  Examples for individuals include personal web sites, blogs, and social networking site  identifiers. "^^xsd:string .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Unknown
+
+:Unknown rdf:type owl:Class ;
+         
+         rdfs:label "Unknown"^^xsd:string ;
+         
+         rdfs:subClassOf :Gender .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Video
+
+:Video rdf:type owl:Class ;
+       
+       rdfs:label "Video"^^xsd:string ;
+       
+       rdfs:subClassOf :TelephoneType .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Voice
+
+:Voice rdf:type owl:Class ;
+       
+       rdfs:label "Voice"^^xsd:string ;
+       
+       rdfs:subClassOf :TelephoneType .
+
+
+
+###  http://www.w3.org/2006/vcard/ns#Work
+
+:Work rdf:type owl:Class ;
+      
+      rdfs:label "Work"^^xsd:string ;
+      
+      rdfs:subClassOf :Type ;
+      
+      rdfs:comment "This implies that the property is related to an individual's work place"^^xsd:string .
+
+
+
+
+###  Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net
+
