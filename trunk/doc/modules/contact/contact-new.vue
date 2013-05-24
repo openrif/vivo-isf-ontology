@@ -1,14 +1,14 @@
 <!-- Tufts VUE 3.2 concept-map (contact-new.vue) 2013-05-23 -->
 <!-- Tufts VUE: http://vue.tufts.edu/ -->
 <!-- Do Not Remove: VUE mapping @version(1.1) jar:file:/C:/Program%20Files%20(x86)/VUE/VUE.jar!/tufts/vue/resources/lw_mapping_1_1.xml -->
-<!-- Do Not Remove: Saved date Thu May 23 13:26:19 PDT 2013 by essaids on platform Windows 7 6.1 in JVM 1.6.0_29-b11 -->
+<!-- Do Not Remove: Saved date Thu May 23 13:27:43 PDT 2013 by essaids on platform Windows 7 6.1 in JVM 1.6.0_29-b11 -->
 <!-- Do Not Remove: Saving version @(#)VUE: built May 14 2013 at 1717 by tomadm on Linux 2.6.18-348.2.1.el5 i386 JVM 1.6.0_39-b04(bits=32) -->
 <?xml version="1.0" encoding="US-ASCII"?>
 <LW-MAP xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="none" ID="0" label="contact-new.vue"
     created="1368722174706" x="0.0" y="0.0" width="1.4E-45"
     height="1.4E-45" strokeWidth="0.0" autoSized="false">
-    <resource referenceCreated="1369340779618" size="35008"
+    <resource referenceCreated="1369340863635" size="35008"
         spec="C:\s\svns\isf-new-layout\trunk\doc\modules\contact\contact-new.vue"
         type="1" xsi:type="URLResource">
         <title>contact-new.vue</title>
@@ -287,16 +287,6 @@
         <point2 x="706.6227" y="305.5"/>
         <ID1 xsi:type="node">27</ID1>
         <ID2 xsi:type="node">30</ID2>
-    </child>
-    <child ID="32" label="New Node" layerID="1" created="1369334281913"
-        x="793.0" y="561.0" width="69.0" height="23.0" strokeWidth="2.0"
-        autoSized="true" xsi:type="node">
-        <fillColor>#FFFFFF</fillColor>
-        <strokeColor>#DD7B11</strokeColor>
-        <textColor>#000000</textColor>
-        <font>Arial-plain-12</font>
-        <URIString>http://vue.tufts.edu/rdf/resource/d2b0d34a0a85291f003256a582c4dc42</URIString>
-        <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
     <child ID="33" label="anyUri" layerID="1" created="1369334283670"
         x="784.5" y="365.5" width="46.0" height="23.0" strokeWidth="2.0"
