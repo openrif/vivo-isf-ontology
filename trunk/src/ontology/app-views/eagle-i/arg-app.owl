@@ -487,6 +487,34 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001164 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001164">
+        <owl:equivalentClass rdf:resource="http://www.w3.org/2006/vcard/ns#Tel"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#Tel -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2006/vcard/ns#Tel">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000004"/>
+        <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_InstanceCreate"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Annotations
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -1068,11 +1096,11 @@
     <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topDataProperty">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ARG_2000029">
-        <app:rangeConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2002/07/owl#Thing</app:rangeConstraint>
-    </rdf:Description>
     <rdf:Description rdf:about="http://aims.fao.org/aos/geopolitical.owl#agriculturalAreaUnit">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ARG_2000029">
+        <app:rangeConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2002/07/owl#Thing</app:rangeConstraint>
     </rdf:Description>
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#faxNumber">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
@@ -1285,9 +1313,6 @@
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000417">
         <app:rangeConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/IAO_0000109</app:rangeConstraint>
         <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ifomis.org/bfo/1.1/snap#Quality</app:domainConstraint>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.w3.org/2006/vcard/ns#Tel">
-        <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_InstanceCreate"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#hasOrganizerRole">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
