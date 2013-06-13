@@ -1248,26 +1248,6 @@ See also core:localAwardId.
     
 
 
-    <!-- http://vivoweb.org/ontology/core#GraduateAdvisingRelationship -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#GraduateAdvisingRelationship">
-        <rdfs:label xml:lang="en-us">Graduate Advising Relationship</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#AdvisingRelationship"/>
-        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An advisory relationship in which a professor advises a graduate student.</ero:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#GraduateStudent -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#GraduateStudent">
-        <rdfs:label xml:lang="en-us">Graduate Student</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Student"/>
-        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person who has already received a bachelor&apos;s degree and is working toward a Master&apos;s or Doctoral degree.</ero:IAO_0000115>
-    </owl:Class>
-    
-
-
     <!-- http://vivoweb.org/ontology/core#Hospital -->
 
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#Hospital">
@@ -1626,17 +1606,6 @@ See also core:localAwardId.
     
 
 
-    <!-- http://vivoweb.org/ontology/core#Student -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Student">
-        <rdfs:label xml:lang="en-us">Student</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person who is enrolled in an educational institution.</ero:IAO_0000115>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Use only if no specific subclasses of core:Student describe the person.</ero:IAO_0000112>
-    </owl:Class>
-    
-
-
     <!-- http://vivoweb.org/ontology/core#StudentOrganization -->
 
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#StudentOrganization">
@@ -1703,16 +1672,6 @@ See also core:localAwardId.
         <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The full URL.</ero:IAO_0000112>
         <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Uniform Resource Locator (URL) specifies where an identified resource is available and the mechanism for retrieving it.</ero:IAO_0000115>
         <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://info.slis.indiana.edu/~katy/</ero:IAO_0000112>
-    </owl:Class>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#UndergraduateStudent -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#UndergraduateStudent">
-        <rdfs:label xml:lang="en-us">Undergraduate Student</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Student"/>
-        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person registered in an undergraduate program leading to a bachelor&apos;s degree or an undergraduate diploma or certificate.</ero:IAO_0000115>
     </owl:Class>
     
 
