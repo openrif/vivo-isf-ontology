@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://vivoweb.org/ontology/core#"
+     xml:base="http://vivoweb.org/ontology/core"
+     xmlns:afn="http://jena.hpl.hp.com/ARQ/function#"
+     xmlns:pvs="http://vivoweb.org/ontology/provenance-support#"
+     xmlns:geo="http://aims.fao.org/aos/geopolitical.owl#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:scires="http://vivoweb.org/ontology/scientific-research#"
+     xmlns:scirr="http://vivoweb.org/ontology/scientific-research-resource#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:fabio="http://purl.org/spar/fabio/"
+     xmlns:owl2="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:skco="http://www.w3.org/2004/02/skos/core#"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:event="http://purl.org/NET/c4dm/event.owl#"
+     xmlns:bibo="http://purl.org/ontology/bibo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:c4o="http://purl.org/spar/c4o/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:swvs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:skos="http://www.w3.org/2008/05/skos#"
+     xmlns:vivo="http://vivoweb.org/ontology/core#"
+     xmlns:dcelem="http://purl.org/dc/elements/1.1/"
+     xmlns:ero="http://purl.obolibrary.org/obo/">
+
+
+
+    <!-- http://vivoweb.org/ontology/core#CoPrincipalInvestigatorRole -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#CoPrincipalInvestigatorRole">
+        <rdfs:label xml:lang="en-us">Co-Principal Investigator Role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#InvestigatorRole"/>
+        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Role of co-principal investigator of an Agreement (for example, a grant), who devotes a specified percentage of time and is considered key personnel.</ero:IAO_0000115>
+    </owl:Class>
+
+
+
+    <!-- http://vivoweb.org/ontology/core#Contract -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Contract">
+        <rdfs:label xml:lang="en-us">Contract</rdfs:label>
+        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An agreement involving specific deliverables and payment</ero:IAO_0000115>
+    </owl:Class>
+
+
+ 
+    <!-- http://vivoweb.org/ontology/core#FundingOrganization -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#FundingOrganization">
+        <rdfs:label xml:lang="en-us">Funding Organization</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organization that provides financial support to individuals or organizations to carry out specified activities.</ero:IAO_0000115>
+        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">National Institute of Health (NIH)</ero:IAO_0000112>
+    </owl:Class>
+ 
+
+
+     <!-- http://vivoweb.org/ontology/core#Grant -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Grant">
+        <rdfs:label xml:lang="en-us">Grant</rdfs:label>
+        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An intramural or extramural award to support scholarly work, such as UF09179 (VIVO)</ero:IAO_0000112>
+        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Financial assistance mechanism providing money, property, or both to an eligible entity to carry out an approved project or activity</ero:IAO_0000115>
+        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Short definition is from the Glossary of NIH Terms.</ero:IAO_0000112>
+    </owl:Class>
+
+
+
+     <!-- http://vivoweb.org/ontology/core#InvestigatorRole -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#InvestigatorRole">
+        <rdfs:label xml:lang="en-us">Investigator Role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#ResearcherRole"/>
+        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A role in an Agreement (for example, a grant) as a named investigator or key personnel.</ero:IAO_0000115>
+    </owl:Class>
+
+
+ 
+</rdf:RDF>
