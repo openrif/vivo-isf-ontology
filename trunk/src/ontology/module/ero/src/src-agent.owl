@@ -1,0 +1,262 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/arg/src-agent.owl#"
+     xml:base="http://purl.obolibrary.org/obo/arg/src-agent.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/arg/src-agent.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:label xml:lang="en">definition</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114">
+        <rdfs:label xml:lang="en">has curation status</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
+        <rdfs:label xml:lang="en">definition source</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
+        <rdfs:label xml:lang="en">definition editor</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
+        <rdfs:label xml:lang="en">alternative term</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
+        <rdfs:label xml:lang="en">editor preferred term</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#deprecated"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
+        <rdfs:label xml:lang="en">example of usage</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000037 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000037">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">provides_service</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000002">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">core laboratory</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0000037"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A flow cytometry core laboratory at a university.</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Laboratory that has the mission of providing services. Core Laboratories often charge fees for services or are funded via their affiliated organizations.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000119>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#Facility_Core
+Definition: As defined in http://dictionary.reference.com/browse/facility
+requested in OBI 2894859</rdfs:comment>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">service laboratory</obo:IAO_0000118>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000005"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000565 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000565">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">technology transfer office</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organization that provides services for commercialization and licensing of technologies at an institution.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000117>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Technology Transfer Office</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001843 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001843">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">registry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organization dedicated to the collection, storage and dissemination of a set of scientific or clinical data.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Scott Hoffmann</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001844 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001844">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biorepository</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#ServiceProvidingLaboratory"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organization that governs the storage of biospecimens that includes tissue samples, fluids, and molecular derivatives such as DNA, RNA, and proteins. The biorepository has stringent guidelines regarding the standardized collection, handling, storage, and documentation of biological specimens.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biobank</obo:IAO_0000118>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Specimen bank</obo:IAO_0000118>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://bioportal.bioontology.org/ontologies/45400/?p=terms&amp;conceptid=Biorepository</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#ServiceProvidingLaboratory -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#ServiceProvidingLaboratory">
+        <rdfs:label xml:lang="en-us">Service Providing Lab</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#DeprecatedClass -->
+
+    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#DeprecatedClass">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DeprecatedClass</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">agent</rdfs:label>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></obo:IAO_0000118>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An agent</rdfs:comment>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Scott Hoffmann</obo:IAO_0000117>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Things that do stuff.</obo:IAO_0000115>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">agent</obo:IAO_0000111>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Group -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Group">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">group</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></obo:IAO_0000118>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A collection of individual agents.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A group</rdfs:comment>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Scott Hoffmann</obo:IAO_0000117>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">group</obo:IAO_0000111>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Organization -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">organization</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></obo:IAO_0000118>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A kind of Agent corresponding to social instititutions such as companies, societies etc.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organization</rdfs:comment>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Scott Hoffmann</obo:IAO_0000117>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">organization</obo:IAO_0000111>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">person</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></obo:IAO_0000118>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person</rdfs:comment>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An instance of a human being (Homo sapiens)</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000117>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">person</obo:IAO_0000111>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000120 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000120">
+        <rdfs:label xml:lang="en">metadata complete</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000123 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000123">
+        <rdfs:label xml:lang="en">metadata incomplete</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2018) http://owlapi.sourceforge.net -->
+
