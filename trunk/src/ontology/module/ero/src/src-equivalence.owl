@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/arg/src-equivalence.owl#"
+     xml:base="http://purl.obolibrary.org/obo/arg/src-equivalence.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/arg/src-equivalence.owl"/>
+    
+	
+	    <!-- http://purl.obolibrary.org/obo/OBI_0000316 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000316">
+        <rdfs:label xml:lang="en">has_role</rdfs:label>
+    </rdf:Description>
+	 <!-- http://xmlns.com/foaf/0.1/Organization -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">organization</rdfs:label>
+    </rdf:Description>
+    
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000571">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">manufacturer role</rdfs:label>
+    </rdf:Description>
+	
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">person</rdfs:label>
+    </rdf:Description>
+	    <!-- http://purl.obolibrary.org/obo/OBI_0000835 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000835">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">manufacturer</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+                            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000571"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+	
+</rdf:RDF>
