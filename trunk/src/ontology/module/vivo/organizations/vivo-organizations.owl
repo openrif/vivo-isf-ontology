@@ -1,0 +1,247 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://vivoweb.org/ontology/core#"
+     xml:base="http://vivoweb.org/ontology/core"
+     xmlns:afn="http://jena.hpl.hp.com/ARQ/function#"
+     xmlns:pvs="http://vivoweb.org/ontology/provenance-support#"
+     xmlns:geo="http://aims.fao.org/aos/geopolitical.owl#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:scires="http://vivoweb.org/ontology/scientific-research#"
+     xmlns:scirr="http://vivoweb.org/ontology/scientific-research-resource#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:fabio="http://purl.org/spar/fabio/"
+     xmlns:owl2="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:skco="http://www.w3.org/2004/02/skos/core#"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:event="http://purl.org/NET/c4dm/event.owl#"
+     xmlns:bibo="http://purl.org/ontology/bibo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:c4o="http://purl.org/spar/c4o/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:swvs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:skos="http://www.w3.org/2008/05/skos#"
+     xmlns:vivo="http://vivoweb.org/ontology/core#"
+     xmlns:dcelem="http://purl.org/dc/elements/1.1/"
+     xmlns:ero="http://purl.obolibrary.org/obo/">
+
+
+    <!-- http://vivoweb.org/ontology/core#AcademicDepartment -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#AcademicDepartment">
+        <rdfs:label xml:lang="en-us">Academic Department</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Department"/>
+        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A distinct, usually specialized educational unit within an educational organization.</ero:IAO_0000115>
+        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Endodontics (department within a College of Dentistry); English (department within a College of Liberal Arts)</ero:IAO_0000112>
+    </owl:Class>
+
+
+ 
+    <!-- http://vivoweb.org/ontology/core#Association -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Association">
+        <rdfs:label xml:lang="en-us">Association</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A group of persons or organizations organized for a common purpose.</ero:IAO_0000115>
+        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Special Libraries Association; Association for Computing Machinery(ACM); American Medical Informatics Association(AMIA)</ero:IAO_0000112>
+    </owl:Class>
+
+
+ 
+    <!-- http://vivoweb.org/ontology/core#Center -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Center">
+        <rdfs:label xml:lang="en-us">Center</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alchohol Education Center; Center for Arts and Public Policy; Hearing Research Center</ero:IAO_0000112>
+        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organization where a specified activity is concentrated.</ero:IAO_0000115>
+        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Short Definition take from http://www.thefreedictionary.com/center.</ero:IAO_0000112>
+    </owl:Class>
+
+
+ 
+    <!-- http://vivoweb.org/ontology/core#College -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#College">
+        <rdfs:label xml:lang="en-us">College</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A primary academic unit within a University or a free-standing higher education organization without graduate degree programs.</ero:IAO_0000115>
+        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">College of Arts &amp; Sciences; Ivy Tech Community College</ero:IAO_0000112>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#Committee -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Committee">
+        <rdfs:label xml:lang="en-us">Committee</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Group"/>
+        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A group of people organized for a specific purpose, whose members are often selected from a larger group to serve for designated periods of time.</ero:IAO_0000115>
+        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Curriculum Steering Committee; PhD Advisory Committee</ero:IAO_0000112>
+        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">There could be many subclasses such as thesis committee or tenure committee, but these may typically be differentiated via the moniker unless distinct properties become important.</ero:IAO_0000112>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#Company -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Company">
+        <rdfs:label xml:lang="en-us">Company</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A legally-recognized business organization.</ero:IAO_0000115>
+        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">from Wikipedia: &quot;A company is a form of business organization. It is an association or collection of individual real persons and/or other companies ... This collection, group or association of persons can be made to exist in law and then a company is itself considered a &quot;legal person&quot;. The name company arose because, at least originally, it represented or was owned by more than one real or legal person.&quot;</ero:IAO_0000112>
+    </owl:Class>
+
+
+ 
+    <!-- http://vivoweb.org/ontology/core#Consortium -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Consortium">
+        <rdfs:label xml:lang="en-us">Consortium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A group  of independent organizations working together toward a common goal, under an expressed agreement.</ero:IAO_0000115>
+        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Committee on Institutional Cooperation (CIC); The Five Colleges of Ohio</ero:IAO_0000112>
+    </owl:Class>
+
+
+ 
+    <!-- http://vivoweb.org/ontology/core#Department -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Department">
+        <rdfs:label xml:lang="en-us">Department</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A unit within a larger organization that addresses a specific subject or area of activity.</ero:IAO_0000115>
+        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Definition modified from the definition here: http://dictionary.reference.com/browse/department. It is difficult to tell the difference between and department and a division.</ero:IAO_0000112>
+        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Legal (department within a company); Use for any non-academic department</ero:IAO_0000112>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#Division -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Division">
+        <rdfs:label xml:lang="en-us">Division</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A major unit or section within a larger organization.</ero:IAO_0000115>
+        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cardiovascular Medicine (division within medicine)</ero:IAO_0000112>
+        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Definition modified from http://www.thefreedictionary.com/division.  It is difficult to tell the difference between a division and a department.</ero:IAO_0000112>
+    </owl:Class>
+
+
+ 
+    <!-- http://vivoweb.org/ontology/core#ExtensionUnit -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#ExtensionUnit">
+        <rdfs:label xml:lang="en-us">Extension Unit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A unit devoted primarily to extension activities, whether for outreach or research.</ero:IAO_0000115>
+        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alachua County Extension Office</ero:IAO_0000112>
+    </owl:Class>
+
+
+ 
+    <!-- http://vivoweb.org/ontology/core#Hospital -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Hospital">
+        <rdfs:label xml:lang="en-us">Hospital</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An institution that provides medical, surgical, psychiatric or nursing care.</ero:IAO_0000115>
+        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Definition take from: http://dictionary.reference.com/browse/hospital.</ero:IAO_0000112>
+        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shands at the University of Florida</ero:IAO_0000112>
+    </owl:Class>
+
+
+ 
+    <!-- http://vivoweb.org/ontology/core#Institute -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Institute">
+        <rdfs:label xml:lang="en-us">Institute</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organization founded to pursue or promote certain research, educational or public policy interests or activities.</ero:IAO_0000115>
+        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Institute for Fundamental Theory</ero:IAO_0000112>
+    </owl:Class>
+
+
+ 
+    <!-- http://vivoweb.org/ontology/core#CoreLaboratory -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#CoreLaboratory">
+        <rdfs:label xml:lang="en-us">Core Laboratory</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#ServiceProvidingLaboratory"/>
+        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A lab providing services such as training, protocols, or access to instruments or software</ero:IAO_0000115>
+    </owl:Class>
+
+
+ 
+    <!-- http://vivoweb.org/ontology/core#Library -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Library">
+        <rdfs:label xml:lang="en-us">Library</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organization maintaining one or more collections of physical and/or electronic information resources for access or lending.</ero:IAO_0000115>
+        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marston Science Library</ero:IAO_0000112>
+        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Used information from this definition: http://dictionary.reference.com/browse/library.</ero:IAO_0000112>
+    </owl:Class>
+
+
+
+    <!-- http://vivoweb.org/ontology/core#Museum -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Museum">
+        <rdfs:label xml:lang="en-us">Museum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organization devoted to the acquisition, conservation, study, exhibition, and educational interpretation of objects having scientific, historical, cultural or artistic value.</ero:IAO_0000115>
+        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Definition was take from here:  http://dictionary.reference.com/browse/museum</ero:IAO_0000112>
+        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Getty Museum</ero:IAO_0000112>
+    </owl:Class>
+
+
+ 
+    <!-- http://vivoweb.org/ontology/core#PrivateCompany -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#PrivateCompany">
+        <rdfs:label xml:lang="en-us">Private Company</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Company"/>
+        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A private company is one that is privately-owned, and thus, is not publicly-traded in the stock market. Members of the general public cannot purchase stock in a private company unless that company chooses to go public and become a public company.</ero:IAO_0000115>
+        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Definition obtained here: http://answers.ask.com/Business/Finance/what_is_a_private_company.  Examples of private companies found here: http://www.forbes.com/2008/11/03/largest-private-companies-biz-privates08-cx_sr_1103private_land.html</ero:IAO_0000112>
+        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Publix Super Markets; Ernst &amp; Young; PricewaterhouseCoopers</ero:IAO_0000112>
+    </owl:Class>
+
+
+ 
+    <!-- http://vivoweb.org/ontology/core#Program -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Program">
+        <rdfs:label xml:lang="en-us">Program</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Cornell graduate field (http://vivo.cornell.edu/index.jsp?home=65535&amp;collection=820)</ero:IAO_0000112>
+        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ongoing academic initiative not formalized with department or division status.</ero:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#School -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#School">
+        <rdfs:label xml:lang="en-us">School</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An institution for instruction in a particular skill or field.</ero:IAO_0000115>
+        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Definition take from here: http://dictionary.reference.com/browse/school.</ero:IAO_0000112>
+        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">School of Architecture; School of Music</ero:IAO_0000112>
+    </owl:Class>
+
+
+ 
+    <!-- http://vivoweb.org/ontology/core#University -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#University">
+        <rdfs:label xml:lang="en-us">University</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An institution of higher education and research, which grants academic degrees in a variety of subjects, and provides both undergraduate education and postgraduate education.</ero:IAO_0000115>
+        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Definition taken from: http://en.wikipedia.org/wiki/University</ero:IAO_0000112>
+        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Florida; Washington University in St. Louis</ero:IAO_0000112>
+    </owl:Class>
+
+
+ 
+</rdf:RDF>
