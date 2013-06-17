@@ -59,22 +59,22 @@
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description">
         <rdfs:label xml:lang="en-us">Description</rdfs:label>
     </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#deprecated">
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
         <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
         <rdfs:label xml:lang="en">definition</rdfs:label>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
         <rdfs:label xml:lang="en">editor note</rdfs:label>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000569">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000013"/>
-    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor">
         <rdfs:label xml:lang="en-us">Contributor</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000569">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000013"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114">
         <rdfs:label xml:lang="en">has curation status</rdfs:label>
@@ -531,15 +531,6 @@
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has topic</obo:IAO_0000111>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">here we need to take care of dofferent domain and is this really the same relation between research project and protocol?</rdfs:comment>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0008150"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0100026"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_1110055"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -550,6 +541,15 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0008150"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0100026"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_1110055"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -2567,8 +2567,8 @@ objective_achieved_by some (&apos;software/algorithm execution&apos; and (specif
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000643"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000322"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000086"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2579,8 +2579,8 @@ objective_achieved_by some (&apos;software/algorithm execution&apos; and (specif
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000086"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000643"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000322"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A reagent that is comprised of immunoglobulins produced by B cells in response to an antigen. Antibody reagents can be engineered to have specificity for specific antigens.</obo:IAO_0000115>
@@ -2600,8 +2600,8 @@ objective_achieved_by some (&apos;software/algorithm execution&apos; and (specif
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001000"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2612,8 +2612,8 @@ objective_achieved_by some (&apos;software/algorithm execution&apos; and (specif
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001000"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atwood et al (2000) OED of Biochemistry and Molecular Biology, Oxford University Press.</obo:IAO_0000119>
@@ -2904,14 +2904,14 @@ objective_achieved_by some (&apos;software/algorithm execution&apos; and (specif
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000086"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001000"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001000"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000086"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -9952,14 +9952,6 @@ objective_achieved_by some (&apos;software/algorithm execution&apos; and (specif
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001196">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gene knockdown function</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000377"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A perturb function that results in decreased expression levels of a target gene. This can be achieved through targeting a gene directly through gene knockout or modification of the its DNA sequence, or targeting of the mRNA product of a gene using technologies such as RNAi.</obo:IAO_0000115>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gene repression function</obo:IAO_0000118>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gene silencing function</obo:IAO_0000118>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Knockdown the function of a gene, to study the function of that gene.</obo:IAO_0000112>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000119>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000117>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
     </owl:Class>
     
 
@@ -9968,12 +9960,6 @@ objective_achieved_by some (&apos;software/algorithm execution&apos; and (specif
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001197">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNA interference function</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001196"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A gene knockdown function that targets genes for post-transcriptional silencing through the RNA interference pathway.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000117>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000119>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAi function</obo:IAO_0000118>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
     </owl:Class>
     
 
@@ -17311,126 +17297,6 @@ objective_achieved_by some (&apos;software/algorithm execution&apos; and (specif
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBI_0000368 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000368">
-        <rdfs:label xml:lang="en">record function</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000369 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000369">
-        <rdfs:label xml:lang="en">magnify function</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000370 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000370">
-        <rdfs:label xml:lang="en">contain function</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000371 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000371">
-        <rdfs:label xml:lang="en">heat function</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000372 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000372">
-        <rdfs:label xml:lang="en">material separation function</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000374 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000374">
-        <rdfs:label xml:lang="en">excitation function</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000376 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000376">
-        <rdfs:label xml:lang="en">synthesizing function</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000377 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000377">
-        <rdfs:label xml:lang="en">perturb function</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000379 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000379">
-        <rdfs:label xml:lang="en">mechanical function</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000383 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000383">
-        <rdfs:label xml:lang="en">transfer function</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000387 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000387">
-        <rdfs:label xml:lang="en">cool function</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000392 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000392">
-        <rdfs:label xml:lang="en">information processor function</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000393 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000393">
-        <rdfs:label xml:lang="en">signal conversion function</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000397 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000397">
-        <rdfs:label xml:lang="en">image acquisition function</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000401 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000401">
-        <rdfs:label xml:lang="en">environment control function</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OBI_0000410 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000410">
@@ -17459,14 +17325,6 @@ objective_achieved_by some (&apos;software/algorithm execution&apos; and (specif
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000443">
         <rdfs:label xml:lang="en">analyte assay</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000453 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000453">
-        <rdfs:label xml:lang="en">measure function</rdfs:label>
     </owl:Class>
     
 
@@ -17643,22 +17501,6 @@ objective_achieved_by some (&apos;software/algorithm execution&apos; and (specif
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000946 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000946">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sterilization function</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0001036 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001036">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">specimen fixation function</rdfs:label>
     </owl:Class>
     
 
