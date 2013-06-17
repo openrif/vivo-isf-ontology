@@ -1,14 +1,13 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/ero/dev/bro-imports.owl#"
-     xml:base="http://purl.obolibrary.org/obo/ero/dev/bro-imports.owl"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/ero/dev/mesh-disease-import.owl#"
+     xml:base="http://purl.obolibrary.org/obo/ero/dev/mesh-disease-import.owl"
+     xmlns:MSH="http://purl.bioontology.org/ontology/MSH/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
-     xmlns:BiomedicalResourceOntology="http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ero/dev/bro-imports.owl">
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ero/dev/mesh-disease-import.owl">
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">${ero.ontology.version}</owl:versionInfo>
     </owl:Ontology>
     
@@ -22,8 +21,8 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
-        <rdfs:label xml:lang="en">imported from</rdfs:label>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
+        <rdfs:label xml:lang="en">alternative term</rdfs:label>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
     
@@ -37,6 +36,25 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/MSH/D013568 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/MSH/D013568">
+        <rdfs:label>Pathological Conditions, Signs and Symptoms</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
