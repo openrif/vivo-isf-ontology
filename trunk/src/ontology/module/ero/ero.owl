@@ -22,6 +22,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
     
 
 
@@ -58,6 +59,7 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000052 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000052">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inheres in</rdfs:label>
         <rdfs:label>inheres in (BFO/RO)</rdfs:label>
     </owl:ObjectProperty>
     
@@ -66,6 +68,7 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000053 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000053">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bearer_of</rdfs:label>
         <rdfs:label>bearer of (RO/BFO)</rdfs:label>
     </owl:ObjectProperty>
     
@@ -79,11 +82,30 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ERO_0000232 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000232">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_author</rdfs:label>
+        <rdfs:label>has_author</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000596 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000596">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_director</rdfs:label>
+        <rdfs:label>has_director</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000306 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000306">
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000306">
+        <rdfs:label xml:lang="en">has_function</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000053"/>
-    </rdf:Description>
+    </owl:ObjectProperty>
     
 
 
@@ -180,11 +202,60 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ERO_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000004">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">instrument</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000006">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reagent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000014">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">research project</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ERO_0000334 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000334">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000334">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gel image</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Image"/>
-    </rdf:Description>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001716 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001716">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">database</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0100026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100026">
+        <rdfs:label xml:lang="en">organism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Document -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Document">
+        <rdfs:label xml:lang="en">document</rdfs:label>
+    </owl:Class>
     
 
 
@@ -200,23 +271,22 @@
     
 
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+    <!-- http://xmlns.com/foaf/0.1/Organization -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000596">
-        <rdfs:label>has_director</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000232">
-        <rdfs:label>has_author</rdfs:label>
-    </rdf:Description>
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">organization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">person</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.4.2018) http://owlapi.sourceforge.net -->
 

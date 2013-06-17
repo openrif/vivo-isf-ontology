@@ -2,13 +2,13 @@
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/ero/dev/obi-imports.owl#"
      xml:base="http://purl.obolibrary.org/obo/ero/dev/obi-imports.owl"
      xmlns:ro="http://www.obofoundry.org/ro/ro.owl#"
-     xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:swo="http://www.ebi.ac.uk/efo/swo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:OBO_REL="http://purl.org/obo/owl/OBO_REL#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
@@ -27,21 +27,47 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OBI_9991118"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000284"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:label xml:lang="en">definition</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
+        <rdfs:label xml:lang="en">editor note</rdfs:label>
+    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000285"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000113"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000232"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000231"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000113">
+        <rdfs:label xml:lang="en">in branch</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114">
+        <rdfs:label xml:lang="en">has curation status</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
+        <rdfs:label xml:lang="en">definition source</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000232">
+        <rdfs:label xml:lang="en">curator note</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
+        <rdfs:label xml:lang="en">definition editor</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
+        <rdfs:label xml:lang="en">alternative term</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000231">
+        <rdfs:label xml:lang="en">has obsolescence reason</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
+        <rdfs:label xml:lang="en">editor preferred term</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
+        <rdfs:label xml:lang="en">example of usage</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -69,13 +95,17 @@
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051">
+        <rdfs:label>has part (OBO/RO)</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000052 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000052"/>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000052">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inheres in</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
@@ -87,7 +117,9 @@
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000057 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000057"/>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000057">
+        <rdfs:label>has participant (BFO/RO)</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
@@ -128,13 +160,16 @@
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000300 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000300"/>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000300">
+        <rdfs:label xml:lang="en">is_realized_by</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000304 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000304">
+        <rdfs:label xml:lang="en">is_manufactured_by</rdfs:label>
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -149,7 +184,9 @@
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000306 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000306"/>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000306">
+        <rdfs:label xml:lang="en">has_function</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
@@ -169,13 +206,16 @@
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000316 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000316"/>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000316">
+        <rdfs:label xml:lang="en">has_role</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000417 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000417">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">achieves_planned_objective</rdfs:label>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
     </owl:ObjectProperty>
     
@@ -199,6 +239,7 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0000833 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000833">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">objective_achieved_by</rdfs:label>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
     </owl:ObjectProperty>
     
@@ -217,13 +258,16 @@
 
     <!-- http://purl.obolibrary.org/obo/ERO_0000004 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000004"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000004">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">instrument</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0000007 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000007">
+        <rdfs:label xml:lang="en">technique</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
     </owl:Class>
     
@@ -231,223 +275,297 @@
 
     <!-- http://purl.obolibrary.org/obo/ERO_0000285 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000285"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000285">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">construct</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0000378 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000378"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000378">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surgery</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0000401 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000401"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000401">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cellular assay</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0000636 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000636"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000636">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell proliferation assay</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0000643 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000643"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000643">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">agent delivery</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0000751 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000751"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000751">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protein interaction detection</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0000833 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000833"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000833">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">molecular assay</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0001080 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001080"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001080">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nucleic acid microarray assay</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0001183 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001183"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001183">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">next generation sequencing</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0001282 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001282"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001282">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tissue/organ assay</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0001283 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001283"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001283">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">culture and propagation</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0001284 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001284"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001284">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protein assay</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0001285 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001285"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001285">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">organismal assay</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0001286 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001286"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001286">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nucleic acid assay</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0001287 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001287"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001287">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protein sequencing </rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0001288 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001288"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001288">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">clinical assay</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0001289 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001289"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001289">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electrophysiology assay</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0001297 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001297"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001297">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">experimental genetic modification</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0001298 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001298"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001298">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chemical modification</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0001299 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001299"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001299">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biomolecule synthesis</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0001300 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001300"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001300">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fixation</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0001303 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001303"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001303">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reagent library preparation</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0001309 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001309"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001309">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">data analysis</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0001310 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001310"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001310">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">clinical trial technique</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0001313 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001313"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001313">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">material production</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0001554 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001554"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001554">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">data</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0001584 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001584"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001584">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0100003 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100003"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100003">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">process-based data transformation objective</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0100035 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100035"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100035">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">statistical analysis and modeling objective</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0100084 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100084"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100084">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">process-based data analysis objective</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0100125 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100125"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100125">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subject-based data analysis objective</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0100149 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100149"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100149">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">molecular data analysis objective</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0100362 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100362"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100362">
+        <rdfs:label>sequence data</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000005 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000005"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000005">
+        <rdfs:label xml:lang="en">objective specification</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000104 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000104"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000104">
+        <rdfs:label xml:lang="en">plan specification</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_10239 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10239">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Viruses</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_9606 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Homo sapiens</rdfs:label>
+    </owl:Class>
     
 
 
@@ -595,8 +713,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000050">
         <rdfs:label xml:lang="en">obsolete_platform</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000004"/>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI Instrument branch</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI Instrument branch</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI Instrument branch</obo:IAO_0000119>
         <obo:IAO_0000115 xml:lang="en">A platform is an object_aggregate that is the set of instruments and software needed to perform a process. definition_source: OBI.</obo:IAO_0000115>
         <obo:IAO_0000111 xml:lang="en">platform</obo:IAO_0000111>
         <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000103"/>
@@ -626,8 +744,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000052">
         <rdfs:label xml:lang="en">microarray platform</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000004"/>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI Instrument branch</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI Instrument branch</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI Instrument branch</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">A microarray platform is a platform that contains the instruments, software and reagents needed to perform a microarray protocol. definition_source: OBI.</obo:IAO_0000115>
         <obo:IAO_0000111 xml:lang="en">microarray platform</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
@@ -754,7 +872,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
                 <owl:allValuesFrom rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -766,7 +884,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                 <owl:allValuesFrom rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1644,8 +1762,8 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">intra cellular electrophysiology recording</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001289"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An intracellular electrophysiology recording is a process where the recording location of the electrode is intracellular</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Frank Gibson</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Frank Gibson</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Frank Gibson</obo:IAO_0000119>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">intra cellular electrophysiology recording</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -2976,8 +3094,8 @@
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://msi-ontology.sourceforge.net/ontology/NMR.owl#msi_400059</obo:IAO_0000119>
         <obo:IAO_0000115 xml:lang="en">An Instrument which is used to carry out a NMR analysis of some sample.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">GROUP:&lt;http://msi-ontology.sourceforge.net&gt;</obo:IAO_0000119>
-        <obo:IAO_0000118 xml:lang="en">NMR instrument</obo:IAO_0000118>
         <obo:IAO_0000111 xml:lang="en">NMR instrument</obo:IAO_0000111>
+        <obo:IAO_0000118 xml:lang="en">NMR instrument</obo:IAO_0000118>
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -3786,8 +3904,8 @@
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ELISA</obo:IAO_0000111>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ELISA is an assay where an enzyme linked antibody is used to detect a plate bound material in a liquid (the evaluant) utilizing a chemiluminescent reaction. The detected signal is proxy for the concentration of an analyte in the evaluant.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Enzyme-Linked ImmunoSorbent Assay</obo:IAO_0000118>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IEDB</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IEDB</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IEDB</obo:IAO_0000119>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It is possible to add further restrictions, such as utilizing a plate as part of the assay.</obo:IAO_0000116>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -3818,8 +3936,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000916"/>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICCS</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICS</obo:IAO_0000118>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IEDB</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IEDB</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IEDB</obo:IAO_0000119>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Permeabilizing T cells and staining them with fluorescent labeled anti-IFN-gamma antibodies</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The measurement of cytokines within the cytoplasm of a cell by permeabilizing the cell membrane to allow entry of specific antibodies, and counting the stained cells using a flow cytometer.</obo:IAO_0000115>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">intracellular cytokine staining assay</obo:IAO_0000111>
@@ -3835,8 +3953,8 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MHC multimer staining assay</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000916"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An MHC multimer assay is an assay that detects T cells capable of binding the MHC:ligand complexes present in the multimer. The multimer is fluorescently labelled. The T cells bound to multimers are counted in a flow cytometer</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IEDB</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IEDB</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IEDB</obo:IAO_0000117>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MHC multimer staining assay</obo:IAO_0000111>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MHC tetramer assay</obo:IAO_0000118>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measuring T cells that are specific for the SYFPEITHI peptide when presented by the murine MHC molecule H-2 Kd by staining them with a tetramer of peptide loaded MHC complexes.</obo:IAO_0000112>
@@ -3853,8 +3971,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000401"/>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2/26/09: RESOLVE: need to replace &apos;molecular entities&apos; in the logical definition with &apos;tritiated thymidine&apos;</obo:IAO_0000116>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A tritiated thymidine incorporation assay is an assay to detect actively replicating cells. Tritiated thymidine is incorporated into the newly synthesized DNA of replicating cells (during the S phase of the cell cycle). The radioactivity of tritiated thymidine can then be detected thus indicating cells that were actively replicating their DNA.</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IEDB</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IEDB</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IEDB</obo:IAO_0000119>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The measurement of T cell proliferation as a response to a viral peptide by culturing T cells stimulated with APCs and peptide in the presence of tritiated thymidine, and using a scintillation counter to detect the radioactivity.</obo:IAO_0000112>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tritiated thymidine incorporation assay</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
@@ -4477,8 +4595,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000916">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">flow cytometry assay</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000401"/>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></obo:IAO_0000119>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></obo:IAO_0000119>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An assay that uses a flow cytometer to detect fluorescence in individual particles that flow by a laser in solution.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Randi Vita, Bjoern Peters</obo:IAO_0000117>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Using a flow cytometer to quantitate the percent of CD3 positive cells in a population by labeling them with a FITC tagged anti-CD3 antibody.</obo:IAO_0000112>
@@ -4658,10 +4776,10 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reagent application function</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Function"/>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reagent application function</obo:IAO_0000111>
-        <obo:IAO_0000119>PERSON: Nicole Vasilevsky, Matthew Brush</obo:IAO_0000119>
-        <obo:IAO_0000117>PERSON: Nicole Vasilevsky, Matthew Brush</obo:IAO_0000117>
-        <obo:IAO_0000115>A function that is realized when a reagent is automatically added to some research material.</obo:IAO_0000115>
         <obo:IAO_0000112>An automatic tissue processor automatically applies antibodies and buffers to histological tissue preparations.</obo:IAO_0000112>
+        <obo:IAO_0000115>A function that is realized when a reagent is automatically added to some research material.</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Nicole Vasilevsky, Matthew Brush</obo:IAO_0000117>
+        <obo:IAO_0000119>PERSON: Nicole Vasilevsky, Matthew Brush</obo:IAO_0000119>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
     </owl:Class>
@@ -4674,10 +4792,10 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">addition of molecular tracer function</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000960"/>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">addition of molecular tracer function</obo:IAO_0000111>
-        <obo:IAO_0000112>Immunohistochemical labeling of tissue sections by an autostainer staining system.</obo:IAO_0000112>
-        <obo:IAO_0000119>PERSON: Nicole Vasilevsky, Matthew Brush</obo:IAO_0000119>
-        <obo:IAO_0000115>A reagent application function that is realized when a molecular tracer, such as an antibody or probe is automatically transferred to a biological specimen.</obo:IAO_0000115>
         <obo:IAO_0000117>PERSON: Nicole Vasilevsky, Matthew Brush</obo:IAO_0000117>
+        <obo:IAO_0000115>A reagent application function that is realized when a molecular tracer, such as an antibody or probe is automatically transferred to a biological specimen.</obo:IAO_0000115>
+        <obo:IAO_0000119>PERSON: Nicole Vasilevsky, Matthew Brush</obo:IAO_0000119>
+        <obo:IAO_0000112>Immunohistochemical labeling of tissue sections by an autostainer staining system.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
     </owl:Class>
@@ -4782,13 +4900,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000368"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000368"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A device that records the patterns of pulse waves inside blood vessels.</obo:IAO_0000115>
@@ -4830,13 +4948,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000401"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000401"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A device or system that supports a biologically active environment. ALAN SAYS NOT AN INSTRUMENT</obo:IAO_0000115>
@@ -4912,8 +5030,8 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNA extraction/purification instrument</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001114"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A device that is used to isolate and collect RNA for subsequent molecular analysis.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000117>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNA extraction/purification instrument</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -4969,8 +5087,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A device that is used to produce targeted molecular pharmaceuticals for use in positron emission tomography.</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000119>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PET synthesizer</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -5057,8 +5175,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001058"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A microplate reader that is used for enzyme-linked immunosorbent assays (ELISA).</obo:IAO_0000115>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ELISA microplate reader</obo:IAO_0000111>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000117>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
     </owl:Class>
@@ -5077,8 +5195,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A robotic device that is used to excise spots from gels.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000117>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spot cutter</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -5142,18 +5260,18 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000961"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000961"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A device that is used to automatically stain tissue sections on slides or tissue specimens.</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000119>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">automatic staining machine</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -5169,13 +5287,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000960"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000960"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A device for processing histological tissue having a tissue carrier basket suspended from a turntable overlying a plurality of beakers suspended from a carrier plate. The turntable is raised, indexed, and lowered by a suitable driving mechanism to move the tissue basket sequentially through the beakers. Timers can each be programmed to control the movement of the turntable to provide various different cycles for processing the tissue. Some of the beakers are received in individual thermal baths to heat and control the temperature of the substances received in the beakers for treating the tissue.</obo:IAO_0000115>
@@ -5215,8 +5333,8 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">top loading balance</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001135"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A balance that consists of a metal plate on which to place an object and a digital readout of the measurement of its mass.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000117>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">top loading balance</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -5236,8 +5354,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A device or system in which perfusion units are integrated.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000117>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">perfusion station</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -5322,12 +5440,6 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000387"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5335,6 +5447,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000370"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A device consisting of a vessel, similar in construction to a vacuum flask, that is used to maintain cold cryogenic temperatures. FIX THIS DEFINITION</obo:IAO_0000115>
@@ -5359,8 +5477,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A glass cutting and breaking device that is used to produce glass knives used in ultramicrotomy.</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000119>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">microtome knife maker</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -5407,8 +5525,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A device that creates an appropriate environment for nucleic acid hybridization.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000117>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hybridization oven</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -5430,18 +5548,18 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000370"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000401"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000401"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000370"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An incubating device that provides shaking motion for biomedical applications (e.g., cell cultures).</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000119>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">incubator shaker</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -5457,18 +5575,18 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000397"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000397"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A device that is used to image¬†small¬†laboratory¬†animals (e.g., rats and mice) in vivo.</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000119>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">small-animal image acquisition device</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -5484,13 +5602,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000397"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000397"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An image acquisition device that is responsive to an infrared emissive target within a given field of view.</obo:IAO_0000115>
@@ -5563,8 +5681,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A device that is used to acquire images of laboratory gels.</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000119>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gel imaging system</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -5584,8 +5702,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A device that is used for the separation of proteins.</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000119>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protein separation apparatus</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -5664,18 +5782,18 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000368"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000368"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A device that consists of a radiosensitive detector and a means of recording the effects of radiation on the detector.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000117>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radiation measurement device</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -5752,8 +5870,8 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">multimode microplate reader</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001058"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A microplate reader that can detect multiple types of absorbance, luminescence or fluorescence.</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000119>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">multimode microplate reader</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -5803,8 +5921,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A device that is used to sharpen knives used in microtomy.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000117>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">microtome knife sharpener</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -5824,8 +5942,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A device that provides shaking motion for microplates.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000117>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plate shaker</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -5887,8 +6005,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A liquid handling device that provides automatic liquid extraction.</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000119>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">liquid extraction robot</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -5931,18 +6049,18 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000397"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000397"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A device that is used for the imaging of immunoblots.</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000119>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">immunoblot scanner</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -6007,8 +6125,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A device that provides three-dimensional motion for biomedical applications (e.g., gel trays).</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000117>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rocker</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -6079,8 +6197,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A device that is used to perform paraffin embedding of tissue specimens.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000117>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tissue embedding station</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -6106,8 +6224,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A device that is used to acquire and image bead array data.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000117>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bead array reader</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -6138,12 +6256,6 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000371"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000370"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -6153,9 +6265,15 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000371"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A device that is used for the warming of paraffin embedding medium.</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000119>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">paraffin oven</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -6229,8 +6347,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A device that is used to isolate and collect nucleic acids (DNA or RNA) for subsequent molecular analysis.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000117>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nucleic acid extraction/purification instrument</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -6245,8 +6363,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001113"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A microplate washer that is used for enzyme-linked immunosorbent assays (ELISA).</obo:IAO_0000115>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ELISA microplate washer</obo:IAO_0000111>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000119>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
     </owl:Class>
@@ -6265,8 +6383,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A device that is used for the vacuum-driven processing of multiwell strips or plates, or spin columns. IS THIS AN INSTRUMENT? IS THE DEFINTION CORRECT - TO DISTRIBUTE PRESSURE EVENLY.</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000119>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vacuum manifold</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -6307,8 +6425,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A pipetting system that has a plurality of tip fittings and is used for multi-well plate applications.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000117>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">multichannel pipette</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -6328,8 +6446,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A device that is used to harvest cells from microplates and deposit samples on a filter mat. NOT AN INSTRUMENT?</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000117>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell harvester</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -6343,8 +6461,8 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">portable fluorometer</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0400143"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A compact fluorometer that can be carried or moved with ease.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000117>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">portable fluorometer</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -6572,8 +6690,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A device that heats materials in a vacuum.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000117>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vacuum oven</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -6593,8 +6711,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A device that is used to heat microscope slides.</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000119>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">slide warmer</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -6661,13 +6779,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A measuring instrument that is used to determine the weight or mass of an object.</obo:IAO_0000115>
@@ -6713,8 +6831,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An device that is used to determine the order of amino acids in protein sequences.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000117>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protein sequencer</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -6750,8 +6868,8 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">liquid chromatography instrument</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000048"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A chromatography device that dissolves a mixture in liquid mobile phase to separate the analyte to be measured from other molecules in the mixture and allows it to be isolated</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000119>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">liquid chromatography instrument</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -6811,11 +6929,11 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001573">
         <rdfs:label>DNA sequence data</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0100362"/>
-        <obo:IAO_0000117>OBI call; Bjoern Peters</obo:IAO_0000117>
-        <obo:IAO_0000115>A sequence data item that is about the primary structure of DNA</obo:IAO_0000115>
-        <obo:IAO_0000119>OBI call; Melanie Courtout</obo:IAO_0000119>
-        <obo:IAO_0000112>The part of a FASTA file that contains the letters ACTGGGAA </obo:IAO_0000112>
         <obo:IAO_0000111>DNA sequence data</obo:IAO_0000111>
+        <obo:IAO_0000112>The part of a FASTA file that contains the letters ACTGGGAA </obo:IAO_0000112>
+        <obo:IAO_0000119>OBI call; Melanie Courtout</obo:IAO_0000119>
+        <obo:IAO_0000115>A sequence data item that is about the primary structure of DNA</obo:IAO_0000115>
+        <obo:IAO_0000117>OBI call; Bjoern Peters</obo:IAO_0000117>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
     </owl:Class>
@@ -8416,8 +8534,8 @@
         <obo:IAO_0000112 xml:lang="en">Stratalinker</obo:IAO_0000112>
         <obo:IAO_0000117 xml:lang="en">Trish Whetzel</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">a device that is able to chemically join two or more molecules.</obo:IAO_0000115>
-        <obo:IAO_0000111 xml:lang="en">molecular crosslinker</obo:IAO_0000111>
         <obo:IAO_0000118 xml:lang="en">molecular crosslinker</obo:IAO_0000118>
+        <obo:IAO_0000111 xml:lang="en">molecular crosslinker</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
     </owl:Class>
@@ -8590,8 +8708,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400153">
         <rdfs:label xml:lang="en">droplet sorter</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000004"/>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI Instrument branch</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI Instrument branch</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI Instrument branch</obo:IAO_0000119>
         <obo:IAO_0000111 xml:lang="en">droplet sorter</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -8981,8 +9099,8 @@
         <obo:IAO_0000115 xml:lang="en">An assay in which the number of cells producing a material in a larger cell population are stained and counted. This is done by visualizing and counting the number of spots present on a surface via an antibody specific for the produced material. Each spot represents one cell producing the material of interest.</obo:IAO_0000115>
         <obo:IAO_0000112 xml:lang="en">Determination of the frequency of cells producing IFN-gamma in response to viral peptides by placing effector cells on a anti IFN-gamma coated plate, and adding antigen presenting cells pulsed with a peptide. After washing, the bound IFN-gamma is detected with a secondary antibody linked to a dye that visualizes as one spot per cell.</obo:IAO_0000112>
         <obo:IAO_0000118 xml:lang="en">ELISPOT</obo:IAO_0000118>
-        <obo:IAO_0000117 xml:lang="en">IEDB</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">IEDB</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">IEDB</obo:IAO_0000117>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
     </owl:Class>
@@ -9324,8 +9442,8 @@
         <obo:IAO_0000117 xml:lang="en">PERSON:Kevin Clancy</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">restriction enzyme assay</obo:IAO_0000118>
         <obo:IAO_0000115 xml:lang="en">the use of enzymes to cut DNA molecules, the study of DNA through cleavage, mapping, and analysis of the fragments</obo:IAO_0000115>
-        <obo:IAO_0000112 xml:lang="en">the use of the restriction enzymes SalPI and PstI to cleave DNA into fragments, assay made up of components</obo:IAO_0000112>
         <obo:IAO_0000119 xml:lang="en">the use of the restriction enzymes SalPI and PstI to cleave DNA into fragments, assay made up of components</obo:IAO_0000119>
+        <obo:IAO_0000112 xml:lang="en">the use of the restriction enzymes SalPI and PstI to cleave DNA into fragments, assay made up of components</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
     </owl:Class>
@@ -9424,8 +9542,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">immunogen</obo:IAO_0000111>
-        <obo:IAO_0000119 xml:lang="en">IEDB</obo:IAO_0000119>
         <obo:IAO_0000117 xml:lang="en">IEDB</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">IEDB</obo:IAO_0000119>
         <obo:IAO_0000115 xml:lang="en">a material entity bearing the immunogen role</obo:IAO_0000115>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -9439,8 +9557,8 @@
         <rdfs:label xml:lang="en">disease</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Disposition"/>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease</obo:IAO_0000111>
-        <obo:IAO_0000119 xml:lang="en">IEDB</obo:IAO_0000119>
         <obo:IAO_0000117 xml:lang="en">IEDB</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">IEDB</obo:IAO_0000119>
         <obo:IAO_0000115 xml:lang="en">placeholder to be imported from disease ontology</obo:IAO_0000115>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000121"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -9454,8 +9572,8 @@
         <rdfs:label xml:lang="en">immunogen role</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">immunogen role</obo:IAO_0000111>
-        <obo:IAO_0000119 xml:lang="en">IEDB</obo:IAO_0000119>
         <obo:IAO_0000117 xml:lang="en">IEDB</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">IEDB</obo:IAO_0000119>
         <obo:IAO_0000115 xml:lang="en">any entity capable of eliciting an immune response when introduced to components of the immune system</obo:IAO_0000115>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -9465,13 +9583,17 @@
 
     <!-- http://purl.org/ontology/bibo/Document -->
 
-    <owl:Class rdf:about="http://purl.org/ontology/bibo/Document"/>
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Document">
+        <rdfs:label xml:lang="en">document</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000553 -->
 
-    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000553"/>
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000553">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gene expression analysis objective</rdfs:label>
+    </owl:Class>
     
 
 
@@ -9507,7 +9629,68 @@
 
     <!-- http://xmlns.com/foaf/0.1/Organization -->
 
-    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">organization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000103 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000103">
+        <rdfs:label xml:lang="en">failed exploratory term</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000120 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000120">
+        <rdfs:label xml:lang="en">metadata complete</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000121 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000121">
+        <rdfs:label xml:lang="en">organizational term</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000122 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000122">
+        <rdfs:label xml:lang="en">ready for release</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000123 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000123">
+        <rdfs:label xml:lang="en">metadata incomplete</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000125 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000125">
+        <rdfs:label xml:lang="en">pending final vetting</rdfs:label>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
