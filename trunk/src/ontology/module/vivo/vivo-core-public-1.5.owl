@@ -805,86 +805,6 @@ See also core:localAwardId.
 
     
 
-    <!-- http://vivoweb.org/ontology/core#Building -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Building">
-        <rdfs:label xml:lang="en-us">Building</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Facility"/>
-        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Building that provides a particular service or is used for a particular activity.</ero:IAO_0000115>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Enter building name. If the building&apos;s name is a number (as in many governmental organizations such as national laboratories and military bases), then enter it. Do not confuse with the number that appears in a postal address.</ero:IAO_0000112>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Martha Van Rensselaer Hall (VR); Caldwell Hall (CD); University Auditorium</ero:IAO_0000112>
-    </owl:Class>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#Campus -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Campus">
-        <rdfs:label xml:lang="en-us">Campus</rdfs:label>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cornell Ithaca; Cornell Geneva; Cornell New York City; Cornell Qatar</ero:IAO_0000112>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Definition taken from dictionary.com (http://dictionary.reference.com/browse/campus).</ero:IAO_0000112>
-        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The grounds of a school, college, university, or hospital. Or, a large, usually suburban, landscaped business or industrial site.</ero:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#ClinicalOrganization -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#ClinicalOrganization">
-        <rdfs:label xml:lang="en-us">Clinical Organization</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any organization that offers significant health services or routinely provides medical care to patients.</ero:IAO_0000115>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In the future we may be able to make this a defined class that would not need to be directly asserted, but the consensus seems to be that some organizations &quot;are&quot; clinical and some &quot;are&quot; research organizations and that the distinction is important enough to warrant the additional class and class assertions</ero:IAO_0000112>
-    </owl:Class>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#ClinicalRole -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#ClinicalRole">
-        <rdfs:label xml:lang="en-us">Clinical Role</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
-        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A role of observing or treating patients</ero:IAO_0000115>
-    </owl:Class>
-
-
-
-    <!-- http://vivoweb.org/ontology/core#Continent -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Continent">
-        <rdfs:label xml:lang="en-us">Continent</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#TransnationalRegion"/>
-        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A large contiguous landmass  that is at least partially surrounded by water, together with any islands on its continental shelf.</ero:IAO_0000115>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Short Definition take from http://en.wiktionary.org/wiki/continent.</ero:IAO_0000112>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The seven commonly recognized continents are Africa; Antarctica; Asia; Australia; Europe; North America; South America</ero:IAO_0000112>
-    </owl:Class>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#Country -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Country">
-        <rdfs:label xml:lang="en-us">Country</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#GeopoliticalEntity"/>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Afghanistan; Antigua and Barbuda; Cameroon; Iceland; Jamaica; Nigeria; United States of America</ero:IAO_0000112>
-        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An area of land distinguished by its political autonomy. Politically independent territories.</ero:IAO_0000115>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Source of the Short Definition: http://www.thefreedictionary.com/country.  This is also the same as geopolitical.owl:self_governing.</ero:IAO_0000112>
-    </owl:Class>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#County -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#County">
-        <rdfs:label xml:lang="en-us">County</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#GeopoliticalEntity"/>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alachua; Baker; Bradford; Kenora; Ottawa; Waterloo</ero:IAO_0000112>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Short Definition modified from the one found here: http://www.thefreedictionary.com/county.</ero:IAO_0000112>
-        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The largest administrative division of most states or provinces.</ero:IAO_0000115>
-    </owl:Class>
-
-
-
     <!-- http://vivoweb.org/ontology/core#DateTimeInterval -->
 
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#DateTimeInterval">
@@ -935,105 +855,6 @@ See also core:localAwardId.
     
 
 
-    <!-- http://vivoweb.org/ontology/core#Foundation -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Foundation">
-        <rdfs:label xml:lang="en-us">Foundation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An institution founded with an endowment to support educational, research, artistic or other charitable activities.</ero:IAO_0000115>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Definition take from: http://dictionary.reference.com/browse/foundation.</ero:IAO_0000112>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Ford Foundation</ero:IAO_0000112>
-    </owl:Class>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#GeographicLocation -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#GeographicLocation">
-        <rdfs:label xml:lang="en-us">Geographic Location</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Location"/>
-        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A location having coordinates in geographic space.</ero:IAO_0000115>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Removed the word &quot;stable&quot; because disputed territories from geopolitical.owl are included. This could imply that the geographic coordinates could change. I&apos;ve also copied this definition to core:Geographic Location.  I think core:Geographic Location and core:Geographic Region are both the same and only one is needed. There is also geopolitical.owl:geographical_region which further causes confusion.</ero:IAO_0000112>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Use subclasses of core:Geographic Location subclasses instead of this class if possible.</ero:IAO_0000112>
-    </owl:Class>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#GeographicRegion -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#GeographicRegion">
-        <rdfs:label xml:lang="en-us">Geographic Region</rdfs:label>
-        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A location having coordinates in geographic space.</ero:IAO_0000115>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Removed the word &quot;stable&quot; because disputed territories from geopolitical.owl are included. This could imply that the geographic coordinates could change. This definition was originally in core:Geographic Location.  I simply copied the definition from there.  I think core:Geographic Location and core:Geographic Region are both the same and only one is needed. There is also geopolitical.owl:geographical_region which further causes confusion.</ero:IAO_0000112>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Use subclasses of core:Geographic Region subclasses instead of this class if possible.</ero:IAO_0000112>
-    </owl:Class>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#GeopoliticalEntity -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#GeopoliticalEntity">
-        <rdfs:label xml:lang="en-us">Geopolitical Entity</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#GeographicRegion"/>
-        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A geographical area which is associated with some sort of political  structure.</ero:IAO_0000115>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Short definition obtained here: http://en.wiktionary.org/wiki/geopolitical_entity.</ero:IAO_0000112>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Use subclasses of core:GeopoliticalEntity subclasses instead of this class if possible.</ero:IAO_0000112>
-    </owl:Class>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#GovernmentAgency -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#GovernmentAgency">
-        <rdfs:label xml:lang="en-us">Government Agency</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A unit of government responsible for oversight and regulation of certain activities or the administration and provision of specific services.</ero:IAO_0000115>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Definition take from: http://en.wikipedia.org/wiki/Government_agency.</ero:IAO_0000112>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">United States Library of Congress</ero:IAO_0000112>
-    </owl:Class>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#InvitedTalk -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#InvitedTalk">
-        <rdfs:label xml:lang="en-us">Invited Talk</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Presentation"/>
-    </owl:Class>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#Laboratory -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Laboratory">
-        <rdfs:label xml:lang="en-us">Laboratory</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organization unit that facilitates or conduits observation, testing, experimentation, or research in a field of study or practice.</ero:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#Location -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Location">
-        <rdfs:label xml:lang="en-us">Location</rdfs:label>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It&apos;s anticipated that the subclasses will be used when classifying items. And, all locations can be viewable via this class.</ero:IAO_0000112>
-        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Top level of all location classes.</ero:IAO_0000115>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Use subclasses of core:Location when classsifying items.</ero:IAO_0000112>
-    </owl:Class>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#PopulatedPlace -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#PopulatedPlace">
-        <rdfs:label xml:lang="en-us">Populated Place</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#GeopoliticalEntity"/>
-        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Either city or town - a thickly populated area having fixed boundaries and certain local powers of government.</ero:IAO_0000115>
-    </owl:Class>
-    
-
-
     <!-- http://vivoweb.org/ontology/core#Project -->
 
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#Project">
@@ -1041,16 +862,6 @@ See also core:localAwardId.
         <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An endeavor, frequently collaborative, that occurs over a finite period of time and is intended to achieve a particular aim.</ero:IAO_0000115>
         <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An endeavor, frequently collaborative, that occurs over a finite period of time and is intended to achieve a particular aim.
 </ero:IAO_0000112>
-    </owl:Class>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#ResearchOrganization -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#ResearchOrganization">
-        <rdfs:label xml:lang="en-us">Research Organization</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any organization (likely also asserted as another class of Organization) with a primary, ongoing research function, not just through occasional roles</ero:IAO_0000115>
     </owl:Class>
     
 
@@ -1074,69 +885,7 @@ See also core:localAwardId.
         <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Examples of research can be seen at: http://www.ufl.edu/research/products/index.html.  Note these may have been funded, but the research doesn&apos;t have to be funded.  Also, the research may be linked to an Agreement (for example, a Grant), but does not need to be.</ero:IAO_0000112>
     </owl:Class>
 
-
-
-    <!-- http://vivoweb.org/ontology/core#Room -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Room">
-        <rdfs:label xml:lang="en-us">Room</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Facility"/>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">100 Caldwell Hall; 114 Martha Van Rensselaer (Rushmore Conference Room)</ero:IAO_0000112>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Enter room number of name.</ero:IAO_0000112>
-        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Room that provides a particular service or is used for a particular activity.</ero:IAO_0000115>
-    </owl:Class>
     
-
-
-    <!-- http://vivoweb.org/ontology/core#StateOrProvince -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#StateOrProvince">
-        <rdfs:label xml:lang="en-us">State Or Province</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#GeopoliticalEntity"/>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Minnesota; Michigan; Indiana; New York; Quebec; Manitoba; Ontario</ero:IAO_0000112>
-        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One of a number of areas or communities having their own governments and forming a federation under a sovereign government, as in the US.</ero:IAO_0000115>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Source of the Short Definition: http://www.thefreedictionary.com/state.</ero:IAO_0000112>
-    </owl:Class>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#StudentOrganization -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#StudentOrganization">
-        <rdfs:label xml:lang="en-us">Student Organization</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A student organization is an organization, operated by students at a university, whose membership normally consists only of students.</ero:IAO_0000115>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dancin&apos; Gators</ero:IAO_0000112>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Definition take from here: http://en.wikipedia.org/wiki/Student_society</ero:IAO_0000112>
-    </owl:Class>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#SubnationalRegion -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#SubnationalRegion">
-        <rdfs:label xml:lang="en-us">Subnational Region</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#GeographicRegion"/>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Boroughs; townships; districts; the Midwest</ero:IAO_0000112>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">For example, the Midwest, northeast U.S.</rdfs:comment>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Short definition was partially taken from http://en.wikipedia.org/wiki/Subnational_entity.</ero:IAO_0000112>
-        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Smaller administrative division into which a country may be divided.</ero:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#TransnationalRegion -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#TransnationalRegion">
-        <rdfs:label xml:lang="en-us">Transnational Region</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#GeographicRegion"/>
-        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any region that goes beyond national boundaries and does not fit into any subclass of core:TransnationalRegion.</ero:IAO_0000115>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None as yet.</ero:IAO_0000112>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not sure how to access the &quot;Editor&apos;s Comments&quot;. But as North America is a continent, it would be placed directly into the continent subclass and viewable through this class along with any other subclass entities.</ero:IAO_0000112>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sub-Saharan Africa, North America</rdfs:comment>
-    </owl:Class>
-    
-
 
     <!-- http://vivoweb.org/ontology/core#URLLink -->
 
