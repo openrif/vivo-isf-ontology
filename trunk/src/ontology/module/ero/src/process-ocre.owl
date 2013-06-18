@@ -1,19 +1,14 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/ero/dev/ocre-imports.owl#"
-     xml:base="http://purl.obolibrary.org/obo/ero/dev/ocre-imports.owl"
-     xmlns:study_design="http://purl.org/net/OCRe/study_design.owl#"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/arg/process-ocre.owl#"
+     xml:base="http://purl.obolibrary.org/obo/arg/process-ocre.owl"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:study_protocol="http://purl.org/net/OCRe/study_protocol.owl#"
-     xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:research="http://purl.org/net/OCRe/research.owl#"
      xmlns:statistics="http://purl.org/net/OCRe/statistics.owl#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ero/dev/ocre-imports.owl">
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">${ero.ontology.version}</owl:versionInfo>
-    </owl:Ontology>
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/arg/process-ocre.owl"/>
     
 
 
@@ -64,7 +59,6 @@
 
     <owl:Class rdf:about="http://purl.org/net/OCRe/study_design.owl#OCRE100038">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phase</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phase describes the level of a trial required of drugs before (and after) they are routinely used in clinical practice: 
 - Phase I trials assess toxic effects on humans (not many people participate in them, and usually without controls); 
 - Phase ll trials assess therapeutic benefit (usually involving a few hundred people, usually with controls, but not always); 
@@ -131,18 +125,6 @@ randomised controlled trial). At this point, a drug can be approved for communit
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Phase IV study monitors a new treatment in the community, often to evaluate longterm safety and effectiveness. [Glossary of Terms in The Cochrane Collaboration]</obo:IAO_0000115>
         <statistics:curator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Simona</statistics:curator>
     </owl:Class>
-    
-
-
-    <!-- http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant -->
-
-    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant"/>
-    
-
-
-    <!-- http://www.ifomis.org/bfo/1.1/span#ProcessualEntity -->
-
-    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
 </rdf:RDF>
 
 
