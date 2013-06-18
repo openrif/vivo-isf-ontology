@@ -250,6 +250,15 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030">
+        <rdfs:label xml:lang="en">information content entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000017 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000017">
@@ -274,20 +283,20 @@
         <rdfs:label xml:lang="en">material processing</rdfs:label>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:allValuesFrom rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:allValuesFrom rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                 <owl:someValuesFrom rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:allValuesFrom rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:allValuesFrom rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -537,6 +546,12 @@
     <!-- http://www.ifomis.org/bfo/1.1/snap#Function -->
 
     <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#Function"/>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant -->
+
+    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant"/>
     
 
 

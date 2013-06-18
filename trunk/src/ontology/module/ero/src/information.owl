@@ -1,0 +1,1739 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/arg/information.owl#"
+     xml:base="http://purl.obolibrary.org/obo/arg/information.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/arg/information.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:label xml:lang="en">definition</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114">
+        <rdfs:label xml:lang="en">has curation status</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
+        <rdfs:label xml:lang="en">definition source</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
+        <rdfs:label xml:lang="en">term editor</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
+        <rdfs:label xml:lang="en">alternative term</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
+        <rdfs:label xml:lang="en">editor preferred term</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
+        <rdfs:label xml:lang="en">example of usage</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001811 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001811">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_format</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A DNA sequencing service performed by a core lab.</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An information content entity that describes a service performed by a person or organization with the objective of performing a technique, providing training, providing storage of data or material entities, or providing access to resources for another person or organization</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coordinate with NIF. NIF ID: nlx_res_20090105</rdfs:comment>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000117>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">service</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000083 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000083">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNA sequence</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0100362"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data containing the arrangement of nucleotides in a DNA fragment or genome.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000117>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNA sequence</obo:IAO_0000111>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The RNA sequence encodes the protein sequence.</obo:IAO_0000112>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/RNA</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000084 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000084">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protein sequence data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0100362"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein sequence data represents the primary structure of a protein and  is the order in which amino acid residues, connected by peptide bonds, lie in the chain in proteins.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Karen Corday</obo:IAO_0000117>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The protein sequence is encoded by the RNA sequence.</obo:IAO_0000112>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Peptide_sequence</obo:IAO_0000119>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protein sequence</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000085 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000085">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">macromolecular crystallographic information data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0100364"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data from the Macromolecular Crystallographic Information File (mmCIF) that is used for describing small molecule structures and associated diffraction experiments.</obo:IAO_0000115>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Macromolectular Crystallographic Information data</obo:IAO_0000111>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Karen Corday</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.sdsc.edu/pb/papers/methenz97.pdf</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000086 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000086">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electron density map data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0100354"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data that are a three-dimensional description of the electron density in a crystal structure, determined from X-ray diffraction experiments. They describe the contents of the unit cells averaged over the whole crystal and not the contents of a single unit cell (a distinction that is important where structural disorder is present).</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Karen Corday</obo:IAO_0000117>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electron density map</obo:IAO_0000111>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://reference.iucr.org/dictionary/Electron_density_map</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000088 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000088">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NMR restraint data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001117"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data generated by NMR used as input for structure generation programs.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ccpn.ac.uk/ccpn/data-model/python-api-v2-examples/nmr-restraints</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000316 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000316">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biosafety level</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A biosafety level is the level of the biocontainment precautions required to isolate dangerous biological agents in an enclosed facility. The levels of containment range from the lowest biosafety level 1 to the highest at level 4.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Karen Corday</obo:IAO_0000117>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Work with ebola virus is a biosafety level 4.</obo:IAO_0000112>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biosafety level</obo:IAO_0000111>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Biosafety_level</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000333 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000333">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">video</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000098"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data containing moving pictures stored in digital and analog formats.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Carlo Torniai</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Video</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000380 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000380">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NMR spectra data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001117"/>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NMR spectra data</obo:IAO_0000111>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NMR spectra is the intensity of the NMR signal as a function of frequency.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nuclear magnetic resonance spectra data</obo:IAO_0000118>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Karen Corday</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Nuclear_magnetic_resonance</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000391 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000391">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">access service</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000005"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A service offering that describes a service in which the consumer receives the right to use a resource (instrument, database, software, etc) that is owned or managed by a service provider.  Ownership of the accessed resource remains with the service provider during and after provision of service.</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Allowing access to a microscope in a core lab.</obo:IAO_0000112>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coordinate with NIF</rdfs:comment>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matt Brush</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000392 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000392">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">storage service</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000005"/>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A computer server.</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A service offering that describes a service in which the consumer provides some material or data as input which a service provider stores and returns as output.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matt Brush</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000119>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">coordinate with NIF. NIF ID:nlx_res_20090419</rdfs:comment>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000393 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000393">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">training service</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000005"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A service offering that describes a service in which the provider offers educational materials or events, such as courses, workshops or graduate programs, to the service consumer </obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coordinate with NIF. NIF ID: nlx_res_20090444</rdfs:comment>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matt Brush</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000119>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Training a researcher to use a microscope.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000394 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000394">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">material processing service</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000005"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A service offering that describes a service in which the provider makes physical changes to a specified input material entity with the objective of producing a new material entity form input materials, or modifying the input material entity, and returning this as output to the service consumer</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biopsy service.</obo:IAO_0000112>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coordinate with NIF: NIF ID: nlx_res_20090416</rdfs:comment>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://neurolex.org/wiki/Category:Production_service_resource</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000395 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000395">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">material analysis service</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001261"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An analysis service offering that describes a service in which the consumer provides some input material and a service provider performs some analysis of this material to generate data that is returned to the service consumer.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coordinate with NIF: NIF ID: nlx_res_20090420</rdfs:comment>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flow cytometry analysis of T cells.</obo:IAO_0000112>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://neurolex.org/wiki/Category:Analysis_service_resource</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000396 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000396">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">material production service</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000394"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A material processing service offering that describes a service in which the provider makes physical changes to a specified input material that produce a new entity as specified output that is returned the service consumer.  The specified output of a material production service can be contained within, derived from, or synthesized from specified input materials, but it represents a material entity that is of a distinct type from any of the specified input materials.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coordinate with NIF. NIF ID: nlx_res_20090418</rdfs:comment>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000117>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Production of monoclonal antibodies from a hybridoma.</obo:IAO_0000112>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://neurolex.org/wiki/Category:Material_service_resource</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000456 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000456">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">flow cytometry list mode data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0100366"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data containing raw cytometer data files that list the values of the scatter and fluorescence parameters for each event in the order in which the events passed through the cytometer&apos;s interrogation point (usually a laser beam). Most cytometers create listmode files in the Flow Cytometry Standard (FCS) format, which is not understood by general purpose scientific software. Converting a listmode file to a plain text ASCII format enables it to be read by such software, or viewed and edited with a word processor.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Tenille Johnson</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.umass.edu/microbio/mfi/ascii.htm</obo:IAO_0000119>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listmode file</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000513 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000513">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tissue specimen profile</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0100349"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data that describe a clinical tissue specimen, e.g. a tissue profile for new gene and protein targets or a molecular profile for tissue specimens or diseases provided by tissue microarray technology.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Erik Segerdell</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:11257096</obo:IAO_0000119>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tissue information</obo:IAO_0000118>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tissue specimen profile</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000531 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000531">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">animal activity data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0100350"/>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Animal activity data may be recorded after an experimental procedure.</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data pertaining to the activity of laboratory animals or animals in an experimental setting.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Tenille Johnson</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Tenille Johnson</obo:IAO_0000117>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">animal activity data</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000564 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000564">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electrophysiology data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001186"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data generated from an electrophysiology assay.</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ion channel recording data from a primate suprachiasmatic nucleus.</obo:IAO_0000112>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Tenille Johnson</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Tenille Johnson</obo:IAO_0000117>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electrophysiology data</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000611 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000611">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SNP data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0100368"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data that describes single nucleotide polymorphisms, or SNPs (pronounced &quot;snips&quot;), which are DNA sequence variations that occur when a single nucleotide (A,T,C,or G) in the genome sequence is altered.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000117>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SNP data</obo:IAO_0000111>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ornl.gov/sci/techresources/Human_Genome/faq/snps.shtml</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001111 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001111">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protein expression data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0100361"/>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mass spectrometry data.</obo:IAO_0000112>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000117>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Protein expression data displays identification of unknown proteins, protein modifications, distinguishes protein isoforms and subsets and quantification of samples.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.selectscience.net/products/proteinpilot-software/?prodID=83453</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001117 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001117">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nuclear magnetic resonance data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001554"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data depicting NMR spectra from a sample.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NMR data</obo:IAO_0000118>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/NMR_spectra_database</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001125 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001125">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electrocardiogram data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001186"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ECG data</obo:IAO_0000118>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000117>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Software that records heart rate, inter-beat-interval (IBI), and physical activity and digitizes the ECG signal and determines the IBI from the R-to-R interval. From the IBI recordings, the heart rate and heart rate variability parameters are calculated. Caloric expenditure can be obtained through the use of a software algorithm that combines concurrent heart rate and activity data.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.camntech.com/cnt_actiheart.htm</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001177 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001177">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electronic health record data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0100377"/>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A patient record from a doctor visit.</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data that contains patient health information generated by one or more encounters in any care delivery setting. Included in this information are patient demographics, progress notes, problems, medications, vital signs, past medical history, immunizations, laboratory data and radiology reports.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EHR</obo:IAO_0000118>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.himss.org/ASP/topics_ehr.asp</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001184 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001184">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">motion analysis data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0100350"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data about time-dependent, quantitative data on captured movements.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Motion_analysis</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001186 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001186">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">physiological data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001554"/>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data from an electrocardiogram.</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data related to physiological recording or monitoring.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.thefreedictionary.com/physiological</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001187 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001187">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">labelled DNA fragment data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0100354"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data input captured by the labeled DNA sequence.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001254 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001254">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transport service</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000005"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A service offering that describes a service in which the provider facilitates the transport of some material entity to a specified destination for the service consumer.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matt Brush</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000119>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transport of a patient within a hospital.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001255 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001255">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">support service</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000005"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A service offering that describes a service in which the provider assists the consumer in activities directly or indirectly associated with the production and analysis or experimental research data.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matt Brush</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000119>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Technical support.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001256 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001256">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">material storage service</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000392"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A storage service offering that describes a service in which the consumer provides some material as input which a service provider stores and returns as output</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cryopreservation service.</obo:IAO_0000112>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matt Brush</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001257 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001257">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">data storage service</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000392"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A storage service offering that describes a service in which the consumer provides data as input, which a service provider stores and returns as output in its original form.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matt Brush</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000119>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Storing data on a server.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001258 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001258">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">maintenance service</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000005"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A service offering that describes a service in which the provider actively maintains a material or data resource (e.g. a model organism colony or database) for the service consumer.  This may involved making physical alterations to the material or data with the goal of maintaining its integrity or features.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matt Brush</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001259 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001259">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">material maintenance service</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001258"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A maintenance service offering that describes a service in which the provider actively maintains a material resource (e.g. a model organism colony) for the service consumer.  A material maintenance service may or may not include storage of the material input.</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maintaining an animal coloy.</obo:IAO_0000112>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matt Brush</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001260 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001260">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">data maintenance service</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001258"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A maintenance service offering that describes a service in which the provider actively manages or maintains data or a database for the service consumer.  Maintenance of the data is performed to maintain its integrity or enhance its quality or utility for the consumer, but new data is not generated as a result of the maintenance.</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maintaining a database.</obo:IAO_0000112>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matt Brush</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001261 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001261">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">analysis service</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000005"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A service offering that describes a service in which the consumer provides some input material or data and a service provider returns data about the input material or data.</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flow cytometry analysis service.</obo:IAO_0000112>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matt Brush</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001262 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001262">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">data analysis service</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001261"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An analysis service offering that describes a service in which the consumer provides some input data and a service provider transforms, models, or interprets the input data and returns this generated data as output</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matt Brush</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000119>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sequence data analysis.</obo:IAO_0000112>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">data processing service</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">data transformation service</obo:IAO_0000118>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001263 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001263">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">material modification service</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000394"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A material processing service offering that describes a service in which the provider makes physical modifications to a specified input material, such that at least one of the specified outputs of this process is a modified version of a specified input material.</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Histology service.</obo:IAO_0000112>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matt Brush</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001554 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001554">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data items include counts of things, analyte concentrations, and statistical summaries.</obo:IAO_0000112>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Note that this class was created to replace IAO:data item, in order to exclude children metadata classes &apos;data about an ontology part&apos; from the application. Their meaning is identical</rdfs:comment>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000119>
+        <rdfs:comment>Most of the data subclasses canbe defined as output of a specific assay. </rdfs:comment>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001716 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001716">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">database</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A database is an organized collection of data, today typically in digital form.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Just a place horder. It will probably be replaced by NIF term: http://ontology.neuinfo.org/NIF/DigitalEntities/NIF-Resource.owl#nlx_res_20090405</rdfs:comment>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Carlo Torniai</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Database</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001806 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001806">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measurement scale</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001821 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001821">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological process phenotype annotation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001828"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conclusion textual entity about a biological process phenotype.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001822 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001822">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anatomical phenotype annotation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001828"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conclusion textual entity about an anatomical phenotype.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001828 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001828">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phenotypic annotation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000144"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001838 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001838">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mammalian phenotype annotation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001828"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conclusion textual entity about a mammalian phenotype.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Scott Hoffmann</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001845 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001845">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ActionScript</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000025"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001846 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001846">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ada</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000025"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001847 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001847">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AppleScript</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000025"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001848 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001848">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Assembly</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000025"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001849 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001849">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000025"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001850 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001850">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C Sharp</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000025"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001851 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001851">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C++</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000025"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001852 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001852">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COBOL</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000025"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001853 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001853">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ColdFusion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000025"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001854 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001854">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000025"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001855 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001855">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Delphi</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000025"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001856 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001856">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dylan</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000025"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001857 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001857">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eiffel</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000025"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001858 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001858">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Forth</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000025"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001859 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001859">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fortran</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000025"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001860 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001860">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Groovy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000025"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001861 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001861">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Haskell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000025"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001862 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001862">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JavaScript</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000025"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001863 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001863">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LabVIEW</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000025"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001864 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001864">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lisp</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000025"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001865 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001865">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lua</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000025"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001866 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001866">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maple</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000025"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001867 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001867">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mathematica</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000025"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001868 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001868">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pascal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000025"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001869 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001869">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Perl</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000025"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001870 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001870">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PHP</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000025"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001871 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001871">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prolog</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000025"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001872 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001872">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Python</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000025"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001873 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001873">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">REXX</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000025"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001874 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001874">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ruby</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000025"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001875 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001875">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SAS</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000025"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001876 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001876">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scala</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000025"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001877 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001877">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scheme</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000025"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001878 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001878">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000025"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001879 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001879">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Smalltalk</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000025"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001880 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001880">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SQL</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000025"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001881 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001881">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Turing</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000025"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001882 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001882">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Verilog</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000025"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001883 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001883">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VHDL</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000025"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001884 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001884">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Visual Basic</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000025"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001885 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001885">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.csv</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/data/SWO_3000041"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Comma-separated values</obo:IAO_0000118>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001886 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001886">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.mgf</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/data/SWO_3000041"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MASCOT generic format</obo:IAO_0000118>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001887 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001887">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.sql</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/data/SWO_3000041"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SQL format</obo:IAO_0000118>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001888 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001888">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.mysql</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/data/SWO_3000041"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MySQL format</obo:IAO_0000118>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001889 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001889">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.fastq</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/data/SWO_3000041"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.fq</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FASTQ</obo:IAO_0000118>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001890 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001890">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.maf</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/data/SWO_3000041"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MAF</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Multiple Alignment Format</obo:IAO_0000118>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001891 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001891">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.gz</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000098"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GZipped format</obo:IAO_0000118>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001892 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001892">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.zip</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000098"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zipped format</obo:IAO_0000118>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001893 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001893">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.bw</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/data/SWO_3000041"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BigWig format</obo:IAO_0000118>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001894 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001894">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.wig</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/data/SWO_3000041"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wiggle format</obo:IAO_0000118>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001895 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001895">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.sam</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/data/SWO_3000041"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sequence Alignment/Map format</obo:IAO_0000118>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001909 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001909">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">binary</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001806"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001910 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001910">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">categorical</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001806"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nominal</obo:IAO_0000118>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001911 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001911">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ordinal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001806"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001912 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001912">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interval</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001806"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001913 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001913">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ratio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001806"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001914 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001914">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">continuous</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001806"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001915 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001915">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">survival</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001806"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">time to failure</obo:IAO_0000118>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001916 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001916">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sequential</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001806"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001943 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001943">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nexus format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/data/SWO_3000041"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100287 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100287">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">data processing operation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100349 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100349">
+        <rdfs:label>anatomical data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001554"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100350 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100350">
+        <rdfs:label>behavioral data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0100374"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100351 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100351">
+        <rdfs:label>biomechanical data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001554"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100352 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100352">
+        <rdfs:label>cell data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001554"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100353 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100353">
+        <rdfs:label>disease data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001554"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100354 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100354">
+        <rdfs:label>molecular data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001554"/>
+        <obo:IAO_0000115>data that is about molecules or phenomena occurring at a molecular level (e.g. processes such as molecular interactions, chemical reactions, gene expression etc).</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100355 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100355">
+        <rdfs:label>protein secondary structure data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0100365"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100356 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100356">
+        <rdfs:label>population data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001554"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100357 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100357">
+        <rdfs:label>anatomical image data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0100349"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0001811"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/data/SWO_3000008"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100358 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100358">
+        <rdfs:label>cell image data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0100352"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0001811"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/swo/data/SWO_3000008"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100359 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100359">
+        <rdfs:label>genetic mapping data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0100354"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100360 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100360">
+        <rdfs:label>reaction data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0100354"/>
+        <obo:IAO_0000118>chemical reaction data</obo:IAO_0000118>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100361 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100361">
+        <rdfs:label>gene expression data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0100354"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100362 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100362">
+        <rdfs:label>sequence data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0100354"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100364 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100364">
+        <rdfs:label>molecular structure data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0100354"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100365 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100365">
+        <rdfs:label>protein structure data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0100364"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100366 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100366">
+        <rdfs:label>flow cytometry data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0100352"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100368 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100368">
+        <rdfs:label>sequence variation data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0100362"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100369 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100369">
+        <rdfs:label>sequence alignment data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0100362"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100370 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100370">
+        <rdfs:label>molecular network data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0100354"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100373 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100373">
+        <rdfs:label>protein tertiary structure data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0100365"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100374 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100374">
+        <rdfs:label>organism data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001554"/>
+        <obo:IAO_0000115>data about organisms and phenomenon at the level/granularity of organisms, their superficial features, and their behavior</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100377 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100377">
+        <rdfs:label>medical data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001554"/>
+        <obo:IAO_0000118>health data</obo:IAO_0000118>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100378 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100378">
+        <rdfs:label>population genetics data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0100356"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100379 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100379">
+        <rdfs:label>phylogenetic data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0100378"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100380 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100380">
+        <rdfs:label>morphological data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0100374"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000005">
+        <rdfs:label xml:lang="en">objective specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000025 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000025">
+        <rdfs:label xml:lang="en">programming language</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030">
+        <rdfs:label xml:lang="en">information content entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000098 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000098">
+        <rdfs:label xml:lang="en">data format specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000144 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000144">
+        <rdfs:label xml:lang="en">conclusion textual entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MP_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MP_0000001">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mammalian phenotype</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0200166 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0200166">
+        <rdfs:label xml:lang="en">data processing objective</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_0001059 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0001059">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sequence_alteration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_0001218 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0001218">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transgenic_insertion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Document -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Document">
+        <rdfs:label xml:lang="en">document</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/SWO_0000002 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000002">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">software license</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000008 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/data/SWO_3000008">
+        <rdfs:label>Image format</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000041 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/data/SWO_3000041">
+        <rdfs:label>Text file format</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000120 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000120">
+        <rdfs:label xml:lang="en">metadata complete</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000123 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000123">
+        <rdfs:label xml:lang="en">metadata incomplete</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2018) http://owlapi.sourceforge.net -->
+
