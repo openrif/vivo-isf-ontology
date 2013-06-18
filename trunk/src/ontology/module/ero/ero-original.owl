@@ -59,18 +59,18 @@
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description">
         <rdfs:label xml:lang="en-us">Description</rdfs:label>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#deprecated"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
         <rdfs:label xml:lang="en">definition</rdfs:label>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
         <rdfs:label xml:lang="en">editor note</rdfs:label>
     </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000569"/>
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor">
         <rdfs:label xml:lang="en-us">Contributor</rdfs:label>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000569"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114">
         <rdfs:label xml:lang="en">has curation status</rdfs:label>
     </owl:AnnotationProperty>
@@ -1225,14 +1225,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/ERO_0000007 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000007">
-        <rdfs:label xml:lang="en">technique</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/ERO_0000008 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000008">
@@ -1245,97 +1237,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000009">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell line</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000014 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000014">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">research project</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000066"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A funded collection of investigations as described in a research proposal.</obo:IAO_0000115>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A project to study the role of a specific protein in cell signaling.</obo:IAO_0000112>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maybe SameAs &quot;Investigation&quot; but is the subject of funding</rdfs:comment>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000119>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000117>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000015 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000015">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">human study</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000014"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A clinical trial.</obo:IAO_0000112>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OCRe</obo:IAO_0000119>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000117>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Research project that uses or collects measurements or assessments about humans.</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This should be imported from OCRE- but they currently have no generic human study type. Def is modified.</rdfs:comment>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">human study</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000016 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000016">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">clinical trial</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/net/OCRe/research.owl#Interventional_study"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0001518"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.org/net/OCRe/study_design.owl#OCRE100038"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/net/OCRe/research.owl#Interventional_study"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A clinical trial to evaluate the efficacy of a new drug.</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An interventional study that contains a set of procedures in medical research and drug development that are conducted to allow safety (or more specifically, information about adverse drug reactions and adverse effects of other treatments) and efficacy data to be collected for health interventions (e.g., drugs, diagnostics, devices, therapy protocols) that is performed over phases.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000117>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Clinical_trial</obo:IAO_0000119>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000017 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000017">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">epidemiological study</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000015"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A human study of diseases in populations of humans or other animals, specifically how, when and where they occur. Epidemiological studies can never prove causation, epidemiological evidence can only show that this risk factor is correlated with a higher incidence of disease in the population exposed to that risk factor. The higher the correlation the more certain the association, but it cannot prove the causation.</obo:IAO_0000115>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A study of the populations and demographic of the avian flu.</obo:IAO_0000112>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Karen Corday</obo:IAO_0000117>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">epidemiological study</obo:IAO_0000111>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://pmep.cce.cornell.edu/profiles/extoxnet/TIB/epidemiology.html</obo:IAO_0000119>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000019 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000019">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">genome wide association study</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000014"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A genome wide association study is an examination of genetic variation across a given genome, designed to identify genetic associations with observable traits.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Karen Corday</obo:IAO_0000117>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">genome wide association study</obo:IAO_0000111>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Genome-wide_association_study</obo:IAO_0000119>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
     </owl:Class>
     
 
@@ -1657,78 +1558,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/ERO_0000347 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000347">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">intervention</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A planned process used to influence one or more factors in a research study, and the independent variable in an interventional study wherein the influence is measured or evaluated.</obo:IAO_0000115>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An drug intervention for cancer.</obo:IAO_0000112>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melanie Wilson</obo:IAO_0000117>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000119>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000348 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000348">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">case-only study</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/net/OCRe/research.owl#Observational_study"/>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Dictionary of Epidemiology, Fifth Edition, Edited by Miquel Porta. p. 33. ISBN:978-0-19-531449-6 http://prsinfo.clinicaltrials.gov/definitions.html</obo:IAO_0000119>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Observational study whereby there is a single group of individuals with specific characteristics. This is a method that analyzes data from a case series and is used in case-crossover studies, in case-specular designs, and in molecular and genetic epidemiology to assess relationships between environmental exposures and genotypes.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000117>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">case-only study</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000356 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000356">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">open blinded study</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/net/OCRe/research.owl#Interventional_study"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An interventional study in which the person collecting the data and the subject know whether the subjects are in the control or experimental groups.</obo:IAO_0000115>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Open trial</obo:IAO_0000118>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Open-label trial</obo:IAO_0000118>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000117>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://medical-dictionary.thefreedictionary.com/single-blind+study</obo:IAO_0000119>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">open blinded study</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000357 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000357">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">single blinded study</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/net/OCRe/research.owl#Interventional_study"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An interventional study in which the person collecting the data knows whether the subjects are in the control or experimental groups but the subjects do not.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000117>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://medical-dictionary.thefreedictionary.com/single-blind+study</obo:IAO_0000119>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">single blinded study</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000358 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000358">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">double blinded study</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/net/OCRe/research.owl#Interventional_study"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An interventional study in which neither the subjects of the experiment nor the persons administering the experiment know the critical aspects of the experiment; a double-blind procedure is used to guard against both experimenter bias and placebo effects.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000117>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">double blinded study</obo:IAO_0000111>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.thefreedictionary.com/double-blind+study</obo:IAO_0000119>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/ERO_0000404 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000404">
@@ -1736,8 +1565,8 @@
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001000"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000285"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1748,8 +1577,8 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000285"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001000"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A gene, such as p53.</obo:IAO_0000112>
@@ -1805,144 +1634,6 @@
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Training grant to perform post-doctoral research.</obo:IAO_0000112>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">student research opportunity</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000598 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000598">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">educational intervention</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000347"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An intervention which involves education, training programs, and courses in various fields and disciplines, and for training groups of persons.</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MeSH ID: Q000193</rdfs:comment>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melanie Wilson</obo:IAO_0000119>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melanie Wilson</obo:IAO_0000117>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">educational intervention</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000599 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000599">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dietary intervention</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000347"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An intervention that involves dietary and nutritional management. The concept does not include vitamin or mineral supplements, for which &quot;drug intervention&quot; may be used.</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MeSH qualifier id: Q000178.   Definition excerpted from MeSH.</rdfs:comment>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melanie Wilson</obo:IAO_0000117>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melanie Wilson</obo:IAO_0000119>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To treat some illnesses or conditions, such as diabetes, a dietary intervention may be used.</obo:IAO_0000112>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dietary intervention</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000600 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000600">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drug intervention</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000347"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A therapeutic intervention involving the administration of drugs, biologicals, chemicals, and antibiotics.</obo:IAO_0000115>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Administration of a chemotherapy to treat cancer.</obo:IAO_0000112>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MeSH ID: Q000188.  Definition paraphrased from MeSH.</rdfs:comment>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melanie Wilson</obo:IAO_0000119>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melanie Wilson</obo:IAO_0000117>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drug intervention</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000601 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000601">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radiologic intervention</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000347"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An intervention that involves the therapeutic use of ionizing and nonionizing radiation. It includes the use of radioisotope therapy.</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MesH qualifier ID : Q000532</rdfs:comment>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000117>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Radiation therapy for cancer.</obo:IAO_0000112>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.nlm.nih.gov/cgi/mesh/2010/MB_cgi</obo:IAO_0000119>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radiologic intervention</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000602 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000602">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surgical intervention</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000347"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An intervention involving operative procedures on organs, regions, or tissues in the treatment of diseases, including tissue section by lasers. It excludes transplantation, for which &quot;therapeutic intervention&quot; is used.</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MeSH qualifier ID : Q000601</rdfs:comment>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000117>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Surgical removal of a tumor.</obo:IAO_0000112>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.nlm.nih.gov/cgi/mesh/2010/MB_cgi</obo:IAO_0000119>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surgical intervention</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000603 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000603">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rehabilitative intervention</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000347"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An intervention involving surgical procedures for restoration of function of the individual.</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MeSH qualifier ID : Q000534</rdfs:comment>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000117>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.nlm.nih.gov/cgi/mesh/2010/MB_cgi</obo:IAO_0000119>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rehabilitative intervention</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000604 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000604">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nursing intervention</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000347"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An intervention involving nursing care and techniques in their management. It includes the nursing role in diagnostic, therapeutic, and preventive procedures.</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MeSH qualifier ID : Q000451</rdfs:comment>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000117>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.nlm.nih.gov/cgi/mesh/2010/MB_cgi</obo:IAO_0000119>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nursing_intervention</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000605 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000605">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prevention and control intervention</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000347"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An intervention involving increasing human or animal resistance against disease (e.g., immunization),  control of transmission agents,  prevention and control of environmental hazards, or prevention and control of social factors leading to disease. It includes preventive measures in individual cases.</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MeSH qualifier ID : Q000517</rdfs:comment>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000117>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.nlm.nih.gov/cgi/mesh/2010/MB_cgi?mode=&amp;index=218879&amp;field=qual&amp;HM=&amp;II=&amp;PA=&amp;form=&amp;input=</obo:IAO_0000119>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prevention and control intervention</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000606 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000606">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">psychological and behavioral intervention</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000347"/>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000117>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melanie Wilson</obo:IAO_0000119>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Psychological or behavior intervention is a combination of program elements, strategies, or modalities designed to influence psychological or behavioral processes or outcomes.</obo:IAO_0000115>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">psychological and behavioral intervention</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
     </owl:Class>
     
 
@@ -2110,136 +1801,10 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/ERO_0001245 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001245">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">licensing</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A technique that authorizes a use (such as copying software or using a (patented) invention) to a licensee, sparing the licensee from a claim of infringement brought by the licensor.</obo:IAO_0000115>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Licensing of a new technology.</obo:IAO_0000112>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000117>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/License</obo:IAO_0000119>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0001317 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001317">
-        <rdfs:label xml:lang="en">observational method</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A method in which the investigators do not seek to intervene, and just simply observe the course of events.</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person: Melanie Wilson</obo:IAO_0000119>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person: Melanie Wilson</obo:IAO_0000117>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0001318 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001318">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">testing method</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001317"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An observational method that produces a test result based on a quantitative, categorical or qualitative test.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000117>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Test_method</obo:IAO_0000119>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0001319 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001319">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measurement method</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001317"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An observational method where quantitative measurements are made based on the observations.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000117>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000119>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0001320 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001320">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">survey method</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001317"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An observational method of gathering data by asking questions or providing a formal questionnaire to individuals who are thought to have desired information. </obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000117>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.managementstudyguide.com/survey_method.htm</obo:IAO_0000119>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0001321 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001321">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interview method</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001317"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An observational method of gathering data by interviewing individuals. </obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000117>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000119>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0001322 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001322">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">visual observation method</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001317"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An observational method where observations are made visually.</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000119>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000117>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0001323 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001323">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">audio observation method</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001317"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An observational method using an auditory source.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000117>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000119>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0001402 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001402">
-        <rdfs:label xml:lang="en">feasibility study</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000015"/>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Dictionary of Epidemiology, 5th edition.</obo:IAO_0000119>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A preliminary study to determine the practicability of a proposed health program or procedure or of a larger study and to appraise the factors that may influence its practicability. A feasibility study aims to discover those things which may affect successful study conduct on a larger scale.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melanie Wilson</obo:IAO_0000117>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/ERO_0001440 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001440">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hybridoma cell line</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0001523 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001523">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">immunotechnique</rdfs:label>
     </owl:Class>
     
 
@@ -2425,41 +1990,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/ERO_0001553 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001553">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biologic intervention</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000347"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A monoclonal antibody intervention used to treat rheumatoid arthritis.</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An intervention involving use of medicinal product(s) created by biologic processes, rather than being chemically synthesized. For example, a vaccine, blood or blood component, allergenic, somatic cell, gene therapy, tissue, recombinant therapeutic protein, or living cells.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000117>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Biologic</obo:IAO_0000119>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0001697 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001697">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diagnostic intervention</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000347"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An intervention that evaluates methods of detecting disease. </obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000117>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://training.cancer.gov/clinicaltrialsbasics/s01/glossary.php</obo:IAO_0000119>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0001707 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001707">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biospecimen preparation</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/ERO_0001839 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001839">
@@ -2478,67 +2008,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001840">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">algorithmic software component</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000071"/>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0001932 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001932">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">data collection method</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a planned process in which data is collection through observations or measurements of subjects/specimens under investigation</obo:IAO_0000115>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0001933 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001933">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">independent data collection method</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001932"/>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0001934 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001934">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">paired data collection method</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001932"/>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0001935 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001935">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">clustered data collection method</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001932"/>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0001936 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001936">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">longitudinal data collection method</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001932"/>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0001937 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001937">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">repeated measurement method</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001932"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
     </owl:Class>
     
@@ -2580,22 +2049,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Homo sapiens</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011">
-        <rdfs:label xml:lang="en">planned process</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000066 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000066">
-        <rdfs:label xml:lang="en">investigation</rdfs:label>
     </owl:Class>
     
 
@@ -2677,52 +2130,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001062">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anatomical entity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/net/OCRe/research.owl#Interventional_study -->
-
-    <owl:Class rdf:about="http://purl.org/net/OCRe/research.owl#Interventional_study">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Interventional study</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/net/OCRe/research.owl#Quantitative_human_study"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000347"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/net/OCRe/research.owl#Observational_study -->
-
-    <owl:Class rdf:about="http://purl.org/net/OCRe/research.owl#Observational_study">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Observational study</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000015"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0001317"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/net/OCRe/research.owl#Quantitative_human_study -->
-
-    <owl:Class rdf:about="http://purl.org/net/OCRe/research.owl#Quantitative_human_study">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quantitative human study</rdfs:label>
     </owl:Class>
     
 

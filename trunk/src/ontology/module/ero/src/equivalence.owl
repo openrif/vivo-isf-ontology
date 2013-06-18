@@ -91,6 +91,14 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ERO_0001518 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001518">
+        <rdfs:label>has_phase</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000306 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000306">
@@ -189,6 +197,33 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000008">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">antibody reagent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000015">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">human study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000016">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">clinical trial</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/net/OCRe/research.owl#Interventional_study"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0001518"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/net/OCRe/study_design.owl#OCRE100038"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
     </owl:Class>
     
 
@@ -296,6 +331,14 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000296">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transgenic lambda phage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000347 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000347">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">intervention</rdfs:label>
     </owl:Class>
     
 
@@ -947,6 +990,14 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ERO_0001317 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001317">
+        <rdfs:label xml:lang="en">observational method</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ERO_0001362 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001362">
@@ -1206,6 +1257,60 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000479">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tissue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/OCRe/research.owl#Interventional_study -->
+
+    <owl:Class rdf:about="http://purl.org/net/OCRe/research.owl#Interventional_study">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Interventional study</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/net/OCRe/research.owl#Quantitative_human_study"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000347"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/OCRe/research.owl#Observational_study -->
+
+    <owl:Class rdf:about="http://purl.org/net/OCRe/research.owl#Observational_study">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Observational study</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000015"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0001317"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/OCRe/research.owl#Quantitative_human_study -->
+
+    <owl:Class rdf:about="http://purl.org/net/OCRe/research.owl#Quantitative_human_study">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quantitative human study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/OCRe/study_design.owl#OCRE100038 -->
+
+    <owl:Class rdf:about="http://purl.org/net/OCRe/study_design.owl#OCRE100038">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phase</rdfs:label>
     </owl:Class>
     
 
