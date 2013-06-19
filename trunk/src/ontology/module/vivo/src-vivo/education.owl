@@ -10,9 +10,30 @@
     
 
 
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
 
     <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral -->
 
@@ -42,7 +63,7 @@
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#AdvisingRelationship">
         <rdfs:label xml:lang="en-us">Advising Relationship</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Relationship"/>
-        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A dual relationship of one person being advised or mentored by another person, typically including start and end dates</ero:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A dual relationship of one person being advised or mentored by another person, typically including start and end dates</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -52,8 +73,16 @@
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#Certification">
         <rdfs:label xml:lang="en-us">Certification</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#IssuedCredential"/>
-        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An issued certificate</ero:IAO_0000115>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">see also core:Certificate</ero:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An issued certificate</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">see also core:Certificate</obo:IAO_0000112>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#EducationalProcess -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#EducationalProcess">
+        <rdfs:label>educational process</rdfs:label>
     </owl:Class>
     
 
@@ -63,7 +92,7 @@
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#FacultyMentoringRelationship">
         <rdfs:label xml:lang="en-us">Faculty Mentoring Relationship</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#AdvisingRelationship"/>
-        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An advisory relationship in which one faculty member mentors another faculty member.</ero:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An advisory relationship in which one faculty member mentors another faculty member.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -73,7 +102,7 @@
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#GraduateAdvisingRelationship">
         <rdfs:label xml:lang="en-us">Graduate Advising Relationship</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#AdvisingRelationship"/>
-        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An advisory relationship in which a professor advises a graduate student.</ero:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An advisory relationship in which a professor advises a graduate student.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -82,7 +111,7 @@
 
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#Internship">
         <rdfs:label xml:lang="en-us">Internship</rdfs:label>
-        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Typically a student or a recent graduate undergoing supervised practical training.</ero:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Typically a student or a recent graduate undergoing supervised practical training.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -100,8 +129,8 @@
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#Licensure">
         <rdfs:label xml:lang="en-us">Licensure</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#IssuedCredential"/>
-        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A granted license, which gives a &apos;permission to practice.&apos;</ero:IAO_0000115>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A granted license, which gives a &apos;permission to practice.&apos; Such licenses are usually issued in order to regulate some activity that is deemed to be dangerous or a threat to the person or the public or which involves a high level of specialized skill.  See also core:License.</ero:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A granted license, which gives a &apos;permission to practice.&apos;</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A granted license, which gives a &apos;permission to practice.&apos; Such licenses are usually issued in order to regulate some activity that is deemed to be dangerous or a threat to the person or the public or which involves a high level of specialized skill.  See also core:License.</obo:IAO_0000112>
     </owl:Class>
     
 
@@ -110,7 +139,7 @@
 
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#MedicalResidency">
         <rdfs:label xml:lang="en-us">Medical Residency</rdfs:label>
-        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Residency is a stage of graduate medical training. </ero:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Residency is a stage of graduate medical training. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -120,28 +149,20 @@
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#PostdocOrFellowAdvisingRelationship">
         <rdfs:label xml:lang="en-us">Postdoc or Fellow Advising Relationship</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#AdvisingRelationship"/>
-        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An advisory relationship in which the advisee is a Postdoc or Fellow.</ero:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An advisory relationship in which the advisee is a Postdoc or Fellow.</obo:IAO_0000115>
     </owl:Class>
     
 
-    <!-- http://vivoweb.org/ontology/core#EducationalProcess -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#EducationalProcess">
-        <rdfs:label>educational process</rdfs:label>
-    </owl:Class>
 
     <!-- http://vivoweb.org/ontology/core#PostdoctoralTraining -->
 
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#PostdoctoralTraining">
         <rdfs:label xml:lang="en-us">Postdoctoral Training</rdfs:label>
-        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Postdoctoral research is academic or scholarly research conducted by a person who has completed his or her doctoral studies, normally within the following five years. It is intended to further deepen expertise in a specialist subject.</ero:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#EducationalProcess"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Postdoctoral research is academic or scholarly research conducted by a person who has completed his or her doctoral studies, normally within the following five years. It is intended to further deepen expertise in a specialist subject.</obo:IAO_0000115>
     </owl:Class>
     
-    <!-- http://vivoweb.org/ontology/core#PostdoctoralTraining -->
 
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#PostdoctoralTraining">
-        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#EducationalProcess"/>
-    </owl:Class>
 
     <!-- http://vivoweb.org/ontology/core#Relationship -->
 
@@ -154,9 +175,8 @@
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#UndergraduateAdvisingRelationship">
         <rdfs:label xml:lang="en-us">Undergraduate Advising Relationship</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#AdvisingRelationship"/>
-        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An advisory relationship in which a professor advises an undergraduate student.</ero:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An advisory relationship in which a professor advises an undergraduate student.</obo:IAO_0000115>
     </owl:Class>
-	
 </rdf:RDF>
 
 

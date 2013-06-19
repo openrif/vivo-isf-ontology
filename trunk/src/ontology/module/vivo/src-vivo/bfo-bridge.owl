@@ -6,7 +6,129 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/arg/bfo-bridge-2.owl"/>
-        <!-- http://vivoweb.org/ontology/core#Equipment -->
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000012">
+        <rdfs:label xml:lang="en-us">Service Provider Role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NET/c4dm/event.owl#Event -->
+
+    <owl:Class rdf:about="http://purl.org/NET/c4dm/event.owl#Event">
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#AdministratorRole -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#AdministratorRole">
+        <rdfs:label>administrator role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#AdvisingProcess -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#AdvisingProcess">
+        <rdfs:label>advising process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#AttendeeRole -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#AttendeeRole">
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#AttendingProcess -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#AttendingProcess">
+        <rdfs:label>attending process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#DateTimeInterval -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#DateTimeInterval">
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#TemporalInterval"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#DateTimeValue -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#DateTimeValue">
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#TemporalInstant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#EditorRole -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#EditorRole">
+        <rdfs:label xml:lang="en-us">Editor Role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#EducationalProcess -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#EducationalProcess">
+        <rdfs:label>educational process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#Equipment -->
 
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#Equipment">
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
@@ -19,114 +141,142 @@
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#EventSeries">
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
     </owl:Class>
-    <!-- http://vivoweb.org/ontology/core#EducationalProcess -->
+    
 
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#EducationalProcess">
-        <rdfs:label>educational process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
+
+    <!-- http://vivoweb.org/ontology/core#LeaderRole -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#LeaderRole">
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
     </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#MemberRole -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#MemberRole">
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#OrganizerRole -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#OrganizerRole">
+        <rdfs:label xml:lang="en-us">Organizer Role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#OutreachProviderRole -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#OutreachProviderRole">
+        <rdfs:label xml:lang="en-us">Outreach Provider Role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#PresenterRole -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#PresenterRole">
+        <rdfs:label xml:lang="en-us">Presenter Role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
+    </owl:Class>
+    
+
+
     <!-- http://vivoweb.org/ontology/core#PresentingProcess -->
 
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#PresentingProcess">
         <rdfs:label>presenting process</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
     </owl:Class>
-    <!-- http://vivoweb.org/ontology/core#DateTimeInterval -->
-    <!-- http://purl.org/NET/c4dm/event.owl#Event -->
-    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent">
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant"/>
-    </owl:Class>
-	    <!-- http://vivoweb.org/ontology/core#Relationship -->
+    
 
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Relationship">
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant"/>
-    </owl:Class>
-	    <!-- http://vivoweb.org/ontology/core#Project -->
+
+    <!-- http://vivoweb.org/ontology/core#Project -->
 
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#Project">
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
     </owl:Class>
-    <!-- http://vivoweb.org/ontology/core#AdministratorRole -->
-    <!-- http://vivoweb.org/ontology/core#AttendingProcess -->
-    <!-- http://vivoweb.org/ontology/core#DateTimeValue -->
+    
 
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#DateTimeValue">
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#TemporalInstant"/>
-    </owl:Class>
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#AttendingProcess">
-        <rdfs:label>attending process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
-    </owl:Class>
-	
-    <!-- http://vivoweb.org/ontology/core#AdvisingProcess -->
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#AttendeeRole">
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
-    </owl:Class>
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#AdvisingProcess">
-        <rdfs:label>advising process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
-    </owl:Class>
-	
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#AdministratorRole">
-        <rdfs:label>administrator role</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
-    </owl:Class>
-    <owl:Class rdf:about="http://purl.org/NET/c4dm/event.owl#Event">
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
-    </owl:Class>
-	    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000012">
-        <rdfs:label xml:lang="en-us">Service Provider Role</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
-    </owl:Class>
-	    <owl:Class rdf:about="http://vivoweb.org/ontology/core#TeacherRole">
-        <rdfs:label xml:lang="en-us">Teacher Role</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
-    </owl:Class>
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#DateTimeInterval">
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#TemporalInterval"/>
-    </owl:Class>
-	
-	    <owl:Class rdf:about="http://vivoweb.org/ontology/core#LeaderRole">
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
-    </owl:Class>
-	
-	    <!-- http://vivoweb.org/ontology/core#OutreachProviderRole -->
 
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#OutreachProviderRole">
-        <rdfs:label xml:lang="en-us">Outreach Provider Role</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
-    </owl:Class>
-	
-		<!-- http://vivoweb.org/ontology/core#MemberRole -->
+    <!-- http://vivoweb.org/ontology/core#Relationship -->
 
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#MemberRole">
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Relationship">
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant"/>
     </owl:Class>
+    
 
-	
-	    <!-- http://vivoweb.org/ontology/core#OrganizerRole -->
 
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#OrganizerRole">
-        <rdfs:label xml:lang="en-us">Organizer Role</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
-    </owl:Class>
-	
-	    <owl:Class rdf:about="http://vivoweb.org/ontology/core#PresenterRole">
-        <rdfs:label xml:lang="en-us">Presenter Role</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
-    </owl:Class>
-	
     <!-- http://vivoweb.org/ontology/core#ReviewerRole -->
 
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#ReviewerRole">
         <rdfs:label xml:lang="en-us">Reviewer Role</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
     </owl:Class>
-	    <owl:Class rdf:about="http://vivoweb.org/ontology/core#EditorRole">
-        <rdfs:label xml:lang="en-us">Editor Role</rdfs:label>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#TeacherRole -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#TeacherRole">
+        <rdfs:label xml:lang="en-us">Teacher Role</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
     </owl:Class>
-	
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant -->
+
+    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant"/>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#MaterialEntity -->
+
+    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#Role -->
+
+    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#Role"/>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant -->
+
+    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant"/>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/span#ProcessualEntity -->
+
+    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/span#TemporalInstant -->
+
+    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/span#TemporalInstant"/>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/span#TemporalInterval -->
+
+    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/span#TemporalInterval"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent">
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant"/>
+    </owl:Class>
 </rdf:RDF>
 
 

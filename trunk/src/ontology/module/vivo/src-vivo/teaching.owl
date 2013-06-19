@@ -8,14 +8,45 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/arg/teaching.owl"/>
     
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
-	
-	
-	    <!-- http://purl.org/NET/c4dm/event.owl#Event -->
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/NET/c4dm/event.owl#Event -->
 
     <owl:Class rdf:about="http://purl.org/NET/c4dm/event.owl#Event"/>
     
@@ -26,8 +57,8 @@
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#Course">
         <rdfs:label xml:lang="en-us">Course</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A course as taught in one time period (such as a semester; although note that a course could consist of only one meeting (teaching session)) by one or more instructors, normally but not always for credit. Does not represent either each meeting of the course or the course offering such as Biology 101 taught every semester from 1980 to 2010</ero:IAO_0000112>
-        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A course as taught in one time period by one or more instructors, normally but not always for credit. Does not represent either each meeting of the course or the course offering such as Biology 101 taught every semester from 1980 to 2010</ero:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A course as taught in one time period (such as a semester; although note that a course could consist of only one meeting (teaching session)) by one or more instructors, normally but not always for credit. Does not represent either each meeting of the course or the course offering such as Biology 101 taught every semester from 1980 to 2010</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A course as taught in one time period by one or more instructors, normally but not always for credit. Does not represent either each meeting of the course or the course offering such as Biology 101 taught every semester from 1980 to 2010</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -36,9 +67,8 @@
 
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#TeacherRole">
         <rdfs:label xml:lang="en-us">Teacher Role</rdfs:label>
-        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A role of serving as an educator</ero:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A role of serving as an educator</obo:IAO_0000115>
     </owl:Class>
-	
 </rdf:RDF>
 
 

@@ -64,27 +64,31 @@
     
 
 
-    <!-- http://vivoweb.org/ontology/core#AttendeeRole -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#AttendeeRole">
-        <rdfs:label xml:lang="en-us">Attendee Role</rdfs:label>
-        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A role of attending an Event or EventSeries</ero:IAO_0000115>
-    </owl:Class>
-    
     <!-- http://purl.org/ontology/bibo/Conference -->
 
     <owl:Class rdf:about="http://purl.org/ontology/bibo/Conference">
         <rdfs:subClassOf rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
     </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#AttendeeRole -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#AttendeeRole">
+        <rdfs:label xml:lang="en-us">Attendee Role</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A role of attending an Event or EventSeries</obo:IAO_0000115>
+    </owl:Class>
+    
+
 
     <!-- http://vivoweb.org/ontology/core#Competition -->
 
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#Competition">
         <rdfs:label xml:lang="en-us">Competition</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
-        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An occasion on which a winner is selected from among two or more contestants.</ero:IAO_0000115>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Intel Talent Search; poetry contest</ero:IAO_0000112>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not the same as an award or distinction.</ero:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An occasion on which a winner is selected from among two or more contestants.</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Intel Talent Search; poetry contest</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not the same as an award or distinction.</obo:IAO_0000112>
     </owl:Class>
     
 
@@ -94,8 +98,8 @@
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#ConferenceSeries">
         <rdfs:label xml:lang="en-us">Conference Series</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#EventSeries"/>
-        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organized series of a meeting for consultation or discussion.</ero:IAO_0000115>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">For individual, separate conferences, use conference instead.  core:ConferenceSeries and core:SeminarSeries are very similar.</ero:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organized series of a meeting for consultation or discussion.</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">For individual, separate conferences, use conference instead.  core:ConferenceSeries and core:SeminarSeries are very similar.</obo:IAO_0000112>
     </owl:Class>
     
 
@@ -104,9 +108,9 @@
 
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#EventSeries">
         <rdfs:label xml:lang="en-us">Event Series</rdfs:label>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A generic class which may include a conference series, a course section, a seminar series, or a workshop series. When possible, use one of these more specific classes.</ero:IAO_0000112>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Only use if no specific subclasses of core:EventSeries desribe the activity.</ero:IAO_0000112>
-        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Two or more events that occur at different times and are connected to each other.</ero:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A generic class which may include a conference series, a course section, a seminar series, or a workshop series. When possible, use one of these more specific classes.</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Only use if no specific subclasses of core:EventSeries desribe the activity.</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Two or more events that occur at different times and are connected to each other.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -116,7 +120,7 @@
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#Exhibit">
         <rdfs:label xml:lang="en-us">Exhibit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
-        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The showing of an object or a collection of objects, in an organized manner.</ero:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The showing of an object or a collection of objects, in an organized manner.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -126,7 +130,7 @@
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#Meeting">
         <rdfs:label xml:lang="en-us">Meeting</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
-        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A gathering of people for a defined purpose, not necessarily public or announced</ero:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A gathering of people for a defined purpose, not necessarily public or announced</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -135,7 +139,7 @@
 
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#OrganizerRole">
         <rdfs:label xml:lang="en-us">Organizer Role</rdfs:label>
-        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A role of organizing</ero:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A role of organizing</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -145,7 +149,7 @@
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#Presentation">
         <rdfs:label xml:lang="en-us">Presentation</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
-        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Encompasses talk, speech, lecture, slide lecture, conference presentation</ero:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Encompasses talk, speech, lecture, slide lecture, conference presentation</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -154,8 +158,8 @@
 
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#PresenterRole">
         <rdfs:label xml:lang="en-us">Presenter Role</rdfs:label>
-        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A role of presenting information</ero:IAO_0000115>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Are we assuming that a PresenterRole is in a Presentation?  Or could you have a PresenterRole in, say, a committee?</ero:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A role of presenting information</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Are we assuming that a PresenterRole is in a Presentation?  Or could you have a PresenterRole in, say, a committee?</obo:IAO_0000112>
     </owl:Class>
     
 
@@ -165,9 +169,9 @@
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#SeminarSeries">
         <rdfs:label xml:lang="en-us">Seminar Series</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#EventSeries"/>
-        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organized series of a meeting for an exchange of ideas, typically put on by a department or center.</ero:IAO_0000115>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applied Microeconomics Seminars; Future of Rural New York Seminar Series</ero:IAO_0000112>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">For individual seminars, use seminar instead.  core:ConferenceSeries and core:SeminarSeries are very similar.</ero:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organized series of a meeting for an exchange of ideas, typically put on by a department or center.</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applied Microeconomics Seminars; Future of Rural New York Seminar Series</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">For individual seminars, use seminar instead.  core:ConferenceSeries and core:SeminarSeries are very similar.</obo:IAO_0000112>
     </owl:Class>
     
 
@@ -177,12 +181,9 @@
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#WorkshopSeries">
         <rdfs:label xml:lang="en-us">Workshop Series</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#EventSeries"/>
-        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organized series of workshop events, whether repetitions of the same workshop or multiple different workshops.</ero:IAO_0000115>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Use workshop for individual events.</ero:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organized series of workshop events, whether repetitions of the same workshop or multiple different workshops.</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Use workshop for individual events.</obo:IAO_0000112>
     </owl:Class>
-    
-
-	
 </rdf:RDF>
 
 

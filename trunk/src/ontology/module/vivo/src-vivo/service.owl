@@ -9,17 +9,49 @@
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/arg/service.owl"/>
     
 
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0000012 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000012">
         <rdfs:label xml:lang="en-us">Service Provider Role</rdfs:label>
-        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An role of an individual within his or her profession or institution; use outreach provider role for community service or other activities outside the profession.</ero:IAO_0000115>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Member of the International Conference on Complex Systems Organizing Committee</ero:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An role of an individual within his or her profession or institution; use outreach provider role for community service or other activities outside the profession.</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Member of the International Conference on Complex Systems Organizing Committee</obo:IAO_0000112>
     </owl:Class>
     
 
@@ -35,10 +67,9 @@
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#ServiceProvidingLaboratory">
         <rdfs:label xml:lang="en-us">Service Providing Lab</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Laboratory"/>
-        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A laboratory that provides services</ero:IAO_0000115>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ideally a defined class -- a Laboratory the provides some Service via the property</ero:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A laboratory that provides services</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ideally a defined class -- a Laboratory the provides some Service via the property</obo:IAO_0000112>
     </owl:Class>
-	
 </rdf:RDF>
 
 

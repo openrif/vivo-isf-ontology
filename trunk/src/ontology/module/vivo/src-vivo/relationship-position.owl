@@ -8,29 +8,69 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/arg/relationship-position.owl"/>
     
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
     <!-- http://vivoweb.org/ontology/core#Position -->
 
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#Position">
         <rdfs:label xml:lang="en-us">Position</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Relationship"/>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An employment activity, whether compensated or not. Short definition comes from http://en.wikipedia.org/wiki/Position, and has been modified.</ero:IAO_0000112>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Director of Admissions and Placement; Associate University Librarian</ero:IAO_0000112>
-        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Particular position in an organization, commonly identified by job title, and normally associated with a job description that details the tasks and responsibilities that go with the position.</ero:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Relationship"/>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An employment activity, whether compensated or not. Short definition comes from http://en.wikipedia.org/wiki/Position, and has been modified.</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Director of Admissions and Placement; Associate University Librarian</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Particular position in an organization, commonly identified by job title, and normally associated with a job description that details the tasks and responsibilities that go with the position.</obo:IAO_0000115>
     </owl:Class>
-	
-	
+    
+
+
     <!-- http://vivoweb.org/ontology/core#PrimaryPosition -->
 
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#PrimaryPosition">
         <rdfs:label xml:lang="en-us">Primary Position</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Position"/>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A position designated as primary by the organization or group where it is held. This designation may be applied to zero or more of an agent&apos;s positions and may be asserted in conjunction with other subclasses of position.</ero:IAO_0000112>
-        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A position designated as primary by the organization where it is held.</ero:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A position designated as primary by the organization or group where it is held. This designation may be applied to zero or more of an agent&apos;s positions and may be asserted in conjunction with other subclasses of position.</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A position designated as primary by the organization where it is held.</obo:IAO_0000115>
     </owl:Class>
     
-	
-	
-	
+
+
+    <!-- http://vivoweb.org/ontology/core#Relationship -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Relationship"/>
 </rdf:RDF>
 
 

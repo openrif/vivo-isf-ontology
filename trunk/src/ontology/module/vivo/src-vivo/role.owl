@@ -9,39 +9,66 @@
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/arg/role-2.owl"/>
     
 
-	    <!-- http://vivoweb.org/ontology/core#LeaderRole -->
 
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#LeaderRole">
-        <rdfs:label xml:lang="en-us">Leader Role</rdfs:label>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A broad-ranging leader concept, from leading a small temporary committee to head of a large international organization.</ero:IAO_0000112>
-        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A leadership role</ero:IAO_0000115>
-    </owl:Class>
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
-	  <!-- http://vivoweb.org/ontology/core#AdministratorRole -->
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#AdministratorRole -->
 
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#AdministratorRole">
         <rdfs:label>administrator role</rdfs:label>
     </owl:Class>
-	
-	
-	<!-- http://vivoweb.org/ontology/core#MemberRole -->
+    
 
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#MemberRole">
-        <rdfs:label xml:lang="en-us">Member Role</rdfs:label>
-        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A role of being a member in a Process or an Organization</ero:IAO_0000115>
+
+    <!-- http://vivoweb.org/ontology/core#LeaderRole -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#LeaderRole">
+        <rdfs:label xml:lang="en-us">Leader Role</rdfs:label>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A broad-ranging leader concept, from leading a small temporary committee to head of a large international organization.</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A leadership role</obo:IAO_0000115>
     </owl:Class>
     
 
 
+    <!-- http://vivoweb.org/ontology/core#MemberRole -->
 
-    
-
-
-    
-
-
-
-	
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#MemberRole">
+        <rdfs:label xml:lang="en-us">Member Role</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A role of being a member in a Process or an Organization</obo:IAO_0000115>
+    </owl:Class>
 </rdf:RDF>
 
 
