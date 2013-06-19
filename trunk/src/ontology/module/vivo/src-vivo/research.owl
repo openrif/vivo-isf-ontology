@@ -1,0 +1,147 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/arg/research.owl#"
+     xml:base="http://purl.obolibrary.org/obo/arg/research.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/arg/research.owl"/>
+    
+     <!-- http://vivoweb.org/ontology/scientific-research#Phase1ClinicalTrial -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/scientific-research#Phase1ClinicalTrial">
+        <rdfs:label xml:lang="en-us">Phase 1 Clinical Trial</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000016"/>
+        <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In Phase I trials, researchers test an experimental drug or treatment in a small group of people (20-80) for the first time to evaluate its safety, determine a safe dosage range, and identify side effects</vitro:descriptionAnnot>
+        <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phase 1 Clinical Trial</vitro:shortDef>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/scientific-research#Phase2ClinicalTrial -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/scientific-research#Phase2ClinicalTrial">
+        <rdfs:label xml:lang="en-us">Phase 2 Clinical Trial</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000016"/>
+        <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In Phase 2 trials, an experimental study drug or treatment is given to a larger group of people (100-300) to see if it is effective and to further evaluate its safety.</vitro:descriptionAnnot>
+        <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phase 2 Clinical Trial</vitro:shortDef>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/scientific-research#Phase3ClinicalTrial -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/scientific-research#Phase3ClinicalTrial">
+        <rdfs:label xml:lang="en-us">Phase 3 Clinical Trial</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000016"/>
+        <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In Phase 3 trials, an experimental study drug or treatment is given to large groups of people (1,000-3,000) to confirm its effectiveness, monitor side effects, compare it to commonly used treatments, and collect information that will allow the experimental drug or treatment to be used safely.
+</vitro:descriptionAnnot>
+        <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phase 3 Clinical Trial</vitro:shortDef>
+    </owl:Class>
+    
+   <!-- http://vivoweb.org/ontology/core#identifier -->
+
+    <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#identifier"/>
+    
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000029 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000029">
+        <rdfs:label xml:lang="en-us">provides access to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000460 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000460">
+        <rdfs:label xml:lang="en-us">has documentation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000481 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000481">
+        <rdfs:label xml:lang="en-us">realizes protocol</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+    <owl:AnnotationProperty rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#exampleAnnot"/>
+    <owl:AnnotationProperty rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#shortDef"/>
+    <owl:AnnotationProperty rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#descriptionAnnot"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+
+    <!-- http://vivoweb.org/ontology/scientific-research#accessProvidedBy -->
+
+    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/scientific-research#accessProvidedBy">
+        <rdfs:label xml:lang="en-us">access provided by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vivoweb.org/ontology/scientific-research#documentationFor -->
+
+    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/scientific-research#documentationFor">
+        <rdfs:label xml:lang="en-us">documentation for</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vivoweb.org/ontology/scientific-research#protocolRealizedBy -->
+
+    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/scientific-research#protocolRealizedBy">
+        <rdfs:label xml:lang="en-us">protocol realized by</rdfs:label>
+    </owl:ObjectProperty>
+    <!-- http://vivoweb.org/ontology/scientific-research#irbNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/scientific-research#irbNumber">
+        <rdfs:label xml:lang="en-us">Institutional Review Board (IRB) number</rdfs:label>
+        <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Every clinical trial in the United States must be approved and monitored by an Institutional Review Board (IRB). An IRB is an independent committee of physicians, statisticians, community advocates and others whose objective is to ensure that a clinical trial is ethical and the rights of study participants are protected. </vitro:descriptionAnnot>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vivoweb.org/ontology/scientific-research#nctId -->
+
+    <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/scientific-research#nctId">
+        <rdfs:label xml:lang="en-us">National Clinical Trials (NCT) number</rdfs:label>
+        <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ClinicalTrials.gov is an ICMJE-acceptable public registry, offering up-to-date information for locating clinical trials for a wide range of diseases and conditions. The U.S. National Institutes of Health (NIH), through its National Library of Medicine (NLM), developed this site in collaboration with the Food and Drug Administration (FDA), as a result of the FDA Modernization Act, which was passed into law in November 1997.   This property should be publically visible since it is one of the principal identifiers in a national registry of clinical trials </vitro:descriptionAnnot>
+        <vitro:exampleAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCT00000419</vitro:exampleAnnot>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vivoweb.org/ontology/scientific-research#studyPopulationCount -->
+
+    <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/scientific-research#studyPopulationCount">
+        <rdfs:label xml:lang="en-us">study population count</rdfs:label>
+        <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">number of human participants in the study (trial).</vitro:descriptionAnnot>
+    </owl:DatatypeProperty>
+
+    <!-- http://vivoweb.org/ontology/scientific-research#Phase4ClinicalTrial -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/scientific-research#Phase4ClinicalTrial">
+        <rdfs:label xml:lang="en-us">Phase 4 Clinical Trial</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000016"/>
+        <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In Phase 4 trials, post marketing studies delineate additional information including the drug&apos;s or treatment&apos;s risks, benefits, and optimal use.</vitro:descriptionAnnot>
+        <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phase 4 Clinical Trial</vitro:shortDef>
+    </owl:Class>
+	
+	
+    <!-- http://vivoweb.org/ontology/scientific-research#Phase0ClinicalTrial -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/scientific-research#Phase0ClinicalTrial">
+        <rdfs:label xml:lang="en-us">Phase 0 Clinical Trial</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000016"/>
+        <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phase 0 Clinical Trial</vitro:shortDef>
+        <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phase 0 is a recent designation for exploratory, first-in-human trials  conducted in accordance with the United States Food and Drug Administration&apos;s (FDA) 2006 Guidance on Exploratory Investigational New Drug (IND) Studies.  Phase 0 trials are also known as human microdosing  studies and are designed to speed up the development of promising drugs or imaging agents by establishing very early on whether the drug or agent behaves in human subjects as was expected from preclinical studies.</vitro:descriptionAnnot>
+    </owl:Class>
+	
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2018) http://owlapi.sourceforge.net -->
+

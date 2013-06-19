@@ -8,7 +8,18 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/arg/relationship-award.owl"/>
     
-    
+    <!-- http://vivoweb.org/ontology/core#AwardReceipt -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#AwardReceipt">
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Relationship"/>
+    </owl:Class>
+        <!-- http://vivoweb.org/ontology/core#AwardedDegree -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#AwardedDegree">
+        <rdfs:label>awarded degree</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Relationship"/>
+        <obo:IAO_0000115>The awarding of a degree by an agent to another agent. It is mostly for academic degrees.</obo:IAO_0000115>
+    </owl:Class>
 	    <owl:Class rdf:about="http://vivoweb.org/ontology/core#AwardReceipt">
         <rdfs:label xml:lang="en-us">Award or Honor Receipt</rdfs:label>
         <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The award bestowed may be represented with the Award class.</ero:IAO_0000112>

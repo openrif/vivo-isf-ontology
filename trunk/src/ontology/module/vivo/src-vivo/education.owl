@@ -124,6 +124,11 @@
     </owl:Class>
     
 
+    <!-- http://vivoweb.org/ontology/core#EducationalProcess -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#EducationalProcess">
+        <rdfs:label>educational process</rdfs:label>
+    </owl:Class>
 
     <!-- http://vivoweb.org/ontology/core#PostdoctoralTraining -->
 
@@ -132,7 +137,11 @@
         <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Postdoctoral research is academic or scholarly research conducted by a person who has completed his or her doctoral studies, normally within the following five years. It is intended to further deepen expertise in a specialist subject.</ero:IAO_0000115>
     </owl:Class>
     
+    <!-- http://vivoweb.org/ontology/core#PostdoctoralTraining -->
 
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#PostdoctoralTraining">
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#EducationalProcess"/>
+    </owl:Class>
 
     <!-- http://vivoweb.org/ontology/core#Relationship -->
 

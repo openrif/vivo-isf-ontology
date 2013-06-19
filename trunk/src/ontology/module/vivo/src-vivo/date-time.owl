@@ -14,37 +14,14 @@
         <rdfs:label xml:lang="en-us">Date/Time Interval</rdfs:label>
         <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a specific period or duration, defined by (optional) start and end date/times.</ero:IAO_0000115>
     </owl:Class>
-	
+	    <!-- http://vivoweb.org/ontology/core#DateTimeValue -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#DateTimeValue">
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#TemporalInstant"/>
+    </owl:Class>
 	    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
 		
 	    <!-- http://vivoweb.org/ontology/core#yearMonthDayPrecision -->
 
-    <owl:NamedIndividual rdf:about="http://vivoweb.org/ontology/core#yearMonthDayPrecision">
-        <rdfs:label xml:lang="en-us">YearMonthDayValue</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#yearMonthDayTimePrecision -->
-
-    <owl:NamedIndividual rdf:about="http://vivoweb.org/ontology/core#yearMonthDayTimePrecision">
-        <rdfs:label xml:lang="en-us">YearMonthDayTimeValue</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#yearMonthPrecision -->
-
-    <owl:NamedIndividual rdf:about="http://vivoweb.org/ontology/core#yearMonthPrecision">
-        <rdfs:label xml:lang="en-us">YearMonthValue</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#yearPrecision -->
-
-    <owl:NamedIndividual rdf:about="http://vivoweb.org/ontology/core#yearPrecision">
-        <rdfs:label xml:lang="en-us">YearValue</rdfs:label>
-    </owl:NamedIndividual>
 	
 </rdf:RDF>	
