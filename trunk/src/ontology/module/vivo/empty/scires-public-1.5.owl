@@ -1,0 +1,270 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://vivoweb.org/ontology/scientific-research#"
+     xml:base="http://vivoweb.org/ontology/scientific-research"
+     xmlns:afn="http://jena.hpl.hp.com/ARQ/function#"
+     xmlns:scires="http://vivoweb.org/ontology/scientific-research#"
+     xmlns:scirr="http://vivoweb.org/ontology/scientific-research-resource#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:owl2="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vitro="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#"
+     xmlns:event="http://purl.org/NET/c4dm/event.owl#"
+     xmlns:swvs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:c4o="http://purl.org/spar/c4o/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:dcelem="http://purl.org/dc/elements/1.1/"
+     xmlns:vivo="http://vivoweb.org/ontology/core#"
+     xmlns:geo="http://aims.fao.org/aos/geopolitical.owl#"
+     xmlns:pvs="http://vivoweb.org/ontology/provenance-support#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:fabio="http://purl.org/spar/fabio/"
+     xmlns:skco="http://www.w3.org/2004/02/skos/core#"
+     xmlns:bibo="http://purl.org/ontology/bibo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:vitro-public="http://vitro.mannlib.cornell.edu/ns/vitro/public#"
+     xmlns:skos="http://www.w3.org/2008/05/skos#"
+     xmlns:ero="http://purl.obolibrary.org/obo/">
+    <owl:Ontology rdf:about="file:/C:/s/svns/isf-new-layout/trunk/src/ontology/module/vivo/scires-public-1.5.owl">
+        <rdfs:label xml:lang="en-us">Scientific Research</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#string -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+ 
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000004">
+        <rdfs:label xml:lang="en-us">Instrument</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Equipment"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0000460"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/ontology/bibo/Document"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An implement used to facilitate work, especially precision work.</vitro:descriptionAnnot>
+        <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An implement used to facilitate work, especially precision work.</vitro:shortDef>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000006">
+        <rdfs:label xml:lang="en-us">Reagent</rdfs:label>
+        <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Material entity that is used in a chemical reaction or other experimental process to detect, measure, examine, or produce other  substances.</vitro:shortDef>
+        <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eagle-i: Material entity that is used in a chemical reaction or other experimental process to detect, measure, examine, or produce other  substances.
+NOTE: For now we are not addressing whether this is a subclass of foaf:Agent</vitro:descriptionAnnot>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000014">
+        <rdfs:label xml:lang="en-us">Research Project</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Project"/>
+        <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A project whose goal is the increase of knowledge, the primary aim being a greater knowledge or understanding of the subject under study.</vitro:shortDef>
+        <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The comment in ero says  &quot;Maybe sameAs Investigation but is subject of funding&quot;</vitro:descriptionAnnot>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000015">
+        <rdfs:label xml:lang="en-us">Human Study</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000014"/>
+        <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Research project that uses or collects measurements or assessments about humans.</vitro:shortDef>
+        <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eagle-i: Research project that uses or collects measurements or assessments about humans.</vitro:descriptionAnnot>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000016">
+        <rdfs:label xml:lang="en-us">Clinical Trial</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000015"/>
+        <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A clinical trial is a research study using human volunteers to answer questions about treatments for diseases and conditions. Clinical trials are conducted in phases. The trials at each phase have a different purpose and help scientists answer different questions.</vitro:descriptionAnnot>
+        <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A research study using human volunteers to answer specifc health-related questions. </vitro:shortDef>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000020">
+        <rdfs:label xml:lang="en-us">Biological Specimen</rdfs:label>
+        <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A portion or quantity of a biological material for use in testing, examination, or study.</vitro:shortDef>
+        <vitro:exampleAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An individual animal, part of or derived an animal, plant, part of a plant, or microorganism.</vitro:exampleAnnot>
+        <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eagle-i: Material entity that is a portion or quantity of a biological material for use in testing, examination, or study.  A biological specimen can be an individual animal, part of or derived an animal, plant, part of a plant, or microorganism. When a taxon is described, it is typically based on a single specimen and is referred to as the holotype.</vitro:descriptionAnnot>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000391 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000391">
+        <rdfs:label xml:lang="en-us">Access Service</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Service"/>
+        <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A service in which a service consumer receives the right to use a resource (instrument, database, software, etc) that is owned or managed by a service provider.  Ownership of the accessed resource remains with the service provider during and after provisi</vitro:shortDef>
+        <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A service in which a service consumer receives the right to use a resource (instrument, database, software, etc) that is owned or managed by a service provider.  Ownership of the accessed resource remains with the service provider during and after provision of service.</vitro:descriptionAnnot>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000392 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000392">
+        <rdfs:label xml:lang="en-us">Storage Service</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Service"/>
+        <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A service in which a service consumer provides some material or data as input which a service provider stores and returns as output.</vitro:shortDef>
+        <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A service in which a service consumer provides some material or data as input which a service provider stores and returns as output.</vitro:descriptionAnnot>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000394 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000394">
+        <rdfs:label xml:lang="en-us">Production Service</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Service"/>
+        <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A service that produces a physical object or data, such as a custom micro-array chip, a made to order antibody, or a behavioral dataset</vitro:descriptionAnnot>
+        <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A service that produces a physical object or data.</vitro:shortDef>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000272 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000272">
+        <rdfs:label xml:lang="en-us">Protocol</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plan specification that allows different domain experts to reliably and independently reproduce a process.</vitro:shortDef>
+        <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protocol is a plan specification which has sufficient level of detail and quantitative information to communicate it between domain experts, so that different domain experts will reliably be able to independently reproduce the process.</vitro:descriptionAnnot>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0100026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100026">
+        <rdfs:label xml:lang="en-us">Organism</rdfs:label>
+        <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organism is a material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment.</vitro:shortDef>
+        <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI: An organism is material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs.
+NOTE that we are not addressing for now the issue of whether a foaf:Person is a subclass of obi:Organism</vitro:descriptionAnnot>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Document -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Document"/>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#Equipment -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Equipment"/>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#Project -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Project"/>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#Service -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Service"/>
+    
+
+
+    
+
+
+
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2018) http://owlapi.sourceforge.net -->
+
