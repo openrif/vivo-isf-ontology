@@ -37,6 +37,7 @@
 
     <owl:AnnotationProperty rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#shortDef"/>
     <owl:AnnotationProperty rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#descriptionAnnot"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
     
 
 
@@ -48,6 +49,18 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#string -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
     
 
 
@@ -67,8 +80,6 @@
     <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#broader">
         <rdfs:label xml:lang="en-us">broader term</rdfs:label>
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Public description modified from the information on this page: http://www.w3.org/TR/2005/WD-swbp-skos-core-guide-20050510/#sechierarchy .</vitro:descriptionAnnot>
-        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     </owl:ObjectProperty>
     
 
@@ -78,9 +89,6 @@
     <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#narrower">
         <rdfs:label xml:lang="en-us">narrower term</rdfs:label>
         <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Public description modified from the information on this page: http://www.w3.org/TR/2005/WD-swbp-skos-core-guide-20050510/#sechierarchy .</vitro:descriptionAnnot>
-        <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <owl:inverseOf rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
     </owl:ObjectProperty>
     
 
@@ -88,10 +96,7 @@
     <!-- http://www.w3.org/2004/02/skos/core#related -->
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#related">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdfs:label xml:lang="en-us">related</rdfs:label>
-        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     </owl:ObjectProperty>
     
 

@@ -34,15 +34,15 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2008/05/skos#editorialNote"/>
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2006/12/owl2-xml#term_status"/>
-    <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/reviewOf">
-        <rdfs:label xml:lang="en-us">review of</rdfs:label>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The bibo:reviewOf public description was found here: http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html .  As of 26 May 2010, bibo:reviewOf is used with the class Review, but core:reviewIn doesn&apos;t seem to be being used.</obo:IAO_0000112>
-        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Review"/>
-    </owl:AnnotationProperty>
+
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    <owl:AnnotationProperty rdf:about="http://vivoweb.org/ontology/core#description"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2006/12/owl2-xml#term_status"/>
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2008/05/skos#scopeNote"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
     
@@ -56,6 +56,24 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#anyURI -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#string -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
     
 
 
@@ -95,9 +113,6 @@
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The public description was taken from here:  http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html</obo:IAO_0000112>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
         <rdfs:comment xml:lang="en">A legal decision that affirms a ruling.</rdfs:comment>
-        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/LegalDecision"/>
-        <rdfs:range rdf:resource="http://purl.org/ontology/bibo/LegalDecision"/>
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/subsequentLegalDecision"/>
     </owl:ObjectProperty>
     
 
@@ -110,8 +125,6 @@
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
         <rdfs:comment xml:lang="en">Critical or explanatory note for a Document.</rdfs:comment>
         <swvs:term_status>stable</swvs:term_status>
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
-        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Note"/>
     </owl:ObjectProperty>
     
 
@@ -120,8 +133,6 @@
 
     <owl:ObjectProperty rdf:about="http://purl.org/ontology/bibo/citedBy">
         <rdfs:label xml:lang="en-us">cited by</rdfs:label>
-        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
-        <rdfs:range rdf:resource="http://purl.org/ontology/bibo/Document"/>
     </owl:ObjectProperty>
     
 
@@ -130,9 +141,6 @@
 
     <owl:ObjectProperty rdf:about="http://purl.org/ontology/bibo/cites">
         <rdfs:label xml:lang="en-us">cites</rdfs:label>
-        <rdfs:range rdf:resource="http://purl.org/ontology/bibo/Document"/>
-        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
-        <owl:inverseOf rdf:resource="http://purl.org/ontology/bibo/citedBy"/>
     </owl:ObjectProperty>
     
 
@@ -145,8 +153,6 @@
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
         <rdfs:comment xml:lang="en">A court associated with a legal document; for example, that which issues a decision.</rdfs:comment>
         <swvs:term_status>unstable</swvs:term_status>
-        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/LegalDocument"/>
-        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
     </owl:ObjectProperty>
     
 
@@ -160,7 +166,6 @@
         <swvs:term_status>unstable</swvs:term_status>
         <rdfs:comment xml:lang="en">The thesis degree.</rdfs:comment>
         <skos:editorialNote xml:lang="en">We are not defining, using an enumeration, the range of the bibo:degree to the defined list of bibo:ThesisDegree. We won&apos;t do it because we want people to be able to define new degress if needed by some special usecases. Creating such an enumeration would restrict this to happen.</skos:editorialNote>
-        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Thesis"/>
     </owl:ObjectProperty>
     
 
@@ -173,7 +178,6 @@
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
         <swvs:term_status>stable</swvs:term_status>
         <rdfs:comment xml:lang="en">A Film director.</rdfs:comment>
-        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
     </owl:ObjectProperty>
     
 
@@ -185,7 +189,6 @@
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
         <rdfs:comment xml:lang="en">An agent that is interviewed by another agent.</rdfs:comment>
         <swvs:term_status>stable</swvs:term_status>
-        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
     </owl:ObjectProperty>
     
 
@@ -197,7 +200,6 @@
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
         <rdfs:comment xml:lang="en">An agent that interview another agent.</rdfs:comment>
         <swvs:term_status>stable</swvs:term_status>
-        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
     </owl:ObjectProperty>
     
 
@@ -208,8 +210,6 @@
         <rdfs:label xml:lang="en-us">performer</rdfs:label>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
         <swvs:term_status>stable</swvs:term_status>
-        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Performance"/>
-        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
     </owl:ObjectProperty>
     
 
@@ -222,8 +222,6 @@
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
         <swvs:term_status>unstable</swvs:term_status>
         <rdfs:comment xml:lang="en">Relates an event to associated documents; for example, conference to a paper.</rdfs:comment>
-        <rdfs:domain rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
-        <rdfs:range rdf:resource="http://purl.org/ontology/bibo/Document"/>
     </owl:ObjectProperty>
     
 
@@ -235,7 +233,6 @@
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
         <rdfs:comment xml:lang="en">An agent that receives a communication document.</rdfs:comment>
         <swvs:term_status>stable</swvs:term_status>
-        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
     </owl:ObjectProperty>
     
 
@@ -244,9 +241,6 @@
 
     <owl:ObjectProperty rdf:about="http://purl.org/ontology/bibo/reproducedIn">
         <rdfs:label xml:lang="en-us">reproduced in</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
-        <rdfs:range rdf:resource="http://purl.org/ontology/bibo/Document"/>
     </owl:ObjectProperty>
     
 
@@ -258,9 +252,6 @@
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The first sentence of the public description was taken from here: http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html</obo:IAO_0000112>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
         <rdfs:comment xml:lang="en">A legal decision that reverses a ruling.</rdfs:comment>
-        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/LegalDecision"/>
-        <rdfs:range rdf:resource="http://purl.org/ontology/bibo/LegalDecision"/>
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/subsequentLegalDecision"/>
     </owl:ObjectProperty>
     
 
@@ -270,8 +261,6 @@
     <owl:ObjectProperty rdf:about="http://purl.org/ontology/bibo/reviewOf">
         <rdfs:label xml:lang="en-us">review of</rdfs:label>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The bibo:reviewOf public description was found here: http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html .  As of 26 May 2010, bibo:reviewOf is used with the class Review, but core:reviewIn doesn&apos;t seem to be being used.</obo:IAO_0000112>
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
-        <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#reviewedIn"/>
     </owl:ObjectProperty>
     
 
@@ -281,7 +270,6 @@
     <owl:ObjectProperty rdf:about="http://purl.org/ontology/bibo/status">
         <rdfs:label xml:lang="en-us">status</rdfs:label>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">paraphrased editorial note from the bibo ontology: We are not defining, using an enumeration, the range of the bibo:status to be a defined list of bibo:DocumentStatus. This is because we want people to be able to define new statuses if needed; and creating such an enumeration would prevent this.</obo:IAO_0000112>
-        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
     </owl:ObjectProperty>
     
 
@@ -293,8 +281,6 @@
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Public description is from comments of this object property in bibo ontology located here: http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html</obo:IAO_0000112>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
         <rdfs:comment xml:lang="en">A legal decision on appeal that takes action on a case (affirming it, reversing it, etc.).</rdfs:comment>
-        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/LegalDecision"/>
-        <rdfs:range rdf:resource="http://purl.org/ontology/bibo/LegalDecision"/>
     </owl:ObjectProperty>
     
 
@@ -307,8 +293,6 @@
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
         <swvs:term_status>unstable</swvs:term_status>
         <rdfs:comment xml:lang="en">Relates a document to some transcribed original.</rdfs:comment>
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
-        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
     </owl:ObjectProperty>
     
 
@@ -321,7 +305,6 @@
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
         <swvs:term_status>stable</swvs:term_status>
         <rdfs:comment xml:lang="en">Relates a translated document to the original document.</rdfs:comment>
-        <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#hasTranslation"/>
     </owl:ObjectProperty>
     
 
@@ -330,8 +313,6 @@
 
     <owl:ObjectProperty rdf:about="http://purl.org/ontology/bibo/translator">
         <rdfs:label xml:lang="en-us">translator</rdfs:label>
-        <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#translatorOf"/>
-        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
     </owl:ObjectProperty>
     
 
@@ -385,7 +366,6 @@
 
     <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#translatorOf">
         <rdfs:label xml:lang="en-us">translator of</rdfs:label>
-        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
     </owl:ObjectProperty>
     
 
@@ -409,7 +389,6 @@
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/dc/terms/</rdfs:isDefinedBy>
         <swvs:term_status>stable</swvs:term_status>
         <rdfs:comment>A summary of the resource.</rdfs:comment>
-        <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#description"/>
     </owl:DatatypeProperty>
     
 
@@ -417,14 +396,12 @@
     <!-- http://purl.org/ontology/bibo/asin -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/asin">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:label xml:lang="en-us">asin</rdfs:label>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">020530902X</obo:IAO_0000112>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amazon standard identification number. Source: http://en.wikipedia.org/wiki/Amazon_Standard_Identification_Number.</obo:IAO_0000112>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
         <swvs:term_status>stable</swvs:term_status>
         <rdfs:comment xml:lang="en">Amazon Standard Identification Number</rdfs:comment>
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/identifier"/>
     </owl:DatatypeProperty>
     
 
@@ -437,8 +414,6 @@
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
         <swvs:term_status>unstable</swvs:term_status>
         <rdfs:comment xml:lang="en">An chapter number</rdfs:comment>
-        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/BookSection"/>
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/locator"/>
     </owl:DatatypeProperty>
     
 
@@ -463,7 +438,6 @@ Definition and description came from Wikipedia here: http://en.wikipedia.org/wik
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
         <rdfs:comment xml:lang="en">Digital Object Identifier</rdfs:comment>
         <swvs:term_status>stable</swvs:term_status>
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/identifier"/>
     </owl:DatatypeProperty>
     
 
@@ -477,7 +451,6 @@ The Uniform Code Council (UCC) was the Numbering Organization in the USA to admi
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
         <swvs:term_status>stable</swvs:term_status>
         <rdfs:comment xml:lang="en">European Article Number/Uniform Commercier Code 13</rdfs:comment>
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/identifier"/>
     </owl:DatatypeProperty>
     
 
@@ -489,7 +462,6 @@ The Uniform Code Council (UCC) was the Numbering Organization in the USA to admi
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
         <swvs:term_status>stable</swvs:term_status>
         <rdfs:comment xml:lang="en">The name defining a special edition of a document. Normally its a literal value composed of a version number and words.</rdfs:comment>
-        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
     </owl:DatatypeProperty>
     
 
@@ -502,7 +474,6 @@ The Uniform Code Council (UCC) was the Numbering Organization in the USA to admi
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
         <swvs:term_status>stable</swvs:term_status>
         <rdfs:comment xml:lang="en">The electronic ISSN number of a periodical.</rdfs:comment>
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/identifier"/>
     </owl:DatatypeProperty>
     
 
@@ -515,7 +486,6 @@ The Uniform Code Council (UCC) was the Numbering Organization in the USA to admi
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
         <rdfs:comment xml:lang="en">Global Trade Item Number 14</rdfs:comment>
         <swvs:term_status>stable</swvs:term_status>
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/identifier"/>
     </owl:DatatypeProperty>
     
 
@@ -524,15 +494,6 @@ The Uniform Code Council (UCC) was the Numbering Organization in the USA to admi
 
     <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/identifier">
         <rdfs:label xml:lang="en-us">identifier</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#identifier"/>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/ontology/bibo/Collection"/>
-                    <rdf:Description rdf:about="http://purl.org/ontology/bibo/Document"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
     </owl:DatatypeProperty>
     
 
@@ -540,11 +501,8 @@ The Uniform Code Council (UCC) was the Numbering Organization in the USA to admi
     <!-- http://purl.org/ontology/bibo/isbn10 -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/isbn10">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:label xml:lang="en-us">International Standard Book Number (ISBN) 10</rdfs:label>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Isbn.</obo:IAO_0000112>
-        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Book"/>
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/identifier"/>
     </owl:DatatypeProperty>
     
 
@@ -552,11 +510,8 @@ The Uniform Code Council (UCC) was the Numbering Organization in the USA to admi
     <!-- http://purl.org/ontology/bibo/isbn13 -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/isbn13">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:label xml:lang="en-us">International Standard Book Number (ISBN) 13</rdfs:label>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">source: http://en.wikipedia.org/wiki/Isbn.</obo:IAO_0000112>
-        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Book"/>
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/identifier"/>
     </owl:DatatypeProperty>
     
 
@@ -569,7 +524,6 @@ The Uniform Code Council (UCC) was the Numbering Organization in the USA to admi
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">source: http://en.wikipedia.org/wiki/Issn</obo:IAO_0000112>
         <rdfs:comment xml:lang="en">International Standard Serial Number</rdfs:comment>
         <swvs:term_status>stable</swvs:term_status>
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/identifier"/>
     </owl:DatatypeProperty>
     
 
@@ -577,10 +531,8 @@ The Uniform Code Council (UCC) was the Numbering Organization in the USA to admi
     <!-- http://purl.org/ontology/bibo/issue -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/issue">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:label xml:lang="en-us">issue</rdfs:label>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bibo has the domain of bibo:issue as the class Issue, but an example on their site uses it with Article, referring to the issue number &quot;4&quot;</obo:IAO_0000112>
-        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Article"/>
     </owl:DatatypeProperty>
     
 
@@ -593,7 +545,6 @@ The Uniform Code Council (UCC) was the Numbering Organization in the USA to admi
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
         <rdfs:comment xml:lang="en">Library of Congress Control Number</rdfs:comment>
         <swvs:term_status>stable</swvs:term_status>
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/identifier"/>
     </owl:DatatypeProperty>
     
 
@@ -606,7 +557,6 @@ The Uniform Code Council (UCC) was the Numbering Organization in the USA to admi
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
         <rdfs:comment xml:lang="en">A description (often numeric) that locates an item within a containing document or collection.</rdfs:comment>
         <swvs:term_status>stable</swvs:term_status>
-        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
     </owl:DatatypeProperty>
     
 
@@ -615,7 +565,6 @@ The Uniform Code Council (UCC) was the Numbering Organization in the USA to admi
 
     <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/numPages">
         <rdfs:label xml:lang="en-us">number of pages</rdfs:label>
-        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
     </owl:DatatypeProperty>
     
 
@@ -623,10 +572,8 @@ The Uniform Code Council (UCC) was the Numbering Organization in the USA to admi
     <!-- http://purl.org/ontology/bibo/number -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/number">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:label xml:lang="en-us">number</rdfs:label>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Definition from here: http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html</obo:IAO_0000112>
-        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
     </owl:DatatypeProperty>
     
 
@@ -642,7 +589,6 @@ bibo has the domain of this property set to the union of Collection and Document
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
         <rdfs:comment xml:lang="en">OCLC Identifier</rdfs:comment>
         <swvs:term_status>stable</swvs:term_status>
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/identifier"/>
     </owl:DatatypeProperty>
     
 
@@ -650,12 +596,10 @@ bibo has the domain of this property set to the union of Collection and Document
     <!-- http://purl.org/ontology/bibo/pageEnd -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/pageEnd">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:label xml:lang="en-us">end page</rdfs:label>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
         <rdfs:comment xml:lang="en">Ending page number within a continuous page range.</rdfs:comment>
         <swvs:term_status>stable</swvs:term_status>
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/locator"/>
     </owl:DatatypeProperty>
     
 
@@ -663,12 +607,10 @@ bibo has the domain of this property set to the union of Collection and Document
     <!-- http://purl.org/ontology/bibo/pageStart -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/pageStart">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:label xml:lang="en-us">start page</rdfs:label>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
         <rdfs:comment xml:lang="en">Starting page number within a continuous page range.</rdfs:comment>
         <swvs:term_status>stable</swvs:term_status>
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/locator"/>
     </owl:DatatypeProperty>
     
 
@@ -681,8 +623,6 @@ bibo has the domain of this property set to the union of Collection and Document
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
         <rdfs:comment xml:lang="en">PubMed Identifier</rdfs:comment>
         <swvs:term_status>stable</swvs:term_status>
-        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Article"/>
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/identifier"/>
     </owl:DatatypeProperty>
     
 
@@ -690,14 +630,12 @@ bibo has the domain of this property set to the union of Collection and Document
     <!-- http://purl.org/ontology/bibo/prefixName -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/prefixName">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:label xml:lang="en-us">name prefix</rdfs:label>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mr; Ms; Mrs</obo:IAO_0000112>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://dictionary.reference.com/browse/prefix</obo:IAO_0000112>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
         <rdfs:comment xml:lang="en">The prefix of a name</rdfs:comment>
         <swvs:term_status>stable</swvs:term_status>
-        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     </owl:DatatypeProperty>
     
 
@@ -712,7 +650,6 @@ bibo has the domain of this property set to the union of Collection and Document
         <obo:IAO_0000112 xml:lang="en">Di Rado, Alicia. 1995. Trekking through college: Classes explore
 modern society using the world of Star trek. Los Angeles Times, March
 15, sec. A, p. 3.</obo:IAO_0000112>
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/locator"/>
     </owl:DatatypeProperty>
     
 
@@ -722,10 +659,9 @@ modern society using the world of Star trek. Los Angeles Times, March
     <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/shortDescription">
         <rdfs:label xml:lang="en-us">short description</rdfs:label>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
-        <rdfs:comment>A short description of the resource.</rdfs:comment>
         <skos:scopeNote xml:lang="en">The idea here is that while dcterms:description may involve length descriptions, this for short (two or three word) descriptions that could go in a bibliographic entry.</skos:scopeNote>
         <swvs:term_status>unstable</swvs:term_status>
-        <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#description"/>
+        <rdfs:comment>A short description of the resource.</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -738,7 +674,6 @@ modern society using the world of Star trek. Los Angeles Times, March
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
         <swvs:term_status>stable</swvs:term_status>
         <rdfs:comment xml:lang="en">Serial Item and Contribution Identifier</rdfs:comment>
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/identifier"/>
     </owl:DatatypeProperty>
     
 
@@ -746,13 +681,11 @@ modern society using the world of Star trek. Los Angeles Times, March
     <!-- http://purl.org/ontology/bibo/suffixName -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/suffixName">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:label xml:lang="en-us">name suffix</rdfs:label>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jr.; III;; M.D.</obo:IAO_0000112>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
         <rdfs:comment xml:lang="en">The suffix of a name</rdfs:comment>
         <swvs:term_status>stable</swvs:term_status>
-        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     </owl:DatatypeProperty>
     
 
@@ -765,7 +698,6 @@ modern society using the world of Star trek. Los Angeles Times, March
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">source for public description: http://en.wikipedia.org/wiki/Universal_Product_Code.</obo:IAO_0000112>
         <rdfs:comment xml:lang="en">Universal Product Code</rdfs:comment>
         <swvs:term_status>stable</swvs:term_status>
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/identifier"/>
     </owl:DatatypeProperty>
     
 
@@ -773,10 +705,8 @@ modern society using the world of Star trek. Los Angeles Times, March
     <!-- http://purl.org/ontology/bibo/uri -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/uri">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:label xml:lang="en-us">URI</rdfs:label>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Definition from: http://bibotools.googlecode.com/svn/bibo-ontology/trunk/doc/index.html</obo:IAO_0000112>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
     </owl:DatatypeProperty>
     
 
@@ -784,10 +714,7 @@ modern society using the world of Star trek. Los Angeles Times, March
     <!-- http://purl.org/ontology/bibo/volume -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/volume">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:label xml:lang="en-us">volume</rdfs:label>
-        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/locator"/>
     </owl:DatatypeProperty>
     
 

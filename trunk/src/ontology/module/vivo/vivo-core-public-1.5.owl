@@ -38,118 +38,31 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <owl:AnnotationProperty rdf:about="http://vivoweb.org/ontology/core#scopusId">
-        <rdfs:label xml:lang="en-us">Scopus id</rdfs:label>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Home page for Scopus: http://www.scopus.com/home.url</ero:IAO_0000112>
-        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://vivoweb.org/ontology/core#prerequisiteFor">
         <rdfs:label xml:lang="en-us">prerequisite for</rdfs:label>
-        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Course"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://vivoweb.org/ontology/core#hasSuccessorOrganization">
         <rdfs:label xml:lang="en-us">successor organization</rdfs:label>
-        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://vivoweb.org/ontology/core#description">
+        <rdfs:label xml:lang="en-us">description</rdfs:label>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
-    <owl:AnnotationProperty rdf:about="http://vivoweb.org/ontology/core#providesFundingThrough">
-        <rdfs:label xml:lang="en-us">provides funding through</rdfs:label>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">For example, National Science Foundation providesFundingThrough Graduate Research Fellowship Program; National Institutes of Health providesFundingThrough National Center for Research Resources. </ero:IAO_0000112>
-        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#FundingOrganization"/>
-    </owl:AnnotationProperty>
+
     <owl:AnnotationProperty rdf:about="http://vivoweb.org/ontology/core#mostSpecificType">
         <rdfs:label xml:lang="en-us">most specific type</rdfs:label>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://vivoweb.org/ontology/core#localAwardId">
-        <rdfs:label xml:lang="en-us">local award id</rdfs:label>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">core:localAwardId has a domain of core:Grant, and should be public since that&apos;s its public identifier for local use by OSP, accounting, department admins, and the PI </ero:IAO_0000112>
-        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Grant"/>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://vivoweb.org/ontology/core#subcontractsGrant">
-        <rdfs:label xml:lang="en-us">subcontracts grant</rdfs:label>
-        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://vivoweb.org/ontology/core#seatingCapacity">
-        <rdfs:label xml:lang="en-us">seating capacity</rdfs:label>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">55</ero:IAO_0000112>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition modified from: source (http://en.wikipedia.org/wiki/Seating_capacity).</ero:IAO_0000112>
-        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Room"/>
-    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
-    <owl:AnnotationProperty rdf:about="http://vivoweb.org/ontology/core#publisherOf">
-        <rdfs:label xml:lang="en-us">publisher of</rdfs:label>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Public Definition source (http://www.answers.com/topic/publisher).</ero:IAO_0000112>
-        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://vivoweb.org/ontology/core#totalAwardAmount">
-        <rdfs:label xml:lang="en-us">total award amount</rdfs:label>
-        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Grant"/>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://vivoweb.org/ontology/core#teachingOverview">
-        <rdfs:label xml:lang="en-us">teaching overview</rdfs:label>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Used for a single narrative summary of teaching, typically covering a wide range of courses including for credit and non-credit teaching over multiple semesters; the &quot;teaches&quot; property links a person directly with an instance of a Semester Class, typically from an institutional database of record; then use Teacher Role for information about a person&apos;s role in non-credit teaching or their specific contribution to individual courses</ero:IAO_0000112>
-        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://vivoweb.org/ontology/core#geographicFocusOf">
-        <rdfs:label xml:lang="en-us">geographic focus of</rdfs:label>
-        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#GeographicRegion"/>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://vivoweb.org/ontology/core#overview">
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
         <rdfs:label xml:lang="en-us">overview</rdfs:label>
-        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://vivoweb.org/ontology/core#licenseNumber">
-        <rdfs:label xml:lang="en-us">license number</rdfs:label>
-        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Licensure"/>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://vivoweb.org/ontology/core#researchOverview">
-        <rdfs:label xml:lang="en-us">research overview</rdfs:label>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Used for a single narrative summary of research, typically covering a wide range of activities and time periods; use Researcher Role for information on individual activities</ero:IAO_0000112>
-        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://vivoweb.org/ontology/core#hasPrerequisite">
-        <rdfs:label xml:lang="en-us">has prerequisite</rdfs:label>
-        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Course"/>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://vivoweb.org/ontology/core#grantSubcontractedThrough">
-        <rdfs:label xml:lang="en-us">subcontracted through</rdfs:label>
-        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Grant"/>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://vivoweb.org/ontology/core#outreachOverview">
-        <rdfs:label xml:lang="en-us">outreach overview</rdfs:label>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">My extension program consists of developing and reporting disease management strategies that are both economically and environmentally sound for fresh market vegetable production. We hope that some of this testing will result in practices adaptable for organic production.</ero:IAO_0000112>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Used for a single narrative summary of outreach, typically covering a wide range of activities and time periods; use Outreach Provider Role for information on individual activities</ero:IAO_0000112>
-        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://vivoweb.org/ontology/core#researcherId">
-        <rdfs:label xml:lang="en-us">ISI researcher id</rdfs:label>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RearcherID is a Thomson Reuters project where researchers have a place to manage and share their professional information. It will allow them to solve author identity issues while simultaneously adding dynamic citation metrics and collaboration networks to your personal profile.
-Definition source: http://isiwebofknowledge.com/researcherid/</ero:IAO_0000112>
-        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://vivoweb.org/ontology/core#eRACommonsId">
-        <rdfs:label xml:lang="en-us">eRA Commons id</rdfs:label>
-        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://vivoweb.org/ontology/core#sponsorAwardId">
-        <rdfs:label xml:lang="en-us">sponsor award id</rdfs:label>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Has a domain of Grant. There is not a strong reason have this be publically visible, since most users would care more about the name of the sponsoring agency than its identifier, but it does no harm to be public.
 
 
-See also core:localAwardId.
-</ero:IAO_0000112>
-        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Grant"/>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://vivoweb.org/ontology/core#orcidId">
-        <rdfs:label xml:lang="en-us">ORCID id</rdfs:label>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">We can&apos;t yet assume that we will only have a single ORCID id for a person.
-source: http://en.wikipedia.org/wiki/ORCID .
 
 
-We wanted this property to be visible so that people would be aware that we intend to carry ORCID ids in VIVO for cross-reference. I don&apos;t believe any ORCID ids have been minted yet, but it&apos;s hard to imagine they would need to be private since the goal of having them is to disambiguate author references internationally. However, this and the researcherId and scopusId (also with domain foaf:Person) can stay as visible to self-editors for now as they will probably be used mostly in data ingest. It might be nice in the future to let people make their own decision about whether these are visible.</ero:IAO_0000112>
-        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    </owl:AnnotationProperty>
-    
+   
 
 
     <!-- 
@@ -160,6 +73,30 @@ We wanted this property to be visible so that people would be aware that we inte
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#dateTime -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#int -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#int"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#string -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
     
 
 
@@ -177,7 +114,6 @@ We wanted this property to be visible so that people would be aware that we inte
     <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:label xml:lang="en-us">part of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -186,9 +122,7 @@ We wanted this property to be visible so that people would be aware that we inte
     <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:label xml:lang="en-us">has part</rdfs:label>
-        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
     </owl:ObjectProperty>
     
 
@@ -203,9 +137,6 @@ We wanted this property to be visible so that people would be aware that we inte
 
     <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#dateFiled">
         <rdfs:label xml:lang="en-us">date filed</rdfs:label>
-        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Patent"/>
-        <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#DateTimeValue"/>
-        <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#dateTimeValue"/>
     </owl:ObjectProperty>
     
 
@@ -214,8 +145,6 @@ We wanted this property to be visible so that people would be aware that we inte
 
     <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#dateIssued">
         <rdfs:label xml:lang="en-us">date issued</rdfs:label>
-        <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#DateTimeValue"/>
-        <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#dateTimeValue"/>
     </owl:ObjectProperty>
     
 
@@ -224,7 +153,6 @@ We wanted this property to be visible so that people would be aware that we inte
 
     <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#dateTimeInterval">
         <rdfs:label xml:lang="en-us">date/time interval</rdfs:label>
-        <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#DateTimeInterval"/>
     </owl:ObjectProperty>
     
 
@@ -233,7 +161,6 @@ We wanted this property to be visible so that people would be aware that we inte
 
     <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#dateTimePrecision">
         <rdfs:label xml:lang="en-us">date/time precision</rdfs:label>
-        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#DateTimeValue"/>
     </owl:ObjectProperty>
     
 
@@ -242,7 +169,6 @@ We wanted this property to be visible so that people would be aware that we inte
 
     <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#dateTimeValue">
         <rdfs:label xml:lang="en-us">date/time value</rdfs:label>
-        <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#DateTimeValue"/>
     </owl:ObjectProperty>
     
 
@@ -251,9 +177,6 @@ We wanted this property to be visible so that people would be aware that we inte
 
     <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#end">
         <rdfs:label xml:lang="en-us">end</rdfs:label>
-        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#DateTimeInterval"/>
-        <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#DateTimeValue"/>
-        <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#dateTimeValue"/>
     </owl:ObjectProperty>
     
 
@@ -262,7 +185,6 @@ We wanted this property to be visible so that people would be aware that we inte
 
     <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#expirationDate">
         <rdfs:label xml:lang="en-us">expiration date</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#dateTimeValue"/>
     </owl:ObjectProperty>
     
 
@@ -280,7 +202,6 @@ We wanted this property to be visible so that people would be aware that we inte
 
     <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#geographicFocus">
         <rdfs:label xml:lang="en-us">geographic focus</rdfs:label>
-        <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#GeographicRegion"/>
     </owl:ObjectProperty>
     
 
@@ -289,7 +210,6 @@ We wanted this property to be visible so that people would be aware that we inte
 
     <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#geographicFocusOf">
         <rdfs:label xml:lang="en-us">geographic focus of</rdfs:label>
-        <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#geographicFocus"/>
     </owl:ObjectProperty>
     
 
@@ -304,7 +224,6 @@ We wanted this property to be visible so that people would be aware that we inte
 
     <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#grantSubcontractedThrough">
         <rdfs:label xml:lang="en-us">subcontracted through</rdfs:label>
-        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
     </owl:ObjectProperty>
     
 
@@ -322,8 +241,6 @@ We wanted this property to be visible so that people would be aware that we inte
     <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#hasGeographicLocation">
         <rdfs:label xml:lang="en-us">has geographic location</rdfs:label>
         <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Currently being used by a restriction on organization.</ero:IAO_0000112>
-        <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#GeographicLocation"/>
-        <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#geographicLocationOf"/>
     </owl:ObjectProperty>
     
 
@@ -332,7 +249,6 @@ We wanted this property to be visible so that people would be aware that we inte
 
     <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#hasPrerequisite">
         <rdfs:label xml:lang="en-us">has prerequisite</rdfs:label>
-        <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#Course"/>
     </owl:ObjectProperty>
     
 
@@ -349,7 +265,6 @@ We wanted this property to be visible so that people would be aware that we inte
 
     <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#hasSuccessorOrganization">
         <rdfs:label xml:lang="en-us">successor organization</rdfs:label>
-        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
     </owl:ObjectProperty>
     
 
@@ -358,7 +273,6 @@ We wanted this property to be visible so that people would be aware that we inte
 
     <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#offeredBy">
         <rdfs:label xml:lang="en-us">offered by</rdfs:label>
-        <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#offers"/>
     </owl:ObjectProperty>
     
 
@@ -375,8 +289,6 @@ We wanted this property to be visible so that people would be aware that we inte
 
     <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#prerequisiteFor">
         <rdfs:label xml:lang="en-us">prerequisite for</rdfs:label>
-        <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#Course"/>
-        <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#hasPrerequisite"/>
     </owl:ObjectProperty>
     
 
@@ -386,7 +298,6 @@ We wanted this property to be visible so that people would be aware that we inte
     <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#providesFundingThrough">
         <rdfs:label xml:lang="en-us">provides funding through</rdfs:label>
         <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">For example, National Science Foundation providesFundingThrough Graduate Research Fellowship Program; National Institutes of Health providesFundingThrough National Center for Research Resources. </ero:IAO_0000112>
-        <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#FundingOrganization"/>
     </owl:ObjectProperty>
     
 
@@ -395,7 +306,6 @@ We wanted this property to be visible so that people would be aware that we inte
 
     <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#publicationVenueFor">
         <rdfs:label xml:lang="en-us">publication venue for</rdfs:label>
-        <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#hasPublicationVenue"/>
     </owl:ObjectProperty>
     
 
@@ -405,7 +315,6 @@ We wanted this property to be visible so that people would be aware that we inte
     <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#publisher">
         <rdfs:label xml:lang="en-us">publisher</rdfs:label>
         <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Public Definition source (http://www.answers.com/topic/publisher).</ero:IAO_0000112>
-        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
     </owl:ObjectProperty>
     
 
@@ -415,7 +324,6 @@ We wanted this property to be visible so that people would be aware that we inte
     <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#publisherOf">
         <rdfs:label xml:lang="en-us">publisher of</rdfs:label>
         <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Public Definition source (http://www.answers.com/topic/publisher).</ero:IAO_0000112>
-        <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#publisher"/>
     </owl:ObjectProperty>
     
 
@@ -424,9 +332,6 @@ We wanted this property to be visible so that people would be aware that we inte
 
     <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#start">
         <rdfs:label xml:lang="en-us">start</rdfs:label>
-        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#DateTimeInterval"/>
-        <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#DateTimeValue"/>
-        <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#dateTimeValue"/>
     </owl:ObjectProperty>
     
 
@@ -435,8 +340,6 @@ We wanted this property to be visible so that people would be aware that we inte
 
     <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#subcontractsGrant">
         <rdfs:label xml:lang="en-us">subcontracts grant</rdfs:label>
-        <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#Grant"/>
-        <owl:inverseOf rdf:resource="http://vivoweb.org/ontology/core#grantSubcontractedThrough"/>
     </owl:ObjectProperty>
     
 
@@ -467,7 +370,6 @@ We wanted this property to be visible so that people would be aware that we inte
     <!-- http://vivoweb.org/ontology/core#abbreviation -->
 
     <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#abbreviation">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:label xml:lang="en-us">abbreviation</rdfs:label>
         <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A short form for an longer title or name.</ero:IAO_0000112>
         <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">B.A.</ero:IAO_0000112>
@@ -479,7 +381,6 @@ We wanted this property to be visible so that people would be aware that we inte
 
     <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#cclCode">
         <rdfs:label xml:lang="en-us">Published US Classification Class/Subclass (CCL) code</rdfs:label>
-        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Patent"/>
     </owl:DatatypeProperty>
     
 
@@ -487,7 +388,6 @@ We wanted this property to be visible so that people would be aware that we inte
     <!-- http://vivoweb.org/ontology/core#courseCredits -->
 
     <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#courseCredits">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:label xml:lang="en-us">credits</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -497,17 +397,11 @@ We wanted this property to be visible so that people would be aware that we inte
 
     <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#dateTime">
         <rdfs:label xml:lang="en-us">date/time</rdfs:label>
-        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#DateTimeValue"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://vivoweb.org/ontology/core#description -->
-
-    <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#description">
-        <rdfs:label xml:lang="en-us">description</rdfs:label>
-    </owl:DatatypeProperty>
+  
     
 
 
@@ -515,7 +409,6 @@ We wanted this property to be visible so that people would be aware that we inte
 
     <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#eRACommonsId">
         <rdfs:label xml:lang="en-us">eRA Commons id</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#identifier"/>
     </owl:DatatypeProperty>
     
 
@@ -528,7 +421,6 @@ We wanted this property to be visible so that people would be aware that we inte
 
 use one freetextKeyword assertion for each keyword or phrase.</ero:IAO_0000112>
         <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">one keyword or phrase per freetextKeyword assertion</ero:IAO_0000112>
-        <owl:equivalentProperty rdf:resource="http://vivoweb.org/ontology/core#majorField"/>
     </owl:DatatypeProperty>
     
 
@@ -536,7 +428,6 @@ use one freetextKeyword assertion for each keyword or phrase.</ero:IAO_0000112>
     <!-- http://vivoweb.org/ontology/core#grantDirectCosts -->
 
     <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#grantDirectCosts">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:label xml:lang="en-us">direct costs</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -548,7 +439,6 @@ use one freetextKeyword assertion for each keyword or phrase.</ero:IAO_0000112>
         <rdfs:label xml:lang="en-us">International Classification (ICL) code</rdfs:label>
         <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The International classification(s) to which the published application has been assigned.
 </ero:IAO_0000112>
-        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Patent"/>
     </owl:DatatypeProperty>
     
 
@@ -572,9 +462,7 @@ use one freetextKeyword assertion for each keyword or phrase.</ero:IAO_0000112>
     <!-- http://vivoweb.org/ontology/core#linkURI -->
 
     <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#linkURI">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:label xml:lang="en-us">link URI</rdfs:label>
-        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#URLLink"/>
     </owl:DatatypeProperty>
     
 
@@ -584,7 +472,6 @@ use one freetextKeyword assertion for each keyword or phrase.</ero:IAO_0000112>
     <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#localAwardId">
         <rdfs:label xml:lang="en-us">local award id</rdfs:label>
         <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">core:localAwardId has a domain of core:Grant, and should be public since that&apos;s its public identifier for local use by OSP, accounting, department admins, and the PI </ero:IAO_0000112>
-        <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#identifier"/>
     </owl:DatatypeProperty>
     
 
@@ -602,8 +489,6 @@ use one freetextKeyword assertion for each keyword or phrase.</ero:IAO_0000112>
 
     <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#nihmsid">
         <rdfs:label xml:lang="en-us">NIH Manuscript Submission System ID</rdfs:label>
-        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Article"/>
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/identifier"/>
     </owl:DatatypeProperty>
     
 
@@ -617,7 +502,6 @@ source: http://en.wikipedia.org/wiki/ORCID .
 
 
 We wanted this property to be visible so that people would be aware that we intend to carry ORCID ids in VIVO for cross-reference. I don&apos;t believe any ORCID ids have been minted yet, but it&apos;s hard to imagine they would need to be private since the goal of having them is to disambiguate author references internationally. However, this and the researcherId and scopusId (also with domain foaf:Person) can stay as visible to self-editors for now as they will probably be used mostly in data ingest. It might be nice in the future to let people make their own decision about whether these are visible.</ero:IAO_0000112>
-        <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#identifier"/>
     </owl:DatatypeProperty>
     
 
@@ -625,7 +509,6 @@ We wanted this property to be visible so that people would be aware that we inte
     <!-- http://vivoweb.org/ontology/core#outreachOverview -->
 
     <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#outreachOverview">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:label xml:lang="en-us">outreach overview</rdfs:label>
         <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">My extension program consists of developing and reporting disease management strategies that are both economically and environmentally sound for fresh market vegetable production. We hope that some of this testing will result in practices adaptable for organic production.</ero:IAO_0000112>
         <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Used for a single narrative summary of outreach, typically covering a wide range of activities and time periods; use Outreach Provider Role for information on individual activities</ero:IAO_0000112>
@@ -636,7 +519,6 @@ We wanted this property to be visible so that people would be aware that we inte
     <!-- http://vivoweb.org/ontology/core#overview -->
 
     <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#overview">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:label xml:lang="en-us">overview</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -645,11 +527,8 @@ We wanted this property to be visible so that people would be aware that we inte
     <!-- http://vivoweb.org/ontology/core#patentNumber -->
 
     <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#patentNumber">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:label xml:lang="en-us">patent number</rdfs:label>
         <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">source of definition: http://www.uspto.gov/main/glossary/#p . The following site has patent number formats: http://www.uspto.gov/patents/ebc/kindcodesum.jsp .</ero:IAO_0000112>
-        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Patent"/>
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/identifier"/>
     </owl:DatatypeProperty>
     
 
@@ -657,7 +536,6 @@ We wanted this property to be visible so that people would be aware that we inte
     <!-- http://vivoweb.org/ontology/core#placeOfPublication -->
 
     <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#placeOfPublication">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:label xml:lang="en-us">place of publication</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -668,8 +546,6 @@ We wanted this property to be visible so that people would be aware that we inte
     <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#pmcid">
         <rdfs:label xml:lang="en-us">PubMed Central ID</rdfs:label>
         <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">   A PMCID is a unique PubMed Central reference number, which is assigned to each full-text record made available A PMCID is a unique PubMed Central reference number, which is assigned to each full-text record made available in PubMed Central. The PMCID is issued shortly after the PI or author approves the PubMed Central formatted web version of the submission. </ero:IAO_0000112>
-        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Article"/>
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/identifier"/>
     </owl:DatatypeProperty>
     
 
@@ -679,7 +555,6 @@ We wanted this property to be visible so that people would be aware that we inte
     <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#rank">
         <rdfs:label xml:lang="en-us">rank</rdfs:label>
         <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">this number indicates a position in a list</ero:IAO_0000112>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
     </owl:DatatypeProperty>
     
 
@@ -687,10 +562,7 @@ We wanted this property to be visible so that people would be aware that we inte
     <!-- http://vivoweb.org/ontology/core#reportId -->
 
     <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#reportId">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:label xml:lang="en-us">report identifier</rdfs:label>
-        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Report"/>
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/ontology/bibo/identifier"/>
     </owl:DatatypeProperty>
     
 
@@ -698,7 +570,6 @@ We wanted this property to be visible so that people would be aware that we inte
     <!-- http://vivoweb.org/ontology/core#researchOverview -->
 
     <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#researchOverview">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:label xml:lang="en-us">research overview</rdfs:label>
         <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Used for a single narrative summary of research, typically covering a wide range of activities and time periods; use Researcher Role for information on individual activities</ero:IAO_0000112>
     </owl:DatatypeProperty>
@@ -711,7 +582,6 @@ We wanted this property to be visible so that people would be aware that we inte
         <rdfs:label xml:lang="en-us">ISI researcher id</rdfs:label>
         <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RearcherID is a Thomson Reuters project where researchers have a place to manage and share their professional information. It will allow them to solve author identity issues while simultaneously adding dynamic citation metrics and collaboration networks to your personal profile.
 Definition source: http://isiwebofknowledge.com/researcherid/</ero:IAO_0000112>
-        <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#identifier"/>
     </owl:DatatypeProperty>
     
 
@@ -721,7 +591,6 @@ Definition source: http://isiwebofknowledge.com/researcherid/</ero:IAO_0000112>
     <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#scopusId">
         <rdfs:label xml:lang="en-us">Scopus id</rdfs:label>
         <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Home page for Scopus: http://www.scopus.com/home.url</ero:IAO_0000112>
-        <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#identifier"/>
     </owl:DatatypeProperty>
     
 
@@ -729,11 +598,9 @@ Definition source: http://isiwebofknowledge.com/researcherid/</ero:IAO_0000112>
     <!-- http://vivoweb.org/ontology/core#seatingCapacity -->
 
     <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#seatingCapacity">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:label xml:lang="en-us">seating capacity</rdfs:label>
         <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">55</ero:IAO_0000112>
         <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition modified from: source (http://en.wikipedia.org/wiki/Seating_capacity).</ero:IAO_0000112>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
     </owl:DatatypeProperty>
     
 
@@ -741,14 +608,12 @@ Definition source: http://isiwebofknowledge.com/researcherid/</ero:IAO_0000112>
     <!-- http://vivoweb.org/ontology/core#sponsorAwardId -->
 
     <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#sponsorAwardId">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:label xml:lang="en-us">sponsor award id</rdfs:label>
         <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Has a domain of Grant. There is not a strong reason have this be publically visible, since most users would care more about the name of the sponsoring agency than its identifier, but it does no harm to be public.
 
 
 See also core:localAwardId.
 </ero:IAO_0000112>
-        <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#identifier"/>
     </owl:DatatypeProperty>
     
 
@@ -764,7 +629,6 @@ See also core:localAwardId.
     <!-- http://vivoweb.org/ontology/core#teachingOverview -->
 
     <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#teachingOverview">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:label xml:lang="en-us">teaching overview</rdfs:label>
         <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Used for a single narrative summary of teaching, typically covering a wide range of courses including for credit and non-credit teaching over multiple semesters; the &quot;teaches&quot; property links a person directly with an instance of a Semester Class, typically from an institutional database of record; then use Teacher Role for information about a person&apos;s role in non-credit teaching or their specific contribution to individual courses</ero:IAO_0000112>
     </owl:DatatypeProperty>
@@ -774,7 +638,6 @@ See also core:localAwardId.
     <!-- http://vivoweb.org/ontology/core#totalAwardAmount -->
 
     <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#totalAwardAmount">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:label xml:lang="en-us">total award amount</rdfs:label>
     </owl:DatatypeProperty>
     
