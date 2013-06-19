@@ -17,14 +17,86 @@
      xmlns:bibo="http://purl.org/ontology/bibo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:c4o="http://purl.org/spar/c4o/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:c4o="http://purl.org/spar/c4o/"
      xmlns:swvs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:skos="http://www.w3.org/2008/05/skos#"
      xmlns:vivo="http://vivoweb.org/ontology/core#"
      xmlns:dcelem="http://purl.org/dc/elements/1.1/"
      xmlns:ero="http://purl.obolibrary.org/obo/">
+    <owl:Ontology rdf:about="file:/C:/s/svns/isf-new-layout/trunk/src/ontology/module/vivo/publications/vivo-publications.owl"/>
+    
 
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Article -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Article"/>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/AudioVisualDocument -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/AudioVisualDocument"/>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/CollectedDocument -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/CollectedDocument"/>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Document -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Document"/>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Periodical -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Periodical"/>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Website -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Website"/>
+    
 
 
     <!-- http://vivoweb.org/ontology/core#Authorship -->
@@ -38,43 +110,9 @@ This class allows for linking an author to a publication while indicating inform
         <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contains the authors name, their rank in the publication, and whether or not they are a corresponding author on the publication.</ero:IAO_0000115>
         <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Currently any abstract name is given to members of this class. This could change in the future.</ero:IAO_0000112>
     </owl:Class>
-
-
-
-    <!-- http://vivoweb.org/ontology/core#PeerReviewerRole -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#PeerReviewerRole">
-        <rdfs:label xml:lang="en-us">Peer Reviewer Role</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#ReviewerRole"/>
-        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A role of peer reviewing</ero:IAO_0000115>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is a generic term for a process of self-regulation by a profession or a process of evaluation involving qualified individuals within the relevant field. Peer review methods are employed to maintain standards, improve performance and provide credibility. In academia  the term is often used to denote a prepublication review of academic papers; reviewing an academic paper is often called refereeing.
-Contents
-[hide]</ero:IAO_0000112>
-    </owl:Class>
-
-
-
-    <!-- http://vivoweb.org/ontology/core#Review -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Review">
-        <rdfs:label xml:lang="en-us">Review</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Article"/>
-        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An article reviewing one or more other information resources (a book, one or more other articles, movies, etc)</ero:IAO_0000115>
-    </owl:Class>
     
 
 
-    <!-- http://vivoweb.org/ontology/core#ReviewerRole -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#ReviewerRole">
-        <rdfs:label xml:lang="en-us">Reviewer Role</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A role that encompasses both ongoing reviewer responsibility for a bibo:Collection, such as a Journal or Series, and also a review performed for a bibo:Document, such as a book, academic article or conference paper.</ero:IAO_0000112>
-        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A role that encompasses both ongoing reviewer responsibility for a bibo:Collection, such as a Journal or Series, and also a review performed for a bibo:Document, such as a book, academic article or conference paper.</ero:IAO_0000115>
-    </owl:Class>
- 
-
- 
     <!-- http://vivoweb.org/ontology/core#Blog -->
 
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#Blog">
@@ -95,9 +133,9 @@ Contents
         <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A specific blog posting</ero:IAO_0000112>
         <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An online article or commentary appearing on a blog</ero:IAO_0000115>
     </owl:Class>
+    
 
 
- 
     <!-- http://vivoweb.org/ontology/core#CaseStudy -->
 
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#CaseStudy">
@@ -118,9 +156,9 @@ Contents
         <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NLM Catalog</ero:IAO_0000112>
         <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Short Definition is the Medical Subject Heading (MeSH) definition </ero:IAO_0000112>
     </owl:Class>
+    
 
 
- 
     <!-- http://vivoweb.org/ontology/core#ConferencePaper -->
 
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#ConferencePaper">
@@ -138,9 +176,9 @@ Contents
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
         <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The digital file (or physical equivalent), if available after the conference, vs. the act of attending/presenting: use ConferencePresentation for information about date/time/location/name of the event where the poster was presented</ero:IAO_0000115>
     </owl:Class>
+    
 
 
- 
     <!-- http://vivoweb.org/ontology/core#Database -->
 
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#Database">
@@ -160,16 +198,16 @@ Contents
         <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A named collection of data, usually containing only one type of data</ero:IAO_0000115>
         <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">US Patent Data; US Job Data</ero:IAO_0000112>
     </owl:Class>
+    
 
 
- 
     <!-- http://vivoweb.org/ontology/core#EditorRole -->
 
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#EditorRole">
         <rdfs:label xml:lang="en-us">Editor Role</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
-        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ongoing editorial responsibility for a bibo:Collection, such as a Journal or Series</ero:IAO_0000115>
         <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ongoing editorial responsibility for a bibo:Collection, such as a Journal or Series</ero:IAO_0000112>
+        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ongoing editorial responsibility for a bibo:Collection, such as a Journal or Series</ero:IAO_0000115>
     </owl:Class>
     
 
@@ -181,18 +219,18 @@ Contents
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Article"/>
         <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An article of opinion, typically published in a newspaper. For academics, most commonly Op Ed pieces</ero:IAO_0000115>
     </owl:Class>
+    
 
 
- 
     <!-- http://vivoweb.org/ontology/core#InvitedTalk -->
 
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#InvitedTalk">
         <rdfs:label xml:lang="en-us">Invited Talk</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Presentation"/>
     </owl:Class>
+    
 
 
- 
     <!-- http://vivoweb.org/ontology/core#NewsRelease -->
 
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#NewsRelease">
@@ -211,9 +249,28 @@ Contents
         <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Ornithological Newsletter</ero:IAO_0000112>
         <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Usually issued periodically, prepared by or for a group or institution to present information to a specific audience, often also made available to the press and public</ero:IAO_0000115>
     </owl:Class>
+    
 
 
- 
+    <!-- http://vivoweb.org/ontology/core#PeerReviewerRole -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#PeerReviewerRole">
+        <rdfs:label xml:lang="en-us">Peer Reviewer Role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#ReviewerRole"/>
+        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A role of peer reviewing</ero:IAO_0000115>
+        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is a generic term for a process of self-regulation by a profession or a process of evaluation involving qualified individuals within the relevant field. Peer review methods are employed to maintain standards, improve performance and provide credibility. In academia  the term is often used to denote a prepublication review of academic papers; reviewing an academic paper is often called refereeing.
+Contents
+[hide]</ero:IAO_0000112>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#Presentation -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Presentation"/>
+    
+
+
     <!-- http://vivoweb.org/ontology/core#Publisher -->
 
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#Publisher">
@@ -223,9 +280,15 @@ Contents
         <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Definition found here: http://dictionary.reference.com/browse/publisher</ero:IAO_0000112>
         <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Elsevier; Harper &amp; Row; Indiana University Press</ero:IAO_0000112>
     </owl:Class>
+    
 
 
- 
+    <!-- http://vivoweb.org/ontology/core#Relationship -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Relationship"/>
+    
+
+
     <!-- http://vivoweb.org/ontology/core#Review -->
 
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#Review">
@@ -241,12 +304,12 @@ Contents
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#ReviewerRole">
         <rdfs:label xml:lang="en-us">Reviewer Role</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
-        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A role that encompasses both ongoing reviewer responsibility for a bibo:Collection, such as a Journal or Series, and also a review performed for a bibo:Document, such as a book, academic article or conference paper.</ero:IAO_0000112>
         <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A role that encompasses both ongoing reviewer responsibility for a bibo:Collection, such as a Journal or Series, and also a review performed for a bibo:Document, such as a book, academic article or conference paper.</ero:IAO_0000115>
+        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A role that encompasses both ongoing reviewer responsibility for a bibo:Collection, such as a Journal or Series, and also a review performed for a bibo:Document, such as a book, academic article or conference paper.</ero:IAO_0000112>
     </owl:Class>
+    
 
 
- 
     <!-- http://vivoweb.org/ontology/core#Score -->
 
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#Score">
@@ -274,9 +337,9 @@ Contents
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
         <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Text of a speech written in preparation for delivery of the speech.</ero:IAO_0000115>
     </owl:Class>
+    
 
 
- 
     <!-- http://vivoweb.org/ontology/core#Translation -->
 
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#Translation">
@@ -284,9 +347,9 @@ Contents
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
         <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The result of rendering a work from one language to another</ero:IAO_0000115>
     </owl:Class>
+    
 
 
- 
     <!-- http://vivoweb.org/ontology/core#Video -->
 
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#Video">
@@ -304,8 +367,21 @@ Contents
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
         <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A document created as a basis for discussion or a very early draft of a formal paper</ero:IAO_0000115>
     </owl:Class>
-
-
     
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#Role -->
+
+    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#Role"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Organization -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
 </rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2018) http://owlapi.sourceforge.net -->
 
