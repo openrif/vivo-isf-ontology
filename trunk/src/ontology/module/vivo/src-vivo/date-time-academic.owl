@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/arg/date-time-academic.owl#"
+     xml:base="http://purl.obolibrary.org/obo/arg/date-time-academic.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/arg/date-time-academic.owl"/>
+	
+	
+    <!-- http://vivoweb.org/ontology/core#AcademicTerm -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#AcademicTerm">
+        <rdfs:label xml:lang="en-us">Academic Term</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#DateTimeInterval"/>
+        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An explicit individual academic term, quarter, or semester rather than the generic fall, spring or summer semester.</ero:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#AcademicYear -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#AcademicYear">
+        <rdfs:label xml:lang="en-us">Academic Year</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#DateTimeInterval"/>
+        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An explicit individual period considered by an academic institution to be its primary academic cycle.</ero:IAO_0000115>
+    </owl:Class>
+	
+	    <owl:Class rdf:about="http://vivoweb.org/ontology/core#DateTimeInterval"/>
+	
+</rdf:RDF>	

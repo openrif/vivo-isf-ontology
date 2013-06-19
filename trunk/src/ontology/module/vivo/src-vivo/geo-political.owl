@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/arg/geo-political.owl#"
+     xml:base="http://purl.obolibrary.org/obo/arg/geo-political.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/arg/geo-political.owl"/>
+
+
+    <!-- http://vivoweb.org/ontology/core#Continent -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Continent">
+        <rdfs:label xml:lang="en-us">Continent</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#TransnationalRegion"/>
+        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A large contiguous landmass  that is at least partially surrounded by water, together with any islands on its continental shelf.</ero:IAO_0000115>
+        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Short Definition take from http://en.wiktionary.org/wiki/continent.</ero:IAO_0000112>
+        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The seven commonly recognized continents are Africa; Antarctica; Asia; Australia; Europe; North America; South America</ero:IAO_0000112>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#Country -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Country">
+        <rdfs:label xml:lang="en-us">Country</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#GeopoliticalEntity"/>
+        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Afghanistan; Antigua and Barbuda; Cameroon; Iceland; Jamaica; Nigeria; United States of America</ero:IAO_0000112>
+        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An area of land distinguished by its political autonomy. Politically independent territories.</ero:IAO_0000115>
+        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Source of the Short Definition: http://www.thefreedictionary.com/country.  This is also the same as geopolitical.owl:self_governing.</ero:IAO_0000112>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#County -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#County">
+        <rdfs:label xml:lang="en-us">County</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#GeopoliticalEntity"/>
+        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alachua; Baker; Bradford; Kenora; Ottawa; Waterloo</ero:IAO_0000112>
+        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Short Definition modified from the one found here: http://www.thefreedictionary.com/county.</ero:IAO_0000112>
+        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The largest administrative division of most states or provinces.</ero:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#GeographicRegion -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#GeographicRegion"/>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#GeopoliticalEntity -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#GeopoliticalEntity">
+        <rdfs:label xml:lang="en-us">Geopolitical Entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#GeographicRegion"/>
+        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A geographical area which is associated with some sort of political  structure.</ero:IAO_0000115>
+        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Short definition obtained here: http://en.wiktionary.org/wiki/geopolitical_entity.</ero:IAO_0000112>
+        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Use subclasses of core:GeopoliticalEntity subclasses instead of this class if possible.</ero:IAO_0000112>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#StateOrProvince -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#StateOrProvince">
+        <rdfs:label xml:lang="en-us">State Or Province</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#GeopoliticalEntity"/>
+        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Minnesota; Michigan; Indiana; New York; Quebec; Manitoba; Ontario</ero:IAO_0000112>
+        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One of a number of areas or communities having their own governments and forming a federation under a sovereign government, as in the US.</ero:IAO_0000115>
+        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Source of the Short Definition: http://www.thefreedictionary.com/state.</ero:IAO_0000112>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#SubnationalRegion -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#SubnationalRegion">
+        <rdfs:label xml:lang="en-us">Subnational Region</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#GeographicRegion"/>
+        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Boroughs; townships; districts; the Midwest</ero:IAO_0000112>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">For example, the Midwest, northeast U.S.</rdfs:comment>
+        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Short definition was partially taken from http://en.wikipedia.org/wiki/Subnational_entity.</ero:IAO_0000112>
+        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Smaller administrative division into which a country may be divided.</ero:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#TransnationalRegion -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#TransnationalRegion">
+        <rdfs:label xml:lang="en-us">Transnational Region</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#GeographicRegion"/>
+        <ero:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any region that goes beyond national boundaries and does not fit into any subclass of core:TransnationalRegion.</ero:IAO_0000115>
+        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None as yet.</ero:IAO_0000112>
+        <ero:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not sure how to access the &quot;Editor&apos;s Comments&quot;. But as North America is a continent, it would be placed directly into the continent subclass and viewable through this class along with any other subclass entities.</ero:IAO_0000112>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sub-Saharan Africa, North America</rdfs:comment>
+    </owl:Class>
+	
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2018) http://owlapi.sourceforge.net -->
+
