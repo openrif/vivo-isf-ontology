@@ -69,6 +69,23 @@
         <rdfs:label xml:lang="en-us">Member Role</rdfs:label>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A role of being a member in a Process or an Organization</obo:IAO_0000115>
     </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#ResearcherRole -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#ResearcherRole">
+        <rdfs:label xml:lang="en-us">Researcher Role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A role of conducting funded or unfunded research,  sometimes linked to an Agreement.</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Examples of research can be seen at: http://www.ufl.edu/research/products/index.html.  Note these may have been funded, but the research doesn&apos;t have to be funded.  Also, the research may be linked to an Agreement (for example, a Grant), but does not need to be.</obo:IAO_0000112>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#Role -->
+
+    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#Role"/>
 </rdf:RDF>
 
 

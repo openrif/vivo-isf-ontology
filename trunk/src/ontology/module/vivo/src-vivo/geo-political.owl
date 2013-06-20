@@ -45,10 +45,26 @@
     
 
 
+    <!-- http://aims.fao.org/aos/geopolitical.owl#geographical_region -->
+
+    <owl:Class rdf:about="http://aims.fao.org/aos/geopolitical.owl#geographical_region">
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#TransnationalRegion"/>
+    </owl:Class>
+    
+
+
     <!-- http://aims.fao.org/aos/geopolitical.owl#self_governing -->
 
     <owl:Class rdf:about="http://aims.fao.org/aos/geopolitical.owl#self_governing">
         <rdfs:label>self governing</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#GeopoliticalEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://aims.fao.org/aos/geopolitical.owl#territory -->
+
+    <owl:Class rdf:about="http://aims.fao.org/aos/geopolitical.owl#territory">
         <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#GeopoliticalEntity"/>
     </owl:Class>
     

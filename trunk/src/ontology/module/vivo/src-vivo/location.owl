@@ -71,7 +71,12 @@
 
     <!-- http://vivoweb.org/ontology/core#Facility -->
 
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Facility"/>
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Facility">
+        <rdfs:label xml:lang="en-us">Facility</rdfs:label>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Distinct from the organization that runs it; e.g., a laboratory may be an organization but may be run by another organization and only consist of facilities housing equipment or services. Can be a building or place that provides a particular service or is used for a particular activity. Use the specific Building or Room whenever possible. Short definition from http://dictionary.reference.com/browse/facility.</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Something designed, built, installed, etc., to serve a specific function or activity affording a convenience or service.</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Use subclasses of core:Facility subclasses instead of this class if possible</obo:IAO_0000112>
+    </owl:Class>
     
 
 
