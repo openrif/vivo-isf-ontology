@@ -1,0 +1,63 @@
+= ISF Documentation (alpha) =
+
+== Introduction ==
+
+The Integrated Semantic Framework (ISF) is being developed in the context of the CTSAconnect project (http://www.ctsaconnect.org).  The central component of the ISF is an OWL ontology for Agents, Resources, and Grants (ARG).  The starting point for ARG was an import of the eagle-i and vivo ontologies.  ARG is also augmented with a clinical module (see below) and a representation of the tagging taxonomy from the !ShareCenter(http://www.ctsasharecenter.org/).
+
+The main goals of the ISF are:
+ # Integrate existing ontologies related to research resources and expertise (eagle-i and VIVO)
+ # Extend the ISF with a clinical module to represent clinical expertise based on practice profiles inferred from billing data
+ # Align the ISF with other data-driven applications within the CTSA (!ShareCenter)
+
+== Content ==
+The ISF started by importing the eagle-i and VIVO ontologies. The eagle-i ontology and the eagle-i network are focused on representing research related resources such as services, instruments, materials, etc.  The VIVO ontology and network also represents research related information however their focus is on researchers, research interests, grants, accomplishments, etc.  Both eagle-i and VIVO overlap in certain areas and one aspect of developing the ISF is to align and merge eagle-i and VIVO into a single ontology within the ISF.
+
+The ISF is also being augmented with a clinical module that enables the representation of clinical expertise.  The goal is to link research related data from eagle-i and VIVO to clinical expertise and resources derived from data related to daily clinical practice. The first step in this direction is to enable the representation of coded clinical data (diagnosis, procedures, prescriptions, etc) in the ISF in order to connect research resources to clinicians based on their practice profiles inferred from the clinical data. The following diagram shows the current ontology model for the clinical module.
+
+http://connect-isf.googlecode.com/svn/wiki/image/clinical-module-diagram_v0.1.png
+
+Another extension of the ISF is to integrate it with the CTSA !ShareCenter project. The !ShareCenter is a content management system (CMS) for the CTSA community for collaboration and information sharing. The system is based on the Drupal CMS platform and it allows users to tag pages with type type of content the page is about. !ShareCenter has few coded content types or categories in addition to free-text tagging.  The initial step in integrating the ISF with !ShareCenter was to create OWL classes in the ISF for the !ShareCenter categories. Drupal is able to publish the tagging information as RDF however the default published RDF is not compliant with the ISF data model and ontological representation and possible solutions are still being evaluated.
+
+The ontology is being developed according to the OBO Foundry ontology development principles and is referencing existing ontologies where appropriate. The ontologies being referenced at this point include BFO, OGMS, IAO, and OBI. 
+
+In addition to using the above ontologies, the ISF is including clinically relevant coding systems such as ICD9, CPT, and others. The UMLS is used as the main source for clinical codes, code attributes, and relationships. The UMLS will also be used to to map these coding systems to MeSH, and to calculate clinical expertise by using the various hierarchies in the UMLS.
+
+The ISF is still in early development stages. We will use the issue tracker at a later stage when the ISF is more mature. For now we request use of VIVO (https://issues.library.cornell.edu/browse/VIVOONT)  and eagle-i  (http://code.google.com/p/eagle-i/issues/list) ontology trackers for requesting changes. You may also contact the developers directly with any questions.
+
+== Implementation ==
+
+The main component of the ISF is the ontology for Agents, Resources, and Grants (ARG), which is implemented as an OWL ontology. The OWL document for ARG is "arg.owl".  The ARG ontology imports the eagle-i and VIVO ontologies, the clinical module, and few additional files. The high level import structure can be seen in the following diagram.
+
+http://connect-isf.googlecode.com/svn/wiki/image/arg-partial-import.png
+
+The ISF OWL files are available from the code repository for this project. Currently, many of the import URLs do not resolve online and the imports need to exist locally in order to view the full ontology.  The best approach is to checkout the full project from SVN and then open the individual owl files in an ontology editor.  The SVN checkout already contains a “catalog” file that is configured to help the Protege editor find the imports from the local SVN checkout.
+
+The implementation details of eagle-i and VIVO can be obtained from their corresponding sites ( http://code.google.com/p/eagle-i/wiki/Documentation  and http://vivoweb.org/support)  The additional ISF content is still in the early development stages and will likely change over the next few months. The following is a description of the content of the ISF based on a local checkout of the SVN repository.
+
+The OWL files for the ontology within the SVN checkout can be found in the “src/ontology/” folder
+
+
+|| *Folder* || *File* || *Description* ||
+|| /src/ontology || || The top folder for the various OWL files that form the ontology ||
+|| || arg.owl || The ARG ontology ||
+|| || catalog-v001.xml || Protege catalog file to find the imports in the local checkout ||
+|| /src/ontology/application-specific-files || || A collection of OWL files for specific use-cases. These files import one or more of the shared OWL files and add application specific content. ||
+|| || clinical_module_application.owl || The clinical module with a small set of sample data for testing ||
+|| /src/ontology/clinical_module || || The various OWL files for the clinical module ||
+|| || clinical_instances.owl || A small data sample for testing purposes in RDF/XML format ||
+|| || clinical_instances_ei_turtle.n3.owl || N3 version of the above sample data ||
+|| || clinical_module.owl || The top-level OWL file to the clinical module ||
+|| || clinical_module_no_icd_cpt.owl || The clinical module without imported codes, only the general classes ||
+|| || icd9cm-classes.owl || ICD9 OWL classes with labels and additional annotations ||
+|| || icd9cm-subaxioms.owl || OWL subclass axioms to form a ICD9 hierarchy from The ICD9 classes ||
+|| || catalog-v001.xml || As above ||
+|| /src/ontology/import || || various content imported from other ontologies ||
+|| || external-by-hand.owl || An import of few OWL entities that are manually maintained ||
+|| || obi-imports.owl || Imports from OBI ontology http://obi-ontology.org/page/Main_Page ||
+|| || ogms-imports.owl || Imports from the OGMS ontology http://code.google.com/p/ogms/ ||
+|| || sharecenter-imports.owl || An initial OWL version of the tags or categories used in the CTSA !Sharecenter http://www.ctsasharecenter.org/ ||
+|| || vitro-0.7.owl || An internal VIVO OWL document not for end users ||
+|| || vivo-iao.owl || An indirect import of VIVO, additional metadata entities from the IAO, BFO, and the protege-dc.owl file ||		
+|| /src/ontology/imports/ero || || The eagle-i ontology import as SVN externals ||
+|| /src/ontology/imports/vivo || || The VIVO ontology import as SVN externals ||
+|| /src/ontology-merged || || Merged versions of few of the above OWL files. A merged version will include all the imported content without having to import additional files ||
