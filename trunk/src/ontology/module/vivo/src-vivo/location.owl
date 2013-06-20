@@ -73,12 +73,6 @@
 
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#Facility"/>
     
-    <!-- http://vivoweb.org/ontology/core#GeographicRegion -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#GeographicRegion">
-        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#GeographicLocation"/>
-    </owl:Class>
-    
 
 
     <!-- http://vivoweb.org/ontology/core#GeographicLocation -->
@@ -97,6 +91,7 @@
 
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#GeographicRegion">
         <rdfs:label xml:lang="en-us">Geographic Region</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#GeographicLocation"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A location having coordinates in geographic space.</obo:IAO_0000115>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Removed the word &quot;stable&quot; because disputed territories from geopolitical.owl are included. This could imply that the geographic coordinates could change. This definition was originally in core:Geographic Location.  I simply copied the definition from there.  I think core:Geographic Location and core:Geographic Region are both the same and only one is needed. There is also geopolitical.owl:geographical_region which further causes confusion.</obo:IAO_0000112>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Use subclasses of core:Geographic Region subclasses instead of this class if possible.</obo:IAO_0000112>

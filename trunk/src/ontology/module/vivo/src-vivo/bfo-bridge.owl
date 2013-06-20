@@ -9,13 +9,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030">
-        <rdfs:label>information content entity (IAO)</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant"/>
-    </owl:Class>
-    
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -54,6 +47,15 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000012">
         <rdfs:label xml:lang="en-us">Service Provider Role</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030">
+        <rdfs:label>information content entity (IAO)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant"/>
     </owl:Class>
     
 
@@ -126,14 +128,6 @@
     
 
 
-
-    <!-- http://vivoweb.org/ontology/core#Facility -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Facility">
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Site"/>
-    </owl:Class>
-    
-
     <!-- http://vivoweb.org/ontology/core#EducationalProcess -->
 
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#EducationalProcess">
@@ -141,18 +135,7 @@
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
     </owl:Class>
     
-    <!-- http://vivoweb.org/ontology/core#OrganizingProcess -->
 
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#OrganizingProcess">
-        <rdfs:label>organizing process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
-    </owl:Class>
-    
-    <!-- http://vivoweb.org/ontology/core#Location -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Location">
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#SpatialRegion"/>
-    </owl:Class>
 
     <!-- http://vivoweb.org/ontology/core#Equipment -->
 
@@ -170,10 +153,26 @@
     
 
 
+    <!-- http://vivoweb.org/ontology/core#Facility -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Facility">
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Site"/>
+    </owl:Class>
+    
+
+
     <!-- http://vivoweb.org/ontology/core#LeaderRole -->
 
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#LeaderRole">
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#Location -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Location">
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#SpatialRegion"/>
     </owl:Class>
     
 
@@ -191,6 +190,15 @@
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#OrganizerRole">
         <rdfs:label xml:lang="en-us">Organizer Role</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#OrganizingProcess -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#OrganizingProcess">
+        <rdfs:label>organizing process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
     </owl:Class>
     
 
@@ -256,6 +264,12 @@
     
 
 
+    <!-- http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant -->
+
+    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant"/>
+    
+
+
     <!-- http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant -->
 
     <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant"/>
@@ -271,6 +285,18 @@
     <!-- http://www.ifomis.org/bfo/1.1/snap#Role -->
 
     <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#Role"/>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#Site -->
+
+    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#Site"/>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#SpatialRegion -->
+
+    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#SpatialRegion"/>
     
 
 
