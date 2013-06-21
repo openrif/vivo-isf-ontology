@@ -41,9 +41,93 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/net/OCRe/study_design.owl#OCRE100038 -->
+
+    <owl:Class rdf:about="http://purl.org/net/OCRe/study_design.owl#OCRE100038">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phase</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phase describes the level of a trial required of drugs before (and after) they are routinely used in clinical practice: 
+- Phase I trials assess toxic effects on humans (not many people participate in them, and usually without controls); 
+- Phase ll trials assess therapeutic benefit (usually involving a few hundred people, usually with controls, but not always); 
+- Phase III trials compare the new treatment against standard (or placebo) treatment (usually a full randomised controlled trial). At this point, a drug can be approved for community use. 
+- Phase IV monitors a new treatment in the community, often to evaluate longterm safety and effectiveness. [Glossary of Terms in The Cochrane Collaboration]
+
+A trial can be of a combination phase (e.g., I/II).
+The concept of phase is not applicable to trials studying certain interventions (e.g., device, procedure, behavioral)</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Simona</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/OCRe/study_design.owl#Phase_0 -->
+
+    <owl:Class rdf:about="http://purl.org/net/OCRe/study_design.owl#Phase_0">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phase 0</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/OCRe/study_design.owl#OCRE100038"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Phase 0 trial is an exploratory trial involving very limited human exposure, with no therapeutic or diagnostic intent (e.g., screening study, microdose study). [http://prsinfo.clinicaltrials.gov/definitions.html]</obo:IAO_0000115>
+        <statistics:curator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Simona</statistics:curator>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/OCRe/study_design.owl#Phase_1 -->
+
+    <owl:Class rdf:about="http://purl.org/net/OCRe/study_design.owl#Phase_1">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phase 1</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/OCRe/study_design.owl#OCRE100038"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Phase I trial assesses toxic effects on humans (not many people participate, and usually without controls) [Glossary of Terms in The Cochrane Collaboration]</obo:IAO_0000115>
+        <statistics:curator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Simona</statistics:curator>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/OCRe/study_design.owl#Phase_2 -->
+
+    <owl:Class rdf:about="http://purl.org/net/OCRe/study_design.owl#Phase_2">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phase 2</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/OCRe/study_design.owl#OCRE100038"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Phase ll trial assesses therapeutic benefit (usually involving a few hundred people, usually with controls, but not always) [Glossary of Terms in The Cochrane Collaboration]</obo:IAO_0000115>
+        <statistics:curator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Simona</statistics:curator>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/OCRe/study_design.owl#Phase_3 -->
+
+    <owl:Class rdf:about="http://purl.org/net/OCRe/study_design.owl#Phase_3">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phase 3</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/OCRe/study_design.owl#OCRE100038"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Phase III trial compares the new treatment against standard (or placebo) treatment (usually a full
+randomised controlled trial). At this point, a drug can be approved for community use. [Glossary of Terms in The Cochrane Collaboration]</obo:IAO_0000115>
+        <statistics:curator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Simona</statistics:curator>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/OCRe/study_design.owl#Phase_4 -->
+
+    <owl:Class rdf:about="http://purl.org/net/OCRe/study_design.owl#Phase_4">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phase 4</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/OCRe/study_design.owl#OCRE100038"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Phase IV study monitors a new treatment in the community, often to evaluate longterm safety and effectiveness. [Glossary of Terms in The Cochrane Collaboration]</obo:IAO_0000115>
+        <statistics:curator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Simona</statistics:curator>
+    </owl:Class>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.4.2018) http://owlapi.sourceforge.net -->
 

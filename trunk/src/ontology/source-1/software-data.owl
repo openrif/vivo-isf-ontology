@@ -822,6 +822,16 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ERO_0100080 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100080">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">software development objective</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0100063"/>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">placeholder for SWO:software devleopment</obo:IAO_0000116>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ERO_0100081 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100081">
@@ -3149,6 +3159,15 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ERO_0100316 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100316">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">algorithm execution</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ERO_0100317 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100317">
@@ -3267,8 +3286,8 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DNA fragment analysis objective</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0100149"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A sequence analysis objective that analyzes the sequence of DNA fragments.</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -3361,6 +3380,24 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ERO_0100340 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100340">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">academic software license</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000002"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100341 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100341">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-commercial proprietary software license</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000002"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ERO_0100342 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100342">
@@ -3420,8 +3457,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100348">
         <rdfs:label>human study data analysis objective</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0100269"/>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">objective to analyze data about a population of human subjects in a human study</obo:IAO_0000115>
     </owl:Class>
     
@@ -3583,13 +3620,21 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000098">
         <rdfs:label xml:lang="en">data format specification</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <obo:IAO_0000115>The syntax by which data is specified which renders it valid for a given format.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">OBI branch derived</obo:IAO_0000119>
+        <obo:IAO_0000115>The syntax by which data is specified which renders it valid for a given format.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">OBI_0000187</obo:IAO_0000119>
         <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PlanAndPlannedProcess Branch</obo:IAO_0000117>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011">
+        <rdfs:label xml:lang="en">planned process</rdfs:label>
     </owl:Class>
     
 
@@ -5129,8 +5174,8 @@
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000498">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cls</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/data/SWO_3000041"/>
-        <obo:IAO_0000115>Categorical (e.g tumor vs normal) class file format</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.broadinstitute.org/cancer/software/gsea/wiki/index.php/Data_formats#CLS:_Categorical_.28e.g_tumor_vs_normal.29_class_file_format_.28.2A.cls.29</obo:IAO_0000119>
+        <obo:IAO_0000115>Categorical (e.g tumor vs normal) class file format</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
     </owl:Class>
     
@@ -5234,8 +5279,8 @@
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000548">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gct</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/data/SWO_3000041"/>
-        <obo:IAO_0000115>Gene Cluster Text file format </obo:IAO_0000115>
         <obo:IAO_0000119>http://www.broadinstitute.org/cancer/software/gsea/wiki/index.php/Data_formats#GCT:_Gene_Cluster_Text_file_format_.28.2A.gct.29</obo:IAO_0000119>
+        <obo:IAO_0000115>Gene Cluster Text file format </obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
     </owl:Class>
     
@@ -5774,6 +5819,16 @@
     
 
 
+    <!-- http://www.ebi.ac.uk/swo/SWO_0000002 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000002">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">software license</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.ebi.ac.uk/swo/SWO_0000008 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000008">
@@ -5887,8 +5942,8 @@
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/data/SWO_3000009">
         <rdfs:label>DWG</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/data/SWO_3000008"/>
-        <obo:IAO_0000119>http://en.wikipedia.org/wiki/.dwg</obo:IAO_0000119>
         <obo:IAO_0000115>DWG (&quot;drawing&quot;) is a binary file format used for storing two and three dimensional design data and metadata</obo:IAO_0000115>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/.dwg</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
     </owl:Class>
     
@@ -5899,8 +5954,8 @@
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/data/SWO_3000010">
         <rdfs:label>DXF</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/data/SWO_3000008"/>
-        <obo:IAO_0000119>http://en.wikipedia.org/wiki/AutoCAD_DXF</obo:IAO_0000119>
         <obo:IAO_0000115>DXF (Drawing Interchange Format, or Drawing Exchange Format) is a CAD data file format developed by Autodesk for enabling data interoperability between AutoCAD and other programs.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/AutoCAD_DXF</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
     </owl:Class>
     
@@ -5911,8 +5966,8 @@
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/data/SWO_3000011">
         <rdfs:label>BMP</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/data/SWO_3000020"/>
-        <obo:IAO_0000119>http://www.fileformat.info/format/bmp/egff.htm</obo:IAO_0000119>
         <obo:IAO_0000115>The BMP File Format is a Raster graphics image file format used to store bitmap digital images, independently of the display device (such as a graphics adapter).</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.fileformat.info/format/bmp/egff.htm</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
     </owl:Class>
     
@@ -5923,8 +5978,8 @@
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/data/SWO_3000012">
         <rdfs:label>CGM</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/data/SWO_3000020"/>
-        <obo:IAO_0000115>Computer Graphics Metafile (CGM) is a free and open international standard file format for 2D vector graphics, raster graphics, and text, and is defined by ISO/IEC 8632.</obo:IAO_0000115>
         <obo:IAO_0000119>http://en.wikipedia.org/wiki/Computer_Graphics_Metafile</obo:IAO_0000119>
+        <obo:IAO_0000115>Computer Graphics Metafile (CGM) is a free and open international standard file format for 2D vector graphics, raster graphics, and text, and is defined by ISO/IEC 8632.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
     </owl:Class>
     
@@ -5955,8 +6010,8 @@
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/data/SWO_3000015">
         <rdfs:label>pdf</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/data/SWO_3000014"/>
-        <obo:IAO_0000118>Portable Document Format</obo:IAO_0000118>
         <obo:IAO_0000115>PDF is an open standard for document exchange. </obo:IAO_0000115>
+        <obo:IAO_0000118>Portable Document Format</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
     </owl:Class>
     
@@ -5967,8 +6022,8 @@
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/data/SWO_3000016">
         <rdfs:label>TIFF</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/data/SWO_3000020"/>
-        <obo:IAO_0000118>Tagged Image File Format</obo:IAO_0000118>
         <obo:IAO_0000115>TIFF is a flexible, adaptable file format for handling images and data within a single file, by including the header tags (size, definition, image-data arrangement, applied image compression) defining the image&apos;s geometry.</obo:IAO_0000115>
+        <obo:IAO_0000118>Tagged Image File Format</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
     </owl:Class>
     
@@ -5979,8 +6034,8 @@
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/data/SWO_3000017">
         <rdfs:label>JPEG</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/data/SWO_3000020"/>
-        <obo:IAO_0000115>JPEG is a lossy file format for storing images</obo:IAO_0000115>
         <obo:IAO_0000118>JPG</obo:IAO_0000118>
+        <obo:IAO_0000115>JPEG is a lossy file format for storing images</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
     </owl:Class>
     
@@ -5991,8 +6046,8 @@
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/data/SWO_3000018">
         <rdfs:label>PNG</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/data/SWO_3000020"/>
-        <obo:IAO_0000118>Portable Network Graphics</obo:IAO_0000118>
         <obo:IAO_0000115>PNG is a bitmapped image format and video codec that employs lossless data compression.</obo:IAO_0000115>
+        <obo:IAO_0000118>Portable Network Graphics</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
     </owl:Class>
     
@@ -6070,8 +6125,8 @@
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/data/SWO_3000025">
         <rdfs:label>tex</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/data/SWO_3000014"/>
-        <obo:IAO_0000118>LaTeX format</obo:IAO_0000118>
         <obo:IAO_0000115>tex is a format for documents written in the document markup language and document preparation system LaTeX.</obo:IAO_0000115>
+        <obo:IAO_0000118>LaTeX format</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
     </owl:Class>
     
@@ -6104,8 +6159,8 @@
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/data/SWO_3000028">
         <rdfs:label>OPML</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/data/SWO_3000026"/>
-        <obo:IAO_0000115>OPML (Outline Processor Markup Language) is an XML format for outlines</obo:IAO_0000115>
         <obo:IAO_0000118>Outline Processor Markup Language</obo:IAO_0000118>
+        <obo:IAO_0000115>OPML (Outline Processor Markup Language) is an XML format for outlines</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
     </owl:Class>
     
@@ -6168,8 +6223,8 @@
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/data/SWO_3000034">
         <rdfs:label>.java file</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/data/SWO_3000033"/>
-        <obo:IAO_0000119>James Malone</obo:IAO_0000119>
         <obo:IAO_0000115>A source code file format which is specified to be used with the Java programming language.</obo:IAO_0000115>
+        <obo:IAO_0000119>James Malone</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
     </owl:Class>
     
@@ -6180,8 +6235,8 @@
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/data/SWO_3000035">
         <rdfs:label>.class file</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/data/SWO_3000033"/>
-        <obo:IAO_0000115>A format in which a .java file has been compiled into bytecode using a Java compiler and which is specified to be executed using the Java virtual machine.</obo:IAO_0000115>
         <obo:IAO_0000119>James Malone</obo:IAO_0000119>
+        <obo:IAO_0000115>A format in which a .java file has been compiled into bytecode using a Java compiler and which is specified to be executed using the Java virtual machine.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
     </owl:Class>
     
@@ -6192,8 +6247,8 @@
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/data/SWO_3000036">
         <rdfs:label>CopasiML</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/data/SWO_3000005"/>
-        <obo:IAO_0000118>.cps</obo:IAO_0000118>
         <obo:IAO_0000115>An XML-based file format for use with the COPASI software.</obo:IAO_0000115>
+        <obo:IAO_0000118>.cps</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
     </owl:Class>
     
@@ -6205,9 +6260,9 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SBML file</rdfs:label>
         <rdfs:label>SBML</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/data/SWO_3000005"/>
-        <obo:IAO_0000118>Systems Biology Markup Language</obo:IAO_0000118>
-        <obo:IAO_0000115>Systems Biology Markup Language (SBML) is a machine-readable format for representing models. It&apos;s oriented towards describing systems where biological entities are involved in, and modified by, processes that occur over time.</obo:IAO_0000115>
         <obo:IAO_0000119>http://sbml.org</obo:IAO_0000119>
+        <obo:IAO_0000115>Systems Biology Markup Language (SBML) is a machine-readable format for representing models. It&apos;s oriented towards describing systems where biological entities are involved in, and modified by, processes that occur over time.</obo:IAO_0000115>
+        <obo:IAO_0000118>Systems Biology Markup Language</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
     </owl:Class>
     
@@ -6304,9 +6359,9 @@
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/data/SWO_3000048">
         <rdfs:label xml:lang="en">PSI-MI format</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/data/SWO_3000005"/>
-        <obo:IAO_0000119>Modified from http://wiki.cytoscape.org/GettingStarted, accessed 20 June 2012.</obo:IAO_0000119>
-        <obo:IAO_0000115>The PSI-MI format is an acronym for the Proteomics Standards Initiative - Molecular Interaction format. It provides an XML standard for molecular interactions and is supported by many molecular interaction databases and tools.</obo:IAO_0000115>
         <obo:IAO_0000118>PSI-MIF</obo:IAO_0000118>
+        <obo:IAO_0000115>The PSI-MI format is an acronym for the Proteomics Standards Initiative - Molecular Interaction format. It provides an XML standard for molecular interactions and is supported by many molecular interaction databases and tools.</obo:IAO_0000115>
+        <obo:IAO_0000119>Modified from http://wiki.cytoscape.org/GettingStarted, accessed 20 June 2012.</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
     </owl:Class>
     
@@ -6317,8 +6372,8 @@
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/data/SWO_3000049">
         <rdfs:label xml:lang="en">SIF</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/data/SWO_3000041"/>
-        <obo:IAO_0000119>http://wiki.cytoscape.org/GettingStarted and http://wiki.cytoscape.org/Cytoscape_User_Manual/Network_Formats, accessed 20 June 2012</obo:IAO_0000119>
         <obo:IAO_0000115>SIF stands for Simple Interaction Format, and is a text format invented for Cytoscape. If the file contains any tab characters, then tabs are used to delimit the fields and spaces are considered part of the name. If the file contains no tabs, then any spaces are delimiters that separate names (and names cannot contain spaces). </obo:IAO_0000115>
+        <obo:IAO_0000119>http://wiki.cytoscape.org/GettingStarted and http://wiki.cytoscape.org/Cytoscape_User_Manual/Network_Formats, accessed 20 June 2012</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
     </owl:Class>
     
@@ -6329,8 +6384,8 @@
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/data/SWO_3000050">
         <rdfs:label xml:lang="en">GML</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/data/SWO_3000005"/>
-        <obo:IAO_0000115>GML stands for Graph Markup Language, and is a standard network file format; supported by multiple generic network software packages </obo:IAO_0000115>
         <obo:IAO_0000119>http://wiki.cytoscape.org/GettingStarted, accessed 20 June 2012</obo:IAO_0000119>
+        <obo:IAO_0000115>GML stands for Graph Markup Language, and is a standard network file format; supported by multiple generic network software packages </obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
     </owl:Class>
     
@@ -6368,6 +6423,179 @@
     
 
 
+    <!-- http://www.ebi.ac.uk/swo/license/SWO_1000001 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/license/SWO_1000001">
+        <rdfs:label>Creative Commons</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000002"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/license/SWO_1000002 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/license/SWO_1000002">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Proprietary commercial software license</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000002"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/license/SWO_1000003 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/license/SWO_1000003">
+        <rdfs:label>Mozilla Public License Version 1.1</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000002"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/license/SWO_1000004 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/license/SWO_1000004">
+        <rdfs:label>GNU General Public License</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000002"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/license/SWO_1000005 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/license/SWO_1000005">
+        <rdfs:label>Apache license v2</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000002"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/license/SWO_1000006 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/license/SWO_1000006">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Academic License version 3</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0100340"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/license/SWO_1000007 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/license/SWO_1000007">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FreeBSD License</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000002"/>
+        <rdfs:comment>2 clause BSD License</rdfs:comment>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/license/SWO_1000008 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/license/SWO_1000008">
+        <rdfs:label>Open source software license</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000002"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/license/SWO_1000009 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/license/SWO_1000009">
+        <rdfs:label>License without restrictions on derivatives</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000002"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/license/SWO_9000074 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/license/SWO_9000074">
+        <rdfs:label>MIT License</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000002"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/license/SWO_9000080 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/license/SWO_9000080">
+        <rdfs:label>Lesser GNU Public License</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000002"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/license/SWO_9000082 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/license/SWO_9000082">
+        <rdfs:label>The Artistic License 1.0</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000002"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/license/SWO_9000084 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/license/SWO_9000084">
+        <rdfs:label>Eclipse Public License</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000002"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/license/SWO_9000085 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/license/SWO_9000085">
+        <rdfs:label>Modified BSD License</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000002"/>
+        <rdfs:comment>3 clause BSD License</rdfs:comment>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/license/SWO_9000086 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/license/SWO_9000086">
+        <rdfs:label>Latex Project Public License</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000002"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/license/SWO_9000087 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/license/SWO_9000087">
+        <rdfs:label>Open Public License</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000002"/>
+        <obo:IAO_0000119>http://wyatterp.com/opl.html</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/license/SWO_9000088 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/license/SWO_9000088">
+        <rdfs:label>Mozilla Public License</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000002"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.ebi.ac.uk/swo/obective/SWO_400013 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/obective/SWO_400013">
@@ -6378,5 +6606,5 @@
 
 
 
-<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.4.2018) http://owlapi.sourceforge.net -->
 

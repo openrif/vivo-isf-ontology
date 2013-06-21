@@ -103,6 +103,93 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000017">
+        <rdfs:label xml:lang="en">regulatory role</rdfs:label>
+        <obo:IAO_0000117 xml:lang="en">GROUP:  Role branch</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">OBI, CDISC</obo:IAO_0000119>
+        <obo:IAO_0000112 xml:lang="en">Regulatory agency, Ethics committee, Approval letter; example:  Browse these EPA Regulatory Role subtopics  http://www.epa.gov/ebtpages/enviregulatoryrole.html  Feb 29, 2008</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">a role which inheres in material entities and is realized in the processes of making, enforcing or being defined by legislation or orders issued by a governmental body.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">regulatory role</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000086 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000086">
+        <rdfs:label xml:lang="en">reagent role</rdfs:label>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reagent</obo:IAO_0000118>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reagent role</obo:IAO_0000111>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">www.answers.com/topic/reagent; November 2008</obo:IAO_0000119>
+        <obo:IAO_0000112 xml:lang="en">Buffer, dye, a catalyst, a solvating agent.</obo:IAO_0000112>
+        <obo:IAO_0000117 xml:lang="en">GROUP:  Role Branch</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">a role played by a molecular entity used to produce a chemical reaction to detect, measure, or produce other substances</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000457 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000457">
+        <rdfs:label xml:lang="en">manufacturing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000571 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000571">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">manufacturer role</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000300"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000457"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000052"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+                            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GROUP:  Role Branch</obo:IAO_0000117>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Manufacturer role is a role which inheres in a person or organization and which is realized by a manufacturing process.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI</obo:IAO_0000119>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">With respect to The Accuri C6 Flow Cytometer System, the organization Accuri bears the role manufacturer role.  With respect to a transformed line of tissue culture cells derived by a specific lab, the lab whose personnel isolated the cll line bears the role manufacturer role.  With respect to a specific antibody produced by an individual scientist, the scientist who purifies, characterizes and distributes the anitbody bears the role manufacturer role.</obo:IAO_0000112>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">manufacturer role</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_1110082 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_1110082">
+        <rdfs:label xml:lang="en">immunogen role</rdfs:label>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">immunogen role</obo:IAO_0000111>
+        <obo:IAO_0000119 xml:lang="en">IEDB</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">IEDB</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">any entity capable of eliciting an immune response when introduced to components of the immune system</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Class>
+    
+
+
     <!-- http://xmlns.com/foaf/0.1/Organization -->
 
     <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization">
@@ -139,5 +226,5 @@
 
 
 
-<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.4.2018) http://owlapi.sourceforge.net -->
 
