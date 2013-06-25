@@ -117,23 +117,6 @@ Annotations: IAO_0000424 &quot;http://purl.obolibrary.org/obo/BFO_0000051 some (
         <obo:IAO_0000112 xml:lang="en">part_of antisymmetric property xsd:true</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">use boolean value xsd:true to indicate that the property is an antisymmetric property</obo:IAO_0000115>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000426">
-        <rdfs:label xml:lang="en">first order logic expression</rdfs:label>
-        <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000111 xml:lang="en">first order logic expression</obo:IAO_0000111>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000589">
-        <rdfs:label xml:lang="en">OBO foundry unique label</rdfs:label>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The intended usage of that property is as follow: OBO foundry unique labels are automatically generated based on regular expressions provided by each ontology, so that SO could specify unique label = &apos;sequence &apos; + [label], etc. , MA could specify &apos;mouse + [label]&apos; etc. Upon importing terms, ontology developers can choose to use the &apos;OBO foundry unique label&apos; for an imported term or not. The same applies to tools .</obo:IAO_0000116>
-        <obo:IAO_0000115 xml:lang="en">An alternative name for a class or property which is unique across the OBO Foundry.</obo:IAO_0000115>
-        <obo:IAO_0000119 xml:lang="en">GROUP:OBO Foundry &lt;http://obofoundry.org/&gt;</obo:IAO_0000119>
-        <obo:IAO_0000111 xml:lang="en">OBO foundry unique label</obo:IAO_0000111>
-        <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">PERSON:Bjoern Peters</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">PERSON:Chris Mungall</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
-    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition editor</rdfs:label>
         <rdfs:label xml:lang="en">definition editor</rdfs:label>
@@ -147,22 +130,22 @@ Annotations: IAO_0000424 &quot;http://purl.obolibrary.org/obo/BFO_0000051 some (
         <obo:IAO_0000111 xml:lang="en">term editor</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000425">
-        <rdfs:label xml:lang="en">expand assertion to</rdfs:label>
-        <obo:IAO_0000115 xml:lang="en">A macro expansion tag applied to an annotation property which can be expanded into a more detailed axiom.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Chris Mungall</obo:IAO_0000117>
-        <obo:IAO_0000112 xml:lang="en">ObjectProperty: RO???
-Label: spatially disjoint from
-Annotations: expand_assertion_to &quot;DisjointClasses: (http://purl.obolibrary.org/obo/BFO_0000051 some ?X)  (http://purl.obolibrary.org/obo/BFO_0000051 some ?Y)&quot;
-</obo:IAO_0000112>
-        <obo:IAO_0000111 xml:lang="en">expand assertion to</obo:IAO_0000111>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000231">
-        <rdfs:label xml:lang="en">has obsolescence reason</rdfs:label>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000589">
+        <rdfs:label xml:lang="en">OBO foundry unique label</rdfs:label>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The intended usage of that property is as follow: OBO foundry unique labels are automatically generated based on regular expressions provided by each ontology, so that SO could specify unique label = &apos;sequence &apos; + [label], etc. , MA could specify &apos;mouse + [label]&apos; etc. Upon importing terms, ontology developers can choose to use the &apos;OBO foundry unique label&apos; for an imported term or not. The same applies to tools .</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">An alternative name for a class or property which is unique across the OBO Foundry.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBO Foundry &lt;http://obofoundry.org/&gt;</obo:IAO_0000119>
+        <obo:IAO_0000111 xml:lang="en">OBO foundry unique label</obo:IAO_0000111>
         <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Chris Mungall</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
-        <obo:IAO_0000115 xml:lang="en">Relates an annotation property to an obsolescence reason. The values of obsolescence reasons come from a list of predefined terms, instances of the class obsolescence reason specification.</obo:IAO_0000115>
-        <obo:IAO_0000111 xml:lang="en">has obsolescence reason</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000426">
+        <rdfs:label xml:lang="en">first order logic expression</rdfs:label>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">first order logic expression</obo:IAO_0000111>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alternative term</rdfs:label>
@@ -173,6 +156,23 @@ Annotations: expand_assertion_to &quot;DisjointClasses: (http://purl.obolibrary.
         <obo:IAO_0000111 xml:lang="en">alternative term</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
     </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000231">
+        <rdfs:label xml:lang="en">has obsolescence reason</rdfs:label>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">Relates an annotation property to an obsolescence reason. The values of obsolescence reasons come from a list of predefined terms, instances of the class obsolescence reason specification.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">has obsolescence reason</obo:IAO_0000111>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000425">
+        <rdfs:label xml:lang="en">expand assertion to</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A macro expansion tag applied to an annotation property which can be expanded into a more detailed axiom.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Chris Mungall</obo:IAO_0000117>
+        <obo:IAO_0000112 xml:lang="en">ObjectProperty: RO???
+Label: spatially disjoint from
+Annotations: expand_assertion_to &quot;DisjointClasses: (http://purl.obolibrary.org/obo/BFO_0000051 some ?X)  (http://purl.obolibrary.org/obo/BFO_0000051 some ?Y)&quot;
+</obo:IAO_0000112>
+        <obo:IAO_0000111 xml:lang="en">expand assertion to</obo:IAO_0000111>
+    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
         <rdfs:label xml:lang="en">editor preferred label</rdfs:label>
         <rdfs:label xml:lang="en">editor preferred term</rdfs:label>
@@ -182,6 +182,8 @@ Annotations: expand_assertion_to &quot;DisjointClasses: (http://purl.obolibrary.
         <obo:IAO_0000111 xml:lang="en">editor preferred term</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
     </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.org/net/OCRe/statistics.owl#curator"/>
+    <owl:AnnotationProperty rdf:about="http://eagle-i.org/ont/app/1.0/preferredLabel"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
         <rdfs:label xml:lang="en">example of usage</rdfs:label>
         <obo:IAO_0000115 xml:lang="en">A phrase describing how a class name should be used. May also include other kinds of examples that facilitate immediate understanding of a class semantics, such as widely known prototypical subclasses or instances of the class. Although essential for high level terms, examples for low level terms (e.g., Affymetrix HU133 array) are not</obo:IAO_0000115>
@@ -190,8 +192,6 @@ Annotations: expand_assertion_to &quot;DisjointClasses: (http://purl.obolibrary.
         <obo:IAO_0000111 xml:lang="en">example</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://eagle-i.org/ont/app/1.0/preferredLabel"/>
-    <owl:AnnotationProperty rdf:about="http://purl.org/net/OCRe/statistics.owl#curator"/>
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator">
         <rdfs:label xml:lang="en-us">Creator</rdfs:label>
     </owl:AnnotationProperty>
@@ -791,19 +791,6 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
         <owl:distinctMembers rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000120"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000121"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000122"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000123"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000124"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000125"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000423"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000428"/>
-        </owl:distinctMembers>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
-        <owl:distinctMembers rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000226"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000227"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000228"/>
@@ -814,6 +801,19 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
         <owl:distinctMembers rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000224"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000120"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000121"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000122"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000123"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000124"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000125"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000423"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000428"/>
         </owl:distinctMembers>
     </rdf:Description>
 </rdf:RDF>

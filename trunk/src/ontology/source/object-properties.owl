@@ -25,223 +25,53 @@
      -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2008/05/skos#editorialNote"/>
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0003001">
-        <rdfs:label xml:lang="en">produced_by</rdfs:label>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Melissa Haendel</obo:IAO_0000117>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
-        <rdfs:domain rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
-    </owl:ObjectProperty>
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0003000">
-        <rdfs:label xml:lang="en">produces</rdfs:label>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Melissa Haendel</obo:IAO_0000117>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a produces b if some process that occurs_in a has_output b, where a and b are material entities. Examples: hybridoma cell line produces monoclonal antibody reagent; chondroblast produces avascular GAG-rich matrix.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
-        <rdfs:domain rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
-    </owl:ObjectProperty>
     <owl:AnnotationProperty rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#descriptionAnnot"/>
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001530">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">antibody_produced_by</rdfs:label>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An anti-OX40 antibody is produced by a hybridoma.</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hybridoma cell line used to produce the antibody.</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000119>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000117>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">antibody produced by</obo:IAO_0000111>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0000229"/>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-    </owl:ObjectProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
         <rdfs:label xml:lang="en">definition</rdfs:label>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://aims.fao.org/aos/geopolitical.owl#sourceCreator"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">comment</rdfs:label>
     </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://aims.fao.org/aos/geopolitical.owl#sourceCreator"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114">
         <rdfs:label xml:lang="en">has curation status</rdfs:label>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition source</rdfs:label>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000232">
         <rdfs:label xml:lang="en">curator note</rdfs:label>
     </owl:AnnotationProperty>
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001521">
-        <rdfs:label>human_study_performed_by</rdfs:label>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jackson State University performs human studies on heart disease.</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organization that performs the human study.</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000119>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000117>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">human study performed by</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-    </owl:ObjectProperty>
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000917">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0000619"/>
-    </owl:ObjectProperty>
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000299">
-        <rdfs:label xml:lang="en">has_specified_output</rdfs:label>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Bjoern Peters</obo:IAO_0000117>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Larry Hunter</obo:IAO_0000117>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melanie Courtot</obo:IAO_0000117>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_specified_output</obo:IAO_0000111>
-        <obo:IAO_0000115 xml:lang="en">A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
-    </owl:ObjectProperty>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition source</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition editor</rdfs:label>
-    </rdf:Description>
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alternative term</rdfs:label>
-    </rdf:Description>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
     <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000741">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is_encoded_in</rdfs:label>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ero.owl#genid151"/>
     </owl:AnnotationProperty>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
         <rdfs:label xml:lang="en">editor preferred label</rdfs:label>
-    </rdf:Description>
+    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
         <rdfs:label xml:lang="en">example of usage</rdfs:label>
     </owl:AnnotationProperty>
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000316">
-        <rdfs:label xml:lang="en">has_role</rdfs:label>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relation between a continuant C and a role R. The reciprocal relation of role_of.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GROUP:OBI:&lt;http://obi.sourceforge.net&gt;</obo:IAO_0000117>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Chris Mungal</obo:IAO_0000117>
-        <obo:IAO_0000111 xml:lang="en">has_role</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <rdfs:domain rdf:resource="http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant"/>
-    </owl:ObjectProperty>
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000552">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">recognizes_species</rdfs:label>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An mouse anti-human OX40 antibody recognizes the human OX40 protein.</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organism recognized by the antibody.</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000119>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000117>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">recognizes species</obo:IAO_0000111>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0001536"/>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-    </owl:ObjectProperty>
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000052">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inheres in</rdfs:label>
-        <rdfs:label>inheres in</rdfs:label>
-        <rdfs:label>inheres in (BFO/RO)</rdfs:label>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This clarifies that only specifically dependent continuants inhere in (specifically) one independent continuant over all time. For GDCs, there in implicitly inherence to all the independent continuants in which the concretizations inhere. Should add a &apos;cardinality 1&apos; restriction to the definition of specifically dependent continuant.</obo:IAO_0000116>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This relation belongs in BFO/RO, and will be in BFO 2</obo:IAO_0000116>
-        <rdfs:domain rdf:resource="http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant"/>
-    </owl:ObjectProperty>
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000557">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_immunogenic_material</rdfs:label>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000117>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000119>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Purified OX40 protein.</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The material used to generate an immune response to produce an antibody. For example, a tissue, a protein, or a virus. </obo:IAO_0000115>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-    </owl:ObjectProperty>
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001548">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">species_non_reactivity</rdfs:label>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000119>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000117>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Species in which the antibody has been shown not to cross react.</obo:IAO_0000115>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0001536"/>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-    </owl:ObjectProperty>
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000833">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">objective_achieved_by</rdfs:label>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This relation obtains between a a objective specification and a planned process when the criteria specified in the objective specification are met at the end of the planned process.</obo:IAO_0000115>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition needs clean up to indicate directionality</obo:IAO_0000116>
-    </owl:ObjectProperty>
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000078">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">achieves_objective</rdfs:label>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ImageJ software measures characteristics of digital images.</obo:IAO_0000112>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Carlo Torniai</obo:IAO_0000117>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000119>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transformation objective of the software.</obo:IAO_0000115>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">achieves objective</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-    </owl:ObjectProperty>
     <owl:AnnotationProperty rdf:about="http://aims.fao.org/aos/geopolitical.owl#sourceModified"/>
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000569">
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000569">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000013"/>
-    </owl:ObjectProperty>
+    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://aims.fao.org/aos/geopolitical.owl#sourceIdentifier"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
         <rdfs:label xml:lang="en">imported from</rdfs:label>
     </owl:AnnotationProperty>
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001908">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">objective_achieved_by_operation</rdfs:label>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Links an objective to a software operation whise execution achieves the objective. Is different from OBI:objective_achieved_by which links an objective to the process that achieves it.</rdfs:comment>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a relation between a software objective (data transformation objective) and an operation whose execution in a software tool achieves the objective</obo:IAO_0000115>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">software relation expanding to something like: 
-
-objective_achieved_by some (&apos;software/algorithm execution&apos; and (specified_by some &apos;data processing operation&apos;))</obo:IAO_0000116>
-    </owl:ObjectProperty>
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000300">
-        <rdfs:label xml:lang="en">is_realized_by</rdfs:label>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GROUP:OBI:&lt;http://obi.sourceforge.net&gt;</obo:IAO_0000117>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Chris Mungall</obo:IAO_0000117>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relation between a realizable and a process. Reciprocal relation of realizes [GOC:cjm]</obo:IAO_0000115>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">executed_during</obo:IAO_0000118>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_realization</obo:IAO_0000118>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is_realized_as</obo:IAO_0000118>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <rdfs:domain rdf:resource="http://www.ifomis.org/bfo/1.1/snap#RealizableEntity"/>
-    </owl:ObjectProperty>
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001826">
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001826">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_mammalian_phenotype</rdfs:label>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0001838"/>
-    </owl:ObjectProperty>
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001518">
-        <rdfs:label>has_phase</rdfs:label>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000117>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000119>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phase 1 clinical trial.</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phase of a clinical trial to evaluate risk and to clinically evaluate the efficacy of drugs or biologicals.</obo:IAO_0000115>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has phase</obo:IAO_0000111>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0000016"/>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-    </owl:ObjectProperty>
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000306">
-        <rdfs:label xml:lang="en">has_function</rdfs:label>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GROUP:OBI:&lt;http://obi.sourceforge.net&gt;</obo:IAO_0000117>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Chris Mungall</obo:IAO_0000117>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relation between an independent continuant and a function.</obo:IAO_0000115>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_function</obo:IAO_0000111>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heart has_function to-pump-blood</obo:IAO_0000112>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <rdfs:domain rdf:resource="http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant"/>
-    </owl:ObjectProperty>
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001825">
-        <rdfs:label xml:lang="en">has_phenotype_anatomical_entity</rdfs:label>
-    </owl:ObjectProperty>
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000308">
-        <rdfs:label xml:lang="en">realizes</rdfs:label>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GROUP:OBI:&lt;http://obi.sourceforge.net&gt;</obo:IAO_0000117>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Chris Mungal</obo:IAO_0000117>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relation between a process and a function, where the unfolding of the 
-process requires the execution of the function. Class level: P realizes F iff: 
-given any p that instantiates P, there exists some f, t such that f instantiates
- F at t and p *realizes* f. Here, *realizes* is the primitive 
-instance level relation [GOC:cjm]</obo:IAO_0000115>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">example of usage: The process of &apos;histidine catabolism&apos; (GO:0006548) realizes the 
-function &apos;histidine ammonia lyase activity&apos; (GO:0004397) (note: here &apos;activity&apos; 
-denotes a function and not a process). We leave open the possibility of defining 
-in future the sub-relations directly_realizes (as bewteen a function and it&apos;s 
-functioning) and indirectly_realizes.</obo:IAO_0000112>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">executes</obo:IAO_0000118>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_function_part</obo:IAO_0000118>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">involves_execution_of</obo:IAO_0000118>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is_realization_of</obo:IAO_0000118>
-        <obo:IAO_0000111 xml:lang="en">realizes</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <rdfs:domain rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
-    </owl:ObjectProperty>
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001823">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_phenotype_biological_process</rdfs:label>
-    </owl:ObjectProperty>
+    </owl:AnnotationProperty>
     
 
 
@@ -357,6 +187,7 @@ functioning) and indirectly_realizes.</obo:IAO_0000112>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This relation belongs in BFO/RO, and will be in BFO 2</obo:IAO_0000116>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000053"/>
         <rdfs:range rdf:resource="http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant"/>
+        <rdfs:domain rdf:resource="http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant"/>
     </owl:ObjectProperty>
     
 
@@ -759,15 +590,6 @@ functioning) and indirectly_realizes.</obo:IAO_0000112>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has topic</obo:IAO_0000111>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">here we need to take care of dofferent domain and is this really the same relation between research project and protocol?</rdfs:comment>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0008150"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0100026"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_1110055"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -778,6 +600,15 @@ functioning) and indirectly_realizes.</obo:IAO_0000112>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0008150"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0100026"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_1110055"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -1002,6 +833,7 @@ functioning) and indirectly_realizes.</obo:IAO_0000112>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000117>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">recognizes species</obo:IAO_0000111>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0001536"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
     </owl:ObjectProperty>
@@ -1176,23 +1008,18 @@ functioning) and indirectly_realizes.</obo:IAO_0000112>
     <!-- http://purl.obolibrary.org/obo/ERO_0000917 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000917">
-        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000916"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
-    </owl:ObjectProperty>
-    
-    <!-- http://purl.obolibrary.org/obo/ERO_0000917 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000917">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">related_virus</rdfs:label>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GFP superntants are produced by the pWPI-GFP construct.</obo:IAO_0000112>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000117>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Virus produced by viral plasmid.</obo:IAO_0000115>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">related virus</obo:IAO_0000111>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0000619"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000916"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
     </owl:ObjectProperty>
     
-
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0000918 -->
@@ -1435,6 +1262,7 @@ functioning) and indirectly_realizes.</obo:IAO_0000112>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phase 1 clinical trial.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phase of a clinical trial to evaluate risk and to clinically evaluate the efficacy of drugs or biologicals.</obo:IAO_0000115>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has phase</obo:IAO_0000111>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0000016"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <rdfs:range rdf:resource="http://purl.org/net/OCRe/study_design.owl#OCRE100038"/>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
@@ -1511,6 +1339,7 @@ functioning) and indirectly_realizes.</obo:IAO_0000112>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000117>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">antibody produced by</obo:IAO_0000111>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0000229"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ERO_0001440"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0003001"/>
@@ -1557,6 +1386,7 @@ functioning) and indirectly_realizes.</obo:IAO_0000112>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000117>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Species in which the antibody has been shown not to cross react.</obo:IAO_0000115>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0001536"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
     </owl:ObjectProperty>
@@ -1779,6 +1609,7 @@ objective_achieved_by some (&apos;software/algorithm execution&apos; and (specif
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_realization</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is_realized_as</obo:IAO_0000118>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <rdfs:domain rdf:resource="http://www.ifomis.org/bfo/1.1/snap#RealizableEntity"/>
         <rdfs:range rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
     </owl:ObjectProperty>
     
@@ -1820,6 +1651,7 @@ objective_achieved_by some (&apos;software/algorithm execution&apos; and (specif
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000053"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <rdfs:range rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Function"/>
+        <rdfs:domain rdf:resource="http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant"/>
     </owl:ObjectProperty>
     
 
@@ -1848,6 +1680,7 @@ functioning) and indirectly_realizes.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000300"/>
         <rdfs:range rdf:resource="http://www.ifomis.org/bfo/1.1/snap#RealizableEntity"/>
+        <rdfs:domain rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
     </owl:ObjectProperty>
     
 
@@ -1876,6 +1709,7 @@ functioning) and indirectly_realizes.</obo:IAO_0000112>
         <obo:IAO_0000111 xml:lang="en">has_role</obo:IAO_0000111>
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000053"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <rdfs:domain rdf:resource="http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant"/>
         <rdfs:range rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
     </owl:ObjectProperty>
     
@@ -2020,6 +1854,7 @@ functioning) and indirectly_realizes.</obo:IAO_0000112>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Melissa Haendel</obo:IAO_0000117>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a produces b if some process that occurs_in a has_output b, where a and b are material entities. Examples: hybridoma cell line produces monoclonal antibody reagent; chondroblast produces avascular GAG-rich matrix.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
+        <rdfs:domain rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
         <rdfs:range rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
     </owl:ObjectProperty>
     
@@ -2031,8 +1866,8 @@ functioning) and indirectly_realizes.</obo:IAO_0000112>
         <rdfs:label xml:lang="en">produced_by</rdfs:label>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Melissa Haendel</obo:IAO_0000117>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0003000"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
         <rdfs:range rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
+        <rdfs:domain rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
     </owl:ObjectProperty>
     
 
@@ -2743,15 +2578,21 @@ functioning) and indirectly_realizes.</obo:IAO_0000112>
 
     <!-- http://purl.obolibrary.org/obo/ERO_0000014 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000014">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000014">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">research project</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0000015 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000015"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000016"/>
     
 
 
@@ -2785,11 +2626,19 @@ functioning) and indirectly_realizes.</obo:IAO_0000112>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ERO_0000229 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000229">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">monoclonal antibody reagent</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ERO_0000285 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000285">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000285">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">construct</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -2807,17 +2656,17 @@ functioning) and indirectly_realizes.</obo:IAO_0000112>
 
     <!-- http://purl.obolibrary.org/obo/ERO_0000619 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000619">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000619">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">viral plasmid</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0000630 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000630">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000630">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nucleic acid reagent</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -2829,73 +2678,81 @@ functioning) and indirectly_realizes.</obo:IAO_0000112>
 
     <!-- http://purl.obolibrary.org/obo/ERO_0000985 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000985">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000985">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non viral organism</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0001194 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001194">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001194">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reagent library</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0001200 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001200">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001200">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gene knockdown reagent</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0001440 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001440">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001440">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hybridoma cell line</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0001523 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001523">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001523">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">immunotechnique</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0001532 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001532">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001532">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">material antibody target</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001536 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001536">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological target</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0001551 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001551">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001551">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">immunogenic material</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0001554 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001554">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001554">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">data</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0001707 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001707">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001707">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biospecimen preparation</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -2937,9 +2794,9 @@ functioning) and indirectly_realizes.</obo:IAO_0000112>
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000005 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000005">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000005">
         <rdfs:label xml:lang="en">objective specification</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -2957,9 +2814,9 @@ functioning) and indirectly_realizes.</obo:IAO_0000112>
 
     <!-- http://purl.obolibrary.org/obo/MP_0000001 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MP_0000001">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MP_0000001">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mammalian phenotype</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -2971,9 +2828,9 @@ functioning) and indirectly_realizes.</obo:IAO_0000112>
 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_9606 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Homo sapiens</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -3009,25 +2866,25 @@ functioning) and indirectly_realizes.</obo:IAO_0000112>
 
     <!-- http://purl.obolibrary.org/obo/OBI_0400147 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0400147">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400147">
         <rdfs:label xml:lang="en">microarray</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_1110055 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_1110055">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_1110055">
         <rdfs:label xml:lang="en">disease</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000001 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0000001">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000001">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO quality</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -3039,9 +2896,9 @@ functioning) and indirectly_realizes.</obo:IAO_0000112>
 
     <!-- http://purl.obolibrary.org/obo/UBERON_0001062 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0001062">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001062">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anatomical entity</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -3055,17 +2912,17 @@ functioning) and indirectly_realizes.</obo:IAO_0000112>
 
     <!-- http://purl.org/net/OCRe/study_design.owl#OCRE100038 -->
 
-    <rdf:Description rdf:about="http://purl.org/net/OCRe/study_design.owl#OCRE100038">
+    <owl:Class rdf:about="http://purl.org/net/OCRe/study_design.owl#OCRE100038">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phase</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.org/ontology/bibo/Document -->
 
-    <rdf:Description rdf:about="http://purl.org/ontology/bibo/Document">
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Document">
         <rdfs:label>document (IAO)</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -3079,33 +2936,33 @@ functioning) and indirectly_realizes.</obo:IAO_0000112>
 
     <!-- http://vivoweb.org/ontology/core#Association -->
 
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#Association">
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Association">
         <rdfs:label xml:lang="en">Association</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://vivoweb.org/ontology/core#Center -->
 
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#Center">
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Center">
         <rdfs:label xml:lang="en-us">Center</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://vivoweb.org/ontology/core#Consortium -->
 
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#Consortium">
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Consortium">
         <rdfs:label xml:lang="en">Consortium</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://vivoweb.org/ontology/core#CoreLaboratory -->
 
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#CoreLaboratory">
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#CoreLaboratory">
         <rdfs:label xml:lang="en-us">Core Laboratory</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -3135,9 +2992,9 @@ functioning) and indirectly_realizes.</obo:IAO_0000112>
 
     <!-- http://vivoweb.org/ontology/core#Foundation -->
 
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#Foundation">
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Foundation">
         <rdfs:label xml:lang="en-us">Foundation</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -3175,25 +3032,25 @@ functioning) and indirectly_realizes.</obo:IAO_0000112>
 
     <!-- http://vivoweb.org/ontology/core#Institute -->
 
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#Institute">
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Institute">
         <rdfs:label xml:lang="en-us">Institute</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://vivoweb.org/ontology/core#Laboratory -->
 
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#Laboratory">
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Laboratory">
         <rdfs:label xml:lang="en-us">Laboratory</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://vivoweb.org/ontology/core#Library -->
 
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#Library">
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Library">
         <rdfs:label xml:lang="en">Library</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -3205,49 +3062,57 @@ functioning) and indirectly_realizes.</obo:IAO_0000112>
 
     <!-- http://www.ifomis.org/bfo/1.1/snap#Function -->
 
-    <rdf:Description rdf:about="http://www.ifomis.org/bfo/1.1/snap#Function">
+    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#Function">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">function</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant -->
 
-    <rdf:Description rdf:about="http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant">
+    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">independent_continuant</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.ifomis.org/bfo/1.1/snap#MaterialEntity -->
 
-    <rdf:Description rdf:about="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity">
+    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">material_entity</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.ifomis.org/bfo/1.1/snap#RealizableEntity -->
 
-    <rdf:Description rdf:about="http://www.ifomis.org/bfo/1.1/snap#RealizableEntity">
+    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#RealizableEntity">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">realizable_entity</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://www.ifomis.org/bfo/1.1/snap#Role -->
 
-    <rdf:Description rdf:about="http://www.ifomis.org/bfo/1.1/snap#Role">
+    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#Role">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">role</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant -->
+
+    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">specifically_dependent_continuant</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://www.ifomis.org/bfo/1.1/span#ProcessualEntity -->
 
-    <rdf:Description rdf:about="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity">
+    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">processual_entity</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -3268,26 +3133,6 @@ functioning) and indirectly_realizes.</obo:IAO_0000112>
     <!-- http://xmlns.com/foaf/0.1/Person -->
 
     <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description rdf:about="http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">specifically_dependent_continuant</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001536">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological target</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000229">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">monoclonal antibody reagent</rdfs:label>
-    </rdf:Description>
 </rdf:RDF>
 
 
