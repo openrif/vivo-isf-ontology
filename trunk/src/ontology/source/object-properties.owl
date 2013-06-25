@@ -32,21 +32,21 @@
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000117>
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     </owl:ObjectProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0003001">
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0003001">
         <rdfs:label xml:lang="en">produced_by</rdfs:label>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Melissa Haendel</obo:IAO_0000117>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
         <rdfs:domain rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0003000">
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0003000">
         <rdfs:label xml:lang="en">produces</rdfs:label>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Melissa Haendel</obo:IAO_0000117>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a produces b if some process that occurs_in a has_output b, where a and b are material entities. Examples: hybridoma cell line produces monoclonal antibody reagent; chondroblast produces avascular GAG-rich matrix.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
         <rdfs:domain rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
-    </owl:AnnotationProperty>
+    </owl:ObjectProperty>
     <owl:AnnotationProperty rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#descriptionAnnot"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001530">
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001530">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">antibody_produced_by</rdfs:label>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An anti-OX40 antibody is produced by a hybridoma.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hybridoma cell line used to produce the antibody.</obo:IAO_0000115>
@@ -55,8 +55,8 @@
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">antibody produced by</obo:IAO_0000111>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0000229"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000417">
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000417">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">achieves_planned_objective</rdfs:label>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cell sorting process achieves the objective specification &apos;material separation objective&apos;</obo:IAO_0000112>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BP, AR, PPPB branch</obo:IAO_0000117>
@@ -64,11 +64,11 @@
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This relation obtains between a planned process and a objective specification when the criteria specified in the objective specification are met at the end of the planned process.</obo:IAO_0000115>
         <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">modified according to email thread from 1/23/09 in accordince with DT and PPPB branch</obo:IAO_0000232>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-    </owl:AnnotationProperty>
+    </owl:ObjectProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
         <rdfs:label xml:lang="en">definition</rdfs:label>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000293">
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000293">
         <rdfs:label xml:lang="en">has_specified_input</rdfs:label>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8/17/09: specified inputs of one process are not necessarily specified inputs of a larger process that it is part of. This is in contrast to how &apos;has participant&apos; works.</obo:IAO_0000116>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Bjoern Peters</obo:IAO_0000117>
@@ -79,12 +79,12 @@
         <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000112 xml:lang="en">see is_input_of example_of_usage</obo:IAO_0000112>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-    </owl:AnnotationProperty>
+    </owl:ObjectProperty>
     <owl:AnnotationProperty rdf:about="http://aims.fao.org/aos/geopolitical.owl#sourceCreator"/>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">comment</rdfs:label>
     </rdf:Description>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000775">
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000775">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_residency_requirement</rdfs:label>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A research opportunity requires applicants to be US citizens.</obo:IAO_0000112>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000117>
@@ -93,7 +93,7 @@
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has residency requirement</obo:IAO_0000111>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0000595"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-    </owl:AnnotationProperty>
+    </owl:ObjectProperty>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000114">
         <rdfs:label xml:lang="en">has curation status</rdfs:label>
     </rdf:Description>
