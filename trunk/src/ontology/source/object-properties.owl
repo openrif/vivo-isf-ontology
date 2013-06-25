@@ -24,14 +24,14 @@
      -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2008/05/skos#editorialNote"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001598">
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001598">
         <rdfs:label xml:lang="en">author_of</rdfs:label>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A journal article authored by the person.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Document authored by a person.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000117>
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    </owl:AnnotationProperty>
+    </owl:ObjectProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0003001">
         <rdfs:label xml:lang="en">produced_by</rdfs:label>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Melissa Haendel</obo:IAO_0000117>
@@ -831,6 +831,7 @@ functioning) and indirectly_realizes.</obo:IAO_0000112>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has biosafety level</obo:IAO_0000111>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ERO_0000316"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+		        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
     </owl:ObjectProperty>
     
 
@@ -1197,6 +1198,7 @@ functioning) and indirectly_realizes.</obo:IAO_0000112>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">related viral construct</obo:IAO_0000111>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ERO_0000619"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+		        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
     </owl:ObjectProperty>
     
 
@@ -1257,7 +1259,13 @@ functioning) and indirectly_realizes.</obo:IAO_0000112>
     </owl:ObjectProperty>
     
 
-
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000920">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
+    </owl:ObjectProperty>
+		
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000569">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000013"/>
+    </owl:ObjectProperty>
     <!-- http://purl.obolibrary.org/obo/ERO_0001055 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001055">
@@ -2645,6 +2653,7 @@ functioning) and indirectly_realizes.</obo:IAO_0000112>
     <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000741">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is_encoded_in</rdfs:label>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000025"/>
+		        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ero.owl#genid151"/>
     </owl:ObjectProperty>
     
 
