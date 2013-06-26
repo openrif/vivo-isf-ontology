@@ -152,7 +152,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_0000006">
         <rdfs:label xml:lang="en">training opportunity</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#RealizableEntity"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A planned process carried out by a person or organization with the objective of training an individual or individual(s) in a specific task or function.</obo:IAO_0000115>
     </owl:Class>
     
@@ -172,7 +172,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_0000008">
         <rdfs:label>resource</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Continuant"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A material, document or other asset that can be drawn on by a person or organization in order to function effectively.</obo:IAO_0000115>
     </owl:Class>
     
@@ -215,8 +215,8 @@ of the specified functionality and, if applicable, development cycle of a produc
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_0001003">
         <rdfs:label xml:lang="en">best practices</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000007"/>
-        <obo:IAO_0000115>A technique that has consistently shown results superior to those achieved with other means, and that is used as a benchmark.</obo:IAO_0000115>
         <obo:IAO_0000119>http://en.wikipedia.org/wiki/Best_practice</obo:IAO_0000119>
+        <obo:IAO_0000115>A technique that has consistently shown results superior to those achieved with other means, and that is used as a benchmark.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -297,13 +297,13 @@ The idea is that an instance of a class in this hierarchy represents a portion o
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/ontology/bibo/Document"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/ontology/bibo/Document"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -513,13 +513,13 @@ The idea is that an instance of a class in this hierarchy represents a portion o
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000333"/>
+                <owl:someValuesFrom rdf:resource="http://vivoweb.org/ontology/core#Video"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://vivoweb.org/ontology/core#Video"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000333"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -669,13 +669,13 @@ The idea is that an instance of a class in this hierarchy represents a portion o
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://vivoweb.org/ontology/core#Software"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000071"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000071"/>
+                <owl:someValuesFrom rdf:resource="http://vivoweb.org/ontology/core#Software"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -694,6 +694,24 @@ The idea is that an instance of a class in this hierarchy represents a portion o
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000002"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000017"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000031"/>
     
 
 
@@ -828,24 +846,6 @@ The idea is that an instance of a class in this hierarchy represents a portion o
     
 
 
-    <!-- http://www.ifomis.org/bfo/1.1/snap#Continuant -->
-
-    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#Continuant"/>
-    
-
-
-    <!-- http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant -->
-
-    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant"/>
-    
-
-
-    <!-- http://www.ifomis.org/bfo/1.1/snap#RealizableEntity -->
-
-    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#RealizableEntity"/>
-    
-
-
     <!-- http://xmlns.com/foaf/0.1/Group -->
 
     <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Group"/>
@@ -872,5 +872,5 @@ The idea is that an instance of a class in this hierarchy represents a portion o
 
 
 
-<!-- Generated by the OWL API (version 3.4.2018) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
 
