@@ -10,7 +10,139 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/arg/agent.owl"/>
     
-	
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ARG_0000033"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#scopeNote"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2008/05/skos#scopeNote"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#string -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000052 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000052"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000300 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000300"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000316 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000316"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000008">
+        <rdfs:label>topic weight measurement</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000009">
+        <rdfs:label>expertise measurement</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000008"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000010">
+        <rdfs:label>topic weight measurement process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000011">
+        <rdfs:label>expert measurement process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000010"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000021">
+        <rdfs:label>experience</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Quality"/>
+    </owl:Class>
+    
+
 
     <!-- http://purl.obolibrary.org/obo/ARG_2000022 -->
 
@@ -2850,380 +2982,6 @@
     
 
 
-	
-    <!-- http://purl.obolibrary.org/obo/ARG_2000008 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000008">
-        <rdfs:label>topic weight measurement</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
-    </owl:Class>
-    
-
-
-    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
-    
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000021">
-        <rdfs:label>experience</rdfs:label>
-    </owl:Class>
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Individuals
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ARG_2000065 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/ARG_2000065">
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-        <rdfs:label>American Board of Allergy and Immunology</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ARG_2000066 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/ARG_2000066">
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-        <rdfs:label>American Board of Anesthesiology</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ARG_2000067 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/ARG_2000067">
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-        <rdfs:label>American Board of Colon and Rectal Surgery</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ARG_2000068 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/ARG_2000068">
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-        <rdfs:label>American Board of Dermatology</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ARG_2000069 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/ARG_2000069">
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-        <rdfs:label>American Board of Emergency Medicine</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ARG_2000070 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/ARG_2000070">
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-        <rdfs:label>American Board of Family Medicine</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ARG_2000071 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/ARG_2000071">
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-        <rdfs:label>American Board of Internal Medicine</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ARG_2000072 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/ARG_2000072">
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-        <rdfs:label>American Board of Medical Genetics</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ARG_2000073 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/ARG_2000073">
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-        <rdfs:label>American Board of Neurological Surgery</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ARG_2000074 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/ARG_2000074">
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-        <rdfs:label>American Board of Nuclear Medicine</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ARG_2000075 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/ARG_2000075">
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-        <rdfs:label>American Board of Obstetrics and Gynecology</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ARG_2000076 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/ARG_2000076">
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-        <rdfs:label>American Board of Ophthalmology</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ARG_2000077 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/ARG_2000077">
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-        <rdfs:label>American Board of Orthopaedic Surgery</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ARG_2000078 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/ARG_2000078">
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-        <rdfs:label>American Board of Otolaryngology</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ARG_2000079 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/ARG_2000079">
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-        <rdfs:label>American Board of Pathology</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ARG_2000080 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/ARG_2000080">
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-        <rdfs:label>American Board of Pediatrics</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ARG_2000081 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/ARG_2000081">
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-        <rdfs:label>American Board of Physical Medicine and Rehabilitation</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ARG_2000082 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/ARG_2000082">
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-        <rdfs:label>American Board of Physical Medicine and Rehabilitation</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ARG_2000083 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/ARG_2000083">
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-        <rdfs:label>American Board of Plastic Surgery</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ARG_2000084 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/ARG_2000084">
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-        <rdfs:label>American Board of Preventive Medicine</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ARG_2000085 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/ARG_2000085">
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-        <rdfs:label>American Board of Psychiatry and Neurology</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ARG_2000086 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/ARG_2000086">
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-        <rdfs:label>American Board of Radiology</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ARG_2000087 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/ARG_2000087">
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-        <rdfs:label>American Board of Surgery</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ARG_2000088 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/ARG_2000088">
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-        <rdfs:label>American Board of Thoracic Surgery</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ARG_2000089 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/ARG_2000089">
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-        <rdfs:label>American Board of Urology</rdfs:label>
-    </owl:NamedIndividual>
-    <!-- http://purl.obolibrary.org/obo/ARG_2000009 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000009">
-        <rdfs:label>expertise measurement</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000008"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ARG_2000010 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000010">
-        <rdfs:label>topic weight measurement process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ARG_2000011 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000011">
-        <rdfs:label>expert measurement process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000010"/>
-    </owl:Class>
-	
-    <!-- http://xmlns.com/foaf/0.1/Person -->
-
-    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person">
-        <rdfs:label xml:lang="en">Person</rdfs:label>
-    </owl:Class>
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotation properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#scopeNote"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2008/05/skos#scopeNote"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Datatypes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral -->
-
-    <rdfs:Datatype rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
-    
-
-
-    <!-- http://www.w3.org/2001/XMLSchema#string -->
-
-    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Object Properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000052 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000052"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000300 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000300"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000316 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000316"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Classes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ARG_2000021 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000021">
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Quality"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/ERO_0000565 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000565">
@@ -3272,9 +3030,21 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000032"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_9606 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
     
 
 
@@ -3877,6 +3647,242 @@ see: http://xmlns.com/foaf/spec/#term_Group</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The most general classification of a person</obo:IAO_0000115>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">person</obo:IAO_0000111>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000065 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/ARG_2000065">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:label>American Board of Allergy and Immunology</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000066 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/ARG_2000066">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:label>American Board of Anesthesiology</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000067 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/ARG_2000067">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:label>American Board of Colon and Rectal Surgery</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000068 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/ARG_2000068">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:label>American Board of Dermatology</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000069 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/ARG_2000069">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:label>American Board of Emergency Medicine</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000070 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/ARG_2000070">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:label>American Board of Family Medicine</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000071 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/ARG_2000071">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:label>American Board of Internal Medicine</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000072 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/ARG_2000072">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:label>American Board of Medical Genetics</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000073 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/ARG_2000073">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:label>American Board of Neurological Surgery</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000074 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/ARG_2000074">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:label>American Board of Nuclear Medicine</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000075 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/ARG_2000075">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:label>American Board of Obstetrics and Gynecology</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000076 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/ARG_2000076">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:label>American Board of Ophthalmology</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000077 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/ARG_2000077">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:label>American Board of Orthopaedic Surgery</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000078 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/ARG_2000078">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:label>American Board of Otolaryngology</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000079 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/ARG_2000079">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:label>American Board of Pathology</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000080 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/ARG_2000080">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:label>American Board of Pediatrics</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000081 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/ARG_2000081">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:label>American Board of Physical Medicine and Rehabilitation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000082 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/ARG_2000082">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:label>American Board of Physical Medicine and Rehabilitation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000083 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/ARG_2000083">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:label>American Board of Plastic Surgery</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000084 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/ARG_2000084">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:label>American Board of Preventive Medicine</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000085 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/ARG_2000085">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:label>American Board of Psychiatry and Neurology</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000086 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/ARG_2000086">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:label>American Board of Radiology</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000087 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/ARG_2000087">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:label>American Board of Surgery</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000088 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/ARG_2000088">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:label>American Board of Thoracic Surgery</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000089 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/ARG_2000089">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:label>American Board of Urology</rdfs:label>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 

@@ -10,94 +10,6 @@
      xmlns:statistics="http://purl.org/net/OCRe/statistics.owl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/arg/clinical.owl"/>
     
-	    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_0000016">
-        <rdfs:label>order</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ARG_0000442"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>Check with OGMS</rdfs:comment>
-    </owl:Class>
-	
-    <!-- http://purl.obolibrary.org/obo/ARG_0000052 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_0000052">
-        <rdfs:label>prescription</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-    </owl:Class>
-        <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_0000130">
-        <rdfs:label>health care provider</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000207"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </owl:Class>
-        <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_0000201">
-        <rdfs:label xml:lang="en">health care provider supervising role</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000207"/>
-        <obo:IAO_0000115>a health care provider role of supervising the provisioning of medical care durign an health care encounter.</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ARG_0000423 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_0000423">
-        <rdfs:label>procedure</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#Process"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ARG_0000442 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_0000442">
-        <rdfs:label>CPT billing code</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-    </owl:Class>
-
-
-    <!-- http://purl.obolibrary.org/obo/ARG_0000200 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_0000200">
-        <rdfs:label xml:lang="en">health care provider performing role</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000207"/>
-        <obo:IAO_0000115>a health care provider role of providing a direct medical care during an health care encounter. By direct we mean hands-on performance of helath care tasks or procedures.</obo:IAO_0000115>
-    </owl:Class>
-
-
-    <!-- http://purl.obolibrary.org/obo/ARG_0000123 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_0000123">
-        <rdfs:label>ICD-9 billing code</rdfs:label>
-    </owl:Class>
-    <!-- http://purl.obolibrary.org/obo/ARG_0000051 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_0000051">
-        <rdfs:label>patient</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000093"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </owl:Class>
-	
 
 
     <!-- 
@@ -111,15 +23,15 @@
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
     <owl:AnnotationProperty rdf:about="http://purl.org/net/OCRe/study_protocol.owl#develop_comment"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000232"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
     <owl:AnnotationProperty rdf:about="http://purl.org/net/OCRe/statistics.owl#curator"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
     
 
 
@@ -157,9 +69,27 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000057 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000057"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ERO_0001518 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001518"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000299 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000299"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000316 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000316"/>
     
 
 
@@ -171,6 +101,115 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_0000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_0000016">
+        <rdfs:label>order</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ARG_0000442"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Check with OGMS</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_0000051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_0000051">
+        <rdfs:label>patient</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000093"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_0000052 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_0000052">
+        <rdfs:label>prescription</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_0000123 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_0000123">
+        <rdfs:label>ICD-9 billing code</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_0000130 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_0000130">
+        <rdfs:label>health care provider</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000207"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_0000200 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_0000200">
+        <rdfs:label xml:lang="en">health care provider performing role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000207"/>
+        <obo:IAO_0000115>a health care provider role of providing a direct medical care during an health care encounter. By direct we mean hands-on performance of helath care tasks or procedures.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_0000201 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_0000201">
+        <rdfs:label xml:lang="en">health care provider supervising role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000207"/>
+        <obo:IAO_0000115>a health care provider role of supervising the provisioning of medical care durign an health care encounter.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_0000423 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_0000423">
+        <rdfs:label>procedure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_0000442 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_0000442">
+        <rdfs:label>CPT billing code</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </owl:Class>
     
 
 
@@ -506,6 +545,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000300 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000300"/>
@@ -516,44 +561,19 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
     
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000075 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000075">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000075">
+        <rdfs:label xml:lang="en">diagnosis textual entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ARG_0000123"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-    </rdf:Description>
-
-    <!-- http://purl.obolibrary.org/obo/OGMS_0000097 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000097">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ARG_0000051"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ARG_0000130"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    <!-- http://purl.obolibrary.org/obo/OBI_0000075 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000075">
-        <rdfs:label xml:lang="en">diagnosis textual entity</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
         <obo:IAO_0000117 xml:lang="en">Jennifer Fostel</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">diagnosis is an assessment of a disease or injury, its likely prognosis and treatment.</obo:IAO_0000115>
         <obo:IAO_0000111 xml:lang="en">diagnosis textual entity</obo:IAO_0000111>
@@ -621,6 +641,24 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000097">
         <rdfs:label>health care encounter</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000096"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ARG_0000051"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ARG_0000130"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A temporally-connected health care process that has as participants an organization or person realizing the health care provider role and a person realizing the patient role.  The health care provider role and patient are realized during the health care encounter</obo:IAO_0000115>
         <obo:IAO_0000232>creation date: 2011-02-21T09:57:44Z</obo:IAO_0000232>
         <obo:IAO_0000119>http://groups.google.com/group/ogms-discuss/browse_thread/thread/a2dbc2ed1dff99d6</obo:IAO_0000119>
