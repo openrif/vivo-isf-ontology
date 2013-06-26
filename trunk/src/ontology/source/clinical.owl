@@ -10,77 +10,8 @@
      xmlns:statistics="http://purl.org/net/OCRe/statistics.owl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/arg/clinical.owl"/>
     
-	
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000096">
-        <rdfs:label>health care process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#Process"/>
-        <obo:IAO_0000232>creation date: 2011-02-21T09:57:44Z</obo:IAO_0000232>
-        <obo:IAO_0000119>http://groups.google.com/group/ogms-discuss/browse_thread/thread/a2dbc2ed1dff99d6</obo:IAO_0000119>
-        <obo:IAO_0000115 xml:lang="en">A social process that has at least one human participant and that includes as parts the treatment, diagnosis, or prevention of disease or injury--or the following of instructions of another human for treatment, diagnosis, or prevention--of a participant in the process</obo:IAO_0000115>
-        <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
-    </owl:Class>
-    
-      <!-- http://purl.obolibrary.org/obo/OGMS_0000097 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000097">
-        <rdfs:label>health care encounter</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000096"/>
-        <obo:IAO_0000115 xml:lang="en">A temporally-connected health care process that has as participants an organization or person realizing the health care provider role and a person realizing the patient role.  The health care provider role and patient are realized during the health care encounter</obo:IAO_0000115>
-        <obo:IAO_0000119>http://groups.google.com/group/ogms-discuss/browse_thread/thread/a2dbc2ed1dff99d6</obo:IAO_0000119>
-        <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
-        <obo:IAO_0000232>creation date: 2011-02-21T09:57:44Z</obo:IAO_0000232>
-    </owl:Class>
-	
-	    <!-- http://purl.obolibrary.org/obo/OBI_0000093 -->
 
-		    <!-- http://purl.obolibrary.org/obo/OBI_0000207 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000207">
-        <rdfs:label xml:lang="en">health care provider role</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">health care provider</obo:IAO_0000118>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">health care provider role</obo:IAO_0000111>
-        <obo:IAO_0000117 xml:lang="en">Person:Jennifer Fostel</obo:IAO_0000117>
-        <obo:IAO_0000115 xml:lang="en">a worker role of providing medical care either within or outside the study timeline</obo:IAO_0000115>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-    </owl:Class>
-    
-
-	
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000093">
-        <rdfs:label xml:lang="en">patient role</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000052"/>
-                <owl:someValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">patient</obo:IAO_0000118>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">patient role</obo:IAO_0000111>
-        <obo:IAO_0000112 xml:lang="en">
-		a hospitalized person; a person with controlled diabetes; the patient&apos;s role http://www.fertilityjourney.com/testingAndDiagnosis/theRightDoctor/thePatientsRole/index.asp?C=55245395146924652778
-		</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">
-		a role which inheres in a person and is realized by the process of being under the care of a physician or health care provider
-		</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">GROUP:Role Branch</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">OBI, CDISC</obo:IAO_0000119>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-    </owl:Class>
-    
-	
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000075">
-        <rdfs:label xml:lang="en">diagnosis textual entity</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
-        <obo:IAO_0000117 xml:lang="en">Jennifer Fostel</obo:IAO_0000117>
-        <obo:IAO_0000115 xml:lang="en">diagnosis is an assessment of a disease or injury, its likely prognosis and treatment.</obo:IAO_0000115>
-        <obo:IAO_0000111 xml:lang="en">diagnosis textual entity</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-    </owl:Class>
-	
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -89,16 +20,18 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/net/OCRe/study_protocol.owl#develop_comment"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000232"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
     <owl:AnnotationProperty rdf:about="http://purl.org/net/OCRe/statistics.owl#curator"/>
-    <owl:AnnotationProperty rdf:about="http://purl.org/net/OCRe/study_protocol.owl#develop_comment"/>
     
 
 
@@ -127,6 +60,12 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000052 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000052"/>
     
 
 
@@ -479,9 +418,95 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000300 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000300"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000075 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000075">
+        <rdfs:label xml:lang="en">diagnosis textual entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
+        <obo:IAO_0000117 xml:lang="en">Jennifer Fostel</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">diagnosis is an assessment of a disease or injury, its likely prognosis and treatment.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">diagnosis textual entity</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000093 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000093">
+        <rdfs:label xml:lang="en">patient role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">patient</obo:IAO_0000118>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">patient role</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">
+		a hospitalized person; a person with controlled diabetes; the patient&apos;s role http://www.fertilityjourney.com/testingAndDiagnosis/theRightDoctor/thePatientsRole/index.asp?C=55245395146924652778
+		</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">
+		a role which inheres in a person and is realized by the process of being under the care of a physician or health care provider
+		</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">GROUP:Role Branch</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">OBI, CDISC</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000207 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000207">
+        <rdfs:label xml:lang="en">health care provider role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">health care provider</obo:IAO_0000118>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">health care provider role</obo:IAO_0000111>
+        <obo:IAO_0000117 xml:lang="en">Person:Jennifer Fostel</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">a worker role of providing medical care either within or outside the study timeline</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000096 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000096">
+        <rdfs:label>health care process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#Process"/>
+        <obo:IAO_0000119>http://groups.google.com/group/ogms-discuss/browse_thread/thread/a2dbc2ed1dff99d6</obo:IAO_0000119>
+        <obo:IAO_0000232>creation date: 2011-02-21T09:57:44Z</obo:IAO_0000232>
+        <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">A social process that has at least one human participant and that includes as parts the treatment, diagnosis, or prevention of disease or injury--or the following of instructions of another human for treatment, diagnosis, or prevention--of a participant in the process</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000097 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000097">
+        <rdfs:label>health care encounter</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000096"/>
+        <obo:IAO_0000115 xml:lang="en">A temporally-connected health care process that has as participants an organization or person realizing the health care provider role and a person realizing the patient role.  The health care provider role and patient are realized during the health care encounter</obo:IAO_0000115>
+        <obo:IAO_0000232>creation date: 2011-02-21T09:57:44Z</obo:IAO_0000232>
+        <obo:IAO_0000119>http://groups.google.com/group/ogms-discuss/browse_thread/thread/a2dbc2ed1dff99d6</obo:IAO_0000119>
+        <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
+    </owl:Class>
     
 
 
@@ -737,9 +762,21 @@ A study in which an individual acts has his/her own comparison does not fall int
     
 
 
+    <!-- http://www.ifomis.org/bfo/1.1/span#Process -->
+
+    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/span#Process"/>
+    
+
+
     <!-- http://www.ifomis.org/bfo/1.1/span#ProcessualEntity -->
 
     <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
 </rdf:RDF>
 
 
