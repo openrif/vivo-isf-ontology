@@ -215,8 +215,8 @@ of the specified functionality and, if applicable, development cycle of a produc
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_0001003">
         <rdfs:label xml:lang="en">best practices</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000007"/>
-        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Best_practice</obo:IAO_0000119>
         <obo:IAO_0000115>A technique that has consistently shown results superior to those achieved with other means, and that is used as a benchmark.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Best_practice</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -248,8 +248,8 @@ of the specified functionality and, if applicable, development cycle of a produc
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_0001006">
         <rdfs:label xml:lang="en">grant management</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <obo:IAO_0000115>A planned process performed by a person or an application to administer and manage the grant process.</obo:IAO_0000115>
         <obo:IAO_0000119>http://en.wikipedia.org/wiki/Grant_management_software</obo:IAO_0000119>
+        <obo:IAO_0000115>A planned process performed by a person or an application to administer and manage the grant process.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -257,8 +257,8 @@ of the specified functionality and, if applicable, development cycle of a produc
     <!-- http://purl.obolibrary.org/obo/ARG_2000037 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000037">
-        <rdfs:label>sharecenter content type</rdfs:label>
         <rdfs:label>sharecenter term definition</rdfs:label>
+        <rdfs:label>sharecenter content type</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -297,13 +297,13 @@ The idea is that an instance of a class in this hierarchy represents a portion o
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/ontology/bibo/Document"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/ontology/bibo/Document"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
