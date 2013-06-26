@@ -45,6 +45,26 @@
     
 
 
+    <!-- http://vivoweb.org/ontology/core#AcademicTerm -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#AcademicTerm">
+        <rdfs:label xml:lang="en-us">Academic Term</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#DateTimeInterval"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An explicit individual academic term, quarter, or semester rather than the generic fall, spring or summer semester.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#AcademicYear -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#AcademicYear">
+        <rdfs:label xml:lang="en-us">Academic Year</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#DateTimeInterval"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An explicit individual period considered by an academic institution to be its primary academic cycle.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
     <!-- http://vivoweb.org/ontology/core#DateTimeInterval -->
 
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#DateTimeInterval">
@@ -60,6 +80,49 @@
         <rdfs:label xml:lang="en-us">Date/Time Value</rdfs:label>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A date and/or time</obo:IAO_0000115>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#yearMonthDayPrecision -->
+
+    <owl:NamedIndividual rdf:about="http://vivoweb.org/ontology/core#yearMonthDayPrecision">
+        <rdfs:label xml:lang="en-us">YearMonthDayValue</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#yearMonthDayTimePrecision -->
+
+    <owl:NamedIndividual rdf:about="http://vivoweb.org/ontology/core#yearMonthDayTimePrecision">
+        <rdfs:label xml:lang="en-us">YearMonthDayTimeValue</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#yearMonthPrecision -->
+
+    <owl:NamedIndividual rdf:about="http://vivoweb.org/ontology/core#yearMonthPrecision">
+        <rdfs:label xml:lang="en-us">YearMonthValue</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#yearPrecision -->
+
+    <owl:NamedIndividual rdf:about="http://vivoweb.org/ontology/core#yearPrecision">
+        <rdfs:label xml:lang="en-us">YearValue</rdfs:label>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 

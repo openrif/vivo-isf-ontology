@@ -75,14 +75,9 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <obo:IAO_0000112 xml:lang="en">This document is about information artifacts and their representations</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">is_about is a (currently) primitive relation that relates an information artifact to an entity.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">person:Alan Ruttenberg</obo:IAO_0000117>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000569">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000013"/>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://aims.fao.org/aos/geopolitical.owl#sourceModified"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000221">
         <rdfs:label xml:lang="en">is quality measurement of</rdfs:label>
         <obo:IAO_0000116 xml:lang="en">8/6/2009 Alan Ruttenberg: The strategy is to be rather specific with this relationship. There are other kinds of measurements that are not of qualities, such as those that measure time. We will add these as separate properties for the moment and see about generalizing later</obo:IAO_0000116>
@@ -127,10 +122,14 @@ q is a quality
 there is a measurement process p that has specified output m, a measurement datum, that is about q</obo:IAO_0000115>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
     </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://aims.fao.org/aos/geopolitical.owl#sourceModified"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000569">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000013"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://aims.fao.org/aos/geopolitical.owl#sourceIdentifier"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
         <rdfs:label xml:lang="en">imported from</rdfs:label>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://aims.fao.org/aos/geopolitical.owl#sourceIdentifier"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001826">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_mammalian_phenotype</rdfs:label>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0001838"/>
@@ -1652,6 +1651,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <obo:IAO_0000112 xml:lang="en">This document is about information artifacts and their representations</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">is_about is a (currently) primitive relation that relates an information artifact to an entity.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">person:Alan Ruttenberg</obo:IAO_0000117>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
     </owl:ObjectProperty>
     
@@ -2972,6 +2972,12 @@ functioning) and indirectly_realizes.</obo:IAO_0000112>
     <!-- http://purl.obolibrary.org/obo/IAO_0000025 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000025"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030"/>
     
 
 
