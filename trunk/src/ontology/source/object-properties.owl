@@ -25,10 +25,13 @@
      -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2008/05/skos#editorialNote"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ARG_0000011">
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ARG_0000011">
         <rdfs:label xml:lang="en">relevant_for</rdfs:label>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ARG_0000008"/>
-    </owl:AnnotationProperty>
+    </owl:ObjectProperty>
+	
+	<owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_0000008"/>
+	
     <owl:AnnotationProperty rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#descriptionAnnot"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
         <rdfs:label xml:lang="en">definition</rdfs:label>
@@ -53,17 +56,16 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alternative term</rdfs:label>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
-    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000741">
+    <owl:ObjectProperty rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000741">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is_encoded_in</rdfs:label>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ero.owl#genid151"/>
-    </owl:AnnotationProperty>
+    </owl:ObjectProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
         <rdfs:label xml:lang="en">editor preferred label</rdfs:label>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
         <rdfs:label xml:lang="en">example of usage</rdfs:label>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136">
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136">
         <rdfs:label>is about</rdfs:label>
         <rdfs:label xml:lang="en">is about</rdfs:label>
         <obo:IAO_0000116 xml:lang="en">7/6/2009 Alan Ruttenberg. Following discussion with Jonathan Rees, and introduction of &quot;mentions&quot; relation. Weaken the is_about relationship to be primitive. 
@@ -76,9 +78,11 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <obo:IAO_0000115 xml:lang="en">is_about is a (currently) primitive relation that relates an information artifact to an entity.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">person:Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
-    </owl:AnnotationProperty>
+    </owl:ObjectProperty>
+	
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000221">
+	
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000221">
         <rdfs:label xml:lang="en">is quality measurement of</rdfs:label>
         <obo:IAO_0000116 xml:lang="en">8/6/2009 Alan Ruttenberg: The strategy is to be rather specific with this relationship. There are other kinds of measurements that are not of qualities, such as those that measure time. We will add these as separate properties for the moment and see about generalizing later</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
@@ -121,20 +125,25 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
 q is a quality 
 there is a measurement process p that has specified output m, a measurement datum, that is about q</obo:IAO_0000115>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
-    </owl:AnnotationProperty>
+    </owl:ObjectProperty>
+	<owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000109"/>
+	
     <owl:AnnotationProperty rdf:about="http://aims.fao.org/aos/geopolitical.owl#sourceModified"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000569">
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000569">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000013"/>
-    </owl:AnnotationProperty>
+    </owl:ObjectProperty>
+	<owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000013"/>
+	
     <owl:AnnotationProperty rdf:about="http://aims.fao.org/aos/geopolitical.owl#sourceIdentifier"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
         <rdfs:label xml:lang="en">imported from</rdfs:label>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001826">
+	
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001826">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_mammalian_phenotype</rdfs:label>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0001838"/>
-    </owl:AnnotationProperty>
-    
+    </owl:ObjectProperty>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001838"/>
 
 
     <!-- 

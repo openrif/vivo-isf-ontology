@@ -23,7 +23,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000580">
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000580">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_infectious_history</rdfs:label>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A monkey with CMV.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Infectious history of the organism, such as previous viral infections that may affect the usage of the organism for research.</obo:IAO_0000115>
@@ -32,14 +32,15 @@
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has infectious history</obo:IAO_0000111>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0000985"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-    </owl:AnnotationProperty>
+    </owl:DatatypeProperty>
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
     <owl:AnnotationProperty rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#descriptionAnnot"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ARG_0000015">
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/ARG_0000015">
         <rdfs:label xml:lang="en">user_defined_tag</rdfs:label>
         <obo:IAO_0000115>A free text field for recording topics which relate to the resource. </obo:IAO_0000115>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ARG_0000008"/>
-    </owl:AnnotationProperty>
+    </owl:DatatypeProperty>
+	    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_0000008"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
         <rdfs:label xml:lang="en">definition</rdfs:label>
     </owl:AnnotationProperty>
@@ -50,7 +51,7 @@
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition source</rdfs:label>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000046">
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000046">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_geographic_restriction</rdfs:label>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any service limitation tied to geographically-defined areas such as metro areas, counties, states, or regions. </obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000117>
@@ -59,20 +60,21 @@
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has geographic restriction</obo:IAO_0000111>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0000005"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-    </owl:AnnotationProperty>
+    </owl:DatatypeProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition editor</rdfs:label>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000004">
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000004">
         <rdfs:label xml:lang="en">has measurement value</rdfs:label>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
-    </owl:AnnotationProperty>
+    </owl:DatatypeProperty>
+	    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000032"/>
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2008/05/skos#scopeNote"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
         <rdfs:label xml:lang="en">editor preferred label</rdfs:label>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001526">
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001526">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_clone_ID</rdfs:label>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clone identification number assigned to a monoclonal antibody.</obo:IAO_0000115>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N-262.</obo:IAO_0000112>
@@ -81,11 +83,11 @@
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has clone ID</obo:IAO_0000111>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0000229"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-    </owl:AnnotationProperty>
+    </owl:DatatypeProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
         <rdfs:label xml:lang="en">example of usage</rdfs:label>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000578">
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000578">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_phenotype</rdfs:label>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mouse with a shorter tail.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An observable characteristic or trait of an organism, such as its morphology, development, biochemical or physiological properties, behavior, and products of behavior (such as a bird&apos;s nest).</obo:IAO_0000115>
@@ -94,8 +96,10 @@
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has phenotype</obo:IAO_0000111>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0000985"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000579">
+    </owl:DatatypeProperty>
+	<owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000985"/>
+	
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000579">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_source</rdfs:label>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mouse house in a research lab.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organism�s source environment or clinical setting.</obo:IAO_0000115>
@@ -104,8 +108,9 @@
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has source</obo:IAO_0000111>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0000985"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000553">
+    </owl:DatatypeProperty>
+	
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000553">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_producer_cell_type</rdfs:label>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">293T cells are used to produce a lentiviral supernatant.</obo:IAO_0000112>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000117>
@@ -114,8 +119,9 @@
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has producer cell type</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000551">
+    </owl:DatatypeProperty>
+	
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000551">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_producer_strain</rdfs:label>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E.coli is used to produce a DNA library.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organismal or viral strain used to produce the library.</obo:IAO_0000115>
@@ -124,8 +130,8 @@
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has producer strain</obo:IAO_0000111>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0000160"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000550">
+    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000550">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_bacterial_host_strain</rdfs:label>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bacterial strain in which the library is hosted.</obo:IAO_0000115>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E.coli is used to host a DNA library.</obo:IAO_0000112>
@@ -134,8 +140,8 @@
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has bacterial host strain</obo:IAO_0000111>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0000160"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000571">
+    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000571">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_parental_strain_name</rdfs:label>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000117>
@@ -144,10 +150,10 @@
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has parental strain name</obo:IAO_0000111>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0000985"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-    </owl:AnnotationProperty>
+    </owl:DatatypeProperty>
     <owl:AnnotationProperty rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#exampleAnnot"/>
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001546">
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001546">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">target_subregion</rdfs:label>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C-terminus.</obo:IAO_0000112>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000117>
@@ -155,7 +161,7 @@
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The subregion which is targeted by the antibody, such as the N- or C-terminus or a specific domain.</obo:IAO_0000115>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0001541"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-    </owl:AnnotationProperty>
+    </owl:DatatypeProperty>
     <owl:AnnotationProperty rdf:about="http://aims.fao.org/aos/geopolitical.owl#sourceModified"/>
     <owl:AnnotationProperty rdf:about="http://aims.fao.org/aos/geopolitical.owl#sourceIdentifier"/>
     
@@ -3168,13 +3174,7 @@ See also core:localAwardId.
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
-        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#AnnotationProperty"/>
-        <rdfs:label xml:lang="en">definition</rdfs:label>
-    </owl:NamedIndividual>
-</rdf:RDF>
+ </rdf:RDF>
 
 
 
