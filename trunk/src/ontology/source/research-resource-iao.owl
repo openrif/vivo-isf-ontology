@@ -70,6 +70,14 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ARG_0000012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_0000012">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000001"/>
@@ -402,6 +410,12 @@ this case we explicitly refer to the singular form</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.org/ontology/bibo/Document -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Document"/>
+    
+
+
     <!-- http://www.geneontology.org/formats/oboInOwl#DbXref -->
 
     <owl:Class rdf:about="http://www.geneontology.org/formats/oboInOwl#DbXref">
@@ -662,12 +676,6 @@ this case we explicitly refer to the singular form</obo:IAO_0000116>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
         <owl:distinctMembers rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000224"/>
-        </owl:distinctMembers>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
-        <owl:distinctMembers rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000120"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000121"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000122"/>
@@ -685,6 +693,12 @@ this case we explicitly refer to the singular form</obo:IAO_0000116>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000227"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000228"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000229"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000224"/>
         </owl:distinctMembers>
     </rdf:Description>
 </rdf:RDF>
