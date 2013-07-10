@@ -45,13 +45,13 @@
          classification scheme.</dc:description>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#savedBy"/>
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasSynonym"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OBI_9991118"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#savedBy"/>
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OBI_9991118"/>
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#deprecated">
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
         <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#replacedBy"/>
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDefaultNamespace"/>
@@ -104,6 +104,7 @@
         <rdfs:label xml:lang="en">definition</rdfs:label>
     </rdf:Description>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/language">
         <rdfs:label xml:lang="en-us">Language</rdfs:label>
         <rdfs:comment xml:lang="en-us">A language of the intellectual content of the resource.</rdfs:comment>
@@ -115,7 +116,6 @@
          United Kingdom.</dc:description>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/type">
         <rdfs:label xml:lang="en-us">Resource Type</rdfs:label>
         <rdfs:comment xml:lang="en-us">The nature or genre of the content of the resource.</rdfs:comment>
@@ -148,6 +148,7 @@
     </rdf:Description>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000316"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000052"/>
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher">
         <rdfs:label xml:lang="en-us">Publisher</rdfs:label>
         <rdfs:comment xml:lang="en-us">An entity responsible for making the resource available</rdfs:comment>
@@ -157,9 +158,8 @@
          indicate the entity.</dc:description>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000052"/>
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasVersion"/>
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasURI"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasVersion"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000833"/>
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/coverage">
         <rdfs:label xml:lang="en-us">Coverage</rdfs:label>
@@ -175,8 +175,8 @@
         <rdfs:comment xml:lang="en-us">The extent or scope of the content of the resource.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000284"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000285"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412"/>
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/format">
@@ -233,35 +233,15 @@
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
     </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000052 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000052">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
-        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000053"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000053 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000053"/>
     
 
 
@@ -289,8 +269,8 @@
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000021">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_contact</rdfs:label>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Name of the primary person responsible for the resource.</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000119>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The lab manager who maintains an instrument in the lab.</obo:IAO_0000112>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has contact</obo:IAO_0000111>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001047"/>
@@ -325,12 +305,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/ERO_0000037 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000037"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/ERO_0000232 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000232">
@@ -351,8 +325,8 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001047">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is_contact_for</rdfs:label>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000117>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Resources for which the person is a contact.</obo:IAO_0000115>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The PI is the contact for an instrument.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -377,34 +351,10 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/ERO_0001065 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001065">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0001000"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0001516 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001516">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0001000"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/ERO_0001520 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001520">
         <rdfs:subPropertyOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#agent_in"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0001522 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001522">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0001000"/>
     </owl:ObjectProperty>
     
 
@@ -433,44 +383,10 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBI_0000293 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000293">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000299 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000299">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OBI_0000300 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000300">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
         <rdfs:range rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000304 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000304">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000306 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000306">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
     </owl:ObjectProperty>
     
 
@@ -478,34 +394,7 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0000308 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000308">
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
         <rdfs:domain rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000312 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000312">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000056"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000316 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000316">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000053"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000643 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000643">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
     </owl:ObjectProperty>
     
 
@@ -514,8 +403,8 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001000">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
     </owl:ObjectProperty>
     
 
@@ -524,8 +413,8 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001015">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
     </owl:ObjectProperty>
     
 
@@ -548,42 +437,9 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001025">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0001015"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0002220 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002220"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0003000 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0003000">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0003001 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0003001">
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/obo/owl/OBO_REL#role_of -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/obo/owl/OBO_REL#role_of">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000052"/>
     </owl:ObjectProperty>
     
 
@@ -688,8 +544,8 @@
         <rdfs:label xml:lang="en">preceded_by</rdfs:label>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An example is: translation preceded_by transcription; aging preceded_by development (not however death preceded_by aging). Where derives_from links classes of continuants, preceded_by links classes of processes. Clearly, however, these two relations are not independent of each other. Thus if cells of type C1 derive_from cells of type C, then any cell division involving an instance of C1 in a given lineage is preceded_by cellular processes involving an instance of C.    The assertion P preceded_by P1 tells us something about Ps in general: that is, it tells us something about what happened earlier, given what we know about what happened later. Thus it does not provide information pointing in the opposite direction, concerning instances of P1 in general; that is, that each is such as to be succeeded by some instance of P. Note that an assertion to the effect that P preceded_by P1 is rather weak; it tells us little about the relations between the underlying instances in virtue of which the preceded_by relation obtains. Typically we will be interested in stronger relations, for example in the relation immediately_preceded_by, or in relations which combine preceded_by with a condition to the effect that the corresponding instances of P and P1 share participants, or that their participants are connected by relations of derivation, or (as a first step along the road to a treatment of causality) that the one process in some way affects (for example, initiates or regulates) the other.</rdfs:comment>
         <oboInOwl:hasOBONamespace>relationship</oboInOwl:hasOBONamespace>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
         <owl:inverseOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#precedes"/>
     </owl:ObjectProperty>
     
@@ -701,8 +557,8 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:label xml:lang="en">precedes</rdfs:label>
         <oboInOwl:hasOBONamespace>relationship</oboInOwl:hasOBONamespace>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
     </owl:ObjectProperty>
     
 
@@ -736,8 +592,8 @@
         <rdfs:label xml:lang="en">transformation_of</rdfs:label>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">When an embryonic oenocyte (a type of insect cell) is transformed into a larval oenocyte, one and the same continuant entity preserves its identity while instantiating distinct classes at distinct times. The class-level relation transformation_of obtains between continuant classes C and C1 wherever each instance of the class C is such as to have existed at some earlier time as an instance of the distinct class C1 (see Figure 2 in paper). This relation is illustrated first of all at the molecular level of granularity by the relation between mature RNA and the pre-RNA from which it is processed, or between (UV-induced) thymine-dimer and thymine dinucleotide. At coarser levels of granularity it is illustrated by the transformations involved in the creation of red blood cells, for example, from reticulocyte to erythrocyte, and by processes of development, for example, from larva to pupa, or from (post-gastrular) embryo to fetus or from child to adult. It is also manifest in pathological transformations, for example, of normal colon into carcinomatous colon. In each such case, one and the same continuant entity instantiates distinct classes at different times in virtue of phenotypic changes.</rdfs:comment>
         <oboInOwl:hasOBONamespace>relationship</oboInOwl:hasOBONamespace>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
     </owl:ObjectProperty>
     
 
@@ -758,8 +614,8 @@
     <!-- http://www.w3.org/2002/07/owl#DeprecatedProperty -->
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/2002/07/owl#DeprecatedProperty">
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
     </owl:ObjectProperty>
     
 
@@ -781,8 +637,8 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mailing_address</rdfs:label>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3181 SW Sam Jackson Park Road. Portland, OR 97239</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mailing address for correspondence. </obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000119>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mailing address</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -803,8 +659,8 @@
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000041">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">contact_email</rdfs:label>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Email address of the primary contact.</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000119>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">email</obo:IAO_0000111>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">last name@university.edu</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -827,8 +683,8 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">first_name</rdfs:label>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Individual&apos;s forename.</obo:IAO_0000115>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nicole</obo:IAO_0000112>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000119>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">We refer to the Lab contact and not to the person we have contacted in order to have this informatoin</rdfs:comment>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">first name</obo:IAO_0000118>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -866,8 +722,8 @@
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000049">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">last_name</rdfs:label>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Individual’s surname.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000117>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Smith</obo:IAO_0000112>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">We refer to the Lab contact and not to the person we have contacted in order to have this informatoin</rdfs:comment>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">last name</obo:IAO_0000111>
@@ -883,8 +739,8 @@
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000051">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phone_number</rdfs:label>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">503-555-5555</obo:IAO_0000112>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000117>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The number used to call someone by phone. </obo:IAO_0000115>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phone number</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -906,8 +762,8 @@
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000052">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">title</rdfs:label>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Designation used to refer to an individual.</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000119>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Professor</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -921,8 +777,8 @@
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000055">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lab_delivery_address</rdfs:label>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Laboratory address where deliveries are made.</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000119>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Volumn Research Institute, 3rd floor, bay 1</obo:IAO_0000112>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lab delivery address</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -935,8 +791,8 @@
     <!-- http://purl.obolibrary.org/obo/ERO_0000480 -->
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000480">
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000119>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The website for a manufacturer.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Web address of the resource.</obo:IAO_0000115>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has URL</obo:IAO_0000111>
@@ -967,8 +823,8 @@
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000569">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_PubMed_ID</rdfs:label>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000117>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed ID</obo:IAO_0000111>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The PMID for a journal article.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unique numerical identifier assigned to citation of life sciences and biomedical scientific journal articles in the PubMed database.</obo:IAO_0000115>
@@ -1007,7 +863,6 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000002 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000002">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
     </owl:Class>
     
@@ -1026,7 +881,6 @@
                 </owl:unionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Definition: An entity [bfo:Entity] that has temporal parts and that happens, unfolds or develops through time. Sometimes also called perdurants. ; Examples: the life of an organism, a surgical operation as processual context for a nosocomical infection, the spatiotemporal context occupied by a process of cellular meiosis, the most interesting part of Van Gogh&apos;s life, the spatiotemporal region occupied by the development of a cancer tumor ; Synonyms: perdurant</rdfs:comment>
     </owl:Class>
     
@@ -1035,7 +889,6 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000004 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000004">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <owl:disjointWith rdf:resource="http://www.ifomis.org/bfo/1.1/snap#DependentContinuant"/>
     </owl:Class>
     
@@ -1056,7 +909,6 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000016 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000016">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
     </owl:Class>
@@ -1066,7 +918,6 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000017 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000017">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
     </owl:Class>
     
@@ -1074,9 +925,7 @@
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000019 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019"/>
     
 
 
@@ -1100,7 +949,6 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000023 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000023">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
     </owl:Class>
     
@@ -1124,17 +972,13 @@
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0000004 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000004">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000004"/>
     
 
 
@@ -1148,77 +992,13 @@
 
     <!-- http://purl.obolibrary.org/obo/ERO_0000006 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000006">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000086"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000007 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000007"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000008 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000008">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000009 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000009">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001000"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Def from EFO, to be added to OBI. ; From Richard  this class represents: hybridomas, stem cells{IPS/MEFs/ES}, modified standard cell lines, primary cells, unique bacterial lines, yeast lines ; Placeholder for class to be imported from the Reagent Ontology (ReO).</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000012 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000012">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000006"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0000014 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000014">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000066"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000014"/>
     
 
 
@@ -1230,214 +1010,13 @@
 
     <!-- http://purl.obolibrary.org/obo/ERO_0000020 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000020">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001000"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000020"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0000071 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000071">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000160 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000160">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001000"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">From Richard: RNAi, plasmid, phage, chemical, viral, [also cell libraries] ; Placeholder for class to be imported from the Reagent Ontology (ReO).</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000161 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000161">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001000"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000162 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000162">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">From Richard: unique rare ; Placeholder for class to be imported from the Reagent Ontology (ReO).</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000214 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000214">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000308"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000086"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000052"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000008"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000224 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000224">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000225 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000225">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000242 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000242"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000279 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000279"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000284 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000284">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000285"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Placeholder for class to be imported from the Reagent Ontology (ReO). ; this is an expression library, and has part some construct</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000285 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000285">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000286 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000286"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000287 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000287"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000288 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000288"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000289 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000289"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000290 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000290"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000292 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000292">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001000"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000294 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000294">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000430"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000295"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000295 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000295"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000296 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000296"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000322 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000322">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000071"/>
     
 
 
@@ -1449,774 +1028,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/ERO_0000347 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000347"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000351 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000351">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000352 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000352">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000353 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000353">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000354 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000354">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000399 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000399">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000242"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000400"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000400 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000400"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000404 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000404">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000285"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001000"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000409 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000409">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000308"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000086"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000052"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000008"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000429 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000429">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000279"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000286"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000430 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000430"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000432 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000432">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000279"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000288"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000433 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000433">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000279"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000290"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000434 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000434">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000279"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000287"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000435 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000435">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000279"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000289"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000436 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000436">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001212"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000296"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000490 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000490">
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000020"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000308"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0001706"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000538 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000538">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000308"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000086"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000052"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000008"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/ERO_0000595 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000595">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000630 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000630">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000631 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000631"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000652 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000652">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000308"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000086"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000052"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000008"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000677 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000677">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001300"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000479"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000723 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000723">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000308"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000086"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000052"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000008"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000769 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000769">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000308"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000086"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000052"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000008"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000776 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000776">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000783 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000783">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000787 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000787">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000988 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000988">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000020"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001000"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000989 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000989">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000020"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001000"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000990 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000990">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000020"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001000"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9443"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0001137 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001137"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0001138 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001138"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0001139 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001139"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0001143 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001143">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000160"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000630"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0001145 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001145">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001143"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000631"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0001152 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001152">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001153"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0001139"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0001153 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001153"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0001154 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001154">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001153"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0001137"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0001155 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001155">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001153"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0001138"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0001194 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001194">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0001196 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001196"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0001200 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001200">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0001196"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000086"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0001212 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001212"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0001240 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001240">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000308"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000086"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000052"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000008"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0001300 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001300"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0001317 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001317"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0001362 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001362">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000070"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000308"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000086"/>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000052"/>
-                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000008"/>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nature Biotechnology 28,434–435 (2010)</obo:IAO_0000119>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0001497 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001497">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000308"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000086"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000052"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000008"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0001523 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001523">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000007"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000308"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000086"/>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000052"/>
-                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000008"/>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0001524 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001524">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000308"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000086"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000052"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000008"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0001532 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001532">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0001551 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001551">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_1110023"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000595"/>
     
 
 
@@ -2228,131 +1042,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/ERO_0001678 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001678">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000308"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000086"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000052"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000008"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0001706 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001706">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0001707 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001707">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000007"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000020"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000308"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0001706"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/ERO_0001716 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001716"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0001718 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001718">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000308"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000086"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000052"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000008"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0001738 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001738">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000308"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000086"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000052"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000008"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0001762 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001762">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000308"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000086"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000052"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000008"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
     
 
 
@@ -2374,9 +1066,7 @@
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030"/>
     
 
 
@@ -2395,100 +1085,10 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10090 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_9443 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9443"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_9606 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011">
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000017 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000017">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000047 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000047">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000066 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000066"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000070 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000070"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000086 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000086">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000094 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000094">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -2501,214 +1101,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBI_0000341 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000341">
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000020"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000308"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0001706"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000368 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000368">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000369 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000369">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000370 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000370">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000371 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000371">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000372 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000372">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000374 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000374">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000375 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000375">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000376 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000376">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000377 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000377">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000379 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000379">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000383 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000383">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000387 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000387">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000392 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000392">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000401 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000401">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000453 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000453">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000571 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000571">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000052"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-                            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000661 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000661">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000308"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000086"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000052"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000008"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000690 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000690">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000308"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000086"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000052"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000008"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OBI_0000835 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000835">
@@ -2717,136 +1109,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBI_0000854 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000854">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000308"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000086"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000052"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000008"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000916 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000916">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000308"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000086"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000052"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000008"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000946 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000946">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000960 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000960">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0001036 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001036">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OBI_0100026 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100026">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0400147 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400147">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0600031 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600031">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000308"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000086"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000052"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000008"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_1110023 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_1110023">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_1110055 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_1110055">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_1110082 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_1110082">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100026"/>
     
 
 
@@ -2866,60 +1131,11 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/UBERON_0000479 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000479"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/UBERON_0001062 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001062">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <owl:disjointWith rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
     </owl:Class>
-    
-
-
-    <!-- http://purl.org/net/OCRe/research.owl#Interventional_study -->
-
-    <owl:Class rdf:about="http://purl.org/net/OCRe/research.owl#Interventional_study">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/net/OCRe/research.owl#Quantitative_human_study"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0000347"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/net/OCRe/research.owl#Observational_study -->
-
-    <owl:Class rdf:about="http://purl.org/net/OCRe/research.owl#Observational_study">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000015"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0001317"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/net/OCRe/research.owl#Quantitative_human_study -->
-
-    <owl:Class rdf:about="http://purl.org/net/OCRe/research.owl#Quantitative_human_study"/>
     
 
 
@@ -3261,6 +1477,9 @@
     <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/license/SWO_1000007">
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2 clause BSD License</rdfs:comment>
     </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001362">
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nature Biotechnology 28,434–435 (2010)</obo:IAO_0000119>
+    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000727">
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An assay to analyze pancreatic Î_-Cell function.</obo:IAO_0000112>
     </rdf:Description>
@@ -3300,8 +1519,14 @@
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001646">
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An electrophoresis technique in which complexes remain—for the most part—associated and folded as they would be in the cell.</obo:IAO_0000115>
     </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0003001">
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
+    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000626">
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Genomic deletions of OFD1 account for 23% of oral-facial-digital type 1 syndrome after negative DNA sequencing. Thauvin-Robinet C, Franco B, Saugier-Veber P, Aral B, Gigot N, Donzel A, Van Maldergem L, Bieth E, Layet V, Mathieu M, Teebi A, Lespinasse J, Callier P, Mugneret F, Masurel-Paulet A, Gautier E, Huet F, Teyssier JR, Tosi M, Frébourg T, Faivre L.  Hum Mutat. 2008 Nov 19. PMID: 19023858</obo:IAO_0000112>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000009">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Def from EFO, to be added to OBI. ; From Richard  this class represents: hybridomas, stem cells{IPS/MEFs/ES}, modified standard cell lines, primary cells, unique bacterial lines, yeast lines ; Placeholder for class to be imported from the Reagent Ontology (ReO).</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/data/SWO_3000045">
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A simple spreadsheet-based, MIAME-supportive format for microarray data: MAGE-TAB.</rdfs:comment>
@@ -3314,12 +1539,12 @@ A study in which an individual acts has his/her own comparison does not fall int
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001277">
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Use of viral strains as markers of a cellâ€™s connectivity to the injection site. </obo:IAO_0000112>
     </rdf:Description>
+    <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/license/SWO_9000085">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3 clause BSD License</rdfs:comment>
+    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000009">
         <rdfs:label xml:lang="en">label</rdfs:label>
         <obo:IAO_0000111 xml:lang="en">label</obo:IAO_0000111>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/license/SWO_9000085">
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3 clause BSD License</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000987">
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
@@ -3339,8 +1564,14 @@ A study in which an individual acts has his/her own comparison does not fall int
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0100299">
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Placeholder for EDAM operation class. ; a type of detection in which there is some statistical uncertainty as to whether the detected feature is valid</rdfs:comment>
     </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000160">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">From Richard: RNAi, plasmid, phage, chemical, viral, [also cell libraries] ; Placeholder for class to be imported from the Reagent Ontology (ReO).</rdfs:comment>
+    </rdf:Description>
     <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/data/SWO_3000037">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SBML file</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000284">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Placeholder for class to be imported from the Reagent Ontology (ReO). ; this is an expression library, and has part some construct</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000584">
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Placeholder for class to be imported from the Reagent Ontology (ReO). ; The definition of a compound requires a fixed ratio. Thus table salt, NaCl, is a compound but not a molecule, cecause it is composed of 2 or more elements in a fixed ratio (1:1, satisfying the definition of a compound) but does not have a well-defined number of atoms (so it does not meet the criteria for a molecule). It is instead an array of any number (not fixed) of Na+ and Cl- ions arranged in a 1:1 ratio.</rdfs:comment>
@@ -3351,11 +1582,11 @@ A study in which an individual acts has his/her own comparison does not fall int
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0100261">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sequence-based protein tertiary structure prediction objective</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0100260">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sequence-based protein secondary structure prediction objective</rdfs:label>
-    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000581">
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The prokaryotes (pronounced /proʊˈkæri.oʊts/ or /proʊˈkæriəts/) are a group of organisms that lack a cell nucleus (= karyon), or any other membrane-bound organelles.</obo:IAO_0000115>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0100260">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sequence-based protein secondary structure prediction objective</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/title">
         <dc:description xml:lang="en-us">
@@ -3368,9 +1599,6 @@ A study in which an individual acts has his/her own comparison does not fall int
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000583">
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Placeholder for class to be imported from the Reagent Ontology (ReO). ; The definition of a compound requires a fixed ratio. Thus table salt, NaCl, is a compound but not a molecule, cecause it is composed of 2 or more elements in a fixed ratio (1:1, satisfying the definition of a compound) but does not have a well-defined number of atoms (so it does not meet the criteria for a molecule). It is instead an array of any number (not fixed) of Na+ and Cl- ions arranged in a 1:1 ratio.</rdfs:comment>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001662">
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein assay used to identify the binding sites, or ‘epitopes’, that are recognized by antibodies.</obo:IAO_0000115>
-    </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/creator">
         <rdfs:comment xml:lang="en-us">An entity primarily responsible for making the content 
          of the resource.</rdfs:comment>
@@ -3378,6 +1606,9 @@ A study in which an individual acts has his/her own comparison does not fall int
          or a service.  Typically, the name of a Creator should 
          be used to indicate the entity.</dc:description>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001662">
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein assay used to identify the binding sites, or ‘epitopes’, that are recognized by antibodies.</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/contributor">
         <rdfs:comment xml:lang="en-us">An entity responsible for making contributions to the
@@ -3398,6 +1629,9 @@ A study in which an individual acts has his/her own comparison does not fall int
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000693">
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID: 18612301. A Bayesian deconvolution strategy for immunoprecipitation-based DNA methylome analysis. Down TA, Rakyan VK, Turner DJ, Flicek P, Li H, Kulesha E, Gräf S, Johnson N, Herrero J, Tomazou EM, Thorne NP, Bäckdahl L, Herberth M, Howe KL, Jackson DK, Miretti MM, Marioni JC, Birney E, Hubbard TJ, Durbin R, Tavaré S, Beck S. Nat Biotechnol. 2008 Jul;26(7):779-85.</obo:IAO_0000112>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000162">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">From Richard: unique rare ; Placeholder for class to be imported from the Reagent Ontology (ReO).</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001007">
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To be logically defined based on its participation in a microsurgical process.</rdfs:comment>
@@ -3421,5 +1655,5 @@ A study in which an individual acts has his/her own comparison does not fall int
 
 
 
-<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.4.2018) http://owlapi.sourceforge.net -->
 
