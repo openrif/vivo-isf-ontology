@@ -20,6 +20,7 @@ import org.semanticweb.owlapi.model.OWLEntity;
 import org.semanticweb.owlapi.model.OWLEntityVisitor;
 import org.semanticweb.owlapi.model.OWLNamedIndividual;
 import org.semanticweb.owlapi.model.OWLObjectProperty;
+import org.semanticweb.owlapi.model.OWLObjectPropertyExpression;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
@@ -91,14 +92,61 @@ public class ISFUtil {
 			final OWLOntology ontology, final OWLReasoner pr) {
 		final Set<OWLEntity> entities = new HashSet<OWLEntity>();
 		entities.add(entity);
-		final Set<OWLOntology> ontologies;
-//		if (includeImports) {
-//			ontologies = ontology.getImportsClosure();
-//		} else {
-//			ontologies = Collections.singleton(ontology);
-//		}
 
+		entity.accept(new OWLEntityVisitor() {
 
+			@Override
+			public void visit(OWLAnnotationProperty property) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void visit(OWLDatatype datatype) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void visit(OWLNamedIndividual individual) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void visit(OWLDataProperty property) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void visit(OWLObjectProperty property) {
+				entities.add(property);
+				Set<OWLObjectPropertyExpression> opes = pr
+						.getSubObjectProperties(property, false).getFlattened();
+				for (OWLObjectPropertyExpression ope : opes) {
+					if (ope instanceof OWLObjectProperty) {
+						entities.add((OWLObjectProperty) ope);
+					}
+				}
+
+			}
+
+			@Override
+			public void visit(OWLClass cls) {
+				entities.add(cls);
+				entities.addAll(pr.getSubClasses(cls, false).getFlattened());
+			}
+		});
+
+		return entities;
+	}
+	
+	public static Set<OWLEntity> getSupersClosure(OWLEntity entity,
+			final OWLOntology ontology, final OWLReasoner pr) {
+		final Set<OWLEntity> entities = new HashSet<OWLEntity>();
+		entities.add(entity);
+		
 		entity.accept(new OWLEntityVisitor() {
 			
 			@Override
@@ -127,22 +175,22 @@ public class ISFUtil {
 			
 			@Override
 			public void visit(OWLObjectProperty property) {
-				// TODO Auto-generated method stub
+				entities.add(property);
+				Set<OWLObjectPropertyExpression> opes = pr
+						.getSuperObjectProperties(property, false).getFlattened();
+				for (OWLObjectPropertyExpression ope : opes) {
+					if (ope instanceof OWLObjectProperty) {
+						entities.add((OWLObjectProperty) ope);
+					}
+				}
 				
 			}
 			
 			@Override
 			public void visit(OWLClass cls) {
 				entities.add(cls);
-				entities.addAll(pr.getSubClasses(cls, false).getFlattened());
-//				for (OWLClassExpression ce : cls.getSubClasses(ontologies)) {
-//					if (ce instanceof OWLClass) {
-//						entities.add((OWLClass) ce);
-//						entities.addAll(getSubsClosure((OWLClass) ce, ontology,
-//								includeImports));
-//					}
-//				}
-				
+				entities.addAll(pr.getSuperClasses(cls, false).getFlattened());
+
 			}
 		});
 		

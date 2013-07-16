@@ -12,20 +12,24 @@ import org.semanticweb.owlapi.io.RDFXMLOntologyFormat;
 import org.semanticweb.owlapi.model.IRI;
 import org.semanticweb.owlapi.model.OWLAnnotationAssertionAxiom;
 import org.semanticweb.owlapi.model.OWLAxiom;
+import org.semanticweb.owlapi.model.OWLClass;
 import org.semanticweb.owlapi.model.OWLDataFactory;
+import org.semanticweb.owlapi.model.OWLDeclarationAxiom;
 import org.semanticweb.owlapi.model.OWLEntity;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
 import org.semanticweb.owlapi.model.OWLOntologyStorageException;
+import org.semanticweb.owlapi.model.OWLSubClassOfAxiom;
 import org.semanticweb.owlapi.reasoner.OWLReasoner;
+import org.semanticweb.owlapi.util.OWLAxiomVisitorAdapter;
+import org.semanticweb.owlapi.vocab.OWLRDFVocabulary;
 
 import uk.ac.manchester.cs.factplusplus.owlapiv3.FaCTPlusPlusReasonerFactory;
 
 public class BuildModule {
 
-	private OWLOntologyManager isfMan = OWLManager
-			.createOWLOntologyManager();
+	private OWLOntologyManager isfMan = OWLManager.createOWLOntologyManager();
 	private OWLDataFactory df = isfMan.getOWLDataFactory();
 	private OWLOntology isfOntology;
 
@@ -107,7 +111,32 @@ public class BuildModule {
 	}
 
 	public void addClosureToBfo() {
-		// TODO Auto-generated method stub
+		for (OWLEntity entity : moduleOntologyGenerated.getSignature()) {
+			Set<OWLEntity> supers = ISFUtil.getSupersClosure(entity,
+					isfOntology, reasoner);
+			for (final OWLEntity supr : supers) {
+				if (!supr.getIRI().toString().contains("BFO_")) {
+					Set<OWLAxiom> axioms = ISFUtil.getDefiningAxioms(supr,
+							isfOntology, true);
+					for (OWLAxiom axiom : axioms) {
+						axiom.accept(new OWLAxiomVisitorAdapter() {
+							@Override
+							public void visit(OWLSubClassOfAxiom axiom) {
+								if (axiom.getSubClass() instanceof OWLClass
+										&& axiom.getSubClass().asOWLClass()
+												.getIRI().equals(supr.getIRI())) {
+
+									if (axiom.getSuperClass() instanceof OWLClass) {
+										addAxiom(axiom);
+									}
+								}
+							}
+							// TODO the other types of entities
+						});
+					}
+				}
+			}
+		}
 
 	}
 
@@ -125,8 +154,7 @@ public class BuildModule {
 				i.remove();
 				annotatedEntities.add(entity);
 				Set<OWLAnnotationAssertionAxiom> axioms = ISFUtil
-						.getAnnotationAxioms(isfOntology, true,
-								entity.getIRI());
+						.getAnnotationAxioms(isfOntology, true, entity.getIRI());
 				addAxioms(axioms);
 				for (OWLAnnotationAssertionAxiom a : axioms) {
 					Set<OWLEntity> signature = a.getSignature();
@@ -154,6 +182,13 @@ public class BuildModule {
 	}
 
 	private void addAxiom(OWLAxiom axiom) {
+		if (axiom instanceof OWLDeclarationAxiom) {
+			OWLDeclarationAxiom da = (OWLDeclarationAxiom) axiom;
+			if (da.getEntity().getIRI()
+					.equals(OWLRDFVocabulary.OWL_NOTHING.getIRI())) {
+				return;
+			}
+		}
 		if (!moduleOntologyExclude.containsAxiom(axiom)
 				&& !moduleOntologyInclude.containsAxiom(axiom)) {
 			isfMan.addAxiom(moduleOntologyGenerated, axiom);
