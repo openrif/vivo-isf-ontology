@@ -1,0 +1,60 @@
+#!/bin/bash
+
+# Script for creating new test-suit.
+# In parameters: <suit-name> <source-tbox>
+# output:
+#  - create <suit-name> directory
+#  - copy <source-tbox> into <suit-name>/<suit-name>.tbox
+#  - create Makefile and conf-file
+
+# file names
+MKNAME=./$1/Makefile
+TBOXNAME=./$1/$1.tbox
+CONFNAME=./$1/$1.conf
+
+# .orig files path
+OFP=.
+
+Usage()
+{
+	echo
+	echo "Usage: create-new-test <suit-name> <source-tbox>"
+	echo " where: <suit-name>   -- unique name for new suit"
+	echo "        <source-tbox> -- test TBox file"
+	exit 1
+}
+
+Fatal()
+{
+  echo "Fatal: directory $1 already exists"
+  exit 1
+}
+
+# check for the parameters
+if test "$1" = ""; then
+  Usage
+elif test "$2" = ""; then
+  Usage
+fi
+
+# create new subdir
+mkdir $1 || Fatal
+
+# create Makefile for the test suit
+cp $OFP/Makefile.default $MKNAME
+echo "KB_CONF = $1.conf" >> $MKNAME
+echo "KB = $1.tbox" >> $MKNAME
+echo >> $MKNAME
+echo "sat classify:" >> $MKNAME
+echo "	FaCT++ \$(KB_CONF)" >> $MKNAME
+
+# create TBox file for the test suit
+cp $2 $TBOXNAME
+
+# create Config file for the test suit
+cp $OFP/options.default $CONFNAME
+cat $OFP/query.default >> $CONFNAME
+echo "TBox = $1.tbox" >> $CONFNAME
+echo >> $CONFNAME
+
+echo "Finished!"

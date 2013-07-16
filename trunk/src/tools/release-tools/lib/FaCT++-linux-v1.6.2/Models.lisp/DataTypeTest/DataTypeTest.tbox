@@ -1,0 +1,201 @@
+; updated 05-04-06
+
+;;TEST DATA 
+(defdatarole R);
+
+;GT and LT
+;testing simple satisfiable and unsatisfiable ranges
+(defconcept TTa1 (and (some R(gt (number 18))) (some R(lt(number 60)))))
+(defconcept TTa2 (and (some R(gt (number 60))) (some R(lt(number 18)))));unsat
+(defconcept TTa3 (and (some R(lt (number 18))) (some R(gt(number 60)))));unsat
+(defconcept TTa4 (and (some R(lt (number 60))) (some R(gt(number 18)))))
+(defconcept TTa5 (and (some R(gt (number 18))) (some R(lt(number 18)))));unsat
+(defconcept TTa6 (and (some R(lt (number 60))) (some R(gt(number 60)))));unsat
+;the 4 below should eventually simplify
+(defconcept TTb1 (and (some R(gt (number 18))) (some R(gt(number 60)))))
+(defconcept TTb2 (and (some R(gt (number 60))) (some R(gt(number 18)))))
+(defconcept TTb3 (and (some R(lt (number 18))) (some R(lt(number 60)))))
+(defconcept TTb4 (and (some R(lt (number 60))) (some R(lt(number 18)))))
+(defconcept TTb5 (and (some R(gt (number 18))) (some R(gt(number 18)))))
+(defconcept TTb6 (and (some R(lt (number 60))) (some R(lt(number 60)))))
+;testing ranges together with specific values
+(defconcept TTc1 (and (some R(gt (number 18))) (some R(number 60))))
+(defconcept TTc2 (and (some R(gt (number 60))) (some R(number 18))));unsat
+(defconcept TTc3 (and (some R(lt (number 18))) (some R(number 60))));unsat
+(defconcept TTc4 (and (some R(lt (number 60))) (some R(number 18))))
+(defconcept TTd1 (and (some R(number 18)) (some R(gt (number 60)))));unsat
+(defconcept TTd2 (and (some R(number 60)) (some R(gt (number 18)))))
+(defconcept TTd3 (and (some R(number 18)) (some R(lt (number 60)))))
+(defconcept TTd4 (and (some R(number 60)) (some R(lt (number 18)))));unsat
+(defconcept TTe1 (and (some R(number 18)) (some R(lt(number 18)))));unsat
+(defconcept TTe2 (and (some R(number 60)) (some R(gt(number 60)))));unsat
+(defconcept TTe3 (and (some R(lt (number 60))) (some R(number 60))));unsat
+(defconcept TTe4 (and (some R(gt (number 18))) (some R(number 18))));unsat
+
+;GE and LT
+;testing simple satisfiable and unsatisfiable ranges
+(defconcept ETa1 (and (some R(ge (number 18))) (some R(lt(number 60)))))
+(defconcept ETa2 (and (some R(ge (number 60))) (some R(lt(number 18)))));unsat
+(defconcept ETa3 (and (some R(le (number 18))) (some R(gt(number 60)))));unsat
+(defconcept ETa4 (and (some R(le (number 60))) (some R(gt(number 18)))))
+(defconcept ETa5 (and (some R(ge (number 18))) (some R(lt(number 18)))));unsat
+(defconcept ETa6 (and (some R(le (number 60))) (some R(gt(number 60)))));unsat
+;the 4 below should eventually simplify
+(defconcept ETb1 (and (some R(ge (number 18))) (some R(gt(number 60)))))
+(defconcept ETb2 (and (some R(ge (number 60))) (some R(gt(number 18)))))
+(defconcept ETb3 (and (some R(le (number 18))) (some R(lt(number 60)))))
+(defconcept ETb4 (and (some R(le (number 60))) (some R(lt(number 18)))))
+(defconcept ETb5 (and (some R(ge (number 18))) (some R(gt(number 18)))))
+(defconcept ETb6 (and (some R(le (number 60))) (some R(lt(number 60)))))
+;testing ranges together with specific values
+(defconcept ETc1 (and (some R(ge (number 18))) (some R(number 60))))
+(defconcept ETc2 (and (some R(ge (number 60))) (some R(number 18))));unsat
+(defconcept ETc3 (and (some R(le (number 18))) (some R(number 60))));unsat
+(defconcept ETc4 (and (some R(le (number 60))) (some R(number 18))))
+(defconcept ETd1 (and (some R(number 18)) (some R(gt (number 60)))));unsat
+(defconcept ETd2 (and (some R(number 60)) (some R(gt (number 18)))))
+(defconcept ETd3 (and (some R(number 18)) (some R(lt (number 60)))))
+(defconcept ETd4 (and (some R(number 60)) (some R(lt (number 18)))));unsat
+(defconcept ETe1 (and (some R(number 18)) (some R(lt(number 18)))));unsat
+(defconcept ETe2 (and (some R(number 60)) (some R(gt(number 60)))));unsat
+(defconcept ETe3 (and (some R(le (number 60))) (some R(number 60))))
+(defconcept ETe4 (and (some R(ge (number 18))) (some R(number 18))))
+
+;GE and LE
+;testing simple satisfiable and unsatisfiable ranges
+(defconcept EEa1 (and (some R(ge (number 18))) (some R(le(number 60)))))
+(defconcept EEa2 (and (some R(ge (number 60))) (some R(le(number 18)))));unsat
+(defconcept EEa3 (and (some R(le (number 18))) (some R(ge(number 60)))));unsat
+(defconcept EEa4 (and (some R(le (number 60))) (some R(ge(number 18)))))
+(defconcept EEa5 (and (some R(ge (number 18))) (some R(le(number 18)))))
+(defconcept EEa6 (and (some R(le (number 60))) (some R(ge(number 60)))))
+;the 4 below should eventually simplify
+(defconcept EEb1 (and (some R(ge (number 18))) (some R(ge(number 60)))))
+(defconcept EEb2 (and (some R(ge (number 60))) (some R(ge(number 18)))))
+(defconcept EEb3 (and (some R(le (number 18))) (some R(le(number 60)))))
+(defconcept EEb4 (and (some R(le (number 60))) (some R(le(number 18)))))
+(defconcept EEb5 (and (some R(ge (number 18))) (some R(ge(number 18)))))
+(defconcept EEb6 (and (some R(le (number 60))) (some R(le(number 60)))))
+;testing ranges together with specific values
+(defconcept EEc1 (and (some R(ge (number 18))) (some R(number 60))))
+(defconcept EEc2 (and (some R(ge (number 60))) (some R(number 18))));unsat
+(defconcept EEc3 (and (some R(le (number 18))) (some R(number 60))));unsat
+(defconcept EEc4 (and (some R(le (number 60))) (some R(number 18))))
+(defconcept EEd1 (and (some R(number 18)) (some R(ge (number 60)))));unsat
+(defconcept EEd2 (and (some R(number 60)) (some R(ge (number 18)))))
+(defconcept EEd3 (and (some R(number 18)) (some R(le (number 60)))))
+(defconcept EEd4 (and (some R(number 60)) (some R(le (number 18)))));unsat
+(defconcept EEe1 (and (some R(number 18)) (some R(le(number 18)))))
+(defconcept EEe2 (and (some R(number 60)) (some R(ge(number 60)))))
+(defconcept EEe3 (and (some R(le (number 60))) (some R(number 60))))
+(defconcept EEe4 (and (some R(ge (number 18))) (some R(number 18))))
+
+;GT and LE
+;testing simple satisfiable and unsatisfiable ranges
+(defconcept TEa1 (and (some R(gt (number 18))) (some R(le(number 60)))))
+(defconcept TEa2 (and (some R(gt (number 60))) (some R(le(number 18)))));unsat
+(defconcept TEa3 (and (some R(lt (number 18))) (some R(ge(number 60)))));unsat
+(defconcept TEa4 (and (some R(lt (number 60))) (some R(ge(number 18)))))
+(defconcept TEa5 (and (some R(gt (number 18))) (some R(le(number 18)))));unsat
+(defconcept TEa6 (and (some R(lt (number 60))) (some R(ge(number 60)))));unsat
+;the 4 below should eventually simplify
+(defconcept TEb1 (and (some R(gt (number 18))) (some R(ge(number 60)))))
+(defconcept TEb2 (and (some R(gt (number 60))) (some R(ge(number 18)))))
+(defconcept TEb3 (and (some R(lt (number 18))) (some R(le(number 60)))))
+(defconcept TEb4 (and (some R(lt (number 60))) (some R(le(number 18)))))
+(defconcept TEb5 (and (some R(gt (number 18))) (some R(ge(number 18)))))
+(defconcept TEb6 (and (some R(lt (number 60))) (some R(le(number 60)))))
+;testing ranges together with specific values
+(defconcept TEc1 (and (some R(gt (number 18))) (some R(number 60))))
+(defconcept TEc2 (and (some R(gt (number 60))) (some R(number 18))));unsat
+(defconcept TEc3 (and (some R(lt (number 18))) (some R(number 60))));unsat
+(defconcept TEc4 (and (some R(lt (number 60))) (some R(number 18))))
+(defconcept TEd1 (and (some R(number 18)) (some R(ge (number 60)))));unsat
+(defconcept TEd2 (and (some R(number 60)) (some R(ge (number 18)))))
+(defconcept TEd3 (and (some R(number 18)) (some R(le (number 60)))))
+(defconcept TEd4 (and (some R(number 60)) (some R(le (number 18)))));unsat
+(defconcept TEe1 (and (some R(number 18)) (some R(le(number 18)))))
+(defconcept TEe2 (and (some R(number 60)) (some R(ge(number 60)))))
+(defconcept TEe3 (and (some R(lt (number 60))) (some R(number 60))));unsat
+(defconcept TEe4 (and (some R(gt (number 18))) (some R(number 18))));unsat
+
+;Doubles - not supported
+(defconcept double1 (and (some R(gt (number 18.4))) (some R(lt (number 18.5)))));unsat
+(defconcept double2 (and (some R(lt (number 18.4))) (some R(gt (number 18.5)))));unsat
+
+;Testing range cross-over
+(defconcept between1 (and (some R(between (number 28) (number 60))) (some R(between (number 18) (number 50)))))
+(defconcept inrange1 (and (some R(in-range (number 18) (number 50))) (some R(in-range (number 28) (number 60)))))
+(defconcept between2 (and (some R(between (number 18) (number 28))) (some R(between (number 50) (number 60)))));unsat
+(defconcept inrange2 (and (some R(in-range (number 50) (number 60))) (some R(in-range (number 18) (number 28)))));unsat
+
+;Check that 1a and 1b, and 2a and 2b are equivalent
+(defconcept equiv1a (and (some R(gt (number 18))) (some R(lt (number 60)))))
+(defconcept equiv1b (some R(between (number 18) (number 60))))
+(defconcept equiv2a (and (some R(ge (number 18))) (some R(le (number 60)))))
+(defconcept equiv2b (some R(in-range (number 18) (number 60))))
+
+;Strings
+(defconcept str01 (and (some R(gt(string AWord))) (some R(lt(string BWord)))))
+(defconcept str02 (and (some R(lt(string AWord))) (some R(gt(string BWord)))));unsat
+(defconcept str03 (and (some R(gt(string WordA))) (some R(lt(string WordB)))))
+(defconcept str04 (and (some R(lt(string WordA))) (some R(gt(string WordB)))));unsat
+(defconcept str05 (and (some R(gt(string A))) (some R(lt(string A)))));unsat
+(defconcept str06 (and (some R(ge(string A))) (some R(le(string A)))))
+(defconcept str07 (and (some R(gt(string A))) (some R(gt(string B)))))
+(defconcept str08 (and (some R(lt(string A))) (some R(lt(string B)))))
+(defconcept str09 (and (some R(gt(string aa))) (some R(lt(string aaa)))))
+(defconcept str10 (and (some R(gt(string aaa))) (some R(lt(string aa)))));unsat
+(defconcept str11 (and (some R(gt(string AWord))) (some R(string BWord))))
+(defconcept str12 (and (some R(lt(string AWord))) (some R(string BWord))));unsat
+
+;Subsumption tests
+(defconcept subNumA (and (some R (ge (number 5))) (some R (le (number 10))))) ; subsumes TOP
+(defconcept subNumB (and (some R (ge (number 5))) (some R (lt (number 10))))) ; subsumes a
+(defconcept subNumC (and (some R (gt (number 5))) (some R (le (number 10))))) ; subsumes a
+(defconcept subNumD (and (some R (gt (number 5))) (some R (lt (number 10))))) ; subsumes b, c (a)
+(defconcept subNumE (some R (number 5)))				    ; subsumes b (a)
+(defconcept subNumF (some R (number 10)))			    ; subsumes c (a)
+(defconcept subStrA (and (some R (ge (string a))) (some R (le (string b))))) ; subsumes TOP
+(defconcept subStrB (and (some R (ge (string a))) (some R (lt (string b))))) ; subsumes a
+(defconcept subStrC (and (some R (gt (string a))) (some R (le (string b))))) ; subsumes a
+(defconcept subStrD (and (some R (gt (string a))) (some R (lt (string b))))) ; subsumes b, c (a)
+(defconcept subStrE (some R (string a)))				     ; subsumes b (a)
+(defconcept subStrF (some R (string b)))				     ; subsumes c (a)
+
+;Mix of types unsatisfiability test
+(defconcept mix1 (and (some R (gt (number 5))) (some R (lt (string five)))));unsat
+(defconcept mix2 (and (some R (gt (number 5))) (some R (lt (string 5)))));unsat
+
+;Check that negative type saturation works correcly
+(defconcept negSat1N (and (some R (number)) (not (some R (le (number 5)))) (not (some R (number 6))) (not(some R (ge (number 7))))));unsat
+(defconcept negSat2N (and (some R (number)) (not (some R (lt (number 5)))) (not (some R (number 6))) (not(some R (ge (number 7))))))
+(defconcept negSat3N (and (some R (number)) (not (some R (le (number 5)))) (not (some R (number 6))) (not(some R (gt (number 7))))))
+(defconcept negSat4N (and (some R (number)) (not (some R (lt (number 5)))) (not (some R (number 6))) (not (some R (number 5))) (not(some R (ge (number 7))))));unsat
+(defconcept negSat5N (and (some R (number)) (not (some R (le (number 5)))) (not (some R (number 6))) (not (some R (number 7))) (not(some R (gt (number 7))))));unsat
+(defconcept negSat1S (and (some R (string)) (not (some R (le (string a)))) (not (some R (string b))) (not(some R (ge (string c))))))
+
+;negative subsumption tests
+;C = E
+;D = F
+;I subsumes A
+;J subsumes C
+;H subsumes B
+;G subsumes D
+;F subsumes B
+;E subsumes A
+;M subsumes L
+(defconcept subSumpA (not (some R(lt (number 2)))))
+(defconcept subSumpB (not (some R(gt (number 5)))))
+(defconcept subSumpC (not (some R(le (number 2)))))
+(defconcept subSumpD (not (some R(ge (number 5)))))
+(defconcept subSumpE (and (not (some R(lt (number 2)))) (not (some R (number 2)))))
+(defconcept subSumpF (and (not (some R(gt (number 5)))) (not (some R (number 5)))))
+(defconcept subSumpG (and (some R(lt (number 5)))))
+(defconcept subSumpH (and (some R(le (number 5)))))
+(defconcept subSumpI (and (some R(ge (number 2)))))
+(defconcept subSumpJ (and (some R(gt (number 2)))))
+(defconcept subSumpK (and (not (some R(number 2))) (not (some R(number 3))) (not (some R(number 4))) (some R (ge (number 2))) (some R (le (number 4)))));unsat
+(defconcept subSumpL (and (not (some R(number 2))) (not (some R(number 3))) (not (some R(number 4)))))
+(defconcept subSumpM (some R(le (number 1))))
+(defconcept subSumpN (and (not (some R(number 2))) (some R (number 2))));unsat

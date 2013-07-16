@@ -24,10 +24,10 @@ import uk.ac.manchester.cs.factplusplus.owlapiv3.FaCTPlusPlusReasonerFactory;
 
 public class BuildModule {
 
-	private OWLOntologyManager isfFullMan = OWLManager
+	private OWLOntologyManager isfMan = OWLManager
 			.createOWLOntologyManager();
-	private OWLDataFactory df = isfFullMan.getOWLDataFactory();
-	private OWLOntology isfFullOntology;
+	private OWLDataFactory df = isfMan.getOWLDataFactory();
+	private OWLOntology isfOntology;
 
 	private OWLOntology moduleOntology;
 	private OWLOntology moduleOntologyInclude;
@@ -44,7 +44,7 @@ public class BuildModule {
 
 		FaCTPlusPlusReasonerFactory prf = new FaCTPlusPlusReasonerFactory();
 		System.out.println("Creating reasoner.");
-		reasoner = prf.createReasoner(isfFullOntology);
+		reasoner = prf.createReasoner(isfOntology);
 		if (reasoner.getUnsatisfiableClasses().getEntities().size() > 0) {
 			System.out.println("Unsatisfieds: "
 					+ reasoner.getUnsatisfiableClasses().getEntities());
@@ -72,7 +72,7 @@ public class BuildModule {
 
 		for (OWLEntity e : entities) {
 			addAxiom(df.getOWLDeclarationAxiom(e));
-			addAxioms(ISFUtil.getDefiningAxioms(e, isfFullOntology, true));
+			addAxioms(ISFUtil.getDefiningAxioms(e, isfOntology, true));
 		}
 
 	}
@@ -83,12 +83,12 @@ public class BuildModule {
 		Set<OWLEntity> closureEntities = new HashSet<OWLEntity>();
 
 		for (OWLEntity e : entities) {
-			closureEntities.addAll(ISFUtil.getSubsClosure(e, isfFullOntology,
+			closureEntities.addAll(ISFUtil.getSubsClosure(e, isfOntology,
 					reasoner));
 		}
 		for (OWLEntity e : closureEntities) {
 			addAxiom(df.getOWLDeclarationAxiom(e));
-			addAxioms(ISFUtil.getDefiningAxioms(e, isfFullOntology, true));
+			addAxioms(ISFUtil.getDefiningAxioms(e, isfOntology, true));
 		}
 	}
 
@@ -125,7 +125,7 @@ public class BuildModule {
 				i.remove();
 				annotatedEntities.add(entity);
 				Set<OWLAnnotationAssertionAxiom> axioms = ISFUtil
-						.getAnnotationAxioms(isfFullOntology, true,
+						.getAnnotationAxioms(isfOntology, true,
 								entity.getIRI());
 				addAxioms(axioms);
 				for (OWLAnnotationAssertionAxiom a : axioms) {
@@ -156,7 +156,7 @@ public class BuildModule {
 	private void addAxiom(OWLAxiom axiom) {
 		if (!moduleOntologyExclude.containsAxiom(axiom)
 				&& !moduleOntologyInclude.containsAxiom(axiom)) {
-			isfFullMan.addAxiom(moduleOntologyGenerated, axiom);
+			isfMan.addAxiom(moduleOntologyGenerated, axiom);
 		}
 	}
 
@@ -165,13 +165,13 @@ public class BuildModule {
 		format.setAddMissingTypes(true);
 		for (OWLOntology ontology : changedOntologies) {
 			System.out.println("Saving ontology: " + ontology.getOntologyID());
-			isfFullMan.saveOntology(ontology, format);
+			isfMan.saveOntology(ontology, format);
 		}
 
 	}
 
 	private void inti() throws OWLOntologyCreationException {
-		isfFullOntology = ISFUtil.setupAndLoadIsfFullOntology(isfFullMan);
+		isfOntology = ISFUtil.setupAndLoadIsfOntology(isfMan);
 		// System.out.println(isfFullMan.getOntologies().size());
 		// for(OWLOntology o : isfFullMan.getOntologies()){
 		// System.out.println(o.getOntologyID() +
@@ -195,7 +195,7 @@ public class BuildModule {
 		IRI moduleGeneratedIri = IRI.create(ISFUtil.ISF_ONTOLOGY_IRI_PREFIX
 				+ moduleName + "-module-generated.owl");
 		moduleOntologyGenerated = createOntology(moduleGeneratedIri);
-		isfFullMan.setOntologyDocumentIRI(
+		isfMan.setOntologyDocumentIRI(
 				moduleOntologyGenerated,
 				IRI.create(getDocumentFile(
 						new File(ISFUtil.getSvnRootDir(), "_tmp/local"),
@@ -205,10 +205,10 @@ public class BuildModule {
 
 	private OWLOntology getLoadCreateOntology(IRI iri)
 			throws OWLOntologyCreationException {
-		OWLOntology ontology = isfFullMan.getOntology(iri);
+		OWLOntology ontology = isfMan.getOntology(iri);
 		if (ontology == null) {
 			try {
-				ontology = isfFullMan.loadOntology(iri);
+				ontology = isfMan.loadOntology(iri);
 			} catch (OWLOntologyCreationException e) {
 				System.out.println(e.getMessage());
 			}
@@ -222,12 +222,12 @@ public class BuildModule {
 
 	private OWLOntology createOntology(IRI iri)
 			throws OWLOntologyCreationException {
-		OWLOntology ontology = isfFullMan.createOntology(iri);
+		OWLOntology ontology = isfMan.createOntology(iri);
 		// int i = iri.toString().lastIndexOf('/');
 		// String fileName = iri.toString().substring(i + 1);
 		// File documentFile = new File(ISFUtil.getSvnRootDir(),
 		// "trunk/src/ontology/module/" + fileName);
-		isfFullMan.setOntologyDocumentIRI(ontology,
+		isfMan.setOntologyDocumentIRI(ontology,
 				IRI.create(getDocumentFile(
 						new File(ISFUtil.getSvnRootDir(),
 								"/trunk/src/ontology/module"), iri).toURI()));
