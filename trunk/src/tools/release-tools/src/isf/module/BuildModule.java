@@ -179,10 +179,15 @@ public class BuildModule {
 				+ moduleName + "-module-exclude.owl");
 		moduleOntologyExclude = getLoadCreateOntology(moduleExcludeIri);
 
-		// always create a new one
+		// always create a new one and save it to the local folder
 		IRI moduleGeneratedIri = IRI.create(ISFUtil.ISF_ONTOLOGY_IRI_PREFIX
 				+ moduleName + "-module-generated.owl");
 		moduleOntologyGenerated = createOntology(moduleGeneratedIri);
+		isfFullMan.setOntologyDocumentIRI(
+				moduleOntologyGenerated,
+				IRI.create(getDocumentFile(
+						new File(ISFUtil.getSvnRootDir(), "_tmp/local"),
+						moduleGeneratedIri).toURI()));
 
 	}
 
@@ -206,15 +211,21 @@ public class BuildModule {
 	private OWLOntology createOntology(IRI iri)
 			throws OWLOntologyCreationException {
 		OWLOntology ontology = isfFullMan.createOntology(iri);
-		int i = iri.toString().lastIndexOf('/');
-
-		String fileName = iri.toString().substring(i + 1);
-		File documentFile = new File(ISFUtil.getSvnRootDir(),
-				"trunk/src/ontology/module/" + fileName);
-		isfFullMan.setOntologyDocumentIRI(ontology,
-				IRI.create(documentFile.toURI()));
+		// int i = iri.toString().lastIndexOf('/');
+		// String fileName = iri.toString().substring(i + 1);
+		// File documentFile = new File(ISFUtil.getSvnRootDir(),
+		// "trunk/src/ontology/module/" + fileName);
+		isfFullMan.setOntologyDocumentIRI(ontology, IRI.create(getDocumentFile(
+				new File(ISFUtil.getSvnRootDir(), "/trunk/src/ontology/module"),
+				iri).toURI()));
 		changedOntologies.add(ontology);
 		return ontology;
+	}
+
+	private File getDocumentFile(File dir, IRI iri) {
+		int i = iri.toString().lastIndexOf('/');
+		String fileName = iri.toString().substring(i + 1);
+		return new File(dir, fileName);
 	}
 
 	public static void main(String[] args) throws OWLOntologyCreationException,
