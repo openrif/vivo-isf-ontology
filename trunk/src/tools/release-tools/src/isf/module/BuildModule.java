@@ -96,13 +96,54 @@ public class BuildModule {
 		}
 	}
 
-	public void removeExcludeSubs() {
-		// TODO Auto-generated method stub
+	public void removeExcludes() {
+		// TODO, try to move lower classes up
+		Set<OWLEntity> entities = ModuleUtil.getExcludeEntities(moduleOntology,
+				true);
+		for (OWLEntity entity : entities) {
+
+			removeAxiom(df.getOWLDeclarationAxiom(entity));
+			removeAxioms(ISFUtil.getDefiningAxioms(entity, isfOntology, true));
+
+			if (entity instanceof OWLClass) {
+				OWLClass c = (OWLClass) entity;
+				Set<OWLClass> subs = reasoner.getSubClasses(c, true)
+						.getFlattened();
+				for (OWLClass sub : subs) {
+					OWLSubClassOfAxiom subAxiom = df.getOWLSubClassOfAxiom(sub,
+							c);
+					if (moduleOntologyGenerated.containsAxiom(subAxiom)) {
+						removeAxiom(subAxiom);
+						;
+						for (OWLClass supr : reasoner.getSuperClasses(c, true)
+								.getFlattened()) {
+							if (moduleOntologyGenerated
+									.containsClassInSignature(supr.getIRI())) {
+								addAxiom(df.getOWLSubClassOfAxiom(sub, supr));
+							}
+						}
+					}
+				}
+
+			}
+		}
 
 	}
 
-	public void removeExcludes() {
-		// TODO Auto-generated method stub
+	public void removeExcludeSubs() {
+		Set<OWLEntity> entities = ModuleUtil.getExcludeSubsEntities(
+				moduleOntology, true);
+		System.out.println("Excluding class: " + entities);
+		Set<OWLEntity> entityiesClosure = new HashSet<OWLEntity>();
+		for (OWLEntity entity : entities) {
+			entityiesClosure.addAll(ISFUtil.getSubsClosure(entity, isfOntology,
+					reasoner));
+		}
+		System.out.println("Excluding class closure: " + entityiesClosure);
+		for (OWLEntity entity : entityiesClosure) {
+			removeAxiom(df.getOWLDeclarationAxiom(entity));
+			removeAxioms(ISFUtil.getDefiningAxioms(entity, isfOntology, true));
+		}
 
 	}
 
@@ -190,9 +231,23 @@ public class BuildModule {
 			}
 		}
 		if (!moduleOntologyExclude.containsAxiom(axiom)
-				&& !moduleOntologyInclude.containsAxiom(axiom)) {
+				&& !moduleOntologyInclude.containsAxiom(axiom) && !removedAxioms.contains(axiom)) {
 			isfMan.addAxiom(moduleOntologyGenerated, axiom);
 		}
+	}
+
+	private void removeAxioms(Set<? extends OWLAxiom> axioms) {
+		for (OWLAxiom axiom : axioms) {
+			removeAxiom(axiom);
+		}
+	}
+
+	Set<OWLAxiom> removedAxioms = new HashSet<OWLAxiom>();
+	
+	private void removeAxiom(OWLAxiom axiom) {
+		isfMan.removeAxiom(moduleOntologyGenerated, axiom);
+		removedAxioms.add(axiom);
+
 	}
 
 	private void save() throws OWLOntologyStorageException {
