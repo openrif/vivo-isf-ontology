@@ -13,7 +13,6 @@ import org.semanticweb.owlapi.model.OWLAnnotationProperty;
 import org.semanticweb.owlapi.model.OWLAnnotationSubject;
 import org.semanticweb.owlapi.model.OWLAxiom;
 import org.semanticweb.owlapi.model.OWLClass;
-import org.semanticweb.owlapi.model.OWLClassExpression;
 import org.semanticweb.owlapi.model.OWLDataFactory;
 import org.semanticweb.owlapi.model.OWLDataProperty;
 import org.semanticweb.owlapi.model.OWLDatatype;
@@ -24,6 +23,7 @@ import org.semanticweb.owlapi.model.OWLObjectProperty;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
+import org.semanticweb.owlapi.reasoner.OWLReasoner;
 import org.semanticweb.owlapi.util.AutoIRIMapper;
 
 public class ISFUtil {
@@ -88,15 +88,16 @@ public class ISFUtil {
 	}
 
 	public static Set<OWLEntity> getSubsClosure(OWLEntity entity,
-			final OWLOntology ontology, final boolean includeImports) {
+			final OWLOntology ontology, final OWLReasoner pr) {
 		final Set<OWLEntity> entities = new HashSet<OWLEntity>();
 		entities.add(entity);
 		final Set<OWLOntology> ontologies;
-		if (includeImports) {
-			ontologies = ontology.getImportsClosure();
-		} else {
-			ontologies = Collections.singleton(ontology);
-		}
+//		if (includeImports) {
+//			ontologies = ontology.getImportsClosure();
+//		} else {
+//			ontologies = Collections.singleton(ontology);
+//		}
+
 
 		entity.accept(new OWLEntityVisitor() {
 			
@@ -132,13 +133,15 @@ public class ISFUtil {
 			
 			@Override
 			public void visit(OWLClass cls) {
-				for (OWLClassExpression ce : cls.getSubClasses(ontologies)) {
-					if (ce instanceof OWLClass) {
-						entities.add((OWLClass) ce);
-						entities.addAll(getSubsClosure((OWLClass) ce, ontology,
-								includeImports));
-					}
-				}
+				entities.add(cls);
+				entities.addAll(pr.getSubClasses(cls, false).getFlattened());
+//				for (OWLClassExpression ce : cls.getSubClasses(ontologies)) {
+//					if (ce instanceof OWLClass) {
+//						entities.add((OWLClass) ce);
+//						entities.addAll(getSubsClosure((OWLClass) ce, ontology,
+//								includeImports));
+//					}
+//				}
 				
 			}
 		});

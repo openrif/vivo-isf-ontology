@@ -18,6 +18,9 @@ import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
 import org.semanticweb.owlapi.model.OWLOntologyStorageException;
+import org.semanticweb.owlapi.reasoner.OWLReasoner;
+
+import uk.ac.manchester.cs.factplusplus.owlapiv3.FaCTPlusPlusReasonerFactory;
 
 public class BuildModule {
 
@@ -32,11 +35,20 @@ public class BuildModule {
 	private OWLOntology moduleOntologyGenerated;
 	private String[] args;
 	private Set<OWLOntology> changedOntologies = new HashSet<OWLOntology>();
+	private OWLReasoner reasoner;
 
 	private void run(String[] args) throws OWLOntologyCreationException,
 			OWLOntologyStorageException {
 		this.args = args;
 		inti();
+
+		FaCTPlusPlusReasonerFactory prf = new FaCTPlusPlusReasonerFactory();
+		System.out.println("Creating reasoner.");
+		reasoner = prf.createReasoner(isfFullOntology);
+		if (reasoner.getUnsatisfiableClasses().getEntities().size() > 0) {
+			System.out.println("Unsatisfieds: "
+					+ reasoner.getUnsatisfiableClasses().getEntities());
+		}
 
 		addIncludes();
 		addIncludeSubs();
@@ -72,7 +84,7 @@ public class BuildModule {
 
 		for (OWLEntity e : entities) {
 			closureEntities.addAll(ISFUtil.getSubsClosure(e, isfFullOntology,
-					true));
+					reasoner));
 		}
 		for (OWLEntity e : closureEntities) {
 			addAxiom(df.getOWLDeclarationAxiom(e));
@@ -215,9 +227,10 @@ public class BuildModule {
 		// String fileName = iri.toString().substring(i + 1);
 		// File documentFile = new File(ISFUtil.getSvnRootDir(),
 		// "trunk/src/ontology/module/" + fileName);
-		isfFullMan.setOntologyDocumentIRI(ontology, IRI.create(getDocumentFile(
-				new File(ISFUtil.getSvnRootDir(), "/trunk/src/ontology/module"),
-				iri).toURI()));
+		isfFullMan.setOntologyDocumentIRI(ontology,
+				IRI.create(getDocumentFile(
+						new File(ISFUtil.getSvnRootDir(),
+								"/trunk/src/ontology/module"), iri).toURI()));
 		changedOntologies.add(ontology);
 		return ontology;
 	}
