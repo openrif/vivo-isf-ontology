@@ -63,19 +63,29 @@ public class BuildModule {
 					+ reasoner.getUnsatisfiableClasses().getEntities());
 		}
 
+		System.out.println("Doing includes: ");
 		addIncludes();
+		System.out.println("Doing include subs: ");
 		addIncludeSubs();
 
+		System.out.println("Doing excludes: ");
 		removeExcludes();
+		System.out.println("Doing exclude subs: ");
 		removeExcludeSubs();
 
+		System.out.println("Merging in by hand: ");
 		mergeModuleInclude();
 
+		System.out.println("Adding parents to BFO: ");
 		addClosureToBfo();
 
+		System.out.println("Adding annotations: ");
 		addAnnotations();
+		
+		System.out.println("Typing all entities: ");
 		typeAllEntities();
 
+		System.out.println("Saving modified ontologies: " + changedOntologies.toString());
 		save();
 	}
 
@@ -233,6 +243,7 @@ public class BuildModule {
 	}
 
 	private void addAxiom(OWLAxiom axiom) {
+		System.out.println("\tAdding axiom: " + axiom.toString());
 		if (axiom instanceof OWLDeclarationAxiom) {
 			OWLDeclarationAxiom da = (OWLDeclarationAxiom) axiom;
 			if (da.getEntity().getIRI()
