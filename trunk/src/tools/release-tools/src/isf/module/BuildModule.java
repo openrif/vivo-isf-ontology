@@ -45,10 +45,17 @@ public class BuildModule {
 			OWLOntologyStorageException {
 		this.args = args;
 		inti();
+		
+		System.out.println("Script args: "+ args);
+		System.out.println("ISF ontology with import count: "+ isfOntology.getImportsClosure().size());
+		System.out.println("SVN location: " + ISFUtil.getSvnRootDir());
 
 		FaCTPlusPlusReasonerFactory prf = new FaCTPlusPlusReasonerFactory();
 		System.out.println("Creating reasoner.");
 		reasoner = prf.createReasoner(isfOntology);
+		
+		
+		
 		if (reasoner.getUnsatisfiableClasses().getEntities().size() > 0) {
 			System.out.println("Unsatisfieds: "
 					+ reasoner.getUnsatisfiableClasses().getEntities());
