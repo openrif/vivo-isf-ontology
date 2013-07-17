@@ -27,14 +27,14 @@
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
     <owl:AnnotationProperty rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#descriptionAnnot"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
     <owl:AnnotationProperty rdf:about="http://aims.fao.org/aos/geopolitical.owl#sourceCreator"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
     <owl:AnnotationProperty rdf:about="http://aims.fao.org/aos/geopolitical.owl#sourceModified"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412"/>
-    <owl:AnnotationProperty rdf:about="http://aims.fao.org/aos/geopolitical.owl#sourceIdentifier"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    <owl:AnnotationProperty rdf:about="http://aims.fao.org/aos/geopolitical.owl#sourceIdentifier"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000232"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
@@ -620,6 +620,15 @@
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has topic</obo:IAO_0000111>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">here we need to take care of dofferent domain and is this really the same relation between research project and protocol?</rdfs:comment>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0008150"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0100026"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_1110055"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -630,15 +639,6 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0008150"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0100026"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_1110055"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -2289,7 +2289,7 @@ functioning) and indirectly_realizes.</obo:IAO_0000112>
     <!-- http://vivoweb.org/ontology/core#dateTimeInterval -->
 
     <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#dateTimeInterval">
-        <rdfs:label xml:lang="en">date/time interval</rdfs:label>
+        <rdfs:label xml:lang="en">has date/time interval</rdfs:label>
         <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#DateTimeInterval"/>
     </owl:ObjectProperty>
     
@@ -2481,7 +2481,7 @@ functioning) and indirectly_realizes.</obo:IAO_0000112>
     <!-- http://vivoweb.org/ontology/core#publisher -->
 
     <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#publisher">
-        <rdfs:label xml:lang="en">publisher</rdfs:label>
+        <rdfs:label xml:lang="en">publisher (vivo op)</rdfs:label>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Public Definition source (http://www.answers.com/topic/publisher).</obo:IAO_0000112>
         <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
     </owl:ObjectProperty>
@@ -2645,7 +2645,7 @@ functioning) and indirectly_realizes.</obo:IAO_0000112>
     <!-- http://www.w3.org/2004/02/skos/core#related -->
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#related">
-        <rdfs:label xml:lang="en">related</rdfs:label>
+        <rdfs:label xml:lang="en">related (skos)</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2743,7 +2743,7 @@ functioning) and indirectly_realizes.</obo:IAO_0000112>
     <!-- http://www.w3.org/2006/vcard/ns#hasLanguage -->
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/2006/vcard/ns#hasLanguage">
-        <rdfs:label xml:lang="en">has language</rdfs:label>
+        <rdfs:label xml:lang="en">has language (vcard op)</rdfs:label>
         <rdfs:range rdf:resource="http://www.w3.org/2006/vcard/ns#Language"/>
     </owl:ObjectProperty>
     
@@ -2834,7 +2834,7 @@ functioning) and indirectly_realizes.</obo:IAO_0000112>
     <!-- http://www.w3.org/2006/vcard/ns#hasRelated -->
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/2006/vcard/ns#hasRelated">
-        <rdfs:label xml:lang="en">has related</rdfs:label>
+        <rdfs:label xml:lang="en">has related (vcard op)</rdfs:label>
         <rdfs:range rdf:resource="http://www.w3.org/2006/vcard/ns#Related"/>
     </owl:ObjectProperty>
     
@@ -3376,7 +3376,7 @@ functioning) and indirectly_realizes.</obo:IAO_0000112>
     <!-- http://purl.org/net/OCRe/study_design.owl#OCRE100038 -->
 
     <owl:Class rdf:about="http://purl.org/net/OCRe/study_design.owl#OCRE100038">
-        <rdfs:label xml:lang="en">phase</rdfs:label>
+        <rdfs:label xml:lang="en">phase (ocre)</rdfs:label>
     </owl:Class>
     
 

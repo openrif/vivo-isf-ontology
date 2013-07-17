@@ -29,7 +29,7 @@
      -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel">
-        <rdfs:label xml:lang="en">preferred label</rdfs:label>
+        <rdfs:label xml:lang="en">preferred label (skos)</rdfs:label>
         <rdfs:comment xml:lang="en">A resource has no more than one value of skos:prefLabel per language tag, and no more than one value of skos:prefLabel without language tag.</rdfs:comment>
         <definition xml:lang="en">The preferred lexical label for a resource, in a given language.</definition>
         <rdfs:comment xml:lang="en">The range of skos:prefLabel is the class of RDF plain literals.</rdfs:comment>
@@ -45,7 +45,7 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#note"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#hiddenLabel">
-        <rdfs:label xml:lang="en">hidden label</rdfs:label>
+        <rdfs:label xml:lang="en">hidden label (skos)</rdfs:label>
         <definition xml:lang="en">A lexical label for a resource that should be hidden when generating visual displays of the resource, but should still be accessible to free text search operations.</definition>
         <rdfs:comment xml:lang="en">The range of skos:hiddenLabel is the class of RDF plain literals.</rdfs:comment>
         <rdfs:comment xml:lang="en">skos:prefLabel, skos:altLabel and skos:hiddenLabel are pairwise disjoint properties.</rdfs:comment>
@@ -65,7 +65,7 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#note"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#note">
-        <rdfs:label xml:lang="en">note</rdfs:label>
+        <rdfs:label xml:lang="en">note (skos)</rdfs:label>
         <definition xml:lang="en">A general note, for any purpose.</definition>
         <scopeNote xml:lang="en">This property may be used directly, or as a super-property for more specific note types.</scopeNote>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
@@ -89,7 +89,7 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#note"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel">
-        <rdfs:label xml:lang="en">alternative label</rdfs:label>
+        <rdfs:label xml:lang="en">alternative label (skos)</rdfs:label>
         <example xml:lang="en">Acronyms, abbreviations, spelling variants, and irregular plural/singular forms may be included among the alternative labels for a concept. Mis-spelled terms are normally included as hidden labels (see skos:hiddenLabel).</example>
         <definition xml:lang="en">An alternative lexical label for a resource.</definition>
         <rdfs:comment xml:lang="en">The range of skos:altLabel is the class of RDF plain literals.</rdfs:comment>
@@ -302,7 +302,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#related">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-        <rdfs:label xml:lang="en">has related</rdfs:label>
+        <rdfs:label xml:lang="en">related (skos)</rdfs:label>
         <definition xml:lang="en">Relates a concept to a concept with which there is an associative semantic relationship.</definition>
         <rdfs:comment xml:lang="en">skos:related is disjoint with skos:broaderTransitive</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
@@ -392,7 +392,7 @@
     <!-- http://www.w3.org/2004/02/skos/core#Collection -->
 
     <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Collection">
-        <rdfs:label xml:lang="en">Collection</rdfs:label>
+        <rdfs:label xml:lang="en">collection (skos)</rdfs:label>
         <owl:disjointWith rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <owl:disjointWith rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
         <definition xml:lang="en">A meaningful collection of concepts.</definition>
@@ -405,7 +405,7 @@
     <!-- http://www.w3.org/2004/02/skos/core#Concept -->
 
     <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
-        <rdfs:label xml:lang="en">Concept</rdfs:label>
+        <rdfs:label xml:lang="en">concept</rdfs:label>
         <owl:disjointWith rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
         <definition xml:lang="en">An idea or notion; a unit of thought.</definition>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
@@ -416,7 +416,7 @@
     <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
 
     <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme">
-        <rdfs:label xml:lang="en">Concept Scheme</rdfs:label>
+        <rdfs:label xml:lang="en">concept scheme</rdfs:label>
         <scopeNote xml:lang="en">A concept scheme may be defined to include concepts from different sources.</scopeNote>
         <definition xml:lang="en">A set of concepts, optionally including statements about semantic relationships between those concepts.</definition>
         <example xml:lang="en">Thesauri, classification schemes, subject heading lists, taxonomies, &apos;folksonomies&apos;, and other types of controlled vocabulary are all examples of concept schemes. Concept schemes are also embedded in glossaries and terminologies.</example>

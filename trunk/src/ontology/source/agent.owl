@@ -2737,7 +2737,7 @@
     <!-- http://purl.obolibrary.org/obo/ARG_2000341 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000341">
-        <rdfs:label xml:lang="en">group</rdfs:label>
+        <rdfs:label xml:lang="en">group specialty</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000022"/>
     </owl:Class>
     
@@ -3099,12 +3099,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000300"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000457"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000052"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -3114,6 +3108,12 @@
                         </owl:unionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000300"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000457"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GROUP:  Role Branch</obo:IAO_0000117>
@@ -3449,7 +3449,7 @@
     <!-- http://vivoweb.org/ontology/core#Publisher -->
 
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#Publisher">
-        <rdfs:label xml:lang="en">publisher</rdfs:label>
+        <rdfs:label xml:lang="en">publisher (vivo)</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person or company whose business is the publishing of books, periodicals, engravings, computer software, etc.</obo:IAO_0000115>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Definition found here: http://dictionary.reference.com/browse/publisher</obo:IAO_0000112>
@@ -3564,7 +3564,7 @@
     <!-- http://xmlns.com/foaf/0.1/Agent -->
 
     <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent">
-        <rdfs:label xml:lang="en">agent</rdfs:label>
+        <rdfs:label xml:lang="en">agent (foaf)</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></obo:IAO_0000118>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Agents are things that do stuff</obo:IAO_0000115>
@@ -3581,9 +3581,8 @@
     <!-- http://xmlns.com/foaf/0.1/Group -->
 
     <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Group">
-        <rdfs:label xml:lang="en">group</rdfs:label>
+        <rdfs:label xml:lang="en">group (foaf)</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></obo:IAO_0000118>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> A collection of individual agents (and may itself play the role of a Agent, ie. something that can perform actions). </obo:IAO_0000115>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A collection of individual agents.</obo:IAO_0000115>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A group</rdfs:comment>
@@ -3787,15 +3786,6 @@ see: http://xmlns.com/foaf/spec/#term_Group</obo:IAO_0000112>
     <!-- http://purl.obolibrary.org/obo/ARG_2000081 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/ARG_2000081">
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-        <rdfs:label xml:lang="en">american board of physical medicine and rehabilitation</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ARG_2000082 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/ARG_2000082">
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
         <rdfs:label xml:lang="en">american board of physical medicine and rehabilitation</rdfs:label>
     </owl:NamedIndividual>

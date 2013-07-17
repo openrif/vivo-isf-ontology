@@ -25,8 +25,8 @@
     <owl:AnnotationProperty rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#descriptionAnnot"/>
     <owl:AnnotationProperty rdf:about="http://vivoweb.org/ontology/core#description"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
     <owl:AnnotationProperty rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#shortDef"/>
@@ -232,7 +232,7 @@
     <!-- http://purl.org/ontology/bibo/Chapter -->
 
     <owl:Class rdf:about="http://purl.org/ontology/bibo/Chapter">
-        <rdfs:label xml:lang="en">chapter</rdfs:label>
+        <rdfs:label xml:lang="en">chapter (bibo)</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/BookSection"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A main division of a book</obo:IAO_0000115>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
@@ -245,7 +245,7 @@
     <!-- http://purl.org/ontology/bibo/Code -->
 
     <owl:Class rdf:about="http://purl.org/ontology/bibo/Code">
-        <rdfs:label xml:lang="en">code</rdfs:label>
+        <rdfs:label xml:lang="en">code (bibo)</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Periodical"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A work consisting of texts of rules and regulations related to statutes issued by executive or administrative agencies</obo:IAO_0000115>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Code of Federal Regulations</obo:IAO_0000112>
@@ -274,7 +274,7 @@
     <!-- http://purl.org/ontology/bibo/Collection -->
 
     <owl:Class rdf:about="http://purl.org/ontology/bibo/Collection">
-        <rdfs:label xml:lang="en">collection</rdfs:label>
+        <rdfs:label xml:lang="en">collection (bibo)</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Collection of information resources that have a unified identity</obo:IAO_0000115>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Collection of information resources that have a unified identity. Archives, museums and libraries often acquire collections on specific subjects and from distinguished authors or researchers. Also includes collections of resources bundled into a license.</obo:IAO_0000112>
@@ -436,7 +436,7 @@
     <!-- http://purl.org/ontology/bibo/Issue -->
 
     <owl:Class rdf:about="http://purl.org/ontology/bibo/Issue">
-        <rdfs:label xml:lang="en">issue</rdfs:label>
+        <rdfs:label xml:lang="en">issue (bibo c)</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/CollectedDocument"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Short Definition from the bibo ontology</obo:IAO_0000112>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ontology/bibo/</rdfs:isDefinedBy>
@@ -600,7 +600,7 @@
     <!-- http://purl.org/ontology/bibo/Note -->
 
     <owl:Class rdf:about="http://purl.org/ontology/bibo/Note">
-        <rdfs:label xml:lang="en">note</rdfs:label>
+        <rdfs:label xml:lang="en">note (bibo c)</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Notes or annotations about a resource</obo:IAO_0000115>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Short Definition from bibo ontology</obo:IAO_0000112>
@@ -979,7 +979,7 @@ This class allows for linking an author to a publication while indicating inform
     <!-- http://vivoweb.org/ontology/core#Database -->
 
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#Database">
-        <rdfs:label xml:lang="en">database</rdfs:label>
+        <rdfs:label xml:lang="en">database (vivo)</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/CollectedDocument"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A structured file of information or a set of logically related data stored and retrieved using computer-based means</obo:IAO_0000115>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</obo:IAO_0000112>
@@ -1163,7 +1163,7 @@ Contents
     <!-- http://vivoweb.org/ontology/core#Video -->
 
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#Video">
-        <rdfs:label xml:lang="en">video</rdfs:label>
+        <rdfs:label xml:lang="en">video (vivo)</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/AudioVisualDocument"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Audiovisual recording in video format</obo:IAO_0000115>
     </owl:Class>
