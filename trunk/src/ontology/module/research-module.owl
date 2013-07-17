@@ -6,10 +6,51 @@
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/arg/research-module.owl"/>
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/arg/research-module.owl">
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/arg/isf.owl"/>
+    </owl:Ontology>
     
 
 
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000480">
+        <obo:ARG_exclude_subs></obo:ARG_exclude_subs>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0009060">
+        <obo:ARG_exclude></obo:ARG_exclude>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000061">
+        <obo:ARG_include_subs></obo:ARG_include_subs>
+    </rdf:Description>
 </rdf:RDF>
 
 
