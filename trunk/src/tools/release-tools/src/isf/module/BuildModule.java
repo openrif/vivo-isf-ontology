@@ -46,14 +46,16 @@ public class BuildModule {
 		this.args = args;
 		inti();
 		
-		System.out.println("Script args: "+ args);
+		System.out.println("Script args: "+ args.toString());
 		System.out.println("ISF ontology with import count: "+ isfOntology.getImportsClosure().size());
+		System.out.println("ISF with signature count: " + isfOntology.getSignature(true).size());
 		System.out.println("SVN location: " + ISFUtil.getSvnRootDir());
 
+		
 		FaCTPlusPlusReasonerFactory prf = new FaCTPlusPlusReasonerFactory();
 		System.out.println("Creating reasoner.");
 		reasoner = prf.createReasoner(isfOntology);
-		
+		System.out.println("Reasoner created.");
 		
 		
 		if (reasoner.getUnsatisfiableClasses().getEntities().size() > 0) {
@@ -91,6 +93,7 @@ public class BuildModule {
 	public void addIncludeSubs() {
 		Set<OWLEntity> entities = ModuleUtil.getIncludeSubsEntities(
 				moduleOntology, true);
+		System.out.println("Found sub annotations for: "+ entities);
 		Set<OWLEntity> closureEntities = new HashSet<OWLEntity>();
 
 		for (OWLEntity e : entities) {
@@ -307,7 +310,7 @@ public class BuildModule {
 			try {
 				ontology = isfMan.loadOntology(iri);
 			} catch (OWLOntologyCreationException e) {
-				System.out.println(e.getMessage());
+				System.err.println(e.getMessage());
 			}
 		}
 		if (ontology == null) {
@@ -327,7 +330,7 @@ public class BuildModule {
 		isfMan.setOntologyDocumentIRI(ontology,
 				IRI.create(getDocumentFile(
 						new File(ISFUtil.getSvnRootDir(),
-								"/trunk/src/ontology/module"), iri).toURI()));
+								"trunk/src/ontology/module"), iri).toURI()));
 		changedOntologies.add(ontology);
 		return ontology;
 	}
