@@ -26,6 +26,7 @@ import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
 import org.semanticweb.owlapi.reasoner.OWLReasoner;
 import org.semanticweb.owlapi.util.AutoIRIMapper;
+import org.semanticweb.owlapi.vocab.OWLRDFVocabulary;
 
 public class ISFUtil {
 
@@ -141,51 +142,52 @@ public class ISFUtil {
 
 		return entities;
 	}
-	
+
 	public static Set<OWLEntity> getSupersClosure(OWLEntity entity,
 			final OWLOntology ontology, final OWLReasoner pr) {
 		final Set<OWLEntity> entities = new HashSet<OWLEntity>();
 		entities.add(entity);
-		
+
 		entity.accept(new OWLEntityVisitor() {
-			
+
 			@Override
 			public void visit(OWLAnnotationProperty property) {
 				// TODO Auto-generated method stub
-				
+
 			}
-			
+
 			@Override
 			public void visit(OWLDatatype datatype) {
 				// TODO Auto-generated method stub
-				
+
 			}
-			
+
 			@Override
 			public void visit(OWLNamedIndividual individual) {
 				// TODO Auto-generated method stub
-				
+
 			}
-			
+
 			@Override
 			public void visit(OWLDataProperty property) {
 				// TODO Auto-generated method stub
-				
+
 			}
-			
+
 			@Override
 			public void visit(OWLObjectProperty property) {
 				entities.add(property);
 				Set<OWLObjectPropertyExpression> opes = pr
-						.getSuperObjectProperties(property, false).getFlattened();
+						.getSuperObjectProperties(property, false)
+						.getFlattened();
 				for (OWLObjectPropertyExpression ope : opes) {
 					if (ope instanceof OWLObjectProperty) {
 						entities.add((OWLObjectProperty) ope);
 					}
 				}
-				
+
 			}
-			
+
 			@Override
 			public void visit(OWLClass cls) {
 				entities.add(cls);
@@ -193,7 +195,7 @@ public class ISFUtil {
 
 			}
 		});
-		
+
 		return entities;
 	}
 
@@ -267,6 +269,23 @@ public class ISFUtil {
 		return axioms;
 	}
 
+	public static Set<LabelInfo> getLabels(IRI iri, Set<OWLOntology> ontologies) {
+		Set<LabelInfo> infos = new HashSet<ISFUtil.LabelInfo>();
+
+		for (OWLOntology ontology : ontologies) {
+			Set<OWLAnnotationAssertionAxiom> axioms = ontology
+					.getAnnotationAssertionAxioms(iri);
+			for (OWLAnnotationAssertionAxiom axiom : axioms) {
+				if (axiom.getProperty().getIRI()
+						.equals(OWLRDFVocabulary.RDFS_LABEL.getIRI())) {
+					infos.add(new LabelInfo(ontology, axiom));
+				}
+			}
+		}
+
+		return infos;
+	}
+
 	private static void setupManager(OWLOntologyManager man) {
 		AutoIRIMapper mapper = new AutoIRIMapper(new File(getSvnRootDir(),
 				"trunk/src/ontology"), true);
@@ -294,6 +313,23 @@ public class ISFUtil {
 			}
 		}
 		return false;
+	}
+
+	public static class LabelInfo {
+		public final OWLAnnotationAssertionAxiom axiom;
+		public final OWLOntology ontology;
+
+		public LabelInfo(OWLOntology ontology, OWLAnnotationAssertionAxiom axiom) {
+			this.ontology = ontology;
+			this.axiom = axiom;
+		}
+
+		@Override
+		public String toString() {
+			// TODO Auto-generated method stub
+			return "Ontology: " + ontology.getOntologyID() + " has label: "
+					+ axiom.getValue().toString();
+		}
 	}
 
 }
