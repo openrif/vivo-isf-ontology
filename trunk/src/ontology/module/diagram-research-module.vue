@@ -1,14 +1,14 @@
 <!-- Tufts VUE 3.2 concept-map (diagram-research-module.vue) 2013-07-18 -->
 <!-- Tufts VUE: http://vue.tufts.edu/ -->
 <!-- Do Not Remove: VUE mapping @version(1.1) jar:file:/C:/Program%20Files%20(x86)/VUE/VUE.jar!/tufts/vue/resources/lw_mapping_1_1.xml -->
-<!-- Do Not Remove: Saved date Thu Jul 18 13:51:17 PDT 2013 by essaids on platform Windows 7 6.1 in JVM 1.6.0_29-b11 -->
+<!-- Do Not Remove: Saved date Thu Jul 18 14:17:01 PDT 2013 by essaids on platform Windows 7 6.1 in JVM 1.6.0_29-b11 -->
 <!-- Do Not Remove: Saving version @(#)VUE: built May 14 2013 at 1717 by tomadm on Linux 2.6.18-348.2.1.el5 i386 JVM 1.6.0_39-b04(bits=32) -->
 <?xml version="1.0" encoding="US-ASCII"?>
 <LW-MAP xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="none" ID="0"
     label="diagram-research-module.vue" created="1373657028877" x="0.0"
     y="0.0" width="1.4E-45" height="1.4E-45" strokeWidth="0.0" autoSized="false">
-    <resource referenceCreated="1374180677516" size="39043"
+    <resource referenceCreated="1374182221335" size="42367"
         spec="C:\s\svns\isf-new-layout\trunk\src\ontology\module\diagram-research-module.vue"
         type="1" xsi:type="URLResource">
         <title>diagram-research-module.vue</title>
@@ -689,7 +689,7 @@
       protocol to instruments reagents etc.</label>
     </child>
     <child ID="59" label="service&#xa;ERO_0000005" layerID="1"
-        created="1374179034932" x="1097.0" y="907.0" width="93.0"
+        created="1374179034932" x="1068.0" y="911.0" width="93.0"
         height="38.0" strokeWidth="1.0" autoSized="true" xsi:type="node">
         <fillColor>#00000000</fillColor>
         <strokeColor>#000000</strokeColor>
@@ -699,13 +699,67 @@
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
     <child ID="60" label="protocol&#xa;OBI_0000272" layerID="1"
-        created="1374179104908" x="1107.0" y="989.0" width="87.0"
+        created="1374179104908" x="965.0" y="596.0" width="87.0"
         height="38.0" strokeWidth="1.0" autoSized="true" xsi:type="node">
         <fillColor>#00000000</fillColor>
         <strokeColor>#000000</strokeColor>
         <textColor>#000000</textColor>
         <font>Arial-plain-12</font>
         <URIString>http://vue.tufts.edu/rdf/resource/f3755466c0a83801017c760bea74bcbb</URIString>
+        <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
+    </child>
+    <child ID="61" label="is pi of&#xa;ERO_0001905" layerID="1"
+        created="1374181314740" x="1108.2473" y="702.5" width="70.0"
+        height="107.0" strokeWidth="1.0" autoSized="false"
+        controlCount="0" arrowState="2" xsi:type="link">
+        <strokeColor>#404040</strokeColor>
+        <textColor>#404040</textColor>
+        <font>Arial-plain-11</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/f3974aecc0a83801017c760b86b3ffaf</URIString>
+        <point1 x="1164.4084" y="809.0"/>
+        <point2 x="1122.086" y="703.0"/>
+    </child>
+    <child ID="62" label="located in&#xa;RO_0001025" layerID="1"
+        created="1374181463387" x="1059.2473" y="735.5" width="64.0"
+        height="107.0" strokeWidth="1.0" autoSized="false"
+        controlCount="0" arrowState="2" xsi:type="link">
+        <strokeColor>#404040</strokeColor>
+        <textColor>#404040</textColor>
+        <font>Arial-plain-11</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/f3994f6bc0a83801017c760b4279e31c</URIString>
+        <point1 x="1112.4084" y="842.0"/>
+        <point2 x="1070.0862" y="736.0"/>
+    </child>
+    <child ID="63" label="has contact info&#xa;ARG_2000028" layerID="1"
+        created="1374181510189" x="984.7473" y="765.5" width="79.0"
+        height="107.0" strokeWidth="1.0" autoSized="false"
+        controlCount="0" arrowState="2" xsi:type="link">
+        <strokeColor>#404040</strokeColor>
+        <textColor>#404040</textColor>
+        <font>Arial-plain-11</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/f39a07c1c0a83801017c760b3c219072</URIString>
+        <point1 x="1045.4084" y="872.0"/>
+        <point2 x="1003.0862" y="766.0"/>
+    </child>
+    <child ID="64" label="uses&#xa;ERO_0000031" layerID="1"
+        created="1374181640942" x="960.5" y="550.5" width="87.0"
+        height="44.0" strokeWidth="1.0" autoSized="false"
+        controlCount="0" arrowState="2" xsi:type="link">
+        <strokeColor>#404040</strokeColor>
+        <textColor>#404040</textColor>
+        <font>Arial-plain-11</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/f39bf03cc0a83801017c760b3fc44dbd</URIString>
+        <point1 x="1047.0" y="594.0"/>
+        <point2 x="961.0" y="551.0"/>
+    </child>
+    <child ID="65" label="org" layerID="1" created="1374181978472"
+        x="1052.0" y="599.0" width="29.0" height="23.0"
+        strokeWidth="1.0" strokeStyle="4" autoSized="true" xsi:type="node">
+        <fillColor>#00000000</fillColor>
+        <strokeColor>#000000</strokeColor>
+        <textColor>#000000</textColor>
+        <font>Arial-plain-12</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/f3a11203c0a83801017c760b0ad9ca43</URIString>
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
     <layer ID="1" label="Layer 1" created="1373657028888" x="0.0"
