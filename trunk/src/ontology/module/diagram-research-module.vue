@@ -1,14 +1,14 @@
 <!-- Tufts VUE 3.2 concept-map (diagram-research-module.vue) 2013-07-18 -->
 <!-- Tufts VUE: http://vue.tufts.edu/ -->
 <!-- Do Not Remove: VUE mapping @version(1.1) jar:file:/C:/Program%20Files%20(x86)/VUE/VUE.jar!/tufts/vue/resources/lw_mapping_1_1.xml -->
-<!-- Do Not Remove: Saved date Thu Jul 18 12:21:02 PDT 2013 by essaids on platform Windows 7 6.1 in JVM 1.6.0_29-b11 -->
+<!-- Do Not Remove: Saved date Thu Jul 18 13:51:17 PDT 2013 by essaids on platform Windows 7 6.1 in JVM 1.6.0_29-b11 -->
 <!-- Do Not Remove: Saving version @(#)VUE: built May 14 2013 at 1717 by tomadm on Linux 2.6.18-348.2.1.el5 i386 JVM 1.6.0_39-b04(bits=32) -->
 <?xml version="1.0" encoding="US-ASCII"?>
 <LW-MAP xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="none" ID="0"
     label="diagram-research-module.vue" created="1373657028877" x="0.0"
     y="0.0" width="1.4E-45" height="1.4E-45" strokeWidth="0.0" autoSized="false">
-    <resource referenceCreated="1374175262367" size="35095"
+    <resource referenceCreated="1374180677516" size="39043"
         spec="C:\s\svns\isf-new-layout\trunk\src\ontology\module\diagram-research-module.vue"
         type="1" xsi:type="URLResource">
         <title>diagram-research-module.vue</title>
@@ -120,7 +120,7 @@
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
     <child ID="16" label="biological specimen&#xa;ERO_0000020"
-        layerID="1" created="1374171259948" x="562.0" y="803.0"
+        layerID="1" created="1374171259948" x="568.0" y="798.0"
         width="122.0" height="38.0" strokeWidth="1.0" autoSized="true" xsi:type="node">
         <fillColor>#00000000</fillColor>
         <strokeColor>#000000</strokeColor>
@@ -150,15 +150,15 @@
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
     <child ID="21" label="achieves planned objective&#xa;OBI_0000417"
-        layerID="1" created="1374171409731" x="654.74994" y="896.5"
-        width="132.0" height="85.0" strokeWidth="1.0" autoSized="false"
+        layerID="1" created="1374171409731" x="661.2501" y="909.5"
+        width="132.0" height="72.0" strokeWidth="1.0" autoSized="false"
         controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#404040</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/f30209a2c0a83801017c760b0f77dcad</URIString>
-        <point1 x="664.11884" y="981.0"/>
-        <point2 x="777.38104" y="897.0"/>
+        <point1 x="669.4405" y="981.0"/>
+        <point2 x="785.0597" y="910.0"/>
         <ID1 xsi:type="node">9</ID1>
         <ID2 xsi:type="node">38</ID2>
     </child>
@@ -203,15 +203,15 @@
         <ID2 xsi:type="node">44</ID2>
     </child>
     <child ID="27" label="has participant&#xa;BFO_0000057" layerID="1"
-        created="1374171554600" x="594.75" y="840.4995" width="72.0"
-        height="141.00098" strokeWidth="1.0" autoSized="false"
+        created="1374171554600" x="597.75" y="835.501" width="72.0"
+        height="145.99902" strokeWidth="1.0" autoSized="false"
         controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#404040</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/f30209a4c0a83801017c760b1db89f9c</URIString>
-        <point1 x="636.8455" y="981.0005"/>
-        <point2 x="624.6545" y="840.9995"/>
+        <point1 x="637.5137" y="981.0"/>
+        <point2 x="629.9864" y="836.001"/>
         <ID1 xsi:type="node">9</ID1>
         <ID2 xsi:type="node">16</ID2>
     </child>
@@ -327,7 +327,7 @@
     </child>
     <child ID="38"
         label="material transformation objective&#xa;OBI_0000456"
-        layerID="1" created="1374173253301" x="708.0" y="859.0"
+        layerID="1" created="1374173253301" x="721.0" y="872.0"
         width="190.0" height="38.0" strokeWidth="1.0" strokeStyle="4"
         autoSized="true" xsi:type="node">
         <fillColor>#00000000</fillColor>
@@ -337,14 +337,14 @@
         <URIString>http://vue.tufts.edu/rdf/resource/f31cb5ccc0a83801017c760b07618014</URIString>
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
-    <child ID="40" layerID="1" created="1374173425710" x="561.30084"
-        y="722.75" width="29.558105" height="80.75" strokeWidth="1.0"
+    <child ID="40" layerID="1" created="1374173425710" x="561.2672"
+        y="722.75" width="27.43872" height="75.75" strokeWidth="1.0"
         autoSized="false" controlCount="1" arrowState="2" xsi:type="link">
         <strokeColor>#404040</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/f31e7cd4c0a83801017c760bbbf808d5</URIString>
-        <point1 x="590.35895" y="803.0"/>
+        <point1 x="588.20593" y="798.0"/>
         <point2 x="562.8754" y="723.25"/>
         <ID1 xsi:type="node">16</ID1>
         <ID2 xsi:type="link">22</ID2>
@@ -431,7 +431,7 @@
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
     <child ID="48" label="sequence alteration&#xa;SO_0001059"
-        layerID="1" created="1374174051363" x="680.0" y="767.0"
+        layerID="1" created="1374174051363" x="673.0" y="748.0"
         width="120.0" height="38.0" strokeWidth="1.0" strokeStyle="4"
         autoSized="true" xsi:type="node">
         <fillColor>#00000000</fillColor>
@@ -494,7 +494,7 @@
         <ctrlPoint0 x="573.0" y="1097.0" xsi:type="point"/>
     </child>
     <child ID="52" layerID="1" created="1374174637166" x="510.86914"
-        y="680.6359" width="201.06226" height="115.34235"
+        y="679.0924" width="200.43542" height="116.885864"
         strokeWidth="1.0" autoSized="false" controlCount="2"
         arrowState="2" xsi:type="link">
         <strokeColor>#404040</strokeColor>
@@ -502,7 +502,7 @@
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/f3317f0ac0a83801017c760b382eee91</URIString>
         <point1 x="511.36914" y="795.4783"/>
-        <point2 x="711.4314" y="717.25"/>
+        <point2 x="710.80457" y="712.5"/>
         <ID1 xsi:type="node">12</ID1>
         <ID2 xsi:type="link">29</ID2>
         <ctrlPoint0 x="693.48883" y="708.6957" xsi:type="point"/>
@@ -510,14 +510,14 @@
     </child>
     <child ID="29" label="has sequence alteration&#xa;ERO_0000573"
         layerID="1" created="1374171588290" x="632.5514" y="615.50006"
-        width="137.38" height="151.99994" strokeWidth="1.0"
+        width="136.75317" height="132.99994" strokeWidth="1.0"
         autoSized="false" controlCount="1" arrowState="2" xsi:type="link">
         <strokeColor>#404040</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/f302beb0c0a83801017c760b366ba913</URIString>
         <point1 x="633.0514" y="616.00006"/>
-        <point2 x="738.6744" y="767.0"/>
+        <point2 x="736.1667" y="748.0"/>
         <ID1 xsi:type="node">10</ID1>
         <ID2 xsi:type="node">48</ID2>
         <ctrlPoint0 x="737.0" y="743.0" xsi:type="point"/>
@@ -604,6 +604,109 @@
       The relationships are the object properties brought in by the 
       annotations. They are related to their domain/range or to the closest 
       class from the module.</label>
+    </child>
+    <child ID="57"
+        label="affiliation person/lab&#xa;    &#xa;    &#xa;      &#xa;    &#xa;    &#xa;      contact of/for&#xa;    &#xa;    &#xa;      &#xa;    &#xa;    &#xa;      resource to lab&#xa;    &#xa;    &#xa;      &#xa;    &#xa;    &#xa;      protocol use by org&#xa;    &#xa;    &#xa;      &#xa;    &#xa;    &#xa;      protocol to instruments reagents etc."
+        layerID="1" created="1374175726441" x="1093.0" y="508.0"
+        width="150.0" height="183.0" strokeWidth="0.0" autoSized="false" xsi:type="text">
+        <strokeColor>#404040</strokeColor>
+        <textColor>#000000</textColor>
+        <font>SansSerif-plain-14</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/f3437fc9c0a83801017c760bb96c4058</URIString>
+        <richText>&lt;html&gt;
+  &lt;head color="#000000" style="color: #000000"&gt;
+    &lt;style type="text/css"&gt;
+      &lt;!--
+        body { margin-left: 0px; color: #000000; font-size: 12; margin-bottom: 0px; margin-right: 0px; margin-top: 0px; font-family: Arial }
+        ol { list-style-position: outside; margin-left: 30; vertical-align: middle; font-size: 12; margin-top: 6; font-family: Arial }
+        p { margin-left: 0; color: #000000; margin-bottom: 0; margin-right: 0; margin-top: 0 }
+        ul { list-style-position: outside; margin-left: 30; vertical-align: middle; font-size: 12; margin-top: 6; font-family: Arial }
+      --&gt;
+    &lt;/style&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p color="#000000" style="color: #000000"&gt;
+      affiliation person/lab
+    &lt;/p&gt;
+    &lt;p color="#000000" style="color: #000000"&gt;
+      
+    &lt;/p&gt;
+    &lt;p color="#000000" style="color: #000000"&gt;
+      contact of/for
+    &lt;/p&gt;
+    &lt;p color="#000000" style="color: #000000"&gt;
+      
+    &lt;/p&gt;
+    &lt;p color="#000000" style="color: #000000"&gt;
+      resource to lab
+    &lt;/p&gt;
+    &lt;p color="#000000" style="color: #000000"&gt;
+      
+    &lt;/p&gt;
+    &lt;p color="#000000" style="color: #000000"&gt;
+      protocol use by org
+    &lt;/p&gt;
+    &lt;p color="#000000" style="color: #000000"&gt;
+      
+    &lt;/p&gt;
+    &lt;p color="#000000" style="color: #000000"&gt;
+      protocol to instruments reagents etc.
+    &lt;/p&gt;
+    &lt;p color="#000000" style="color: #000000"&gt;
+      
+    &lt;/p&gt;
+    &lt;p color="#000000" style="color: #000000"&gt;
+      
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</richText>
+        <label>affiliation person/lab
+    
+    
+      
+    
+    
+      contact of/for
+    
+    
+      
+    
+    
+      resource to lab
+    
+    
+      
+    
+    
+      protocol use by org
+    
+    
+      
+    
+    
+      protocol to instruments reagents etc.</label>
+    </child>
+    <child ID="59" label="service&#xa;ERO_0000005" layerID="1"
+        created="1374179034932" x="1097.0" y="907.0" width="93.0"
+        height="38.0" strokeWidth="1.0" autoSized="true" xsi:type="node">
+        <fillColor>#00000000</fillColor>
+        <strokeColor>#000000</strokeColor>
+        <textColor>#000000</textColor>
+        <font>Arial-plain-12</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/f3746942c0a83801017c760bf930fd98</URIString>
+        <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
+    </child>
+    <child ID="60" label="protocol&#xa;OBI_0000272" layerID="1"
+        created="1374179104908" x="1107.0" y="989.0" width="87.0"
+        height="38.0" strokeWidth="1.0" autoSized="true" xsi:type="node">
+        <fillColor>#00000000</fillColor>
+        <strokeColor>#000000</strokeColor>
+        <textColor>#000000</textColor>
+        <font>Arial-plain-12</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/f3755466c0a83801017c760bea74bcbb</URIString>
+        <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
     <layer ID="1" label="Layer 1" created="1373657028888" x="0.0"
         y="0.0" width="1.4E-45" height="1.4E-45" strokeWidth="0.0" autoSized="false">
