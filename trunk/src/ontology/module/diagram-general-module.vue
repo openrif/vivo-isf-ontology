@@ -1,24 +1,45 @@
-<!-- Tufts VUE 3.2 concept-map (academic-module.vue) 2013-07-12 -->
+<!-- Tufts VUE 3.2 concept-map (diagram-general-module.vue) 2013-07-22 -->
 <!-- Tufts VUE: http://vue.tufts.edu/ -->
 <!-- Do Not Remove: VUE mapping @version(1.1) jar:file:/C:/Program%20Files%20(x86)/VUE/VUE.jar!/tufts/vue/resources/lw_mapping_1_1.xml -->
-<!-- Do Not Remove: Saved date Fri Jul 12 12:24:17 PDT 2013 by essaids on platform Windows 7 6.1 in JVM 1.6.0_29-b11 -->
+<!-- Do Not Remove: Saved date Mon Jul 22 09:44:01 PDT 2013 by essaids on platform Windows 7 6.1 in JVM 1.6.0_29-b11 -->
 <!-- Do Not Remove: Saving version @(#)VUE: built May 14 2013 at 1717 by tomadm on Linux 2.6.18-348.2.1.el5 i386 JVM 1.6.0_39-b04(bits=32) -->
 <?xml version="1.0" encoding="US-ASCII"?>
 <LW-MAP xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="none" ID="0"
-    label="academic-module.vue" created="1373657028877" x="0.0" y="0.0"
-    width="1.4E-45" height="1.4E-45" strokeWidth="0.0" autoSized="false">
-    <resource referenceCreated="1373657057914"
-        spec="C:\s\svns\isf-new-layout\trunk\src\ontology\module\academic-module.vue"
+    label="diagram-general-module.vue" created="1373657028877" x="0.0"
+    y="0.0" width="1.4E-45" height="1.4E-45" strokeWidth="0.0" autoSized="false">
+    <resource referenceCreated="1374511441158" size="4861"
+        spec="C:\s\svns\isf-new-layout\trunk\src\ontology\module\diagram-general-module.vue"
         type="1" xsi:type="URLResource">
-        <title>academic-module.vue</title>
-        <property key="File" value="C:\s\svns\isf-new-layout\trunk\src\ontology\module\academic-module.vue"/>
+        <title>diagram-general-module.vue</title>
+        <property key="File" value="C:\s\svns\isf-new-layout\trunk\src\ontology\module\diagram-general-module.vue"/>
     </resource>
     <fillColor>#FFFFFF</fillColor>
     <strokeColor>#404040</strokeColor>
     <textColor>#000000</textColor>
     <font>SansSerif-plain-14</font>
     <URIString>http://vue.tufts.edu/rdf/resource/d4574a7d0a85291f006258e18e9bbdbb</URIString>
+    <child ID="6"
+        label="DateTimeValuePrecision&#xa;vivo:DateTimeValuePrecision"
+        layerID="1" created="1374511399698" x="469.0" y="181.0"
+        width="171.0" height="38.0" strokeWidth="1.0" autoSized="true" xsi:type="node">
+        <fillColor>#00000000</fillColor>
+        <strokeColor>#000000</strokeColor>
+        <textColor>#000000</textColor>
+        <font>Arial-plain-12</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/07442506c0a8380100154ec5272f122b</URIString>
+        <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
+    </child>
+    <child ID="7" label="Kind&#xa;vcard:Kind" layerID="1"
+        created="1374511433359" x="511.0" y="391.0" width="68.0"
+        height="38.0" strokeWidth="1.0" autoSized="true" xsi:type="node">
+        <fillColor>#00000000</fillColor>
+        <strokeColor>#000000</strokeColor>
+        <textColor>#000000</textColor>
+        <font>Arial-plain-12</font>
+        <URIString>http://vue.tufts.edu/rdf/resource/07442506c0a8380100154ec5b9853d04</URIString>
+        <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
+    </child>
     <layer ID="1" label="Layer 1" created="1373657028888" x="0.0"
         y="0.0" width="1.4E-45" height="1.4E-45" strokeWidth="0.0" autoSized="false">
         <URIString>http://vue.tufts.edu/rdf/resource/d4574a7e0a85291f006258e17de0879a</URIString>
@@ -29,7 +50,7 @@
     <PathwayList currentPathway="0" revealerIndex="-1">
         <pathway ID="0" label="Untitled Pathway" created="1373657028869"
             x="0.0" y="0.0" width="1.4E-45" height="1.4E-45"
-            strokeWidth="0.0" autoSized="false" currentIndex="-1" open="true">
+            strokeWidth="0.0" autoSized="false" currentIndex="0" open="true">
             <strokeColor>#B3993333</strokeColor>
             <textColor>#000000</textColor>
             <font>SansSerif-plain-14</font>
@@ -77,5 +98,5 @@
     <date>2013-07-12</date>
     <modelVersion>6</modelVersion>
     <saveLocation>C:\s\svns\isf-new-layout\trunk\src\ontology\module</saveLocation>
-    <saveFile>C:\s\svns\isf-new-layout\trunk\src\ontology\module\academic-module.vue</saveFile>
+    <saveFile>C:\s\svns\isf-new-layout\trunk\src\ontology\module\diagram-general-module.vue</saveFile>
 </LW-MAP>
