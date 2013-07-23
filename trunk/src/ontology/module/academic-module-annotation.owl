@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/arg/academic-module-annotation.owl#"
      xml:base="http://purl.obolibrary.org/obo/arg/academic-module-annotation.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
@@ -10,6 +11,26 @@
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/arg/academic-module-include.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/arg/isf.owl"/>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#IssuedCredential">
+        <obo:ARG_exclude_subs></obo:ARG_exclude_subs>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#Relationship">
+        <obo:ARG_include_subs></obo:ARG_include_subs>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#Authorship">
+        <obo:ARG_include></obo:ARG_include>
+    </rdf:Description>
 </rdf:RDF>
 
 
