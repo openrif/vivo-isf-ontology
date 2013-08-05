@@ -1,8 +1,11 @@
 package isf;
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 import org.semanticweb.owlapi.apibinding.OWLManager;
@@ -30,8 +33,6 @@ import org.semanticweb.owlapi.vocab.OWLRDFVocabulary;
 
 public class ISFUtil {
 
-	private static final OWLDataFactory df = OWLManager.getOWLDataFactory();
-
 	/**
 	 * The system property name for the root directory (the parent of trunk) of
 	 * the local SVN checkout. This is used by scripts to know where to load
@@ -42,8 +43,21 @@ public class ISFUtil {
 
 	public static final IRI ISF_IRI = IRI.create(ISF_ONTOLOGY_IRI_PREFIX
 			+ "isf.owl");
+	public static final IRI ISF_REASONED_IRI = IRI
+			.create(ISF_ONTOLOGY_IRI_PREFIX + "isf-reasoned.owl");
+	
+	public static final IRI ISF_INCLUDE_IRI = IRI.create(ISF_ONTOLOGY_IRI_PREFIX
+			+ "isf-include.owl");
+	public static final IRI ISF_EXCLUDE_IRI = IRI.create(ISF_ONTOLOGY_IRI_PREFIX
+			+ "isf-exclude.owl");
+	
 	public static final IRI ISF_FULL_IRI = IRI.create(ISF_ONTOLOGY_IRI_PREFIX
 			+ "isf-full.owl");
+	public static final IRI ISF_FULL_REASONED_IRI = IRI
+			.create(ISF_ONTOLOGY_IRI_PREFIX + "isf-full-reasoned.owl");
+	
+	public static final IRI ISF_SKOS_IRI = IRI
+			.create(ISF_ONTOLOGY_IRI_PREFIX + "isf-skos.owl");
 
 	public static File getSvnRootDir() {
 		if (ISF_SVN_ROOT_DIR != null) {
@@ -58,6 +72,8 @@ public class ISFUtil {
 			throws OWLOntologyCreationException {
 		setupManager(man);
 		man.loadOntology(ISF_IRI);
+		man.loadOntology(ISF_EXCLUDE_IRI);
+		man.loadOntology(ISF_INCLUDE_IRI);
 		return man.getOntology(ISF_IRI);
 	}
 
@@ -65,6 +81,8 @@ public class ISFUtil {
 			throws OWLOntologyCreationException {
 		setupManager(man);
 		man.loadOntology(ISF_FULL_IRI);
+		man.loadOntology(ISF_EXCLUDE_IRI);
+		man.loadOntology(ISF_INCLUDE_IRI);
 		return man.getOntology(ISF_FULL_IRI);
 	}
 
@@ -283,10 +301,27 @@ public class ISFUtil {
 			}
 		}
 
+		
 		return infos;
 	}
 
-	private static void setupManager(OWLOntologyManager man) {
+	public static List<OWLEntity> getEntitiesSortedByIri(OWLOntology ontology,
+			boolean includeImports) {
+		ArrayList<OWLEntity> entities = new ArrayList<OWLEntity>(
+				ontology.getSignature(includeImports));
+		Collections.sort(entities, new Comparator<OWLEntity>() {
+
+			@Override
+			public int compare(OWLEntity o1, OWLEntity o2) {
+
+				return o1.getIRI().compareTo(o2.getIRI());
+			}
+		});
+		return entities;
+
+	}
+
+	public static void setupManager(OWLOntologyManager man) {
 		AutoIRIMapper mapper = new AutoIRIMapper(new File(getSvnRootDir(),
 				"trunk/src/ontology"), true);
 		man.clearIRIMappers();

@@ -18,6 +18,7 @@ public class ModuleUtil {
 
 	public static final String INCLUDE_ANNOTATION_IRI = "http://purl.obolibrary.org/obo/ARG_include";
 	public static final String INCLUDE_SUBS_ANNOTATION_IRI = "http://purl.obolibrary.org/obo/ARG_include_subs";
+	public static final String INCLUDE_INSTANCES_ANNOTATION_IRI = "http://purl.obolibrary.org/obo/ARG_include_instances";
 
 	public static final String EXCLUDE_ANNOTATION_IRI = "http://purl.obolibrary.org/obo/ARG_exclude";
 	public static final String EXCLUDE_SUBS_ANNOTATION_IRI = "http://purl.obolibrary.org/obo/ARG_exclude_subs";
@@ -28,6 +29,15 @@ public class ModuleUtil {
 		return ISFUtil
 				.getAnnotationAxioms(ontology, df.getOWLAnnotationProperty(IRI
 						.create(INCLUDE_ANNOTATION_IRI)), includeImports);
+	}
+
+	public static Set<OWLAnnotationAssertionAxiom> getIncludeInstancesAxioms(
+			OWLOntology ontology, boolean includeImports) {
+
+		return ISFUtil.getAnnotationAxioms(ontology, df
+				.getOWLAnnotationProperty(IRI
+						.create(INCLUDE_INSTANCES_ANNOTATION_IRI)),
+				includeImports);
 	}
 
 	public static Set<OWLAnnotationAssertionAxiom> getIncludeSubsAxioms(
@@ -59,6 +69,16 @@ public class ModuleUtil {
 		Set<OWLAnnotationAssertionAxiom> axioms = getIncludeAxioms(ontology,
 				includeImports);
 		return getSubjectEntities(ontology, includeImports, axioms);
+	}
+
+	public static Set<OWLEntity> getIncludeInstances(OWLOntology ontology,
+			boolean includeImports) {
+
+		Set<OWLAnnotationAssertionAxiom> axioms = getIncludeInstancesAxioms(
+				ontology, includeImports);
+
+		return getSubjectEntities(ontology, includeImports, axioms);
+
 	}
 
 	public static Set<OWLEntity> getIncludeSubsEntities(OWLOntology ontology,
