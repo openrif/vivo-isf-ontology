@@ -1,0 +1,1 @@
+Content used when creating release files by the release tools.
