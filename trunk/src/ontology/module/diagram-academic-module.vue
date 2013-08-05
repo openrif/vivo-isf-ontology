@@ -361,7 +361,7 @@
         <URIString>http://vue.tufts.edu/rdf/resource/2b76f07380fd5731016d383a6a552f25</URIString>
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
-    <child ID="89" label="inheres in&#xa;BFO_0000052" layerID="1"
+    <child ID="89" label="inheres in&#xa;RO_0000052" layerID="1"
         created="1375118327061" x="-117.889755" y="407.5" width="71.0"
         height="191.32422" strokeWidth="1.0" autoSized="false"
         controlCount="0" arrowState="2" xsi:type="link">
