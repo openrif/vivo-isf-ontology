@@ -31,10 +31,10 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ARG_include_instances"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ARG_exclude_subs">
         <rdfs:comment>An annotation property that is used to mark entities that should be excluded from a module file, along with the subs. Any children will be removed.</rdfs:comment>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#descriptionAnnot"/>
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description">
         <rdfs:label xml:lang="en">description</rdfs:label>
     </owl:AnnotationProperty>
@@ -71,7 +71,9 @@
     <owl:AnnotationProperty rdf:about="http://vivoweb.org/ontology/core#mostSpecificType">
         <rdfs:label xml:lang="en">most specific type</rdfs:label>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source">
+        <rdfs:label xml:lang="en">source (dct)</rdfs:label>
+    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000231">
         <rdfs:label xml:lang="en">has obsolescence reason</rdfs:label>
         <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
@@ -108,7 +110,6 @@
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description">
         <rdfs:label>description (dct)</rdfs:label>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://vivoweb.org/ontology/core#description"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
         <rdfs:label xml:lang="en">textual definition</rdfs:label>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>

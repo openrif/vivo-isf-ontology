@@ -22,11 +22,9 @@
      -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
-    <owl:AnnotationProperty rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#descriptionAnnot"/>
-    <owl:AnnotationProperty rdf:about="http://vivoweb.org/ontology/core#description"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
     <owl:AnnotationProperty rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#shortDef"/>
@@ -846,7 +844,7 @@
     <owl:Class rdf:about="http://purl.org/spar/c4o/BibliographicInformationSource">
         <rdfs:label xml:lang="en">bibliographic information source</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001716"/>
-        <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A source of information about bibliographic citations, such as Google Scholar, Web of Science or Scopus.</vitro:descriptionAnnot>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A source of information about bibliographic citations, such as Google Scholar, Web of Science or Scopus.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -856,7 +854,7 @@
     <owl:Class rdf:about="http://purl.org/spar/c4o/GlobalCitationCount">
         <rdfs:label xml:lang="en">global citation count</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
-        <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The number of times a work has been cited globally, as determined from a particular bibliographic information source on a particular date.</vitro:descriptionAnnot>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The number of times a work has been cited globally, as determined from a particular bibliographic information source on a particular date.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -867,7 +865,7 @@
         <rdfs:label xml:lang="en">clinical guideline</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
         <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A recommendation on the appropriate treatment and care of people with a specific disease or condition, based on the best available evidence, designed to help healthcare professionals in their work.</vitro:shortDef>
-        <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A recommendation on the appropriate treatment and care of people with a specific disease or condition, based on the best available evidence, designed to help healthcare professionals in their work.</vitro:descriptionAnnot>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A recommendation on the appropriate treatment and care of people with a specific disease or condition, based on the best available evidence, designed to help healthcare professionals in their work.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -878,9 +876,9 @@
         <rdfs:label xml:lang="en">comment</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
         <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A verbal or written remark concerning some entity. In written form, a comment is often appended to that entity and termed an annotation. Within computer programs or ontologies, comments are added to enhance human understanding, and are usually prefaced by</vitro:shortDef>
-        <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A verbal or written remark concerning some entity. In written form, a comment is often appended to that entity and termed an annotation. Within computer programs or ontologies, comments are added to enhance human understanding, and are usually prefaced by a special syntactic symbol that ensures they are ignored during execution of the program.
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A verbal or written remark concerning some entity. In written form, a comment is often appended to that entity and termed an annotation. Within computer programs or ontologies, comments are added to enhance human understanding, and are usually prefaced by a special syntactic symbol that ensures they are ignored during execution of the program.
 
-has super-classes</vitro:descriptionAnnot>
+has super-classes</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -891,7 +889,7 @@ has super-classes</vitro:descriptionAnnot>
         <rdfs:label xml:lang="en">erratum</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
         <vitro:shortDef rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A formal correction to an error introduced by the publisher into a previously published document.</vitro:shortDef>
-        <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A formal correction to an error introduced by the publisher into a previously published document.</vitro:descriptionAnnot>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A formal correction to an error introduced by the publisher into a previously published document.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1195,7 +1193,7 @@ Contents
 
     <owl:NamedIndividual rdf:about="http://purl.org/ontology/bibo/accepted">
         <rdfs:label xml:lang="en">accepted</rdfs:label>
-        <core:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Accepted for publication after peer reviewing</core:description>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Accepted for publication after peer reviewing</obo:IAO_0000115>
     </owl:NamedIndividual>
     
 
@@ -1204,7 +1202,7 @@ Contents
 
     <owl:NamedIndividual rdf:about="http://purl.org/ontology/bibo/peerReviewed">
         <rdfs:label xml:lang="en">peer reviewed</rdfs:label>
-        <core:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;nbsp;Peer review is the process by which articles are chosen to be included in a refereed journal. An editorial board consisting of experts in the same field as the author review the article and decide if it is authoritative enough for publication.</core:description>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;nbsp;Peer review is the process by which articles are chosen to be included in a refereed journal. An editorial board consisting of experts in the same field as the author review the article and decide if it is authoritative enough for publication.</obo:IAO_0000115>
     </owl:NamedIndividual>
     
 
@@ -1213,7 +1211,7 @@ Contents
 
     <owl:NamedIndividual rdf:about="http://purl.org/ontology/bibo/published">
         <rdfs:label xml:lang="en">published</rdfs:label>
-        <core:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published document</core:description>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Published document</obo:IAO_0000115>
     </owl:NamedIndividual>
     
 
@@ -1222,7 +1220,7 @@ Contents
 
     <owl:NamedIndividual rdf:about="http://vivoweb.org/ontology/core#inPress">
         <rdfs:label xml:lang="en">in press</rdfs:label>
-        <core:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Document to be published</core:description>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Document to be published</obo:IAO_0000115>
     </owl:NamedIndividual>
 </rdf:RDF>
 

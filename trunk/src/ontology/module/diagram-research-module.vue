@@ -202,7 +202,7 @@
         <ID1 xsi:type="node">15</ID1>
         <ID2 xsi:type="node">44</ID2>
     </child>
-    <child ID="27" label="has participant&#xa;BFO_0000057" layerID="1"
+    <child ID="27" label="has participant&#xa;RO_0000057" layerID="1"
         created="1374171554600" x="597.75" y="835.501" width="72.0"
         height="145.99902" strokeWidth="1.0" autoSized="false"
         controlCount="0" arrowState="2" xsi:type="link">

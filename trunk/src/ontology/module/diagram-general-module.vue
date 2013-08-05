@@ -1,14 +1,14 @@
-<!-- Tufts VUE 3.2 concept-map (diagram-general-module.vue) 2013-07-22 -->
+<!-- Tufts VUE 3.2 concept-map (diagram-general-module.vue) 2013-08-02 -->
 <!-- Tufts VUE: http://vue.tufts.edu/ -->
 <!-- Do Not Remove: VUE mapping @version(1.1) jar:file:/C:/Program%20Files%20(x86)/VUE/VUE.jar!/tufts/vue/resources/lw_mapping_1_1.xml -->
-<!-- Do Not Remove: Saved date Mon Jul 22 16:41:29 PDT 2013 by essaids on platform Windows 7 6.1 in JVM 1.6.0_29-b11 -->
+<!-- Do Not Remove: Saved date Fri Aug 02 14:39:37 PDT 2013 by essaids on platform Windows 7 6.1 in JVM 1.6.0_29-b11 -->
 <!-- Do Not Remove: Saving version @(#)VUE: built May 14 2013 at 1717 by tomadm on Linux 2.6.18-348.2.1.el5 i386 JVM 1.6.0_39-b04(bits=32) -->
 <?xml version="1.0" encoding="US-ASCII"?>
 <LW-MAP xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="none" ID="0"
     label="diagram-general-module.vue" created="1373657028877" x="0.0"
     y="0.0" width="1.4E-45" height="1.4E-45" strokeWidth="0.0" autoSized="false">
-    <resource referenceCreated="1374536489436" size="39108"
+    <resource referenceCreated="1375479577532" size="39104"
         spec="C:\s\svns\isf-new-layout\trunk\src\ontology\module\diagram-general-module.vue"
         type="1" xsi:type="URLResource">
         <title>diagram-general-module.vue</title>
@@ -54,7 +54,7 @@
         <ID2 xsi:type="node">6</ID2>
     </child>
     <child ID="12" label="contact info for&#xa;ARG_2000029" layerID="1"
-        created="1374515693561" x="97.28903" y="357.5" width="75.0"
+        created="1374515693561" x="97.78903" y="357.5" width="74.0"
         height="97.0" strokeWidth="1.0" autoSized="false"
         controlCount="1" arrowState="2" xsi:type="link">
         <strokeColor>#404040</strokeColor>
@@ -68,7 +68,7 @@
         <ctrlPoint0 x="124.0" y="395.0" xsi:type="point"/>
     </child>
     <child ID="13" label="has contact info&#xa;ARG_2000028" layerID="1"
-        created="1374515719661" x="170.4945" y="357.5" width="99.06662"
+        created="1374515719661" x="170.4945" y="357.5" width="98.56662"
         height="102.78174" strokeWidth="1.0" autoSized="false"
         controlCount="1" arrowState="2" xsi:type="link">
         <strokeColor>#404040</strokeColor>
@@ -323,7 +323,7 @@
         <ID1 xsi:type="node">30</ID1>
     </child>
     <child ID="35" label="country&#xa;vcard:country" layerID="1"
-        created="1374533686654" x="596.2099" y="389.50012" width="69.0"
+        created="1374533686654" x="596.7099" y="389.50012" width="68.0"
         height="62.999878" strokeWidth="1.0" strokeStyle="4"
         autoSized="false" controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#404040</strokeColor>
@@ -385,8 +385,8 @@
         <ID1 xsi:type="node">20</ID1>
     </child>
     <child ID="40" label="has category&#xa;vcard:hasCategory"
-        layerID="1" created="1374534435521" x="422.28485" y="384.18542"
-        width="94.0" height="50.314575" strokeWidth="1.0"
+        layerID="1" created="1374534435521" x="422.78485" y="384.18542"
+        width="93.0" height="50.314575" strokeWidth="1.0"
         autoSized="false" controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#404040</strokeColor>
         <textColor>#404040</textColor>
@@ -408,7 +408,7 @@
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
     <child ID="42" label="has email&#xa;vcard:hasEmail" layerID="1"
-        created="1374534537302" x="424.42303" y="311.5" width="74.0"
+        created="1374534537302" x="424.92303" y="311.5" width="73.0"
         height="36.461212" strokeWidth="1.0" autoSized="false"
         controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#404040</strokeColor>
@@ -431,8 +431,8 @@
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
     <child ID="44" label="has formatted name&#xa;vcard:hasFormattedName"
-        layerID="1" created="1374534670874" x="301.25" y="283.5"
-        width="125.0" height="64.0" strokeWidth="1.0" autoSized="false"
+        layerID="1" created="1374534670874" x="301.75" y="283.5"
+        width="124.0" height="64.0" strokeWidth="1.0" autoSized="false"
         controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#404040</strokeColor>
         <textColor>#404040</textColor>
@@ -498,7 +498,7 @@
         <ID2 xsi:type="node">7</ID2>
     </child>
     <child ID="50" label="has name&#xa;vcard:hasName" layerID="1"
-        created="1374534820145" x="454.5" y="532.5" width="77.0"
+        created="1374534820145" x="455.0" y="532.5" width="76.0"
         height="53.0" strokeWidth="1.0" autoSized="false"
         controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#404040</strokeColor>
@@ -560,8 +560,8 @@
     </child>
     <child ID="55"
         label="honorific suffix name&#xa;vcard:honorificSuffix"
-        layerID="1" created="1374535218144" x="518.8558" y="622.5"
-        width="103.0" height="60.0" strokeWidth="1.0" strokeStyle="4"
+        layerID="1" created="1374535218144" x="519.3558" y="622.5"
+        width="102.0" height="60.0" strokeWidth="1.0" strokeStyle="4"
         autoSized="false" controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#404040</strokeColor>
         <textColor>#404040</textColor>
@@ -596,8 +596,8 @@
     </child>
     <child ID="60"
         label="has date/time interval&#xa;vivo:dateTimeInterval"
-        layerID="1" created="1374535517425" x="8.760544" y="490.0801"
-        width="104.906624" height="97.41989" strokeWidth="1.0"
+        layerID="1" created="1374535517425" x="9.260544" y="490.0801"
+        width="104.406624" height="97.41989" strokeWidth="1.0"
         autoSized="false" controlCount="1" arrowState="2" xsi:type="link">
         <strokeColor>#404040</strokeColor>
         <textColor>#404040</textColor>
@@ -609,7 +609,7 @@
         <ID2 xsi:type="node">59</ID2>
         <ctrlPoint0 x="53.0" y="530.0" xsi:type="point"/>
     </child>
-    <child ID="61" label="has date/time value&#xa;vivo:dateTimeValue"
+    <child ID="61" label="date/time value&#xa;vivo:dateTimeValue"
         layerID="1" created="1374535585272" x="162.19955" y="490.02032"
         width="104.177155" height="78.479675" strokeWidth="1.0"
         autoSized="false" controlCount="1" arrowState="2" xsi:type="link">
@@ -676,8 +676,8 @@
     </child>
     <child ID="66"
         label="date/time precisoin&#xa;vivo:dateTimePrecision"
-        layerID="1" created="1374536102991" x="280.75" y="605.5"
-        width="111.0" height="87.0" strokeWidth="1.0" autoSized="false"
+        layerID="1" created="1374536102991" x="281.25" y="605.5"
+        width="110.0" height="87.0" strokeWidth="1.0" autoSized="false"
         controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#404040</strokeColor>
         <textColor>#404040</textColor>
@@ -692,7 +692,7 @@
         y="0.0" width="1.4E-45" height="1.4E-45" strokeWidth="0.0" autoSized="false">
         <URIString>http://vue.tufts.edu/rdf/resource/d4574a7e0a85291f006258e17de0879a</URIString>
     </layer>
-    <userZoom>0.12131519274376418</userZoom>
+    <userZoom>1.0</userZoom>
     <userOrigin x="-530.0" y="-161.0"/>
     <presentationBackground>#202020</presentationBackground>
     <PathwayList currentPathway="0" revealerIndex="-1">

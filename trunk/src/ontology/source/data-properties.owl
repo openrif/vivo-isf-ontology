@@ -24,15 +24,14 @@
      -->
 
     <owl:AnnotationProperty rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#exampleAnnot"/>
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
-    <owl:AnnotationProperty rdf:about="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#descriptionAnnot"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#scopeNote"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
     <owl:AnnotationProperty rdf:about="http://aims.fao.org/aos/geopolitical.owl#sourceCreator"/>
     <owl:AnnotationProperty rdf:about="http://aims.fao.org/aos/geopolitical.owl#sourceModified"/>
-    <owl:AnnotationProperty rdf:about="http://aims.fao.org/aos/geopolitical.owl#sourceIdentifier"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
+    <owl:AnnotationProperty rdf:about="http://aims.fao.org/aos/geopolitical.owl#sourceIdentifier"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
@@ -2036,6 +2035,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
     <!-- http://purl.org/ontology/bibo/abstract -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/abstract">
@@ -2378,7 +2383,7 @@ modern society using the world of Star trek. Los Angeles Times, March
 
     <owl:DatatypeProperty rdf:about="http://purl.org/spar/c4o/hasGlobalCountDate">
         <rdfs:label xml:lang="en">has global count date</rdfs:label>
-        <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The date on which the global citation count of the cited entity was recorded from a named bibliographic information source.</vitro:descriptionAnnot>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The date on which the global citation count of the cited entity was recorded from a named bibliographic information source.</obo:IAO_0000115>
     </owl:DatatypeProperty>
     
 
@@ -2387,7 +2392,7 @@ modern society using the world of Star trek. Los Angeles Times, March
 
     <owl:DatatypeProperty rdf:about="http://purl.org/spar/c4o/hasGlobalCountValue">
         <rdfs:label xml:lang="en">has global count value</rdfs:label>
-        <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An integer defining the value of the global citation count of a cited entity recorded from a named bibliographic information source on a particular date.</vitro:descriptionAnnot>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An integer defining the value of the global citation count of a cited entity recorded from a named bibliographic information source on a particular date.</obo:IAO_0000115>
     </owl:DatatypeProperty>
     
 
@@ -2426,14 +2431,6 @@ modern society using the world of Star trek. Los Angeles Times, March
     <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#dateTime">
         <rdfs:label xml:lang="en">date/time</rdfs:label>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#description -->
-
-    <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#description">
-        <rdfs:label xml:lang="en">description (vivo)</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -2734,7 +2731,7 @@ See also core:localAwardId.
 
     <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/scientific-research#irbNumber">
         <rdfs:label xml:lang="en">institutional review board (irb) number</rdfs:label>
-        <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Every clinical trial in the United States must be approved and monitored by an Institutional Review Board (IRB). An IRB is an independent committee of physicians, statisticians, community advocates and others whose objective is to ensure that a clinical trial is ethical and the rights of study participants are protected. </vitro:descriptionAnnot>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Every clinical trial in the United States must be approved and monitored by an Institutional Review Board (IRB). An IRB is an independent committee of physicians, statisticians, community advocates and others whose objective is to ensure that a clinical trial is ethical and the rights of study participants are protected. </obo:IAO_0000115>
     </owl:DatatypeProperty>
     
 
@@ -2743,7 +2740,7 @@ See also core:localAwardId.
 
     <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/scientific-research#nctId">
         <rdfs:label xml:lang="en">national clinical trials (nct) number</rdfs:label>
-        <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ClinicalTrials.gov is an ICMJE-acceptable public registry, offering up-to-date information for locating clinical trials for a wide range of diseases and conditions. The U.S. National Institutes of Health (NIH), through its National Library of Medicine (NLM), developed this site in collaboration with the Food and Drug Administration (FDA), as a result of the FDA Modernization Act, which was passed into law in November 1997.   This property should be publically visible since it is one of the principal identifiers in a national registry of clinical trials </vitro:descriptionAnnot>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ClinicalTrials.gov is an ICMJE-acceptable public registry, offering up-to-date information for locating clinical trials for a wide range of diseases and conditions. The U.S. National Institutes of Health (NIH), through its National Library of Medicine (NLM), developed this site in collaboration with the Food and Drug Administration (FDA), as a result of the FDA Modernization Act, which was passed into law in November 1997.   This property should be publically visible since it is one of the principal identifiers in a national registry of clinical trials </obo:IAO_0000115>
         <vitro:exampleAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCT00000419</vitro:exampleAnnot>
     </owl:DatatypeProperty>
     
@@ -2753,7 +2750,7 @@ See also core:localAwardId.
 
     <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/scientific-research#studyPopulationCount">
         <rdfs:label xml:lang="en">study population count</rdfs:label>
-        <vitro:descriptionAnnot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">number of human participants in the study (trial).</vitro:descriptionAnnot>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">number of human participants in the study (trial).</obo:IAO_0000115>
     </owl:DatatypeProperty>
     
 
