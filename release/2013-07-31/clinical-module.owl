@@ -1,23 +1,11 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/arg/clinical-module.owl#"
      xml:base="http://purl.obolibrary.org/obo/arg/clinical-module.owl"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:owl2-xml="http://www.w3.org/2006/12/owl2-xml#"
-     xmlns:app="http://eagle-i.org/ont/app/1.0/"
-     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
-     xmlns:iao="http://purl.obolibrary.org/obo/iao/"
-     xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:statistics="http://purl.org/net/OCRe/statistics.owl#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:skos2="http://www.w3.org/2008/05/skos#"
-     xmlns:vitro="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#"
-     xmlns:study_protocol="http://purl.org/net/OCRe/study_protocol.owl#"
-     xmlns:geopolitical="http://aims.fao.org/aos/geopolitical.owl#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:core="http://vivoweb.org/ontology/core#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/arg/clinical-module.owl">
         <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/arg/release/2013-07-31/clinical-module.owl"/>
@@ -25,9 +13,3903 @@
     
 
 
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_0000033 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ARG_0000033">
+        <rdfs:label>has_code</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
+        <rdfs:label xml:lang="en">editor preferred term</rdfs:label>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">The concise, meaningful, and human-friendly name for a class or property preferred by the ontology developers. (US-English)</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">editor preferred term</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
+        <rdfs:label xml:lang="en">example of usage</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A phrase describing how a class name should be used. May also include other kinds of examples that facilitate immediate understanding of a class semantics, such as widely known prototypical subclasses or instances of the class. Although essential for high level terms, examples for low level terms (e.g., Affymetrix HU133 array) are not</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">example</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114">
+        <rdfs:label xml:lang="en">has curation status</rdfs:label>
+        <obo:IAO_0000119 xml:lang="en">OBI_0000281</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Bill Bug</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">has curation status</obo:IAO_0000111>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:label xml:lang="en">textual definition</rdfs:label>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">definition</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
+        <rdfs:label xml:lang="en">editor note</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">An administrative note intended for its editor. It may not be included in the publication version of the ontology, so it should contain nothing necessary for end users to understand the ontology.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obfoundry.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">editor note</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
+        <rdfs:label xml:lang="en">definition editor</rdfs:label>
+        <obo:IAO_0000116 xml:lang="en">20110707, MC: label update to term editor and definition modified accordingly. See http://code.google.com/p/information-artifact-ontology/issues/detail?id=115.</obo:IAO_0000116>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">Name of editor entering the definition in the file. The definition editor is a point of contact for information regarding the term. The definition editor may be, but is not always, the author of the definition, which may have been worked upon by several people</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Name of editor entering the term in the file. The term editor is a point of contact for information regarding the term. The term editor may be, but is not always, the author of the definition, which may have been worked upon by several people</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">definition editor</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
+        <rdfs:label xml:lang="en">alternative term</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">An alternative name for a class or property which means the same thing as the preferred name (semantically equivalent)</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">alternative term</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
+        <rdfs:label xml:lang="en">definition source</rdfs:label>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">definition source</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000232 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000232">
+        <rdfs:label xml:lang="en">curator note</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">An administrative note of use for a curator but of no use for a user</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">curator note</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">For external terms/classes, the ontology from which the term was imported</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">imported from</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#isDefinedBy -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition">
+        <rdfs:label xml:lang="en">definition</rdfs:label>
+        <skos:definition xml:lang="en">A statement or formal explanation of the meaning of a concept.</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#scopeNote -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#scopeNote">
+        <rdfs:label xml:lang="en">scope note</rdfs:label>
+        <skos:definition xml:lang="en">A note that helps to clarify the meaning and/or the use of a concept.</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#dateTime -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#float -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#float"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#string -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051">
+        <rdfs:label xml:lang="en">has_part</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000039 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000039">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:label xml:lang="en">has measurement unit label</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136">
+        <rdfs:label xml:lang="en">is about</rdfs:label>
+        <obo:IAO_0000116 xml:lang="en">7/6/2009 Alan Ruttenberg. Following discussion with Jonathan Rees, and introduction of &quot;mentions&quot; relation. Weaken the is_about relationship to be primitive. 
+
+We will try to build it back up by elaborating the various subproperties that are more precisely defined.
+
+Some currently missing phenomena that should be considered &quot;about&quot; are predications - &quot;The only person who knows the answer is sitting beside me&quot; , Allegory, Satire, and other literary forms that can be topical without explicitly mentioning the topic.</obo:IAO_0000116>
+        <obo:IAO_0000119 xml:lang="en">Smith, Ceusters, Ruttenberg, 2000 years of philosophy</obo:IAO_0000119>
+        <obo:IAO_0000112 xml:lang="en">This document is about information artifacts and their representations</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">is_about is a (currently) primitive relation that relates an information artifact to an entity.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">person:Alan Ruttenberg</obo:IAO_0000117>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000142 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000142">
+        <rdfs:label>mentions</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000221 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000221">
+        <rdfs:label xml:lang="en">is quality measurement of</rdfs:label>
+        <obo:IAO_0000116 xml:lang="en">8/6/2009 Alan Ruttenberg: The strategy is to be rather specific with this relationship. There are other kinds of measurements that are not of qualities, such as those that measure time. We will add these as separate properties for the moment and see about generalizing later</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000116 xml:lang="en">From the second IAO workshop [Alan Ruttenberg 8/6/2009: not completely current, though bringing in comparison is probably important]
+
+This one is the one we are struggling with at the moment. The issue is what a measurement measures. On the one hand saying that it measures the quality would include it &quot;measuring&quot; the bearer = referring to the bearer in the measurement. However this makes comparisons of two different things not possible. On the other hand not having it inhere in the bearer, on the face of it, breaks the audit trail.
+
+Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which we are awaiting details.
+--
+From the second IAO workshop, various comments, [commented on by Alan Ruttenberg 8/6/2009]
+
+unit of measure is a quality, e.g. the length of a ruler.
+
+[We decided to hedge on what units of measure are, instead talking about measurement unit labels, which are the information content entities that are about whatever measurement units are. For IAO we need that information entity in any case. See the term measurement unit label]
+
+[Some struggling with the various subflavors of is_about. We subsequently removed the relation represents, and describes until and only when we have a better theory]
+
+a represents b means either a denotes b or a describes
+
+describe:
+a describes b means a is about b and a allows an inference of at least one quality of b
+
+We have had a long discussion about denotes versus describes.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">From the second IAO workshop: An attempt at tieing the quality to the measurement datum more carefully.
+
+a is a magnitude means a is a determinate quality particular inhering in some bearer b existing at a time t that can be represented/denoted by an information content entity e that has parts denoting a unit of measure, a number, and b. The unit of measure is an instance of the determinable quality.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">From the second meeting on IAO:
+
+An attempt at defining assay using Barry&apos;s &quot;reliability&quot; wording
+
+assay:
+process and has_input some material entity
+and has_output some information content entity 
+and which is such that instances of this process type reliably generate 
+outputs that describes the input.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">This one is the one we are struggling with at the moment. The issue is what a measurement measures. On the one hand saying that it measures the quality would include it &quot;measuring&quot; the bearer = referring to the bearer in the measurement. However this makes comparisons of two different things not possible. On the other hand not having it inhere in the bearer, on the face of it, breaks the audit trail.
+
+Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which we are awaiting details.</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">m is a quality measurement of q at t when
+q is a quality 
+there is a measurement process p that has specified output m, a measurement datum, that is about q</obo:IAO_0000115>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000417 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000417">
+        <rdfs:label xml:lang="en">is quality measured as</rdfs:label>
+        <obo:IAO_0000116 xml:lang="en">2009/10/19 Alan Ruttenberg. Named &apos;junk&apos; relation useful in restrictions, but not a real instance relationship</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">inverse of the relation of is quality measurement of</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000221"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000299 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000299">
+        <rdfs:label xml:lang="en">has_specified_output</rdfs:label>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Larry Hunter</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_specified_output</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000312 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000312">
+        <rdfs:label xml:lang="en">is_specified_output_of</rdfs:label>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is_specified_output_of</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000316 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000316">
+        <rdfs:label xml:lang="en">has_role</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relation between a continuant C and a role R. The reciprocal relation of role_of.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GROUP:OBI:&lt;http://obi.sourceforge.net&gt;</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Chris Mungal</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">has_role</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000052 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000052">
+        <rdfs:label xml:lang="en">inheres in</rdfs:label>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This clarifies that only specifically dependent continuants inhere in (specifically) one independent continuant over all time. For GDCs, there in implicitly inherence to all the independent continuants in which the concretizations inhere. Should add a &apos;cardinality 1&apos; restriction to the definition of specifically dependent continuant.</obo:IAO_0000116>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This relation belongs in BFO/RO, and will be in BFO 2</obo:IAO_0000116>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000053 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000053">
+        <rdfs:label xml:lang="en">bearer_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000056 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000056">
+        <rdfs:label xml:lang="en">participates in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000057 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000057">
+        <rdfs:label xml:lang="en">has participant</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002234 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002234">
+        <rdfs:label xml:lang="en">has output</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002353 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002353">
+        <rdfs:label xml:lang="en">output_of</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#dateIssued -->
+
+    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#dateIssued">
+        <rdfs:label xml:lang="en">date issued</rdfs:label>
+        <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#DateTimeValue"/>
+        <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#dateTimeValue"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#dateTimePrecision -->
+
+    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#dateTimePrecision">
+        <rdfs:label xml:lang="en">date/time precision</rdfs:label>
+        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#DateTimeValue"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#dateTimeValue -->
+
+    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#dateTimeValue">
+        <rdfs:label xml:lang="en">date/time value</rdfs:label>
+        <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#DateTimeValue"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#end -->
+
+    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#end">
+        <rdfs:label xml:lang="en">end date value</rdfs:label>
+        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#DateTimeInterval"/>
+        <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#DateTimeValue"/>
+        <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#dateTimeValue"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#start -->
+
+    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#start">
+        <rdfs:label xml:lang="en">start date value</rdfs:label>
+        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#DateTimeInterval"/>
+        <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#DateTimeValue"/>
+        <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#dateTimeValue"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#bottomObjectProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2002/07/owl#bottomObjectProperty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_0000172 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/ARG_0000172">
+        <rdfs:label xml:lang="en">patient_id</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#identifier"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_0000197 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/ARG_0000197">
+        <rdfs:label xml:lang="en">health care provider id</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://vivoweb.org/ontology/core#identifier"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000012 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/ARG_2000012">
+        <rdfs:label xml:lang="en">measurement_label</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000004 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000004">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:label xml:lang="en">has measurement value</rdfs:label>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#dateTime -->
+
+    <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#dateTime">
+        <rdfs:label xml:lang="en">date/time</rdfs:label>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#identifier -->
+
+    <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#identifier">
+        <rdfs:label xml:lang="en">identifier (vivo)</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_0000051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_0000051">
+        <rdfs:label xml:lang="en">patient</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000093"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_0000130 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_0000130">
+        <rdfs:label xml:lang="en">health care provider</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000207"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000008">
+        <rdfs:label xml:lang="en">topic weight measurement</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000009">
+        <rdfs:label xml:lang="en">expertise measurement</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000008"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000010">
+        <rdfs:label xml:lang="en">topic weight measurement process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000011">
+        <rdfs:label xml:lang="en">expertise measurement process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000010"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000021">
+        <rdfs:label xml:lang="en">experience</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000022 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000022">
+        <rdfs:label xml:lang="en">specialty</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000091 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000091">
+        <rdfs:label xml:lang="en">board subspecialty</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000022"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000092 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000092">
+        <rdfs:label xml:lang="en">allergy and immunology (allergy and immunology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000367"/>
+        <obo:ARG_0000033>207K00000X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000093 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000093">
+        <rdfs:label xml:lang="en">anesthesiology (anesthesiology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000367"/>
+        <obo:ARG_0000033>207L00000X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000094 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000094">
+        <rdfs:label xml:lang="en">colon and rectal surgery (colon and rectal surgery)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000367"/>
+        <obo:ARG_0000033>208C00000X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000095 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000095">
+        <rdfs:label xml:lang="en">dermatology (dermatology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000367"/>
+        <obo:ARG_0000033>207N00000X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000096 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000096">
+        <rdfs:label xml:lang="en">emergency medicine (emergency medicine)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000367"/>
+        <obo:ARG_0000033>207P00000X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000097 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000097">
+        <rdfs:label xml:lang="en">family medicine (family medicine)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000367"/>
+        <obo:ARG_0000033>207Q00000X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000098 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000098">
+        <rdfs:label xml:lang="en">internal medicine (internal medicine)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000367"/>
+        <obo:ARG_0000033>207R00000X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000100 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000100">
+        <rdfs:label xml:lang="en">clinical cytogenetics (medical genetics)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000367"/>
+        <obo:ARG_0000033>207SC0300X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000101 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000101">
+        <rdfs:label xml:lang="en">clinical genetics (md) (medical genetics)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000367"/>
+        <obo:ARG_0000033>207SG0201X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000102 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000102">
+        <rdfs:label xml:lang="en">clinical molecular genetics (medical genetics)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000367"/>
+        <obo:ARG_0000033>207SG0203X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000103 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000103">
+        <rdfs:label xml:lang="en">neurological surgery (neurological surgery)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000367"/>
+        <obo:ARG_0000033>207T00000X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000104 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000104">
+        <rdfs:label xml:lang="en">nuclear medicine (nuclear medicine)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000367"/>
+        <obo:ARG_0000033>207U00000X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000105 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000105">
+        <rdfs:label xml:lang="en">obstetrics and gynecology (obstetrics and gynecology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000367"/>
+        <obo:ARG_0000033>207V00000X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000106 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000106">
+        <rdfs:label xml:lang="en">ophthalmology (ophthalmology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000367"/>
+        <obo:ARG_0000033>207W00000X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000107 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000107">
+        <rdfs:label xml:lang="en">orthopaedic surgery (orthopaedic surgery)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000367"/>
+        <obo:ARG_0000033>207X00000X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000108 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000108">
+        <rdfs:label xml:lang="en">otolaryngology (otolaryngology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000367"/>
+        <obo:ARG_0000033>207Y00000X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000109 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000109">
+        <rdfs:label xml:lang="en">pathology-anatomic/pathology-clinical (pathology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000367"/>
+        <obo:ARG_0000033>207ZP0102X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000110 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000110">
+        <rdfs:label xml:lang="en">pathology - anatomic (pathology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000367"/>
+        <obo:ARG_0000033>207ZP0101X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000111 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000111">
+        <rdfs:label xml:lang="en">pathology - clinical (pathology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000367"/>
+        <obo:ARG_0000033>207ZC0006X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000112 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000112">
+        <rdfs:label xml:lang="en">pediatrics (pediatrics)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000367"/>
+        <obo:ARG_0000033>208000000X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000113 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000113">
+        <rdfs:label xml:lang="en">physical medicine and rehabilitation (physical medicine and rehabilitation)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000367"/>
+        <obo:ARG_0000033>208100000X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000114 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000114">
+        <rdfs:label xml:lang="en">plastic surgery (plastic surgery)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000367"/>
+        <obo:ARG_0000033>208200000X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000115 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000115">
+        <rdfs:label xml:lang="en">aerospace medicine (preventive medicine)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000367"/>
+        <obo:ARG_0000033>2083A0100X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000116 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000116">
+        <rdfs:label xml:lang="en">occupational medicine (preventive medicine)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000367"/>
+        <obo:ARG_0000033>2083X0100X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000117 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000117">
+        <rdfs:label xml:lang="en">public health and general preventive medicine (preventive medicine)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000367"/>
+        <obo:ARG_0000033>2083P0901X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000118 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000118">
+        <rdfs:label xml:lang="en">psychiatry (psychiatry and neurology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000367"/>
+        <obo:ARG_0000033>2084P0800X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000119 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000119">
+        <rdfs:label xml:lang="en">neurology (psychiatry and neurology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000367"/>
+        <obo:ARG_0000033>2084N0400X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000120 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000120">
+        <rdfs:label xml:lang="en">neurology with special qualification in child neurology (psychiatry and neurology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000367"/>
+        <obo:ARG_0000033>2084N0402X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000121 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000121">
+        <rdfs:label xml:lang="en">diagnostic radiology (radiology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000367"/>
+        <obo:ARG_0000033>2085R0202X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000122 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000122">
+        <rdfs:label xml:lang="en">interventional radiology and diagnostic radiology (radiology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000367"/>
+        <obo:ARG_0000033>2085R0204X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000123 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000123">
+        <rdfs:label xml:lang="en">radiation oncology (radiology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000367"/>
+        <obo:ARG_0000033>2085R0001X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000124 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000124">
+        <rdfs:label xml:lang="en">medical physics (radiology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000367"/>
+        <obo:ARG_0000033>2085R0205X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000125 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000125">
+        <rdfs:label xml:lang="en">surgery (surgery)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000367"/>
+        <obo:ARG_0000033>208600000X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000126 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000126">
+        <rdfs:label xml:lang="en">vascular surgery (surgery)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000367"/>
+        <obo:ARG_0000033>2086S0129X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000127 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000127">
+        <rdfs:label xml:lang="en">thoracic and cardiac surgery (thoracic surgery)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000367"/>
+        <obo:ARG_0000033>208G00000X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000128 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000128">
+        <rdfs:label xml:lang="en">urology (urology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000367"/>
+        <obo:ARG_0000033>208800000X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000129 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000129">
+        <rdfs:label xml:lang="en">critical care medicine (anesthesiology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207LC0200X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000130 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000130">
+        <rdfs:label xml:lang="en">hospice and palliative medicine (anesthesiology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207LH0002X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000131 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000131">
+        <rdfs:label xml:lang="en">pain medicine (anesthesiology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207LP2900X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000132 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000132">
+        <rdfs:label xml:lang="en">pediatric anesthesiology (anesthesiology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207LP3000X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000133 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000133">
+        <rdfs:label xml:lang="en">sleep medicine (anesthesiology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000134 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000134">
+        <rdfs:label xml:lang="en">dermatopathology (dermatology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207ND0900X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000135 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000135">
+        <rdfs:label xml:lang="en">pediatric dermatology (dermatology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207NP0225X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000136 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000136">
+        <rdfs:label xml:lang="en">emergency medical services (emergency medicine)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207PE0004X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000137 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000137">
+        <rdfs:label xml:lang="en">hospice and palliative medicine (emergency medicine)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207PH0002X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000139 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000139">
+        <rdfs:label xml:lang="en">medical toxicology (emergency medicine)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207PT0002X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000140 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000140">
+        <rdfs:label xml:lang="en">pediatric emergency medicine (emergency medicine)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207PP0204X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000141 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000141">
+        <rdfs:label xml:lang="en">sports medicine (emergency medicine)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207PS0010X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000142 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000142">
+        <rdfs:label xml:lang="en">undersea and hyperbaric medicine (emergency medicine)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207PE0005X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000143 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000143">
+        <rdfs:label xml:lang="en">adolescent medicine (internal medicine)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207RA0000X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000144 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000144">
+        <rdfs:label xml:lang="en">geriatric medicine (internal medicine)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207RG0300X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000145 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000145">
+        <rdfs:label xml:lang="en">hospice and palliative medicine (internal medicine)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207RH0002X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000146 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000146">
+        <rdfs:label xml:lang="en">sleep medicine (internal medicine)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207RS0012X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000147 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000147">
+        <rdfs:label xml:lang="en">sports medicine (internal medicine)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207RS0010X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000148 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000148">
+        <rdfs:label xml:lang="en">adult congenital heart disease (internal medicine)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000149 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000149">
+        <rdfs:label xml:lang="en">advanced heart failure and transplant cardiology (internal medicine)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000150 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000150">
+        <rdfs:label xml:lang="en">cardiovascular disease (internal medicine)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207RC0000X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000151 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000151">
+        <rdfs:label xml:lang="en">clinical cardiac electrophysiology (internal medicine)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207RC0001X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000152 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000152">
+        <rdfs:label xml:lang="en">critical care medicine (internal medicine)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207RC0200X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000153 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000153">
+        <rdfs:label xml:lang="en">endocrinology, diabetes and metabolism (internal medicine)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207RE0101X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000154 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000154">
+        <rdfs:label xml:lang="en">gastroenterology (internal medicine)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207RG0100X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000155 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000155">
+        <rdfs:label xml:lang="en">hematology (internal medicine)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207RH0000X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000156 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000156">
+        <rdfs:label xml:lang="en">infectious disease (internal medicine)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207RI0200X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000157 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000157">
+        <rdfs:label xml:lang="en">interventional cardiology (internal medicine)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207RI0011X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000158 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000158">
+        <rdfs:label xml:lang="en">medical oncology (internal medicine)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207RX0202X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000159 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000159">
+        <rdfs:label xml:lang="en">nephrology (internal medicine)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207RN0300X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000160 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000160">
+        <rdfs:label xml:lang="en">pulmonary disease (internal medicine)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207RP1001X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000161 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000161">
+        <rdfs:label xml:lang="en">rheumatology (internal medicine)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207RR0500X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000162 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000162">
+        <rdfs:label xml:lang="en">transplant hepatology (internal medicine)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207RT0003X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000163 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000163">
+        <rdfs:label xml:lang="en">medical biochemical genetics (medical genetics)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207SG0202X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000164 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000164">
+        <rdfs:label xml:lang="en">molecular genetic pathology (medical genetics)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207SM0001X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000165 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000165">
+        <rdfs:label xml:lang="en">critical care medicine (obstetrics and gynecology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207VC0200X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000166 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000166">
+        <rdfs:label xml:lang="en">female pelvic medicine and reconstructive surgery (obstetrics and gynecology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207VF0040X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000167 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000167">
+        <rdfs:label xml:lang="en">gynecologic oncology (obstetrics and gynecology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207VX0201X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000168 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000168">
+        <rdfs:label xml:lang="en">hospice and palliative medicine (obstetrics and gynecology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207VH0002X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000169 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000169">
+        <rdfs:label xml:lang="en">maternal and fetal medicine (obstetrics and gynecology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207VM0101X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000170 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000170">
+        <rdfs:label xml:lang="en">reproductive endocrinology/infertility (obstetrics and gynecology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207VE0102X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000171 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000171">
+        <rdfs:label xml:lang="en">orthopaedic sports medicine (orthopedic surgery)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207XX0005X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000172 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000172">
+        <rdfs:label xml:lang="en">surgery of the hand (orthopedics)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207XS0106X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000173 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000173">
+        <rdfs:label xml:lang="en">neurotology (otolaryngology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207YX0901X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000174 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000174">
+        <rdfs:label xml:lang="en">pediatric otolaryngology (otolaryngology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207YP0228X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000175 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000175">
+        <rdfs:label xml:lang="en">plastic surgery within the head and neck (otolaryngology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207YX0007X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000176 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000176">
+        <rdfs:label xml:lang="en">sleep medicine (otolaryngology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207YS0012X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000177 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000177">
+        <rdfs:label xml:lang="en">blood banking/transfusion medicine (pathology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207ZB0001X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000178 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000178">
+        <rdfs:label xml:lang="en">clinical informatics (pathology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000179 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000179">
+        <rdfs:label xml:lang="en">cytopathology (pathology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207ZC0500X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000180 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000180">
+        <rdfs:label xml:lang="en">dermatopathology (pathology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207ZD0900X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000181 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000181">
+        <rdfs:label xml:lang="en">neuropathology (pathology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207ZN0500X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000182 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000182">
+        <rdfs:label xml:lang="en">pathology - chemical (pathology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207ZP0104X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000183 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000183">
+        <rdfs:label xml:lang="en">pathology - forensic (pathology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207ZF0201X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000184 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000184">
+        <rdfs:label xml:lang="en">pathology - hematology (pathology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207ZH0000X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000185 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000185">
+        <rdfs:label xml:lang="en">pathology - medical microbiology (pathology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207ZM0300X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000186 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000186">
+        <rdfs:label xml:lang="en">pathology - molecular genetic (pathology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207ZP0007X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000187 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000187">
+        <rdfs:label xml:lang="en">pathology - pediatric (pathology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207ZP0213X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000188 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000188">
+        <rdfs:label xml:lang="en">adolescent medicine (pediatrics)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>2080A0000X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000189 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000189">
+        <rdfs:label xml:lang="en">child abuse pediatrics (pediatrics)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>2080C0008X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000190 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000190">
+        <rdfs:label xml:lang="en">developmental-behavioral pediatrics (pediatrics)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>2080P0006X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000191 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000191">
+        <rdfs:label xml:lang="en">hospice and palliative medicine (pediatrics)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>2080H0002X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000192 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000192">
+        <rdfs:label xml:lang="en">medical toxicology (pediatrics)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>2080T0002X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000193 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000193">
+        <rdfs:label xml:lang="en">neonatal-perinatal medicine (pediatrics)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>2080N0001X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000194 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000194">
+        <rdfs:label xml:lang="en">neurodevelopmental disabilities (pediatrics)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>2080P0008X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000195 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000195">
+        <rdfs:label xml:lang="en">pediatric cardiology (pediatrics)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>2080P0202X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000196 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000196">
+        <rdfs:label xml:lang="en">pediatric critical care medicine (pediatrics)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>2080P0203X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000197 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000197">
+        <rdfs:label xml:lang="en">pediatric emergency medicine (pediatrics)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>2080P0204X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000198 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000198">
+        <rdfs:label xml:lang="en">pediatric endocrinology (pediatrics)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>2080P0205X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000199 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000199">
+        <rdfs:label xml:lang="en">pediatric gastroenterology (pediatrics)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>2080P0206X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000200 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000200">
+        <rdfs:label xml:lang="en">pediatric hematology-oncology (pediatrics)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>2080P0207X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000201 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000201">
+        <rdfs:label xml:lang="en">pediatric infectious diseases (pediatrics)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>2080P0208X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000202 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000202">
+        <rdfs:label xml:lang="en">pediatric nephrology (pediatrics)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>2080P0210X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000203 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000203">
+        <rdfs:label xml:lang="en">pediatric pulmonology (pediatrics)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>2080P0214X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000204 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000204">
+        <rdfs:label xml:lang="en">pediatric rheumatology (pediatrics)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>2080P0216X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000205 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000205">
+        <rdfs:label xml:lang="en">pediatric transplant hepatology (pediatrics)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>2080T0004X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000206 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000206">
+        <rdfs:label xml:lang="en">sleep medicine (pediatrics)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>2080S0012X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000207 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000207">
+        <rdfs:label xml:lang="en">sports medicine (pediatrics)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>2080S0010X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000208 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000208">
+        <rdfs:label xml:lang="en">brain injury medicine (physical medicine)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000209 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000209">
+        <rdfs:label xml:lang="en">hospice and palliative medicine (physical medicin)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>2081H0002X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000210 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000210">
+        <rdfs:label xml:lang="en">neuromuscular medicine (physical medicin)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>2081N0008X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000211 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000211">
+        <rdfs:label xml:lang="en">pain medicine (physical medicin)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>2081P2900X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000212 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000212">
+        <rdfs:label xml:lang="en">pediatric rehabilitation medicine (physical medicin)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>2081P0010X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000213 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000213">
+        <rdfs:label xml:lang="en">spinal cord injury medicine (physical medicin)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>2081P0004X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000214 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000214">
+        <rdfs:label xml:lang="en">sports medicine (physical medicin)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>2081S0010X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000215 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000215">
+        <rdfs:label xml:lang="en">plastic surgery within the head and neck (plastic surgery)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>2082S0099X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000216 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000216">
+        <rdfs:label xml:lang="en">surgery of the hand (plastic surgery)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>2082S0105X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000217 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000217">
+        <rdfs:label xml:lang="en">clinical informatics (preventive medicine)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000218 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000218">
+        <rdfs:label xml:lang="en">medical toxicology (preventive medicine)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>2083T0002X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000219 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000219">
+        <rdfs:label xml:lang="en">undersea and hyperbaric medicine (preventive medicine)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>2083P0011X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000220 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000220">
+        <rdfs:label xml:lang="en">addiction psychiatry (psychiatry and neurology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>2084P0802X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000221 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000221">
+        <rdfs:label xml:lang="en">brain injury medicine (psychiatry and neurology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000222 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000222">
+        <rdfs:label xml:lang="en">child and adolescent psychiatry (psychiatry and neurology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>2084P0804X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000223 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000223">
+        <rdfs:label xml:lang="en">clinical neurophysiology (psychiatry and neurology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>2084N0600X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000224 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000224">
+        <rdfs:label xml:lang="en">epilepsy (psychiatry and neurology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000225 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000225">
+        <rdfs:label xml:lang="en">forensic psychiatry (psychiatry and neurology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>2084F0202X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000226 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000226">
+        <rdfs:label xml:lang="en">geriatric psychiatry (psychiatry and neurology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>2084P0805X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000227 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000227">
+        <rdfs:label xml:lang="en">hospice and palliative medicine (psychiatry and neurology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>2084H0002X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000228 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000228">
+        <rdfs:label xml:lang="en">neurodevelopmental disabilities (psychiatry and neurology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>2084P0005X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000229 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000229">
+        <rdfs:label xml:lang="en">neuromuscular medicine (psychiatry and neurology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>2084N0008X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000230 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000230">
+        <rdfs:label xml:lang="en">pain medicine (psychiatry and neurology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>2084P2900X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000231 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000231">
+        <rdfs:label xml:lang="en">psychosomatic medicine (psychiatry and neurology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>2084P0015X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000232 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000232">
+        <rdfs:label xml:lang="en">sleep medicine (psychiatry and neurology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>2084S0012X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000233 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000233">
+        <rdfs:label xml:lang="en">vascular neurology (psychiatry and neurology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>2084V0102X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000234 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000234">
+        <rdfs:label xml:lang="en">hospice and palliative medicine (radiology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>2085H0002X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000235 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000235">
+        <rdfs:label xml:lang="en">neuroradiology (radiology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>2085N0700X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000236 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000236">
+        <rdfs:label xml:lang="en">nuclear radiology (radiology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>2085N0904X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000237 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000237">
+        <rdfs:label xml:lang="en">pediatric radiology (radiology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>2085P0229X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000238 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000238">
+        <rdfs:label xml:lang="en">vascular and interventional radiology (radiology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>2085R0204X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000239 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000239">
+        <rdfs:label xml:lang="en">complex general surgical oncology (surgery)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>2086X0206X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000240 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000240">
+        <rdfs:label xml:lang="en">hospice and palliative medicine (surgery)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>2086H0002X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000241 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000241">
+        <rdfs:label xml:lang="en">pediatric surgery (surgery)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>2086S0120X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000242 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000242">
+        <rdfs:label xml:lang="en">surgery of the hand (surgery)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>2086S0105X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000243 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000243">
+        <rdfs:label xml:lang="en">surgical critical care (surgery)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>2086S0102X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000244 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000244">
+        <rdfs:label xml:lang="en">congenital cardiac surgery (thoracic surgery)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000245 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000245">
+        <rdfs:label xml:lang="en">female pelvic medicine and reconstructive surgery (urology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>2088F0040X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000246 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000246">
+        <rdfs:label xml:lang="en">pediatric urology (urology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>2088P0231X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000248 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000248">
+        <rdfs:label xml:lang="en">acupuncturist</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000339"/>
+        <obo:ARG_0000033>171100000X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000249 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000249">
+        <rdfs:label xml:lang="en">advanced practice midwife</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000357"/>
+        <obo:ARG_0000033>367A00000X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000250 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000250">
+        <rdfs:label xml:lang="en">air transport (ambulance)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000356"/>
+        <obo:ARG_0000033>3416A0800X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000251 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000251">
+        <rdfs:label xml:lang="en">audiologist</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000345"/>
+        <obo:ARG_0000033>231H00000X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000252 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000252">
+        <rdfs:label xml:lang="en">audiologist-hearing aid fitter</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000345"/>
+        <obo:ARG_0000033>237600000X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000253 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000253">
+        <rdfs:label xml:lang="en">clinical neuropsychologist</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000332"/>
+        <obo:ARG_0000033>103G00000X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000254 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000254">
+        <rdfs:label xml:lang="en">clinical nurse specialist</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000357"/>
+        <obo:ARG_0000033>364S00000X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000255 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000255">
+        <rdfs:label xml:lang="en">mental health (counselor)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000332"/>
+        <obo:ARG_0000033>101YM0800X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000256 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000256">
+        <rdfs:label xml:lang="en">addiction (substance use disorder) (counselor)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000332"/>
+        <obo:ARG_0000033>101YA0400X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000257 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000257">
+        <rdfs:label xml:lang="en">oral and maxillofacial surgery (dentist)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000334"/>
+        <obo:ARG_0000033>1223S0112X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000258 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000258">
+        <rdfs:label xml:lang="en">pediatric dentistry  (dentist)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000334"/>
+        <obo:ARG_0000033>1223P0221X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000259 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000259">
+        <rdfs:label xml:lang="en">orthodontics and dentofacial orthopedics (dentist)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000334"/>
+        <obo:ARG_0000033>1223X0400X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000260 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000260">
+        <rdfs:label xml:lang="en">mohs-micrographic surgery (dermatology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207ND0101X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000261 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000261">
+        <rdfs:label xml:lang="en">dietitian, registered</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000335"/>
+        <obo:ARG_0000033>133V00000X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000262 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000262">
+        <rdfs:label xml:lang="en">nutrition, metabolic (dietitian, registered)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000335"/>
+        <obo:ARG_0000033>133VN1006X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000263 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000263">
+        <rdfs:label xml:lang="en">nutrition, pediatric (dietitian, registered)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000335"/>
+        <obo:ARG_0000033>133VN1004X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000264 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000264">
+        <rdfs:label xml:lang="en">nutrition, renal (dietitian, registered)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000335"/>
+        <obo:ARG_0000033>133VN1005X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000265 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000265">
+        <rdfs:label xml:lang="en">sports medicine (family medicine)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <obo:ARG_0000033>207QS0010X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000266 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000266">
+        <rdfs:label xml:lang="en">hospice and palliative medicine (family medicine)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <obo:ARG_0000033>207QH0002X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000267 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000267">
+        <rdfs:label xml:lang="en">general practice</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>208D00000X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000268 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000268">
+        <rdfs:label xml:lang="en">genetic counselor, ms</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000339"/>
+        <obo:ARG_0000033>170300000X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000269 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000269">
+        <rdfs:label xml:lang="en">hospitalist</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>208M00000X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000270 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000270">
+        <rdfs:label xml:lang="en">hepatology (internal medicine)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207RI0008X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000271 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000271">
+        <rdfs:label xml:lang="en">hematology and oncology (internal medicine)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207RH0003X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000272 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000272">
+        <rdfs:label xml:lang="en">massage therapist</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000344"/>
+        <obo:ARG_0000033>225700000X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000273 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000273">
+        <rdfs:label xml:lang="en">midwife</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000339"/>
+        <obo:ARG_0000033>176B00000X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000274 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000274">
+        <rdfs:label xml:lang="en">naturopath</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000339"/>
+        <obo:ARG_0000033>175F00000X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000275 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000275">
+        <rdfs:label xml:lang="en">acute care (nurse practitioner)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000357"/>
+        <obo:ARG_0000033>363LA2100X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000276 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000276">
+        <rdfs:label xml:lang="en">adult health (nurse practitioner)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000357"/>
+        <obo:ARG_0000033>363LA2200X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000277 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000277">
+        <rdfs:label xml:lang="en">family (nurse practitioner)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000357"/>
+        <obo:ARG_0000033>363LF0000X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000278 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000278">
+        <rdfs:label xml:lang="en">gerontology (nurse practitioner)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000357"/>
+        <obo:ARG_0000033>363LG0600X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000279 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000279">
+        <rdfs:label xml:lang="en">pediatrics (nurse practitioner)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000357"/>
+        <obo:ARG_0000033>363LP0200X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000280 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000280">
+        <rdfs:label xml:lang="en">women&apos;s health (nurse practitioner)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000357"/>
+        <obo:ARG_0000033>363LW0102X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000281 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000281">
+        <rdfs:label xml:lang="en">obstetrics and gynecology (nurse practitioner)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000357"/>
+        <obo:ARG_0000033>363LX0001X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000282 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000282">
+        <rdfs:label xml:lang="en">psych/mental health (nurse practitioner)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000357"/>
+        <obo:ARG_0000033>363LP0808X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000283 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000283">
+        <rdfs:label xml:lang="en">primary care (nurse practitioner)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000357"/>
+        <obo:ARG_0000033>363LP2300X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000284 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000284">
+        <rdfs:label xml:lang="en">nurse practitioner</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000357"/>
+        <obo:ARG_0000033>363L00000X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000285 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000285">
+        <rdfs:label xml:lang="en">gynecology (obstetrics and gynecology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207VG0400X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000286 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000286">
+        <rdfs:label xml:lang="en">obstetrics (obstetrics and gynecology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207VX0000X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000287 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000287">
+        <rdfs:label xml:lang="en">occupational therapist</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000344"/>
+        <obo:ARG_0000033>225X00000X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000288 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000288">
+        <rdfs:label xml:lang="en">pediatrics (occupational therapist)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000344"/>
+        <obo:ARG_0000033>225XP0200X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000289 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000289">
+        <rdfs:label xml:lang="en">hand (occupational therapist)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000344"/>
+        <obo:ARG_0000033>225XH1200X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000290 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000290">
+        <rdfs:label xml:lang="en">occupational therapy assistant</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000344"/>
+        <obo:ARG_0000033>224Z00000X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000291 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000291">
+        <rdfs:label xml:lang="en">optometrist</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000337"/>
+        <obo:ARG_0000033>152W00000X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000292 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000292">
+        <rdfs:label xml:lang="en">corneal and contact management (optometrist)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000337"/>
+        <obo:ARG_0000033>152WC0802X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000293 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000293">
+        <rdfs:label xml:lang="en">low vision rehabilitation (optometrist)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000337"/>
+        <obo:ARG_0000033>152WL0500X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000294 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000294">
+        <rdfs:label xml:lang="en">oral and maxillofacial surgery</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>204E00000X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000295 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000295">
+        <rdfs:label xml:lang="en">pediatric orthopaedic surgery (orthopaedic surgery)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207XP3100X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000296 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000296">
+        <rdfs:label xml:lang="en">adult reconstructive orthopaedic surgery (orthopaedic surgery)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207XS0114X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000297 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000297">
+        <rdfs:label xml:lang="en">orthopaedic trauma (orthopaedic surgery)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207XX0801X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000298 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000298">
+        <rdfs:label xml:lang="en">foot and ankle surgery (orthopaedic surgery)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207XX0004X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000299 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000299">
+        <rdfs:label xml:lang="en">facial plastic surgery (otolaryngology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207YS0123X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000300 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000300">
+        <rdfs:label xml:lang="en">otolaryngology/facial plastic surgery (otolaryngology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207YX0905X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000301 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000301">
+        <rdfs:label xml:lang="en">pain medicine (pain medicine)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>208VP0000X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000302 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000302">
+        <rdfs:label xml:lang="en">interventional pain medicine  (pain medicine)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>208VP0014X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000303 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000303">
+        <rdfs:label xml:lang="en">pharmacotherapy (pharmacist)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000340"/>
+        <obo:ARG_0000033>1835P1200X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000304 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000304">
+        <rdfs:label xml:lang="en">physical therapist</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000344"/>
+        <obo:ARG_0000033>225100000X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000305 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000305">
+        <rdfs:label xml:lang="en">pediatrics (physical therapist)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000344"/>
+        <obo:ARG_0000033>2251P0200X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000306 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000306">
+        <rdfs:label xml:lang="en">physical therapy assistant</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000344"/>
+        <obo:ARG_0000033>225200000X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000307 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000307">
+        <rdfs:label xml:lang="en">physician assistant</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000357"/>
+        <obo:ARG_0000033>363A00000X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000308 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000308">
+        <rdfs:label xml:lang="en">medical (physician assistant)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000357"/>
+        <obo:ARG_0000033>363AM0700X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000309 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000309">
+        <rdfs:label xml:lang="en">surgical (physician assistant)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000357"/>
+        <obo:ARG_0000033>363AS0400X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000310 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000310">
+        <rdfs:label xml:lang="en">podiatrist</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000343"/>
+        <obo:ARG_0000033>213E00000X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000311 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000311">
+        <rdfs:label xml:lang="en">foot surgery (podiatrist)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000343"/>
+        <obo:ARG_0000033>213ES0131X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000312 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000312">
+        <rdfs:label xml:lang="en">psychologist</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000332"/>
+        <obo:ARG_0000033>103T00000X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000313 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000313">
+        <rdfs:label xml:lang="en">clinical child &amp; adolescent (psychologist)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000332"/>
+        <obo:ARG_0000033>103TC2200X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000314 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000314">
+        <rdfs:label xml:lang="en">clinical (psychologist)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000332"/>
+        <obo:ARG_0000033>103TC0700X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000315 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000315">
+        <rdfs:label xml:lang="en">counseling (psychologist)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000332"/>
+        <obo:ARG_0000033>103TC1900X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000316 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000316">
+        <rdfs:label xml:lang="en">cognitive &amp; behavioral (psychologist)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000332"/>
+        <obo:ARG_0000033>103TB0200X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000317 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000317">
+        <rdfs:label xml:lang="en">therapeutic radiology (radiology)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>2085R0203X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000318 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000318">
+        <rdfs:label xml:lang="en">wound care (registered nurse)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000338"/>
+        <obo:ARG_0000033>163WW0000X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000319 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000319">
+        <rdfs:label xml:lang="en">diabetes educator (registered nurse)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000338"/>
+        <obo:ARG_0000033>163WD0400X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000320 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000320">
+        <rdfs:label xml:lang="en">women&apos;s health care, ambulatory (registered nurse)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000338"/>
+        <obo:ARG_0000033>163WW0101X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000321 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000321">
+        <rdfs:label xml:lang="en">obstetric, high-risk (registered nurse)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000338"/>
+        <obo:ARG_0000033>163WX0002X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000322 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000322">
+        <rdfs:label xml:lang="en">obstetric, inpatient (registered nurse)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000338"/>
+        <obo:ARG_0000033>163WX0003X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000323 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000323">
+        <rdfs:label xml:lang="en">registered nurse</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000338"/>
+        <obo:ARG_0000033>163W00000X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000324 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000324">
+        <rdfs:label xml:lang="en">clinical (social worker)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000332"/>
+        <obo:ARG_0000033>1041C0700X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000325 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000325">
+        <rdfs:label xml:lang="en">specialist</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000339"/>
+        <obo:ARG_0000033>174400000X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000326 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000326">
+        <rdfs:label xml:lang="en">speech-language pathologist</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000345"/>
+        <obo:ARG_0000033>235Z00000X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000327 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000327">
+        <rdfs:label xml:lang="en">student in an organized health care education/training program</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000360"/>
+        <obo:ARG_0000033>390200000X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000329 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000329">
+        <rdfs:label xml:lang="en">trauma surgery (surgery)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>2086S0127X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000330 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000330">
+        <rdfs:label xml:lang="en">plastic and reconstructive surgery (surgery)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>2086S0122X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000331 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000331">
+        <rdfs:label xml:lang="en">transplant surgery</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>204F00000X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000332 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000332">
+        <rdfs:label xml:lang="en">behavioral health &amp; social service providers</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000022"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000333 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000333">
+        <rdfs:label xml:lang="en">chiropractic providers</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000022"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000334 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000334">
+        <rdfs:label xml:lang="en">dental providers</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000022"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000335 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000335">
+        <rdfs:label xml:lang="en">dietary &amp; nutritional service providers</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000022"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000336 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000336">
+        <rdfs:label xml:lang="en">emergency medical service providers</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000022"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000337 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000337">
+        <rdfs:label xml:lang="en">eye and vision services providers</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000022"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000338 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000338">
+        <rdfs:label xml:lang="en">nursing service providers</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000022"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000339 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000339">
+        <rdfs:label xml:lang="en">other service providers</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000022"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000340 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000340">
+        <rdfs:label xml:lang="en">pharmacy service providers</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000022"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000341 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000341">
+        <rdfs:label xml:lang="en">group specialty</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000022"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000342 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000342">
+        <rdfs:label xml:lang="en">allopathic &amp; osteopathic physicians</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000022"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000343 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000343">
+        <rdfs:label xml:lang="en">podiatric medicine &amp; surgery service providers</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000022"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000344 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000344">
+        <rdfs:label xml:lang="en">respiratory, developmental, rehabilitative and restorative service providers</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000022"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000345 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000345">
+        <rdfs:label xml:lang="en">speech, language and hearing service providers</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000022"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000346 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000346">
+        <rdfs:label xml:lang="en">technologists, technicians &amp; other technical service providers</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000022"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000348 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000348">
+        <rdfs:label xml:lang="en">ambulatory health care facilities</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000022"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000349 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000349">
+        <rdfs:label xml:lang="en">hospital units</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000022"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000350 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000350">
+        <rdfs:label xml:lang="en">hospitals</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000022"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000351 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000351">
+        <rdfs:label xml:lang="en">laboratories</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000022"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000352 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000352">
+        <rdfs:label xml:lang="en">managed care organizations</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000022"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000353 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000353">
+        <rdfs:label xml:lang="en">nursing &amp; custodial care facilities</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000022"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000354 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000354">
+        <rdfs:label xml:lang="en">residential treatment facilities</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000022"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000355 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000355">
+        <rdfs:label xml:lang="en">suppliers</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000022"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000356 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000356">
+        <rdfs:label xml:lang="en">transportation services</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000022"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000357 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000357">
+        <rdfs:label xml:lang="en">physician assistants &amp; advanced practice nursing providers</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000022"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000358 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000358">
+        <rdfs:label xml:lang="en">nursing service related providers</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000022"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000359 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000359">
+        <rdfs:label xml:lang="en">respite care facility</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000022"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000360 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000360">
+        <rdfs:label xml:lang="en">student, health care</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000022"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000361 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000361">
+        <rdfs:label xml:lang="en">adolescent medicine (family medicine)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207QA0000X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000362 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000362">
+        <rdfs:label xml:lang="en">maternal newborn (registered nurse)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000338"/>
+        <obo:ARG_0000033>163WM0102X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000363 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000363">
+        <rdfs:label xml:lang="en">geriatric medicine (family medicine)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207QG0300X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000364 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000364">
+        <rdfs:label xml:lang="en">hospice and palliative medicine sleep medicine (family medicine)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207QH0002X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000365 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000365">
+        <rdfs:label xml:lang="en">sleep medicine (family medicine)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207QS1201X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000366 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000366">
+        <rdfs:label xml:lang="en">sports medicine( family medicine)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000091"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000342"/>
+        <obo:ARG_0000033>207QS0010X</obo:ARG_0000033>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000367 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000367">
+        <rdfs:label xml:lang="en">board general specialty</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ARG_2000022"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000001">
+        <rdfs:label>entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000004">
+        <rdfs:label xml:lang="en">independent_continuant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015">
+        <rdfs:label xml:lang="en">process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019">
+        <rdfs:label>quality</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000020">
+        <rdfs:label xml:lang="en">specifically_dependent_continuant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000023">
+        <rdfs:label xml:lang="en">role (bfo)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000031">
+        <rdfs:label xml:lang="en">generically dependent continuant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000038 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000038">
+        <rdfs:label xml:lang="en">one-dimensional temporal region</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000148 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000148">
+        <rdfs:label xml:lang="en">zero-dimensional temporal region</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000003">
+        <rdfs:label xml:lang="en">measurement unit label</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000009"/>
+        <obo:IAO_0000116 xml:lang="en">2009-03-16: provenance: a term measurement unit was
+proposed for OBI (OBI_0000176) , edited by Chris Stoeckert and
+Cristian Cocos, and subsequently moved to IAO where the objective for
+which the original term was defined was satisfied with the definition
+of this, different, term.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">2009-03-16: review of this term done during during the OBI workshop winter 2009 and the current definition was considered acceptable for use in OBI. If there is a need to modify this definition please notify OBI.</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">A measurement unit label is as a label that is part of a scalar measurement datum and denotes a unit of measure.</obo:IAO_0000115>
+        <obo:IAO_0000112 xml:lang="en">Examples of measurement unit labels are liters, inches, weight per volume.</obo:IAO_0000112>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">measurement unit label</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000009">
+        <rdfs:label xml:lang="en">datum label</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000232>9/22/11 BP: changed the rdfs:label for this class from &apos;label&apos; to &apos;datum label&apos; to convey that this class is not intended to cover all kinds of labels (stickers, radiolabels, etc.), and not even all kind of textual labels, but rather the kind of labels occuring in a datum. 
+</obo:IAO_0000232>
+        <obo:IAO_0000115 xml:lang="en">A label is a symbol that is part of some other datum and is used to either partially define  the denotation of that datum or to provide a means for identifying the datum as a member of the set of data with the same label</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">GROUP: IAO</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">datum label</obo:IAO_0000111>
+        <obo:IAO_0000116 xml:lang="en">http://www.golovchenko.org/cgi-bin/wnsearch?q=label#4n</obo:IAO_0000116>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027">
+        <rdfs:label xml:lang="en">data item</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000116 xml:lang="en">2/2/2009 Alan and Bjoern discussing FACS run output data. This is a data item because it is about the cell population. Each element records an event and is typically further composed a set of measurment data items that record the fluorescent intensity stimulated by one of the lasers.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">2009-03-16: data item deliberatly ambiguous: we merged data set and datum to be one entity, not knowing how to define singular versus plural. So data item is more general than datum.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">2009-03-16: removed datum as alternative term as datum specifically refers to singular form, and is thus not an exact synonym.</obo:IAO_0000116>
+        <obo:IAO_0000112 xml:lang="en">Data items include counts of things, analyte concentrations, and statistical summaries.</obo:IAO_0000112>
+        <obo:IAO_0000116 xml:lang="en">JAR: datum     -- well, this will be very tricky to define, but maybe some 
+information-like stuff that might be put into a computer and that is 
+meant, by someone, to denote and/or to be interpreted by some 
+process... I would include lists, tables, sentences... I think I might 
+defer to Barry, or to Brian Cantwell Smith
+
+JAR: A data item is an approximately justified approximately true approximate belief</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Jonathan Rees</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">a data item is an information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">data</obo:IAO_0000118>
+        <obo:IAO_0000111 xml:lang="en">data item</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030">
+        <rdfs:label xml:lang="en">information content entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 xml:lang="en">Examples of information content entites include journal articles, data, graphical layouts, and graphs.</obo:IAO_0000112>
+        <obo:IAO_0000119 xml:lang="en">OBI_0000142</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">an information content entity is an entity that is generically dependent on some artifact and stands in relation of aboutness to some entity</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">information content entity</obo:IAO_0000111>
+        <obo:IAO_0000116 xml:lang="en">information_content_entity &apos;is_encoded_in&apos; some digital_entity in obi before split (040907). information_content_entity &apos;is_encoded_in&apos; some physical_document in obi before split (040907).
+
+Previous. An information content entity is a non-realizable information entity that &apos;is encoded in&apos; some digital or physical entity.</obo:IAO_0000116>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000032">
+        <rdfs:label xml:lang="en">scalar measurement datum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000112 xml:lang="en">10 feet. 3 ml.</obo:IAO_0000112>
+        <obo:IAO_0000116 xml:lang="en">2009-03-16: we decided to keep datum singular in scalar measurement datum, as in
+this case we explicitly refer to the singular form</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000116 xml:lang="en">Would write this as: has_part some &apos;measurement unit label&apos; and has_part some numeral and has_part exactly 2, except for the fact that this won&apos;t let us take advantage of OWL reasoning over the numbers. Instead use has measurment value property to represent the same. Use has measurement unit label (subproperty of has_part) so we can easily say that there is only one of them.</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">a scalar measurement datum is a measurement datum that is composed of two parts, numerals and a unit label.</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000109 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000109">
+        <rdfs:label xml:lang="en">measurement datum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:IAO_0000116 xml:lang="en">2/2/2009 is_specified_output of some assay?</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">A measurement datum is an information content entity that is a recording of the output of a measurement such as produced by a device.</obo:IAO_0000115>
+        <obo:IAO_0000112 xml:lang="en">Examples of measurement data are the recoding of the weight of a mouse as {40,mass,&quot;grams&quot;}, the recording of an observation of the behavior of the mouse {,process,&quot;agitated&quot;}, the recording of the expression level of a gene as measured through the process of microarray experiment {3.4,luminosity,}.</obo:IAO_0000112>
+        <obo:IAO_0000119 xml:lang="en">OBI_0000305</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
+        <obo:IAO_0000111 xml:lang="en">measurement datum</obo:IAO_0000111>
+        <obo:IAO_0000117 xml:lang="en">person:Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011">
+        <rdfs:label xml:lang="en">planned process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;Plan&apos; includes a future direction sense. That can be problematic if plans are changed during their execution. There are however implicit contingencies for protocols that an agent has in his mind that can be considered part of the plan, even if the agent didn&apos;t have them in mind before. Therefore, a planned process can diverge from what the agent would have said the plan was before executing it, by adjusting to problems encountered during execution (e.g. choosing another reagent with equivalent properties, if the originally planned one has run out.)</obo:IAO_0000116>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Injecting mice with a vaccine in order to test its efficacy</obo:IAO_0000112>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">branch derived</obo:IAO_0000119>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">planned process</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A processual entity that realizes a plan which is the concretization of a plan specification.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">planned process</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000093 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000093">
+        <rdfs:label xml:lang="en">patient role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">patient</obo:IAO_0000118>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">patient role</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">
+		a hospitalized person; a person with controlled diabetes; the patient&apos;s role http://www.fertilityjourney.com/testingAndDiagnosis/theRightDoctor/thePatientsRole/index.asp?C=55245395146924652778
+		</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">
+		a role which inheres in a person and is realized by the process of being under the care of a physician or health care provider
+		</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">GROUP:Role Branch</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">OBI, CDISC</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000207 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000207">
+        <rdfs:label xml:lang="en">health care provider role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">health care provider</obo:IAO_0000118>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">health care provider role</obo:IAO_0000111>
+        <obo:IAO_0000117 xml:lang="en">Person:Jennifer Fostel</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">a worker role of providing medical care either within or outside the study timeline</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001554 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001554">
+        <rdfs:label xml:lang="en">rate measurement datum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000096 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000096">
+        <rdfs:label xml:lang="en">health care process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000119>http://groups.google.com/group/ogms-discuss/browse_thread/thread/a2dbc2ed1dff99d6</obo:IAO_0000119>
+        <obo:IAO_0000232>creation date: 2011-02-21T09:57:44Z</obo:IAO_0000232>
+        <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">A social process that has at least one human participant and that includes as parts the treatment, diagnosis, or prevention of disease or injury--or the following of instructions of another human for treatment, diagnosis, or prevention--of a participant in the process</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000097 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000097">
+        <rdfs:label xml:lang="en">health care encounter</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000096"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ARG_0000051"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ARG_0000130"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000096"/>
+        <obo:IAO_0000115 xml:lang="en">A temporally-connected health care process that has as participants an organization or person realizing the health care provider role and a person realizing the patient role.  The health care provider role and patient are realized during the health care encounter</obo:IAO_0000115>
+        <obo:IAO_0000232>creation date: 2011-02-21T09:57:44Z</obo:IAO_0000232>
+        <obo:IAO_0000119>http://groups.google.com/group/ogms-discuss/browse_thread/thread/a2dbc2ed1dff99d6</obo:IAO_0000119>
+        <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000280 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000280">
+        <rdfs:label xml:lang="en">rate unit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#DateTimeInterval -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#DateTimeInterval">
+        <rdfs:label xml:lang="en">date/time interval</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a specific period or duration, defined by (optional) start and end date/times.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#DateTimeValue -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#DateTimeValue">
+        <rdfs:label xml:lang="en">date/time value instance</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000148"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A date and/or time</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#DateTimeValuePrecision -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#DateTimeValuePrecision">
+        <rdfs:label xml:lang="en-us">date/time value precision</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indicates the precision of the value of a DateTimeValue instance.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+        <rdfs:label xml:lang="en">concept</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <skos:definition xml:lang="en">An idea or notion; a unit of thought.</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent">
+        <rdfs:label xml:lang="en">agent</rdfs:label>
+        <rdfs:label xml:lang="en">agent (foaf)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></obo:IAO_0000118>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Agents are things that do stuff</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An agent</rdfs:comment>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Scott Hoffmann</obo:IAO_0000117>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Things that do stuff.</obo:IAO_0000115>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">agent</obo:IAO_0000111>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">see: http://xmlns.com/foaf/spec/#term_Agent</obo:IAO_0000112>
+        <skos:scopeNote xml:lang="en">Used to describe any &quot;agent&quot; related to bibliographic items. Such agents can be persons, organizations or groups of any kind.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person">
+        <rdfs:label xml:lang="en">person</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></obo:IAO_0000118>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person</rdfs:comment>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An instance of a human being (Homo sapiens)</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000117>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The most general classification of a person</obo:IAO_0000115>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">person</obo:IAO_0000111>
+    </owl:Class>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.4.4) http://owlapi.sourceforge.net -->
 
