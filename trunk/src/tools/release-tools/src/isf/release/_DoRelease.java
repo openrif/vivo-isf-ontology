@@ -14,7 +14,7 @@ public class _DoRelease {
 
 		ReleaseBase.RELEASE_STRING = "2013-07-31";
 		ReleaseBase.setReleaseDirectory(new File(ISFUtil.getSvnRootDir(),
-				"release/dev"));
+				"release/local"));
 
 		System.out.println("Generating unreasoned ISF file: isf.owl");
 		ISF.main(null);

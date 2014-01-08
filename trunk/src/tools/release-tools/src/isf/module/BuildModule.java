@@ -97,7 +97,7 @@ public class BuildModule {
 				moduleOntologyAnnotation, true);
 
 		for (OWLEntity e : entities) {
-			reporter.addLine("Add annot: " + e);
+			reporter.addLine("Add: " + e.getEntityType() + " - " + e);
 			addAxiom(df.getOWLDeclarationAxiom(e));
 			addAxioms(ISFUtil.getDefiningAxioms(e, isfOntology, true));
 		}
@@ -111,7 +111,7 @@ public class BuildModule {
 		Set<OWLEntity> closureEntities = new HashSet<OWLEntity>();
 
 		for (OWLEntity e : entities) {
-			reporter.addLine("Add subs annot: " + e);
+			reporter.addLine("Add subs: " + e.getEntityType() + " - " + e);
 			closureEntities.addAll(ISFUtil.getSubsClosure(e, isfOntology,
 					reasoner));
 		}
@@ -126,7 +126,7 @@ public class BuildModule {
 				moduleOntologyAnnotation, true);
 
 		for (OWLEntity e : entities) {
-			reporter.addLine("Add instance annot: " + e);
+			reporter.addLine("Add instance: " + e.getEntityType() + " - " + e);
 			addAxiom(df.getOWLDeclarationAxiom(e));
 			addAxioms(ISFUtil.getDefiningAxioms(e, isfOntology, true));
 		}
@@ -137,7 +137,7 @@ public class BuildModule {
 		Set<OWLEntity> entities = ModuleUtil.getExcludeEntities(
 				moduleOntologyAnnotation, true);
 		for (OWLEntity entity : entities) {
-			reporter.addLine("Remove annot: " + entity);
+			reporter.addLine("Remove: " + entity.getEntityType() + " - " + entity);
 			removeAxiom(df.getOWLDeclarationAxiom(entity));
 			removeAxioms(ISFUtil.getDefiningAxioms(entity, isfOntology, true));
 
@@ -172,7 +172,7 @@ public class BuildModule {
 		// System.out.println("Excluding class: " + entities);
 		Set<OWLEntity> entityiesClosure = new HashSet<OWLEntity>();
 		for (OWLEntity entity : entities) {
-			reporter.addLine("Remove subs annot: " + entity);
+			reporter.addLine("Remove subs: " + entity.getEntityType() + " - " + entity);
 			entityiesClosure.addAll(ISFUtil.getSubsClosure(entity, isfOntology,
 					reasoner));
 		}
