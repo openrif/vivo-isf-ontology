@@ -55,8 +55,8 @@ public class Mapper {
 			}
 
 			IRI[] iriMapping = new IRI[2];
-			iriMapping[0] = IRI.create(mapping[0]);
-			iriMapping[1] = IRI.create(mapping[1]);
+			iriMapping[0] = IRI.create(mapping[0].trim());
+			iriMapping[1] = IRI.create(mapping[1].trim());
 
 			if (leftToRightMappings.get(iriMapping[0]) != null) {
 				System.err.println("Warning: IRI " + iriMapping[0]
