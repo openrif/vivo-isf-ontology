@@ -25,7 +25,12 @@ import org.semanticweb.owlapi.model.OWLObjectPropertyExpression;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
+import org.semanticweb.owlapi.reasoner.FreshEntitiesException;
+import org.semanticweb.owlapi.reasoner.InconsistentOntologyException;
 import org.semanticweb.owlapi.reasoner.OWLReasoner;
+import org.semanticweb.owlapi.reasoner.ReasonerInternalException;
+import org.semanticweb.owlapi.reasoner.ReasonerInterruptedException;
+import org.semanticweb.owlapi.reasoner.TimeOutException;
 import org.semanticweb.owlapi.util.AutoIRIMapper;
 import org.semanticweb.owlapi.vocab.OWLRDFVocabulary;
 
@@ -43,19 +48,19 @@ public class ISFUtil {
 			+ "isf.owl");
 	public static final IRI ISF_REASONED_IRI = IRI
 			.create(ISF_ONTOLOGY_IRI_PREFIX + "isf-reasoned.owl");
-	
-	public static final IRI ISF_INCLUDE_IRI = IRI.create(ISF_ONTOLOGY_IRI_PREFIX
-			+ "isf-include.owl");
-	public static final IRI ISF_EXCLUDE_IRI = IRI.create(ISF_ONTOLOGY_IRI_PREFIX
-			+ "isf-exclude.owl");
-	
+
+	public static final IRI ISF_INCLUDE_IRI = IRI
+			.create(ISF_ONTOLOGY_IRI_PREFIX + "isf-include.owl");
+	public static final IRI ISF_EXCLUDE_IRI = IRI
+			.create(ISF_ONTOLOGY_IRI_PREFIX + "isf-exclude.owl");
+
 	public static final IRI ISF_FULL_IRI = IRI.create(ISF_ONTOLOGY_IRI_PREFIX
 			+ "isf-full.owl");
 	public static final IRI ISF_FULL_REASONED_IRI = IRI
 			.create(ISF_ONTOLOGY_IRI_PREFIX + "isf-full-reasoned.owl");
-	
-	public static final IRI ISF_SKOS_IRI = IRI
-			.create(ISF_ONTOLOGY_IRI_PREFIX + "isf-skos.owl");
+
+	public static final IRI ISF_SKOS_IRI = IRI.create(ISF_ONTOLOGY_IRI_PREFIX
+			+ "isf-skos.owl");
 
 	public static File getSvnRootDir() {
 		if (ISF_SVN_ROOT_DIR != null) {
@@ -193,9 +198,29 @@ public class ISFUtil {
 			@Override
 			public void visit(OWLObjectProperty property) {
 				entities.add(property);
-				Set<OWLObjectPropertyExpression> opes = pr
-						.getSuperObjectProperties(property, false)
-						.getFlattened();
+				Set<OWLObjectPropertyExpression> opes = null;
+
+				// TODO: not sure why Fact++ is erroring out here like:
+
+				// <http://purl.obolibrary.org/obo/ERO_0000558> had error: Role
+				// expression expected in getSupRoles()
+
+				// <http://eagle-i.org/ont/app/1.0/has_part_construct_insert>
+				// had error: Role expression expected in getSupRoles()
+
+				// <http://eagle-i.org/ont/app/1.0/has_measurement_scale> had
+				// error: Role expression expected in getSupRoles()
+				try {
+					opes = pr.getSuperObjectProperties(property, false)
+							.getFlattened();
+				} catch (ReasonerInternalException e) {
+					// TODO Auto-generated catch block
+					System.err.println(property + " had error: "
+							+ e.getMessage());
+				}
+				if (opes == null) {
+					return;
+				}
 				for (OWLObjectPropertyExpression ope : opes) {
 					if (ope instanceof OWLObjectProperty) {
 						entities.add((OWLObjectProperty) ope);
@@ -299,7 +324,6 @@ public class ISFUtil {
 			}
 		}
 
-		
 		return infos;
 	}
 

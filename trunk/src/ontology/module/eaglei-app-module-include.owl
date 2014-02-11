@@ -26,90 +26,9 @@
     
 
 
-    <!-- http://eagle-i.org/ont/app/1.0/Profilesurl -->
-
-    <owl:ObjectProperty rdf:about="http://eagle-i.org/ont/app/1.0/Profilesurl">
-        <rdfs:label>profiles_url</rdfs:label>
-        <app:preferredLabel>Profiles URL</app:preferredLabel>
-        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_SearchIndexExclude"/>
-        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://eagle-i.org/ont/app/1.0/domainConstraint -->
 
     <owl:AnnotationProperty rdf:about="http://eagle-i.org/ont/app/1.0/domainConstraint"/>
-    
-
-
-    <!-- http://eagle-i.org/ont/app/1.0/has_measurement_scale -->
-
-    <owl:ObjectProperty rdf:about="http://eagle-i.org/ont/app/1.0/has_measurement_scale">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_measurement_scale</rdfs:label>
-        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Level of measurement precision used to record data input into the software.  Relevant primarily for biostatistical analysis software.  For other types of software this field can be left blank</app:preferredDefinition>
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measurement scale</app:preferredLabel>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0001554"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://eagle-i.org/ont/app/1.0/has_part_algorithmic_software_component -->
-
-    <owl:ObjectProperty rdf:about="http://eagle-i.org/ont/app/1.0/has_part_algorithmic_software_component">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_part_algorithmic_software_component</rdfs:label>
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Uses algorithmic software component</app:preferredLabel>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0001839"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://eagle-i.org/ont/app/1.0/has_part_construct -->
-
-    <owl:ObjectProperty rdf:about="http://eagle-i.org/ont/app/1.0/has_part_construct">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has part construct</rdfs:label>
-        <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></obo:IAO_0000232>
-        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Construct into which the library is cloned.</app:preferredDefinition>
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Part</app:preferredLabel>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has part construct</obo:IAO_0000111>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0000430"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://eagle-i.org/ont/app/1.0/has_part_construct_insert -->
-
-    <owl:ObjectProperty rdf:about="http://eagle-i.org/ont/app/1.0/has_part_construct_insert">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_part_construct_insert</rdfs:label>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></obo:IAO_0000118>
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Construct Insert</app:preferredLabel>
-        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Identifies the contents of the construct.</app:preferredDefinition>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has part construct insert</obo:IAO_0000111>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0000285"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://eagle-i.org/ont/app/1.0/has_part_exp_const -->
-
-    <owl:ObjectProperty rdf:about="http://eagle-i.org/ont/app/1.0/has_part_exp_const">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_part_exp_const</rdfs:label>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></obo:IAO_0000112>
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Expression vector</app:preferredLabel>
-        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Expression vector into which the library is cloned.</app:preferredDefinition>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_part_exp_const</obo:IAO_0000111>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0000436"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://eagle-i.org/ont/app/1.0/implemented_by -->
-
-    <owl:ObjectProperty rdf:about="http://eagle-i.org/ont/app/1.0/implemented_by">
-        <rdfs:label xml:lang="en">implemented_by</rdfs:label>
-        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
-    </owl:ObjectProperty>
     
 
 
@@ -122,17 +41,6 @@
     <!-- http://eagle-i.org/ont/app/1.0/inPropertyGroup -->
 
     <owl:AnnotationProperty rdf:about="http://eagle-i.org/ont/app/1.0/inPropertyGroup"/>
-    
-
-
-    <!-- http://eagle-i.org/ont/app/1.0/medicalrecordshistoryavailable -->
-
-    <owl:ObjectProperty rdf:about="http://eagle-i.org/ont/app/1.0/medicalrecordshistoryavailable">
-        <rdfs:label xml:lang="en">Medical Records/History Available</rdfs:label>
-        <app:preferredDefinition>Check box if subject&apos;s medical records or history are available. Leave blank if not available or unknown.</app:preferredDefinition>
-        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_TertiaryProperty"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0001964"/>
-    </owl:ObjectProperty>
     
 
 
@@ -157,16 +65,6 @@
     <!-- http://eagle-i.org/ont/app/1.0/referencedTaxonomyIRI -->
 
     <owl:AnnotationProperty rdf:about="http://eagle-i.org/ont/app/1.0/referencedTaxonomyIRI"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0001837 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001837">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Molecular weight</app:preferredLabel>
-        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The molecular weight of the protein target.</app:preferredDefinition>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0001545"/>
-    </owl:ObjectProperty>
     
 
 
@@ -226,11 +124,11 @@
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000232 -->
 
-    <rdf:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000232">
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000232">
         <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Comments entered by Curators. Invisible to Search. Not for annotation purposes.</app:preferredDefinition>
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Curator note</app:preferredLabel>
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_AdminData"/>
-    </rdf:AnnotationProperty>
+    </rdf:Description>
     
 
 
@@ -251,6 +149,7 @@
         <rdfs:label>profiles_url</rdfs:label>
         <app:preferredLabel>Profiles URL</app:preferredLabel>
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_SearchIndexExclude"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     </owl:ObjectProperty>
     
 
@@ -340,6 +239,7 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_measurement_scale</rdfs:label>
         <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Level of measurement precision used to record data input into the software.  Relevant primarily for biostatistical analysis software.  For other types of software this field can be left blank</app:preferredDefinition>
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measurement scale</app:preferredLabel>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0001554"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ERO_0001806"/>
     </owl:ObjectProperty>
     
@@ -363,6 +263,7 @@
     <owl:ObjectProperty rdf:about="http://eagle-i.org/ont/app/1.0/has_part_algorithmic_software_component">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_part_algorithmic_software_component</rdfs:label>
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Uses algorithmic software component</app:preferredLabel>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0001839"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ERO_0001840"/>
     </owl:ObjectProperty>
     
@@ -376,6 +277,7 @@
         <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Construct into which the library is cloned.</app:preferredDefinition>
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Part</app:preferredLabel>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has part construct</obo:IAO_0000111>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0000430"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ERO_0000431"/>
     </owl:ObjectProperty>
     
@@ -389,6 +291,7 @@
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Construct Insert</app:preferredLabel>
         <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Identifies the contents of the construct.</app:preferredDefinition>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has part construct insert</obo:IAO_0000111>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0000285"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ERO_0000404"/>
     </owl:ObjectProperty>
     
@@ -403,6 +306,7 @@
         <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Expression vector into which the library is cloned.</app:preferredDefinition>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_part_exp_const</obo:IAO_0000111>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ERO_0000431"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0000436"/>
     </owl:ObjectProperty>
     
 
@@ -458,6 +362,7 @@
         <rdfs:label xml:lang="en">implemented_by</rdfs:label>
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ERO_0000071"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
         <owl:inverseOf rdf:resource="http://www.ebi.ac.uk/efo/swo/SWO_0000740"/>
     </owl:ObjectProperty>
     
@@ -534,6 +439,7 @@
         <rdfs:label xml:lang="en">Medical Records/History Available</rdfs:label>
         <app:preferredDefinition>Check box if subject&apos;s medical records or history are available. Leave blank if not available or unknown.</app:preferredDefinition>
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_TertiaryProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0001964"/>
     </owl:ObjectProperty>
     
 
@@ -655,7 +561,7 @@
 
     <!-- http://purl.obolibrary.org/obo/ERO_0001517 -->
 
-    <rdf:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001517">
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001517">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Source Organism Type</app:preferredLabel>
         <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The species or lab-generated strain of organism from which a resource is derived.</app:preferredDefinition>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">derives_from_organism</obo:IAO_0000112>
@@ -665,7 +571,7 @@
         <app:rangeConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/ERO_0000985</app:rangeConstraint>
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_SearchFacet"/>
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_SecondaryProperty"/>
-    </rdf:ObjectProperty>
+    </rdf:Description>
     
 
 
@@ -752,6 +658,7 @@
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001837">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Molecular weight</app:preferredLabel>
         <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The molecular weight of the protein target.</app:preferredDefinition>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0001545"/>
     </owl:ObjectProperty>
     
 
@@ -792,9 +699,9 @@
 
     <!-- http://www.obofoundry.org/ro/ro.owl#derives_from -->
 
-    <rdf:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#derives_from">
+    <rdf:Description rdf:about="http://www.obofoundry.org/ro/ro.owl#derives_from">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
-    </rdf:ObjectProperty>
+    </rdf:Description>
     
 
 
@@ -1277,12 +1184,12 @@
 
     <!-- http://purl.obolibrary.org/obo/ERO_0000480 -->
 
-    <rdf:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000480">
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000480">
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></obo:IAO_0000115>
         <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Web address of the resource, if any, in the format http:// &lt;lab_name&gt; or https:// &lt;lab_name&gt;.</app:preferredDefinition>
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Website(s)</app:preferredLabel>
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_SearchIndexExclude"/>
-    </rdf:DatatypeProperty>
+    </rdf:Description>
     
 
 
@@ -1610,10 +1517,26 @@ Laboratory personnel have specific training in handling pathogenic and potential
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ERO_0000430 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000430">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Expression library</app:preferredLabel>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ERO_0000431 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000431">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Expression construct</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000436 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000436">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lambda phage library</app:preferredLabel>
     </owl:Class>
     
 
@@ -1669,6 +1592,26 @@ Laboratory personnel have specific training in handling pathogenic and potential
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ERO_0001545 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001545">
+        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A peptide, protein, or protein complex that is recognized by an antibody. For example, GAPDH protein or phospho-Akt.</app:preferredDefinition>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Protein target</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001554 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001554">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data</app:preferredLabel>
+        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data type is information about something, and can be either the input or output of a software method.</app:preferredDefinition>
+        <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_EmbeddedResourceType"/>
+        <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_InstanceCreate"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ERO_0001716 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001716">
@@ -1697,6 +1640,15 @@ Laboratory personnel have specific training in handling pathogenic and potential
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phenotype</app:preferredLabel>
         <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_EmbeddedResourceType"/>
         <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_InstanceCreate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001839 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001839">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Algorithmic software suite</app:preferredLabel>
+        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Software that implements two or more algorithmic software components.</app:preferredDefinition>
     </owl:Class>
     
 
@@ -6179,12 +6131,12 @@ Laboratory personnel have specific training in handling pathogenic and potential
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001045">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organic macromolecule</app:preferredLabel>
     </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9986">
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">domestic rabbit</obo:IAO_0000118>
+    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001044">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InChI Key</app:preferredLabel>
         <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unique numerical identifier for a chemical as defined by the InChI Key database.</app:preferredDefinition>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9986">
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">domestic rabbit</obo:IAO_0000118>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001043">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Multichannel acquisition system</app:preferredLabel>
@@ -7777,10 +7729,6 @@ Laboratory personnel have specific training in handling pathogenic and potential
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001351">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Single photon emission computed tomography</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001839">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Algorithmic software suite</app:preferredLabel>
-        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Software that implements two or more algorithmic software components.</app:preferredDefinition>
     </rdf:Description>
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#University">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University</app:preferredLabel>
@@ -9401,11 +9349,11 @@ Laboratory personnel have specific training in handling pathogenic and potential
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0100176">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Protein family classification objective</app:preferredLabel>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001264">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transgenic mouse model generation</app:preferredLabel>
-    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001991">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electric discharge machining</app:preferredLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001264">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transgenic mouse model generation</app:preferredLabel>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0100175">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gene family classification objective</app:preferredLabel>
@@ -9476,11 +9424,11 @@ Laboratory personnel have specific training in handling pathogenic and potential
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001283">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Culture and propogation</app:preferredLabel>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0100164">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Haplotype map construction objective</app:preferredLabel>
-    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001274">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neuroscience</app:preferredLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0100164">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Haplotype map construction objective</app:preferredLabel>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0100163">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cytogenetic map construction objective</app:preferredLabel>
@@ -10299,12 +10247,6 @@ Laboratory personnel have specific training in handling pathogenic and potential
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000433">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fosmid library</app:preferredLabel>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000430">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Expression library</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000436">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lambda phage library</app:preferredLabel>
-    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000437">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cold room</app:preferredLabel>
     </rdf:Description>
@@ -10396,11 +10338,11 @@ Laboratory personnel have specific training in handling pathogenic and potential
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Committee</app:preferredLabel>
         <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_ResourceProvider"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000492">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Needle grinder</app:preferredLabel>
-    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_4896">
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fission yeast</obo:IAO_0000118>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000492">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Needle grinder</app:preferredLabel>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000490">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tissue embedding</app:preferredLabel>
@@ -10713,12 +10655,6 @@ Laboratory personnel have specific training in handling pathogenic and potential
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001553">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biologic intervention</app:preferredLabel>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001554">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data</app:preferredLabel>
-        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data type is information about something, and can be either the input or output of a software method.</app:preferredDefinition>
-        <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_EmbeddedResourceType"/>
-        <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_InstanceCreate"/>
-    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001555">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nucleic acid purification</app:preferredLabel>
     </rdf:Description>
@@ -10745,10 +10681,6 @@ Laboratory personnel have specific training in handling pathogenic and potential
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001548">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Species Non-Reactivity</app:preferredLabel>
         <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Species in which the antibody has been shown not to cross react.</app:preferredDefinition>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001545">
-        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A peptide, protein, or protein complex that is recognized by an antibody. For example, GAPDH protein or phospho-Akt.</app:preferredDefinition>
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Protein target</app:preferredLabel>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001546">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Target Subregion</app:preferredLabel>
