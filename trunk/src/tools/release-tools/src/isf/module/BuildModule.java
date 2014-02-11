@@ -66,7 +66,7 @@ public class BuildModule {
 		addIncludes();
 		System.out.println("Doing include subs: ");
 		addIncludeSubs();
-		
+
 		System.out.println("Doing include instances");
 		addIncludeInstances();
 
@@ -130,14 +130,15 @@ public class BuildModule {
 			addAxiom(df.getOWLDeclarationAxiom(e));
 			addAxioms(ISFUtil.getDefiningAxioms(e, isfOntology, true));
 		}
-		
+
 	}
 
 	public void removeExcludes() {
 		Set<OWLEntity> entities = ModuleUtil.getExcludeEntities(
 				moduleOntologyAnnotation, true);
 		for (OWLEntity entity : entities) {
-			reporter.addLine("Remove: " + entity.getEntityType() + " - " + entity);
+			reporter.addLine("Remove: " + entity.getEntityType() + " - "
+					+ entity);
 			removeAxiom(df.getOWLDeclarationAxiom(entity));
 			removeAxioms(ISFUtil.getDefiningAxioms(entity, isfOntology, true));
 
@@ -172,7 +173,8 @@ public class BuildModule {
 		// System.out.println("Excluding class: " + entities);
 		Set<OWLEntity> entityiesClosure = new HashSet<OWLEntity>();
 		for (OWLEntity entity : entities) {
-			reporter.addLine("Remove subs: " + entity.getEntityType() + " - " + entity);
+			reporter.addLine("Remove subs: " + entity.getEntityType() + " - "
+					+ entity);
 			entityiesClosure.addAll(ISFUtil.getSubsClosure(entity, isfOntology,
 					reasoner));
 		}
@@ -185,7 +187,12 @@ public class BuildModule {
 	}
 
 	public void mergeModuleInclude() {
-		addAxioms(moduleOntologyInclude.getAxioms());
+		// we have to do this manually but first exclude
+		//addAxioms(moduleOntologyInclude.getAxioms());
+		Set<OWLAxiom> axioms = moduleOntologyInclude.getAxioms();
+		axioms.removeAll(moduleOntologyExclude.getAxioms());
+		isfMan.addAxioms(moduleOntologyGenerated, axioms);
+		
 		// add any ontology annotations from the annotation ontology
 		for (OWLAnnotation a : moduleOntologyAnnotation.getAnnotations()) {
 			AddOntologyAnnotation oa = new AddOntologyAnnotation(
@@ -274,7 +281,8 @@ public class BuildModule {
 			}
 		}
 		if (!moduleOntologyExclude.containsAxiom(axiom)
-				&& !moduleOntologyInclude.containsAxiom(axiom)
+				// && !moduleOntologyInclude.containsAxiom(axiom) // TODO: check
+				// if commenting this out will cause problems. It was preventing the includes.
 				&& !removedAxioms.contains(axiom)
 				&& !moduleOntologyGenerated.containsAxiom(axiom)) {
 			// System.out.println("\t" + axiom.toString());
