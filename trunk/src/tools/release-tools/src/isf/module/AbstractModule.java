@@ -5,6 +5,8 @@ import java.io.IOException;
 
 import org.semanticweb.owlapi.reasoner.OWLReasoner;
 
+import uk.ac.manchester.cs.factplusplus.owlapiv3.FaCTPlusPlusReasonerFactory;
+
 public abstract class AbstractModule {
 
 	private OWLReasoner reasoner;
@@ -37,7 +39,7 @@ public abstract class AbstractModule {
 
 	public OWLReasoner getReasoner() {
 
-		return null;
+		return reasoner;
 	}
 
 	public void setReasoner(OWLReasoner reasoner) {

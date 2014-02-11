@@ -10,6 +10,9 @@ import org.semanticweb.owlapi.model.IRI;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
+import org.semanticweb.owlapi.reasoner.OWLReasoner;
+
+import uk.ac.manchester.cs.factplusplus.owlapiv3.FaCTPlusPlusReasonerFactory;
 
 public class SimpleModule extends AbstractModule {
 
@@ -176,5 +179,16 @@ public class SimpleModule extends AbstractModule {
 
 	public void setModuleOntology(OWLOntology moduleOntology) {
 		this.moduleOntology = moduleOntology;
+	}
+
+	@Override
+	public OWLReasoner getReasoner() {
+		// TODO Auto-generated method stub
+		OWLReasoner r = super.getReasoner();
+		if (r == null) {
+			r = new FaCTPlusPlusReasonerFactory().createReasoner(getSourceOntology());
+		}
+
+		return r;
 	}
 }
