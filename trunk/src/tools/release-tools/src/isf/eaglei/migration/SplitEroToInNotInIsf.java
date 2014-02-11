@@ -111,7 +111,7 @@ public class SplitEroToInNotInIsf {
 
 	}
 
-	private Set<OWLAxiom> getAllAxioms(OWLOntology isfOntology) {
+	public static Set<OWLAxiom> getAllAxioms(OWLOntology isfOntology) {
 		Set<OWLAxiom> axioms = new HashSet<OWLAxiom>();
 		// one by one get and add the axioms
 		for (OWLOntology o : isfOntology.getImportsClosure()) {
