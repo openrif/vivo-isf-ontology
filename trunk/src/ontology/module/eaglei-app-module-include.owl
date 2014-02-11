@@ -37,21 +37,6 @@
     
 
 
-    <!-- http://eagle-i.org/ont/app/1.0/derives_from_human_subject -->
-
-    <owl:ObjectProperty rdf:about="http://eagle-i.org/ont/app/1.0/derives_from_human_subject">
-        <rdfs:label xml:lang="en">derives_from_human_subject</rdfs:label>
-        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An individual human subject from which biological material is derived.</app:preferredDefinition>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Describes derivation of biological material from a human subject</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000117>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000119>
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Source Human Subject</app:preferredLabel>
-        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_SecondaryProperty"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0001962"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://eagle-i.org/ont/app/1.0/domainConstraint -->
 
     <owl:AnnotationProperty rdf:about="http://eagle-i.org/ont/app/1.0/domainConstraint"/>
@@ -137,36 +122,6 @@
     <!-- http://eagle-i.org/ont/app/1.0/inPropertyGroup -->
 
     <owl:AnnotationProperty rdf:about="http://eagle-i.org/ont/app/1.0/inPropertyGroup"/>
-    
-
-
-    <!-- http://eagle-i.org/ont/app/1.0/induction_reagent_description -->
-
-    <owl:ObjectProperty rdf:about="http://eagle-i.org/ont/app/1.0/induction_reagent_description">
-        <rdfs:label xml:lang="en">induction_reagent_description</rdfs:label>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A description of the reagents and procedure used for inducing pluripotency, including genes introduced and types of vectors and facilitating reagents applied.</obo:IAO_0000115>
-        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A free-text description of the reagents and procedure used for inducing pluripotency, including genes introduced and types of vectors and facilitating reagents applied.</app:preferredDefinition>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000119>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000117>
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transformant Description</app:preferredLabel>
-        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_SecondaryProperty"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0001962"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://eagle-i.org/ont/app/1.0/karyotype_description -->
-
-    <owl:ObjectProperty rdf:about="http://eagle-i.org/ont/app/1.0/karyotype_description">
-        <rdfs:label xml:lang="en">karyotype_description</rdfs:label>
-        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A free-text description of known information about the karyotype of the cells.  This can simply indicate it to be &apos;normal&apos;, &apos;abnormal&apos;, or &apos;unknown&apos;, or provide more precise information when known, such as an ISCN (International System for Cytogenetic Nomenclature) syntax description of the karyotype.</app:preferredDefinition>
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Karyotype Description</app:preferredLabel>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000117>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000119>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a description of the karyotype of a cell line</obo:IAO_0000115>
-        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_TertiaryProperty"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0001962"/>
-    </owl:ObjectProperty>
     
 
 
@@ -358,6 +313,7 @@
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000119>
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Source Human Subject</app:preferredLabel>
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_SecondaryProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0001962"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ERO_0001964"/>
         <rdfs:subPropertyOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#derives_from"/>
     </owl:ObjectProperty>
@@ -517,6 +473,7 @@
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000117>
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transformant Description</app:preferredLabel>
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_SecondaryProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0001962"/>
     </owl:ObjectProperty>
     
 
@@ -545,6 +502,7 @@
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000119>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a description of the karyotype of a cell line</obo:IAO_0000115>
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_TertiaryProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0001962"/>
     </owl:ObjectProperty>
     
 
@@ -737,14 +695,6 @@
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Developed by</app:preferredLabel>
         <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person or organization that developed or helped develop the resource.</app:preferredDefinition>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001720"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
-                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -756,6 +706,14 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -1450,12 +1408,12 @@ Laboratory personnel have specific training in handling pathogenic and potential
 
     <!-- http://purl.obolibrary.org/obo/ERO_0000004 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000004">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000004">
         <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any type of equipment, machine, apparatus or device that is designed to play a role in scientific investigation.</app:preferredDefinition>
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Instrument</app:preferredLabel>
         <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_InstanceCreate"/>
         <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_PrimaryResourceType"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -1473,12 +1431,12 @@ Laboratory personnel have specific training in handling pathogenic and potential
 
     <!-- http://purl.obolibrary.org/obo/ERO_0000006 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000006">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000006">
         <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A substance that is used in a chemical reaction or other experimental process to detect, measure, examine, or produce other substances.</app:preferredDefinition>
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reagent</app:preferredLabel>
         <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_InstanceCreate"/>
         <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_PrimaryResourceType"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -1512,9 +1470,9 @@ Laboratory personnel have specific training in handling pathogenic and potential
 
     <!-- http://purl.obolibrary.org/obo/ERO_0000014 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000014">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000014">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Research project</app:preferredLabel>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -1549,20 +1507,20 @@ Laboratory personnel have specific training in handling pathogenic and potential
 
     <!-- http://purl.obolibrary.org/obo/ERO_0000071 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000071">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000071">
         <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Digitally stored data such as computer programs and other kinds of information read and written by computers.</app:preferredDefinition>
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Software</app:preferredLabel>
         <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_InstanceCreate"/>
         <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_PrimaryResourceType"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0000160 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000160">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000160">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nucleic acid library</app:preferredLabel>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -1590,165 +1548,165 @@ Laboratory personnel have specific training in handling pathogenic and potential
 
     <!-- http://purl.obolibrary.org/obo/ERO_0000285 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000285">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000285">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Construct</app:preferredLabel>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0000292 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000292">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000292">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peptide library</app:preferredLabel>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0000293 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000293">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000293">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chemical library</app:preferredLabel>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0000316 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000316">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000316">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biosafety level</app:preferredLabel>
         <app:referencedTaxonomyIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://eagle-i.org/ont/app/1.0/eagle-i-core-app.owl</app:referencedTaxonomyIRI>
         <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_ReferencedTaxonomy"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0000322 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000322">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000322">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Antibody isotype</app:preferredLabel>
         <app:referencedTaxonomyIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://eagle-i.org/ont/app/1.0/eagle-i-core-app.owl</app:referencedTaxonomyIRI>
         <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_ReferencedTaxonomy"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0000347 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000347">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000347">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Intervention</app:preferredLabel>
         <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_EmbeddedResourceType"/>
         <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_InstanceCreate"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0000404 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000404">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000404">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Construct insert</app:preferredLabel>
         <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_EmbeddedResourceType"/>
         <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_InstanceCreate"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0000431 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000431">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000431">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Expression construct</app:preferredLabel>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0000595 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000595">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000595">
         <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Opportunities to participate in on-going research or training, such as an internship, fellowship or other collaboration. Research opportunities may be available to people at any stage of their career.</app:preferredDefinition>
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Research Opportunity</app:preferredLabel>
         <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_InstanceCreate"/>
         <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_PrimaryResourceType"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0000783 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000783">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000783">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matriculation Status</app:preferredLabel>
         <app:referencedTaxonomyIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://eagle-i.org/ont/app/1.0/eagle-i-core-app.owl</app:referencedTaxonomyIRI>
         <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_ReferencedTaxonomy"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0000787 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000787">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000787">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Employee status</app:preferredLabel>
         <app:referencedTaxonomyIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://eagle-i.org/ont/app/1.0/eagle-i-core-app.owl</app:referencedTaxonomyIRI>
         <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_ReferencedTaxonomy"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0000985 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000985">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000985">
         <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A unicellular or multicellular individual living system that is capable of replicating or reproducing and growth and maintenance in the right environment. Examples: animal, plant, bacteria, fungus.</app:preferredDefinition>
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organism</app:preferredLabel>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0001317 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001317">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001317">
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;Observational method&apos; should be a child of &apos;data collection method&apos; but technical tooling constraints prevented us from doing this.  The build broke as a result.  In the future, this change should be reconsidered.</rdfs:comment>
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Observational method</app:preferredLabel>
         <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_EmbeddedResourceType"/>
         <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_InstanceCreate"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0001716 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001716">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001716">
         <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organized collection of data, today typically in digital form.</app:preferredDefinition>
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Database</app:preferredLabel>
         <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_InstanceCreate"/>
         <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_PrimaryResourceType"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0001806 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001806">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001806">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measurement scale</app:preferredLabel>
         <app:referencedTaxonomyIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://eagle-i.org/ont/app/1.0/eagle-i-core-app.owl</app:referencedTaxonomyIRI>
         <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_ReferencedTaxonomy"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0001828 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001828">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001828">
         <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An observable characteristic or trait of an organism, such as its morphology, development, biochemical or physiological properties, behavior, or product of behavior (such as a bird&apos;s nest).</app:preferredDefinition>
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phenotype</app:preferredLabel>
         <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_EmbeddedResourceType"/>
         <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_InstanceCreate"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0001840 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001840">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001840">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Algorithmic software component</app:preferredLabel>
         <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Software that implements an individual algorithm.</app:preferredDefinition>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -1903,11 +1861,11 @@ Laboratory personnel have specific training in handling pathogenic and potential
 
     <!-- http://purl.obolibrary.org/obo/ERO_0001932 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001932">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001932">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data collection method</app:preferredLabel>
         <app:referencedTaxonomyIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://eagle-i.org/ont/app/1.0/eagle-i-core-app.owl</app:referencedTaxonomyIRI>
         <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_ReferencedTaxonomy"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -1924,22 +1882,30 @@ Laboratory personnel have specific training in handling pathogenic and potential
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ERO_0001962 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001962">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Induced pluripotent stem cell line</app:preferredLabel>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ERO_0001964 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001964">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001964">
         <app:preferredLabel>Human subject</app:preferredLabel>
         <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_InstanceCreate"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000064 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000064">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000064">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Algorithm</app:preferredLabel>
         <app:referencedTaxonomyIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://eagle-i.org/ont/app/1.0/eagle-i-core-app.owl</app:referencedTaxonomyIRI>
         <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_ReferencedTaxonomy"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -5616,11 +5582,11 @@ Laboratory personnel have specific training in handling pathogenic and potential
 
     <!-- http://purl.obolibrary.org/obo/UBERON_0000105 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000105">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000105">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Life cycle stage</app:preferredLabel>
         <app:referencedTaxonomyIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://eagle-i.org/ont/app/1.0/uberon-import-app.owl</app:referencedTaxonomyIRI>
         <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_ReferencedTaxonomy"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -5731,24 +5697,102 @@ Laboratory personnel have specific training in handling pathogenic and potential
     
 
 
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#AnnotationProperty -->
+
+    <owl:Class rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#AnnotationProperty"/>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#DatatypeProperty -->
+
+    <owl:Class rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#DatatypeProperty"/>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#ObjectProperty -->
+
+    <owl:Class rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#ObjectProperty"/>
+    
+
+
     <!-- http://xmlns.com/foaf/0.1/Organization -->
 
-    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization">
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization">
         <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An entity that can play roles, has participants, and has a set of organizational rules or goals. Participants are either organizations themselves or individual people.</app:preferredDefinition>
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organization</app:preferredLabel>
         <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_Global"/>
         <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_InstanceCreate"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/Person -->
 
-    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person">
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person">
         <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A single human being (Homo sapiens).</app:preferredDefinition>
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person</app:preferredLabel>
         <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_InstanceCreate"/>
-    </rdf:Description>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000480 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/ERO_0000480">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#DatatypeProperty"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></obo:IAO_0000115>
+        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Web address of the resource, if any, in the format http:// &lt;lab_name&gt; or https:// &lt;lab_name&gt;.</app:preferredDefinition>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Website(s)</app:preferredLabel>
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_SearchIndexExclude"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001517 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/ERO_0001517">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#ObjectProperty"/>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Source Organism Type</app:preferredLabel>
+        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The species or lab-generated strain of organism from which a resource is derived.</app:preferredDefinition>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">derives_from_organism</obo:IAO_0000112>
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/ERO_0000008</app:domainConstraint>
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/ERO_0000009</app:domainConstraint>
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/ERO_0000020</app:domainConstraint>
+        <app:rangeConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/ERO_0000985</app:rangeConstraint>
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_SearchFacet"/>
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_SecondaryProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000232 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000232">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#AnnotationProperty"/>
+        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Comments entered by Curators. Invisible to Search. Not for annotation purposes.</app:preferredDefinition>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Curator note</app:preferredLabel>
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_AdminData"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.obofoundry.org/ro/ro.owl#derives_from -->
+
+    <owl:NamedIndividual rdf:about="http://www.obofoundry.org/ro/ro.owl#derives_from">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#ObjectProperty"/>
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </owl:NamedIndividual>
     
 
 
@@ -6433,11 +6477,11 @@ Laboratory personnel have specific training in handling pathogenic and potential
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001758">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Metabolic chamber</app:preferredLabel>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001430">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Elemental analyzer </app:preferredLabel>
-    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0100320">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Error analysis objective</app:preferredLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001430">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Elemental analyzer </app:preferredLabel>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9554">
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">baboon</obo:IAO_0000118>
@@ -9625,9 +9669,6 @@ Laboratory personnel have specific training in handling pathogenic and potential
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0100147">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease pathway analysis objective</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001962">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Induced pluripotent stem cell line</app:preferredLabel>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001257">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data storage service</app:preferredLabel>

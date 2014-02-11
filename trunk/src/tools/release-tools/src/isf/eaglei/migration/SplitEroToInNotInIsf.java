@@ -9,6 +9,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 import org.semanticweb.owlapi.apibinding.OWLManager;
+import org.semanticweb.owlapi.io.RDFXMLOntologyFormat;
 import org.semanticweb.owlapi.model.IRI;
 import org.semanticweb.owlapi.model.OWLAxiom;
 import org.semanticweb.owlapi.model.OWLOntology;
@@ -73,7 +74,7 @@ public class SplitEroToInNotInIsf {
 //		OWLOntology eroOntology = eroManager.loadOntology(IRI
 //				.create("http://purl.obolibrary.org/obo/ero.owl"));
 		 OWLOntology eroOntology =
-		 eroManager.loadOntology(IRI.create("http://purl.obolibrary.org/obo/ero/ero-extended.owl"));
+		 eroManager.loadOntology(IRI.create("http://purl.obolibrary.org/obo/ero.owl"));
 
 		// we need to collect all axioms from all imports so we have a simple
 		// helper method that does this
@@ -98,15 +99,19 @@ public class SplitEroToInNotInIsf {
 
 		// we now create two ontologies to hold the split axioms and we need to
 		// use a manager to do that, either managers will do 
+		
+		RDFXMLOntologyFormat of = new RDFXMLOntologyFormat();
+		of.setAddMissingTypes(true);
 
 		OWLOntology notInIsfOntology = isfManager.createOntology(IRI.create("http://temp/not-in-isf.owl"));
 		isfManager.addAxioms(notInIsfOntology, notInIsfAxioms);
-		isfManager.saveOntology(notInIsfOntology, new FileOutputStream(
+		isfManager.saveOntology(notInIsfOntology, of, new FileOutputStream(
 				"notInIsfAxioms.owl"));
 
+	
 		OWLOntology inIsfOntology = isfManager.createOntology(IRI.create("http://temp/in-isf.owl"));
 		isfManager.addAxioms(inIsfOntology, inIsfAxioms);
-		isfManager.saveOntology(inIsfOntology, new FileOutputStream(
+		isfManager.saveOntology(inIsfOntology, of, new FileOutputStream(
 				"inIsfAxioms.owl"));
 
 	}
