@@ -3,9 +3,8 @@ package isf.module;
 import java.io.File;
 import java.io.IOException;
 
+import org.semanticweb.owlapi.model.OWLOntologyStorageException;
 import org.semanticweb.owlapi.reasoner.OWLReasoner;
-
-import uk.ac.manchester.cs.factplusplus.owlapiv3.FaCTPlusPlusReasonerFactory;
 
 public abstract class AbstractModule {
 
@@ -18,6 +17,7 @@ public abstract class AbstractModule {
 		this.name = moduleName;
 		try {
 			this.outputDirectory = new File(outputDirectory).getCanonicalFile();
+			this.outputDirectory.mkdirs();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -66,7 +66,11 @@ public abstract class AbstractModule {
 		System.out.println(message);
 	}
 
-	public abstract void generateModule();
+	public abstract void generateModule() throws Exception;
+	
+	public abstract void saveGeneratedModule() throws OWLOntologyStorageException;
 
 	public abstract void close();
+
+	public abstract void saveModuleDefinitionFiles() throws OWLOntologyStorageException ;
 }

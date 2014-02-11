@@ -285,7 +285,8 @@ public class SimpleModuleBuilder {
 		// load module annotations ontology
 
 		if (module.getAnnotationOntology() == null) {
-			module.setAnnotationOntology(createOntology(module.getAnnotationIri()));
+			module.setAnnotationOntology(createOntology(module.getAnnotationIri(),
+					ISFUtil.getModuleDirectory()));
 			// add the exclude file import
 			AddImport ai = new AddImport(module.getAnnotationOntology(),
 					df.getOWLImportsDeclaration(module.getExcludeIri()));
@@ -302,22 +303,24 @@ public class SimpleModuleBuilder {
 
 		}
 		if (module.getIncludeOntology() == null) {
-			module.setIncludeOntology(createOntology(module.getIncludeIri()));
+			module.setIncludeOntology(createOntology(module.getIncludeIri(),
+					ISFUtil.getModuleDirectory()));
 		}
 		if (module.getExcludeOntology() == null) {
-			module.setExcludeOntology(createOntology(module.getExcludeIri()));
+			module.setExcludeOntology(createOntology(module.getExcludeIri(),
+					ISFUtil.getModuleDirectory()));
 		}
 
 		// always create a new one and save it to the local folder
-		module.setModuleOntology(createOntology(module.getModuleIri()));
+		module.setModuleOntology(createOntology(module.getModuleIri(), module.getOutputDirectory()));
 
 	}
 
-	private OWLOntology createOntology(IRI iri) throws OWLOntologyCreationException {
+	private OWLOntology createOntology(IRI iri, File directory) throws OWLOntologyCreationException {
 		OWLOntology ontology = module.getModuleManager().createOntology(iri);
 
 		module.getModuleManager().setOntologyDocumentIRI(ontology,
-				IRI.create(getDocumentFile(module.getOutputDirectory(), iri).toURI()));
+				IRI.create(getDocumentFile(directory, iri).toURI()));
 		return ontology;
 	}
 

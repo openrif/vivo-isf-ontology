@@ -20,4 +20,10 @@ public class EagleiModule extends CompositeModule {
 
 	}
 
+	@Override
+	public void saveGeneratedModule() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

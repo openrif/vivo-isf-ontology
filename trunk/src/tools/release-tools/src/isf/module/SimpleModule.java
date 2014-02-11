@@ -1,5 +1,6 @@
 package isf.module;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 
 import isf.ISFUtil;
@@ -10,6 +11,7 @@ import org.semanticweb.owlapi.model.IRI;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
+import org.semanticweb.owlapi.model.OWLOntologyStorageException;
 import org.semanticweb.owlapi.reasoner.OWLReasoner;
 
 import uk.ac.manchester.cs.factplusplus.owlapiv3.FaCTPlusPlusReasonerFactory;
@@ -27,8 +29,6 @@ public class SimpleModule extends AbstractModule {
 	private OWLOntology moduleOntology;
 
 	private OWLOntology sourceOntology;
-
-	private OWLOntologyManager sourceManager;
 
 	private final SimpleModuleBuilder builder;
 
@@ -71,7 +71,6 @@ public class SimpleModule extends AbstractModule {
 		super(moduleName, trunkPath, outputPath);
 
 		this.sourceOntology = sourceOntology;
-		this.sourceManager = sourceOntology.getOWLOntologyManager();
 		init();
 		this.builder = new SimpleModuleBuilder(this);
 
@@ -97,7 +96,7 @@ public class SimpleModule extends AbstractModule {
 						.println("Warning: SimpleModule didn't find the module annotation file for "
 								+ getName());
 			}
-			throw new IllegalStateException("SimpleModule: failed to load annotation ontology.", e1);
+//			throw new IllegalStateException("SimpleModule: failed to load annotation ontology.", e1);
 		}
 
 		// include
@@ -108,7 +107,7 @@ public class SimpleModule extends AbstractModule {
 				System.out.println("Warning: SimpleModule didn't find the module include file for "
 						+ getName());
 			}
-			throw new IllegalStateException("SimpleModule: failed to load include ontology.", e1);
+//			throw new IllegalStateException("SimpleModule: failed to load include ontology.", e1);
 		}
 
 		// exclude
@@ -119,14 +118,28 @@ public class SimpleModule extends AbstractModule {
 				System.out.println("Warning: SimpleModule didn't find the module exclude file for "
 						+ getName());
 			}
-			throw new IllegalStateException("SimpleModule: failed to load exclude ontology.", e1);
+//			throw new IllegalStateException("SimpleModule: failed to load exclude ontology.", e1);
 		}
 
 	}
 
 	@Override
-	public void generateModule() {
-		// TODO Auto-generated method stub
+	public void generateModule() throws Exception {
+		builder.run();
+
+	}
+
+	@Override
+	public void saveGeneratedModule() throws OWLOntologyStorageException {
+		getModuleManager().saveOntology(moduleOntology);
+
+	}
+	
+	@Override
+	public void saveModuleDefinitionFiles() throws OWLOntologyStorageException {
+		getModuleManager().saveOntology(annotationOntology);
+		getModuleManager().saveOntology(includeOntology);
+		getModuleManager().saveOntology(excludeOntology);
 
 	}
 
@@ -154,7 +167,7 @@ public class SimpleModule extends AbstractModule {
 
 	public OWLOntology getModuleOntology() {
 
-		return null;
+		return moduleOntology;
 	}
 
 	public OWLOntology getSourceOntology() {
@@ -190,5 +203,25 @@ public class SimpleModule extends AbstractModule {
 		}
 
 		return r;
+	}
+
+	public static void main(String[] args) throws Exception {
+		String moduleName = args[0];
+		String trunkPath = args[1];
+		String outputPath = null;
+		if (args.length > 2) {
+			outputPath = args[2];
+		}
+		File trunkDirectory = new File(trunkPath);
+		if (outputPath == null) {
+			outputPath = trunkDirectory.getParent() + "/generated";
+		}
+		ISFUtil.setISFTrunkDirecotry(trunkDirectory);
+		OWLOntologyManager man = OWLManager.createOWLOntologyManager();
+		OWLOntology sourceOntology = ISFUtil.setupAndLoadIsfOntology(man);
+		SimpleModule module = new SimpleModule(moduleName, sourceOntology, trunkPath, outputPath);
+		module.generateModule();
+		module.saveGeneratedModule();
+		module.saveModuleDefinitionFiles();
 	}
 }

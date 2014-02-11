@@ -324,7 +324,7 @@ public class ISFUtil {
 	 * All IRIs under that path should be unique.
 	 * 
 	 * @param man
-	 * @return 
+	 * @return
 	 */
 	public static OWLOntologyManager setupManagerMapper(OWLOntologyManager man) {
 		AutoIRIMapper mapper = new AutoIRIMapper(new File(getTrunkDirectory(), "src/ontology"),
@@ -340,8 +340,11 @@ public class ISFUtil {
 		if (ISF_TRUNK_DIR == null) {
 			throw new IllegalSignatureException("ISF trunk directory is null");
 		}
-
 		return ISF_TRUNK_DIR;
+	}
+
+	public static File getModuleDirectory() {
+		return new File(getTrunkDirectory() ,"src/ontology/module");
 	}
 
 	static {
@@ -367,7 +370,7 @@ public class ISFUtil {
 	}
 
 	private static boolean checkValidTrunkLocation(File trunkDir) {
-		if (trunkDir.isDirectory()) {
+		if (trunkDir != null && trunkDir.isDirectory()) {
 			File tools = new File(trunkDir, "src/tools");
 			if (tools.exists()) {
 				return true;
