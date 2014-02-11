@@ -324,12 +324,14 @@ public class ISFUtil {
 	 * All IRIs under that path should be unique.
 	 * 
 	 * @param man
+	 * @return 
 	 */
-	public static void setupManagerMapper(OWLOntologyManager man) {
+	public static OWLOntologyManager setupManagerMapper(OWLOntologyManager man) {
 		AutoIRIMapper mapper = new AutoIRIMapper(new File(getTrunkDirectory(), "src/ontology"),
 				true);
 		man.clearIRIMappers();
 		man.addIRIMapper(mapper);
+		return man;
 	}
 
 	private static File ISF_TRUNK_DIR = null;

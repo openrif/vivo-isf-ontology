@@ -1,6 +1,6 @@
 package isf.module;
 
-public class EagleiModule extends AbstractModule {
+public class EagleiModule extends CompositeModule {
 
 	public static final String EAGLEI_MODULE_NAME = "eaglei-module";
 

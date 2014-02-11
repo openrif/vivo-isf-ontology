@@ -12,7 +12,7 @@ import org.semanticweb.owlapi.model.OWLDataFactory;
 import org.semanticweb.owlapi.model.OWLEntity;
 import org.semanticweb.owlapi.model.OWLOntology;
 
-public class ModuleUtil {
+public class Util {
 
 	private static OWLDataFactory df = OWLManager.getOWLDataFactory();
 

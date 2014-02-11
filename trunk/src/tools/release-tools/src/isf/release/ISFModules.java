@@ -1,7 +1,7 @@
 package isf.release;
 
 import isf.ISFUtil;
-import isf.module.internal.BuildModule;
+import isf.module.internal.SimpleModuleBuilder;
 import isf.release.action.Reporter;
 
 import java.io.File;
@@ -27,7 +27,7 @@ public class ISFModules extends ReleaseBase {
 	public void release() throws Exception {
 		super.release();
 
-		BuildModule buildModule = new BuildModule();
+		SimpleModuleBuilder buildModule = new SimpleModuleBuilder();
 		buildModule.setReporter(reporter);
 		buildModule.setModuleName(name);
 		buildModule.setIsRelease(true);
