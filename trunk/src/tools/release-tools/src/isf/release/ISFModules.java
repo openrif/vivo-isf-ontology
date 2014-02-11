@@ -1,7 +1,7 @@
 package isf.release;
 
 import isf.ISFUtil;
-import isf.module.BuildModule;
+import isf.module.internal.BuildModule;
 import isf.release.action.Reporter;
 
 import java.io.File;
@@ -31,32 +31,26 @@ public class ISFModules extends ReleaseBase {
 		buildModule.setReporter(reporter);
 		buildModule.setModuleName(name);
 		buildModule.setIsRelease(true);
-		buildModule.setModuleDirectory(new File(ISFUtil.getSvnRootDir(),
-				"trunk/src/ontology/module"));
+		buildModule
+				.setModuleDirectory(new File(ISFUtil.getTrunkDirectory(), "src/ontology/module"));
 		buildModule.setIsfOntologyAndMan(isfOntology, man);
 		buildModule.run();
 		OWLOntologyID id = buildModule.moduleOntologyGenerated.getOntologyID();
-		id = new OWLOntologyID(id.getOntologyIRI(),
-				getVersionedIri(id.getOntologyIRI()));
-		SetOntologyID setId = new SetOntologyID(
-				buildModule.moduleOntologyGenerated, id);
+		id = new OWLOntologyID(id.getOntologyIRI(), getVersionedIri(id.getOntologyIRI()));
+		SetOntologyID setId = new SetOntologyID(buildModule.moduleOntologyGenerated, id);
 		man.applyChange(setId);
-		man.saveOntology(buildModule.moduleOntologyGenerated,
-				new FileOutputStream(new File(RELEASE_DIR, name
-						+ "-module.owl")));
+		man.saveOntology(buildModule.moduleOntologyGenerated, new FileOutputStream(new File(
+				RELEASE_DIR, name + "-module.owl")));
 
 	}
 
 	private static Set<String> getModuleNames() {
 
 		Set<String> names = new HashSet<String>();
-		for (File file : new File(ISFUtil.getSvnRootDir(),
-				"trunk/src/ontology/module").listFiles()) {
+		for (File file : new File(ISFUtil.getTrunkDirectory(), "src/ontology/module").listFiles()) {
 			if (file.getName().endsWith("-module-annotation.owl")) {
-				names.add(file.getName().substring(
-						0,
-						file.getName().length()
-								- "-module-annotation.owl".length()));
+				names.add(file.getName().substring(0,
+						file.getName().length() - "-module-annotation.owl".length()));
 			}
 		}
 
@@ -78,15 +72,14 @@ public class ISFModules extends ReleaseBase {
 
 		// we load the reasoned version but change its id temporarly so that the
 		// module builder can continue to work.
-		isfOntology = man.loadOntologyFromOntologyDocument(new File(
-				RELEASE_DIR, "isf-reasoned.owl"));
+		isfOntology = man
+				.loadOntologyFromOntologyDocument(new File(RELEASE_DIR, "isf-reasoned.owl"));
 		SetOntologyID setId = new SetOntologyID(isfOntology, ISFUtil.ISF_IRI);
 		man.applyChange(setId);
 
 		Set<String> names = getModuleNames();
 		for (String name : names) {
-			Reporter reporter = new Reporter(new File(RELEASE_DIR, name
-					+ "-module.owl.report.txt"));
+			Reporter reporter = new Reporter(new File(RELEASE_DIR, name + "-module.owl.report.txt"));
 			ISFModules module = new ISFModules(reporter);
 			module.setModuleName(name);
 			module.release();

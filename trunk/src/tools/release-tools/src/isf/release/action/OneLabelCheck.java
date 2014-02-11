@@ -14,27 +14,23 @@ import org.semanticweb.owlapi.model.OWLOntologyManager;
 public class OneLabelCheck extends Action {
 
 	@Override
-	public void doAction(OWLOntology ontology, OWLOntologyManager man,
-			Reporter reporter) {
+	public void doAction(OWLOntology ontology, OWLOntologyManager man, Reporter reporter) {
 		super.doAction(ontology, man, reporter);
 
 		reporter.setHeading("One label check:");
 
-		List<OWLEntity> entities = ISFUtil.getEntitiesSortedByIri(ontology,
-				true);
+		List<OWLEntity> entities = ISFUtil.getEntitiesSortedByIri(ontology, true);
 
 		for (OWLEntity entity : entities) {
 			Set<LabelInfo> labelInfos = ISFUtil.getLabels(entity.getIRI(),
 					Collections.singleton(ontology));
 
 			if (labelInfos.size() == 0) {
-				reporter.addLine("Missing label for "
-						+ reporter.renderOWLObject(entity) + " IRI: "
+				reporter.addLine("Missing label for " + reporter.renderOWLObject(entity) + " IRI: "
 						+ entity.getIRI());
 			} else if (labelInfos.size() > 1) {
-				reporter.addLine("Multiple labels for "
-						+ reporter.renderOWLObject(entity) + " IRI: "
-						+ entity.getIRI() + " " + labelInfos);
+				reporter.addLine("Multiple labels for " + reporter.renderOWLObject(entity)
+						+ " IRI: " + entity.getIRI() + " " + labelInfos);
 			}
 		}
 	}

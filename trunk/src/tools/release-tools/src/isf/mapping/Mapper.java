@@ -50,8 +50,7 @@ public class Mapper {
 			String[] mapping = line.split("[ \t]");
 
 			if (mapping.length != 2) {
-				System.err.println("Warning: mapping line " + counter + " "
-						+ line + ", does ");
+				System.err.println("Warning: mapping line " + counter + " " + line + ", does ");
 			}
 
 			IRI[] iriMapping = new IRI[2];
@@ -59,17 +58,19 @@ public class Mapper {
 			iriMapping[1] = IRI.create(mapping[1].trim());
 
 			if (leftToRightMappings.get(iriMapping[0]) != null) {
-				System.err.println("Warning: IRI " + iriMapping[0]
-						+ " already has left-to-right mapping "
-						+ leftToRightMappings.get(iriMapping[0])
-						+ ", will ignore " + iriMapping[1]);
+				System.err
+						.println("Warning: IRI " + iriMapping[0]
+								+ " already has left-to-right mapping "
+								+ leftToRightMappings.get(iriMapping[0]) + ", will ignore "
+								+ iriMapping[1]);
 			}
 
 			if (rightToLeftMappings.get(iriMapping[1]) != null) {
-				System.err.println("Warning: IRI " + iriMapping[1]
-						+ " already has right-to-left mapping "
-						+ rightToLeftMappings.get(iriMapping[1])
-						+ ", will ignore " + iriMapping[0]);
+				System.err
+						.println("Warning: IRI " + iriMapping[1]
+								+ " already has right-to-left mapping "
+								+ rightToLeftMappings.get(iriMapping[1]) + ", will ignore "
+								+ iriMapping[0]);
 			}
 
 			leftToRightMappings.put(iriMapping[0], iriMapping[1]);
@@ -82,15 +83,13 @@ public class Mapper {
 	}
 
 	public void leftToRightMapOntology(OWLOntology ontology) {
-		OWLEntityRenamer renamer = new OWLEntityRenamer(
-				ontology.getOWLOntologyManager(),
+		OWLEntityRenamer renamer = new OWLEntityRenamer(ontology.getOWLOntologyManager(),
 				Collections.singleton(ontology));
 
 		List<OWLOntologyChange> changes = new ArrayList<OWLOntologyChange>();
 
 		for (Entry<IRI, IRI> mapping : leftToRightMappings.entrySet()) {
-			changes.addAll(renamer.changeIRI(mapping.getKey(),
-					mapping.getValue()));
+			changes.addAll(renamer.changeIRI(mapping.getKey(), mapping.getValue()));
 		}
 
 		ontology.getOWLOntologyManager().applyChanges(changes);
@@ -105,15 +104,13 @@ public class Mapper {
 	}
 
 	public void rightToLeftMapOntology(OWLOntology ontology) {
-		OWLEntityRenamer renamer = new OWLEntityRenamer(
-				ontology.getOWLOntologyManager(),
+		OWLEntityRenamer renamer = new OWLEntityRenamer(ontology.getOWLOntologyManager(),
 				Collections.singleton(ontology));
 
 		List<OWLOntologyChange> changes = new ArrayList<OWLOntologyChange>();
 
 		for (Entry<IRI, IRI> mapping : rightToLeftMappings.entrySet()) {
-			changes.addAll(renamer.changeIRI(mapping.getKey(),
-					mapping.getValue()));
+			changes.addAll(renamer.changeIRI(mapping.getKey(), mapping.getValue()));
 		}
 
 		ontology.getOWLOntologyManager().applyChanges(changes);

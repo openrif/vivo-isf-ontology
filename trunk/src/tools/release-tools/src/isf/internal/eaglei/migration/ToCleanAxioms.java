@@ -1,4 +1,4 @@
-package isf.eaglei.migration;
+package isf.internal.eaglei.migration;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -45,12 +45,9 @@ public class ToCleanAxioms {
 		man = Util.getNewManager();
 		Util.prepareIsfTrunkManager(man);
 		isfOntology = Util.getIsfOntology(man);
-		toCleanAxioms = man.loadOntologyFromOntologyDocument(new File(
-				"mireot/toCleanAxioms.owl"));
-		newAxioms = man.loadOntologyFromOntologyDocument(new File(
-				"mireot/newAxioms.owl"));
-		oldAxioms = man.loadOntologyFromOntologyDocument(new File(
-				"mireot/oldAxioms.owl"));
+		toCleanAxioms = man.loadOntologyFromOntologyDocument(new File("mireot/toCleanAxioms.owl"));
+		newAxioms = man.loadOntologyFromOntologyDocument(new File("mireot/newAxioms.owl"));
+		oldAxioms = man.loadOntologyFromOntologyDocument(new File("mireot/oldAxioms.owl"));
 		Set<OWLOntology> changedOntologies = new HashSet<>();
 
 		// in the first pass, for each entity in toCleanAxioms.owl, remove all
@@ -82,8 +79,7 @@ public class ToCleanAxioms {
 
 				Set<OWLAnnotationAssertionAxiom> isfAnnotations = new HashSet<OWLAnnotationAssertionAxiom>();
 				for (OWLOntology o : isfOntology.getImportsClosure()) {
-					isfAnnotations.addAll(entity
-							.getAnnotationAssertionAxioms(o));
+					isfAnnotations.addAll(entity.getAnnotationAssertionAxioms(o));
 				}
 
 				Set<OWLAnnotationAssertionAxiom> oldAnnotations = new HashSet<OWLAnnotationAssertionAxiom>(
@@ -100,8 +96,7 @@ public class ToCleanAxioms {
 
 				for (OWLOntology o : isfOntology.getImportsClosure()) {
 
-					List<OWLOntologyChange> changes = man.removeAxioms(o,
-							eagleiAnnotations);
+					List<OWLOntologyChange> changes = man.removeAxioms(o, eagleiAnnotations);
 					changes.addAll(man.removeAxioms(o, oldAnnotations));
 					if (changes.size() > 0) {
 						changedOntologies.add(o);
@@ -157,8 +152,8 @@ public class ToCleanAxioms {
 			// if just a declaration in the ISF, don't remove but keep track for
 			// later
 			if (axiom instanceof OWLDeclarationAxiom
-					&& ((OWLDeclarationAxiom) axiom).getEntity().getIRI()
-							.toString().contains(iriMatch)) {
+					&& ((OWLDeclarationAxiom) axiom).getEntity().getIRI().toString()
+							.contains(iriMatch)) {
 				declarations.add((OWLDeclarationAxiom) axiom);
 				continue;
 			}
@@ -168,8 +163,7 @@ public class ToCleanAxioms {
 					List<OWLOntologyChange> changes = man.removeAxiom(o, axiom);
 					if (!changes.isEmpty()) {
 						changedOntologies.add(o);
-						System.out
-								.println("Removed from: " + o.getOntologyID());
+						System.out.println("Removed from: " + o.getOntologyID());
 					}
 				}
 			} else {
@@ -185,8 +179,7 @@ public class ToCleanAxioms {
 		}
 
 		System.out.println();
-		System.err
-				.println("Trying to find any related axioms in the ISF that should be removed");
+		System.err.println("Trying to find any related axioms in the ISF that should be removed");
 		// now see why we have the declarations, check each ISF import
 		for (OWLDeclarationAxiom da : declarations) {
 			OWLEntity entity = da.getEntity();
@@ -198,14 +191,12 @@ public class ToCleanAxioms {
 				List<OWLAxiom> referringAxioms = new ArrayList<OWLAxiom>(
 						o.getReferencingAxioms(entity));
 				if (referringAxioms.size() == 1
-						&& referringAxioms.get(0).isOfType(
-								AxiomType.DECLARATION)) {
+						&& referringAxioms.get(0).isOfType(AxiomType.DECLARATION)) {
 					// if the declaration is the only axiom, we don't need it in
 					// the file.
 					man.removeAxiom(o, da);
 					changedOntologies.add(o);
-					System.out.println("Removing declaration only from: "
-							+ o.getOntologyID());
+					System.out.println("Removing declaration only from: " + o.getOntologyID());
 
 				} else {
 					// we have other referencing axioms but we only care about
@@ -215,14 +206,11 @@ public class ToCleanAxioms {
 					if (entity instanceof OWLClass) {
 						definingAxioms.addAll(o.getAxioms((OWLClass) entity));
 					} else if (entity instanceof OWLObjectProperty) {
-						definingAxioms.addAll(o
-								.getAxioms((OWLObjectProperty) entity));
+						definingAxioms.addAll(o.getAxioms((OWLObjectProperty) entity));
 					} else if (entity instanceof OWLDataProperty) {
-						definingAxioms.addAll(o
-								.getAxioms((OWLDataProperty) entity));
+						definingAxioms.addAll(o.getAxioms((OWLDataProperty) entity));
 					} else if (entity instanceof OWLAnnotationProperty) {
-						definingAxioms.addAll(o
-								.getAxioms((OWLAnnotationProperty) entity));
+						definingAxioms.addAll(o.getAxioms((OWLAnnotationProperty) entity));
 					}
 
 					// if there are remaining logical axioms that explain why
@@ -251,11 +239,9 @@ public class ToCleanAxioms {
 
 				OWLEntity e = da.getEntity();
 
-				List<OWLAxiom> axioms = new ArrayList<OWLAxiom>(
-						e.getReferencingAxioms(o));
+				List<OWLAxiom> axioms = new ArrayList<OWLAxiom>(e.getReferencingAxioms(o));
 
-				if (axioms.size() == 1
-						&& axioms.get(0) instanceof OWLDeclarationAxiom) {
+				if (axioms.size() == 1 && axioms.get(0) instanceof OWLDeclarationAxiom) {
 					man.removeAxiom(o, axioms.get(0));
 					changedOntologies.add(o);
 				}

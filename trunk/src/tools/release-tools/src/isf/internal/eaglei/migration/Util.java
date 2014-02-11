@@ -1,4 +1,4 @@
-package isf.eaglei.migration;
+package isf.internal.eaglei.migration;
 
 import isf.ISFUtil;
 
@@ -34,31 +34,31 @@ public class Util {
 		// AutoIRIMapper mapper = new AutoIRIMapper(new File(
 		// Constants.ISF_ROOT, "release"), true);
 		// man.addIRIMapper(mapper);
-//		String trunkPath = System.getenv("ISF_SVN_TRUNK_PATH");
-		File svnRoot = ISFUtil.getSvnRootDir();
-		if (svnRoot == null) {
+		// String trunkPath = System.getenv("ISF_SVN_TRUNK_PATH");
+		File trunkRoot = ISFUtil.getTrunkDirectory();
+		if (trunkRoot == null) {
 			throw new IllegalStateException("ISF_SVN_TRUNK_PATH not set");
 		}
-		AutoIRIMapper mapper = new AutoIRIMapper(new File(svnRoot, "trunk/src/ontology"), true);
+		AutoIRIMapper mapper = new AutoIRIMapper(new File(trunkRoot, "src/ontology"), true);
 		man.addIRIMapper(mapper);
 	}
 
 	public static OWLOntology getEagleiExtendedTrunk(OWLOntologyManager man)
 			throws OWLOntologyCreationException {
 
-		OWLOntology eagleio =  man.loadOntology(IRI
+		OWLOntology eagleio = man.loadOntology(IRI
 				.create("http://purl.obolibrary.org/obo/ero/ero-extended.owl"));
-		
-		for(OWLOntology o: man.getOntologies()){
+
+		for (OWLOntology o : man.getOntologies()) {
 			System.out.println(man.getOntologyDocumentIRI(o));
 		}
-//		try {
-//			Thread.sleep(10000);
-//		} catch (InterruptedException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-		
+		// try {
+		// Thread.sleep(10000);
+		// } catch (InterruptedException e) {
+		// // TODO Auto-generated catch block
+		// e.printStackTrace();
+		// }
+
 		return eagleio;
 	}
 
@@ -73,8 +73,7 @@ public class Util {
 	// return ontology;
 	// }
 
-	public static OWLOntology getIsfOntology(OWLOntologyManager man)
-			throws Exception {
+	public static OWLOntology getIsfOntology(OWLOntologyManager man) throws Exception {
 
 		OWLOntology ontology = man.loadOntology(IRI
 				.create("http://purl.obolibrary.org/obo/arg/isf.owl"));
@@ -94,8 +93,7 @@ public class Util {
 
 	public static OWLOntology getIgnoreOntology(OWLOntologyManager isfManager)
 			throws OWLOntologyCreationException {
-		return isfManager.loadOntologyFromOntologyDocument(new File(
-				"ignoreOntology.owl"));
+		return isfManager.loadOntologyFromOntologyDocument(new File("ignoreOntology.owl"));
 	}
 
 }

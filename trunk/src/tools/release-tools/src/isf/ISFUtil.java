@@ -1,6 +1,7 @@
 package isf;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -25,73 +26,52 @@ import org.semanticweb.owlapi.model.OWLObjectPropertyExpression;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
-import org.semanticweb.owlapi.reasoner.FreshEntitiesException;
-import org.semanticweb.owlapi.reasoner.InconsistentOntologyException;
 import org.semanticweb.owlapi.reasoner.OWLReasoner;
 import org.semanticweb.owlapi.reasoner.ReasonerInternalException;
-import org.semanticweb.owlapi.reasoner.ReasonerInterruptedException;
-import org.semanticweb.owlapi.reasoner.TimeOutException;
 import org.semanticweb.owlapi.util.AutoIRIMapper;
 import org.semanticweb.owlapi.vocab.OWLRDFVocabulary;
 
+import com.sun.xml.internal.txw2.IllegalSignatureException;
+
+/**
+ * @author Shahim Essaid
+ * 
+ */
 public class ISFUtil {
 
 	/**
-	 * The system property name for the root directory (the parent of trunk) of
-	 * the local SVN checkout. This is used by scripts to know where to load
-	 * from and create files.
+	 * The system property that points to the trunk/master (not the parent of
+	 * trunk in Google Code SVN) checkout of the ISF repository
 	 */
-	public static final String ISF_SVN_ROOT_DIR_PROPERTY = "isf.svn.root.dir";
+	public static final String ISF_TRUNK_PROPERTY = "isf.trunk";
 	public static final String ISF_ONTOLOGY_IRI_PREFIX = "http://purl.obolibrary.org/obo/arg/";
 
-	public static final IRI ISF_IRI = IRI.create(ISF_ONTOLOGY_IRI_PREFIX
-			+ "isf.owl");
-	public static final IRI ISF_REASONED_IRI = IRI
-			.create(ISF_ONTOLOGY_IRI_PREFIX + "isf-reasoned.owl");
+	public static final IRI ISF_IRI = IRI.create(ISF_ONTOLOGY_IRI_PREFIX + "isf.owl");
+	public static final IRI ISF_REASONED_IRI = IRI.create(ISF_ONTOLOGY_IRI_PREFIX
+			+ "isf-reasoned.owl");
 
-	public static final IRI ISF_INCLUDE_IRI = IRI
-			.create(ISF_ONTOLOGY_IRI_PREFIX + "isf-include.owl");
-	public static final IRI ISF_EXCLUDE_IRI = IRI
-			.create(ISF_ONTOLOGY_IRI_PREFIX + "isf-exclude.owl");
+	public static final IRI ISF_FULL_IRI = IRI.create(ISF_ONTOLOGY_IRI_PREFIX + "isf-full.owl");
+	public static final IRI ISF_FULL_REASONED_IRI = IRI.create(ISF_ONTOLOGY_IRI_PREFIX
+			+ "isf-full-reasoned.owl");
 
-	public static final IRI ISF_FULL_IRI = IRI.create(ISF_ONTOLOGY_IRI_PREFIX
-			+ "isf-full.owl");
-	public static final IRI ISF_FULL_REASONED_IRI = IRI
-			.create(ISF_ONTOLOGY_IRI_PREFIX + "isf-full-reasoned.owl");
-
-	public static final IRI ISF_SKOS_IRI = IRI.create(ISF_ONTOLOGY_IRI_PREFIX
-			+ "isf-skos.owl");
-
-	public static File getSvnRootDir() {
-		if (ISF_SVN_ROOT_DIR != null) {
-			return ISF_SVN_ROOT_DIR;
-		} else {
-			throw new IllegalStateException(
-					"isf.svn.root.dir system property not set or not valid.");
-		}
-	}
+	public static final IRI ISF_SKOS_IRI = IRI.create(ISF_ONTOLOGY_IRI_PREFIX + "isf-skos.owl");
 
 	public static OWLOntology setupAndLoadIsfOntology(OWLOntologyManager man)
 			throws OWLOntologyCreationException {
-		setupManager(man);
+		setupManagerMapper(man);
 		man.loadOntology(ISF_IRI);
-		man.loadOntology(ISF_EXCLUDE_IRI);
-		man.loadOntology(ISF_INCLUDE_IRI);
 		return man.getOntology(ISF_IRI);
 	}
 
 	public static OWLOntology setupAndLoadIsfFullOntology(OWLOntologyManager man)
 			throws OWLOntologyCreationException {
-		setupManager(man);
+		setupManagerMapper(man);
 		man.loadOntology(ISF_FULL_IRI);
-		man.loadOntology(ISF_EXCLUDE_IRI);
-		man.loadOntology(ISF_INCLUDE_IRI);
 		return man.getOntology(ISF_FULL_IRI);
 	}
 
-	public static Set<OWLAnnotationAssertionAxiom> getAnnotationAxioms(
-			OWLOntology ontology, OWLAnnotationProperty property,
-			boolean includeImports) {
+	public static Set<OWLAnnotationAssertionAxiom> getAnnotationAssertionAxioms(
+			OWLOntology ontology, OWLAnnotationProperty property, boolean includeImports) {
 		Set<OWLAnnotationAssertionAxiom> axioms = new HashSet<OWLAnnotationAssertionAxiom>();
 		Set<OWLOntology> ontologies;
 		if (includeImports) {
@@ -100,8 +80,7 @@ public class ISFUtil {
 			ontologies = Collections.singleton(ontology);
 		}
 		for (OWLOntology o : ontologies) {
-			for (OWLAnnotationAssertionAxiom aaa : o
-					.getAxioms(AxiomType.ANNOTATION_ASSERTION)) {
+			for (OWLAnnotationAssertionAxiom aaa : o.getAxioms(AxiomType.ANNOTATION_ASSERTION)) {
 				if (aaa.getProperty().getIRI().equals(property.getIRI())) {
 					axioms.add(aaa);
 				}
@@ -110,8 +89,8 @@ public class ISFUtil {
 		return axioms;
 	}
 
-	public static Set<OWLEntity> getSubsClosure(OWLEntity entity,
-			final OWLOntology ontology, final OWLReasoner pr) {
+	public static Set<OWLEntity> getSubs(OWLEntity entity, final boolean closure,
+			final OWLReasoner pr) {
 		final Set<OWLEntity> entities = new HashSet<OWLEntity>();
 		entities.add(entity);
 
@@ -137,7 +116,8 @@ public class ISFUtil {
 
 			@Override
 			public void visit(OWLDataProperty property) {
-				// TODO Auto-generated method stub
+				entities.add(property);
+				entities.addAll(pr.getSubDataProperties(property, closure).getFlattened());
 
 			}
 
@@ -145,7 +125,7 @@ public class ISFUtil {
 			public void visit(OWLObjectProperty property) {
 				entities.add(property);
 				Set<OWLObjectPropertyExpression> opes = pr
-						.getSubObjectProperties(property, false).getFlattened();
+						.getSubObjectProperties(property, closure).getFlattened();
 				for (OWLObjectPropertyExpression ope : opes) {
 					if (ope instanceof OWLObjectProperty) {
 						entities.add((OWLObjectProperty) ope);
@@ -157,15 +137,15 @@ public class ISFUtil {
 			@Override
 			public void visit(OWLClass cls) {
 				entities.add(cls);
-				entities.addAll(pr.getSubClasses(cls, false).getFlattened());
+				entities.addAll(pr.getSubClasses(cls, closure).getFlattened());
 			}
 		});
 
 		return entities;
 	}
 
-	public static Set<OWLEntity> getSupersClosure(OWLEntity entity,
-			final OWLOntology ontology, final OWLReasoner pr) {
+	public static Set<OWLEntity> getSupers(OWLEntity entity, final boolean closure,
+			final OWLReasoner pr) {
 		final Set<OWLEntity> entities = new HashSet<OWLEntity>();
 		entities.add(entity);
 
@@ -191,7 +171,8 @@ public class ISFUtil {
 
 			@Override
 			public void visit(OWLDataProperty property) {
-				// TODO Auto-generated method stub
+				entities.add(property);
+				entities.addAll(pr.getSuperDataProperties(property, closure).getFlattened());
 
 			}
 
@@ -211,12 +192,9 @@ public class ISFUtil {
 				// <http://eagle-i.org/ont/app/1.0/has_measurement_scale> had
 				// error: Role expression expected in getSupRoles()
 				try {
-					opes = pr.getSuperObjectProperties(property, false)
-							.getFlattened();
+					opes = pr.getSuperObjectProperties(property, closure).getFlattened();
 				} catch (ReasonerInternalException e) {
-					// TODO Auto-generated catch block
-					System.err.println(property + " had error: "
-							+ e.getMessage());
+					System.err.println(property + " had error: " + e.getMessage());
 				}
 				if (opes == null) {
 					return;
@@ -232,7 +210,7 @@ public class ISFUtil {
 			@Override
 			public void visit(OWLClass cls) {
 				entities.add(cls);
-				entities.addAll(pr.getSuperClasses(cls, false).getFlattened());
+				entities.addAll(pr.getSuperClasses(cls, closure).getFlattened());
 
 			}
 		});
@@ -240,9 +218,8 @@ public class ISFUtil {
 		return entities;
 	}
 
-	public static Set<OWLAnnotationAssertionAxiom> getAnnotationAxioms(
-			OWLOntology ontology, boolean includeImports,
-			OWLAnnotationSubject subject) {
+	public static Set<OWLAnnotationAssertionAxiom> getSubjectAnnotationAxioms(OWLOntology ontology,
+			boolean includeImports, OWLAnnotationSubject subject) {
 		Set<OWLAnnotationAssertionAxiom> axioms = new HashSet<OWLAnnotationAssertionAxiom>();
 		Set<OWLOntology> ontologies;
 		if (includeImports) {
@@ -257,8 +234,8 @@ public class ISFUtil {
 
 	}
 
-	public static Set<OWLAxiom> getDefiningAxioms(final OWLEntity entity,
-			OWLOntology ontology, boolean includeImports) {
+	public static Set<OWLAxiom> getDefiningAxioms(final OWLEntity entity, OWLOntology ontology,
+			boolean includeImports) {
 		final Set<OWLAxiom> axioms = new HashSet<OWLAxiom>();
 		Set<OWLOntology> ontologies;
 		if (includeImports) {
@@ -310,15 +287,14 @@ public class ISFUtil {
 		return axioms;
 	}
 
+	// TODO: where is this used?
 	public static Set<LabelInfo> getLabels(IRI iri, Set<OWLOntology> ontologies) {
 		Set<LabelInfo> infos = new HashSet<ISFUtil.LabelInfo>();
 
 		for (OWLOntology ontology : ontologies) {
-			Set<OWLAnnotationAssertionAxiom> axioms = ontology
-					.getAnnotationAssertionAxioms(iri);
+			Set<OWLAnnotationAssertionAxiom> axioms = ontology.getAnnotationAssertionAxioms(iri);
 			for (OWLAnnotationAssertionAxiom axiom : axioms) {
-				if (axiom.getProperty().getIRI()
-						.equals(OWLRDFVocabulary.RDFS_LABEL.getIRI())) {
+				if (axiom.getProperty().getIRI().equals(OWLRDFVocabulary.RDFS_LABEL.getIRI())) {
 					infos.add(new LabelInfo(ontology, axiom));
 				}
 			}
@@ -343,28 +319,54 @@ public class ISFUtil {
 
 	}
 
-	public static void setupManager(OWLOntologyManager man) {
-		AutoIRIMapper mapper = new AutoIRIMapper(new File(getSvnRootDir(),
-				"trunk/src/ontology"), true);
+	/**
+	 * It sets the IRI mapper to recursively find ontologies under src/ontology.
+	 * All IRIs under that path should be unique.
+	 * 
+	 * @param man
+	 */
+	public static void setupManagerMapper(OWLOntologyManager man) {
+		AutoIRIMapper mapper = new AutoIRIMapper(new File(getTrunkDirectory(), "src/ontology"),
+				true);
 		man.clearIRIMappers();
 		man.addIRIMapper(mapper);
 	}
 
-	private static File ISF_SVN_ROOT_DIR = null;
+	private static File ISF_TRUNK_DIR = null;
+
+	public static File getTrunkDirectory() {
+		if (ISF_TRUNK_DIR == null) {
+			throw new IllegalSignatureException("ISF trunk directory is null");
+		}
+
+		return ISF_TRUNK_DIR;
+	}
 
 	static {
-		String svnRoot = System.getProperty(ISF_SVN_ROOT_DIR_PROPERTY);
-		if (svnRoot != null) {
-			File svnRootDir = new File(svnRoot).getAbsoluteFile();
-			if (checkValidSvnLocation(svnRootDir)) {
-				ISF_SVN_ROOT_DIR = svnRootDir;
+		String isfTrunk = System.getProperty(ISF_TRUNK_PROPERTY);
+		if (isfTrunk == null) {
+			isfTrunk = System.getenv(ISF_TRUNK_PROPERTY.replace(".", "_"));
+		}
+		if (isfTrunk != null) {
+			File isfTrunkDir;
+			try {
+				isfTrunkDir = new File(isfTrunk).getCanonicalFile();
+			} catch (IOException e) {
+				throw new IllegalStateException("Error determining ISF trunk directory", e);
+			}
+			if (checkValidTrunkLocation(isfTrunkDir)) {
+				ISF_TRUNK_DIR = isfTrunkDir;
 			}
 		}
 	}
 
-	private static boolean checkValidSvnLocation(File svnRootDir) {
-		if (svnRootDir.isDirectory()) {
-			File tools = new File(svnRootDir, "trunk/src/tools");
+	public static void setISFTrunkDirecotry(File isfTrunkDirectory) {
+		ISF_TRUNK_DIR = isfTrunkDirectory;
+	}
+
+	private static boolean checkValidTrunkLocation(File trunkDir) {
+		if (trunkDir.isDirectory()) {
+			File tools = new File(trunkDir, "src/tools");
 			if (tools.exists()) {
 				return true;
 			}

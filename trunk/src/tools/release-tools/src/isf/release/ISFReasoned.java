@@ -26,30 +26,28 @@ public class ISFReasoned extends ReleaseBase {
 	public void release() throws Exception {
 
 		OWLOntologyManager man = getManager();
-		OWLOntology mergedIsfOntology = man
-				.loadOntologyFromOntologyDocument(new File(RELEASE_DIR,
-						"isf.owl"));
+		OWLOntology mergedIsfOntology = man.loadOntologyFromOntologyDocument(new File(RELEASE_DIR,
+				"isf.owl"));
 		OWLOntology inferredAxiomsOntology = man.createOntology();
 
 		ReasonerFactory rf = new ReasonerFactory();
 		OWLReasoner r = rf.createReasoner(mergedIsfOntology);
-		
+
 		InferredEquivalentClassAxiomGenerator eqg = new InferredEquivalentClassAxiomGenerator();
 		man.addAxioms(inferredAxiomsOntology, eqg.createAxioms(man, r));
-		
+
 		InferredSubClassAxiomGenerator subg = new InferredSubClassAxiomGenerator();
 		man.addAxioms(inferredAxiomsOntology, subg.createAxioms(man, r));
-		
 
 		reporter.setHeading("Generating reasoned ISF:");
 
 		for (OWLAxiom axiom : inferredAxiomsOntology.getAxioms()) {
 			if (!mergedIsfOntology.containsAxiom(axiom)) {
-				reporter.addLine("Adding: "+axiom.toString());
+				reporter.addLine("Adding: " + axiom.toString());
 			}
 		}
 
-		man.addAxioms( mergedIsfOntology, inferredAxiomsOntology.getAxioms());
+		man.addAxioms(mergedIsfOntology, inferredAxiomsOntology.getAxioms());
 
 		OWLOntologyID id = new OWLOntologyID(ISFUtil.ISF_REASONED_IRI,
 				getVersionedIri(ISFUtil.ISF_REASONED_IRI));
@@ -58,15 +56,14 @@ public class ISFReasoned extends ReleaseBase {
 
 		man.applyChange(ontologyId);
 
-		man.saveOntology(mergedIsfOntology, new FileOutputStream(new File(
-				RELEASE_DIR, "isf-reasoned.owl")));
+		man.saveOntology(mergedIsfOntology, new FileOutputStream(new File(RELEASE_DIR,
+				"isf-reasoned.owl")));
 
 	}
 
 	public static void main(String[] args) throws Exception {
 
-		Reporter reporter = new Reporter(new File(RELEASE_DIR,
-				"isf-reasoned.owl.report.txt"));
+		Reporter reporter = new Reporter(new File(RELEASE_DIR, "isf-reasoned.owl.report.txt"));
 		new ISFReasoned(reporter).release();
 		reporter.save();
 	}

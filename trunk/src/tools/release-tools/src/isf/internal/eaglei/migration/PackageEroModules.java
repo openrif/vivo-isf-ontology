@@ -1,4 +1,4 @@
-package isf.eaglei.migration;
+package isf.internal.eaglei.migration;
 
 import isf.ISFUtil;
 
@@ -34,8 +34,8 @@ public class PackageEroModules {
 
 	}
 
-	private void run() throws OWLOntologyCreationException,
-			OWLOntologyStorageException, FileNotFoundException {
+	private void run() throws OWLOntologyCreationException, OWLOntologyStorageException,
+			FileNotFoundException {
 
 		// The following is the workflow we will use until we cleanup the
 		// "hacky" ero module approach.
@@ -77,28 +77,36 @@ public class PackageEroModules {
 
 		File rootDirectory = new File("ero-package");
 		rootDirectory.renameTo(new File("ero-package-old"));
-		
+
 		OWLOntologyManager man = OWLManager.createOWLOntologyManager();
 		OWLDataFactory df = man.getOWLDataFactory();
 
-		AutoIRIMapper mapper = new AutoIRIMapper(new File(
-				ISFUtil.getSvnRootDir(), "trunk/src/ontology"), true);
+		AutoIRIMapper mapper = new AutoIRIMapper(new File(ISFUtil.getTrunkDirectory(),
+				"src/ontology"), true);
 		man.clearIRIMappers();
 		man.addIRIMapper(mapper);
 
 		OWLOntology isfOntology = man.loadOntology(ISFUtil.ISF_IRI);
 
-		OWLOntology notInIsfOntology = man.loadOntology(IRI.create("http://purl.obolibrary.org/obo/arg/eaglei-module-include-not-in-isf.owl"));
-		OWLOntology inIsfOntology = man.loadOntology(IRI.create("http://purl.obolibrary.org/obo/arg/eaglei-module-include-in-isf.owl"));
+		OWLOntology notInIsfOntology = man.loadOntology(IRI
+				.create("http://purl.obolibrary.org/obo/arg/eaglei-module-include-not-in-isf.owl"));
+		OWLOntology inIsfOntology = man.loadOntology(IRI
+				.create("http://purl.obolibrary.org/obo/arg/eaglei-module-include-in-isf.owl"));
 
-		OWLOntology notInIsfExtendedOntology = man.loadOntology(IRI.create("http://purl.obolibrary.org/obo/arg/eaglei-extended-module-include-not-in-isf.owl"));
-		OWLOntology inIsfExtendedOntology = man.loadOntology(IRI.create("http://purl.obolibrary.org/obo/arg/eaglei-extended-module-include-in-isf.owl"));
+		OWLOntology notInIsfExtendedOntology = man
+				.loadOntology(IRI
+						.create("http://purl.obolibrary.org/obo/arg/eaglei-extended-module-include-not-in-isf.owl"));
+		OWLOntology inIsfExtendedOntology = man
+				.loadOntology(IRI
+						.create("http://purl.obolibrary.org/obo/arg/eaglei-extended-module-include-in-isf.owl"));
 
-		OWLOntology eroModuleOntology = man.loadOntology(IRI.create("http://purl.obolibrary.org/obo/arg/eaglei-module.owl"));
-		OWLOntology eroExtendedModuleOntology = man
-				.loadOntology(IRI.create("http://purl.obolibrary.org/obo/arg/eaglei-extended-module.owl"));
+		OWLOntology eroModuleOntology = man.loadOntology(IRI
+				.create("http://purl.obolibrary.org/obo/arg/eaglei-module.owl"));
+		OWLOntology eroExtendedModuleOntology = man.loadOntology(IRI
+				.create("http://purl.obolibrary.org/obo/arg/eaglei-extended-module.owl"));
 
-		OWLOntology eroAppModuleOntology = man.loadOntology(IRI.create("http://purl.obolibrary.org/obo/arg/eaglei-app-module.owl"));
+		OWLOntology eroAppModuleOntology = man.loadOntology(IRI
+				.create("http://purl.obolibrary.org/obo/arg/eaglei-app-module.owl"));
 		OWLOntology eroExtendedAppModuleOntology = man.loadOntology(IRI
 				.create("http://purl.obolibrary.org/obo/arg/eaglei-app-extended-module.owl"));
 
@@ -154,52 +162,39 @@ public class PackageEroModules {
 		OWLOntology eroExtendedPackagedOntology = man.createOntology(IRI
 				.create("http://purl.obolibrary.org/obo/ero/ero-extended.owl"));
 		AddImport ontologyImport = new AddImport(eroExtendedPackagedOntology,
-				df.getOWLImportsDeclaration(IRI
-						.create("http://purl.obolibrary.org/obo/ero.owl")));
+				df.getOWLImportsDeclaration(IRI.create("http://purl.obolibrary.org/obo/ero.owl")));
 		man.applyChange(ontologyImport);
-		man.addAxioms(eroExtendedPackagedOntology,
-				eroExtendedModuleOntology.getAxioms());
-		man.addAxioms(eroExtendedPackagedOntology,
-				inIsfExtendedOntology.getAxioms());
-		man.addAxioms(eroExtendedPackagedOntology,
-				notInIsfExtendedOntology.getAxioms());
+		man.addAxioms(eroExtendedPackagedOntology, eroExtendedModuleOntology.getAxioms());
+		man.addAxioms(eroExtendedPackagedOntology, inIsfExtendedOntology.getAxioms());
+		man.addAxioms(eroExtendedPackagedOntology, notInIsfExtendedOntology.getAxioms());
 		man.saveOntology(eroExtendedPackagedOntology, new FileOutputStream(
 				"ero-package/src/ontology/core/ero-extended.owl"));
 
 		// ero app file
 		OWLOntology eroAppPackagedOntology = man.createOntology(IRI
 				.create("http://eagle-i.org/ont/app/1.0/eagle-i-core-app.owl"));
-		ontologyImport = new AddImport(eroAppPackagedOntology,
-				df.getOWLImportsDeclaration(IRI
-						.create("http://purl.obolibrary.org/obo/ero.owl")));
+		ontologyImport = new AddImport(eroAppPackagedOntology, df.getOWLImportsDeclaration(IRI
+				.create("http://purl.obolibrary.org/obo/ero.owl")));
 		man.applyChange(ontologyImport);
 		man.addAxioms(eroAppPackagedOntology, eroAppModuleOntology.getAxioms());
-		man.saveOntology(
-				eroAppPackagedOntology,
-				new FileOutputStream(
-						"ero-package/src/ontology/application-specific-files/eagle-i-core-app.owl"));
+		man.saveOntology(eroAppPackagedOntology, new FileOutputStream(
+				"ero-package/src/ontology/application-specific-files/eagle-i-core-app.owl"));
 
 		// ero app extended file
-		OWLOntology eroExtendedAppPackagedOntology = man
-				.createOntology(IRI
-						.create("http://eagle-i.org/ont/app/1.0/eagle-i-extended-app.owl"));
-		ontologyImport = new AddImport(
-				eroExtendedAppPackagedOntology,
+		OWLOntology eroExtendedAppPackagedOntology = man.createOntology(IRI
+				.create("http://eagle-i.org/ont/app/1.0/eagle-i-extended-app.owl"));
+		ontologyImport = new AddImport(eroExtendedAppPackagedOntology,
 				df.getOWLImportsDeclaration(IRI
 						.create("http://eagle-i.org/ont/app/1.0/eagle-i-core-app.owl")));
 		man.applyChange(ontologyImport);
-		ontologyImport = new AddImport(
-				eroExtendedAppPackagedOntology,
+		ontologyImport = new AddImport(eroExtendedAppPackagedOntology,
 				df.getOWLImportsDeclaration(IRI
 						.create("http://purl.obolibrary.org/obo/ero/ero-extended.owl")));
 		man.applyChange(ontologyImport);
-		man.addAxioms(eroExtendedAppPackagedOntology,
-				eroExtendedAppModuleOntology.getAxioms());
+		man.addAxioms(eroExtendedAppPackagedOntology, eroExtendedAppModuleOntology.getAxioms());
 
-		man.saveOntology(
-				eroExtendedAppPackagedOntology,
-				new FileOutputStream(
-						"ero-package/src/ontology/application-specific-files/eagle-i-extended-app.owl"));
+		man.saveOntology(eroExtendedAppPackagedOntology, new FileOutputStream(
+				"ero-package/src/ontology/application-specific-files/eagle-i-extended-app.owl"));
 	}
 
 }

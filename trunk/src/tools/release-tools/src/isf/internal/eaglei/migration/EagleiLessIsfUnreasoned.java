@@ -1,4 +1,4 @@
-package isf.eaglei.migration;
+package isf.internal.eaglei.migration;
 
 import java.io.ByteArrayInputStream;
 import java.io.FileOutputStream;
@@ -90,20 +90,17 @@ public class EagleiLessIsfUnreasoned {
 
 		int inCounter = 0;
 		for (OWLAxiom axiom : eagleiAxioms) {
-			if (!isfOntology.containsAxiom(axiom, true)
-					&& !ignoreOntology.containsAxiom(axiom)) {
+			if (!isfOntology.containsAxiom(axiom, true) && !ignoreOntology.containsAxiom(axiom)) {
 				if (axiom instanceof OWLAnnotationAssertionAxiom) {
 					OWLAnnotationAssertionAxiom aaa = (OWLAnnotationAssertionAxiom) axiom;
 					if (aaa.getValue() instanceof OWLLiteral) {
 						OWLLiteral literal = (OWLLiteral) aaa.getValue();
 						OWLAnnotationAssertionAxiom newAaa = df
-								.getOWLAnnotationAssertionAxiom(aaa
-										.getSubject(), df.getOWLAnnotation(aaa
-										.getProperty(), df.getOWLLiteral(
-										literal.getLiteral().toLowerCase(),
-										"en")));
+								.getOWLAnnotationAssertionAxiom(aaa.getSubject(), df
+										.getOWLAnnotation(aaa.getProperty(), df.getOWLLiteral(
+												literal.getLiteral().toLowerCase(), "en")));
 
-						if (!isfOntology.containsAxiom(newAaa,true)) {
+						if (!isfOntology.containsAxiom(newAaa, true)) {
 							missingAxioms.add(axiom);
 						} else {
 							changedAxioms.add(axiom);
@@ -122,8 +119,8 @@ public class EagleiLessIsfUnreasoned {
 		Collections.sort(changedAxioms);
 		Collections.sort(missingAxioms);
 
-		System.out.println("Missing axioms count: " + missingAxioms.size()
-				+ " same count: " + inCounter);
+		System.out.println("Missing axioms count: " + missingAxioms.size() + " same count: "
+				+ inCounter);
 
 		for (OWLAxiom axiom : missingAxioms) {
 			System.out.println(axiom);
@@ -139,8 +136,7 @@ public class EagleiLessIsfUnreasoned {
 			RDFXMLRenderer r = new RDFXMLRenderer(o, sw, of);
 			r.render();
 			DocumentBuilder db = dbf.newDocumentBuilder();
-			Document document = db.parse(new ByteArrayInputStream(sw.toString()
-					.getBytes("UTF-8")));
+			Document document = db.parse(new ByteArrayInputStream(sw.toString().getBytes("UTF-8")));
 			Node node = document.getFirstChild();
 			NodeList nodes = node.getChildNodes();
 			for (int i = 0; i < nodes.getLength(); ++i) {
@@ -158,19 +154,14 @@ public class EagleiLessIsfUnreasoned {
 		}
 
 		OWLOntology missingOntology = isfManager.createOntology();
-		isfManager.addAxioms(missingOntology, new HashSet<OWLAxiom>(
-				missingAxioms));
-		isfManager.saveOntology(missingOntology, new FileOutputStream(
-				"missingOntology.owl"));
+		isfManager.addAxioms(missingOntology, new HashSet<OWLAxiom>(missingAxioms));
+		isfManager.saveOntology(missingOntology, new FileOutputStream("missingOntology.owl"));
 
 		OWLOntology changedOntology = isfManager.createOntology();
-		isfManager.addAxioms(changedOntology, new HashSet<OWLAxiom>(
-				changedAxioms));
-		isfManager.saveOntology(changedOntology, new FileOutputStream(
-				"changedOntology.owl"));
+		isfManager.addAxioms(changedOntology, new HashSet<OWLAxiom>(changedAxioms));
+		isfManager.saveOntology(changedOntology, new FileOutputStream("changedOntology.owl"));
 
-		System.out.println("Changed annotation axioms count: "
-				+ changedAxioms.size());
+		System.out.println("Changed annotation axioms count: " + changedAxioms.size());
 
 		System.exit(0);
 		for (OWLAxiom axiom : changedAxioms) {
@@ -191,12 +182,9 @@ public class EagleiLessIsfUnreasoned {
 				IRI iri = IRI.create(iriString);
 
 				outer: for (OWLOntology o : eagleiOntology.getImportsClosure()) {
-					for (OWLAnnotationAssertionAxiom aaa : o
-							.getAnnotationAssertionAxioms(iri)) {
-						if (aaa.getProperty().getIRI()
-								.equals(OWLRDFVocabulary.RDFS_LABEL.getIRI())) {
-							String label = ((OWLLiteral) aaa.getValue())
-									.getLiteral();
+					for (OWLAnnotationAssertionAxiom aaa : o.getAnnotationAssertionAxioms(iri)) {
+						if (aaa.getProperty().getIRI().equals(OWLRDFVocabulary.RDFS_LABEL.getIRI())) {
+							String label = ((OWLLiteral) aaa.getValue()).getLiteral();
 							s = label + " " + s.substring(last);
 							break outer;
 						}
@@ -214,19 +202,16 @@ public class EagleiLessIsfUnreasoned {
 		xmlRenderer = new RDFXMLRenderer(eagleiOntology, xmlRendererWriter, of);
 	}
 
-	void xmlRender(OWLEntity entity) throws NoSuchMethodException,
-			SecurityException, IllegalAccessException,
-			IllegalArgumentException, InvocationTargetException {
-		Method method = RDFXMLRenderer.class.getMethod("renderEntity",
-				OWLEntity.class);
+	void xmlRender(OWLEntity entity) throws NoSuchMethodException, SecurityException,
+			IllegalAccessException, IllegalArgumentException, InvocationTargetException {
+		Method method = RDFXMLRenderer.class.getMethod("renderEntity", OWLEntity.class);
 		method.setAccessible(true);
 		method.invoke(xmlRenderer, entity);
 	}
 
 	void createManchesterObjectRenderer() {
 		manchesterWriter = new StringWriter();
-		manchesterRenderer = new ManchesterOWLSyntaxObjectRenderer(
-				manchesterWriter, getShortForm());
+		manchesterRenderer = new ManchesterOWLSyntaxObjectRenderer(manchesterWriter, getShortForm());
 	}
 
 	AnnotationValueShortFormProvider getShortForm() {
@@ -234,8 +219,8 @@ public class EagleiLessIsfUnreasoned {
 		OWLAnnotationProperty ap = df
 				.getOWLAnnotationProperty(OWLRDFVocabulary.RDFS_LABEL.getIRI());
 		AnnotationValueShortFormProvider sf = new AnnotationValueShortFormProvider(
-				Collections.singletonList(ap),
-				new HashMap<OWLAnnotationProperty, List<String>>(), eagleiMan);
+				Collections.singletonList(ap), new HashMap<OWLAnnotationProperty, List<String>>(),
+				eagleiMan);
 
 		return sf;
 	}

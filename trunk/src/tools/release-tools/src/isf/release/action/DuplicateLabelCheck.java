@@ -21,49 +21,38 @@ public class DuplicateLabelCheck extends Action {
 	Map<String, Set<LabelInfo>> labelMap = new HashMap<String, Set<LabelInfo>>();
 
 	@Override
-	public void doAction(OWLOntology ontology, OWLOntologyManager man,
-			Reporter reporter) {
+	public void doAction(OWLOntology ontology, OWLOntologyManager man, Reporter reporter) {
 		super.doAction(ontology, man, reporter);
 
 		reporter.setHeading("Duplicate label check:");
 
 		for (OWLEntity entity : ontology.getSignature(true)) {
 
-			Set<LabelInfo> infos = ISFUtil.getLabels(entity.getIRI(),
-					ontology.getImportsClosure());
+			Set<LabelInfo> infos = ISFUtil.getLabels(entity.getIRI(), ontology.getImportsClosure());
 
-//			if(entity.getIRI().toString().endsWith("creator")){
-//				System.out.println("Debug");
-//			}
-			
+			// if(entity.getIRI().toString().endsWith("creator")){
+			// System.out.println("Debug");
+			// }
+
 			if (infos.size() == 0) {
 				int i = entity.getIRI().toString().lastIndexOf('/');
-				String key = entity.getIRI().toString().substring(i + 1)
-						.toLowerCase();
+				String key = entity.getIRI().toString().substring(i + 1).toLowerCase();
 				Set<LabelInfo> value = labelMap.get(key);
 				if (value == null) {
 					value = new HashSet<LabelInfo>();
 					labelMap.put(key, value);
 				}
-				value.add(new LabelInfo(
-						ontology,
-						man.getOWLDataFactory()
-								.getOWLAnnotationAssertionAxiom(
-										entity.getIRI(),
-										man.getOWLDataFactory()
-												.getOWLAnnotation(
-														man.getOWLDataFactory()
-																.getOWLAnnotationProperty(
-																		IRI.create("http://no-property")),
-														man.getOWLDataFactory()
-																.getOWLLiteral(
-																		key)))));
+				value.add(new LabelInfo(ontology, man.getOWLDataFactory()
+						.getOWLAnnotationAssertionAxiom(
+								entity.getIRI(),
+								man.getOWLDataFactory().getOWLAnnotation(
+										man.getOWLDataFactory().getOWLAnnotationProperty(
+												IRI.create("http://no-property")),
+										man.getOWLDataFactory().getOWLLiteral(key)))));
 			}
 
-			for (LabelInfo info : ISFUtil.getLabels(entity.getIRI(),
-					ontology.getImportsClosure())) {
-				String key = ((OWLLiteral) info.axiom.getValue()).getLiteral()
-						.toLowerCase();
+			for (LabelInfo info : ISFUtil.getLabels(entity.getIRI(), ontology.getImportsClosure())) {
+				String key = ((OWLLiteral) info.axiom.getValue()).getLiteral().toLowerCase();
 				Set<LabelInfo> value = labelMap.get(key);
 				if (value == null) {
 					value = new HashSet<LabelInfo>();
@@ -72,7 +61,7 @@ public class DuplicateLabelCheck extends Action {
 				value.add(info);
 			}
 		}
-		
+
 		findSimilarLabelForDifferentEntities();
 
 	}
@@ -86,16 +75,10 @@ public class DuplicateLabelCheck extends Action {
 				LabelInfo info = i.next();
 				i.remove();
 				for (LabelInfo otherInfo : infos) {
-					if (!otherInfo.axiom.getSubject().equals(
-							info.axiom.getSubject())) {
-						reporter.addLine("Label: "
-								+ entry.getKey()
-								+ " is used by: "
-								+ reporter.renderOWLObject(info.axiom
-										.getSubject())
-								+ " and by "
-								+ reporter.renderOWLObject(otherInfo.axiom
-										.getSubject()));
+					if (!otherInfo.axiom.getSubject().equals(info.axiom.getSubject())) {
+						reporter.addLine("Label: " + entry.getKey() + " is used by: "
+								+ reporter.renderOWLObject(info.axiom.getSubject()) + " and by "
+								+ reporter.renderOWLObject(otherInfo.axiom.getSubject()));
 					}
 				}
 

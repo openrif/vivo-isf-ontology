@@ -13,8 +13,8 @@ public class _DoRelease {
 	public static void main(String[] args) throws Exception {
 
 		ReleaseBase.RELEASE_STRING = "2013-07-31";
-		ReleaseBase.setReleaseDirectory(new File(ISFUtil.getSvnRootDir(),
-				"release/local"));
+		ReleaseBase.setReleaseDirectory(new File(ISFUtil.getTrunkDirectory(),
+				"generated/release/local"));
 
 		System.out.println("Generating unreasoned ISF file: isf.owl");
 		ISF.main(null);

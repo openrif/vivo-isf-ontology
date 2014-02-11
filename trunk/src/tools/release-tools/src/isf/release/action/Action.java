@@ -9,12 +9,10 @@ public class Action {
 	Reporter reporter;
 	OWLOntology ontology;
 
-	public void doAction(OWLOntology ontology, OWLOntologyManager man,
-			Reporter reporter) {
+	public void doAction(OWLOntology ontology, OWLOntologyManager man, Reporter reporter) {
 		this.ontology = ontology;
 		this.man = man;
 		this.reporter = reporter;
 	}
-	
 
 }

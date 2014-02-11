@@ -19,33 +19,32 @@ public class ISFSkos extends ReleaseBase {
 
 	}
 
+	@Override
 	public void release() throws Exception {
 		super.release();
 		OWLOntologyManager man = getManager();
-		ISFUtil.setupManager(man);
+		ISFUtil.setupManagerMapper(man);
 		OWLOntology isfSkosOntology = man.loadOntology(ISFUtil.ISF_SKOS_IRI);
 		OWLOntologyManager mergeMan = getManager();
 
-		OWLOntology isfSkosMerged = mergeMan.createOntology(new OWLOntologyID(
-				ISFUtil.ISF_SKOS_IRI, getVersionedIri(ISFUtil.ISF_SKOS_IRI)));
+		OWLOntology isfSkosMerged = mergeMan.createOntology(new OWLOntologyID(ISFUtil.ISF_SKOS_IRI,
+				getVersionedIri(ISFUtil.ISF_SKOS_IRI)));
 
 		for (OWLOntology ontology : isfSkosOntology.getImportsClosure()) {
 			mergeMan.addAxioms(isfSkosMerged, ontology.getAxioms());
 		}
 
 		for (OWLAnnotation annotation : isfSkosOntology.getAnnotations()) {
-			AddOntologyAnnotation aa = new AddOntologyAnnotation(isfSkosMerged,
-					annotation);
+			AddOntologyAnnotation aa = new AddOntologyAnnotation(isfSkosMerged, annotation);
 			mergeMan.applyChange(aa);
 		}
 
-		mergeMan.saveOntology(isfSkosMerged, new FileOutputStream(new File(
-				RELEASE_DIR, "isf-skos.owl")));
+		mergeMan.saveOntology(isfSkosMerged, new FileOutputStream(new File(RELEASE_DIR,
+				"isf-skos.owl")));
 	}
 
 	public static void main(String[] args) throws Exception {
-		Reporter reporter = new Reporter(new File(RELEASE_DIR,
-				"isf-skos.owl.report.txt"));
+		Reporter reporter = new Reporter(new File(RELEASE_DIR, "isf-skos.owl.report.txt"));
 		reporter.setHeading("Merging isf-skos.owl");
 		ISFSkos isfSkos = new ISFSkos(reporter);
 		isfSkos.release();

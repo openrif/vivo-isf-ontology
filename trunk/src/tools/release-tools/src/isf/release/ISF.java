@@ -30,11 +30,11 @@ public class ISF extends ReleaseBase {
 		reporter.setHeading("Merging ISF files.");
 		mergeIsf();
 		reporter.setManaagerForRenderer(mergeMan);
-		
+
 		// label check
 		OneLabelCheck labelCheck = new OneLabelCheck();
 		labelCheck.doAction(mergedIsfOntology, mergeMan, reporter);
-		
+
 		// duplicate labels check
 		DuplicateLabelCheck dl = new DuplicateLabelCheck();
 		dl.doAction(mergedIsfOntology, mergeMan, reporter);
@@ -43,23 +43,23 @@ public class ISF extends ReleaseBase {
 		OneDefinitionCheck defCheck = new OneDefinitionCheck();
 		defCheck.doAction(mergedIsfOntology, mergeMan, reporter);
 
-		OWLOntologyID id = new OWLOntologyID(ISFUtil.ISF_IRI,
-				getVersionedIri(ISFUtil.ISF_IRI));
+		OWLOntologyID id = new OWLOntologyID(ISFUtil.ISF_IRI, getVersionedIri(ISFUtil.ISF_IRI));
 
 		SetOntologyID ontologyId = new SetOntologyID(mergedIsfOntology, id);
 
 		mergeMan.applyChange(ontologyId);
 
-		mergeMan.saveOntology(mergedIsfOntology, new FileOutputStream(new File(
-				RELEASE_DIR, "isf.owl")));
+		mergeMan.saveOntology(mergedIsfOntology, new FileOutputStream(new File(RELEASE_DIR,
+				"isf.owl")));
 	}
 
 	OWLOntologyManager man;
 	OWLOntologyManager mergeMan;
 	OWLOntology isfOntology;
 	OWLOntology mergedIsfOntology;
-	OWLOntology includeOntology;
-	OWLOntology excludeOntology;
+
+	// OWLOntology includeOntology;
+	// OWLOntology excludeOntology;
 
 	void mergeIsf() throws OWLOntologyCreationException {
 		man = getManager();
@@ -68,40 +68,39 @@ public class ISF extends ReleaseBase {
 		ISFUtil.setupAndLoadIsfOntology(man);
 		isfOntology = man.getOntology(ISFUtil.ISF_IRI);
 		mergedIsfOntology = mergeMan.createOntology(ISFUtil.ISF_IRI);
-		includeOntology = man.getOntology(ISFUtil.ISF_INCLUDE_IRI);
-		excludeOntology = man.getOntology(ISFUtil.ISF_EXCLUDE_IRI);
+		// includeOntology = man.getOntology(ISFUtil.ISF_INCLUDE_IRI);
+		// excludeOntology = man.getOntology(ISFUtil.ISF_EXCLUDE_IRI);
 
 		for (OWLOntology o : isfOntology.getImportsClosure()) {
 			reporter.addLine("Merging: " + o.getOntologyID().getOntologyIRI());
 			Set<OWLAxiom> axioms = o.getAxioms();
 			for (OWLAxiom axiom : axioms) {
-				if (!skipAxiom(axiom)) {
-					mergeMan.addAxiom(mergedIsfOntology, axiom);
-				}
+				// if (!skipAxiom(axiom)) {
+				// mergeMan.addAxiom(mergedIsfOntology, axiom);
+				// }
 			}
 		}
 
-		mergeMan.addAxioms(mergedIsfOntology, includeOntology.getAxioms());
+		// mergeMan.addAxioms(mergedIsfOntology, includeOntology.getAxioms());
+
 		for (OWLAnnotation annotation : isfOntology.getAnnotations()) {
-			AddOntologyAnnotation aa = new AddOntologyAnnotation(
-					mergedIsfOntology, annotation);
+			AddOntologyAnnotation aa = new AddOntologyAnnotation(mergedIsfOntology, annotation);
 			mergeMan.applyChange(aa);
 		}
 
 	}
 
-	private boolean skipAxiom(OWLAxiom axiom) {
-		if (excludeOntology.containsAxiom(axiom)) {
-			reporter.addLine("\tSkipping: " + axiom);
-			return true;
-		}
-		return false;
-	}
+	// private boolean skipAxiom(OWLAxiom axiom) {
+	// if (excludeOntology.containsAxiom(axiom)) {
+	// reporter.addLine("\tSkipping: " + axiom);
+	// return true;
+	// }
+	// return false;
+	// }
 
 	public static void main(String[] args) throws Exception {
 
-		Reporter reporter = new Reporter(new File(RELEASE_DIR,
-				"isf.owl.report.txt"));
+		Reporter reporter = new Reporter(new File(RELEASE_DIR, "isf.owl.report.txt"));
 		new ISF(reporter).release();
 		reporter.save();
 	}

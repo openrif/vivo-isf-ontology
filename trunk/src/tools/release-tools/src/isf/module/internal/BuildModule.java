@@ -1,4 +1,4 @@
-package isf.module;
+package isf.module.internal;
 
 import isf.ISFUtil;
 import isf.release.action.Reporter;
@@ -58,8 +58,7 @@ public class BuildModule {
 		reasoner = prf.createReasoner(isfOntology);
 
 		if (reasoner.getUnsatisfiableClasses().getEntities().size() > 0) {
-			System.out.println("Unsatisfieds: "
-					+ reasoner.getUnsatisfiableClasses().getEntities());
+			System.out.println("Unsatisfieds: " + reasoner.getUnsatisfiableClasses().getEntities());
 		}
 
 		System.out.println("Doing includes: ");
@@ -87,14 +86,12 @@ public class BuildModule {
 		System.out.println("Typing all entities: ");
 		typeAllEntities();
 
-		System.out.println("Saving modified ontologies: "
-				+ changedOntologies.toString());
+		System.out.println("Saving modified ontologies: " + changedOntologies.toString());
 		save();
 	}
 
 	public void addIncludes() {
-		Set<OWLEntity> entities = ModuleUtil.getIncludeEntities(
-				moduleOntologyAnnotation, true);
+		Set<OWLEntity> entities = ModuleUtil.getIncludeEntities(moduleOntologyAnnotation, true);
 
 		for (OWLEntity e : entities) {
 			reporter.addLine("Add: " + e.getEntityType() + " - " + e);
@@ -105,15 +102,13 @@ public class BuildModule {
 	}
 
 	public void addIncludeSubs() {
-		Set<OWLEntity> entities = ModuleUtil.getIncludeSubsEntities(
-				moduleOntologyAnnotation, true);
+		Set<OWLEntity> entities = ModuleUtil.getIncludeSubsEntities(moduleOntologyAnnotation, true);
 		// System.out.println("Found sub annotations for: " + entities);
 		Set<OWLEntity> closureEntities = new HashSet<OWLEntity>();
 
 		for (OWLEntity e : entities) {
 			reporter.addLine("Add subs: " + e.getEntityType() + " - " + e);
-			closureEntities.addAll(ISFUtil.getSubsClosure(e, isfOntology,
-					reasoner));
+			closureEntities.addAll(ISFUtil.getSubs(e, true, reasoner));
 		}
 		for (OWLEntity e : closureEntities) {
 			addAxiom(df.getOWLDeclarationAxiom(e));
@@ -122,8 +117,7 @@ public class BuildModule {
 	}
 
 	private void addIncludeInstances() {
-		Set<OWLEntity> entities = ModuleUtil.getIncludeInstances(
-				moduleOntologyAnnotation, true);
+		Set<OWLEntity> entities = ModuleUtil.getIncludeInstances(moduleOntologyAnnotation, true);
 
 		for (OWLEntity e : entities) {
 			reporter.addLine("Add instance: " + e.getEntityType() + " - " + e);
@@ -134,28 +128,22 @@ public class BuildModule {
 	}
 
 	public void removeExcludes() {
-		Set<OWLEntity> entities = ModuleUtil.getExcludeEntities(
-				moduleOntologyAnnotation, true);
+		Set<OWLEntity> entities = ModuleUtil.getExcludeEntities(moduleOntologyAnnotation, true);
 		for (OWLEntity entity : entities) {
-			reporter.addLine("Remove: " + entity.getEntityType() + " - "
-					+ entity);
+			reporter.addLine("Remove: " + entity.getEntityType() + " - " + entity);
 			removeAxiom(df.getOWLDeclarationAxiom(entity));
 			removeAxioms(ISFUtil.getDefiningAxioms(entity, isfOntology, true));
 
 			if (entity instanceof OWLClass) {
 				OWLClass c = (OWLClass) entity;
-				Set<OWLClass> subs = reasoner.getSubClasses(c, true)
-						.getFlattened();
+				Set<OWLClass> subs = reasoner.getSubClasses(c, true).getFlattened();
 				for (OWLClass sub : subs) {
-					OWLSubClassOfAxiom subAxiom = df.getOWLSubClassOfAxiom(sub,
-							c);
+					OWLSubClassOfAxiom subAxiom = df.getOWLSubClassOfAxiom(sub, c);
 					if (moduleOntologyGenerated.containsAxiom(subAxiom)) {
 						removeAxiom(subAxiom);
 						;
-						for (OWLClass supr : reasoner.getSuperClasses(c, true)
-								.getFlattened()) {
-							if (moduleOntologyGenerated
-									.containsClassInSignature(supr.getIRI())) {
+						for (OWLClass supr : reasoner.getSuperClasses(c, true).getFlattened()) {
+							if (moduleOntologyGenerated.containsClassInSignature(supr.getIRI())) {
 								addAxiom(df.getOWLSubClassOfAxiom(sub, supr));
 							}
 						}
@@ -168,15 +156,12 @@ public class BuildModule {
 	}
 
 	public void removeExcludeSubs() {
-		Set<OWLEntity> entities = ModuleUtil.getExcludeSubsEntities(
-				moduleOntologyAnnotation, true);
+		Set<OWLEntity> entities = ModuleUtil.getExcludeSubsEntities(moduleOntologyAnnotation, true);
 		// System.out.println("Excluding class: " + entities);
 		Set<OWLEntity> entityiesClosure = new HashSet<OWLEntity>();
 		for (OWLEntity entity : entities) {
-			reporter.addLine("Remove subs: " + entity.getEntityType() + " - "
-					+ entity);
-			entityiesClosure.addAll(ISFUtil.getSubsClosure(entity, isfOntology,
-					reasoner));
+			reporter.addLine("Remove subs: " + entity.getEntityType() + " - " + entity);
+			entityiesClosure.addAll(ISFUtil.getSubs(entity, true, reasoner));
 		}
 		// System.out.println("Excluding class closure: " + entityiesClosure);
 		for (OWLEntity entity : entityiesClosure) {
@@ -188,34 +173,31 @@ public class BuildModule {
 
 	public void mergeModuleInclude() {
 		// we have to do this manually but first exclude
-		//addAxioms(moduleOntologyInclude.getAxioms());
+		// addAxioms(moduleOntologyInclude.getAxioms());
 		Set<OWLAxiom> axioms = moduleOntologyInclude.getAxioms();
 		axioms.removeAll(moduleOntologyExclude.getAxioms());
 		isfMan.addAxioms(moduleOntologyGenerated, axioms);
-		
+
 		// add any ontology annotations from the annotation ontology
 		for (OWLAnnotation a : moduleOntologyAnnotation.getAnnotations()) {
-			AddOntologyAnnotation oa = new AddOntologyAnnotation(
-					moduleOntologyGenerated, a);
+			AddOntologyAnnotation oa = new AddOntologyAnnotation(moduleOntologyGenerated, a);
 			isfMan.applyChange(oa);
 		}
 	}
 
 	public void addClosureToBfo() {
 		for (OWLEntity entity : moduleOntologyGenerated.getSignature()) {
-			Set<OWLEntity> supers = ISFUtil.getSupersClosure(entity,
-					isfOntology, reasoner);
+			Set<OWLEntity> supers = ISFUtil.getSupers(entity, true, reasoner);
 			for (final OWLEntity supr : supers) {
 				if (!supr.getIRI().toString().contains("BFO_")) {
-					Set<OWLAxiom> axioms = ISFUtil.getDefiningAxioms(supr,
-							isfOntology, true);
+					Set<OWLAxiom> axioms = ISFUtil.getDefiningAxioms(supr, isfOntology, true);
 					for (OWLAxiom axiom : axioms) {
 						axiom.accept(new OWLAxiomVisitorAdapter() {
 							@Override
 							public void visit(OWLSubClassOfAxiom axiom) {
 								if (axiom.getSubClass() instanceof OWLClass
-										&& axiom.getSubClass().asOWLClass()
-												.getIRI().equals(supr.getIRI())) {
+										&& axiom.getSubClass().asOWLClass().getIRI()
+												.equals(supr.getIRI())) {
 
 									if (axiom.getSuperClass() instanceof OWLClass) {
 										addAxiom(axiom);
@@ -244,8 +226,8 @@ public class BuildModule {
 				OWLEntity entity = i.next();
 				i.remove();
 				annotatedEntities.add(entity);
-				Set<OWLAnnotationAssertionAxiom> axioms = ISFUtil
-						.getAnnotationAxioms(isfOntology, true, entity.getIRI());
+				Set<OWLAnnotationAssertionAxiom> axioms = ISFUtil.getSubjectAnnotationAxioms(
+						isfOntology, true, entity.getIRI());
 				addAxioms(axioms);
 				for (OWLAnnotationAssertionAxiom a : axioms) {
 					Set<OWLEntity> signature = a.getSignature();
@@ -275,16 +257,15 @@ public class BuildModule {
 	private void addAxiom(OWLAxiom axiom) {
 		if (axiom instanceof OWLDeclarationAxiom) {
 			OWLDeclarationAxiom da = (OWLDeclarationAxiom) axiom;
-			if (da.getEntity().getIRI()
-					.equals(OWLRDFVocabulary.OWL_NOTHING.getIRI())) {
+			if (da.getEntity().getIRI().equals(OWLRDFVocabulary.OWL_NOTHING.getIRI())) {
 				return;
 			}
 		}
 		if (!moduleOntologyExclude.containsAxiom(axiom)
-				// && !moduleOntologyInclude.containsAxiom(axiom) // TODO: check
-				// if commenting this out will cause problems. It was preventing the includes.
-				&& !removedAxioms.contains(axiom)
-				&& !moduleOntologyGenerated.containsAxiom(axiom)) {
+		// && !moduleOntologyInclude.containsAxiom(axiom) // TODO: check
+		// if commenting this out will cause problems. It was preventing the
+		// includes.
+				&& !removedAxioms.contains(axiom) && !moduleOntologyGenerated.containsAxiom(axiom)) {
 			// System.out.println("\t" + axiom.toString());
 			isfMan.addAxiom(moduleOntologyGenerated, axiom);
 		}
@@ -319,14 +300,12 @@ public class BuildModule {
 		if (!isReleaseRun) {
 			File file = new File(moduleDirectory, moduleName + "-module.owl");
 			System.out.println("Saving to: " + file.getAbsolutePath());
-			isfMan.saveOntology(moduleOntologyGenerated, new FileOutputStream(
-					file));
+			isfMan.saveOntology(moduleOntologyGenerated, new FileOutputStream(file));
 		}
 
 	}
 
-	public void setIsfOntologyAndMan(OWLOntology ontology,
-			OWLOntologyManager man) {
+	public void setIsfOntologyAndMan(OWLOntology ontology, OWLOntologyManager man) {
 		isfMan = man;
 		isfOntology = ontology;
 	}
@@ -356,13 +335,13 @@ public class BuildModule {
 		moduleOntologyAnnotation = getLoadCreateOntology(moduleIri);
 
 		// load module include ontology
-		IRI moduleIncludeIri = IRI.create(ISFUtil.ISF_ONTOLOGY_IRI_PREFIX
-				+ moduleName + "-module-include.owl");
+		IRI moduleIncludeIri = IRI.create(ISFUtil.ISF_ONTOLOGY_IRI_PREFIX + moduleName
+				+ "-module-include.owl");
 		moduleOntologyInclude = getLoadCreateOntology(moduleIncludeIri);
 
 		// load module exclude ontology
-		IRI moduleExcludeIri = IRI.create(ISFUtil.ISF_ONTOLOGY_IRI_PREFIX
-				+ moduleName + "-module-exclude.owl");
+		IRI moduleExcludeIri = IRI.create(ISFUtil.ISF_ONTOLOGY_IRI_PREFIX + moduleName
+				+ "-module-exclude.owl");
 		moduleOntologyExclude = getLoadCreateOntology(moduleExcludeIri);
 
 		// add the exclude file import
@@ -375,31 +354,28 @@ public class BuildModule {
 		}
 
 		// add the include file import
-		ai = new AddImport(moduleOntologyAnnotation,
-				df.getOWLImportsDeclaration(moduleIncludeIri));
+		ai = new AddImport(moduleOntologyAnnotation, df.getOWLImportsDeclaration(moduleIncludeIri));
 		changes = isfMan.applyChange(ai);
 		if (changes.size() > 0) {
 			changedOntologies.add(moduleOntologyAnnotation);
 		}
 
 		// add the isf import
-		ai = new AddImport(moduleOntologyAnnotation,
-				df.getOWLImportsDeclaration(ISFUtil.ISF_IRI));
+		ai = new AddImport(moduleOntologyAnnotation, df.getOWLImportsDeclaration(ISFUtil.ISF_IRI));
 		changes = isfMan.applyChange(ai);
 		if (changes.size() > 0) {
 			changedOntologies.add(moduleOntologyAnnotation);
 		}
 
 		// always create a new one and save it to the local folder
-		IRI moduleGeneratedIri = IRI.create(ISFUtil.ISF_ONTOLOGY_IRI_PREFIX
-				+ moduleName + "-module.owl");
+		IRI moduleGeneratedIri = IRI.create(ISFUtil.ISF_ONTOLOGY_IRI_PREFIX + moduleName
+				+ "-module.owl");
 		moduleOntologyGenerated = createOntology(moduleGeneratedIri);
 		changedOntologies.remove(moduleOntologyGenerated);
 
 	}
 
-	private OWLOntology getLoadCreateOntology(IRI iri)
-			throws OWLOntologyCreationException {
+	private OWLOntology getLoadCreateOntology(IRI iri) throws OWLOntologyCreationException {
 		OWLOntology ontology = isfMan.getOntology(iri);
 		if (ontology == null) {
 			try {
@@ -415,8 +391,7 @@ public class BuildModule {
 		return ontology;
 	}
 
-	private OWLOntology createOntology(IRI iri)
-			throws OWLOntologyCreationException {
+	private OWLOntology createOntology(IRI iri) throws OWLOntologyCreationException {
 		OWLOntology ontology = isfMan.createOntology(iri);
 
 		isfMan.setOntologyDocumentIRI(ontology,
@@ -431,20 +406,18 @@ public class BuildModule {
 		return new File(dir, fileName);
 	}
 
-	public static void main(String[] args) throws Exception,
-			OWLOntologyStorageException {
+	public static void main(String[] args) throws Exception, OWLOntologyStorageException {
 
 		BuildModule module = new BuildModule();
 		module.setModuleName(args[0]);
-		module.setModuleDirectory(new File(ISFUtil.getSvnRootDir(),
-				"trunk/src/ontology/module"));
+		module.setModuleDirectory(new File(ISFUtil.getTrunkDirectory(), "src/ontology/module"));
 
 		OWLOntologyManager man = OWLManager.createOWLOntologyManager();
 		ISFUtil.setupAndLoadIsfOntology(man);
 		module.setIsfOntologyAndMan(man.getOntology(ISFUtil.ISF_IRI), man);
 
-		Reporter reporter = new Reporter(new File(ISFUtil.getSvnRootDir(),
-				"trunk/src/ontology/module/" + args[0] + "-module-report.txt"));
+		Reporter reporter = new Reporter(new File(ISFUtil.getTrunkDirectory(),
+				"src/ontology/module/" + args[0] + "-module-report.txt"));
 		module.setReporter(reporter);
 
 		module.run();

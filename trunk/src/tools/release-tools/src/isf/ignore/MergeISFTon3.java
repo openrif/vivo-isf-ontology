@@ -15,15 +15,15 @@ public class MergeISFTon3 {
 		OWLOntologyManager man = OWLManager.createOWLOntologyManager();
 		ISFUtil.setupAndLoadIsfOntology(man);
 		OWLOntology isfOntology = man.getOntology(ISFUtil.ISF_IRI);
-		
+
 		OWLOntology merged = man.createOntology();
-		for(OWLOntology o : isfOntology.getImportsClosure()){
+		for (OWLOntology o : isfOntology.getImportsClosure()) {
 			man.addAxioms(merged, o.getAxioms());
 		}
-		
+
 		TurtleOntologyFormat tf = new TurtleOntologyFormat();
 		tf.setAddMissingTypes(false);
-		
+
 		man.saveOntology(merged, tf, new FileOutputStream("turtle.n3"));
 	}
 

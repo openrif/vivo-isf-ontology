@@ -1,5 +1,8 @@
 package isf.ignore;
 
+import isf.ISFUtil;
+import isf.ISFUtil.LabelInfo;
+
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -14,9 +17,6 @@ import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
 
-import isf.ISFUtil;
-import isf.ISFUtil.LabelInfo;
-
 public class FindEntitiesWithSameLabel {
 
 	OWLOntologyManager man = OWLManager.createOWLOntologyManager();
@@ -30,8 +30,7 @@ public class FindEntitiesWithSameLabel {
 		for (OWLEntity entity : isfOntology.getSignature(true)) {
 			for (LabelInfo info : ISFUtil.getLabels(entity.getIRI(),
 					isfOntology.getImportsClosure())) {
-				String key = ((OWLLiteral) info.axiom.getValue()).getLiteral()
-						.toLowerCase();
+				String key = ((OWLLiteral) info.axiom.getValue()).getLiteral().toLowerCase();
 				Set<LabelInfo> value = labelMap.get(key);
 				if (value == null) {
 					value = new HashSet<LabelInfo>();
@@ -60,11 +59,9 @@ public class FindEntitiesWithSameLabel {
 				LabelInfo info = i.next();
 				i.remove();
 				for (LabelInfo otherInfo : infos) {
-					if (!otherInfo.axiom.getSubject().equals(
-							info.axiom.getSubject())) {
-						System.out.println("\""+entry.getKey() + "\" is used by "
-								+ info.axiom.getSubject() + " AND "
-								+ otherInfo.axiom.getSubject());
+					if (!otherInfo.axiom.getSubject().equals(info.axiom.getSubject())) {
+						System.out.println("\"" + entry.getKey() + "\" is used by "
+								+ info.axiom.getSubject() + " AND " + otherInfo.axiom.getSubject());
 					}
 				}
 

@@ -1,4 +1,4 @@
-package isf.eaglei.migration;
+package isf.internal.eaglei.migration;
 
 import isf.ISFUtil;
 
@@ -42,8 +42,8 @@ public class SplitEroToInNotInIsf {
 	static String isfTrunkPath = "/srv/pass-through/git/googlecode/isf-svn/trunk";
 	static String eroTrunkPath = "/srv/pass-through/git/googlecode/eaglei-clean-trunk";
 
-	private void run() throws OWLOntologyCreationException,
-			OWLOntologyStorageException, FileNotFoundException {
+	private void run() throws OWLOntologyCreationException, OWLOntologyStorageException,
+			FileNotFoundException {
 
 		// We need an ontology manager to work with ontology objects. We can
 		// work with one manager if we are sure that there is no problematic
@@ -58,23 +58,21 @@ public class SplitEroToInNotInIsf {
 		// checkout so we override this behavior with a file based mapper that
 		// looks into all subdirectories to find ontologies.
 
-		AutoIRIMapper isfMapper = new AutoIRIMapper(new File(isfTrunkPath,
-				"src/ontology"), true);
+		AutoIRIMapper isfMapper = new AutoIRIMapper(new File(isfTrunkPath, "src/ontology"), true);
 		isfManager.clearIRIMappers();
 		isfManager.addIRIMapper(isfMapper);
 
-		AutoIRIMapper eroMapper = new AutoIRIMapper(new File(eroTrunkPath,
-				"src/ontology"), true);
+		AutoIRIMapper eroMapper = new AutoIRIMapper(new File(eroTrunkPath, "src/ontology"), true);
 		eroManager.clearIRIMappers();
 		eroManager.addIRIMapper(eroMapper);
 
 		// Load the ISF/ERO ontologies
 
 		OWLOntology isfOntology = isfManager.loadOntology(ISFUtil.ISF_IRI);
-//		OWLOntology eroOntology = eroManager.loadOntology(IRI
-//				.create("http://purl.obolibrary.org/obo/ero.owl"));
-		 OWLOntology eroOntology =
-		 eroManager.loadOntology(IRI.create("http://purl.obolibrary.org/obo/ero.owl"));
+		// OWLOntology eroOntology = eroManager.loadOntology(IRI
+		// .create("http://purl.obolibrary.org/obo/ero.owl"));
+		OWLOntology eroOntology = eroManager.loadOntology(IRI
+				.create("http://purl.obolibrary.org/obo/ero.owl"));
 
 		// we need to collect all axioms from all imports so we have a simple
 		// helper method that does this
@@ -98,21 +96,19 @@ public class SplitEroToInNotInIsf {
 		Set<OWLAxiom> inIsfAxioms = eroAxioms;
 
 		// we now create two ontologies to hold the split axioms and we need to
-		// use a manager to do that, either managers will do 
-		
+		// use a manager to do that, either managers will do
+
 		RDFXMLOntologyFormat of = new RDFXMLOntologyFormat();
 		of.setAddMissingTypes(true);
 
-		OWLOntology notInIsfOntology = isfManager.createOntology(IRI.create("http://temp/not-in-isf.owl"));
+		OWLOntology notInIsfOntology = isfManager.createOntology(IRI
+				.create("http://temp/not-in-isf.owl"));
 		isfManager.addAxioms(notInIsfOntology, notInIsfAxioms);
-		isfManager.saveOntology(notInIsfOntology, of, new FileOutputStream(
-				"notInIsfAxioms.owl"));
+		isfManager.saveOntology(notInIsfOntology, of, new FileOutputStream("notInIsfAxioms.owl"));
 
-	
 		OWLOntology inIsfOntology = isfManager.createOntology(IRI.create("http://temp/in-isf.owl"));
 		isfManager.addAxioms(inIsfOntology, inIsfAxioms);
-		isfManager.saveOntology(inIsfOntology, of, new FileOutputStream(
-				"inIsfAxioms.owl"));
+		isfManager.saveOntology(inIsfOntology, of, new FileOutputStream("inIsfAxioms.owl"));
 
 	}
 
