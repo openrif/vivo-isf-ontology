@@ -410,5 +410,15 @@ public class ISFUtil {
 					+ axiom.getValue().toString();
 		}
 	}
+	
+	public static Set<OWLAxiom> getAxioms(OWLOntology ontology , boolean recursive){
+		Set<OWLAxiom> axioms = new HashSet<OWLAxiom>(ontology.getAxioms());
+		if(recursive){
+			for(OWLOntology o : ontology.getImports()){
+				axioms.addAll(o.getAxioms());
+			}
+		}
+		return axioms;
+	}
 
 }

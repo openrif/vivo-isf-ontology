@@ -12,6 +12,7 @@ import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.io.OntologyIRIMappingNotFoundException;
 import org.semanticweb.owlapi.model.AddImport;
 import org.semanticweb.owlapi.model.IRI;
+import org.semanticweb.owlapi.model.OWLAxiom;
 import org.semanticweb.owlapi.model.OWLException;
 import org.semanticweb.owlapi.model.OWLImportsDeclaration;
 import org.semanticweb.owlapi.model.OWLOntology;
@@ -30,6 +31,8 @@ public class SimpleModule extends AbstractModule {
 	private OWLOntology includeOntology;
 
 	private OWLOntology excludeOntology;
+
+	private OWLOntology legacyOntology;
 
 	private OWLOntology ontology;
 
@@ -91,6 +94,14 @@ public class SimpleModule extends AbstractModule {
 
 	private final Set<OWLOntology> changedOntologies = new HashSet<OWLOntology>();
 
+	private IRI legacyIri;
+
+	private IRI legacyRemovedIri;
+
+	private OWLOntology legacyRemovedOntology;
+
+	private HashSet<OWLOntology> legacyOntologies;
+
 	private void init() {
 		this.changeListener = new OWLOntologyChangeListener() {
 
@@ -115,6 +126,10 @@ public class SimpleModule extends AbstractModule {
 				+ Util.MODULE_INCLUDE_IRI_SUFFIX);
 		excludeIri = IRI.create(ISFUtil.ISF_ONTOLOGY_IRI_PREFIX + getName()
 				+ Util.MODULE_EXCLUDE_IRI_SUFFIX);
+		legacyIri = IRI.create(ISFUtil.ISF_ONTOLOGY_IRI_PREFIX + getName()
+				+ Util.MODULE_LEGACY_IRI_SUFFIX);
+		legacyRemovedIri = IRI.create(ISFUtil.ISF_ONTOLOGY_IRI_PREFIX + getName()
+				+ Util.MODULE_LEGACY_REMOVED_IRI_SUFFIX);
 
 		// annotation
 		try {
@@ -199,19 +214,77 @@ public class SimpleModule extends AbstractModule {
 			}
 		}
 
-		ontology = createOntology(moduleIri, getOutputDirectory());
-//		try {
-//			getManager().saveOntology(ontology);
-//		} catch (OWLOntologyStorageException e) {
-//			throw new RuntimeException("Failed to save module ontology.", e);
-//		}
+		// legacy and the saving file, if they exists
+		try {
+			legacyOntology = getManager().loadOntology(legacyIri);
+			legacyOntologies = new HashSet<OWLOntology>(legacyOntology.getImportsClosure());
 
+			try {
+				legacyRemovedOntology = getManager().loadOntology(legacyRemovedIri);
+			} catch (OWLOntologyCreationException e1) {
+				if (e1.getCause() instanceof FileNotFoundException
+						|| e1 instanceof OntologyIRIMappingNotFoundException) {
+					System.err
+							.println("Warning: SimpleModule didn't find the module legacy-removed file for "
+									+ getName() + ". Creating a new one.");
+					legacyRemovedOntology = createOntology(legacyRemovedIri, getDirectory());
+					try {
+						getManager().saveOntology(legacyRemovedOntology);
+					} catch (OWLOntologyStorageException e) {
+						throw new RuntimeException(
+								"Failed to save initial module exclude ontology.", e);
+					}
+				}
+
+				else {
+					throw new RuntimeException(
+							"Failed to create initial module legacy-removed  ontology", e1);
+				}
+			}
+
+		} catch (OWLOntologyCreationException e1) {
+			System.err.println("Could not load lagacy ontology for " + legacyIri);
+		}
+
+		ontology = createOntology(moduleIri, getOutputDirectory());
 	}
 
 	@Override
 	public void generateModule() throws Exception {
 		builder.run();
 
+	}
+
+	@Override
+	public void addLegacyOntologies() {
+		if (legacyOntology != null) {
+			getManager().addAxioms(ontology, ISFUtil.getAxioms(legacyOntology, true));
+		}
+	}
+
+	@Override
+	public void addLegacyOntologiesTransitive() {
+		for (Module module : getImports()) {
+			module.addLegacyOntologies();
+		}
+		addLegacyOntologies();
+	}
+
+	@Override
+	public void cleanLegacyOntologies() {
+		if (legacyOntology != null) {
+			for (OWLOntology o : legacyOntology.getImportsClosure()) {
+				getManager().removeAxioms(o, ontology.getAxioms());
+			}
+		}
+	}
+
+	@Override
+	public void cleanLegacyOntologiesTransitive() {
+		for (Module module : getImports()) {
+			module.cleanLegacyOntologies();
+		}
+		cleanLegacyOntologies();
 	}
 
 	@Override
@@ -274,6 +347,23 @@ public class SimpleModule extends AbstractModule {
 			module.saveModuleDefinitionFilesTransitive();
 		}
 
+	}
+
+	@Override
+	public void saveLegacyOntologies() throws OWLOntologyStorageException {
+		for (OWLOntology o : legacyOntologies) {
+			if (changedOntologies.remove(o)) {
+				getManager().saveOntology(o);
+			}
+		}
+	}
+
+	@Override
+	public void saveLegacyOntologiesTransitive() throws OWLOntologyStorageException {
+		for (Module module : getImports()) {
+			saveLegacyOntologies();
+		}
+		saveLegacyOntologies();
 	}
 
 	@Override

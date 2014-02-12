@@ -1,7 +1,10 @@
-package isf.module;
+package isf.module.release;
 
 import static isf.module.ModuleNames.*;
 import isf.ISFUtil;
+import isf.module.CompositeModule;
+import isf.module.Module;
+import isf.module.SimpleModule;
 
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.OWLOntology;
@@ -94,7 +97,7 @@ public class EagleiRelease extends CompositeModule {
 				isfOntology, null, getOutputDirectory().getAbsolutePath());
 		eagleiExtendedUberonApp.setReasoner(reasoner);
 
-		// the core app (includes the core ontology)
+		// the core app (which includes the core ontology)
 		eagleiExtendedApp.addImport(eagleiApp);
 		// the extended ontology
 		eagleiExtendedApp.addImport(eagleiExtended);
@@ -107,6 +110,7 @@ public class EagleiRelease extends CompositeModule {
 
 		topModule = eagleiExtendedApp;
 		topModule.generateModuleTransitive();
+		topModule.addLegacyOntologiesTransitive();
 
 	}
 
@@ -119,7 +123,6 @@ public class EagleiRelease extends CompositeModule {
 	@Override
 	public void saveGeneratedModule() throws OWLOntologyStorageException {
 		topModule.saveGeneratedModuleTransitive();
-
 	}
 
 	public static void main(String[] args) throws Exception {

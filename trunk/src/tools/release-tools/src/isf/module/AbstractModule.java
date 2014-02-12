@@ -141,6 +141,40 @@ public abstract class AbstractModule implements Module {
 		throw new UnsupportedOperationException();
 	}
 
+	@Override
+	public void addLegacyOntologies() {
+		throw new UnsupportedOperationException();
+	}
+
+	@Override
+	public void cleanLegacyOntologies() {
+		throw new UnsupportedOperationException();
+	}
+
+	@Override
+	public void addLegacyOntologiesTransitive() {
+		throw new UnsupportedOperationException();
+
+	}
+
+	@Override
+	public void cleanLegacyOntologiesTransitive() {
+		throw new UnsupportedOperationException();
+
+	}
+
+	@Override
+	public void saveLegacyOntologies() throws OWLOntologyStorageException {
+		throw new UnsupportedOperationException();
+
+	}
+
+	@Override
+	public void saveLegacyOntologiesTransitive() throws OWLOntologyStorageException {
+		throw new UnsupportedOperationException();
+
+	}
+
 	public abstract void close();
 
 	public File getDirectory() {
