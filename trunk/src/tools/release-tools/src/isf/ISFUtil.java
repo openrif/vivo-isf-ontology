@@ -31,6 +31,8 @@ import org.semanticweb.owlapi.reasoner.ReasonerInternalException;
 import org.semanticweb.owlapi.util.AutoIRIMapper;
 import org.semanticweb.owlapi.vocab.OWLRDFVocabulary;
 
+import uk.ac.manchester.cs.factplusplus.owlapiv3.FaCTPlusPlusReasonerFactory;
+
 /**
  * @author Shahim Essaid
  * 
@@ -59,6 +61,10 @@ public class ISFUtil {
 		setupManagerMapper(man);
 		man.loadOntology(ISF_IRI);
 		return man.getOntology(ISF_IRI);
+	}
+
+	public static OWLReasoner getDefaultReasoner(OWLOntology ontology) {
+		return new FaCTPlusPlusReasonerFactory().createReasoner(ontology);
 	}
 
 	public static OWLOntology setupAndLoadIsfFullOntology(OWLOntologyManager man)

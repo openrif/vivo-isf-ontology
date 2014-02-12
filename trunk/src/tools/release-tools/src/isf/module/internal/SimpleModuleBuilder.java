@@ -36,16 +36,16 @@ import org.semanticweb.owlapi.vocab.OWLRDFVocabulary;
 import uk.ac.manchester.cs.factplusplus.owlapiv3.FaCTPlusPlusReasonerFactory;
 
 public class SimpleModuleBuilder {
-	private OWLDataFactory df;
 	// private OWLReasoner reasoner;
 	private SimpleModule module;
+	private OWLDataFactory df;
 
 	public SimpleModuleBuilder(SimpleModule simeplModule) {
 		this.module = simeplModule;
+		df = module.getDataFactory();
 	}
 
 	public void run() throws Exception {
-		inti();
 
 		module.builderPhase("Generating module: " + module.getName());
 
@@ -86,7 +86,7 @@ public class SimpleModuleBuilder {
 
 		for (OWLEntity e : entities) {
 			module.builderMessage("Add: " + e.getEntityType() + " - " + e);
-			addAxiom(df.getOWLDeclarationAxiom(e));
+			addAxiom(module.getDataFactory().getOWLDeclarationAxiom(e));
 			addAxioms(ISFUtil.getDefiningAxioms(e, module.getSourceOntology(), true));
 		}
 
@@ -130,12 +130,12 @@ public class SimpleModuleBuilder {
 				Set<OWLClass> subs = module.getReasoner().getSubClasses(c, true).getFlattened();
 				for (OWLClass sub : subs) {
 					OWLSubClassOfAxiom subAxiom = df.getOWLSubClassOfAxiom(sub, c);
-					if (module.getModuleOntology().containsAxiom(subAxiom)) {
+					if (module.getOntology().containsAxiom(subAxiom)) {
 						removeAxiom(subAxiom);
 						;
 						for (OWLClass supr : module.getReasoner().getSuperClasses(c, true)
 								.getFlattened()) {
-							if (module.getModuleOntology().containsClassInSignature(supr.getIRI())) {
+							if (module.getOntology().containsClassInSignature(supr.getIRI())) {
 								addAxiom(df.getOWLSubClassOfAxiom(sub, supr));
 							}
 						}
@@ -168,17 +168,17 @@ public class SimpleModuleBuilder {
 		// addAxioms(moduleOntologyInclude.getAxioms());
 		Set<OWLAxiom> axioms = module.getIncludeOntology().getAxioms();
 		axioms.removeAll(module.getExcludeOntology().getAxioms());
-		module.getModuleManager().addAxioms(module.getModuleOntology(), axioms);
+		module.getManager().addAxioms(module.getOntology(), axioms);
 
 		// add any ontology annotations from the annotation ontology
 		for (OWLAnnotation a : module.getAnnotationOntology().getAnnotations()) {
-			AddOntologyAnnotation oa = new AddOntologyAnnotation(module.getModuleOntology(), a);
-			module.getModuleManager().applyChange(oa);
+			AddOntologyAnnotation oa = new AddOntologyAnnotation(module.getOntology(), a);
+			module.getManager().applyChange(oa);
 		}
 	}
 
 	public void addClosureToBfo() {
-		for (OWLEntity entity : module.getModuleOntology().getSignature()) {
+		for (OWLEntity entity : module.getOntology().getSignature()) {
 			Set<OWLEntity> supers = ISFUtil.getSupers(entity, true, module.getReasoner());
 			for (final OWLEntity supr : supers) {
 				if (!supr.getIRI().toString().contains("BFO_")) {
@@ -208,7 +208,7 @@ public class SimpleModuleBuilder {
 
 	public void addAnnotations() {
 		Set<OWLEntity> entitiesToAnnotate = new HashSet<OWLEntity>();
-		entitiesToAnnotate.addAll(module.getModuleOntology().getSignature());
+		entitiesToAnnotate.addAll(module.getOntology().getSignature());
 
 		Set<OWLEntity> annotatedEntities = new HashSet<OWLEntity>();
 
@@ -235,7 +235,7 @@ public class SimpleModuleBuilder {
 	}
 
 	public void typeAllEntities() {
-		for (OWLEntity e : module.getModuleOntology().getSignature()) {
+		for (OWLEntity e : module.getOntology().getSignature()) {
 			addAxiom(df.getOWLDeclarationAxiom(e));
 		}
 
@@ -255,14 +255,13 @@ public class SimpleModuleBuilder {
 			}
 		}
 		if (!module.getExcludeOntology().containsAxiom(axiom)
-				// && !moduleOntologyInclude.containsAxiom(axiom) // TODO: check
-				// if commenting this out will cause problems. It was preventing
-				// the
-				// includes.
-				&& !removedAxioms.contains(axiom)
-				&& !module.getModuleOntology().containsAxiom(axiom)) {
+		// && !moduleOntologyInclude.containsAxiom(axiom) // TODO: check
+		// if commenting this out will cause problems. It was preventing
+		// the
+		// includes.
+				&& !removedAxioms.contains(axiom) && !module.getOntology().containsAxiom(axiom)) {
 			// System.out.println("\t" + axiom.toString());
-			module.getModuleManager().addAxiom(module.getModuleOntology(), axiom);
+			module.getManager().addAxiom(module.getOntology(), axiom);
 		}
 	}
 
@@ -275,59 +274,7 @@ public class SimpleModuleBuilder {
 	Set<OWLAxiom> removedAxioms = new HashSet<OWLAxiom>();
 
 	private void removeAxiom(OWLAxiom axiom) {
-		module.getModuleManager().removeAxiom(module.getModuleOntology(), axiom);
+		module.getManager().removeAxiom(module.getOntology(), axiom);
 		removedAxioms.add(axiom);
 	}
-
-	private void inti() throws OWLOntologyCreationException {
-		df = module.getModuleManager().getOWLDataFactory();
-
-		// load module annotations ontology
-
-		if (module.getAnnotationOntology() == null) {
-			module.setAnnotationOntology(createOntology(module.getAnnotationIri(),
-					module.getDirectory()));
-			// add the exclude file import
-			AddImport ai = new AddImport(module.getAnnotationOntology(),
-					df.getOWLImportsDeclaration(module.getExcludeIri()));
-			module.getModuleManager().applyChange(ai);
-			// add the include file import
-			ai = new AddImport(module.getAnnotationOntology(), df.getOWLImportsDeclaration(module
-					.getIncludeIri()));
-			module.getModuleManager().applyChange(ai);
-
-			// add the isf import
-			ai = new AddImport(module.getAnnotationOntology(),
-					df.getOWLImportsDeclaration(ISFUtil.ISF_IRI));
-			module.getModuleManager().applyChange(ai);
-
-		}
-		if (module.getIncludeOntology() == null) {
-			module.setIncludeOntology(createOntology(module.getIncludeIri(),
-					module.getDirectory()));
-		}
-		if (module.getExcludeOntology() == null) {
-			module.setExcludeOntology(createOntology(module.getExcludeIri(),
-					module.getDirectory()));
-		}
-
-		// always create a new one and save it to the local folder
-		module.setModuleOntology(createOntology(module.getModuleIri(), module.getOutputDirectory()));
-
-	}
-
-	private OWLOntology createOntology(IRI iri, File directory) throws OWLOntologyCreationException {
-		OWLOntology ontology = module.getModuleManager().createOntology(iri);
-
-		module.getModuleManager().setOntologyDocumentIRI(ontology,
-				IRI.create(getDocumentFile(directory, iri).toURI()));
-		return ontology;
-	}
-
-	private File getDocumentFile(File dir, IRI iri) {
-		int i = iri.toString().lastIndexOf('/');
-		String fileName = iri.toString().substring(i + 1);
-		return new File(dir, fileName);
-	}
-
 }
