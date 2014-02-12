@@ -1,0 +1,367 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/ero/dev/vivo-imports.owl#"
+     xml:base="http://purl.obolibrary.org/obo/ero/dev/vivo-imports.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:bibo="http://purl.org/ontology/bibo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:core="http://vivoweb.org/ontology/core#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ero/dev/vivo-imports.owl">
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">${ero.ontology.version}</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://xmlns.com/foaf/0.1/Organization -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+    
+
+
+	<!-- http://vivoweb.org/ontology/core#AcademicDepartment -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#AcademicDepartment">
+        <rdfs:label xml:lang="en">Academic Department</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Department"/>
+        <obo:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#Association -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Association">
+        <rdfs:label xml:lang="en">Association</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A formal organization of people or groups of people around a subject or practice.</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Special Libraries Association; Association for Computing Machinery(ACM); American Medical Informatics Association(AMIA)</obo:IAO_0000112>
+        <obo:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
+    </owl:Class>
+    
+    
+    
+    <!-- http://vivoweb.org/ontology/core#Center -->
+    
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Center">
+    	<rdfs:label xml:lang="en-US">Center</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    	<obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A place where a particular activity or service is concentrated.</obo:IAO_0000115>
+    	<obo:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
+  	</owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#ClinicalOrganization -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#ClinicalOrganization">
+        <rdfs:label xml:lang="en-us">Clinical Organization</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any organization with a significant clinical function as a matter of course and not just through occasional clinical roles</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#College -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#College">
+        <rdfs:label xml:lang="en">College</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A primary academic unit within a University or a free-standing higher education organization without graduate degree programs</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">College of Arts &amp; Sciences; Ivy Tech Community College</obo:IAO_0000112>
+        <obo:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#Committee -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Committee">
+        <rdfs:label xml:lang="en">Committee</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Group"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A group of people organized for a specific purpose (e.g., a reporting or advisory role), often with a charge and for a specific duration</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Curriculum Steering Committee; PhD Advisory Committee</obo:IAO_0000112>
+        <obo:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#Company -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Company">
+        <rdfs:label xml:lang="en-us">Company</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A legally-recognized business organization</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#Consortium -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Consortium">
+        <rdfs:label xml:lang="en">Consortium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <obo:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
+    </owl:Class>
+    
+    
+    
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#CoreLaboratory">
+    	<rdfs:label xml:lang="en-US">Core Laboratory</rdfs:label>
+    	<rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#ServiceProvidingLaboratory"/>
+    	<obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A lab providing services such as training, protocols, or access to instruments or software</obo:IAO_0000115>
+  	</owl:Class>
+
+
+    <!-- http://vivoweb.org/ontology/core#Department -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Department">
+        <rdfs:label xml:lang="en">Department</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <obo:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#Division -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Division">
+        <rdfs:label xml:lang="en">Division</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <obo:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#ExtensionUnit -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#ExtensionUnit">
+        <rdfs:label xml:lang="en">Extension Unit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A unit devoted primarily to extension activities, whether for outreach or research</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#Foundation -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Foundation">
+        <rdfs:label xml:lang="en">Foundation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <obo:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#FundingOrganization -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#FundingOrganization">
+        <rdfs:label xml:lang="en">Funding Organization</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A defined class of organizations that fund Grants</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#GovernmentAgency -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#GovernmentAgency">
+        <rdfs:label xml:lang="en">Government Agency</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <obo:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#Hospital -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Hospital">
+        <rdfs:label xml:lang="en">Hospital</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <obo:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#Institute -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Institute">
+        <rdfs:label xml:lang="en">Institute</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An Institute normally has a research focus but may also fulfill instructional or outreach roles</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
+    </owl:Class>
+    
+    
+    
+    <!-- http://vivoweb.org/ontology/core#Laboratory -->
+
+  	<owl:Class rdf:about="http://vivoweb.org/ontology/core#Laboratory">
+    	<rdfs:label xml:lang="en-US">Laboratory</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organizational unit (as opposed to the physical facility) that performs research, provides services, or processes materials</obo:IAO_0000115>
+    	<rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    	<obo:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
+  	</owl:Class>
+  
+  
+  
+    <!-- http://vivoweb.org/ontology/core#Library -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Library">
+        <rdfs:label xml:lang="en">Library</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <obo:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#Museum -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Museum">
+        <rdfs:label xml:lang="en">Museum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <obo:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#PrivateCompany -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#PrivateCompany">
+        <rdfs:label xml:lang="en">Private Company</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Company"/>
+        <obo:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#Program -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Program">
+        <rdfs:label xml:lang="en-us">Program</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ongoing academic initiative not formalized with department or division status.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#Publisher -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Publisher">
+        <rdfs:label xml:lang="en">Publisher</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <obo:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#ResearchOrganization -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#ResearchOrganization">
+        <rdfs:label xml:lang="en-us">Research Organization</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any organization (likely also asserted as another class of Organization) with a primary, ongoing research function, not just through occasional roles</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#School -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#School">
+        <rdfs:label xml:lang="en">School</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <obo:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#ServiceProvidingLaboratory -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#ServiceProvidingLaboratory">
+        <rdfs:label xml:lang="en-us">Service Providing Lab</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Laboratory"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A laboratory that provides services</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#StudentOrganization -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#StudentOrganization">
+        <rdfs:label xml:lang="en-us">Student Organization</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A student organization is an organization, operated by students at a university, whose membership normally consists only of students.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#Team -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Team">
+        <rdfs:label xml:lang="en">Team</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Group"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An informal organization brought together for the purposes of a project or event</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#University -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#University">
+        <rdfs:label xml:lang="en">University</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <obo:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Patent -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Patent">
+        <rdfs:label xml:lang="en-us">Patent</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A document describing the exclusive right granted by a government to an inventor to manufacture, use, or sell an invention for a certain number of years.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.org/ontology/bibo/"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.1.0.1642) http://owlapi.sourceforge.net -->
+
