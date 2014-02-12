@@ -15,12 +15,17 @@ public abstract class AbstractModule implements Module {
 	private File directory;
 	private File outputDirectory;
 
-	public AbstractModule(String moduleName, String trunkPath, String outputDirectory) {
+	public AbstractModule(String moduleName, String moduleTrunkRelativePath, String trunkPath,
+			String outputDirectory) {
 		if (moduleName == null) {
 			throw new IllegalStateException("Module name cannot be null.");
 		}
 		this.name = moduleName;
-		this.directory = new File(ISFUtil.getModuleDirectory(), this.name);
+		if (moduleTrunkRelativePath != null) {
+			this.directory = new File(ISFUtil.getTrunkDirectory(), moduleTrunkRelativePath);
+		} else {
+			this.directory = new File(ISFUtil.getDefaultModuleDirectory(), this.name);
+		}
 		this.directory.mkdirs();
 
 		if (outputDirectory != null) {

@@ -341,7 +341,7 @@ public class ISFUtil {
 		return ISF_TRUNK_DIR;
 	}
 
-	public static File getModuleDirectory() {
+	public static File getDefaultModuleDirectory() {
 		return new File(getTrunkDirectory(), "src/ontology/module");
 	}
 

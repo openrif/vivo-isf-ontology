@@ -58,17 +58,23 @@ public class SimpleModule extends AbstractModule {
 
 	/**
 	 * @param moduleName
+	 * @param moduleTrunkRelativePath
+	 *            Can be null to use the default: src/ontology/module/moduleName
 	 * @param sourceOntology
 	 *            The source ontology for generating the module ontology. Any
 	 *            needed ontologies should either be already loaded, or
 	 *            accessible from the manager of this ontology (i.e. proper IRI
 	 *            mapping is already setup in the manager).
 	 * @param trunkPath
+	 *            can be null if the environment variable ISF_TRUNK is set or if
+	 *            the system property isf.trunk is set.
 	 * @param outputPath
+	 *            Can be null to use the default output of
+	 *            trunk/../generated/module/moduleName
 	 */
-	public SimpleModule(String moduleName, OWLOntology sourceOntology, String trunkPath,
-			String outputPath) {
-		super(moduleName, trunkPath, outputPath);
+	public SimpleModule(String moduleName, String moduleTrunkRelativePath,
+			OWLOntology sourceOntology, String trunkPath, String outputPath) {
+		super(moduleName, moduleTrunkRelativePath, trunkPath, outputPath);
 
 		this.sourceOntology = sourceOntology;
 		init();
@@ -96,7 +102,9 @@ public class SimpleModule extends AbstractModule {
 						.println("Warning: SimpleModule didn't find the module annotation file for "
 								+ getName());
 			}
-//			throw new IllegalStateException("SimpleModule: failed to load annotation ontology.", e1);
+			// throw new
+			// IllegalStateException("SimpleModule: failed to load annotation ontology.",
+			// e1);
 		}
 
 		// include
@@ -107,7 +115,9 @@ public class SimpleModule extends AbstractModule {
 				System.out.println("Warning: SimpleModule didn't find the module include file for "
 						+ getName());
 			}
-//			throw new IllegalStateException("SimpleModule: failed to load include ontology.", e1);
+			// throw new
+			// IllegalStateException("SimpleModule: failed to load include ontology.",
+			// e1);
 		}
 
 		// exclude
@@ -118,7 +128,9 @@ public class SimpleModule extends AbstractModule {
 				System.out.println("Warning: SimpleModule didn't find the module exclude file for "
 						+ getName());
 			}
-//			throw new IllegalStateException("SimpleModule: failed to load exclude ontology.", e1);
+			// throw new
+			// IllegalStateException("SimpleModule: failed to load exclude ontology.",
+			// e1);
 		}
 
 	}
@@ -134,7 +146,7 @@ public class SimpleModule extends AbstractModule {
 		getModuleManager().saveOntology(moduleOntology);
 
 	}
-	
+
 	@Override
 	public void saveModuleDefinitionFiles() throws OWLOntologyStorageException {
 		getModuleManager().saveOntology(annotationOntology);
@@ -208,7 +220,7 @@ public class SimpleModule extends AbstractModule {
 	public static void main(String[] args) throws Exception {
 		String moduleName = args[0];
 		String trunkPath = null;
-		if(args.length>1){
+		if (args.length > 1) {
 			trunkPath = args[1];
 		}
 		String outputPath = null;
