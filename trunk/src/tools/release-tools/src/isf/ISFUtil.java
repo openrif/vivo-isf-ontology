@@ -31,8 +31,6 @@ import org.semanticweb.owlapi.reasoner.ReasonerInternalException;
 import org.semanticweb.owlapi.util.AutoIRIMapper;
 import org.semanticweb.owlapi.vocab.OWLRDFVocabulary;
 
-import com.sun.xml.internal.txw2.IllegalSignatureException;
-
 /**
  * @author Shahim Essaid
  * 
@@ -338,19 +336,32 @@ public class ISFUtil {
 
 	public static File getTrunkDirectory() {
 		if (ISF_TRUNK_DIR == null) {
-			throw new IllegalSignatureException("ISF trunk directory is null");
+			throw new IllegalStateException("ISF trunk directory is null");
 		}
 		return ISF_TRUNK_DIR;
 	}
 
 	public static File getModuleDirectory() {
-		return new File(getTrunkDirectory() ,"src/ontology/module");
+		return new File(getTrunkDirectory(), "src/ontology/module");
+	}
+
+	public static File getGeneratedDirectory() {
+		File f;
+
+		try {
+			f = new File(getTrunkDirectory(), "../generated").getCanonicalFile();
+		} catch (IOException e) {
+			throw new IllegalStateException(
+					"Failed to get canonical path to ISF generated directory.");
+		}
+
+		return f;
 	}
 
 	static {
 		String isfTrunk = System.getProperty(ISF_TRUNK_PROPERTY);
 		if (isfTrunk == null) {
-			isfTrunk = System.getenv(ISF_TRUNK_PROPERTY.replace(".", "_"));
+			isfTrunk = System.getenv(ISF_TRUNK_PROPERTY.toUpperCase().replace(".", "_"));
 		}
 		if (isfTrunk != null) {
 			File isfTrunkDir;
@@ -372,9 +383,7 @@ public class ISFUtil {
 	private static boolean checkValidTrunkLocation(File trunkDir) {
 		if (trunkDir != null && trunkDir.isDirectory()) {
 			File tools = new File(trunkDir, "src/tools");
-			if (tools.exists()) {
-				return true;
-			}
+			return tools.exists();
 		}
 		return false;
 	}

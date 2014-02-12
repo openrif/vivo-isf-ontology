@@ -1,5 +1,7 @@
 package isf.module;
 
+import isf.ISFUtil;
+
 import java.io.File;
 import java.io.IOException;
 
@@ -10,27 +12,39 @@ public abstract class AbstractModule implements Module {
 
 	private OWLReasoner reasoner;
 	private String name;
-	private String trunkPath;
+	private File directory;
 	private File outputDirectory;
 
 	public AbstractModule(String moduleName, String trunkPath, String outputDirectory) {
-		this.name = moduleName;
-		try {
-			this.outputDirectory = new File(outputDirectory).getCanonicalFile();
-			this.outputDirectory.mkdirs();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		if (moduleName == null) {
+			throw new IllegalStateException("Module name cannot be null.");
 		}
-		this.trunkPath = trunkPath;
+		this.name = moduleName;
+		this.directory = new File(ISFUtil.getModuleDirectory(), this.name);
+		this.directory.mkdirs();
+
+		if (outputDirectory != null) {
+			try {
+				this.outputDirectory = new File(outputDirectory).getCanonicalFile();
+			} catch (IOException e) {
+				throw new IllegalStateException("Failed to get canonical output directory.");
+			}
+
+		} else {
+			this.outputDirectory = new File(ISFUtil.getGeneratedDirectory(), "module/" + name);
+		}
+		this.outputDirectory.mkdirs();
+		if (trunkPath != null) {
+			try {
+				ISFUtil.setISFTrunkDirecotry(new File(trunkPath).getCanonicalFile());
+			} catch (IOException e) {
+				throw new IllegalStateException("Failed to get canonical trunk directory.");
+			}
+		}
 	}
 
 	public String getName() {
 		return name;
-	}
-
-	public String geTrunkPath() {
-		return trunkPath;
 	}
 
 	public File getOutputDirectory() {
@@ -67,10 +81,18 @@ public abstract class AbstractModule implements Module {
 	}
 
 	public abstract void generateModule() throws Exception;
-	
+
 	public abstract void saveGeneratedModule() throws OWLOntologyStorageException;
 
 	public abstract void close();
 
-	public abstract void saveModuleDefinitionFiles() throws OWLOntologyStorageException ;
+	public abstract void saveModuleDefinitionFiles() throws OWLOntologyStorageException;
+
+	public File getDirectory() {
+		return directory;
+	}
+
+	public void setDirectory(File directory) {
+		this.directory = directory;
+	}
 }

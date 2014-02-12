@@ -286,7 +286,7 @@ public class SimpleModuleBuilder {
 
 		if (module.getAnnotationOntology() == null) {
 			module.setAnnotationOntology(createOntology(module.getAnnotationIri(),
-					ISFUtil.getModuleDirectory()));
+					module.getDirectory()));
 			// add the exclude file import
 			AddImport ai = new AddImport(module.getAnnotationOntology(),
 					df.getOWLImportsDeclaration(module.getExcludeIri()));
@@ -304,11 +304,11 @@ public class SimpleModuleBuilder {
 		}
 		if (module.getIncludeOntology() == null) {
 			module.setIncludeOntology(createOntology(module.getIncludeIri(),
-					ISFUtil.getModuleDirectory()));
+					module.getDirectory()));
 		}
 		if (module.getExcludeOntology() == null) {
 			module.setExcludeOntology(createOntology(module.getExcludeIri(),
-					ISFUtil.getModuleDirectory()));
+					module.getDirectory()));
 		}
 
 		// always create a new one and save it to the local folder

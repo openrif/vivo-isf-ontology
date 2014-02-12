@@ -1,4 +1,4 @@
-package isf.ignore;
+package isf.local;
 
 import isf.ISFUtil;
 import isf.module.Util;

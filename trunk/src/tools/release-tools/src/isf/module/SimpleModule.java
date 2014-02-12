@@ -207,16 +207,15 @@ public class SimpleModule extends AbstractModule {
 
 	public static void main(String[] args) throws Exception {
 		String moduleName = args[0];
-		String trunkPath = args[1];
+		String trunkPath = null;
+		if(args.length>1){
+			trunkPath = args[1];
+		}
 		String outputPath = null;
 		if (args.length > 2) {
 			outputPath = args[2];
 		}
-		File trunkDirectory = new File(trunkPath);
-		if (outputPath == null) {
-			outputPath = trunkDirectory.getParent() + "/generated";
-		}
-		ISFUtil.setISFTrunkDirecotry(trunkDirectory);
+
 		OWLOntologyManager man = OWLManager.createOWLOntologyManager();
 		OWLOntology sourceOntology = ISFUtil.setupAndLoadIsfOntology(man);
 		SimpleModule module = new SimpleModule(moduleName, sourceOntology, trunkPath, outputPath);
