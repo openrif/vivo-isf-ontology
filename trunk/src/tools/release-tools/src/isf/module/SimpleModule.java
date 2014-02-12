@@ -158,7 +158,7 @@ public class SimpleModule extends AbstractModule {
 				getManager().applyChange(ai);
 
 				try {
-					getManager().saveOntology(annotationOntology);
+					saveOntology(annotationOntology);
 				} catch (OWLOntologyStorageException e) {
 					throw new RuntimeException(
 							"Failed to save initial module annotation ontology.", e);
@@ -182,7 +182,7 @@ public class SimpleModule extends AbstractModule {
 						+ getName() + ". Creating a new one.");
 				includeOntology = createOntology(includeIri, getDirectory());
 				try {
-					getManager().saveOntology(includeOntology);
+					saveOntology(includeOntology);
 				} catch (OWLOntologyStorageException e) {
 					throw new RuntimeException("Failed to save initial module include ontology.", e);
 				}
@@ -203,7 +203,7 @@ public class SimpleModule extends AbstractModule {
 						+ getName() + ". Creating a new one.");
 				excludeOntology = createOntology(excludeIri, getDirectory());
 				try {
-					getManager().saveOntology(excludeOntology);
+					saveOntology(excludeOntology);
 				} catch (OWLOntologyStorageException e) {
 					throw new RuntimeException("Failed to save initial module exclude ontology.", e);
 				}
@@ -229,7 +229,7 @@ public class SimpleModule extends AbstractModule {
 									+ getName() + ". Creating a new one.");
 					legacyRemovedOntology = createOntology(legacyRemovedIri, getDirectory());
 					try {
-						getManager().saveOntology(legacyRemovedOntology);
+						saveOntology(legacyRemovedOntology);
 					} catch (OWLOntologyStorageException e) {
 						throw new RuntimeException(
 								"Failed to save initial module exclude ontology.", e);
@@ -265,7 +265,7 @@ public class SimpleModule extends AbstractModule {
 	@Override
 	public void addLegacyOntologiesTransitive() {
 		for (Module module : getImports()) {
-			module.addLegacyOntologies();
+			module.addLegacyOntologiesTransitive();
 		}
 		addLegacyOntologies();
 	}
@@ -282,7 +282,7 @@ public class SimpleModule extends AbstractModule {
 	@Override
 	public void cleanLegacyOntologiesTransitive() {
 		for (Module module : getImports()) {
-			module.cleanLegacyOntologies();
+			module.cleanLegacyOntologiesTransitive();
 		}
 		cleanLegacyOntologies();
 	}
@@ -314,7 +314,7 @@ public class SimpleModule extends AbstractModule {
 
 	@Override
 	public void saveGeneratedModule() throws OWLOntologyStorageException {
-		getManager().saveOntology(ontology);
+		saveOntology(ontology);
 
 	}
 
@@ -330,13 +330,13 @@ public class SimpleModule extends AbstractModule {
 	@Override
 	public void saveModuleDefinitionFiles() throws OWLOntologyStorageException {
 		if (changedOntologies.remove(annotationOntology)) {
-			getManager().saveOntology(annotationOntology);
+			saveOntology(annotationOntology);
 		}
 		if (changedOntologies.remove(includeOntology)) {
-			getManager().saveOntology(includeOntology);
+			saveOntology(includeOntology);
 		}
 		if (changedOntologies.remove(excludeOntology)) {
-			getManager().saveOntology(excludeOntology);
+			saveOntology(excludeOntology);
 		}
 		saveModuleDefinitionFiles();
 	}
@@ -353,7 +353,7 @@ public class SimpleModule extends AbstractModule {
 	public void saveLegacyOntologies() throws OWLOntologyStorageException {
 		for (OWLOntology o : legacyOntologies) {
 			if (changedOntologies.remove(o)) {
-				getManager().saveOntology(o);
+				saveOntology(o);
 			}
 		}
 	}
