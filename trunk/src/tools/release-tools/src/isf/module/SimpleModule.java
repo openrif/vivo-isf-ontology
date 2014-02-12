@@ -230,7 +230,7 @@ public class SimpleModule extends AbstractModule {
 
 		OWLOntologyManager man = OWLManager.createOWLOntologyManager();
 		OWLOntology sourceOntology = ISFUtil.setupAndLoadIsfOntology(man);
-		SimpleModule module = new SimpleModule(moduleName, sourceOntology, trunkPath, outputPath);
+		SimpleModule module = new SimpleModule(moduleName, null, sourceOntology, trunkPath, outputPath);
 		module.generateModule();
 		module.saveGeneratedModule();
 		module.saveModuleDefinitionFiles();
