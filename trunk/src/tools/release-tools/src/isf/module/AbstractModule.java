@@ -6,7 +6,7 @@ import java.io.IOException;
 import org.semanticweb.owlapi.model.OWLOntologyStorageException;
 import org.semanticweb.owlapi.reasoner.OWLReasoner;
 
-public abstract class AbstractModule {
+public abstract class AbstractModule implements Module {
 
 	private OWLReasoner reasoner;
 	private String name;
