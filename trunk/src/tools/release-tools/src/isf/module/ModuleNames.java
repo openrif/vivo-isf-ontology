@@ -10,6 +10,14 @@ public interface ModuleNames {
 	String EAGLEI = "eaglei";
 	String EAGLEI_EXTENDED = "eaglei-extended";
 	String EAGLEI_APP = "eaglei-app";
+	String EAGLEI_APP_DEF = "eaglei-app-def";
+//	String EAGLEI_BYHAND_APP = "eaglei-byhand-app";
+//	String EAGLEI_IAO_APP = "eaglei-iao-app";
+//	String EAGLEI_NCBI_APP = "eaglei-ncbi-app";
+//	String EAGLEI_OBI_APP = "eaglei-obi-app";
+//	String EAGLEI_OCRE_APP = "eaglei-ocre-app";
+//	String EAGLEI_APP = "eaglei-app";
+//	String EAGLEI_APP = "eaglei-app";
 	String EAGLEI_EXTENDED_APP = "eaglei-extended-app";
 	String EAGLEI_EXTENDED_GO = "eaglei-extended-go";
 	String EAGLEI_EXTENDED_GO_APP = "eaglei-extended-go-app";

@@ -25,12 +25,15 @@ import org.semanticweb.owlapi.model.OWLObjectProperty;
 import org.semanticweb.owlapi.model.OWLObjectPropertyExpression;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
+import org.semanticweb.owlapi.model.OWLOntologyIRIMapper;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
 import org.semanticweb.owlapi.reasoner.OWLReasoner;
 import org.semanticweb.owlapi.reasoner.ReasonerInternalException;
 import org.semanticweb.owlapi.util.AutoIRIMapper;
+import org.semanticweb.owlapi.util.SimpleIRIMapper;
 import org.semanticweb.owlapi.vocab.OWLRDFVocabulary;
 
+import sun.reflect.ReflectionFactory.GetReflectionFactoryAction;
 import uk.ac.manchester.cs.factplusplus.owlapiv3.FaCTPlusPlusReasonerFactory;
 
 /**
@@ -331,10 +334,23 @@ public class ISFUtil {
 	 * @return
 	 */
 	public static OWLOntologyManager setupManagerMapper(OWLOntologyManager man) {
-		AutoIRIMapper mapper = new AutoIRIMapper(new File(getTrunkDirectory(), "src/ontology"),
-				true);
 		man.clearIRIMappers();
+		OWLOntologyIRIMapper mapper = new AutoIRIMapper(new File(getTrunkDirectory(),
+				"src/ontology"), true);
 		man.addIRIMapper(mapper);
+//		mapper = new AutoIRIMapper(new File(getTrunkDirectory(), "src/ontology/source-skos"), true);
+//		man.addIRIMapper(mapper);
+//		mapper = new AutoIRIMapper(new File(getTrunkDirectory(), "src/ontology/mireots"), true);
+//		man.addIRIMapper(mapper);
+//		mapper = new SimpleIRIMapper(ISFUtil.ISF_IRI, IRI.create(new File(getTrunkDirectory(),
+//				"src/ontology/isf.owl")));
+//		man.addIRIMapper(mapper);
+//		mapper = new SimpleIRIMapper(IRI.create("http://www.w3.org/2008/05/skos-xl"), IRI.create(new File(getTrunkDirectory(),
+//				"src/ontology/imports/skos-xl.owl")));
+//		man.addIRIMapper(mapper);
+//		mapper = new SimpleIRIMapper(IRI.create("http://www.w3.org/2004/02/skos/core"), IRI.create(new File(getTrunkDirectory(),
+//				"src/ontology/imports/skos.owl")));
+//		man.addIRIMapper(mapper);
 		return man;
 	}
 
@@ -410,11 +426,11 @@ public class ISFUtil {
 					+ axiom.getValue().toString();
 		}
 	}
-	
-	public static Set<OWLAxiom> getAxioms(OWLOntology ontology , boolean recursive){
+
+	public static Set<OWLAxiom> getAxioms(OWLOntology ontology, boolean recursive) {
 		Set<OWLAxiom> axioms = new HashSet<OWLAxiom>(ontology.getAxioms());
-		if(recursive){
-			for(OWLOntology o : ontology.getImports()){
+		if (recursive) {
+			for (OWLOntology o : ontology.getImports()) {
 				axioms.addAll(o.getAxioms());
 			}
 		}

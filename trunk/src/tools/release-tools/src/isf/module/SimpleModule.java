@@ -244,6 +244,7 @@ public class SimpleModule extends AbstractModule {
 
 		} catch (OWLOntologyCreationException e1) {
 			System.err.println("Could not load lagacy ontology for " + legacyIri);
+			e1.printStackTrace();
 		}
 
 		ontology = createOntology(moduleIri, getOutputDirectory());
@@ -437,5 +438,11 @@ public class SimpleModule extends AbstractModule {
 		module.generateModule();
 		module.saveGeneratedModule();
 		module.saveModuleDefinitionFiles();
+	}
+
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return moduleIri.toString() + ontology;
 	}
 }

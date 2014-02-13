@@ -76,8 +76,11 @@ public class EagleiRelease extends CompositeModule {
 		// app and its import
 		SimpleModule eagleiApp = new SimpleModule(EAGLEI_APP, null, isfOntology, null,
 				getOutputDirectory().getAbsolutePath());
+		SimpleModule eagleiAppDef = new SimpleModule(EAGLEI_APP_DEF, null, isfOntology, null,
+				getOutputDirectory().getAbsolutePath());
 		eagleiApp.setReasoner(reasoner);
 		eagleiApp.addImport(eaglei);
+		eagleiApp.addImport(eagleiAppDef);
 
 		// app extended and its imports
 		SimpleModule eagleiExtendedApp = new SimpleModule(EAGLEI_EXTENDED_APP, null, isfOntology,
