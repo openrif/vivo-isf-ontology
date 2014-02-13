@@ -361,7 +361,7 @@ public class SimpleModule extends AbstractModule {
 	@Override
 	public void saveLegacyOntologiesTransitive() throws OWLOntologyStorageException {
 		for (Module module : getImports()) {
-			saveLegacyOntologies();
+			module.saveLegacyOntologies();
 		}
 		saveLegacyOntologies();
 	}

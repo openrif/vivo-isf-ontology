@@ -16,9 +16,11 @@ import org.semanticweb.owlapi.reasoner.OWLReasoner;
 public class EagleiRelease extends CompositeModule {
 
 	public static final String EAGLEI_RELEASE_MODULE_NAME = "eaglei-release";
+	private boolean cleanLegacy;
 
-	public EagleiRelease(String svnTrunk, String outputDirectory) {
+	public EagleiRelease(String svnTrunk, boolean cleanLegacy, String outputDirectory) {
 		super(EAGLEI_RELEASE_MODULE_NAME, null, svnTrunk, outputDirectory);
+		this.cleanLegacy = cleanLegacy;
 	}
 
 	Module topModule = null;
@@ -111,6 +113,9 @@ public class EagleiRelease extends CompositeModule {
 		topModule = eagleiExtendedApp;
 		topModule.generateModuleTransitive();
 		topModule.addLegacyOntologiesTransitive();
+		if(cleanLegacy){
+			topModule.cleanLegacyOntologiesTransitive();
+		}
 
 	}
 
@@ -123,11 +128,18 @@ public class EagleiRelease extends CompositeModule {
 	@Override
 	public void saveGeneratedModule() throws OWLOntologyStorageException {
 		topModule.saveGeneratedModuleTransitive();
+		if(cleanLegacy){
+			topModule.saveLegacyOntologiesTransitive();
+		}
 	}
 
 	public static void main(String[] args) throws Exception {
 
-		EagleiRelease release = new EagleiRelease(null, null);
+		// the ISF checkout is found from the ISF_TRUNK or isf.trunk in this
+		// example.
+		// Otherwise, the first constructor argument has to be the path to trunk
+
+		EagleiRelease release = new EagleiRelease(null, false, null);
 		release.generateModule();
 		release.saveGeneratedModule();
 		release.close();
