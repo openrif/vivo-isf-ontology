@@ -5,10 +5,13 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
+import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.AxiomType;
 import org.semanticweb.owlapi.model.IRI;
 import org.semanticweb.owlapi.model.OWLAnnotationAssertionAxiom;
@@ -30,7 +33,6 @@ import org.semanticweb.owlapi.model.OWLOntologyManager;
 import org.semanticweb.owlapi.reasoner.OWLReasoner;
 import org.semanticweb.owlapi.reasoner.ReasonerInternalException;
 import org.semanticweb.owlapi.util.AutoIRIMapper;
-import org.semanticweb.owlapi.util.SimpleIRIMapper;
 import org.semanticweb.owlapi.vocab.OWLRDFVocabulary;
 
 import sun.reflect.ReflectionFactory.GetReflectionFactoryAction;
@@ -56,6 +58,10 @@ public class ISFUtil {
 	public static final IRI ISF_FULL_IRI = IRI.create(ISF_ONTOLOGY_IRI_PREFIX + "isf-full.owl");
 	public static final IRI ISF_FULL_REASONED_IRI = IRI.create(ISF_ONTOLOGY_IRI_PREFIX
 			+ "isf-full-reasoned.owl");
+
+	public static final String ISF_MAPPING_SUFFIX = "-mapping.owl";
+	public static final IRI ISF_IRI_MAPPES_TO_IRI = IRI.create(ISF_ONTOLOGY_IRI_PREFIX
+			+ "iri-mappes-to");
 
 	public static final IRI ISF_SKOS_IRI = IRI.create(ISF_ONTOLOGY_IRI_PREFIX + "isf-skos.owl");
 
@@ -338,19 +344,6 @@ public class ISFUtil {
 		OWLOntologyIRIMapper mapper = new AutoIRIMapper(new File(getTrunkDirectory(),
 				"src/ontology"), true);
 		man.addIRIMapper(mapper);
-//		mapper = new AutoIRIMapper(new File(getTrunkDirectory(), "src/ontology/source-skos"), true);
-//		man.addIRIMapper(mapper);
-//		mapper = new AutoIRIMapper(new File(getTrunkDirectory(), "src/ontology/mireots"), true);
-//		man.addIRIMapper(mapper);
-//		mapper = new SimpleIRIMapper(ISFUtil.ISF_IRI, IRI.create(new File(getTrunkDirectory(),
-//				"src/ontology/isf.owl")));
-//		man.addIRIMapper(mapper);
-//		mapper = new SimpleIRIMapper(IRI.create("http://www.w3.org/2008/05/skos-xl"), IRI.create(new File(getTrunkDirectory(),
-//				"src/ontology/imports/skos-xl.owl")));
-//		man.addIRIMapper(mapper);
-//		mapper = new SimpleIRIMapper(IRI.create("http://www.w3.org/2004/02/skos/core"), IRI.create(new File(getTrunkDirectory(),
-//				"src/ontology/imports/skos.owl")));
-//		man.addIRIMapper(mapper);
 		return man;
 	}
 
@@ -435,6 +428,73 @@ public class ISFUtil {
 			}
 		}
 		return axioms;
+	}
+
+	public static Map<IRI, IRI> getMappings(String mappingName, boolean leftToRight)
+			throws OWLOntologyCreationException {
+		Map<IRI, IRI> mappings = new HashMap<IRI, IRI>();
+		OWLOntology mappingOntology = getIsfManagerSingleton().loadOntology(
+				IRI.create(ISF_ONTOLOGY_IRI_PREFIX + mappingName + ISF_MAPPING_SUFFIX));
+
+		OWLAnnotationProperty p = getIsfManagerSingleton().getOWLDataFactory()
+				.getOWLAnnotationProperty(ISF_IRI_MAPPES_TO_IRI);
+		for (OWLAnnotationAssertionAxiom aaa : getAnnotationAssertionAxioms(mappingOntology, p,
+				true)) {
+			if (aaa.getProperty().getIRI().equals(ISF_IRI_MAPPES_TO_IRI)) {
+				IRI subjectIri = (IRI) aaa.getSubject();
+				IRI objectIri = (IRI) aaa.getValue();
+
+				if (leftToRight) {
+					duplicateCheck(subjectIri, objectIri, mappingName, mappings);
+					mappings.put(subjectIri, objectIri);
+				} else {
+					duplicateCheck(objectIri, subjectIri, mappingName, mappings);
+					mappings.put(objectIri, subjectIri);
+				}
+			}
+		}
+
+		// apply transitive mappings
+		Map<IRI, IRI> finalMappings = new HashMap<IRI, IRI>();
+		for (IRI from : mappings.keySet()) {
+			finalMappings.put(from, getTransitiveMapping(from, mappings));
+		}
+		return finalMappings;
+	}
+
+	private static IRI getTransitiveMapping(IRI from, Map<IRI, IRI> mappings) {
+		if (mappings.get(from) == null) {
+			return from;
+		} else {
+			return getTransitiveMapping(mappings.get(from), mappings);
+		}
+	}
+
+	private static void duplicateCheck(IRI from, IRI to, String mappingName, Map<IRI, IRI> mappings) {
+		if (mappings.containsKey(from) && !mappings.get(from).equals(to)) {
+			throw new IllegalStateException("Mapping " + mappingName
+					+ " contains multiple mappings for IRI " + from + ". Found a mapping to " + to
+					+ " while there was an existing mapping to " + mappings.get(from));
+		}
+
+	}
+
+	private static OWLOntologyManager isfManager;
+
+	/**
+	 * A shared OWLOntologyManager for the ISF "ontologies"/"owl files" that
+	 * can/should be used as much as possible to keep the ontologies consistent
+	 * between the various tools. //TODO Need to migrate other managers to this
+	 * one.
+	 * 
+	 * @return
+	 */
+	public static OWLOntologyManager getIsfManagerSingleton() {
+		if (isfManager == null) {
+			isfManager = OWLManager.createOWLOntologyManager();
+			setupManagerMapper(isfManager);
+		}
+		return isfManager;
 	}
 
 }

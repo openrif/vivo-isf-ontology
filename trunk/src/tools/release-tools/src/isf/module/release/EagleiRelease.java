@@ -115,11 +115,20 @@ public class EagleiRelease extends CompositeModule {
 
 		topModule = eagleiExtendedApp;
 		topModule.generateModuleTransitive();
-		topModule.addLegacyOntologiesTransitive();
 		if(cleanLegacy){
 			topModule.cleanLegacyOntologiesTransitive();
 		}
 
+	}
+	
+	@Override
+	public void addLegacyOntologies() {
+		topModule.addLegacyOntologiesTransitive();
+	}
+	
+	@Override
+	public void cleanLegacyOntologies() {
+		topModule.cleanLegacyOntologiesTransitive();
 	}
 
 	@Override
