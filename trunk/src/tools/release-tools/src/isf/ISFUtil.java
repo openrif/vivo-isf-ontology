@@ -2,9 +2,11 @@ package isf;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -34,8 +36,12 @@ import org.semanticweb.owlapi.reasoner.OWLReasoner;
 import org.semanticweb.owlapi.reasoner.ReasonerInternalException;
 import org.semanticweb.owlapi.util.AutoIRIMapper;
 import org.semanticweb.owlapi.vocab.OWLRDFVocabulary;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-import sun.reflect.ReflectionFactory.GetReflectionFactoryAction;
+import ch.qos.logback.classic.LoggerContext;
+import ch.qos.logback.classic.encoder.PatternLayoutEncoder;
+import ch.qos.logback.core.FileAppender;
 import uk.ac.manchester.cs.factplusplus.owlapiv3.FaCTPlusPlusReasonerFactory;
 
 /**
@@ -373,6 +379,8 @@ public class ISFUtil {
 		return f;
 	}
 
+	private static FileAppender appender;
+
 	static {
 		String isfTrunk = System.getProperty(ISF_TRUNK_PROPERTY);
 		if (isfTrunk == null) {
@@ -389,6 +397,21 @@ public class ISFUtil {
 				ISF_TRUNK_DIR = isfTrunkDir;
 			}
 		}
+
+		SimpleDateFormat df = new SimpleDateFormat("yyMMdd_hhmmss");
+		String date = df.format(new Date());
+		LoggerContext context = (LoggerContext) LoggerFactory.getILoggerFactory();
+		appender = new FileAppender<Object>();
+		appender.setFile(new File(getTrunkDirectory(), "log/" + date
+				+ "-log.txt").getAbsolutePath());
+		appender.setContext(context);
+		
+		PatternLayoutEncoder encoder = new PatternLayoutEncoder();
+	    encoder.setContext(context);
+	    encoder.setPattern("%r %thread %C %c %level - %msg%n");
+	    encoder.start();
+	    appender.setEncoder(encoder);
+	    appender.start();
 	}
 
 	public static void setISFTrunkDirecotry(File isfTrunkDirectory) {
@@ -495,6 +518,13 @@ public class ISFUtil {
 			setupManagerMapper(isfManager);
 		}
 		return isfManager;
+	}
+
+	public static Logger getLogger(String loggerName) {
+		ch.qos.logback.classic.Logger logger = (ch.qos.logback.classic.Logger) LoggerFactory
+				.getLogger(loggerName);
+		logger.addAppender(appender);
+		return logger;
 	}
 
 }
