@@ -198,7 +198,7 @@ public abstract class AbstractModule implements Module {
 		this.imports.add(module);
 	}
 
-	public void remoteImport(Module module) {
+	public void removeImport(Module module) {
 		this.imports.remove(module);
 	}
 

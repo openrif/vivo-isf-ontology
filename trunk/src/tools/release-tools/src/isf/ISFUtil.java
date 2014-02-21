@@ -39,6 +39,7 @@ import org.semanticweb.owlapi.vocab.OWLRDFVocabulary;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import ch.qos.logback.classic.Level;
 import ch.qos.logback.classic.LoggerContext;
 import ch.qos.logback.classic.encoder.PatternLayoutEncoder;
 import ch.qos.logback.core.FileAppender;
@@ -370,7 +371,7 @@ public class ISFUtil {
 		File f;
 
 		try {
-			f = new File(getTrunkDirectory(), "../generated").getCanonicalFile();
+			f = new File(getTrunkDirectory(), "generated").getCanonicalFile();
 		} catch (IOException e) {
 			throw new IllegalStateException(
 					"Failed to get canonical path to ISF generated directory.");
@@ -398,20 +399,6 @@ public class ISFUtil {
 			}
 		}
 
-		SimpleDateFormat df = new SimpleDateFormat("yyMMdd_hhmmss");
-		String date = df.format(new Date());
-		LoggerContext context = (LoggerContext) LoggerFactory.getILoggerFactory();
-		appender = new FileAppender<Object>();
-		appender.setFile(new File(getTrunkDirectory(), "log/" + date
-				+ "-log.txt").getAbsolutePath());
-		appender.setContext(context);
-		
-		PatternLayoutEncoder encoder = new PatternLayoutEncoder();
-	    encoder.setContext(context);
-	    encoder.setPattern("%r %thread %C %c %level - %msg%n");
-	    encoder.start();
-	    appender.setEncoder(encoder);
-	    appender.start();
 	}
 
 	public static void setISFTrunkDirecotry(File isfTrunkDirectory) {
@@ -520,10 +507,45 @@ public class ISFUtil {
 		return isfManager;
 	}
 
+	private static Level logLevel = Level.WARN;
+
+	// logging setup
+	static {
+
+		SimpleDateFormat df = new SimpleDateFormat("yyMMdd_hhmmss");
+		String date = df.format(new Date());
+		LoggerContext context = (LoggerContext) LoggerFactory.getILoggerFactory();
+		appender = new FileAppender<Object>();
+		appender.setFile(new File(getTrunkDirectory(), "src/tools/release-tools/log/" + date
+				+ "-log.txt").getAbsolutePath());
+		appender.setContext(context);
+
+		PatternLayoutEncoder encoder = new PatternLayoutEncoder();
+		encoder.setContext(context);
+		encoder.setPattern("%r %thread %C %c %level - %msg%n");
+		encoder.start();
+		appender.setEncoder(encoder);
+		appender.start();
+
+		String logLevelValue = System.getProperty("isf.log");
+		if (logLevelValue != null && logLevelValue.equalsIgnoreCase("debug")) {
+			logLevel = Level.DEBUG;
+		} else if (logLevelValue != null && logLevelValue.equalsIgnoreCase("warn")) {
+			logLevel = Level.WARN;
+		} else if (logLevelValue != null && logLevelValue.equalsIgnoreCase("info")) {
+			logLevel = Level.INFO;
+		} else if (logLevelValue != null) {
+			System.err.println("Incorrect isf.log property value: " + logLevelValue);
+			getLogger("ISFUtil").error("Incorrect isf.log property value: " + logLevelValue);
+		}
+
+	}
+
 	public static Logger getLogger(String loggerName) {
 		ch.qos.logback.classic.Logger logger = (ch.qos.logback.classic.Logger) LoggerFactory
 				.getLogger(loggerName);
 		logger.addAppender(appender);
+		logger.setLevel(logLevel);
 		return logger;
 	}
 

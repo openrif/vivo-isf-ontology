@@ -16,11 +16,10 @@ import org.semanticweb.owlapi.reasoner.OWLReasoner;
 public class EagleiRelease extends CompositeModule {
 
 	public static final String EAGLEI_RELEASE_MODULE_NAME = "eaglei-release";
-	private boolean cleanLegacy;
 
 	public EagleiRelease(String svnTrunk, boolean cleanLegacy, String outputDirectory) {
 		super(EAGLEI_RELEASE_MODULE_NAME, null, svnTrunk, outputDirectory);
-		this.cleanLegacy = cleanLegacy;
+
 	}
 
 	Module topModule = null;
@@ -115,9 +114,6 @@ public class EagleiRelease extends CompositeModule {
 
 		topModule = eagleiExtendedApp;
 		topModule.generateModuleTransitive();
-		if(cleanLegacy){
-			topModule.cleanLegacyOntologiesTransitive();
-		}
 
 	}
 	
@@ -133,16 +129,13 @@ public class EagleiRelease extends CompositeModule {
 
 	@Override
 	public void close() {
-		// TODO Auto-generated method stub
 
 	}
 
 	@Override
 	public void saveGeneratedModule() throws OWLOntologyStorageException {
 		topModule.saveGeneratedModuleTransitive();
-		if(cleanLegacy){
-			topModule.saveLegacyOntologiesTransitive();
-		}
+
 	}
 
 	public static void main(String[] args) throws Exception {
@@ -153,6 +146,7 @@ public class EagleiRelease extends CompositeModule {
 
 		EagleiRelease release = new EagleiRelease(null, false, null);
 		release.generateModule();
+		release.addLegacyOntologies();
 		release.saveGeneratedModule();
 		release.close();
 
