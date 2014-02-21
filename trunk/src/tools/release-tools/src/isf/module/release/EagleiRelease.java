@@ -17,8 +17,8 @@ public class EagleiRelease extends CompositeModule {
 
 	public static final String EAGLEI_RELEASE_MODULE_NAME = "eaglei-release";
 
-	public EagleiRelease(String svnTrunk, boolean cleanLegacy, String outputDirectory) {
-		super(EAGLEI_RELEASE_MODULE_NAME, null, svnTrunk, outputDirectory);
+	public EagleiRelease(String svnTrunk, OWLOntologyManager man, boolean cleanLegacy, String outputDirectory) {
+		super(EAGLEI_RELEASE_MODULE_NAME, man, null, svnTrunk, outputDirectory);
 
 	}
 
@@ -36,33 +36,33 @@ public class EagleiRelease extends CompositeModule {
 		OWLReasoner reasoner = ISFUtil.getDefaultReasoner(isfOntology);
 
 		// core
-		SimpleModule eaglei = new SimpleModule(EAGLEI, null, isfOntology, null,
+		SimpleModule eaglei = new SimpleModule(EAGLEI, null, isfOntology, man, null,
 				getOutputDirectory().getAbsolutePath());
 		eaglei.setReasoner(reasoner);
 
 		// extended and its imports
-		SimpleModule eagleiExtended = new SimpleModule(EAGLEI_EXTENDED, null, isfOntology, null,
+		SimpleModule eagleiExtended = new SimpleModule(EAGLEI_EXTENDED, null, isfOntology,  man,null,
 				getOutputDirectory().getAbsolutePath());
 		eagleiExtended.setReasoner(reasoner);
 
 		SimpleModule eagleiExtendedGo = new SimpleModule(EAGLEI_EXTENDED_GO, null, isfOntology,
-				null, getOutputDirectory().getAbsolutePath());
+				 man,null, getOutputDirectory().getAbsolutePath());
 		eagleiExtendedGo.setReasoner(reasoner);
 
 		SimpleModule eagleiExtendedMesh = new SimpleModule(EAGLEI_EXTENDED_MESH, null, isfOntology,
-				null, getOutputDirectory().getAbsolutePath());
+				 man,	null, getOutputDirectory().getAbsolutePath());
 		eagleiExtendedMesh.setReasoner(reasoner);
 
 		SimpleModule eagleiExtendedMp = new SimpleModule(EAGLEI_EXTENDED_MP, null, isfOntology,
-				null, getOutputDirectory().getAbsolutePath());
+				 man,	null, getOutputDirectory().getAbsolutePath());
 		eagleiExtendedMp.setReasoner(reasoner);
 
 		SimpleModule eagleiExtendedPato = new SimpleModule(EAGLEI_EXTENDED_PATO, null, isfOntology,
-				null, getOutputDirectory().getAbsolutePath());
+				 man,	null, getOutputDirectory().getAbsolutePath());
 		eagleiExtendedPato.setReasoner(reasoner);
 
 		SimpleModule eagleiExtendedUberon = new SimpleModule(EAGLEI_EXTENDED_UBERON, null,
-				isfOntology, null, getOutputDirectory().getAbsolutePath());
+				 isfOntology,  man,null, getOutputDirectory().getAbsolutePath());
 		eagleiExtendedUberon.setReasoner(reasoner);
 
 		eagleiExtended.addImport(eaglei);
@@ -73,9 +73,9 @@ public class EagleiRelease extends CompositeModule {
 		eagleiExtended.addImport(eagleiExtendedUberon);
 
 		// app and its import
-		SimpleModule eagleiApp = new SimpleModule(EAGLEI_APP, null, isfOntology, null,
+		SimpleModule eagleiApp = new SimpleModule(EAGLEI_APP, null, isfOntology, man, null,
 				getOutputDirectory().getAbsolutePath());
-		SimpleModule eagleiAppDef = new SimpleModule(EAGLEI_APP_DEF, null, isfOntology, null,
+		SimpleModule eagleiAppDef = new SimpleModule(EAGLEI_APP_DEF, null, isfOntology, man, null,
 				getOutputDirectory().getAbsolutePath());
 		eagleiApp.setReasoner(reasoner);
 		eagleiApp.addImport(eaglei);
@@ -83,22 +83,22 @@ public class EagleiRelease extends CompositeModule {
 
 		// app extended and its imports
 		SimpleModule eagleiExtendedApp = new SimpleModule(EAGLEI_EXTENDED_APP, null, isfOntology,
-				null, getOutputDirectory().getAbsolutePath());
+				 man,null, getOutputDirectory().getAbsolutePath());
 		eagleiExtendedApp.setReasoner(reasoner);
 		SimpleModule eagleiExtendedGoApp = new SimpleModule(EAGLEI_EXTENDED_GO_APP, null,
-				isfOntology, null, getOutputDirectory().getAbsolutePath());
+				isfOntology, man, null, getOutputDirectory().getAbsolutePath());
 		eagleiExtendedGoApp.setReasoner(reasoner);
 		SimpleModule eagleiExtendedMeshApp = new SimpleModule(EAGLEI_EXTENDED_MESH_APP, null,
-				isfOntology, null, getOutputDirectory().getAbsolutePath());
+				isfOntology, man, null, getOutputDirectory().getAbsolutePath());
 		eagleiExtendedMeshApp.setReasoner(reasoner);
 		SimpleModule eagleiExtendedMpApp = new SimpleModule(EAGLEI_EXTENDED_MP_APP, null,
-				isfOntology, null, getOutputDirectory().getAbsolutePath());
+				isfOntology, man, null, getOutputDirectory().getAbsolutePath());
 		eagleiExtendedMpApp.setReasoner(reasoner);
 		SimpleModule eagleiExtendedPatoApp = new SimpleModule(EAGLEI_EXTENDED_PATO_APP, null,
-				isfOntology, null, getOutputDirectory().getAbsolutePath());
+				isfOntology,  man,null, getOutputDirectory().getAbsolutePath());
 		eagleiExtendedPatoApp.setReasoner(reasoner);
 		SimpleModule eagleiExtendedUberonApp = new SimpleModule(EAGLEI_EXTENDED_UBERON_APP, null,
-				isfOntology, null, getOutputDirectory().getAbsolutePath());
+				isfOntology,  man,null, getOutputDirectory().getAbsolutePath());
 		eagleiExtendedUberonApp.setReasoner(reasoner);
 
 		// the core app (which includes the core ontology)
@@ -149,7 +149,7 @@ public class EagleiRelease extends CompositeModule {
 		// example.
 		// Otherwise, the first constructor argument has to be the path to trunk
 
-		EagleiRelease release = new EagleiRelease(null, false, null);
+		EagleiRelease release = new EagleiRelease(null, null, false, null);
 		release.generateModule();
 		release.cleanLegacyOntologies();
 		release.saveGeneratedModule();

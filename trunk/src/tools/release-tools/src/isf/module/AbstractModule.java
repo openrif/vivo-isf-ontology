@@ -25,21 +25,19 @@ public abstract class AbstractModule implements Module {
 	private File outputDirectory;
 	private Set<Module> imports = new HashSet<Module>();
 	private OWLOntologyManager man;
-	RDFXMLOntologyFormat format;
 
 	public OWLOntologyManager getManager() {
 		return man;
 	}
 
-	public AbstractModule(String moduleName, String moduleTrunkRelativePath, String trunkPath,
+	public AbstractModule(String moduleName, OWLOntologyManager manager, String moduleTrunkRelativePath, String trunkPath,
 			String outputDirectory) {
-		format = new RDFXMLOntologyFormat();
-		format.setAddMissingTypes(true);
-		man = new OWLManager().buildOWLOntologyManager();
+
 		if (moduleName == null) {
 			throw new IllegalStateException("Module name cannot be null.");
 		}
 		this.name = moduleName;
+		this.man = manager;
 
 		// trunk path is either passed in, or looked up in ISFUtil when needed
 		// (see the static block in ISFUtil)
@@ -91,7 +89,7 @@ public abstract class AbstractModule implements Module {
 	}
 
 	protected void saveOntology(OWLOntology ontology) throws OWLOntologyStorageException {
-		man.saveOntology(ontology, format);
+		man.saveOntology(ontology);
 	}
 
 	/**

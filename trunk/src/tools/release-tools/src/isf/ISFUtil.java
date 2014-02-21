@@ -33,7 +33,9 @@ import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyIRIMapper;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
 import org.semanticweb.owlapi.reasoner.OWLReasoner;
+import org.semanticweb.owlapi.reasoner.OWLReasonerConfiguration;
 import org.semanticweb.owlapi.reasoner.ReasonerInternalException;
+import org.semanticweb.owlapi.reasoner.SimpleConfiguration;
 import org.semanticweb.owlapi.util.AutoIRIMapper;
 import org.semanticweb.owlapi.vocab.OWLRDFVocabulary;
 import org.slf4j.Logger;
@@ -60,19 +62,24 @@ public class ISFUtil {
 	public static final String ISF_TRUNK_PROPERTY = "isf.trunk";
 	public static final String ISF_ONTOLOGY_IRI_PREFIX = "http://purl.obolibrary.org/obo/arg/";
 
-//	public static final IRI ISF_IRI = IRI.create(ISF_ONTOLOGY_IRI_PREFIX + "isf.owl");
-//	public static final IRI ISF_REASONED_IRI = IRI.create(ISF_ONTOLOGY_IRI_PREFIX
-//			+ "isf-reasoned.owl");
-	
+	// public static final IRI ISF_IRI = IRI.create(ISF_ONTOLOGY_IRI_PREFIX +
+	// "isf.owl");
+	// public static final IRI ISF_REASONED_IRI =
+	// IRI.create(ISF_ONTOLOGY_IRI_PREFIX
+	// + "isf-reasoned.owl");
+
 	public static final IRI ISF_DEV_IRI = IRI.create(ISF_ONTOLOGY_IRI_PREFIX + "isf-dev.owl");
 	public static final IRI ISF_DEV_REASONED_IRI = IRI.create(ISF_ONTOLOGY_IRI_PREFIX
 			+ "isf-dev-reasoned.owl");
 
-//	public static final IRI ISF_FULL_IRI = IRI.create(ISF_ONTOLOGY_IRI_PREFIX + "isf-full.owl");
-//	public static final IRI ISF_FULL_REASONED_IRI = IRI.create(ISF_ONTOLOGY_IRI_PREFIX
-//			+ "isf-full-reasoned.owl");
-	
-	public static final IRI ISF_FULL_DEV_IRI = IRI.create(ISF_ONTOLOGY_IRI_PREFIX + "isf-full-dev.owl");
+	// public static final IRI ISF_FULL_IRI = IRI.create(ISF_ONTOLOGY_IRI_PREFIX
+	// + "isf-full.owl");
+	// public static final IRI ISF_FULL_REASONED_IRI =
+	// IRI.create(ISF_ONTOLOGY_IRI_PREFIX
+	// + "isf-full-reasoned.owl");
+
+	public static final IRI ISF_FULL_DEV_IRI = IRI.create(ISF_ONTOLOGY_IRI_PREFIX
+			+ "isf-full-dev.owl");
 	public static final IRI ISF_FULL_DEV_REASONED_IRI = IRI.create(ISF_ONTOLOGY_IRI_PREFIX
 			+ "isf-full-dev-reasoned.owl");
 
@@ -85,7 +92,13 @@ public class ISFUtil {
 	public static OWLOntology setupAndLoadIsfOntology(OWLOntologyManager man)
 			throws OWLOntologyCreationException {
 		setupManagerMapper(man);
+		logger.info("Loading ISF");
 		man.loadOntology(ISF_DEV_IRI);
+		for (OWLOntology o : man.getOntologies()) {
+			logger.debug("\t Loaded ontology " + o.getOntologyID().getOntologyIRI() + " from "
+					+ man.getOntologyDocumentIRI(o));
+		}
+
 		return man.getOntology(ISF_DEV_IRI);
 	}
 
@@ -147,7 +160,7 @@ public class ISFUtil {
 			@Override
 			public void visit(OWLDataProperty property) {
 				entities.add(property);
-				entities.addAll(pr.getSubDataProperties(property, closure).getFlattened());
+				entities.addAll(pr.getSubDataProperties(property, !closure).getFlattened());
 
 			}
 
@@ -155,7 +168,7 @@ public class ISFUtil {
 			public void visit(OWLObjectProperty property) {
 				entities.add(property);
 				Set<OWLObjectPropertyExpression> opes = pr
-						.getSubObjectProperties(property, closure).getFlattened();
+						.getSubObjectProperties(property, !closure).getFlattened();
 				for (OWLObjectPropertyExpression ope : opes) {
 					if (ope instanceof OWLObjectProperty) {
 						entities.add((OWLObjectProperty) ope);
@@ -167,7 +180,7 @@ public class ISFUtil {
 			@Override
 			public void visit(OWLClass cls) {
 				entities.add(cls);
-				entities.addAll(pr.getSubClasses(cls, closure).getFlattened());
+				entities.addAll(pr.getSubClasses(cls, !closure).getFlattened());
 			}
 		});
 
@@ -536,10 +549,9 @@ public class ISFUtil {
 		encoder.start();
 		appender.setEncoder(encoder);
 		appender.start();
-		
+
 		context.getLogger(ch.qos.logback.classic.Logger.ROOT_LOGGER_NAME).detachAppender("console");
 		context.getLogger(ch.qos.logback.classic.Logger.ROOT_LOGGER_NAME).addAppender(appender);
-		
 
 		String logLevelValue = System.getProperty("isf.log");
 		if (logLevelValue != null && logLevelValue.equalsIgnoreCase("debug")) {
@@ -554,6 +566,8 @@ public class ISFUtil {
 		}
 
 	}
+
+	private static Logger logger = getLogger("ISFUtil");
 
 	public static Logger getLogger(String loggerName) {
 		ch.qos.logback.classic.Logger logger = (ch.qos.logback.classic.Logger) LoggerFactory

@@ -89,8 +89,8 @@ public class SimpleModule extends AbstractModule {
 	 *            trunk/../generated/module/moduleName
 	 */
 	public SimpleModule(String moduleName, String moduleTrunkRelativePath,
-			OWLOntology sourceOntology, String trunkPath, String outputPath) {
-		super(moduleName, moduleTrunkRelativePath, trunkPath, outputPath);
+			OWLOntology sourceOntology, OWLOntologyManager mananger, String trunkPath, String outputPath) {
+		super(moduleName, mananger, moduleTrunkRelativePath, trunkPath, outputPath);
 
 		this.sourceOntology = sourceOntology;
 		init();
@@ -499,7 +499,7 @@ public class SimpleModule extends AbstractModule {
 
 		OWLOntologyManager man = OWLManager.createOWLOntologyManager();
 		OWLOntology sourceOntology = ISFUtil.setupAndLoadIsfOntology(man);
-		SimpleModule module = new SimpleModule(moduleName, null, sourceOntology, trunkPath,
+		SimpleModule module = new SimpleModule(moduleName, null, sourceOntology, man, trunkPath,
 				outputPath);
 		module.generateModule();
 		module.saveGeneratedModule();
