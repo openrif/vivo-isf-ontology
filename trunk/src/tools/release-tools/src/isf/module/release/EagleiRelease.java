@@ -126,6 +126,11 @@ public class EagleiRelease extends CompositeModule {
 	public void cleanLegacyOntologies() {
 		topModule.cleanLegacyOntologiesTransitive();
 	}
+	
+	@Override
+	public void saveLegacyOntologies() throws OWLOntologyStorageException {
+		topModule.saveLegacyOntologiesTransitive();;
+	}
 
 	@Override
 	public void close() {
@@ -147,8 +152,9 @@ public class EagleiRelease extends CompositeModule {
 		EagleiRelease release = new EagleiRelease(null, false, null);
 		release.generateModule();
 		release.cleanLegacyOntologies();
-		release.addLegacyOntologies();
 		release.saveGeneratedModule();
+		release.saveLegacyOntologies();
+//		release.addLegacyOntologies();
 		release.close();
 
 	}

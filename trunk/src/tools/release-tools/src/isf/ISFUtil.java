@@ -60,13 +60,21 @@ public class ISFUtil {
 	public static final String ISF_TRUNK_PROPERTY = "isf.trunk";
 	public static final String ISF_ONTOLOGY_IRI_PREFIX = "http://purl.obolibrary.org/obo/arg/";
 
-	public static final IRI ISF_IRI = IRI.create(ISF_ONTOLOGY_IRI_PREFIX + "isf.owl");
-	public static final IRI ISF_REASONED_IRI = IRI.create(ISF_ONTOLOGY_IRI_PREFIX
-			+ "isf-reasoned.owl");
+//	public static final IRI ISF_IRI = IRI.create(ISF_ONTOLOGY_IRI_PREFIX + "isf.owl");
+//	public static final IRI ISF_REASONED_IRI = IRI.create(ISF_ONTOLOGY_IRI_PREFIX
+//			+ "isf-reasoned.owl");
+	
+	public static final IRI ISF_DEV_IRI = IRI.create(ISF_ONTOLOGY_IRI_PREFIX + "isf-dev.owl");
+	public static final IRI ISF_DEV_REASONED_IRI = IRI.create(ISF_ONTOLOGY_IRI_PREFIX
+			+ "isf-dev-reasoned.owl");
 
-	public static final IRI ISF_FULL_IRI = IRI.create(ISF_ONTOLOGY_IRI_PREFIX + "isf-full.owl");
-	public static final IRI ISF_FULL_REASONED_IRI = IRI.create(ISF_ONTOLOGY_IRI_PREFIX
-			+ "isf-full-reasoned.owl");
+//	public static final IRI ISF_FULL_IRI = IRI.create(ISF_ONTOLOGY_IRI_PREFIX + "isf-full.owl");
+//	public static final IRI ISF_FULL_REASONED_IRI = IRI.create(ISF_ONTOLOGY_IRI_PREFIX
+//			+ "isf-full-reasoned.owl");
+	
+	public static final IRI ISF_FULL_DEV_IRI = IRI.create(ISF_ONTOLOGY_IRI_PREFIX + "isf-full-dev.owl");
+	public static final IRI ISF_FULL_DEV_REASONED_IRI = IRI.create(ISF_ONTOLOGY_IRI_PREFIX
+			+ "isf-full-dev-reasoned.owl");
 
 	public static final String ISF_MAPPING_SUFFIX = "-mapping.owl";
 	public static final IRI ISF_IRI_MAPPES_TO_IRI = IRI.create(ISF_ONTOLOGY_IRI_PREFIX
@@ -77,8 +85,8 @@ public class ISFUtil {
 	public static OWLOntology setupAndLoadIsfOntology(OWLOntologyManager man)
 			throws OWLOntologyCreationException {
 		setupManagerMapper(man);
-		man.loadOntology(ISF_IRI);
-		return man.getOntology(ISF_IRI);
+		man.loadOntology(ISF_DEV_IRI);
+		return man.getOntology(ISF_DEV_IRI);
 	}
 
 	public static OWLReasoner getDefaultReasoner(OWLOntology ontology) {
@@ -88,8 +96,8 @@ public class ISFUtil {
 	public static OWLOntology setupAndLoadIsfFullOntology(OWLOntologyManager man)
 			throws OWLOntologyCreationException {
 		setupManagerMapper(man);
-		man.loadOntology(ISF_FULL_IRI);
-		return man.getOntology(ISF_FULL_IRI);
+		man.loadOntology(ISF_FULL_DEV_IRI);
+		return man.getOntology(ISF_FULL_DEV_IRI);
 	}
 
 	public static Set<OWLAnnotationAssertionAxiom> getAnnotationAssertionAxioms(

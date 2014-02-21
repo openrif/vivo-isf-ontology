@@ -68,7 +68,7 @@ public class SplitEroToInNotInIsf {
 
 		// Load the ISF/ERO ontologies
 
-		OWLOntology isfOntology = isfManager.loadOntology(ISFUtil.ISF_IRI);
+		OWLOntology isfOntology = isfManager.loadOntology(ISFUtil.ISF_DEV_IRI);
 		// OWLOntology eroOntology = eroManager.loadOntology(IRI
 		// .create("http://purl.obolibrary.org/obo/ero.owl"));
 		OWLOntology eroOntology = eroManager.loadOntology(IRI

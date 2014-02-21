@@ -177,7 +177,7 @@ public class SimpleModule extends AbstractModule {
 
 				// add the ISF import
 				ai = new AddImport(annotationOntology, getDataFactory().getOWLImportsDeclaration(
-						ISFUtil.ISF_IRI));
+						ISFUtil.ISF_DEV_IRI));
 				getManager().applyChange(ai);
 
 				try {
@@ -321,6 +321,10 @@ public class SimpleModule extends AbstractModule {
 				List<OWLOntologyChange> changes = getManager().removeAxioms(o, axioms);
 				logger.info("Cleaned legacy ontology: " + o.getOntologyID() + ", change count: "
 						+ changes.size());
+
+				for (OWLOntologyChange change : changes) {
+					getManager().addAxiom(legacyRemovedOntology, change.getAxiom());
+				}
 			}
 		}
 	}
