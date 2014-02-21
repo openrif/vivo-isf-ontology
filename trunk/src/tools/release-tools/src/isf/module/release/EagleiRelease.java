@@ -146,6 +146,7 @@ public class EagleiRelease extends CompositeModule {
 
 		EagleiRelease release = new EagleiRelease(null, false, null);
 		release.generateModule();
+		release.cleanLegacyOntologies();
 		release.addLegacyOntologies();
 		release.saveGeneratedModule();
 		release.close();

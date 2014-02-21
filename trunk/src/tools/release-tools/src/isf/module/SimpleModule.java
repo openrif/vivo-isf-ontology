@@ -4,8 +4,11 @@ import isf.ISFUtil;
 import isf.module.internal.SimpleModuleBuilder;
 
 import java.io.FileNotFoundException;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Set;
 
 import org.semanticweb.owlapi.apibinding.OWLManager;
@@ -111,21 +114,25 @@ public class SimpleModule extends AbstractModule {
 			@Override
 			public void ontologiesChanged(List<? extends OWLOntologyChange> changes)
 					throws OWLException {
-				Set<OWLOntology> ontologies = new HashSet<OWLOntology>();
+				Map<OWLOntology, Set<OWLOntologyChange>> changeMap = new HashMap<OWLOntology, Set<OWLOntologyChange>>(
+						changes.size());
 				for (OWLOntologyChange change : changes) {
 					changedOntologies.add(change.getOntology());
-					ontologies.add(change.getOntology());
-				}
-
-				for (OWLOntology o : ontologies) {
-					logger.info("Ontology changed: " + o.getOntologyID());
-					for (OWLOntologyChange change : changes) {
-						if (change.getOntology().equals(o)) {
-							logger.debug("\t" + change.toString());
-						}
+					Set<OWLOntologyChange> ontologyChanges = changeMap.get(change.getOntology());
+					if (ontologyChanges == null) {
+						ontologyChanges = new HashSet<OWLOntologyChange>();
+						changeMap.put(change.getOntology(), ontologyChanges);
 					}
+					ontologyChanges.add(change);
 				}
 
+				for (Entry<OWLOntology, Set<OWLOntologyChange>> entry : changeMap.entrySet()) {
+					logger.info("Ontology changed: " + entry.getKey().getOntologyID());
+					for (OWLOntologyChange change : entry.getValue()) {
+						logger.debug("\t" + change.toString());
+					}
+
+				}
 			}
 		};
 
@@ -311,10 +318,9 @@ public class SimpleModule extends AbstractModule {
 		if (legacyOntology != null) {
 			for (OWLOntology o : legacyOntology.getImportsClosure()) {
 				Set<OWLAxiom> axioms = ontology.getAxioms();
-				logger.info("Cleaning legacy ontology: " + o.getOntologyID() + ", axiom count: "
-						+ axioms.size());
-				getManager().removeAxioms(o, axioms);
-				// TODO do the debug log
+				List<OWLOntologyChange> changes = getManager().removeAxioms(o, axioms);
+				logger.info("Cleaned legacy ontology: " + o.getOntologyID() + ", change count: "
+						+ changes.size());
 			}
 		}
 	}
@@ -367,7 +373,7 @@ public class SimpleModule extends AbstractModule {
 
 	@Override
 	public void saveGeneratedModuleTransitive() throws OWLOntologyStorageException {
-		logger.info("Saving module transitively");
+		logger.info("Saving module " + getName() + " transitively");
 		for (Module module : getImports()) {
 			module.saveGeneratedModuleTransitive();
 		}

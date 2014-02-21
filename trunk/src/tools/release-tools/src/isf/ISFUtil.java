@@ -42,6 +42,8 @@ import org.slf4j.LoggerFactory;
 import ch.qos.logback.classic.Level;
 import ch.qos.logback.classic.LoggerContext;
 import ch.qos.logback.classic.encoder.PatternLayoutEncoder;
+import ch.qos.logback.core.Appender;
+import ch.qos.logback.core.ConsoleAppender;
 import ch.qos.logback.core.FileAppender;
 import uk.ac.manchester.cs.factplusplus.owlapiv3.FaCTPlusPlusReasonerFactory;
 
@@ -68,7 +70,7 @@ public class ISFUtil {
 
 	public static final String ISF_MAPPING_SUFFIX = "-mapping.owl";
 	public static final IRI ISF_IRI_MAPPES_TO_IRI = IRI.create(ISF_ONTOLOGY_IRI_PREFIX
-			+ "iri-mappes-to");
+			+ "isf-iri-mappes-to");
 
 	public static final IRI ISF_SKOS_IRI = IRI.create(ISF_ONTOLOGY_IRI_PREFIX + "isf-skos.owl");
 
@@ -522,10 +524,14 @@ public class ISFUtil {
 
 		PatternLayoutEncoder encoder = new PatternLayoutEncoder();
 		encoder.setContext(context);
-		encoder.setPattern("%r %thread %C %c %level - %msg%n");
+		encoder.setPattern("%r %c %level - %msg%n");
 		encoder.start();
 		appender.setEncoder(encoder);
 		appender.start();
+		
+		context.getLogger(ch.qos.logback.classic.Logger.ROOT_LOGGER_NAME).detachAppender("console");
+		context.getLogger(ch.qos.logback.classic.Logger.ROOT_LOGGER_NAME).addAppender(appender);
+		
 
 		String logLevelValue = System.getProperty("isf.log");
 		if (logLevelValue != null && logLevelValue.equalsIgnoreCase("debug")) {
@@ -544,7 +550,6 @@ public class ISFUtil {
 	public static Logger getLogger(String loggerName) {
 		ch.qos.logback.classic.Logger logger = (ch.qos.logback.classic.Logger) LoggerFactory
 				.getLogger(loggerName);
-		logger.addAppender(appender);
 		logger.setLevel(logLevel);
 		return logger;
 	}

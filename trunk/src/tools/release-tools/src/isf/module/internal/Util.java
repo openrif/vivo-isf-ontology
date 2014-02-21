@@ -16,12 +16,18 @@ public class Util {
 
 	private static OWLDataFactory df = OWLManager.getOWLDataFactory();
 
-	public static final String INCLUDE_ANNOTATION_IRI = "http://purl.obolibrary.org/obo/ARG_include";
-	public static final String INCLUDE_SUBS_ANNOTATION_IRI = "http://purl.obolibrary.org/obo/ARG_include_subs";
-	public static final String INCLUDE_INSTANCES_ANNOTATION_IRI = "http://purl.obolibrary.org/obo/ARG_include_instances";
+	public static final String INCLUDE_ANNOTATION_IRI = ISFUtil.ISF_ONTOLOGY_IRI_PREFIX
+			+ "isf-module-include";
+	public static final String INCLUDE_SUBS_ANNOTATION_IRI = ISFUtil.ISF_ONTOLOGY_IRI_PREFIX
+			+ "isf-module-include-subs";
+	public static final String INCLUDE_INSTANCES_ANNOTATION_IRI = ISFUtil.ISF_ONTOLOGY_IRI_PREFIX
+			+ "isf-module-include-instances";
 
-	public static final String EXCLUDE_ANNOTATION_IRI = "http://purl.obolibrary.org/obo/ARG_exclude";
-	public static final String EXCLUDE_SUBS_ANNOTATION_IRI = "http://purl.obolibrary.org/obo/ARG_exclude_subs";
+	public static final String EXCLUDE_ANNOTATION_IRI = ISFUtil.ISF_ONTOLOGY_IRI_PREFIX
+			+ "isf-module-exclude";
+
+	public static final String EXCLUDE_SUBS_ANNOTATION_IRI = ISFUtil.ISF_ONTOLOGY_IRI_PREFIX
+			+ "isf-module-exclude-subs";
 
 	public static Set<OWLAnnotationAssertionAxiom> getIncludeAxioms(OWLOntology ontology,
 			boolean includeImports) {
