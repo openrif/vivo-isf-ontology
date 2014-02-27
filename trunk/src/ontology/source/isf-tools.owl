@@ -64,6 +64,22 @@
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/arg/isf-module-include-subs">
         <rdfs:comment>An annotation property that is used to mark entities that should be included in a module file along with all their subs.</rdfs:comment>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/arg/isf-module-iri -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/arg/isf-module-iri">
+        <rdfs:comment>A module annotation ontology property to be used to annotate the ontology with the IRI of the generated module instead of using the default one.</rdfs:comment>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/arg/isf-module-source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/arg/isf-module-source">
+        <rdfs:comment>This property is used on a module annotation ontology (not class, etc.) to hold the literal value (i.e. string datatype) of the IRI of a source ontology that is already imported into the annotation ontology. The idea is that the annotation ontology might import several ontologies (to help with editing and exploration) but we only want few of them to be considered sources for the various scripts.</rdfs:comment>
+    </owl:AnnotationProperty>
 </rdf:RDF>
 
 
