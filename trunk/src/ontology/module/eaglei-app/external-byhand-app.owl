@@ -25,6 +25,36 @@
     
 
 
+    <!-- http://eagle-i.org/ont/app/1.0/domainConstraint -->
+
+    <owl:AnnotationProperty rdf:about="http://eagle-i.org/ont/app/1.0/domainConstraint"/>
+    
+
+
+    <!-- http://eagle-i.org/ont/app/1.0/inClassGroup -->
+
+    <owl:AnnotationProperty rdf:about="http://eagle-i.org/ont/app/1.0/inClassGroup"/>
+    
+
+
+    <!-- http://eagle-i.org/ont/app/1.0/inPropertyGroup -->
+
+    <owl:AnnotationProperty rdf:about="http://eagle-i.org/ont/app/1.0/inPropertyGroup"/>
+    
+
+
+    <!-- http://eagle-i.org/ont/app/1.0/preferredLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://eagle-i.org/ont/app/1.0/preferredLabel"/>
+    
+
+
+    <!-- http://eagle-i.org/ont/app/1.0/referencedTaxonomyIRI -->
+
+    <owl:AnnotationProperty rdf:about="http://eagle-i.org/ont/app/1.0/referencedTaxonomyIRI"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -33,11 +63,11 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0001340">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hermaphrodite</app:preferredLabel>
-    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000304">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0001340">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hermaphrodite</app:preferredLabel>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000417">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
@@ -45,22 +75,22 @@
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000926">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mesoderm</app:preferredLabel>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000833">
-        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
-    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000925">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Endoderm</app:preferredLabel>
     </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000833">
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0001422">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deceased</app:preferredLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000924">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ectoderm</app:preferredLabel>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0008150">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biological process</app:preferredLabel>
         <app:referencedTaxonomyIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/ero/dev/go-imports-app.owl</app:referencedTaxonomyIRI>
         <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_ReferencedTaxonomy"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000924">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ectoderm</app:preferredLabel>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000923">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Germ layer</app:preferredLabel>
@@ -68,11 +98,11 @@
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0000383">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</app:preferredLabel>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000316">
-        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
-    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0000384">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</app:preferredLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000316">
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002342">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neural crest</app:preferredLabel>
@@ -93,11 +123,11 @@
         <app:referencedTaxonomyIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/ero/dev/mp-imports-app.owl</app:referencedTaxonomyIRI>
         <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_ReferencedTaxonomy"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000835">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Manufacturer</app:preferredLabel>
-    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0001421">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alive</app:preferredLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000835">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Manufacturer</app:preferredLabel>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0001894">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phenotypic sex</app:preferredLabel>
@@ -112,12 +142,12 @@
     </rdf:Description>
     <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/SWO_0000002">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Software license</app:preferredLabel>
-        <app:referencedTaxonomyIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://eagle-i.org/ont/app/1.0/swo-imports-app.owl</app:referencedTaxonomyIRI>
+        <app:referencedTaxonomyIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://eagle-i.org/ont/app/1.0/eagle-i-core-app.owl</app:referencedTaxonomyIRI>
         <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_ReferencedTaxonomy"/>
     </rdf:Description>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 3.1.0.1642) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
 
