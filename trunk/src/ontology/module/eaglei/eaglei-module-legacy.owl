@@ -3,6 +3,8 @@
      xml:base="http://purl.obolibrary.org/obo/arg/eaglei-module-legacy.owl"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+          xmlns:ro="http://www.obofoundry.org/ro/ro.owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/arg/eaglei-module-legacy.owl">
@@ -23,6 +25,150 @@
         <owl:imports rdf:resource="http://www.ifomis.org/bfo/1.1"/>
         <owl:imports rdf:resource="http://www.obofoundry.org/ro/ro.owl"/>
     </owl:Ontology>
+    
+        <!-- http://purl.obolibrary.org/obo/RO_0003000 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0003000">
+        <rdfs:domain rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0003001 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0003001">
+        <rdfs:domain rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
+    </owl:AnnotationProperty>
+    
+    
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.obofoundry.org/ro/ro.owl#agent_in -->
+
+    <owl:AnnotationProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#agent_in">
+        <rdfs:domain rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Continuant"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.obofoundry.org/ro/ro.owl#derived_into -->
+
+    <owl:AnnotationProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#derived_into">
+        <rdfs:domain rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Continuant"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.obofoundry.org/ro/ro.owl#derives_from -->
+
+    <owl:AnnotationProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#derives_from">
+        <rdfs:domain rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Continuant"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.obofoundry.org/ro/ro.owl#has_agent -->
+
+    <owl:AnnotationProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#has_agent">
+        <rdfs:domain rdf:resource="http://www.ifomis.org/bfo/1.1/span#Occurrent"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.obofoundry.org/ro/ro.owl#has_participant -->
+
+    <owl:AnnotationProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#has_participant">
+        <rdfs:domain rdf:resource="http://www.ifomis.org/bfo/1.1/span#Occurrent"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.obofoundry.org/ro/ro.owl#located_in -->
+
+    <owl:AnnotationProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#located_in">
+        <rdfs:domain rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Continuant"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.obofoundry.org/ro/ro.owl#location_of -->
+
+    <owl:AnnotationProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#location_of">
+        <rdfs:domain rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Continuant"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.obofoundry.org/ro/ro.owl#participates_in -->
+
+    <owl:AnnotationProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#participates_in">
+        <rdfs:domain rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Continuant"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.obofoundry.org/ro/ro.owl#preceded_by -->
+
+    <owl:AnnotationProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#preceded_by">
+        <rdfs:domain rdf:resource="http://www.ifomis.org/bfo/1.1/span#Occurrent"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.obofoundry.org/ro/ro.owl#precedes -->
+
+    <owl:AnnotationProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#precedes">
+        <rdfs:domain rdf:resource="http://www.ifomis.org/bfo/1.1/span#Occurrent"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.obofoundry.org/ro/ro.owl#transformation_of -->
+
+    <owl:AnnotationProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#transformation_of">
+        <rdfs:domain rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Continuant"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.obofoundry.org/ro/ro.owl#transformed_into -->
+
+    <owl:AnnotationProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#transformed_into">
+        <rdfs:domain rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Continuant"/>
+    </owl:AnnotationProperty>
+    
+        <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000569">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000013"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000013"/>
+    
+    
 </rdf:RDF>
 
 
