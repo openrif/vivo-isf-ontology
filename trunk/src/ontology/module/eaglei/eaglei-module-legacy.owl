@@ -1,9 +1,7 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/arg/eaglei-module-legacy.owl#"
      xml:base="http://purl.obolibrary.org/obo/arg/eaglei-module-legacy.owl"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:ro="http://www.obofoundry.org/ro/ro.owl#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
@@ -31,7 +29,7 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
-    // Annotation properties
+    // Object Properties
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
@@ -45,7 +43,6 @@
         <rdfs:domain rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
     </owl:ObjectProperty>
     
-        <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity" />
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0003001 -->
@@ -69,8 +66,6 @@
     <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#transformed_into">
         <rdfs:domain rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Continuant"/>
     </owl:ObjectProperty>
-    
-    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#Continuant" />
     
 
 
@@ -107,6 +102,18 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000013 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000013"/>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#Continuant -->
+
+    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#Continuant"/>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#MaterialEntity -->
+
+    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
 </rdf:RDF>
 
 
