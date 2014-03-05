@@ -92,24 +92,26 @@
 
     <!-- http://purl.obolibrary.org/obo/RO_0003000 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0003000">
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0003000">
         <rdfs:label xml:lang="en">produces</rdfs:label>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Melissa Haendel</obo:IAO_0000117>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a produces b if some process that occurs_in a has_output b, where a and b are material entities. Examples: hybridoma cell line produces monoclonal antibody reagent; chondroblast produces avascular GAG-rich matrix.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
         <rdfs:domain rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
-    </owl:AnnotationProperty>
+    </owl:ObjectProperty>
+    
+    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity" />
     
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0003001 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0003001">
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0003001">
         <rdfs:label xml:lang="en">produced_by</rdfs:label>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Melissa Haendel</obo:IAO_0000117>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
         <rdfs:domain rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
-    </owl:AnnotationProperty>
+    </owl:ObjectProperty>
     
 
 

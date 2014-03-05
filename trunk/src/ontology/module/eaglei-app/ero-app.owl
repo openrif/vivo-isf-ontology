@@ -61,7 +61,7 @@
 
     <!-- http://eagle-i.org/ont/app/1.0/derives_from_human_subject -->
 
-    <owl:AnnotationProperty rdf:about="http://eagle-i.org/ont/app/1.0/derives_from_human_subject">
+    <owl:ObjectProperty rdf:about="http://eagle-i.org/ont/app/1.0/derives_from_human_subject">
         <rdfs:label xml:lang="en">derives_from_human_subject</rdfs:label>
         <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An individual human subject from which biological material is derived.</app:preferredDefinition>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Describes derivation of biological material from a human subject</obo:IAO_0000115>
@@ -70,8 +70,9 @@
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Source Human Subject</app:preferredLabel>
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_SecondaryProperty"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0001962"/>
-    </owl:AnnotationProperty>
+    </owl:ObjectProperty>
     
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001962" />
 
 
     <!-- http://eagle-i.org/ont/app/1.0/domainConstraint -->
@@ -82,97 +83,100 @@
 
     <!-- http://eagle-i.org/ont/app/1.0/has_intervention -->
 
-    <owl:AnnotationProperty rdf:about="http://eagle-i.org/ont/app/1.0/has_intervention">
+    <owl:ObjectProperty rdf:about="http://eagle-i.org/ont/app/1.0/has_intervention">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_intervention</rdfs:label>
         <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Intervening action or substance used to delay or change the outcome of a disease or condition.</app:preferredDefinition>
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Intervention</app:preferredLabel>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Intervention Type</obo:IAO_0000111>
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_PrimaryProperty"/>
         <rdfs:domain rdf:resource="http://purl.org/net/OCRe/research.owl#Interventional_study"/>
-    </owl:AnnotationProperty>
+    </owl:ObjectProperty>
     
+    <owl:Class rdf:about="http://purl.org/net/OCRe/research.owl#Interventional_study" />
 
 
     <!-- http://eagle-i.org/ont/app/1.0/has_measurement_scale -->
 
-    <owl:AnnotationProperty rdf:about="http://eagle-i.org/ont/app/1.0/has_measurement_scale">
+    <owl:ObjectProperty rdf:about="http://eagle-i.org/ont/app/1.0/has_measurement_scale">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_measurement_scale</rdfs:label>
         <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Level of measurement precision used to record data input into the software.  Relevant primarily for biostatistical analysis software.  For other types of software this field can be left blank</app:preferredDefinition>
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measurement scale</app:preferredLabel>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0001554"/>
-    </owl:AnnotationProperty>
+    </owl:ObjectProperty>
     
+        <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001554" />
 
 
     <!-- http://eagle-i.org/ont/app/1.0/has_observation -->
 
-    <owl:AnnotationProperty rdf:about="http://eagle-i.org/ont/app/1.0/has_observation">
+    <owl:ObjectProperty rdf:about="http://eagle-i.org/ont/app/1.0/has_observation">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_observation</rdfs:label>
         <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Method or strategy used in observation.</app:preferredDefinition>
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Observational Method</app:preferredLabel>
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_PrimaryProperty"/>
         <rdfs:domain rdf:resource="http://purl.org/net/OCRe/research.owl#Observational_study"/>
-    </owl:AnnotationProperty>
-    
+    </owl:ObjectProperty>
+            <owl:Class rdf:about="http://purl.org/net/OCRe/research.owl#Observational_study" />
 
 
     <!-- http://eagle-i.org/ont/app/1.0/has_part_algorithmic_software_component -->
 
-    <owl:AnnotationProperty rdf:about="http://eagle-i.org/ont/app/1.0/has_part_algorithmic_software_component">
+    <owl:ObjectProperty rdf:about="http://eagle-i.org/ont/app/1.0/has_part_algorithmic_software_component">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_part_algorithmic_software_component</rdfs:label>
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Uses algorithmic software component</app:preferredLabel>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0001839"/>
-    </owl:AnnotationProperty>
-    
+    </owl:ObjectProperty>
+                <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001839" />
 
 
     <!-- http://eagle-i.org/ont/app/1.0/has_part_construct -->
 
-    <owl:AnnotationProperty rdf:about="http://eagle-i.org/ont/app/1.0/has_part_construct">
+    <owl:ObjectProperty rdf:about="http://eagle-i.org/ont/app/1.0/has_part_construct">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has part construct</rdfs:label>
         <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></obo:IAO_0000232>
         <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Construct into which the library is cloned.</app:preferredDefinition>
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Part</app:preferredLabel>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has part construct</obo:IAO_0000111>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0000430"/>
-    </owl:AnnotationProperty>
-    
+    </owl:ObjectProperty>
+                  <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000430" />
 
 
     <!-- http://eagle-i.org/ont/app/1.0/has_part_construct_insert -->
 
-    <owl:AnnotationProperty rdf:about="http://eagle-i.org/ont/app/1.0/has_part_construct_insert">
+    <owl:ObjectProperty rdf:about="http://eagle-i.org/ont/app/1.0/has_part_construct_insert">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_part_construct_insert</rdfs:label>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></obo:IAO_0000118>
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Construct Insert</app:preferredLabel>
         <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Identifies the contents of the construct.</app:preferredDefinition>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has part construct insert</obo:IAO_0000111>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0000285"/>
-    </owl:AnnotationProperty>
-    
+    </owl:ObjectProperty>
+                      <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000285" />
 
 
     <!-- http://eagle-i.org/ont/app/1.0/has_part_exp_const -->
 
-    <owl:AnnotationProperty rdf:about="http://eagle-i.org/ont/app/1.0/has_part_exp_const">
+    <owl:ObjectProperty rdf:about="http://eagle-i.org/ont/app/1.0/has_part_exp_const">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_part_exp_const</rdfs:label>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></obo:IAO_0000112>
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Expression vector</app:preferredLabel>
         <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Expression vector into which the library is cloned.</app:preferredDefinition>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_part_exp_const</obo:IAO_0000111>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0000436"/>
-    </owl:AnnotationProperty>
+    </owl:ObjectProperty>
     
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000436" />
 
 
     <!-- http://eagle-i.org/ont/app/1.0/implemented_by -->
 
-    <owl:AnnotationProperty rdf:about="http://eagle-i.org/ont/app/1.0/implemented_by">
+    <owl:ObjectProperty rdf:about="http://eagle-i.org/ont/app/1.0/implemented_by">
         <rdfs:label xml:lang="en">implemented_by</rdfs:label>
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
-    </owl:AnnotationProperty>
-    
+    </owl:ObjectProperty>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000064" />
 
 
     <!-- http://eagle-i.org/ont/app/1.0/inClassGroup -->
@@ -264,12 +268,12 @@
 
     <!-- http://purl.obolibrary.org/obo/ERO_0001904 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001904">
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001904">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is_co-PI_of</rdfs:label>
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Co-PI of</app:preferredLabel>
         <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The laboratory for which the person is co-Principle Investigator (co-PI).</app:preferredDefinition>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is co-PI of</obo:IAO_0000111>
-    </owl:AnnotationProperty>
+    </owl:ObjectProperty>
     
 
 
