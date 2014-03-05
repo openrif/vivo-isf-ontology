@@ -50,32 +50,90 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#string -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/net/OCRe/study_design.owl#OCRE100038 -->
+
+    <owl:Class rdf:about="http://purl.org/net/OCRe/study_design.owl#OCRE100038">
+        <app:referencedTaxonomyIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://eagle-i.org/ont/app/1.0/eagle-i-core-app.owl</app:referencedTaxonomyIRI>
+        <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_ReferencedTaxonomy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/OCRe/study_design.owl#Phase_0 -->
+
+    <owl:Class rdf:about="http://purl.org/net/OCRe/study_design.owl#Phase_0">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phase 0 clinical trial</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/OCRe/study_design.owl#Phase_1 -->
+
+    <owl:Class rdf:about="http://purl.org/net/OCRe/study_design.owl#Phase_1">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phase 1 clinical trial</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/OCRe/study_design.owl#Phase_2 -->
+
+    <owl:Class rdf:about="http://purl.org/net/OCRe/study_design.owl#Phase_2">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phase 2 clinical trial</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/OCRe/study_design.owl#Phase_3 -->
+
+    <owl:Class rdf:about="http://purl.org/net/OCRe/study_design.owl#Phase_3">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phase 3 clinical trial</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/OCRe/study_design.owl#Phase_4 -->
+
+    <owl:Class rdf:about="http://purl.org/net/OCRe/study_design.owl#Phase_4">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phase 4 clinical trial</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Annotations
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <rdf:Description rdf:about="http://purl.org/net/OCRe/study_design.owl#Phase_1">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phase 1 clinical trial</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/net/OCRe/study_design.owl#Phase_2">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phase 2 clinical trial</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/net/OCRe/study_design.owl#Phase_3">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phase 3 clinical trial</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/net/OCRe/study_design.owl#Phase_4">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phase 4 clinical trial</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/net/OCRe/study_design.owl#OCRE100038">
-        <app:referencedTaxonomyIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://eagle-i.org/ont/app/1.0/eagle-i-core-app.owl</app:referencedTaxonomyIRI>
-        <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_ReferencedTaxonomy"/>
-    </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/net/OCRe/study_design.owl#OCRE100027">
         <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A parallel group study is an interventional study that compares two treatments. Usually a test therapy is compared with a standard therapy.  The allocation of subjects to groups is usually achieved by randomisation. The groups are typically named the treatment group and the control group. Parallel group designs do not require the same number of subjects in each group, although often similar numbers are observed. The design is commonly used in randomised controlled trials. Statistical analysis often boils down to a simple t-test of the between group difference in the outcome, which is usually a mean or a proportion.</app:preferredDefinition>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/net/OCRe/study_design.owl#Phase_0">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phase 0 clinical trial</app:preferredLabel>
     </rdf:Description>
 </rdf:RDF>
 

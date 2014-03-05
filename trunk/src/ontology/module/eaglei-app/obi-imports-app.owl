@@ -84,6 +84,29 @@
     
 
 
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#string -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -1404,6 +1427,14 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000634 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000634">
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">global methylation analysis</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000636 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000636">
@@ -1508,6 +1539,22 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000695">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chain termination sequencing</app:preferredLabel>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dideoxy chain termination DNA sequencing</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000704 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000704">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Decision tree induction objective</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000705 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000705">
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Edman protein sequencing</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -2548,11 +2595,55 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0001204 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001204">
+        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A DNA microarray used to detect polymorphisms in DNA samples.
+</app:preferredDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001307 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001307">
+        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A DNA microarray which has short fragments of nucleic acid immobilized on a substrate. These are designed to cover the whole genome of the target species. Tiling arrays are used to determine genome binding in ChIP assays or to identify transcribed regions.</app:preferredDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0100026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100026">
+        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A living system that is capable of replicating or reproducing in the right environment. Examples: animal, plant, bacteria, fungus or virus.</app:preferredDefinition>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organism or Virus</app:preferredLabel>
+        <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_InstanceCreate"/>
+        <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_PrimaryResourceType"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0200000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0200000">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data processing technique</app:preferredLabel>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data transformation technique</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0200031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0200031">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Differential expression analysis objective</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0200078 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0200078">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Descriptive statistical calculation objective</app:preferredLabel>
     </owl:Class>
     
 
@@ -2581,6 +2672,30 @@
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Software purpose</app:preferredLabel>
         <app:referencedTaxonomyIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://eagle-i.org/ont/app/1.0/eagle-i-core-app.owl</app:referencedTaxonomyIRI>
         <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_ReferencedTaxonomy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0200168 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0200168">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data correction objective</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0200173 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0200173">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Background correction objective</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0200186 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0200186">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Error correction objective</app:preferredLabel>
     </owl:Class>
     
 
@@ -3312,6 +3427,14 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0400149 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400149">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Protein microarray</app:preferredLabel>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0400153 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400153">
@@ -3671,6 +3794,15 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0600055 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600055">
+        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An enzymatic cleavage technique which makes use of enzymes to cut DNA molecules for the study of DNA through cleavage, mapping, and analysis of the fragments.</app:preferredDefinition>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">restriction digestion analysis</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0600056 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600056">
@@ -3705,6 +3837,16 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_1110023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_1110023">
+        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An entity capable of eliciting an immune response when introduced to components of the immune system.</app:preferredDefinition>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Immunogen</app:preferredLabel>
+        <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_DataModelExclude"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_1110055 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_1110055">
@@ -3715,67 +3857,12 @@
     
 
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+    <!-- http://xmlns.com/foaf/0.1/Organization -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0600055">
-        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An enzymatic cleavage technique which makes use of enzymes to cut DNA molecules for the study of DNA through cleavage, mapping, and analysis of the fragments.</app:preferredDefinition>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">restriction digestion analysis</obo:IAO_0000118>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000705">
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Edman protein sequencing</obo:IAO_0000118>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0200186">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Error correction objective</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000704">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Decision tree induction objective</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0400149">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Protein microarray</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_1110023">
-        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An entity capable of eliciting an immune response when introduced to components of the immune system.</app:preferredDefinition>
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Immunogen</app:preferredLabel>
-        <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_DataModelExclude"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0200173">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Background correction objective</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0100026">
-        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A living system that is capable of replicating or reproducing in the right environment. Examples: animal, plant, bacteria, fungus or virus.</app:preferredDefinition>
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organism or Virus</app:preferredLabel>
-        <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_InstanceCreate"/>
-        <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_PrimaryResourceType"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001204">
-        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A DNA microarray used to detect polymorphisms in DNA samples.
-</app:preferredDefinition>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0200031">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Differential expression analysis objective</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0200168">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data correction objective</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0200078">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Descriptive statistical calculation objective</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001307">
-        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A DNA microarray which has short fragments of nucleic acid immobilized on a substrate. These are designed to cover the whole genome of the target species. Tiling arrays are used to determine genome binding in ChIP assays or to identify transcribed regions.</app:preferredDefinition>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization">
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization">
         <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An entity that can play roles, has participants, and has a set of organizational rules or goals. Participants are either organizations themselves or individual people.</app:preferredDefinition>
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organization</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000634">
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">global methylation analysis</obo:IAO_0000118>
-    </rdf:Description>
+    </owl:Class>
 </rdf:RDF>
 
 

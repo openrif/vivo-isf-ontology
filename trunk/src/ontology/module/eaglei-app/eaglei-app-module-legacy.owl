@@ -51,6 +51,50 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#string -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0003000 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0003000">
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0003001 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0003001">
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Data properties
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -136,136 +180,299 @@
     
 
 
-    <!-- http://xmlns.com/foaf/0.1/Person -->
+    <!-- http://purl.obolibrary.org/obo/SO_0000159 -->
 
-    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0000159">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deletion</app:preferredLabel>
+    </owl:Class>
     
 
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+    <!-- http://purl.obolibrary.org/obo/SO_0000199 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SO_0001019">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0000199">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Translocation</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_0000207 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0000207">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Simple sequence length variation</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_0000248 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0000248">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sequence length variation</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_0000667 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0000667">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Insertion</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_0001019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0001019">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Copy number variation</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SO_1000016">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G to A transition</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SO_1000015">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A to G transition</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SO_1000014">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Purine Transition</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SO_1000039">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Direct tandem duplication</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SO_1000013">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T to C transition</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SO_1000019">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C to A transversion</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SO_1000018">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pyrimidine to purine transversion</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SO_1000036">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inversion</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SO_0000159">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deletion</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SO_1000017">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transversion</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SO_1000035">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Duplication</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SO_0001059">
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_0001059 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0001059">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Genetic alteration</app:preferredLabel>
         <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_InstanceCreate"/>
         <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_SearchFlatten"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SO_0000248">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sequence length variation</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SO_0000207">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Simple sequence length variation</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SO_1000022">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T to A transversion</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SO_1000040">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inverted tandem duplication</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SO_1000023">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Purine to pyrimidine transversion</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SO_1000020">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C to G transversion</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SO_1000021">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T to A transversion</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SO_1000002">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Substitution</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SO_1000005">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Complex substitution</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SO_1000025">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A to T transversion</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SO_1000024">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A to C transversion</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SO_1000009">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transition</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SO_1000027">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G to T transversion</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SO_1000008">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Point mutation</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SO_1000026">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G to C transversion</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SO_0001218">
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_0001218 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0001218">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transgenic insertion</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0003001">
-        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SO_0000199">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Translocation</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0003000">
-        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SO_1000032">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indel</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SO_1000173">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tandem duplication</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SO_0000667">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Insertion</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SO_1000010">
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_1000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_1000002">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Substitution</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_1000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_1000005">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Complex substitution</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_1000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_1000008">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Point mutation</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_1000009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_1000009">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transition</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_1000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_1000010">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pyrimidine transition</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SO_1000011">
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_1000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_1000011">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C to T transition</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SO_1000012">
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_1000012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_1000012">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C to T transition at pCpG site</app:preferredLabel>
-    </rdf:Description>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_1000013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_1000013">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T to C transition</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_1000014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_1000014">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Purine Transition</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_1000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_1000015">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A to G transition</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_1000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_1000016">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G to A transition</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_1000017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_1000017">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transversion</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_1000018 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_1000018">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pyrimidine to purine transversion</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_1000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_1000019">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C to A transversion</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_1000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_1000020">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C to G transversion</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_1000021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_1000021">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T to A transversion</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_1000022 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_1000022">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T to A transversion</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_1000023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_1000023">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Purine to pyrimidine transversion</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_1000024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_1000024">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A to C transversion</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_1000025 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_1000025">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A to T transversion</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_1000026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_1000026">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G to C transversion</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_1000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_1000027">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G to T transversion</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_1000032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_1000032">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indel</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_1000035 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_1000035">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Duplication</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_1000036 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_1000036">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inversion</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_1000039 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_1000039">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Direct tandem duplication</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_1000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_1000040">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inverted tandem duplication</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_1000173 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_1000173">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tandem duplication</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
 </rdf:RDF>
 
 
