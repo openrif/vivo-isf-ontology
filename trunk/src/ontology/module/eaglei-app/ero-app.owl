@@ -28,34 +28,36 @@
 
     <!-- http://eagle-i.org/ont/app/1.0/LabLifevirusID -->
 
-    <owl:AnnotationProperty rdf:about="http://eagle-i.org/ont/app/1.0/LabLifevirusID">
+    <owl:DatatypeProperty rdf:about="http://eagle-i.org/ont/app/1.0/LabLifevirusID">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LabLifevirusID</rdfs:label>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LabLife virus ID</obo:IAO_0000111>
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10239"/>
-    </owl:AnnotationProperty>
+    </owl:DatatypeProperty>
+    
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10239" />
     
 
 
     <!-- http://eagle-i.org/ont/app/1.0/Profilesurl -->
 
-    <owl:AnnotationProperty rdf:about="http://eagle-i.org/ont/app/1.0/Profilesurl">
+    <owl:DatatypeProperty rdf:about="http://eagle-i.org/ont/app/1.0/Profilesurl">
         <rdfs:label>profiles_url</rdfs:label>
         <app:preferredLabel>Profiles URL</app:preferredLabel>
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_SearchIndexExclude"/>
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    </owl:AnnotationProperty>
-    
+    </owl:DatatypeProperty>
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person" />
 
 
     <!-- http://eagle-i.org/ont/app/1.0/clinicallyaffected -->
 
-    <owl:AnnotationProperty rdf:about="http://eagle-i.org/ont/app/1.0/clinicallyaffected">
+    <owl:DatatypeProperty rdf:about="http://eagle-i.org/ont/app/1.0/clinicallyaffected">
         <rdfs:label xml:lang="en">Clinically Affected</rdfs:label>
         <app:preferredDefinition>Check box if subject is affected by the disorder or condition of interest.  Leave blank if not affected or unknown.</app:preferredDefinition>
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_TertiaryProperty"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0001964"/>
-    </owl:AnnotationProperty>
+    </owl:DatatypeProperty>
     
 
 
@@ -193,7 +195,7 @@
 
     <!-- http://eagle-i.org/ont/app/1.0/induction_reagent_description -->
 
-    <owl:AnnotationProperty rdf:about="http://eagle-i.org/ont/app/1.0/induction_reagent_description">
+    <owl:DatatypeProperty rdf:about="http://eagle-i.org/ont/app/1.0/induction_reagent_description">
         <rdfs:label xml:lang="en">induction_reagent_description</rdfs:label>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A description of the reagents and procedure used for inducing pluripotency, including genes introduced and types of vectors and facilitating reagents applied.</obo:IAO_0000115>
         <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A free-text description of the reagents and procedure used for inducing pluripotency, including genes introduced and types of vectors and facilitating reagents applied.</app:preferredDefinition>
@@ -202,13 +204,15 @@
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transformant Description</app:preferredLabel>
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_SecondaryProperty"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0001962"/>
-    </owl:AnnotationProperty>
+    </owl:DatatypeProperty>
+    
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001962" />
     
 
 
     <!-- http://eagle-i.org/ont/app/1.0/karyotype_description -->
 
-    <owl:AnnotationProperty rdf:about="http://eagle-i.org/ont/app/1.0/karyotype_description">
+    <owl:DatatypeProperty rdf:about="http://eagle-i.org/ont/app/1.0/karyotype_description">
         <rdfs:label xml:lang="en">karyotype_description</rdfs:label>
         <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A free-text description of known information about the karyotype of the cells.  This can simply indicate it to be &apos;normal&apos;, &apos;abnormal&apos;, or &apos;unknown&apos;, or provide more precise information when known, such as an ISCN (International System for Cytogenetic Nomenclature) syntax description of the karyotype.</app:preferredDefinition>
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Karyotype Description</app:preferredLabel>
@@ -217,19 +221,20 @@
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a description of the karyotype of a cell line</obo:IAO_0000115>
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_TertiaryProperty"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0001962"/>
-    </owl:AnnotationProperty>
-    
+    </owl:DatatypeProperty>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001962" />
 
 
     <!-- http://eagle-i.org/ont/app/1.0/medicalrecordshistoryavailable -->
 
-    <owl:AnnotationProperty rdf:about="http://eagle-i.org/ont/app/1.0/medicalrecordshistoryavailable">
+    <owl:DatatypeProperty rdf:about="http://eagle-i.org/ont/app/1.0/medicalrecordshistoryavailable">
         <rdfs:label xml:lang="en">Medical Records/History Available</rdfs:label>
         <app:preferredDefinition>Check box if subject&apos;s medical records or history are available. Leave blank if not available or unknown.</app:preferredDefinition>
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_TertiaryProperty"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0001964"/>
-    </owl:AnnotationProperty>
+    </owl:DatatypeProperty>
     
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001964" />
 
 
     <!-- http://eagle-i.org/ont/app/1.0/preferredDefinition -->
@@ -258,12 +263,12 @@
 
     <!-- http://purl.obolibrary.org/obo/ERO_0001837 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001837">
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001837">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Molecular weight</app:preferredLabel>
         <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The molecular weight of the protein target.</app:preferredDefinition>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0001545"/>
-    </owl:AnnotationProperty>
-    
+    </owl:DatatypeProperty>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001545" />
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0001904 -->
@@ -1344,11 +1349,11 @@
 
     <!-- http://purl.obolibrary.org/obo/ERO_0001715 -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001715">
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001715">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_co-PI</rdfs:label>
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PI (co-Investigator)</app:preferredLabel>
         <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The co-Principle Investigator (co-PI) name, even if the contact and the co-Principle Investigator are the same. Use the format: Last Name, First Name.</app:preferredDefinition>
-    </owl:DatatypeProperty>
+    </owl:ObjectProperty>
     
 
 
@@ -2272,9 +2277,9 @@ Laboratory personnel have specific training in handling pathogenic and potential
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001476">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Total organic carbon analyzer</app:preferredLabel>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.obofoundry.org/ro/ro.owl#has_agent">
+    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#has_agent">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
-    </rdf:Description>
+    </owl:ObjectProperty>
     <rdf:Description rdf:about="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
@@ -2928,9 +2933,9 @@ Laboratory personnel have specific training in handling pathogenic and potential
     <rdf:Description rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000580">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Image</app:preferredLabel>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.obofoundry.org/ro/ro.owl#has_participant">
+    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#has_participant">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
-    </rdf:Description>
+    </owl:ObjectProperty>
     <rdf:Description rdf:about="http://www.ifomis.org/obo/ro/1.0#derivedInto">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
@@ -3101,11 +3106,11 @@ Laboratory personnel have specific training in handling pathogenic and potential
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_SearchFacet"/>
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_TertiaryProperty"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000232">
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000232">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Author</app:preferredLabel>
         <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Names of the people who wrote the document.</app:preferredDefinition>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">to be imported probably from FOAF or anywhere according to vivo</rdfs:comment>
-    </rdf:Description>
+    </owl:ObjectProperty>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000220">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Image analysis</app:preferredLabel>
     </rdf:Description>
@@ -4069,9 +4074,9 @@ Laboratory personnel have specific training in handling pathogenic and potential
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001363">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Liquid scintillation counting </app:preferredLabel>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.obofoundry.org/ro/ro.owl#preceded_by">
+    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#preceded_by">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
-    </rdf:Description>
+    </owl:ObjectProperty>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001362">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Immunoassay</app:preferredLabel>
     </rdf:Description>
@@ -6638,9 +6643,9 @@ Laboratory personnel have specific training in handling pathogenic and potential
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_ResourceProvider"/>
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_SearchFacet"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.ifomis.org/obo/ro/1.0#precedes">
+    <owl:ObjectProperty rdf:about="http://www.ifomis.org/obo/ro/1.0#precedes">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
-    </rdf:Description>
+    </owl:ObjectProperty>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000510">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic force microscopy</app:preferredLabel>
     </rdf:Description>
@@ -7002,10 +7007,10 @@ Laboratory personnel have specific training in handling pathogenic and potential
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000568">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Animal physiology monitoring system</app:preferredLabel>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000569">
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000569">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed ID</app:preferredLabel>
         <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unique numerical identifier assigned to citation of life sciences and biomedical scientific journal articles in the PubMed database.  Annotate the full URL, which includes the ID.</app:preferredDefinition>
-    </rdf:Description>
+    </owl:DatatypeProperty>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000560">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analog-to-digital converter</app:preferredLabel>
     </rdf:Description>
@@ -7137,9 +7142,9 @@ Laboratory personnel have specific training in handling pathogenic and potential
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scanning force microscope</app:preferredLabel>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">scanning probe microscope</obo:IAO_0000118>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.obofoundry.org/ro/ro.owl#precedes">
+    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#precedes">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
-    </rdf:Description>
+    </owl:ObjectProperty>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000579">
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></obo:IAO_0000115>
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clinical or Environmental Source</app:preferredLabel>

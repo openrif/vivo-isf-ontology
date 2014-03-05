@@ -47,7 +47,7 @@
 
     <!-- http://purl.obolibrary.org/obo/ERO_0000232 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000232">
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000232">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_author</rdfs:label>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A journal article has authors.</obo:IAO_0000112>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000117>
@@ -57,13 +57,14 @@
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobe imported probably from FOAF or anywwre according top vivo</rdfs:comment>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
-    </owl:AnnotationProperty>
+    </owl:ObjectProperty>
     
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000310" />
 
 
     <!-- http://purl.obolibrary.org/obo/ERO_0000569 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000569">
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000569">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_PubMed_ID</rdfs:label>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000119>
@@ -72,13 +73,13 @@
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unique numerical identifier assigned to citation of life sciences and biomedical scientific journal articles in the PubMed database.</obo:IAO_0000115>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000013"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-    </owl:AnnotationProperty>
+    </owl:DatatypeProperty>
     
-
+<owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000013" />
 
     <!-- http://purl.obolibrary.org/obo/ERO_0001908 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001908">
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001908">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">objective_achieved_by_operation</rdfs:label>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Links an objective to a software operation whise execution achieves the objective. Is different from OBI:objective_achieved_by which links an objective to the process that achieves it.</rdfs:comment>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
@@ -88,8 +89,9 @@
 
 objective_achieved_by some (&apos;software/algorithm execution&apos; and (specified_by some &apos;data processing operation&apos;))</obo:IAO_0000116>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0200166"/>
-    </owl:AnnotationProperty>
+    </owl:ObjectProperty>
     
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0200166" />
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
