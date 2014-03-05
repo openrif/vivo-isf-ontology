@@ -10,8 +10,37 @@
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/arg/academic-module-exclude.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/arg/academic-module-include.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/arg/isf-dev.owl"/>
-	<owl:imports rdf:resource="http://purl.obolibrary.org/obo/arg/isf-tools.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/arg/isf-tools.owl"/>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/isftools-module-exclude-subs -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/isftools-module-exclude-subs"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/isftools-module-include -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/isftools-module-include"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/isftools-module-include-subs -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/isftools-module-include-subs"/>
     
 
 
@@ -29,16 +58,16 @@
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#hasAssociatedConcept">
         <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
     </rdf:Description>
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#researcherId">
-        <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
-    </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/ontology/bibo/Code">
         <obo:isftools-module-exclude-subs></obo:isftools-module-exclude-subs>
     </rdf:Description>
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#sponsorAwardId">
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#researcherId">
         <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
     </rdf:Description>
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#reportId">
+        <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#sponsorAwardId">
         <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
     </rdf:Description>
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#primaryEmail">
@@ -53,14 +82,14 @@
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#prerequisiteFor">
         <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/ontology/bibo/LegalDecision">
-        <obo:isftools-module-exclude-subs></obo:isftools-module-exclude-subs>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#assigns">
+        <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
     </rdf:Description>
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#reviewedIn">
         <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
     </rdf:Description>
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#assigns">
-        <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
+    <rdf:Description rdf:about="http://purl.org/ontology/bibo/LegalDecision">
+        <obo:isftools-module-exclude-subs></obo:isftools-module-exclude-subs>
     </rdf:Description>
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#Facility">
         <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
@@ -69,8 +98,8 @@
         <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
     </rdf:Description>
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#Authorship">
-        <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
         <obo:isftools-module-include></obo:isftools-module-include>
+        <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
     </rdf:Description>
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#address1">
         <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
@@ -84,13 +113,13 @@
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#preferredDisplayOrder">
         <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
     </rdf:Description>
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#linkAnchorText">
-        <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
-    </rdf:Description>
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#pmcid">
         <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
     </rdf:Description>
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#grantSubcontractedThrough">
+        <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#linkAnchorText">
         <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
     </rdf:Description>
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#Project">
@@ -117,11 +146,11 @@
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#termType">
         <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
     </rdf:Description>
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#researchOverview">
-        <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
-    </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/ontology/bibo/Magazine">
         <obo:isftools-module-exclude-subs></obo:isftools-module-exclude-subs>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#researchOverview">
+        <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
     </rdf:Description>
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#publicationVenueFor">
         <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
@@ -132,25 +161,25 @@
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#providesFundingThrough">
         <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ARG_0000130">
-        <obo:isftools-module-exclude-subs></obo:isftools-module-exclude-subs>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#geographicFocus">
+        <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
     </rdf:Description>
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#TeacherRole">
         <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
     </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ARG_0000130">
+        <obo:isftools-module-exclude-subs></obo:isftools-module-exclude-subs>
+    </rdf:Description>
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#scopusId">
         <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
     </rdf:Description>
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#geographicFocus">
-        <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#grantDirectCosts">
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#faxNumber">
         <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/spar/fabio/ClinicalGuideline">
         <obo:isftools-module-exclude-subs></obo:isftools-module-exclude-subs>
     </rdf:Description>
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#faxNumber">
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#grantDirectCosts">
         <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
     </rdf:Description>
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#expirationDate">
@@ -184,8 +213,8 @@
         <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
     </rdf:Description>
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#IssuedCredential">
-        <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
         <obo:isftools-module-exclude-subs></obo:isftools-module-exclude-subs>
+        <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
     </rdf:Description>
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#entryTerm">
         <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
@@ -199,10 +228,10 @@
     <rdf:Description rdf:about="http://vivoweb.org/ontology/scientific-research#studyPopulationCount">
         <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/ontology/bibo/Document">
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#AttendeeRole">
         <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
     </rdf:Description>
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#AttendeeRole">
+    <rdf:Description rdf:about="http://purl.org/ontology/bibo/Document">
         <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
     </rdf:Description>
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#EducationalProcess">
@@ -253,19 +282,19 @@
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001844">
         <obo:isftools-module-exclude-subs></obo:isftools-module-exclude-subs>
     </rdf:Description>
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#offeredBy">
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#hasPublicationVenue">
         <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
     </rdf:Description>
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#hasPublicationVenue">
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#offeredBy">
         <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/ontology/bibo/Issue">
         <obo:isftools-module-exclude-subs></obo:isftools-module-exclude-subs>
     </rdf:Description>
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#addressCity">
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#placeOfPublication">
         <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
     </rdf:Description>
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#placeOfPublication">
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#addressCity">
         <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
     </rdf:Description>
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#Position">
@@ -277,19 +306,19 @@
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#Location">
         <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
     </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#Relationship">
+        <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
+    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000835">
         <obo:isftools-module-exclude-subs></obo:isftools-module-exclude-subs>
     </rdf:Description>
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#Relationship">
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#hasValue">
         <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
     </rdf:Description>
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#eRACommonsId">
         <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
     </rdf:Description>
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#relates">
-        <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#hasValue">
         <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ARG_0000012">
@@ -313,20 +342,20 @@
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#patentNumber">
         <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
     </rdf:Description>
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#totalAwardAmount">
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#ServiceProviderRole">
         <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
     </rdf:Description>
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#ServiceProviderRole">
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#totalAwardAmount">
         <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
     </rdf:Description>
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#EventSeries">
         <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
     </rdf:Description>
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#middleName">
-        <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
-    </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/ontology/bibo/Bill">
         <obo:isftools-module-exclude-subs></obo:isftools-module-exclude-subs>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#middleName">
+        <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
     </rdf:Description>
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#contactInformation">
         <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
@@ -334,10 +363,10 @@
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#LeaderRole">
         <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
     </rdf:Description>
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#AdvisingProcess">
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#localAwardId">
         <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
     </rdf:Description>
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#localAwardId">
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#AdvisingProcess">
         <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
     </rdf:Description>
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#assignedBy">
@@ -349,19 +378,19 @@
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#AdministratorRole">
         <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
     </rdf:Description>
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#licenseNumber">
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#publisher">
         <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
     </rdf:Description>
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#publisher">
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#licenseNumber">
         <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
     </rdf:Description>
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#email">
         <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
     </rdf:Description>
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#subcontractsGrant">
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#rank">
         <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
     </rdf:Description>
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#rank">
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#subcontractsGrant">
         <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
     </rdf:Description>
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#primaryPhoneNumber">
@@ -379,10 +408,10 @@
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#PresentingProcess">
         <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
     </rdf:Description>
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#linkURI">
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#geographicLocationOf">
         <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
     </rdf:Description>
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#geographicLocationOf">
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#linkURI">
         <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
     </rdf:Description>
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#hasPrerequisite">
@@ -433,10 +462,10 @@
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ARG_0000051">
         <obo:isftools-module-exclude-subs></obo:isftools-module-exclude-subs>
     </rdf:Description>
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#courseCredits">
+    <rdf:Description rdf:about="http://purl.org/ontology/bibo/Collection">
         <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/ontology/bibo/Collection">
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#courseCredits">
         <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
     </rdf:Description>
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#OutreachProviderRole">
@@ -455,5 +484,5 @@
 
 
 
-<!-- Generated by the OWL API (version 3.4.4) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.4.8) http://owlapi.sourceforge.net -->
 

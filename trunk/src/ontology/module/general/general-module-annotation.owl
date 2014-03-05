@@ -10,7 +10,7 @@
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/arg/general-module-exclude.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/arg/general-module-include.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/arg/isf-dev.owl"/>
-	<owl:imports rdf:resource="http://purl.obolibrary.org/obo/arg/isf-tools.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/arg/isf-tools.owl"/>
     </owl:Ontology>
     
 
@@ -26,14 +26,21 @@
     
 
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Datatypes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+    <!-- http://purl.obolibrary.org/obo/isftools-module-include -->
 
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/isftools-module-include"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/isftools-module-include-instances -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/isftools-module-include-instances"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/isftools-module-include-subs -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/isftools-module-include-subs"/>
     
 
 
@@ -45,10 +52,10 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <rdf:Description rdf:about="http://www.w3.org/2006/vcard/ns#country">
+    <rdf:Description rdf:about="http://www.w3.org/2006/vcard/ns#hasCategory">
         <obo:isftools-module-include></obo:isftools-module-include>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.w3.org/2006/vcard/ns#hasCategory">
+    <rdf:Description rdf:about="http://www.w3.org/2006/vcard/ns#country">
         <obo:isftools-module-include></obo:isftools-module-include>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.w3.org/2006/vcard/ns#hasEmail">
@@ -63,10 +70,10 @@
     <rdf:Description rdf:about="http://www.w3.org/2006/vcard/ns#FormattedName">
         <obo:isftools-module-include></obo:isftools-module-include>
     </rdf:Description>
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#DateTimeValue">
+    <rdf:Description rdf:about="http://www.w3.org/2006/vcard/ns#locality">
         <obo:isftools-module-include></obo:isftools-module-include>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.w3.org/2006/vcard/ns#locality">
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#DateTimeValue">
         <obo:isftools-module-include></obo:isftools-module-include>
     </rdf:Description>
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#DateTimeInterval">
@@ -130,10 +137,10 @@
     <rdf:Description rdf:about="http://www.w3.org/2006/vcard/ns#geo">
         <obo:isftools-module-include></obo:isftools-module-include>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.w3.org/2006/vcard/ns#hasAddress">
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ARG_2000028">
         <obo:isftools-module-include></obo:isftools-module-include>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ARG_2000028">
+    <rdf:Description rdf:about="http://www.w3.org/2006/vcard/ns#hasAddress">
         <obo:isftools-module-include></obo:isftools-module-include>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.w3.org/2006/vcard/ns#givenName">
@@ -145,10 +152,10 @@
     <rdf:Description rdf:about="http://vivoweb.org/ontology/core#yearMonthDayTimePrecision">
         <obo:isftools-module-include></obo:isftools-module-include>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.w3.org/2006/vcard/ns#Category">
+    <rdf:Description rdf:about="http://www.w3.org/2006/vcard/ns#Address">
         <obo:isftools-module-include></obo:isftools-module-include>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.w3.org/2006/vcard/ns#Address">
+    <rdf:Description rdf:about="http://www.w3.org/2006/vcard/ns#Category">
         <obo:isftools-module-include></obo:isftools-module-include>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ARG_2000399">
@@ -157,16 +164,16 @@
     <rdf:Description rdf:about="http://www.w3.org/2006/vcard/ns#honorificSuffix">
         <obo:isftools-module-include></obo:isftools-module-include>
     </rdf:Description>
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#dateTimeValue">
-        <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
-    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ARG_2000379">
         <obo:isftools-module-include></obo:isftools-module-include>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.w3.org/2006/vcard/ns#Email">
-        <obo:isftools-module-include></obo:isftools-module-include>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#dateTimeValue">
+        <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.w3.org/2006/vcard/ns#timeZone">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2006/vcard/ns#Email">
         <obo:isftools-module-include></obo:isftools-module-include>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ARG_2000377">
@@ -176,5 +183,5 @@
 
 
 
-<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.4.8) http://owlapi.sourceforge.net -->
 

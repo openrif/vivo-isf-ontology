@@ -3,12 +3,9 @@
      xml:base="http://purl.obolibrary.org/obo/ero/dev/vivo-imports.owl"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:bibo="http://purl.org/ontology/bibo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:core="http://vivoweb.org/ontology/core#">
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ero/dev/vivo-imports.owl">
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">${ero.ontology.version}</owl:versionInfo>
     </owl:Ontology>
@@ -23,9 +20,24 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412"/>
     
 
 
@@ -37,16 +49,27 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
-
-
-    <!-- http://xmlns.com/foaf/0.1/Organization -->
-
-    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
     
 
 
-	<!-- http://vivoweb.org/ontology/core#AcademicDepartment -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000310 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000310"/>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Patent -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Patent">
+        <rdfs:label xml:lang="en-us">Patent</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A document describing the exclusive right granted by a government to an inventor to manufacture, use, or sell an invention for a certain number of years.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.org/ontology/bibo/"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#AcademicDepartment -->
 
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#AcademicDepartment">
         <rdfs:label xml:lang="en">Academic Department</rdfs:label>
@@ -66,16 +89,16 @@
         <obo:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
     </owl:Class>
     
-    
-    
+
+
     <!-- http://vivoweb.org/ontology/core#Center -->
-    
+
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#Center">
-    	<rdfs:label xml:lang="en-US">Center</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-    	<obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A place where a particular activity or service is concentrated.</obo:IAO_0000115>
-    	<obo:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
-  	</owl:Class>
+        <rdfs:label xml:lang="en-us">Center</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A place where a particular activity or service is concentrated.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
+    </owl:Class>
     
 
 
@@ -133,13 +156,16 @@
         <obo:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
     </owl:Class>
     
-    
-    
+
+
+    <!-- http://vivoweb.org/ontology/core#CoreLaboratory -->
+
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#CoreLaboratory">
-    	<rdfs:label xml:lang="en-US">Core Laboratory</rdfs:label>
-    	<rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#ServiceProvidingLaboratory"/>
-    	<obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A lab providing services such as training, protocols, or access to instruments or software</obo:IAO_0000115>
-  	</owl:Class>
+        <rdfs:label xml:lang="en-us">Core Laboratory</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#ServiceProvidingLaboratory"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A lab providing services such as training, protocols, or access to instruments or software</obo:IAO_0000115>
+    </owl:Class>
+    
 
 
     <!-- http://vivoweb.org/ontology/core#Department -->
@@ -223,19 +249,19 @@
         <obo:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
     </owl:Class>
     
-    
-    
+
+
     <!-- http://vivoweb.org/ontology/core#Laboratory -->
 
-  	<owl:Class rdf:about="http://vivoweb.org/ontology/core#Laboratory">
-    	<rdfs:label xml:lang="en-US">Laboratory</rdfs:label>
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Laboratory">
+        <rdfs:label xml:lang="en-us">Laboratory</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organizational unit (as opposed to the physical facility) that performs research, provides services, or processes materials</obo:IAO_0000115>
-    	<rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-    	<obo:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
-  	</owl:Class>
-  
-  
-  
+        <obo:IAO_0000412 rdf:resource="http://vivoweb.org/ontology/core"/>
+    </owl:Class>
+    
+
+
     <!-- http://vivoweb.org/ontology/core#Library -->
 
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#Library">
@@ -351,17 +377,18 @@
     
 
 
-    <!-- http://purl.org/ontology/bibo/Patent -->
+    <!-- http://xmlns.com/foaf/0.1/Group -->
 
-    <owl:Class rdf:about="http://purl.org/ontology/bibo/Patent">
-        <rdfs:label xml:lang="en-us">Patent</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A document describing the exclusive right granted by a government to an inventor to manufacture, use, or sell an invention for a certain number of years.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.org/ontology/bibo/"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Group"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Organization -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 3.1.0.1642) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.4.8) http://owlapi.sourceforge.net -->
 

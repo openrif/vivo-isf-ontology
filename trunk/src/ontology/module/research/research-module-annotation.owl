@@ -8,9 +8,9 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/arg/research-module-annotation.owl">
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/arg/isf-dev.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/arg/isf-tools.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/arg/research-module-exclude.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/arg/research-module-include.owl"/>
-	<owl:imports rdf:resource="http://purl.obolibrary.org/obo/arg/isf-tools.owl"/>
     </owl:Ontology>
     
 
@@ -26,14 +26,15 @@
     
 
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Datatypes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+    <!-- http://purl.obolibrary.org/obo/isftools-module-include -->
 
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/isftools-module-include"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/isftools-module-include-subs -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/isftools-module-include-subs"/>
     
 
 
@@ -60,16 +61,16 @@
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SO_0001059">
         <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000322">
-        <obo:isftools-module-include></obo:isftools-module-include>
-    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001056">
         <obo:isftools-module-include></obo:isftools-module-include>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000643">
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000322">
         <obo:isftools-module-include></obo:isftools-module-include>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001055">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000643">
         <obo:isftools-module-include></obo:isftools-module-include>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000308">
@@ -99,10 +100,10 @@
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000417">
         <obo:isftools-module-include></obo:isftools-module-include>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000543">
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001716">
         <obo:isftools-module-include></obo:isftools-module-include>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001716">
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000543">
         <obo:isftools-module-include></obo:isftools-module-include>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000833">
@@ -141,16 +142,16 @@
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000006">
         <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000022">
-        <obo:isftools-module-include></obo:isftools-module-include>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000004">
+        <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000272">
         <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
     </rdf:Description>
-    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#Laboratory">
-        <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000022">
+        <obo:isftools-module-include></obo:isftools-module-include>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000004">
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#Laboratory">
         <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000293">
@@ -162,10 +163,10 @@
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000020">
         <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000070">
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000023">
         <obo:isftools-module-include></obo:isftools-module-include>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000023">
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000070">
         <obo:isftools-module-include></obo:isftools-module-include>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000040">
@@ -178,5 +179,5 @@
 
 
 
-<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.4.8) http://owlapi.sourceforge.net -->
 

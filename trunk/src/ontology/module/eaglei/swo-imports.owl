@@ -1,19 +1,11 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/ero/dev/swo-imports.owl#"
      xml:base="http://purl.obolibrary.org/obo/ero/dev/swo-imports.owl"
-     xmlns:edamontology="http://edamontology.org/"
-     xmlns:swo2="http://www.ebi.ac.uk/swo/"
-     xmlns:swo="http://www.ebi.ac.uk/efo/swo/"
-     xmlns:dev="http://purl.obolibrary.org/obo/ero/dev/"
-     xmlns:data="http://www.ebi.ac.uk/swo/data/"
-     xmlns:obective="http://www.ebi.ac.uk/swo/obective/"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:ont="http://www.co-ode.org/ontologies/ont.owl#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:license="http://www.ebi.ac.uk/swo/license/">
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ero/dev/swo-imports.owl"/>
     
 
@@ -26,24 +18,54 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">textual definition</rdfs:label>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">comment</rdfs:label>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
-        <rdfs:label xml:lang="en">imported from</rdfs:label>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition source</rdfs:label>
-    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition editor</rdfs:label>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alternative term</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition source</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -3302,7 +3324,7 @@
     <!-- http://purl.obolibrary.org/obo/ERO_0100334 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100334">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kendall&#39;s tau coefficient</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kendall&apos;s tau coefficient</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kendall rank correlation coefficient</obo:IAO_0000118>
     </owl:Class>
@@ -3466,6 +3488,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ERO_0100364 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100364"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ERO_0100366 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100366"/>
@@ -3557,13 +3585,13 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000064 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000064"/>
-  
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000098 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000098"/>
+    
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
@@ -3597,7 +3625,7 @@
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000006 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000006">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&#39;ACME&#39;</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;ACME&apos;</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The ACME algorithm is quite straightforward. Using a user-dened quantile of the data,called the threshold, any probes in the data that are above that threshold are considered positive probes. A p-value is then assigned to each probe.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
@@ -3649,7 +3677,7 @@
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000014 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000014">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&#39;ANOVA&#39;</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;ANOVA&apos;</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ANNOVA</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
@@ -3722,7 +3750,7 @@
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000052">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BGL</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BGL implements Depth First Search, Breadth First Search,Dijkstra&#39;s, Bellman Ford&#39;s and DAG,Johnson&#39;s and Floyd Warshall&#39;s.Kruskal&#39;s algorithm and Prim&#39;s algorithm Cuthill-McKee&#39;s algorithm Minimum degree Ordering</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BGL implements Depth First Search, Breadth First Search,Dijkstra&apos;s, Bellman Ford&apos;s and DAG,Johnson&apos;s and Floyd Warshall&apos;s.Kruskal&apos;s algorithm and Prim&apos;s algorithm Cuthill-McKee&apos;s algorithm Minimum degree Ordering</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
     </owl:Class>
     
@@ -3970,7 +3998,7 @@
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000127">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discriminant Fuzzy Pattern Algorithm</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A DFP version of a FP (fuzzy pattern) only includes those genes that can serve to differentiate it from the rest of the patterns.This algorithm is based on the discretization of float values (gene expression values) stored in an ExpressionSet object into labels combining &#39;Low&#39;, &#39;Medium&#39; and &#39;High&#39;</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A DFP version of a FP (fuzzy pattern) only includes those genes that can serve to differentiate it from the rest of the patterns.This algorithm is based on the discretization of float values (gene expression values) stored in an ExpressionSet object into labels combining &apos;Low&apos;, &apos;Medium&apos; and &apos;High&apos;</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
     </owl:Class>
     
@@ -4079,7 +4107,7 @@
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000145 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000145">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&#39;FDR&#39;</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;FDR&apos;</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
     </owl:Class>
@@ -4099,7 +4127,7 @@
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000148 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000148">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Firth&#39;s bias reduction procedure</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Firth&apos;s bias reduction procedure</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
     </owl:Class>
@@ -4109,7 +4137,7 @@
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000149 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000149">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fischer&#39;s Exact Test</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fischer&apos;s Exact Test</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
     </owl:Class>
@@ -4350,7 +4378,7 @@
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000250 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000250">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&#39;KLD&#39;</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;KLD&apos;</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
     </owl:Class>
@@ -4531,7 +4559,7 @@
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000281 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000281">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&#39;MI&#39;</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;MI&apos;</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
     </owl:Class>
@@ -4592,7 +4620,7 @@
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000304 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000304">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&#39;Needleman-Wunsch&#39;</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;Needleman-Wunsch&apos;</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
     </owl:Class>
@@ -4643,7 +4671,7 @@
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000318 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000318">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&#39;PLM&#39;</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;PLM&apos;</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">it is where we fit a model with probe level and chip level parameters on a probeset by probeset basis</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
@@ -4968,7 +4996,7 @@
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000426 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000426">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&#39;Smith-Waterman&#39;</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;Smith-Waterman&apos;</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
     </owl:Class>
@@ -5446,7 +5474,7 @@
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000614 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000614">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&#39;MAS5&#39;</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;MAS5&apos;</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
     </owl:Class>
@@ -5728,7 +5756,7 @@
     <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000715 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000715">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&#39;t-test&#39;</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;t-test&apos;</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
     </owl:Class>
@@ -5750,7 +5778,7 @@
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/swo/SWO_0000724">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">data rendering and visualization objective</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0100003"/>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tweaked label.  From &#39;data visualization objective&#39; to &#39;data rendering and visualization objective&#39;.  Need to decide if we should separate rendering from visualization.</obo:IAO_0000116>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tweaked label.  From &apos;data visualization objective&apos; to &apos;data rendering and visualization objective&apos;.  Need to decide if we should separate rendering from visualization.</obo:IAO_0000116>
     </owl:Class>
     
 
@@ -5959,7 +5987,7 @@
         <rdfs:label>TIFF</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/data/SWO_3000020"/>
         <obo:IAO_0000118>Tagged Image File Format</obo:IAO_0000118>
-        <obo:IAO_0000115>TIFF is a flexible, adaptable file format for handling images and data within a single file, by including the header tags (size, definition, image-data arrangement, applied image compression) defining the image&#39;s geometry.</obo:IAO_0000115>
+        <obo:IAO_0000115>TIFF is a flexible, adaptable file format for handling images and data within a single file, by including the header tags (size, definition, image-data arrangement, applied image compression) defining the image&apos;s geometry.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
     </owl:Class>
     
@@ -5994,8 +6022,8 @@
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/data/SWO_3000019">
         <rdfs:label>GIF</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/data/SWO_3000020"/>
-        <obo:IAO_0000118>Graphics Interchange Format</obo:IAO_0000118>
         <obo:IAO_0000115>The Graphics Interchange Format (GIF) is a bitmap image format. The format supports up to 8 bits per pixel thus allowing a single image to reference a palette of up to 256 distinct colors. The colors are chosen from the 24-bit RGB color space. It also supports animations and allows a separate palette of 256 colors for each frame. The color limitation makes the GIF format unsuitable for reproducing color photographs and other images with continuous color, but it is well-suited for simpler images such as graphics or logos with solid areas of color. [wikipedia]</obo:IAO_0000115>
+        <obo:IAO_0000118>Graphics Interchange Format</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
     </owl:Class>
     
@@ -6196,7 +6224,7 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SBML file</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/data/SWO_3000005"/>
         <obo:IAO_0000118>Systems Biology Markup Language</obo:IAO_0000118>
-        <obo:IAO_0000115>Systems Biology Markup Language (SBML) is a machine-readable format for representing models. It&#39;s oriented towards describing systems where biological entities are involved in, and modified by, processes that occur over time.</obo:IAO_0000115>
+        <obo:IAO_0000115>Systems Biology Markup Language (SBML) is a machine-readable format for representing models. It&apos;s oriented towards describing systems where biological entities are involved in, and modified by, processes that occur over time.</obo:IAO_0000115>
         <obo:IAO_0000119>http://sbml.org</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
     </owl:Class>
@@ -6541,5 +6569,5 @@
 
 
 
-<!-- Generated by the OWL API (version 3.1.0.1642) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.4.8) http://owlapi.sourceforge.net -->
 
