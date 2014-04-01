@@ -1,0 +1,455 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/arg/general-module-configuration.owl#"
+     xml:base="http://purl.obolibrary.org/obo/arg/general-module-configuration.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:arg="http://purl.obolibrary.org/obo/arg/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/arg/general-module-configuration.owl">
+        <arg:isftools-module-file-name-inferred rdf:datatype="http://www.w3.org/2001/XMLSchema#string">general-module-inferred.owl</arg:isftools-module-file-name-inferred>
+        <arg:isftools-module-file-name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">general-module.owl</arg:isftools-module-file-name>
+        <arg:isftools-module-iri-inferred rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/arg/general-module-inferred.owl</arg:isftools-module-iri-inferred>
+        <arg:isftools-module-iri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/arg/general-module.owl</arg:isftools-module-iri>
+        <arg:isftools-module-source-exclude rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/arg/isf-tools.owl</arg:isftools-module-source-exclude>
+        <arg:isftools-module-builders rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no-builders</arg:isftools-module-builders>
+        <arg:isftools-module-builders-inferred rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no-builders</arg:isftools-module-builders-inferred>
+        <arg:isftools-module-generate-inferred rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</arg:isftools-module-generate-inferred>
+        <arg:isftools-module-generate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</arg:isftools-module-generate>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/arg/isf-dev.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/arg/isf-tools.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/isftools-module-include -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/isftools-module-include"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/isftools-module-include-instances -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/isftools-module-include-instances"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/isftools-module-include-subs -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/isftools-module-include-subs"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000028 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ARG_2000028">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000029 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ARG_2000029">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000399 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ARG_2000399">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#dateTimeInterval -->
+
+    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#dateTimeInterval">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#dateTimePrecision -->
+
+    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#dateTimePrecision">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#dateTimeValue -->
+
+    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#dateTimeValue">
+        <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#hasAddress -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/vcard/ns#hasAddress">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#hasCategory -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/vcard/ns#hasCategory">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#hasEmail -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/vcard/ns#hasEmail">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#hasFormattedName -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/vcard/ns#hasFormattedName">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#hasName -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/vcard/ns#hasName">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#dateTime -->
+
+    <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#dateTime">
+        <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#country -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2006/vcard/ns#country">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#familyName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2006/vcard/ns#familyName">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#geo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2006/vcard/ns#geo">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#givenName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2006/vcard/ns#givenName">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#honorificPrefix -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2006/vcard/ns#honorificPrefix">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#honorificSuffix -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2006/vcard/ns#honorificSuffix">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#language -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2006/vcard/ns#language">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#locality -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2006/vcard/ns#locality">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#postalCode -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2006/vcard/ns#postalCode">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#region -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2006/vcard/ns#region">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#streetAddress -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2006/vcard/ns#streetAddress">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#timeZone -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2006/vcard/ns#timeZone">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000377 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000377">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ARG_2000379 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_2000379">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#DateTimeInterval -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#DateTimeInterval">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#DateTimeValue -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#DateTimeValue">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#DateTimeValuePrecision -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#DateTimeValuePrecision">
+        <obo:isftools-module-include></obo:isftools-module-include>
+        <obo:isftools-module-include-instances></obo:isftools-module-include-instances>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#Address -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/vcard/ns#Address">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#Addressing -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/vcard/ns#Addressing">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#Category -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/vcard/ns#Category">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#Email -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/vcard/ns#Email">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#FormattedName -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/vcard/ns#FormattedName">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#Kind -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/vcard/ns#Kind">
+        <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#Name -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/vcard/ns#Name">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#yearMonthDayPrecision -->
+
+    <owl:NamedIndividual rdf:about="http://vivoweb.org/ontology/core#yearMonthDayPrecision">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#yearMonthDayTimePrecision -->
+
+    <owl:NamedIndividual rdf:about="http://vivoweb.org/ontology/core#yearMonthDayTimePrecision">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#yearMonthPrecision -->
+
+    <owl:NamedIndividual rdf:about="http://vivoweb.org/ontology/core#yearMonthPrecision">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#yearPrecision -->
+
+    <owl:NamedIndividual rdf:about="http://vivoweb.org/ontology/core#yearPrecision">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.8) http://owlapi.sourceforge.net -->
+
