@@ -3,20 +3,24 @@
      xml:base="http://purl.obolibrary.org/obo/arg/eaglei-extended-go-module-configuration.owl"
      xmlns:arg="http://purl.obolibrary.org/obo/arg/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owlcl="http://owl.essaid.com/owlcl/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/arg/eaglei-extended-go-module-configuration.owl">
-        <arg:isftools-module-file-name-inferred rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eaglei-extended-go-module-inferred.owl</arg:isftools-module-file-name-inferred>
-        <arg:isftools-module-iri-inferred rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/arg/eaglei-extended-go-module-inferred.owl</arg:isftools-module-iri-inferred>
-        <arg:isftools-module-source-exclude rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/arg/isf-tools.owl</arg:isftools-module-source-exclude>
-        <arg:isftools-module-builders rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no-builders</arg:isftools-module-builders>
-        <arg:isftools-module-builders-inferred rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no-builders</arg:isftools-module-builders-inferred>
-        <arg:isftools-module-generate-inferred rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</arg:isftools-module-generate-inferred>
-        <arg:isftools-module-generate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</arg:isftools-module-generate>
-        <arg:isftools-module-file-name>go-imports.owl</arg:isftools-module-file-name>
-        <arg:isftools-module-iri>http://purl.obolibrary.org/obo/ero/dev/go-imports.owl</arg:isftools-module-iri>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/arg/isf-dev.owl"/>
+        <owlcl:owlcl_module_unclassified_builders rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></owlcl:owlcl_module_unclassified_builders>
+        <owlcl:owlcl_module_classified_builders rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></owlcl:owlcl_module_classified_builders>
+        <owlcl:owlcl_module_classified_filename rdf:datatype="http://www.w3.org/2001/XMLSchema#string">go-imports.owl</owlcl:owlcl_module_classified_filename>
+        <owlcl:owlcl_module_unclassified_filename rdf:datatype="http://www.w3.org/2001/XMLSchema#string">go-imports.owl</owlcl:owlcl_module_unclassified_filename>
+        <owlcl:owlcl_module_unclassified_addlegacy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</owlcl:owlcl_module_unclassified_addlegacy>
+        <owlcl:owlcl_module_is_classified rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</owlcl:owlcl_module_is_classified>
+        <owlcl:owlcl_module_classified_cleanlegacy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</owlcl:owlcl_module_classified_cleanlegacy>
+        <owlcl:owlcl_module_is_unclassified rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</owlcl:owlcl_module_is_unclassified>
+        <owlcl:owlcl_module_classified_addlegacy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</owlcl:owlcl_module_classified_addlegacy>
+        <owlcl:owlcl_module_unclassified_cleanlegacy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</owlcl:owlcl_module_unclassified_cleanlegacy>
+        <owlcl:owlcl_module_classified_iri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/ero/dev/go-imports.owl</owlcl:owlcl_module_classified_iri>
+        <owlcl:owlcl_module_unclassified_iri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/ero/dev/go-imports.owl</owlcl:owlcl_module_unclassified_iri>
+         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/arg/eaglei-extended-go-module-source.owl"/>
         <owl:imports rdf:resource="https://raw.github.com/ShahimEssaid/OwlCL/master/owl/owlcl.owl"/>
     </owl:Ontology>
 </rdf:RDF>
