@@ -10415,7 +10415,7 @@ Laboratory personnel have specific training in handling pathogenic and potential
     <!-- http://purl.obolibrary.org/obo/ERO_0001396 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001396">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cancer cell line</app:preferredLabel>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tumor-derived cell line</app:preferredLabel>
     </owl:Class>
     
 
@@ -10424,6 +10424,7 @@ Laboratory personnel have specific training in handling pathogenic and potential
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001397">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Immortalized embryonic cell line</app:preferredLabel>
+        <app:preferredDefinition>A cell line derived from an embryo and immortalized in vitro. Does not include embryonic stem cells.</app:preferredDefinition>
     </owl:Class>
     
 
@@ -10447,7 +10448,8 @@ Laboratory personnel have specific training in handling pathogenic and potential
     <!-- http://purl.obolibrary.org/obo/ERO_0001400 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001400">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stem cell derived cell line</app:preferredLabel>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stem cell-derived cell line</app:preferredLabel>
+        <app:preferredDefinition>A cell line that results from in vitro differentiation of stem cells into a more lineage-restricted cell type. This may or may not be another type of stem cell.</app:preferredDefinition>
     </owl:Class>
     
 
@@ -14627,46 +14629,19 @@ Laboratory personnel have specific training in handling pathogenic and potential
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000035">
-        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_AdminData"/>
-        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000695">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Liquid handling</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000927">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Embryo manipulation</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000032">
-        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_AdminData"/>
-        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
-    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000369">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vibratome</app:preferredLabel>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000266">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Two-dimensional differential gel electrophoresis system</app:preferredLabel>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.ifomis.org/obo/ro/1.0#partOf">
-        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
-    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000265">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Animal imaging chamber</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.ifomis.org/obo/ro/1.0#derivesFrom">
-        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001223">
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Purchasing</obo:IAO_0000111>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000869">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Liquid chromatography-mass spectroscopy platform</app:preferredLabel>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000699">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In vivo magnetic resonance spectroscopy</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000228">
-        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_AdminData"/>
+    <rdf:Description rdf:about="http://www.ifomis.org/obo/ro/1.0#derivesFrom">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000668">
@@ -14681,23 +14656,23 @@ Laboratory personnel have specific training in handling pathogenic and potential
     <rdf:Description rdf:about="http://eagle-i.org/ont/app/1.0/nucleic_labrary_organism">
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nucleic_library_organism</obo:IAO_0000111>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001425">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stadiometer </app:preferredLabel>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001998">
+        <app:preferredLabel>Mortal suspension cell line</app:preferredLabel>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001126">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analysis system</app:preferredLabel>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001996">
-        <app:preferredLabel>Primary adherent cell line</app:preferredLabel>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001999">
+        <app:preferredLabel>Mortal lymphocyte cell line</app:preferredLabel>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000560">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analog-to-digital converter</app:preferredLabel>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.ifomis.org/obo/ro/1.0#hasPart">
-        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001996">
+        <app:preferredLabel>Primary adherent cell line</app:preferredLabel>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000628">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Temperature Control Instrument</app:preferredLabel>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001997">
+        <app:preferredLabel>Mortal fibroblast cell line</app:preferredLabel>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000468">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pediatric phlebotomy</app:preferredLabel>
@@ -14705,40 +14680,14 @@ Laboratory personnel have specific training in handling pathogenic and potential
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000956">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fluorescence DNA analyzer</app:preferredLabel>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.ifomis.org/obo/ro/1.0#derivedInto">
-        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001237">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Irridiation</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000047">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Web page</app:preferredLabel>
-        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
-    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000355">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Therapeutic intervention</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.ifomis.org/obo/ro/1.0#locatedIn">
-        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000258">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oligonucleotide analysis</app:preferredLabel>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000043">
-        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_AdminData"/>
-        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.ifomis.org/obo/ro/1.0#locationOf">
-        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001232">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathology</app:preferredLabel>
-    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000854">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Immunoassay system</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000421">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prokaryote strain</app:preferredLabel>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001281">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transgenic organism</app:preferredLabel>
@@ -14750,11 +14699,11 @@ Laboratory personnel have specific training in handling pathogenic and potential
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001274">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neuroscience</app:preferredLabel>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001072">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fertility preservation</app:preferredLabel>
-    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000090">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Animal experimentation instrument</app:preferredLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001072">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fertility preservation</app:preferredLabel>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.ifomis.org/obo/ro/1.0#contains">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
@@ -14765,34 +14714,39 @@ Laboratory personnel have specific training in handling pathogenic and potential
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000294">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000297">
-        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
-    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000755">
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A technique that involves instructing courses at a distance to provide as much functionality of a computer lab as possible, the venue where they are normally taught. The methods, which can be employed with varied videoconferencing technology and desktop sharing software, were used to deliver mini-courses at a distance in pilot applications where students could see demonstrations by the instructor and the instructor could observe and interact with students working at their remote desktops.</obo:IAO_0000115>
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Remote courses</app:preferredLabel>
     </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000297">
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
     <rdf:Description rdf:about="http://www.ifomis.org/obo/ro/1.0#adjacentTo">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001016">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tablet hardness tester</app:preferredLabel>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0002002">
+        <app:preferredLabel>Embryonic stem cell line</app:preferredLabel>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000530">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Automated pipetting system</app:preferredLabel>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0002001">
+        <app:preferredLabel>Transformed cell line</app:preferredLabel>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000887">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bioassay system</app:preferredLabel>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0002004">
+        <app:preferredLabel>Genome-corrected iPS cell line</app:preferredLabel>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000673">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behavioral test</app:preferredLabel>
-        <obo:IAO_0000231 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Using &quot;behavioral assay&quot;</obo:IAO_0000231>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0002003">
+        <app:preferredLabel>Stem cell line</app:preferredLabel>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000607">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gene expression profiling</app:preferredLabel>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0002006">
+        <app:preferredLabel>Hematopoietic stem cell line</app:preferredLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0002005">
+        <app:preferredDefinition>Mesenchymal stem cell line</app:preferredDefinition>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001058">
         <app:preferredLabel>In vitro simulation</app:preferredLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0002007">
+        <app:preferredLabel>Somatic cell nuclear transfer stem cell line</app:preferredLabel>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000700">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In vivo magnetic resonance imaging</app:preferredLabel>
@@ -14800,17 +14754,8 @@ Laboratory personnel have specific training in handling pathogenic and potential
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000241">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bulk reagent dispenser</app:preferredLabel>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000539">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Immunofluorescence labeling</app:preferredLabel>
-    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001246">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Outreach</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000802">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Animal test cage</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.ifomis.org/obo/ro/1.0#precededBy">
-        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001244">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Patenting</app:preferredLabel>
@@ -14821,27 +14766,158 @@ Laboratory personnel have specific training in handling pathogenic and potential
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000589">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organic molecule</app:preferredLabel>
     </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000587">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inorganic molecule</app:preferredLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000283">
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_AdminData"/>
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000238">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Plate stacker</app:preferredLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000506">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Interaction analyzer</app:preferredLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001160">
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lambda phage library</obo:IAO_0000119>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000235">
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_AdminData"/>
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001052">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Animal husbandry</app:preferredLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000028">
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_AdminData"/>
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000770">
+        <app:preferredLabel>Flash freeze</app:preferredLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000577">
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></obo:IAO_0000115>
+        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gene or sequence name that is inserted into a transgenic organism.</app:preferredDefinition>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Insertion Name</app:preferredLabel>
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000576">
+        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EntrezGene ID of the gene that is inserted into a transgenic organism.</app:preferredDefinition>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inserted Gene Entrez ID</app:preferredLabel>
+        <obo:IAO_0000231 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">redundant with transgenic genetic alteration and transgenic construct property.</obo:IAO_0000231>
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000025">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study subject</app:preferredLabel>
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000026">
+        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease with which the organism has been diagnosed.</app:preferredDefinition>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Manifests</app:preferredLabel>
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000695">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Liquid handling</app:preferredLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000035">
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_AdminData"/>
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000927">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Embryo manipulation</app:preferredLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000032">
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_AdminData"/>
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.ifomis.org/obo/ro/1.0#partOf">
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001223">
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Purchasing</obo:IAO_0000111>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000699">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In vivo magnetic resonance spectroscopy</app:preferredLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000228">
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_AdminData"/>
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001425">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stadiometer </app:preferredLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.ifomis.org/obo/ro/1.0#hasPart">
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000628">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Temperature Control Instrument</app:preferredLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.ifomis.org/obo/ro/1.0#derivedInto">
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001237">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Irridiation</app:preferredLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000047">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Web page</app:preferredLabel>
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000043">
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_AdminData"/>
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.ifomis.org/obo/ro/1.0#locatedIn">
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.ifomis.org/obo/ro/1.0#locationOf">
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001232">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathology</app:preferredLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000421">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prokaryote strain</app:preferredLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001016">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tablet hardness tester</app:preferredLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000887">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bioassay system</app:preferredLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000530">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Automated pipetting system</app:preferredLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000607">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gene expression profiling</app:preferredLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000673">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behavioral test</app:preferredLabel>
+        <obo:IAO_0000231 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Using &quot;behavioral assay&quot;</obo:IAO_0000231>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000539">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Immunofluorescence labeling</app:preferredLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000802">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Animal test cage</app:preferredLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.ifomis.org/obo/ro/1.0#precededBy">
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000800">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fish tank</app:preferredLabel>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000484">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sample analyzer</app:preferredLabel>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000283">
-        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_AdminData"/>
-        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000587">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inorganic molecule</app:preferredLabel>
-    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000486">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fluorescent sample reader</app:preferredLabel>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001302">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Genetic modification</app:preferredLabel>
-    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000488">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In vitro cytotoxicity</app:preferredLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001302">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Genetic modification</app:preferredLabel>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000408">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_AdminData"/>
@@ -14850,24 +14926,9 @@ Laboratory personnel have specific training in handling pathogenic and potential
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001005">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Refrigerated microcentrifuge</app:preferredLabel>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000238">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Plate stacker</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000506">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Interaction analyzer</app:preferredLabel>
-    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000068">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_AdminData"/>
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001160">
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lambda phage library</obo:IAO_0000119>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.ifomis.org/obo/ro/1.0#containedIn">
-        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001214">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dye-terminator sequencing</app:preferredLabel>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000546">
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></obo:IAO_0000115>
@@ -14875,25 +14936,27 @@ Laboratory personnel have specific training in handling pathogenic and potential
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Insert Description</app:preferredLabel>
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001214">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dye-terminator sequencing</app:preferredLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.ifomis.org/obo/ro/1.0#containedIn">
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000545">
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></obo:IAO_0000115>
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Library Description</app:preferredLabel>
-        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000235">
-        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_AdminData"/>
-        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001008">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gas chromatograph</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.ifomis.org/obo/ro/1.0#transformedInto">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000163">
         <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Name of the instruments, software, or techniques for which training is provided.</app:preferredDefinition>
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Provides Training</app:preferredLabel>
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.ifomis.org/obo/ro/1.0#transformedInto">
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001008">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gas chromatograph</app:preferredLabel>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000549">
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></obo:IAO_0000115>
@@ -14907,41 +14970,10 @@ Laboratory personnel have specific training in handling pathogenic and potential
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Protein Description</app:preferredLabel>
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001052">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Animal husbandry</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000770">
-        <app:preferredLabel>Flash freeze</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000028">
-        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_AdminData"/>
-        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000577">
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></obo:IAO_0000115>
-        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gene or sequence name that is inserted into a transgenic organism.</app:preferredDefinition>
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Insertion Name</app:preferredLabel>
-        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
-    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000737">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Genomics</app:preferredLabel>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000576">
-        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EntrezGene ID of the gene that is inserted into a transgenic organism.</app:preferredDefinition>
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inserted Gene Entrez ID</app:preferredLabel>
-        <obo:IAO_0000231 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">redundant with transgenic genetic alteration and transgenic construct property.</obo:IAO_0000231>
-        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
-    </rdf:Description>
     <rdf:Description rdf:about="http://www.ifomis.org/obo/ro/1.0#transformationOf">
-        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000025">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study subject</app:preferredLabel>
-        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000026">
-        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease with which the organism has been diagnosed.</app:preferredDefinition>
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Manifests</app:preferredLabel>
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
 </rdf:RDF>
