@@ -1,211 +1,85 @@
 ./source/object-properties.owl:1350:        <rdfs:subPropertyOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_agent"/>
 ./source/object-properties.owl:2592:    <!-- http://www.obofoundry.org/ro/ro.owl#has_agent -->
 ./source/object-properties.owl:2594:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#has_agent">
-./module/eaglei/ro.owl:2:<rdf:RDF xmlns="http://www.obofoundry.org/ro/ro.owl#"
-./module/eaglei/ro.owl:205:    <!-- http://www.obofoundry.org/ro/ro.owl#adjacent_to -->
-./module/eaglei/ro.owl:207:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#adjacent_to">
-./module/eaglei/ro.owl:215:    <!-- http://www.obofoundry.org/ro/ro.owl#agent_in -->
-./module/eaglei/ro.owl:217:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#agent_in">
-./module/eaglei/ro.owl:221:        <rdfs:subPropertyOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#participates_in"/>
-./module/eaglei/ro.owl:226:    <!-- http://www.obofoundry.org/ro/ro.owl#contained_in -->
-./module/eaglei/ro.owl:228:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#contained_in">
-./module/eaglei/ro.owl:232:        <owl:inverseOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#contains"/>
-./module/eaglei/ro.owl:237:    <!-- http://www.obofoundry.org/ro/ro.owl#contains -->
-./module/eaglei/ro.owl:239:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#contains">
-./module/eaglei/ro.owl:246:    <!-- http://www.obofoundry.org/ro/ro.owl#derived_into -->
-./module/eaglei/ro.owl:248:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#derived_into">
-./module/eaglei/ro.owl:257:    <!-- http://www.obofoundry.org/ro/ro.owl#derives_from -->
-./module/eaglei/ro.owl:259:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#derives_from">
-./module/eaglei/ro.owl:265:        <owl:inverseOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#derived_into"/>
-./module/eaglei/ro.owl:270:    <!-- http://www.obofoundry.org/ro/ro.owl#has_agent -->
-./module/eaglei/ro.owl:272:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#has_agent">
-./module/eaglei/ro.owl:276:        <owl:inverseOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#agent_in"/>
-./module/eaglei/ro.owl:277:        <rdfs:subPropertyOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_participant"/>
-./module/eaglei/ro.owl:282:    <!-- http://www.obofoundry.org/ro/ro.owl#has_improper_part -->
-./module/eaglei/ro.owl:284:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#has_improper_part">
-./module/eaglei/ro.owl:290:        <rdfs:subPropertyOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-./module/eaglei/ro.owl:291:        <owl:inverseOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#improper_part_of"/>
-./module/eaglei/ro.owl:296:    <!-- http://www.obofoundry.org/ro/ro.owl#has_integral_part -->
-./module/eaglei/ro.owl:298:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#has_integral_part">
-./module/eaglei/ro.owl:302:        <rdfs:subPropertyOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-./module/eaglei/ro.owl:307:    <!-- http://www.obofoundry.org/ro/ro.owl#has_part -->
-./module/eaglei/ro.owl:309:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#has_part">
-./module/eaglei/ro.owl:317:    <!-- http://www.obofoundry.org/ro/ro.owl#has_participant -->
-./module/eaglei/ro.owl:319:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#has_participant">
-./module/eaglei/ro.owl:324:        <owl:inverseOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#participates_in"/>
-./module/eaglei/ro.owl:329:    <!-- http://www.obofoundry.org/ro/ro.owl#has_proper_part -->
-./module/eaglei/ro.owl:331:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#has_proper_part">
-./module/eaglei/ro.owl:335:        <rdfs:subPropertyOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-./module/eaglei/ro.owl:336:        <owl:inverseOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#proper_part_of"/>
-./module/eaglei/ro.owl:341:    <!-- http://www.obofoundry.org/ro/ro.owl#improper_part_of -->
-./module/eaglei/ro.owl:343:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#improper_part_of">
-./module/eaglei/ro.owl:349:        <rdfs:subPropertyOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#part_of"/>
-./module/eaglei/ro.owl:354:    <!-- http://www.obofoundry.org/ro/ro.owl#integral_part_of -->
-./module/eaglei/ro.owl:356:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#integral_part_of">
-./module/eaglei/ro.owl:360:        <owl:inverseOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_integral_part"/>
-./module/eaglei/ro.owl:361:        <rdfs:subPropertyOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#part_of"/>
-./module/eaglei/ro.owl:366:    <!-- http://www.obofoundry.org/ro/ro.owl#located_in -->
-./module/eaglei/ro.owl:368:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#located_in">
-./module/eaglei/ro.owl:378:    <!-- http://www.obofoundry.org/ro/ro.owl#location_of -->
-./module/eaglei/ro.owl:380:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#location_of">
-./module/eaglei/ro.owl:385:        <owl:inverseOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#located_in"/>
-./module/eaglei/ro.owl:390:    <!-- http://www.obofoundry.org/ro/ro.owl#part_of -->
-./module/eaglei/ro.owl:392:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#part_of">
-./module/eaglei/ro.owl:397:        <owl:inverseOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-./module/eaglei/ro.owl:402:    <!-- http://www.obofoundry.org/ro/ro.owl#participates_in -->
-./module/eaglei/ro.owl:404:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#participates_in">
-./module/eaglei/ro.owl:412:    <!-- http://www.obofoundry.org/ro/ro.owl#preceded_by -->
-./module/eaglei/ro.owl:414:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#preceded_by">
-./module/eaglei/ro.owl:424:    <!-- http://www.obofoundry.org/ro/ro.owl#precedes -->
-./module/eaglei/ro.owl:426:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#precedes">
-./module/eaglei/ro.owl:431:        <owl:inverseOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#preceded_by"/>
-./module/eaglei/ro.owl:436:    <!-- http://www.obofoundry.org/ro/ro.owl#proper_part_of -->
-./module/eaglei/ro.owl:438:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#proper_part_of">
-./module/eaglei/ro.owl:442:        <rdfs:subPropertyOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#part_of"/>
-./module/eaglei/ro.owl:447:    <!-- http://www.obofoundry.org/ro/ro.owl#relationship -->
-./module/eaglei/ro.owl:449:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#relationship">
-./module/eaglei/ro.owl:458:    <!-- http://www.obofoundry.org/ro/ro.owl#transformation_of -->
-./module/eaglei/ro.owl:460:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#transformation_of">
-./module/eaglei/ro.owl:469:    <!-- http://www.obofoundry.org/ro/ro.owl#transformed_into -->
-./module/eaglei/ro.owl:471:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#transformed_into">
-./module/eaglei/ro_bfo_bridge11.owl:165:    <!-- http://www.obofoundry.org/ro/ro.owl#agent_in -->
-./module/eaglei/ro_bfo_bridge11.owl:167:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#agent_in">
-./module/eaglei/ro_bfo_bridge11.owl:175:    <!-- http://www.obofoundry.org/ro/ro.owl#derived_into -->
-./module/eaglei/ro_bfo_bridge11.owl:177:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#derived_into">
-./module/eaglei/ro_bfo_bridge11.owl:185:    <!-- http://www.obofoundry.org/ro/ro.owl#derives_from -->
-./module/eaglei/ro_bfo_bridge11.owl:187:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#derives_from">
-./module/eaglei/ro_bfo_bridge11.owl:195:    <!-- http://www.obofoundry.org/ro/ro.owl#has_agent -->
-./module/eaglei/ro_bfo_bridge11.owl:197:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#has_agent">
-./module/eaglei/ro_bfo_bridge11.owl:205:    <!-- http://www.obofoundry.org/ro/ro.owl#has_participant -->
-./module/eaglei/ro_bfo_bridge11.owl:207:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#has_participant">
-./module/eaglei/ro_bfo_bridge11.owl:215:    <!-- http://www.obofoundry.org/ro/ro.owl#located_in -->
-./module/eaglei/ro_bfo_bridge11.owl:217:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#located_in">
-./module/eaglei/ro_bfo_bridge11.owl:225:    <!-- http://www.obofoundry.org/ro/ro.owl#location_of -->
-./module/eaglei/ro_bfo_bridge11.owl:227:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#location_of">
-./module/eaglei/ro_bfo_bridge11.owl:235:    <!-- http://www.obofoundry.org/ro/ro.owl#participates_in -->
-./module/eaglei/ro_bfo_bridge11.owl:237:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#participates_in">
-./module/eaglei/ro_bfo_bridge11.owl:245:    <!-- http://www.obofoundry.org/ro/ro.owl#preceded_by -->
-./module/eaglei/ro_bfo_bridge11.owl:247:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#preceded_by">
-./module/eaglei/ro_bfo_bridge11.owl:255:    <!-- http://www.obofoundry.org/ro/ro.owl#precedes -->
-./module/eaglei/ro_bfo_bridge11.owl:257:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#precedes">
-./module/eaglei/ro_bfo_bridge11.owl:265:    <!-- http://www.obofoundry.org/ro/ro.owl#transformation_of -->
-./module/eaglei/ro_bfo_bridge11.owl:267:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#transformation_of">
-./module/eaglei/ro_bfo_bridge11.owl:275:    <!-- http://www.obofoundry.org/ro/ro.owl#transformed_into -->
-./module/eaglei/ro_bfo_bridge11.owl:277:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#transformed_into">
-./module/eaglei/obi-imports.owl:175:        <rdfs:subPropertyOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_participant"/>
-./module/eaglei/obi-imports.owl:192:        <rdfs:subPropertyOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_participant"/>
-./module/eaglei/obi-imports.owl:233:        <rdfs:subPropertyOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#participates_in"/>
-./module/eaglei/obi-imports.owl:262:        <rdfs:subPropertyOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-./module/eaglei/obi-imports.owl:281:    <!-- http://www.obofoundry.org/ro/ro.owl#has_part -->
-./module/eaglei/obi-imports.owl:283:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-./module/eaglei/obi-imports.owl:287:    <!-- http://www.obofoundry.org/ro/ro.owl#has_participant -->
-./module/eaglei/obi-imports.owl:289:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#has_participant"/>
-./module/eaglei/obi-imports.owl:293:    <!-- http://www.obofoundry.org/ro/ro.owl#participates_in -->
-./module/eaglei/obi-imports.owl:295:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#participates_in"/>
-./module/eaglei/ero.owl:1187:        <rdfs:subPropertyOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#derives_from"/>
-./module/eaglei/ero.owl:1219:        <rdfs:subPropertyOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#derives_from"/>
-./module/eaglei/ero.owl:1286:        <rdfs:subPropertyOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#agent_in"/>
-./module/eaglei/ero.owl:1303:        <rdfs:subPropertyOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_agent"/>
-./module/eaglei/ero.owl:1320:        <rdfs:subPropertyOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#derives_from"/>
-./module/eaglei/ero.owl:1625:        <rdfs:subPropertyOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#derives_from"/>
-./module/eaglei/ero.owl:1741:    <!-- http://www.obofoundry.org/ro/ro.owl#agent_in -->
-./module/eaglei/ero.owl:1743:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#agent_in"/>
-./module/eaglei/ero.owl:1747:    <!-- http://www.obofoundry.org/ro/ro.owl#derives_from -->
-./module/eaglei/ero.owl:1749:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#derives_from"/>
-./module/eaglei/ero.owl:1753:    <!-- http://www.obofoundry.org/ro/ro.owl#has_agent -->
-./module/eaglei/ero.owl:1755:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#has_agent"/>
-./module/eaglei/ero.owl:1759:    <!-- http://www.obofoundry.org/ro/ro.owl#has_part -->
-./module/eaglei/ero.owl:1761:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-./module/eaglei/ero.owl:1765:    <!-- http://www.obofoundry.org/ro/ro.owl#has_participant -->
-./module/eaglei/ero.owl:1767:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#has_participant"/>
-./module/eaglei/ero.owl:1771:    <!-- http://www.obofoundry.org/ro/ro.owl#part_of -->
-./module/eaglei/ero.owl:1773:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#part_of"/>
-./module/eaglei/ero.owl:3113:                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#derives_from"/>
-./module/eaglei/ero.owl:3151:                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-./module/eaglei/ero.owl:3242:                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#derives_from"/>
-./module/eaglei/ero.owl:3526:                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#derives_from"/>
-./module/eaglei/ero.owl:3549:                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#derives_from"/>
-./module/eaglei/ero.owl:4617:                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-./module/eaglei/ero.owl:4747:                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#derives_from"/>
-./module/eaglei/ero.owl:4786:                        <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-./module/eaglei/ero.owl:6214:                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-./module/eaglei/ero.owl:6220:                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-./module/eaglei/ero.owl:6292:                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#part_of"/>
-./module/eaglei/ero.owl:6298:                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#derives_from"/>
-./module/eaglei/ero.owl:6600:                        <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-./module/eaglei/ero.owl:6668:                        <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-./module/eaglei/ero.owl:6693:                        <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-./module/eaglei/ero.owl:6718:                        <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-./module/eaglei/ero.owl:6742:                        <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-./module/eaglei/ero.owl:6767:                        <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-./module/eaglei/ero.owl:7514:                        <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_participant"/>
-./module/eaglei/ero.owl:9906:                        <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_participant"/>
-./module/eaglei/ero.owl:13954:                        <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#derives_from"/>
-./module/eaglei/ero.owl:13979:                        <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#derives_from"/>
-./module/eaglei/ero.owl:14004:                        <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#derives_from"/>
-./module/eaglei/ero.owl:15720:                        <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-./module/eaglei/ero.owl:15761:                        <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-./module/eaglei/ero.owl:15864:                        <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-./module/eaglei/ero.owl:15905:                        <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-./module/eaglei/ero.owl:15932:                        <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-./module/eaglei/ero.owl:21166:                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-./module/eaglei/ero.owl:23409:                        <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_participant"/>
-./module/eaglei/ero.owl:28064:                        <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_participant"/>
-./module/eaglei/ero.owl:28943:                        <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-./module/eaglei/ero.owl:28961:                        <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-./module/eaglei/eaglei-module-legacy.owl:56:    <!-- http://www.obofoundry.org/ro/ro.owl#transformation_of -->
-./module/eaglei/eaglei-module-legacy.owl:58:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#transformation_of">
-./module/eaglei/eaglei-module-legacy.owl:64:    <!-- http://www.obofoundry.org/ro/ro.owl#transformed_into -->
-./module/eaglei/eaglei-module-legacy.owl:66:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#transformed_into">
-./module/eaglei-app/ero-app.owl:418:        <rdfs:subPropertyOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#derives_from"/>
-./module/eaglei-app/ero-app.owl:1664:    <!-- http://www.obofoundry.org/ro/ro.owl#adjacent_to -->
-./module/eaglei-app/ero-app.owl:1666:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#adjacent_to">
-./module/eaglei-app/ero-app.owl:1672:    <!-- http://www.obofoundry.org/ro/ro.owl#agent_in -->
-./module/eaglei-app/ero-app.owl:1674:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#agent_in">
-./module/eaglei-app/ero-app.owl:1680:    <!-- http://www.obofoundry.org/ro/ro.owl#contained_in -->
-./module/eaglei-app/ero-app.owl:1682:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#contained_in">
-./module/eaglei-app/ero-app.owl:1688:    <!-- http://www.obofoundry.org/ro/ro.owl#contains -->
-./module/eaglei-app/ero-app.owl:1690:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#contains">
-./module/eaglei-app/ero-app.owl:1696:    <!-- http://www.obofoundry.org/ro/ro.owl#derived_into -->
-./module/eaglei-app/ero-app.owl:1698:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#derived_into">
-./module/eaglei-app/ero-app.owl:1704:    <!-- http://www.obofoundry.org/ro/ro.owl#derives_from -->
-./module/eaglei-app/ero-app.owl:1706:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#derives_from">
-./module/eaglei-app/ero-app.owl:1712:    <!-- http://www.obofoundry.org/ro/ro.owl#has_agent -->
-./module/eaglei-app/ero-app.owl:1714:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#has_agent">
-./module/eaglei-app/ero-app.owl:1720:    <!-- http://www.obofoundry.org/ro/ro.owl#has_improper_part -->
-./module/eaglei-app/ero-app.owl:1722:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#has_improper_part">
-./module/eaglei-app/ero-app.owl:1728:    <!-- http://www.obofoundry.org/ro/ro.owl#has_integral_part -->
-./module/eaglei-app/ero-app.owl:1730:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#has_integral_part">
-./module/eaglei-app/ero-app.owl:1736:    <!-- http://www.obofoundry.org/ro/ro.owl#has_part -->
-./module/eaglei-app/ero-app.owl:1738:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#has_part">
-./module/eaglei-app/ero-app.owl:1744:    <!-- http://www.obofoundry.org/ro/ro.owl#has_participant -->
-./module/eaglei-app/ero-app.owl:1746:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#has_participant">
-./module/eaglei-app/ero-app.owl:1752:    <!-- http://www.obofoundry.org/ro/ro.owl#has_proper_part -->
-./module/eaglei-app/ero-app.owl:1754:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#has_proper_part">
-./module/eaglei-app/ero-app.owl:1760:    <!-- http://www.obofoundry.org/ro/ro.owl#improper_part_of -->
-./module/eaglei-app/ero-app.owl:1762:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#improper_part_of">
-./module/eaglei-app/ero-app.owl:1768:    <!-- http://www.obofoundry.org/ro/ro.owl#integral_part_of -->
-./module/eaglei-app/ero-app.owl:1770:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#integral_part_of">
-./module/eaglei-app/ero-app.owl:1776:    <!-- http://www.obofoundry.org/ro/ro.owl#located_in -->
-./module/eaglei-app/ero-app.owl:1778:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#located_in">
-./module/eaglei-app/ero-app.owl:1793:    <!-- http://www.obofoundry.org/ro/ro.owl#location_of -->
-./module/eaglei-app/ero-app.owl:1795:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#location_of">
-./module/eaglei-app/ero-app.owl:1808:    <!-- http://www.obofoundry.org/ro/ro.owl#part_of -->
-./module/eaglei-app/ero-app.owl:1810:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#part_of">
-./module/eaglei-app/ero-app.owl:1816:    <!-- http://www.obofoundry.org/ro/ro.owl#participates_in -->
-./module/eaglei-app/ero-app.owl:1818:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#participates_in">
-./module/eaglei-app/ero-app.owl:1824:    <!-- http://www.obofoundry.org/ro/ro.owl#preceded_by -->
-./module/eaglei-app/ero-app.owl:1826:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#preceded_by">
-./module/eaglei-app/ero-app.owl:1832:    <!-- http://www.obofoundry.org/ro/ro.owl#precedes -->
-./module/eaglei-app/ero-app.owl:1834:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#precedes">
-./module/eaglei-app/ero-app.owl:1840:    <!-- http://www.obofoundry.org/ro/ro.owl#proper_part_of -->
-./module/eaglei-app/ero-app.owl:1842:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#proper_part_of">
-./module/eaglei-app/ero-app.owl:1848:    <!-- http://www.obofoundry.org/ro/ro.owl#relationship -->
-./module/eaglei-app/ero-app.owl:1850:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#relationship">
-./module/eaglei-app/ero-app.owl:1856:    <!-- http://www.obofoundry.org/ro/ro.owl#transformation_of -->
-./module/eaglei-app/ero-app.owl:1858:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#transformation_of">
-./module/eaglei-app/ero-app.owl:1864:    <!-- http://www.obofoundry.org/ro/ro.owl#transformed_into -->
-./module/eaglei-app/ero-app.owl:1866:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#transformed_into">
+./eaglei/ro.owl:2:<rdf:RDF xmlns="http://www.obofoundry.org/ro/ro.owl#"
+./eaglei/ro.owl:339:    <!-- http://www.obofoundry.org/ro/ro.owl#agent_in -->
+./eaglei/ro.owl:341:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#agent_in">
+./eaglei/ro.owl:350:    <!-- http://www.obofoundry.org/ro/ro.owl#has_agent -->
+./eaglei/ro.owl:352:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#has_agent">
+./eaglei/ro.owl:357:        <owl:inverseOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#agent_in"/>
+./eaglei/ro.owl:362:    <!-- http://www.obofoundry.org/ro/ro.owl#has_improper_part -->
+./eaglei/ro.owl:364:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#has_improper_part">
+./eaglei/ro.owl:371:        <owl:inverseOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#improper_part_of"/>
+./eaglei/ro.owl:376:    <!-- http://www.obofoundry.org/ro/ro.owl#has_integral_part -->
+./eaglei/ro.owl:378:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#has_integral_part">
+./eaglei/ro.owl:387:    <!-- http://www.obofoundry.org/ro/ro.owl#has_proper_part -->
+./eaglei/ro.owl:389:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#has_proper_part">
+./eaglei/ro.owl:394:        <owl:inverseOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#proper_part_of"/>
+./eaglei/ro.owl:399:    <!-- http://www.obofoundry.org/ro/ro.owl#improper_part_of -->
+./eaglei/ro.owl:401:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#improper_part_of">
+./eaglei/ro.owl:407:        <rdfs:subPropertyOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#part_of"/>
+./eaglei/ro.owl:412:    <!-- http://www.obofoundry.org/ro/ro.owl#integral_part_of -->
+./eaglei/ro.owl:414:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#integral_part_of">
+./eaglei/ro.owl:418:        <owl:inverseOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_integral_part"/>
+./eaglei/ro.owl:419:        <rdfs:subPropertyOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#part_of"/>
+./eaglei/ro.owl:424:    <!-- http://www.obofoundry.org/ro/ro.owl#part_of -->
+./eaglei/ro.owl:426:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#part_of">
+./eaglei/ro.owl:436:    <!-- http://www.obofoundry.org/ro/ro.owl#proper_part_of -->
+./eaglei/ro.owl:438:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#proper_part_of">
+./eaglei/ro.owl:442:        <rdfs:subPropertyOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#part_of"/>
+./eaglei/ro.owl:447:    <!-- http://www.obofoundry.org/ro/ro.owl#relationship -->
+./eaglei/ro.owl:449:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#relationship">
+./eaglei/ro.owl:458:    <!-- http://www.obofoundry.org/ro/ro.owl#transformation_of -->
+./eaglei/ro.owl:460:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#transformation_of">
+./eaglei/ro.owl:469:    <!-- http://www.obofoundry.org/ro/ro.owl#transformed_into -->
+./eaglei/ro.owl:471:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#transformed_into">
+./eaglei/tmp-ero.owl:2:<rdf:RDF xmlns="http://purl.obolibrary.org/obo/arg/tmp-ero.owl#"
+./eaglei/ro_bfo_bridge11.owl:245:    <!-- http://www.obofoundry.org/ro/ro.owl#agent_in -->
+./eaglei/ro_bfo_bridge11.owl:247:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#agent_in">
+./eaglei/ro_bfo_bridge11.owl:255:    <!-- http://www.obofoundry.org/ro/ro.owl#has_agent -->
+./eaglei/ro_bfo_bridge11.owl:257:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#has_agent">
+./eaglei/ro_bfo_bridge11.owl:265:    <!-- http://www.obofoundry.org/ro/ro.owl#transformation_of -->
+./eaglei/ro_bfo_bridge11.owl:267:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#transformation_of">
+./eaglei/ro_bfo_bridge11.owl:275:    <!-- http://www.obofoundry.org/ro/ro.owl#transformed_into -->
+./eaglei/ro_bfo_bridge11.owl:277:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#transformed_into">
+./eaglei/ero.owl:2:<rdf:RDF xmlns="http://purl.obolibrary.org/obo/ero.owl#"
+./eaglei/ero.owl:1292:        <rdfs:subPropertyOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#agent_in"/>
+./eaglei/ero.owl:1309:        <rdfs:subPropertyOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_agent"/>
+./eaglei/ero.owl:1759:    <!-- http://www.obofoundry.org/ro/ro.owl#agent_in -->
+./eaglei/ero.owl:1761:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#agent_in"/>
+./eaglei/ero.owl:1765:    <!-- http://www.obofoundry.org/ro/ro.owl#has_agent -->
+./eaglei/ero.owl:1767:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#has_agent"/>
+./eaglei/ero.owl:1771:    <!-- http://www.obofoundry.org/ro/ro.owl#part_of -->
+./eaglei/ero.owl:1773:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#part_of"/>
+./eaglei/ero.owl:6316:                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#part_of"/>
+./eaglei/eaglei-module-legacy.owl:56:    <!-- http://www.obofoundry.org/ro/ro.owl#transformation_of -->
+./eaglei/eaglei-module-legacy.owl:58:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#transformation_of">
+./eaglei/eaglei-module-legacy.owl:64:    <!-- http://www.obofoundry.org/ro/ro.owl#transformed_into -->
+./eaglei/eaglei-module-legacy.owl:66:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#transformed_into">
+./eaglei-app/ero-app.owl:1776:    <!-- http://www.obofoundry.org/ro/ro.owl#agent_in -->
+./eaglei-app/ero-app.owl:1778:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#agent_in">
+./eaglei-app/ero-app.owl:1784:    <!-- http://www.obofoundry.org/ro/ro.owl#has_agent -->
+./eaglei-app/ero-app.owl:1786:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#has_agent">
+./eaglei-app/ero-app.owl:1792:    <!-- http://www.obofoundry.org/ro/ro.owl#has_improper_part -->
+./eaglei-app/ero-app.owl:1794:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#has_improper_part">
+./eaglei-app/ero-app.owl:1800:    <!-- http://www.obofoundry.org/ro/ro.owl#has_integral_part -->
+./eaglei-app/ero-app.owl:1802:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#has_integral_part">
+./eaglei-app/ero-app.owl:1808:    <!-- http://www.obofoundry.org/ro/ro.owl#has_proper_part -->
+./eaglei-app/ero-app.owl:1810:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#has_proper_part">
+./eaglei-app/ero-app.owl:1816:    <!-- http://www.obofoundry.org/ro/ro.owl#improper_part_of -->
+./eaglei-app/ero-app.owl:1818:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#improper_part_of">
+./eaglei-app/ero-app.owl:1824:    <!-- http://www.obofoundry.org/ro/ro.owl#integral_part_of -->
+./eaglei-app/ero-app.owl:1826:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#integral_part_of">
+./eaglei-app/ero-app.owl:1832:    <!-- http://www.obofoundry.org/ro/ro.owl#part_of -->
+./eaglei-app/ero-app.owl:1834:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#part_of">
+./eaglei-app/ero-app.owl:1840:    <!-- http://www.obofoundry.org/ro/ro.owl#proper_part_of -->
+./eaglei-app/ero-app.owl:1842:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#proper_part_of">
+./eaglei-app/ero-app.owl:1848:    <!-- http://www.obofoundry.org/ro/ro.owl#relationship -->
+./eaglei-app/ero-app.owl:1850:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#relationship">
+./eaglei-app/ero-app.owl:1856:    <!-- http://www.obofoundry.org/ro/ro.owl#transformation_of -->
+./eaglei-app/ero-app.owl:1858:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#transformation_of">
+./eaglei-app/ero-app.owl:1864:    <!-- http://www.obofoundry.org/ro/ro.owl#transformed_into -->
+./eaglei-app/ero-app.owl:1866:    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#transformed_into">
 
 
 ./mapping/bfo1-bfo2-classes.txt:2:http://www.ifomis.org/bfo/1.1/snap#Continuant
