@@ -10,9 +10,9 @@
      xmlns:statistics="http://purl.org/net/OCRe/statistics.owl#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:study_protocol="http://purl.org/net/OCRe/study_protocol.owl#"
      xmlns:skos2="http://www.w3.org/2008/05/skos#"
      xmlns:vitro="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#"
+     xmlns:study_protocol="http://purl.org/net/OCRe/study_protocol.owl#"
      xmlns:geopolitical="http://aims.fao.org/aos/geopolitical.owl#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
@@ -153,7 +153,7 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000411 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000411">
-        <rdfs:label xml:lang="en">is denotator type</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is denotator type</rdfs:label>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In OWL 2 add AnnotationPropertyRange(&apos;is denotator type&apos; &apos;denotator type&apos;)</obo:IAO_0000116>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">relates an class defined in an ontology, to the type of it&apos;s denotator</obo:IAO_0000115>
@@ -223,7 +223,7 @@ Annotations: expand_assertion_to &quot;DisjointClasses: (http://purl.obolibrary.
     <!-- http://purl.obolibrary.org/obo/IAO_0000589 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000589">
-        <rdfs:label xml:lang="en">obo foundry unique label</rdfs:label>
+        <rdfs:label xml:lang="en">OBO foundry unique label</rdfs:label>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The intended usage of that property is as follow: OBO foundry unique labels are automatically generated based on regular expressions provided by each ontology, so that SO could specify unique label = &apos;sequence &apos; + [label], etc. , MA could specify &apos;mouse + [label]&apos; etc. Upon importing terms, ontology developers can choose to use the &apos;OBO foundry unique label&apos; for an imported term or not. The same applies to tools .</obo:IAO_0000116>
         <obo:IAO_0000115 xml:lang="en">An alternative name for a class or property which is unique across the OBO Foundry.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBO Foundry &lt;http://obofoundry.org/&gt;</obo:IAO_0000119>
@@ -240,7 +240,7 @@ Annotations: expand_assertion_to &quot;DisjointClasses: (http://purl.obolibrary.
     <!-- http://purl.obolibrary.org/obo/IAO_0000596 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000596">
-        <rdfs:label xml:lang="en">has id digit count</rdfs:label>
+        <rdfs:label xml:lang="en">has ID digit count</rdfs:label>
         <obo:IAO_0000112>Ontology: &lt;http://purl.obolibrary.org/obo/ro/idrange/&gt;
   Annotations: 
      &apos;has ID prefix&apos;: &quot;http://purl.obolibrary.org/obo/RO_&quot;
@@ -256,7 +256,7 @@ Annotations: expand_assertion_to &quot;DisjointClasses: (http://purl.obolibrary.
     <!-- http://purl.obolibrary.org/obo/IAO_0000597 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000597">
-        <rdfs:label xml:lang="en">has id range allocated to</rdfs:label>
+        <rdfs:label xml:lang="en">has ID range allocated to</rdfs:label>
         <obo:IAO_0000117>Person:Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000115>Relates a datatype that encodes a range of integers to the name of the person or organization who can use those ids constructed in that range to define new terms</obo:IAO_0000115>
         <obo:IAO_0000112>Datatype: idrange:1
@@ -270,7 +270,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.obolibrary.org/obo/IAO_0000598 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000598">
-        <rdfs:label xml:lang="en">has id policy for</rdfs:label>
+        <rdfs:label>has ID policy for</rdfs:label>
         <obo:IAO_0000115>Relating an ontology used to record id policy to the ontology namespace whose policy it manages</obo:IAO_0000115>
         <obo:IAO_0000117>Person:Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000112>Ontology: &lt;http://purl.obolibrary.org/obo/ro/idrange/&gt;
@@ -299,7 +299,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.obolibrary.org/obo/iao/IAO_0000599 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/iao/IAO_0000599">
-        <rdfs:label xml:lang="en">has id prefix</rdfs:label>
+        <rdfs:label xml:lang="en">has ID prefix</rdfs:label>
         <obo:IAO_0000115>Relates an ontology used to record id policy to a prefix concatenated with an integer in the id range (left padded with &quot;0&quot;s to make this many digits) to construct an ID for a term being created.</obo:IAO_0000115>
         <obo:IAO_0000117>Person:Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000112>Ontology: &lt;http://purl.obolibrary.org/obo/ro/idrange/&gt;

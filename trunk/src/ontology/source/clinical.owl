@@ -277,7 +277,7 @@
     <!-- http://purl.obolibrary.org/obo/ERO_0000015 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000015">
-        <rdfs:label xml:lang="en">human study</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">human study</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000014"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A clinical trial.</obo:IAO_0000112>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OCRe</obo:IAO_0000119>
@@ -293,7 +293,7 @@
     <!-- http://purl.obolibrary.org/obo/ERO_0000016 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000016">
-        <rdfs:label xml:lang="en">clinical trial</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">clinical trial</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -318,7 +318,7 @@
     <!-- http://purl.obolibrary.org/obo/ERO_0000017 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000017">
-        <rdfs:label xml:lang="en">epidemiological study</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">epidemiological study</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000015"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A human study of diseases in populations of humans or other animals, specifically how, when and where they occur. Epidemiological studies can never prove causation, epidemiological evidence can only show that this risk factor is correlated with a higher incidence of disease in the population exposed to that risk factor. The higher the correlation the more certain the association, but it cannot prove the causation.</obo:IAO_0000115>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A study of the populations and demographic of the avian flu.</obo:IAO_0000112>
@@ -333,7 +333,7 @@
     <!-- http://purl.obolibrary.org/obo/ERO_0000019 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000019">
-        <rdfs:label xml:lang="en">genome wide association study</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">genome wide association study</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000014"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A genome wide association study is an examination of genetic variation across a given genome, designed to identify genetic associations with observable traits.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Karen Corday</obo:IAO_0000117>
@@ -347,7 +347,7 @@
     <!-- http://purl.obolibrary.org/obo/ERO_0000347 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000347">
-        <rdfs:label xml:lang="en">intervention</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">intervention</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A planned process used to influence one or more factors in a research study, and the independent variable in an interventional study wherein the influence is measured or evaluated.</obo:IAO_0000115>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An drug intervention for cancer.</obo:IAO_0000112>
@@ -361,7 +361,7 @@
     <!-- http://purl.obolibrary.org/obo/ERO_0000348 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000348">
-        <rdfs:label xml:lang="en">case-only study</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">case-only study</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/net/OCRe/research.owl#Observational_study"/>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Dictionary of Epidemiology, Fifth Edition, Edited by Miquel Porta. p. 33. ISBN:978-0-19-531449-6 http://prsinfo.clinicaltrials.gov/definitions.html</obo:IAO_0000119>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Observational study whereby there is a single group of individuals with specific characteristics. This is a method that analyzes data from a case series and is used in case-crossover studies, in case-specular designs, and in molecular and genetic epidemiology to assess relationships between environmental exposures and genotypes.</obo:IAO_0000115>
@@ -375,7 +375,7 @@
     <!-- http://purl.obolibrary.org/obo/ERO_0000356 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000356">
-        <rdfs:label xml:lang="en">open blinded study</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">open blinded study</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/net/OCRe/research.owl#Interventional_study"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An interventional study in which the person collecting the data and the subject know whether the subjects are in the control or experimental groups.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Open trial</obo:IAO_0000118>
@@ -391,7 +391,7 @@
     <!-- http://purl.obolibrary.org/obo/ERO_0000357 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000357">
-        <rdfs:label xml:lang="en">single blinded study</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">single blinded study</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/net/OCRe/research.owl#Interventional_study"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An interventional study in which the person collecting the data knows whether the subjects are in the control or experimental groups but the subjects do not.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000117>
@@ -405,7 +405,7 @@
     <!-- http://purl.obolibrary.org/obo/ERO_0000358 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000358">
-        <rdfs:label xml:lang="en">double blinded study</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">double blinded study</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/net/OCRe/research.owl#Interventional_study"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An interventional study in which neither the subjects of the experiment nor the persons administering the experiment know the critical aspects of the experiment; a double-blind procedure is used to guard against both experimenter bias and placebo effects.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000117>
@@ -419,7 +419,7 @@
     <!-- http://purl.obolibrary.org/obo/ERO_0000598 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000598">
-        <rdfs:label xml:lang="en">educational intervention</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">educational intervention</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000347"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An intervention which involves education, training programs, and courses in various fields and disciplines, and for training groups of persons.</obo:IAO_0000115>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MeSH ID: Q000193</rdfs:comment>
@@ -434,7 +434,7 @@
     <!-- http://purl.obolibrary.org/obo/ERO_0000599 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000599">
-        <rdfs:label xml:lang="en">dietary intervention</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dietary intervention</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000347"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An intervention that involves dietary and nutritional management. The concept does not include vitamin or mineral supplements, for which &quot;drug intervention&quot; may be used.</obo:IAO_0000115>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MeSH qualifier id: Q000178.   Definition excerpted from MeSH.</rdfs:comment>
@@ -450,7 +450,7 @@
     <!-- http://purl.obolibrary.org/obo/ERO_0000600 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000600">
-        <rdfs:label xml:lang="en">drug intervention</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drug intervention</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000347"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A therapeutic intervention involving the administration of drugs, biologicals, chemicals, and antibiotics.</obo:IAO_0000115>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Administration of a chemotherapy to treat cancer.</obo:IAO_0000112>
@@ -466,7 +466,7 @@
     <!-- http://purl.obolibrary.org/obo/ERO_0000601 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000601">
-        <rdfs:label xml:lang="en">radiologic intervention</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radiologic intervention</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000347"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An intervention that involves the therapeutic use of ionizing and nonionizing radiation. It includes the use of radioisotope therapy.</obo:IAO_0000115>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MesH qualifier ID : Q000532</rdfs:comment>
@@ -482,7 +482,7 @@
     <!-- http://purl.obolibrary.org/obo/ERO_0000602 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000602">
-        <rdfs:label xml:lang="en">surgical intervention</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surgical intervention</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000347"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An intervention involving operative procedures on organs, regions, or tissues in the treatment of diseases, including tissue section by lasers. It excludes transplantation, for which &quot;therapeutic intervention&quot; is used.</obo:IAO_0000115>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MeSH qualifier ID : Q000601</rdfs:comment>
@@ -498,7 +498,7 @@
     <!-- http://purl.obolibrary.org/obo/ERO_0000603 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000603">
-        <rdfs:label xml:lang="en">rehabilitative intervention</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rehabilitative intervention</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000347"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An intervention involving surgical procedures for restoration of function of the individual.</obo:IAO_0000115>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MeSH qualifier ID : Q000534</rdfs:comment>
@@ -513,7 +513,7 @@
     <!-- http://purl.obolibrary.org/obo/ERO_0000604 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000604">
-        <rdfs:label xml:lang="en">nursing intervention</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nursing intervention</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000347"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An intervention involving nursing care and techniques in their management. It includes the nursing role in diagnostic, therapeutic, and preventive procedures.</obo:IAO_0000115>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MeSH qualifier ID : Q000451</rdfs:comment>
@@ -528,7 +528,7 @@
     <!-- http://purl.obolibrary.org/obo/ERO_0000605 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000605">
-        <rdfs:label xml:lang="en">prevention and control intervention</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prevention and control intervention</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000347"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An intervention involving increasing human or animal resistance against disease (e.g., immunization),  control of transmission agents,  prevention and control of environmental hazards, or prevention and control of social factors leading to disease. It includes preventive measures in individual cases.</obo:IAO_0000115>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MeSH qualifier ID : Q000517</rdfs:comment>
@@ -543,7 +543,7 @@
     <!-- http://purl.obolibrary.org/obo/ERO_0000606 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000606">
-        <rdfs:label xml:lang="en">psychological and behavioral intervention</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">psychological and behavioral intervention</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000347"/>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melanie Wilson</obo:IAO_0000119>
@@ -576,7 +576,7 @@
     <!-- http://purl.obolibrary.org/obo/ERO_0001553 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001553">
-        <rdfs:label xml:lang="en">biologic intervention</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biologic intervention</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000347"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A monoclonal antibody intervention used to treat rheumatoid arthritis.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An intervention involving use of medicinal product(s) created by biologic processes, rather than being chemically synthesized. For example, a vaccine, blood or blood component, allergenic, somatic cell, gene therapy, tissue, recombinant therapeutic protein, or living cells.</obo:IAO_0000115>
@@ -590,7 +590,7 @@
     <!-- http://purl.obolibrary.org/obo/ERO_0001697 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001697">
-        <rdfs:label xml:lang="en">diagnostic intervention</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diagnostic intervention</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000347"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An intervention that evaluates methods of detecting disease. </obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000117>
