@@ -1342,7 +1342,7 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001967">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Potency</app:preferredLabel>
-        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The types of germ layers into which the cell line is capable of differentiating. Select all that apply by using the ‘+’ button to add additional fields  (e.g. select mesoderm, endoderm, ectoderm, and neural crest if fully pluripotent). If directed differentiation studies have been performed to test capability to form specific cell types, record this information as free text in the general reagent description field.</app:preferredDefinition>
+        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The types of germ layers into which the cell line is capable of differentiating. Select all that apply by using the ‘+’ button to add additional fields. For example, select mesoderm, endoderm, ectoderm, and neural crest if fully pluripotent.</app:preferredDefinition>
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_TertiaryProperty"/>
     </owl:ObjectProperty>
     
@@ -1399,6 +1399,22 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ERO_0002024 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0002024">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">develops_into_cell_line</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relation between a stem cell line and another cell line into which it has been differentiated.</obo:IAO_0000115>
+        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any existing stem cell-derived line(s) that were generated through differentiation of this stem cell line.</app:preferredDefinition>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Differentiated Cell Lines</app:preferredLabel>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ERO_0001400"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0002003"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ERO_0002026 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0002026">
@@ -1429,7 +1445,7 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is_reported_output_of_study</rdfs:label>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reported study type</app:preferredLabel>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study type</app:preferredLabel>
         <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The type of analysis described by the report. Indicate more than one if appropriate by using the &apos;+&apos; button to the right.</app:preferredDefinition>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">relationship between a document summarizing the results of a study, and the study itself</obo:IAO_0000115>
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_SecondaryProperty"/>
@@ -1462,9 +1478,9 @@
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0002035">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_cells_of_type</rdfs:label>
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cell Type</app:preferredLabel>
-        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indicate the high level type of cell represented by the line.</app:preferredDefinition>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The general type of cell represented by the line.</app:preferredDefinition>
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_TertiaryProperty"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CL_0000548"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0001400"/>
@@ -1589,6 +1605,18 @@
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_ResourceProvider"/>
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_SearchFacet"/>
     </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002202 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002202">
+        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cell types into which line is capable of differentiating.</app:preferredDefinition>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Differentable Cell Types</app:preferredLabel>
+        <app:rangeConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/CL_0000548</app:rangeConstraint>
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/ERO_0002003</app:domainConstraint>
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_TertiaryProperty"/>
+    </rdf:Description>
     
 
 
@@ -2856,7 +2884,7 @@
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Passage Number at Analysis</app:preferredLabel>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">relationship between a cell line validation report and an integer specifying the passage number of the cell line when the validation study was performed.</obo:IAO_0000115>
-        <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_SecondaryProperty"/>
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_SecondaryProperty"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0002025"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
@@ -15026,13 +15054,6 @@ Laboratory personnel have specific training in handling pathogenic and potential
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000265">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Animal imaging chamber</app:preferredLabel>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002202">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Differentiated Lines</app:preferredLabel>
-        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indicate existing stem cell-derived line(s) that were generated through differentiation of this stem cell line.</app:preferredDefinition>
-        <app:rangeConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/ERO_0001400</app:rangeConstraint>
-        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/ERO_0002003</app:domainConstraint>
-        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_TertiaryProperty"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.ifomis.org/obo/ro/1.0#derivesFrom">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
