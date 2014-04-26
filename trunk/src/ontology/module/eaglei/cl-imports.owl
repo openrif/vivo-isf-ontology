@@ -11,7 +11,6 @@
     
 
 
-	
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -31,11 +30,12 @@
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
-        <rdfs:label xml:lang="en">imported from</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">database_cross_reference</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_alternative_id</rdfs:label>
@@ -46,6 +46,8 @@
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_narrow_synonym</rdfs:label>
     </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
     
 
 
@@ -58,8 +60,6 @@
      -->
 
     
-
-
 
 
     <!-- 
@@ -99,9 +99,9 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000003">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">native cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000000"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cell that is found in a natural setting, which includes multicellular organism cells &#39;in vivo&#39; (i.e. part of an organism), and unicellular organisms &#39;in environment&#39; (i.e. part of a natural environment).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cell that is found in a natural setting, which includes multicellular organism cells &apos;in vivo&apos; (i.e. part of an organism), and unicellular organisms &apos;in environment&apos; (i.e. part of a natural environment).</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CARO:0000013</oboInOwl:hasDbXref>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To accommodate unicellular organisms better, &#39;cell in vivo&#39; has been re-labeled &#39;native cell&#39; to better represent its intended meaning - that is, that it is a cell in the context of a multicellular organism or in a natural environment. &#39;Native&#39; is intended to contrast with &#39;in vitro&#39;, which refers to cells or other biological entities that have been intentionally placed in a controlled, non-natural setting for the purpose of study or manipulation. (MAH 1.12.12).</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To accommodate unicellular organisms better, &apos;cell in vivo&apos; has been re-labeled &apos;native cell&apos; to better represent its intended meaning - that is, that it is a cell in the context of a multicellular organism or in a natural environment. &apos;Native&apos; is intended to contrast with &apos;in vitro&apos;, which refers to cells or other biological entities that have been intentionally placed in a controlled, non-natural setting for the purpose of study or manipulation. (MAH 1.12.12). </rdfs:comment>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell in vivo</oboInOwl:hasNarrowSynonym>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
@@ -597,7 +597,7 @@
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">multipotential myeloid stem cell</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">myeloid stem cell</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pluripotent stem cell (bone marrow)</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>This cell type is intended to be compatible with any vertebrate common myeloid progenitor.  For mammalian CMP known to be CD34-positive, please use the term &#39;common myeloid progenitor, CD34-positive&#39; (CL_0001059).</rdfs:comment>
+        <rdfs:comment>This cell type is intended to be compatible with any vertebrate common myeloid progenitor.  For mammalian CMP known to be CD34-positive, please use the term &apos;common myeloid progenitor, CD34-positive&apos; (CL_0001059).</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
     
@@ -1054,7 +1054,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000091">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kupffer cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000864"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A tissue-resident macrophage of the reticuloendothelial system found on the luminal surface of the hepatic sinusoids involved in erythrocyte clearance. Markers include F4/80+, CD11b-low, CD68-positive, sialoadhesin-positive, CD163/SRCR-positive. Irregular, with long processes including lamellipodia extending into the sinusoid lumen, have flattened nucleus with cytoplasm containing characteristic invaginations of the plasma membrane (vermiform bodies); lie within the sinusoid lumen attached to the endothelial surface; derived from the bone marrow, form a major part of the body&#39;s mononuclear phagocyte system.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A tissue-resident macrophage of the reticuloendothelial system found on the luminal surface of the hepatic sinusoids involved in erythrocyte clearance. Markers include F4/80+, CD11b-low, CD68-positive, sialoadhesin-positive, CD163/SRCR-positive. Irregular, with long processes including lamellipodia extending into the sinusoid lumen, have flattened nucleus with cytoplasm containing characteristic invaginations of the plasma membrane (vermiform bodies); lie within the sinusoid lumen attached to the endothelial surface; derived from the bone marrow, form a major part of the body&apos;s mononuclear phagocyte system.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0000685</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:14656</oboInOwl:hasDbXref>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Markers: Mouse: F4/80+, CD11b-low, CD68+, sialoadhesin+, CD163/SRCR+; role or process: immune, antigen-presentation, clearance of senescent erythrocytes, iron metabolism. Kupffer cells are also reportedly C3aR-positive, CD14-low, CD54-positive, CD88-positive, and CD284-positive. They are also capable of producing IL-1, IL-6, TNF-alpha, nitric oxide, PGD2, PGE2, PGF2alpha, and TXA2.</rdfs:comment>
@@ -1466,7 +1466,7 @@
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CALOHA:TS-0845</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:67969</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Purkinje neuron</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Purkinje&#39;s cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Purkinje&apos;s cell</oboInOwl:hasExactSynonym>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The output neuron of the cerebellar cortex.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <oboInOwl:hasExactSynonym>cerebellum Purkinje cell</oboInOwl:hasExactSynonym>
@@ -1549,7 +1549,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000127">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">astrocyte</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000126"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A class of large neuroglial (macroglial) cells in the central nervous system - the largest and most numerous neuroglial cells in the brain and spinal cord. Astrocytes (from &#39;star&#39; cells) are irregularly shaped with many long processes, including those with &#39;end feet&#39; which form the glial (limiting) membrane and directly and indirectly contribute to the blood-brain barrier. They regulate the extracellular ionic and chemical environment, and &#39;reactive astrocytes&#39; (along with microglia) respond to injury.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A class of large neuroglial (macroglial) cells in the central nervous system - the largest and most numerous neuroglial cells in the brain and spinal cord. Astrocytes (from &apos;star&apos; cells) are irregularly shaped with many long processes, including those with &apos;end feet&apos; which form the glial (limiting) membrane and directly and indirectly contribute to the blood-brain barrier. They regulate the extracellular ionic and chemical environment, and &apos;reactive astrocytes&apos; (along with microglia) respond to injury.</obo:IAO_0000115>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Astrocytes are reportedly CD68-negative, CD121a-positive, CD184-positive, CD192-positive, CRF-positive, EGFR-positive, GFAP-positive, GLUT1-positive, MBP-negative, and NGFR-positive.</rdfs:comment>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0000099</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CALOHA:TS-0060</oboInOwl:hasDbXref>
@@ -2284,7 +2284,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000206"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0004185</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:67860</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Schultze&#39;s cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Schultze&apos;s cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">olfactory receptor neuron</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">olfactory sensory neuron</oboInOwl:hasExactSynonym>
@@ -2570,7 +2570,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000312"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A modified epidermal cell located in the stratum basale. They are found mostly in areas where sensory perception is acute. Merkel cells are closely associated with an expanded terminal bulb of an afferent myelinated nerve fiber.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:70548</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Merkel&#39;s cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Merkel&apos;s cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
@@ -2714,7 +2714,7 @@
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:74793</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tracheocyte</oboInOwl:hasExactSynonym>
-        <rdfs:comment>This class is for the vertebrate tracheal structure. For the analagous insect cell type, see &#39;respiratory tube epithelial cell&#39;</rdfs:comment>
+        <rdfs:comment>This class is for the vertebrate tracheal structure. For the analagous insect cell type, see &apos;respiratory tube epithelial cell&apos;</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
     
@@ -3502,7 +3502,7 @@
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:63072</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LC</oboInOwl:hasExactSynonym>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Langerhans cell is a conventional dendritic cell that has plasma membrane part CD207. A Langerhans cell is a stellate dendritic cell of myeloid origin, that appears clear on light microscopy and has a dark-staining, indented nucleus and characteristic inclusions (Birbeck granules) in the cytoplasm; Langerhans cells are found principally in the stratum spinosum of the epidermis, but they also occur in other stratified epithelia and have been identified in the lung, lymph nodes, spleen, and thymus.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Langerhans&#39; cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Langerhans&apos; cell</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Originally described in the dendritic cell ontology (DC_CL:0000021 )(PMID:19243617). These cells are also CD1a-high, CD14-negative, CD207-positive (langerin), CD324-positive (E-cadherin), and DCIR-positive. They reside in the epidermis.</rdfs:comment>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
@@ -3876,7 +3876,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000351"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cell from the inner layer of the trophoblast of the early mammalian embryo that gives rise to the outer surface and villi of the chorion. Mononuclear crytoblasts fuse to give rise to a multinuclear cytotrophoblast.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:83042</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Langhans&#39; cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Langhans&apos; cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
@@ -4113,7 +4113,7 @@
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Th1 cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">helper T cell type 1</oboInOwl:hasExactSynonym>
-        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &#39;Th1 CD4+ T cell&#39;, but its logical definition includes additional known characteristics of T-helper 1 T cells.</rdfs:comment>
+        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &apos;Th1 CD4+ T cell&apos;, but its logical definition includes additional known characteristics of T-helper 1 T cells.</rdfs:comment>
         <oboInOwl:hasExactSynonym>Th1 CD4+ T cell</oboInOwl:hasExactSynonym>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
@@ -4138,7 +4138,7 @@
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Th2 cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">helper T cell type 2</oboInOwl:hasExactSynonym>
-        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &#39;non-Th1/Th17 CD4+ T cell&#39; (see CL:0001051), but includes the additional necessary and sufficient conditions to allow classification as a T-helper 2 T cell.</rdfs:comment>
+        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &apos;non-Th1/Th17 CD4+ T cell&apos; (see CL:0001051), but includes the additional necessary and sufficient conditions to allow classification as a T-helper 2 T cell.</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
     
@@ -5023,7 +5023,7 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hepatic stellate cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000057"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000327"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cell that is found in the perisinusoidal space of the liver that is capable of multiple roles including storage of retinol, presentation of antigen to T cells (including CD1d-restricted NKT cells), and upon activation, production of extracellular matrix components that can contribute to liver fibrosis. This activated state has a myofibroblast-like phenotype, though it&#39;s not clear in the literature if this is terminally differentiated. This cell type comprises approximately 8-15% of total cells in the liver.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cell that is found in the perisinusoidal space of the liver that is capable of multiple roles including storage of retinol, presentation of antigen to T cells (including CD1d-restricted NKT cells), and upon activation, production of extracellular matrix components that can contribute to liver fibrosis. This activated state has a myofibroblast-like phenotype, though it&apos;s not clear in the literature if this is terminally differentiated. This cell type comprises approximately 8-15% of total cells in the liver.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0002741</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CALOHA:TS-0452</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:67763</oboInOwl:hasDbXref>
@@ -5047,7 +5047,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002490"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A tall supporting cell that is arranged in rows adjacent to the last row of outer phalangeal cells. This cell type constitutes the outer border of the organ of Corti.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:79799</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hensen&#39;s cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hensen&apos;s cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell of Hensen</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">external limiting cell of organ of Corti</oboInOwl:hasExactSynonym>
@@ -5061,7 +5061,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000634">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Claudius cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002315"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cuboidal cell which along with Boettcher&#39;s cells form the floor of the external spiral sulcus, external to the organ of Corti.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cuboidal cell which along with Boettcher&apos;s cells form the floor of the external spiral sulcus, external to the organ of Corti.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:79802</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell of Claudius</oboInOwl:hasExactSynonym>
@@ -5075,7 +5075,7 @@
     <!-- http://purl.obolibrary.org/obo/CL_0000635 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000635">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deiter&#39;s cell</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deiter&apos;s cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002165"/>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deiters cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:75725</oboInOwl:hasDbXref>
@@ -5278,7 +5278,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_1000451"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A glomerular visceral epithelial cell is a specialized kidney epithelial cell that contains &quot;feet&quot; that interdigitate with the &quot;feet&quot; of other glomerular epithelial cells.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0002295</oboInOwl:hasDbXref>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO has podocyte as a related synonym due to concern this may refer to more than one cell type. However, this did not turn up in my search. If podocyte does refer to more than one cell type, then we should classify the synonym to &#39;related&#39;[tfm].</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO has podocyte as a related synonym due to concern this may refer to more than one cell type. However, this did not turn up in my search. If podocyte does refer to more than one cell type, then we should classify the synonym to &apos;related&apos;[tfm].</rdfs:comment>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">epithelial cell of visceral layer of glomerular capsule</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glomerular podocyte</oboInOwl:hasExactSynonym>
@@ -6313,7 +6313,7 @@
         <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL:0002156</oboInOwl:hasAlternativeId>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:62845</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:83516</oboInOwl:hasDbXref>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Note that in FMA erythropoietic cells are types of nucleated erythrocytes and thus don&#39;t include erythrocytes.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Note that in FMA erythropoietic cells are types of nucleated erythrocytes and thus don&apos;t include erythrocytes.</rdfs:comment>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">erythropoietic cell</oboInOwl:hasExactSynonym>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
@@ -6687,7 +6687,7 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">naive B cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000785"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A naive B cell is a mature B cell that has the phenotype surface IgD-positive, surface IgM-positive, CD20-positive, CD27-negative and that has not yet been activated by antigen in the periphery.</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This cell type is compatible with the HIPC Lyoplate markers for &#39;naive B cell&#39;. Per DSD: Naive B cells are also reportedly CD10-negative, CD19-positive, CD20-positive, CD21-positive, CD22-positive, CD25-negative, CD27-negative, CD34-negative, CD40-positive, CD43-negative, CD45-positive, CD48-positive, CD53-positive, CD80-negative, CD81-positive, CD84-positive, CD86-negative, CD95-negative, CD138-negative, CD150-positive, CD184/CXCR4-positive, CD185/CXCR5-positive, CD196/CCR6-positive, CD200-positive, CD229-positive, CD243-positive, CD289-positive, CD290-positive, CD352-positive, MHCII/HLA-DR-positive, cadherin 9-positive, and sIgH-positive, Transcription factors: Pax5-positive, ETS1-positive, FOXO1A-positive, KLF4-positive, KLF9-positive, MiTF-positive, OBF1-positive, PLZF-positive, and SpiB-positive.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This cell type is compatible with the HIPC Lyoplate markers for &apos;naive B cell&apos;. Per DSD: Naive B cells are also reportedly CD10-negative, CD19-positive, CD20-positive, CD21-positive, CD22-positive, CD25-negative, CD27-negative, CD34-negative, CD40-positive, CD43-negative, CD45-positive, CD48-positive, CD53-positive, CD80-negative, CD81-positive, CD84-positive, CD86-negative, CD95-negative, CD138-negative, CD150-positive, CD184/CXCR4-positive, CD185/CXCR5-positive, CD196/CCR6-positive, CD200-positive, CD229-positive, CD243-positive, CD289-positive, CD290-positive, CD352-positive, MHCII/HLA-DR-positive, cadherin 9-positive, and sIgH-positive, Transcription factors: Pax5-positive, ETS1-positive, FOXO1A-positive, KLF4-positive, KLF9-positive, MiTF-positive, OBF1-positive, PLZF-positive, and SpiB-positive.</rdfs:comment>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">naive B lymphocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">naive B-cell</oboInOwl:hasExactSynonym>
@@ -6760,7 +6760,7 @@
         <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suppressor T lymphocyte</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suppressor T-cell</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suppressor T-lymphocyte</oboInOwl:hasBroadSynonym>
-        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &#39;Treg&#39;.  The inclusion of CD127lo in the logical definition is compatible with both human and mouse T cells of this subtype.</rdfs:comment>
+        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &apos;Treg&apos;.  The inclusion of CD127lo in the logical definition is compatible with both human and mouse T cells of this subtype.</rdfs:comment>
         <oboInOwl:hasBroadSynonym>Treg</oboInOwl:hasBroadSynonym>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
@@ -6797,7 +6797,7 @@
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CD8-positive, alpha-beta cytotoxic T-cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CD8-positive, alpha-beta cytotoxic T-lymphocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:70573</oboInOwl:hasDbXref>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Note that while T cells of this subset are loosely referred to &#39;cytotoxic T cells,&#39; as many other T cell types, including CD4-positive, alpha-beta T cells and gamma-delta T cells exhibit cytotoxicity in vitro and in vivo.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Note that while T cells of this subset are loosely referred to &apos;cytotoxic T cells,&apos; as many other T cell types, including CD4-positive, alpha-beta T cells and gamma-delta T cells exhibit cytotoxicity in vitro and in vivo.</rdfs:comment>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cytotoxic T cell</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cytotoxic T lymphocyte</oboInOwl:hasBroadSynonym>
@@ -7215,7 +7215,7 @@
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transitional stage B-cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transitional stage B-lymphocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>transitional B cell</oboInOwl:hasExactSynonym>
-        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &#39;transitional B cell&#39;.</rdfs:comment>
+        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &apos;transitional B cell&apos;.</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
     
@@ -7968,9 +7968,9 @@
     <!-- http://purl.obolibrary.org/obo/CL_0000870 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000870">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peyer&#39;s patch macrophage</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peyer&apos;s patch macrophage</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000885"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A gut-associated lymphoid tissue macrophage found in the Peyer&#39;s patches.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A gut-associated lymphoid tissue macrophage found in the Peyer&apos;s patches.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
@@ -8281,7 +8281,7 @@
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An antigen inexperienced CD4-positive, alpha-beta T cell with the phenotype CCR7-positive, CD127-positive and CD62L-positive. This cell type develops in the thymus. This cell type is also described as being CD25-negative, CD62L-high, and CD44-low.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T.4Nve.Sp</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Th0</oboInOwl:hasExactSynonym>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">These cells have not been exposed to antigen following thymic T-cell selection; found in blood and secondary lymphoid organs. This cell type is compatible with the HIPC Lyoplate markers for &#39;naive CD4+ T cell&#39;, but includes additional markers known to be expressed on naive CD4+ T cells.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">These cells have not been exposed to antigen following thymic T-cell selection; found in blood and secondary lymphoid organs. This cell type is compatible with the HIPC Lyoplate markers for &apos;naive CD4+ T cell&apos;, but includes additional markers known to be expressed on naive CD4+ T cells.</rdfs:comment>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">naive thymus-derived CD4-positive, alpha-beta T lymphocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">naive thymus-derived CD4-positive, alpha-beta T-cell</oboInOwl:hasExactSynonym>
@@ -8356,7 +8356,7 @@
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">helper T cell type 17</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Th17 CD4+ T cell</oboInOwl:hasExactSynonym>
-        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &#39;Th17 CD4+ T cell&#39;, but its logical definition includes additional known characteristics of T-helper 17 T cells.</rdfs:comment>
+        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &apos;Th17 CD4+ T cell&apos;, but its logical definition includes additional known characteristics of T-helper 17 T cells.</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
     
@@ -8370,7 +8370,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000898"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A CD8-positive, alpha-beta T cell that has not experienced activation via antigen contact and has the phenotype CD45RA-positive, CCR7-positive and CD127-positive. This cell type is also described as being CD25-negative, CD62L-high and CD44-low.</obo:IAO_0000115>
         <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T.8Nve.Sp</oboInOwl:hasNarrowSynonym>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This cell traffics in secondary lymphoid organs and blood.  This cell type is compatible with the HIPC Lyoplate markers for &#39;naive CD8+ T cell&#39;, but includes additional markers known to be expressed on naive CD8+ T cells.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This cell traffics in secondary lymphoid organs and blood.  This cell type is compatible with the HIPC Lyoplate markers for &apos;naive CD8+ T cell&apos;, but includes additional markers known to be expressed on naive CD8+ T cells.</rdfs:comment>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">naive thymus-dervied CD8-positive, alpha-beta T lymphocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">naive thymus-dervied CD8-positive, alpha-beta T-cell</oboInOwl:hasExactSynonym>
@@ -8444,7 +8444,7 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">central memory CD4-positive, alpha-beta T cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000897"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CD4-positive, alpha-beta memory T cell with the phenotype CCR7-positive, CD127-positive, CD45RA-negative, CD45RO-positive, and CD25-negative.</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This cell type is compatible with the HIPC Lyoplate markers for &#39;central memory CD4+ T cell&#39;, but includes additional markers known to be expressed on central memory CD4+ T cells.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This cell type is compatible with the HIPC Lyoplate markers for &apos;central memory CD4+ T cell&apos;, but includes additional markers known to be expressed on central memory CD4+ T cells.</rdfs:comment>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">central CD4-positive, alpha-beta memory T cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">central CD4-positive, alpha-beta memory T lymphocyte</oboInOwl:hasExactSynonym>
@@ -8465,7 +8465,7 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">effector memory CD4-positive, alpha-beta T cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000897"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CD4-positive, alpha-beta memory T cell with the phenotype CCR7-negative, CD127-positive, CD45RA-negative, CD45RO-positive, and CD25-negative.</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This cell type is compatible with the HIPC Lyoplate markers for &#39;effector memory CD4+ T cell&#39;, but includes additional markers known to be expressed on effector memory CD4+ T cells.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This cell type is compatible with the HIPC Lyoplate markers for &apos;effector memory CD4+ T cell&apos;, but includes additional markers known to be expressed on effector memory CD4+ T cells.</rdfs:comment>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">effector CD4-positive, alpha-beta memory T cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">effector CD4-positive, alpha-beta memory T lymphocyte</oboInOwl:hasExactSynonym>
@@ -8510,7 +8510,7 @@
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">central memory CD8-positive, alpha-beta T-cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">central memory CD8-positive, alpha-beta T-lymphocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasBroadSynonym>central memory CD8+ T cell</oboInOwl:hasBroadSynonym>
-        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &#39;central memory CD8+ T cell&#39;, but includes additional markers known to be expressed on central memory CD8+ T cells.</rdfs:comment>
+        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &apos;central memory CD8+ T cell&apos;, but includes additional markers known to be expressed on central memory CD8+ T cells.</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
     
@@ -8613,7 +8613,7 @@
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">effector memory CD8-positive, alpha-beta T lymphocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">effector memory CD8-positive, alpha-beta T-cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">effector memory CD8-positive, alpha-beta T-lymphocyte</oboInOwl:hasExactSynonym>
-        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &#39;effector memory CD8+ T cell&#39;, but includes additional markers known to be expressed on effector memory CD8+ T cells.</rdfs:comment>
+        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &apos;effector memory CD8+ T cell&apos;, but includes additional markers known to be expressed on effector memory CD8+ T cells.</rdfs:comment>
         <oboInOwl:hasBroadSynonym>effector memory CD8+ T cell</oboInOwl:hasBroadSynonym>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
@@ -8684,7 +8684,7 @@
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tc1 T-lymphocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <oboInOwl:hasExactSynonym>Tc1 CD8+ T cell</oboInOwl:hasExactSynonym>
-        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &#39;Tc1 CD8+ T cell&#39;, but its logical definition includes additional known characteristics of Tc1 T cells.</rdfs:comment>
+        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &apos;Tc1 CD8+ T cell&apos;, but its logical definition includes additional known characteristics of Tc1 T cells.</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
     
@@ -8705,7 +8705,7 @@
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tc2 T-cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tc2 T-lymphocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
-        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &#39;non-Tc1/Tc17 CD8+ T cell&#39; (see CL:0001052), but includes the additional necessary and sufficient conditions to allow classification as a Tc2 T cell.</rdfs:comment>
+        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &apos;non-Tc1/Tc17 CD8+ T cell&apos; (see CL:0001052), but includes the additional necessary and sufficient conditions to allow classification as a Tc2 T cell.</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
     
@@ -9053,7 +9053,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000824"/>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CD56-bright cytokine secreting NK cell</oboInOwl:hasExactSynonym>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NK cell that has the phenotype CD56-bright, CD16-negative, and CD84-positive with the function to secrete interferon-gamma but is not cytotoxic.</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This cell type is compatible with the HIPC Lyoplate markers for &#39;CD16-CD56bright NK cell&#39;. Markers are associated with human cell types.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This cell type is compatible with the HIPC Lyoplate markers for &apos;CD16-CD56bright NK cell&apos;. Markers are associated with human cell types.</rdfs:comment>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <oboInOwl:hasExactSynonym>CD56-bright cytokine secreting natural killer cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>CD16-negative, CD56-bright NK cell</oboInOwl:hasExactSynonym>
@@ -9069,7 +9069,7 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CD16-positive, CD56-dim natural killer cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000824"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mature natural killer cell that has the phenotype CD56-low, CD16-positive and which is capable of cytotoxicity and cytokine production.</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This cell type is compatible with the HIPC Lyoplate markers for &#39;CD16+CD56+ NK cell&#39;. Markers are associated with human cell types.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This cell type is compatible with the HIPC Lyoplate markers for &apos;CD16+CD56+ NK cell&apos;. Markers are associated with human cell types.</rdfs:comment>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cytotoxic CD56-dim NK cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>CD16-positive, CD56-low NK cell</oboInOwl:hasExactSynonym>
@@ -9434,13 +9434,13 @@
     <!-- http://purl.obolibrary.org/obo/CL_0000964 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000964">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bm2&#39; B cell</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bm2&apos; B cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000844"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A germinal center B cell that founds a germinal center, and has the phenotype IgD-positive, CD38-positive, and CD23-negative.</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bm2&#39; B cells are also reportedly CD10-positive, CD39-negative, CD44-negative, CD71-positive, CD77-negative, IgM-positive, IgG-negative, IgA-negative, and IgE-negative.</rdfs:comment>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bm2&#39; B lymphocyte</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bm2&#39; B-cell</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bm2&#39; B-lymphocyte</oboInOwl:hasExactSynonym>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bm2&apos; B cells are also reportedly CD10-positive, CD39-negative, CD44-negative, CD71-positive, CD77-negative, IgM-positive, IgG-negative, IgA-negative, and IgE-negative.</rdfs:comment>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bm2&apos; B lymphocyte</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bm2&apos; B-cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bm2&apos; B-lymphocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bm2-prime B cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bm2-prime B lymphocyte </oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bm2-prime B-cell </oboInOwl:hasExactSynonym>
@@ -9544,7 +9544,7 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unswitched memory B cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000787"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An unswitched memory B cell is a memory B cell that has the phenotype IgM-positive, IgD-positive, CD27-positive, CD138-negative, IgG-negative, IgE-negative, and IgA-negative.</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This cell type is compatible with the HIPC Lyoplate markers for &#39;IgD+ memory B cell&#39;. Per DSD: Unswitched memory B cells are also reportedly CD48-positive, CD84-positive, CD229-positive, and CD352-positive.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This cell type is compatible with the HIPC Lyoplate markers for &apos;IgD+ memory B cell&apos;. Per DSD: Unswitched memory B cells are also reportedly CD48-positive, CD84-positive, CD229-positive, and CD352-positive.</rdfs:comment>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unswitched memory B lymphocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unswitched memory B-cell</oboInOwl:hasExactSynonym>
@@ -9698,7 +9698,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000946"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An activated mature (naive or memory) B cell that is secreting immunoglobulin, typified by being CD27-positive, CD38-positive, CD138-negative.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:84371</oboInOwl:hasDbXref>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This cell type is compatible with the HIPC Lyoplate markers for &#39;plasmablast&#39;. Plasmablasts are also reportedly CD48-positive, CD63-positive, CD229-positive, CD270-positive, CD319-positive, CD352-positive, CD361-positive, and IgD-negative.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This cell type is compatible with the HIPC Lyoplate markers for &apos;plasmablast&apos;. Plasmablasts are also reportedly CD48-positive, CD63-positive, CD229-positive, CD270-positive, CD319-positive, CD352-positive, CD361-positive, and IgD-negative.</rdfs:comment>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
@@ -10552,9 +10552,9 @@
         <oboInOwl:hasBroadSynonym>activated CD4+ T cell</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasExactSynonym>activated CD4-positive, alpha-beta T lymphocyte, human</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>activated CD4-positive, alpha-beta T-lymphocyte, human</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000115>A recently activated CD4-positive, alpha-beta T cell with the phenotype HLA-DRA-positive, CD38-positive, CD69-positive, CD62L-negative, CD127-negative, and CD25-positive.</obo:IAO_0000115>
-        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &#39;activated CD4+ T cell&#39;, but includes via logical inference from its parent additional markers known to be expressed on activated CD4+ T cells.  The inclusion of HLA-DRA in the definition restricts this definition to human activated CD4+ T cells, as activated mouse T cells do not express MHC class II.</rdfs:comment>
         <oboInOwl:hasExactSynonym>activated CD4-positive, alpha-beta T-cell, human</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>A recently activated CD4-positive, alpha-beta T cell with the phenotype HLA-DRA-positive, CD38-positive, CD69-positive, CD62L-negative, CD127-negative, and CD25-positive.</obo:IAO_0000115>
+        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &apos;activated CD4+ T cell&apos;, but includes via logical inference from its parent additional markers known to be expressed on activated CD4+ T cells.  The inclusion of HLA-DRA in the definition restricts this definition to human activated CD4+ T cells, as activated mouse T cells do not express MHC class II.</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
     
@@ -10567,7 +10567,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000624"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000911"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A CD4-positive, alpha-beta T cell with the phenotype CCR7-negative, CD45RA-positive.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This cell type is compatible with the HIPC Lyoplate markers for &#39;effector CD4+ T cell&#39;.  The functional characteristics of this cell type currently undefined in CL, which affects its proper placement within the hierarchy.</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This cell type is compatible with the HIPC Lyoplate markers for &apos;effector CD4+ T cell&apos;.  The functional characteristics of this cell type currently undefined in CL, which affects its proper placement within the hierarchy.</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">effector CD4+ T cell</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">effector CD4-positive, alpha-beta T lymphocyte</oboInOwl:hasExactSynonym>
@@ -10586,9 +10586,9 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002677"/>
         <oboInOwl:hasExactSynonym>naive CCR4-positive regulatory T lymphocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasExactSynonym>naive CCR4-positive regulatory T-lymphocyte</oboInOwl:hasExactSynonym>
         <obo:IAO_0000115>A naive regulatory T cell with the phenotype CD4-positive, CD25-positive, CD127lo, CCR4-positive, and CD45RO-negative.</obo:IAO_0000115>
-        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &#39;naive CCR4+ Treg&#39;.  The definition is valid for human; its applicability for mouse and other species is unknown.</rdfs:comment>
+        <oboInOwl:hasExactSynonym>naive CCR4-positive regulatory T-lymphocyte</oboInOwl:hasExactSynonym>
+        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &apos;naive CCR4+ Treg&apos;.  The definition is valid for human; its applicability for mouse and other species is unknown.</rdfs:comment>
         <oboInOwl:hasExactSynonym>naive CCR4+ Treg</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>naive CCR4-positive regulatory T-cell</oboInOwl:hasExactSynonym>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
@@ -10604,7 +10604,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002678"/>
         <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
         <oboInOwl:hasExactSynonym>memory CCR4-positive regulatory T-lymphocyte</oboInOwl:hasExactSynonym>
-        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &#39;memory CCR4+ Treg&#39;.  The definition is valid for human; its applicability for mouse and other species is unknown.</rdfs:comment>
+        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &apos;memory CCR4+ Treg&apos;.  The definition is valid for human; its applicability for mouse and other species is unknown.</rdfs:comment>
         <oboInOwl:hasExactSynonym>memory CCR4+ Treg</oboInOwl:hasExactSynonym>
         <obo:IAO_0000115>A memory regulatory T cell with phenotype CD4-positive, CD25-positive, CD127lo, CCR4-positive, and CD45RO-positive.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>memory CCR4-positive regulatory T lymphocyte</oboInOwl:hasExactSynonym>
@@ -10619,11 +10619,11 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0001047">
         <rdfs:label>CD4-positive, CD25-positive, CCR4-positive, alpha-beta regulatory T cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000792"/>
-        <oboInOwl:hasExactSynonym>CD4-positive, CD25-positive, CCR4-positive, alpha-beta regulatory T-cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>CCR+ Treg</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>CD4-positive, CD25-positive, CCR4-positive, alpha-beta regulatory T-cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>CD4-positive, CD25-positive, CCR4-positive, alpha-beta regulatory T lymphocyte</oboInOwl:hasExactSynonym>
         <obo:IAO_0000115>A CD4-positive, CD25-positive, alpha-beta regulatory T cell with the additional phenotype CCR4-positive.</obo:IAO_0000115>
-        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &#39;CCR4+ Treg&#39;.  The definition is valid for human; its applicability for mouse and other species is unknown.</rdfs:comment>
+        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &apos;CCR4+ Treg&apos;.  The definition is valid for human; its applicability for mouse and other species is unknown.</rdfs:comment>
         <oboInOwl:hasExactSynonym>CD4-positive, CD25-positive, CCR4-positive, alpha-beta regulatory T-lymphocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
@@ -10640,9 +10640,9 @@
         <oboInOwl:hasExactSynonym>activated CD4-positive, CD25-positive, CCR4-positive, alpha-beta regulatory T-cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>activated CD4-positive, CD25-positive, CCR4-positive, alpha-beta regulatory T-lymphocyte</oboInOwl:hasExactSynonym>
         <obo:IAO_0000115>A CD4-positive, CD25-positive, CCR4-positive, alpha-beta T regulatory cell with the phenotype HLA-DRA-positive, indicating recent activation.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>activated CCR4+ Treg</oboInOwl:hasExactSynonym>
-        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &#39;activated CCR4+ Treg&#39;.  The inclusion of HLA-DRA in the definition restricts this definition to human activated CD4+ T cells, as activated mouse T cells do not express MHC class II.</rdfs:comment>
         <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &apos;activated CCR4+ Treg&apos;.  The inclusion of HLA-DRA in the definition restricts this definition to human activated CD4+ T cells, as activated mouse T cells do not express MHC class II.</rdfs:comment>
+        <oboInOwl:hasExactSynonym>activated CCR4+ Treg</oboInOwl:hasExactSynonym>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
     
@@ -10654,7 +10654,7 @@
         <rdfs:label>activated CD8-positive, alpha-beta T cell, human</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000906"/>
         <oboInOwl:hasExactSynonym>activated CD8-positive, alpha-beta T-lymphocyte, human</oboInOwl:hasExactSynonym>
-        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &#39;activated CD8+ T cell&#39;, but includes via logical inference from its parent additional markers known to be expressed on activated CD8+ T cells.  The inclusion of HLA-DRA in the definition restricts this definition to human activated CD8+ T cells, as activated mouse T cells do not express MHC class II.</rdfs:comment>
+        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &apos;activated CD8+ T cell&apos;, but includes via logical inference from its parent additional markers known to be expressed on activated CD8+ T cells.  The inclusion of HLA-DRA in the definition restricts this definition to human activated CD8+ T cells, as activated mouse T cells do not express MHC class II.</rdfs:comment>
         <oboInOwl:hasExactSynonym>activated CD8-positive, alpha-beta T-cell, human</oboInOwl:hasExactSynonym>
         <oboInOwl:hasBroadSynonym>activated CD8+ T cell</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
@@ -10673,7 +10673,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000911"/>
         <oboInOwl:hasExactSynonym>effector CD8-positive, alpha-beta T lymphocyte</oboInOwl:hasExactSynonym>
         <obo:IAO_0000115>A CD8-positive, alpha-beta T cell with the phenotype CCR7-negative, CD45RA-positive.</obo:IAO_0000115>
-        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &#39;effector CD8+ T cell&#39;.  The functional characteristics of this cell type currently undefined in CL, which affects its proper placement within the hierarchy.</rdfs:comment>
+        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &apos;effector CD8+ T cell&apos;.  The functional characteristics of this cell type currently undefined in CL, which affects its proper placement within the hierarchy.</rdfs:comment>
         <oboInOwl:hasExactSynonym>effector CD8-positive, alpha-beta T-lymphocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasBroadSynonym>effector CD8+ T cell</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
@@ -10688,13 +10688,13 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0001051">
         <rdfs:label>CD4-positive, CXCR3-negative, CCR6-negative, alpha-beta T cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000624"/>
-        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &#39;non-Th1/Th17 CD4+ T cell&#39;.  Cells of this phenotype may include T-helper 2 T cells and some naive CD4+ T cells.</rdfs:comment>
+        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &apos;non-Th1/Th17 CD4+ T cell&apos;.  Cells of this phenotype may include T-helper 2 T cells and some naive CD4+ T cells.</rdfs:comment>
         <obo:IAO_0000115>A CD4-positive, alpha-beta T cell that has the phenotype CXCR3-negative, CCR6-negative.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
         <oboInOwl:hasBroadSynonym>non-Th1/Th17 CD4+ T cell</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasExactSynonym>CD4-positive, CXCR3-negative, CCR6-negative, alpha-beta T-lymphocyte</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>CD4-positive, CXCR3-negative, CCR6-negative, alpha-beta T lymphocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>CD4-positive, CXCR3-negative, CCR6-negative, alpha-beta T-cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>CD4-positive, CXCR3-negative, CCR6-negative, alpha-beta T lymphocyte</oboInOwl:hasExactSynonym>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
     
@@ -10707,7 +10707,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000625"/>
         <oboInOwl:hasExactSynonym>CD8-positive, CXCR3-negative, CCR6-negative, alpha-beta T lymphocyte</oboInOwl:hasExactSynonym>
         <obo:IAO_0000115>A CD8-positive, alpha-beta T cell that has the phenotype CXCR3-negative, CCR6-negative.</obo:IAO_0000115>
-        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &#39;non-Tc1/Tc17 CD8+ T cell&#39;.  Cells of this phenotype may include Tc2 T cells and some naive CD8+ T cells.</rdfs:comment>
+        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &apos;non-Tc1/Tc17 CD8+ T cell&apos;.  Cells of this phenotype may include Tc2 T cells and some naive CD8+ T cells.</rdfs:comment>
         <oboInOwl:hasExactSynonym>CD8-positive, CXCR3-negative, CCR6-negative, alpha-beta T-cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
         <oboInOwl:hasBroadSynonym>non-Tc1/Tc17 CD8+ T cell</oboInOwl:hasBroadSynonym>
@@ -10725,7 +10725,7 @@
         <obo:IAO_0000115>A memory B cell that lacks expression of surface IgD.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>IgD- memory B cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
-        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &#39;IgD- memory B cell&#39;.  The majority of these cells are class-switched, though some are IgM-positive.</rdfs:comment>
+        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &apos;IgD- memory B cell&apos;.  The majority of these cells are class-switched, though some are IgM-positive.</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
     
@@ -10736,7 +10736,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0001054">
         <rdfs:label>CD14-positive monocyte</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000576"/>
-        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &#39;monocyte&#39;. Note that while CD14 is considered a reliable marker for human monocytes, it is only expressed on approximately 85% of mouse monocytes.</rdfs:comment>
+        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &apos;monocyte&apos;. Note that while CD14 is considered a reliable marker for human monocytes, it is only expressed on approximately 85% of mouse monocytes.</rdfs:comment>
         <oboInOwl:hasNarrowSynonym>monocyte</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
         <obo:IAO_0000115>A monocyte that expresses CD14 and is negative for the lineage markers CD3, CD19, and CD20.</obo:IAO_0000115>
@@ -10767,7 +10767,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000451"/>
         <obo:IAO_0000115>A dendritic cell with the phenotype HLA-DRA-positive.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
-        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &#39;dendritic cell&#39;. The inclusion of HLA-DRA in the definition restricts this definition to human dendritic cells.</rdfs:comment>
+        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &apos;dendritic cell&apos;. The inclusion of HLA-DRA in the definition restricts this definition to human dendritic cells.</rdfs:comment>
         <oboInOwl:hasBroadSynonym>dendritic cell</oboInOwl:hasBroadSynonym>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
@@ -10780,7 +10780,7 @@
         <rdfs:label>myeloid dendritic cell, human</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000782"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0001056"/>
-        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &#39;myeloid dendritic cell&#39;. The inclusion of HLA-DRA in the definition restricts this definition to human myeloid dendritic cells.</rdfs:comment>
+        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &apos;myeloid dendritic cell&apos;. The inclusion of HLA-DRA in the definition restricts this definition to human myeloid dendritic cells.</rdfs:comment>
         <oboInOwl:hasBroadSynonym>myeloid dendritic cell</oboInOwl:hasBroadSynonym>
         <obo:IAO_0000115>A myeloid dendritic cell with the phenotype HLA-DRA-positive.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
@@ -10797,7 +10797,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0001056"/>
         <oboInOwl:hasBroadSynonym>plasmacytoid dendritic cell</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
-        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &#39;plasmacytoid dendritic cell&#39;. The inclusion of HLA-DRA in the definition restricts this definition to human plasmacytoid dendritic cells.</rdfs:comment>
+        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &apos;plasmacytoid dendritic cell&apos;. The inclusion of HLA-DRA in the definition restricts this definition to human plasmacytoid dendritic cells.</rdfs:comment>
         <obo:IAO_0000115>A plasmacytoid dendritic cell with the phenotype HLA-DRA-positive, CD123-positive, and CD11c-negative.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
@@ -10809,13 +10809,13 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0001059">
         <rdfs:label>common myeloid progenitor, CD34-positive</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000049"/>
-        <oboInOwl:hasBroadSynonym>CMP</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasRelatedSynonym>multipotential myeloid stem cell</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasBroadSynonym>CMP</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasExactSynonym>common myeloid precursor, CD34-positive</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>CFU-GEMM</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>CFU-S</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>CMP are reportedly CD16-positive, CD32-positive, CD38-positive, CD45RA-negative, CD110-negative, CD117-positive, CD123-positive, and SCA1-negative.</rdfs:comment>
         <oboInOwl:hasRelatedSynonym>myeloid stem cell</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>CMP are reportedly CD16-positive, CD32-positive, CD38-positive, CD45RA-negative, CD110-negative, CD117-positive, CD123-positive, and SCA1-negative.</rdfs:comment>
         <oboInOwl:hasRelatedSynonym>colony forming unit granulocyte, erythrocyte, macrophage, and megakaryocyte</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>pluripotent stem cell (bone marrow)</oboInOwl:hasRelatedSynonym>
         <obo:IAO_0000115>A progenitor cell committed to myeloid lineage, including the megakaryocyte and erythroid lineages. These cells are CD34-positive, and express Gata1, Gata2, C/EBPa, and Pu.1.</obo:IAO_0000115>
@@ -10846,8 +10846,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000625"/>
         <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
         <oboInOwl:hasExactSynonym>TEMRA</oboInOwl:hasExactSynonym>
-        <rdfs:comment>This cell type is seen human but not found in the mouse.</rdfs:comment>
         <obo:IAO_0000115>A CD8-positive, alpha beta memory T cell with the phenotype CD45RA-positive, CD45RO-negative, and CCR7-negative.</obo:IAO_0000115>
+        <rdfs:comment>This cell type is seen human but not found in the mouse.</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
     
@@ -11345,7 +11345,7 @@
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A hematopoietic oligopotent progenitor cell that has the ability to differentiate into limited cell types but lacks lineage cell markers and self renewal capabilities. Cell lacks hematopoeitic lineage markers.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tmeehan</oboInOwl:created_by>
-        <rdfs:comment>This cell type is intended to be compatible with any vertebrate hematopoietic oligopotent progenitor cell.  For mammalian hematopoietic oligopotent progenitor cells known to be lineage-negative, please use the term &#39;hematopoietic oligopotent progenitor cell&#39; (CL_0001060).</rdfs:comment>
+        <rdfs:comment>This cell type is intended to be compatible with any vertebrate hematopoietic oligopotent progenitor cell.  For mammalian hematopoietic oligopotent progenitor cells known to be lineage-negative, please use the term &apos;hematopoietic oligopotent progenitor cell&apos; (CL_0001060).</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
     
@@ -11625,11 +11625,11 @@
     <!-- http://purl.obolibrary.org/obo/CL_0002050 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002050">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fraction C&#39; precursor B cell</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fraction C&apos; precursor B cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000817"/>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010-04-28T02:13:46Z</oboInOwl:creation_date>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A pre-BCR-positive precursor B cell that is CD24-high, CD25-positive, CD43-positive, CD45R-positive and BP-positive.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fr. C&#39;</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fr. C&apos;</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fraction C-prime</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tmeehan</oboInOwl:created_by>
@@ -11739,7 +11739,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0001054"/>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010-06-05T08:25:41Z</oboInOwl:creation_date>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A classical monocyte that is CD14-positive, CD16-negative, CD64-positive, CD163-positive.</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This cell type is compatible with the HIPC Lyoplate markers for &#39;CD16- monocyte&#39;. The markers used in the definition are associated with human monocytes.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This cell type is compatible with the HIPC Lyoplate markers for &apos;CD16- monocyte&apos;. The markers used in the definition are associated with human monocytes.</rdfs:comment>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tmeehan</oboInOwl:created_by>
         <oboInOwl:hasExactSynonym>CD16-negative monocyte</oboInOwl:hasExactSynonym>
@@ -12201,9 +12201,9 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002315"/>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010-07-14T03:22:02Z</oboInOwl:creation_date>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Boettcher cell is a polyhedral cells on the basilar membrane of the cochlea, and is located beneath Claudius cells. A Boettcher cell is considered a supporting cell for the organ of Corti, and is present only in the lower turn of the cochlea. These cells interweave with each other, and project microvilli into the intercellular space. Because of their structural specialization, a Boettcher cell is believed to play a significant role in the function of the cochlea. They demonstrate high levels of calmodulin, and may be involved in mediating Ca(2+) regulation and ion transport.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Boettcher&#39;s cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Boettcher&apos;s cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bottcher cell</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bottcher&#39;s cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bottcher&apos;s cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tmeehan</oboInOwl:created_by>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
@@ -12914,7 +12914,7 @@
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tc17 T lymphocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tc17 T-cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tc17 T-lymphocyte</oboInOwl:hasExactSynonym>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This cell type is compatible with the HIPC Lyoplate markers for &#39;Tc17 CD8+ T cell&#39;, but its logical definition includes additional known characteristics of Tc17 T cells.  Found in the CD27-positive, CD28-positive or CD27-negative, CD28-positive fractions with the phenotype CCR4-negative and CCR7-negative (this sentence not part of definition).</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This cell type is compatible with the HIPC Lyoplate markers for &apos;Tc17 CD8+ T cell&apos;, but its logical definition includes additional known characteristics of Tc17 T cells.  Found in the CD27-positive, CD28-positive or CD27-negative, CD28-positive fractions with the phenotype CCR4-negative and CCR7-negative (this sentence not part of definition).</rdfs:comment>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <oboInOwl:hasExactSynonym>Tc17 CD8+ T cell</oboInOwl:hasExactSynonym>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
@@ -16725,7 +16725,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0001054"/>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010-10-04T12:49:47Z</oboInOwl:creation_date>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A CD14-positive monocyte that is also CD16-positive and CCR2-negative.</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This cell type is compatible with the HIPC Lyoplate markers for &#39;CD16+ monocyte&#39;. Markers are associated with human cells. Note that this cell type encompasses both human intermediate monocytes (CD14+, CD16-low), and human non-classical monocytes (CD14-low, CD16+).</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This cell type is compatible with the HIPC Lyoplate markers for &apos;CD16+ monocyte&apos;. Markers are associated with human cells. Note that this cell type encompasses both human intermediate monocytes (CD14+, CD16-low), and human non-classical monocytes (CD14-low, CD16+).</rdfs:comment>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tmeehan</oboInOwl:created_by>
         <oboInOwl:hasExactSynonym>CD16+ monocyte</oboInOwl:hasExactSynonym>
@@ -16798,10 +16798,10 @@
     <!-- http://purl.obolibrary.org/obo/CL_0002402 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002402">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peyer&#39;s patch B cell</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peyer&apos;s patch B cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000822"/>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010-10-05T11:18:03Z</oboInOwl:creation_date>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A resting mature B cell within the Peyer&#39;s patch that is CD19-positive, B220-positive, IgM-positive, AA4-negative, CD23-positive, CD43-negative, and CD5-negative.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A resting mature B cell within the Peyer&apos;s patch that is CD19-positive, B220-positive, IgM-positive, AA4-negative, CD23-positive, CD43-negative, and CD5-negative.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peyers patch B cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tmeehan</oboInOwl:created_by>
@@ -19167,10 +19167,10 @@
     <!-- http://purl.obolibrary.org/obo/CL_0002568 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002568">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mesenchymal stem cell of Wharton&#39;s jelly</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mesenchymal stem cell of Wharton&apos;s jelly</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002569"/>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2011-03-01T09:51:18Z</oboInOwl:creation_date>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mesenchymal stem cell that is part of Wharton&#39;s jelly.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mesenchymal stem cell that is part of Wharton&apos;s jelly.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tmeehan</oboInOwl:created_by>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
@@ -19866,8 +19866,8 @@
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fat cell of breast</oboInOwl:hasExactSynonym>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tmeehan</oboInOwl:created_by>
-        <oboInOwl:hasExactSynonym>breast adipocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasDbXref>CALOHA:TS-2377</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>breast adipocyte</oboInOwl:hasExactSynonym>
         <rdfs:comment>Adipocytes found in the subcutaneous adipose tissue of breast. The breast consists of three main components, the skin, the subcutaneous adipose tissue and the functional glandular tissue that comprises both parenchyma and stroma.[CALOHA]</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
@@ -20688,7 +20688,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000898"/>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2011-08-25T03:17:21Z</oboInOwl:creation_date>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A regulatory T cell that has not encountered antigen.</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This cell type has been described as CD45RA-negative, but this doesn&#39;t fit with our current definition of naive T cell.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This cell type has been described as CD45RA-negative, but this doesn&apos;t fit with our current definition of naive T cell.</rdfs:comment>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tmeehan</oboInOwl:created_by>
         <oboInOwl:hasExactSynonym>naive regulatory T lymphocyte</oboInOwl:hasExactSynonym>
@@ -20707,7 +20707,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000813"/>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2011-08-25T03:17:34Z</oboInOwl:creation_date>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A CD4-positive, CD25-positive alpha-beta regulatory T cell that has encountered antigen.</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cell has been described as being CD45RA-positive in human, but this doesn&#39;t fit with our current definition memory T cell.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cell has been described as being CD45RA-positive in human, but this doesn&apos;t fit with our current definition memory T cell.</rdfs:comment>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tmeehan</oboInOwl:created_by>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
@@ -21356,8 +21356,8 @@
         <rdfs:label>dorsal horn interneuron</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002611"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0005000"/>
-        <oboInOwl:hasRelatedSynonym>dorsal spinal cord interneuron</oboInOwl:hasRelatedSynonym>
         <obo:IAO_0000115>A CNS interneuron located in the dorsal horn of the spinal cord.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>dorsal spinal cord interneuron</oboInOwl:hasRelatedSynonym>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
     
@@ -21379,7 +21379,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0011002">
         <rdfs:label>lateral motor column neuron</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011001"/>
-        <rdfs:comment>Need to MIREOT in &#39;spinal cord lateral column&#39; from Uberon</rdfs:comment>
+        <rdfs:comment>Need to MIREOT in &apos;spinal cord lateral column&apos; from Uberon</rdfs:comment>
         <obo:IAO_0000115>A motor neuron that is generated only on limb levels and send axons into the limb mesenchyme.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
@@ -23275,10 +23275,10 @@
     <!-- http://purl.obolibrary.org/obo/CL_1000411 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_1000411">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endothelial cell of peyer&#39;s patch</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endothelial cell of peyer&apos;s patch</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000115"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002254"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An endothelial cell that is part of the small intestine Peyer&#39;s patch.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An endothelial cell that is part of the small intestine Peyer&apos;s patch.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:67757</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
@@ -23464,7 +23464,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_1001601"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A chromaffin cell that is part of the adrenal cortex.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:69795</oboInOwl:hasDbXref>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not clear this cell type exists. Can&#39;t call it a cortical adrenal cell because of different germ layer origin.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not clear this cell type exists. Can&apos;t call it a cortical adrenal cell because of different germ layer origin.</rdfs:comment>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chromaffin cell of adrenal cortex</oboInOwl:hasExactSynonym>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
@@ -23669,7 +23669,7 @@
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:70966</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KUPO:0001034</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">epithelial cell of Bowman&#39;s capsule</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">epithelial cell of Bowman&apos;s capsule</oboInOwl:hasExactSynonym>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
     
@@ -25992,7 +25992,7 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">duodenum glandular cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_1001598"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CALOHA:TS-1275</oboInOwl:hasDbXref>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Glandular cell of duodenal epithelium. Example: Enterocytes, Goblet cells, enteroendocrine cells; Paneth cells; M cells; Brunner&#39;s gland cell.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Glandular cell of duodenal epithelium. Example: Enterocytes, Goblet cells, enteroendocrine cells; Paneth cells; M cells; Brunner&apos;s gland cell.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">duodenum glandular cells</oboInOwl:hasRelatedSynonym>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
@@ -26339,4 +26339,5 @@
 
 
 
-<!-- Generated by the OWL API (version 3.2.4.1806) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
+
