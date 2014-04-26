@@ -52,25 +52,25 @@
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_AdminData"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
     <owl:AnnotationProperty rdf:about="http://eagle-i.org/ont/app/1.0/inClassGroup"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000231"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId">
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000231"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#isCyclic">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#isCyclic">
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
+    <owl:AnnotationProperty rdf:about="http://eagle-i.org/ont/app/1.0/preferredLabel"/>
     <owl:AnnotationProperty rdf:about="http://purl.org/net/OCRe/statistics.owl#curator">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://eagle-i.org/ont/app/1.0/preferredLabel"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
     <owl:AnnotationProperty rdf:about="http://eagle-i.org/ont/app/1.0/domainConstraint"/>
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasURI">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
@@ -1165,6 +1165,14 @@
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Developed by</app:preferredLabel>
         <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person or organization that developed or helped develop the resource.</app:preferredDefinition>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001720"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -1176,14 +1184,6 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
-                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -12088,14 +12088,14 @@ Laboratory personnel have specific training in handling pathogenic and potential
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001607">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001305"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0002018"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0002020"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0002018"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0002020"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001305"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">exome sequencing</app:preferredLabel>
