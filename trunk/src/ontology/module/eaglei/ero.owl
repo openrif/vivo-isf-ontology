@@ -39,19 +39,19 @@
 
     <owl:AnnotationProperty rdf:about="http://protege.stanford.edu/plugins/owl/protege#defaultLanguage"/>
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#deprecated">
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
         <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0100001"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000231"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
     <owl:AnnotationProperty rdf:about="http://eagle-i.org/ont/app/1.0/preferredLabel"/>
@@ -518,6 +518,15 @@
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has topic</obo:IAO_0000111>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">here we need to take care of dofferent domain and is this really the same relation between research project and protocol?</rdfs:comment>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0008150"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0100026"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_1110055"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -528,15 +537,6 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0008150"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0100026"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_1110055"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -3064,14 +3064,14 @@ requested in OBI 2894859</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000086"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000086"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -3097,6 +3097,12 @@ requested in OBI 2894859</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001000"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
             </owl:Restriction>
@@ -3105,12 +3111,6 @@ requested in OBI 2894859</rdfs:comment>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000086"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001000"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atwood et al (2000) OED of Biochemistry and Molecular Biology, Oxford University Press.</obo:IAO_0000119>
@@ -3553,14 +3553,14 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000086"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000086"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An antibody is a protein reagent.</obo:IAO_0000112>
@@ -3582,14 +3582,14 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000086"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000086"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">From Richard: unique rare</rdfs:comment>
@@ -4184,13 +4184,13 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000383"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000383"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A device that is programmable, multifunctional, and mechanical that is  designed to move material, parts, tools, or specialized devices through variable programmed motions to perform a variety of tasks.</obo:IAO_0000115>
@@ -4231,13 +4231,13 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000383"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000383"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An instrument that prints bar code labels and applies them to a product, such as to the side of a microplate.</obo:IAO_0000115>
@@ -4305,13 +4305,13 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000401"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000370"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000370"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000401"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A CO2 incubator.</obo:IAO_0000112>
@@ -4488,13 +4488,13 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000397"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000368"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000368"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000397"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A digital camera for a microscope, which records image data of a sample image obtained by the microscope in a recording medium.</obo:IAO_0000115>
@@ -5709,13 +5709,13 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000370"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000401"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000401"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000370"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A incubator that controls the carbon dioxide (CO2) content of the atmosphere inside.</obo:IAO_0000115>
@@ -7324,13 +7324,13 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000387"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000370"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000370"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000387"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cooling appliance used for the safe storage of volatile materials that need to be kept frozen.</obo:IAO_0000115>
@@ -7731,7 +7731,7 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000371"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -7743,7 +7743,7 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000371"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An oven that is used for rapid drying of histology slides, typically consisting of a drying chamber, digital temperature and time controller, and internal fan.</obo:IAO_0000115>
@@ -7764,13 +7764,13 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000383"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000383"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An automatic coverslipper can be used to prepare slides for microscopic examination.</obo:IAO_0000112>
@@ -8091,13 +8091,13 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A centrifuge used for the determination of volume fraction of erythrocytes in blood.</obo:IAO_0000115>
@@ -8239,13 +8239,13 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000401"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000370"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000370"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000401"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An instrument that consists of an enclosed space that is used to reduce or isolate ambient and acoustic noise.</obo:IAO_0000115>
@@ -9232,14 +9232,14 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000086"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000086"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A primer.</obo:IAO_0000112>
@@ -21684,13 +21684,13 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000371"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000371"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -26457,6 +26457,8 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001974">
         <rdfs:label xml:lang="en">African American</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001972"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A term used in the United States to categorize a population group comprised of persons having origins in any of the black racial groups of Africa. Includes population subgroups (e.g., Kenyan, Nigerian, Haitian).</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIt:C16352</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -26466,6 +26468,9 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001975">
         <rdfs:label xml:lang="en">Caucasian</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001972"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ethnic group comprised of persons having origins in any of the original peoples of Europe, the Middle East, or North Africa.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIt:C41261</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -26475,15 +26480,9 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001976">
         <rdfs:label xml:lang="en">Caucasian of European descent</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001975"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0001977 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001977">
-        <rdfs:label xml:lang="en">Caucasian of Middle Eastern descent</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001975"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ethnic group comprised of persons having origins in any of the original peoples the European countries.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -26493,6 +26492,10 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001978">
         <rdfs:label xml:lang="en">Ashkenazi Jew</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002085"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Jewish ethnic group comprised of persons who are descendants of Jews from Germany, Poland, Austria and Eastern Europe.
+</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIt:C17950</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -26502,6 +26505,9 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001979">
         <rdfs:label xml:lang="en">Sephardic Jew</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002085"/>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Jewish ethnic group comprised of persons whose ancestors lived in North Africa, the Middle East, Portugal or Spain.</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIt:C103283</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -26511,6 +26517,8 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001980">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Latino</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001972"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ethnic group comprised of persons with origins in the countries of Latin America.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -26520,6 +26528,8 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001981">
         <rdfs:label xml:lang="en">Asian</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001972"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ethnic group comprised of persons having origins in any of the original peoples of the Far East, Southeast Asia, or the Indian subcontinent, including for example, Cambodia, China, India, Japan, Korea, Malaysia, Pakistan, the Philippine Islands, Thailand, and Vietnam.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIt:C41260</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -26529,6 +26539,9 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001982">
         <rdfs:label xml:lang="en">Pacific Islander</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001972"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ethnic group comprised of persons having origins in any of the original peoples of Hawaii, Guam, Samoa, or other Pacific Islands. The term covers particularly people who identify themselves as part-Hawaiian, Native Hawaiian, Guamanian or Chamorro, Carolinian, Samoan, Chuukese (Trukese), Fijian, Kosraean, Melanesian, Micronesian, Northern Mariana Islander, Palauan, Papua New Guinean, Pohnpeian, Polynesian, Solomon Islander, Tahitian, Tokelauan, Tongan, Yapese, or Pacific Islander, not specified.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EFO_0003154</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -26538,6 +26551,8 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001983">
         <rdfs:label xml:lang="en">African</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001972"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ethnic group comprised of persons with African ancestral origins who self identify, or are identified, as African.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIt:C42331</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -26547,6 +26562,9 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001984">
         <rdfs:label xml:lang="en">Native American</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001972"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ethnic group comprised of persons having origins in any of the original peoples of North and South America (including Central America) and who maintains tribal affiliation or community attachment.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIt:C41259</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -26795,8 +26813,10 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/ERO_0002009 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002009">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell analysis study</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stem cell analysis study</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000471"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A study that aims to investigate characteristics of stem cells, specifically biological phenomenon at the level of or occuring within stem cells, where the cells are the primary subject of study.  This includes their capacity to differentiate to form specific cell and tissue types.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
     </owl:Class>
     
@@ -26805,8 +26825,10 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/ERO_0002010 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002010">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">undifferentiated cell study</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">undifferentiated stem cell study</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002009"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A study that aims to investigate characteristics of stem cells in an undifferentiated state.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
     </owl:Class>
     
@@ -26815,8 +26837,10 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/ERO_0002011 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002011">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">differentiated cell study</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stem cell differentiation study</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002009"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cell analysis study that investigates the capability of cells to  differentiate into specific cell types and/or form specific tissue types.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
     </owl:Class>
     
@@ -26827,7 +26851,9 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002012">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">embryoid body formation study</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002011"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A differentiated cell study wherein stem cells are used to generate embryoid bodies and their capacity to differentiate to form specific cell types and tissues is determined.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Embryoid_body</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -26837,7 +26863,9 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002013">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">teratoma formation study</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002011"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A differentiated cell study wherein stem cells are used to generate teratomas and their capacity to differentiate to form specific cell and tissue types is determined.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -26847,7 +26875,10 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002014">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tetraploid complementation study</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002011"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cell differentiation study wherein a tetraploid embryo (either at the morula or blastocyst stage) is used to support formation of a viable embryo from diploid stem cells of interest.  The tetraploid embryo develops in utero into extra-embryonic tissue (placenta etc.) that support embryo formation by the diploid cells.  If a viable animal can be produced from stem cells using the tetraploid complementation assay, then the cells are deemed equivalent to embryonic stem cells.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Tetraploid_complementation_assay</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -26902,8 +26933,8 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sterility assay</app:preferredLabel>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">an assay to determine the sterility of some material, by assaying the presence of microorganisms or other contaminating entities.</obo:IAO_0000115>
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sterility assay</app:preferredLabel>
     </owl:Class>
     
 
@@ -26989,6 +27020,7 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002037">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological family relationship</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002033"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A family relationship between persons linked through descent from a common ancestor.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
     </owl:Class>
     
@@ -26999,6 +27031,7 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002038">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lineal family relationship</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002037"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A biological family relationship between persons linked through a direct line of descent.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
     </owl:Class>
     
@@ -27009,6 +27042,7 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002039">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sibling relationship</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002038"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A lineal family relationship between two persons with at least one shared parent.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
     </owl:Class>
     
@@ -27019,6 +27053,7 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002040">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">twin relationship</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002039"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A sibling relationship between twins.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
     </owl:Class>
     
@@ -27029,6 +27064,7 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002041">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">identical twin relationship</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002040"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A sibling relationship between paternal twins.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
     </owl:Class>
     
@@ -27039,6 +27075,7 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002042">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fraternal twin relationship</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002040"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A sibling relationship between fraternal twins.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
     </owl:Class>
     
@@ -27049,6 +27086,7 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002043">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">parent relationship</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002038"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A lineal family relationship from a parent to their biological offspring.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
     </owl:Class>
     
@@ -27059,6 +27097,7 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002044">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">grandparent relationship</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002038"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A lineal family relationship from a person and their biological grandchild.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
     </owl:Class>
     
@@ -27069,6 +27108,7 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002045">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">great grandparent relationship</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002038"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A lineal family relationship from a person and their biological great grandchild.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
     </owl:Class>
     
@@ -27079,6 +27119,7 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002046">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nth great grandparent relationship</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002038"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A lineal family relationship from a person and their descendent who is more than three generations removed (e.g. subsequent to a great grandchild)</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
     </owl:Class>
     
@@ -27089,6 +27130,7 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002047">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">child relationship</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002038"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A lineal family relationship from a person to their biological parent.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
     </owl:Class>
     
@@ -27099,6 +27141,7 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002048">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">grandchild relationship</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002038"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A lineal family relationship from a person to their biological grandparent.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
     </owl:Class>
     
@@ -27109,6 +27152,7 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002049">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">great grandchild relationship</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002038"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A lineal family relationship from a person to their biological great grandparent.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
     </owl:Class>
     
@@ -27119,6 +27163,7 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002050">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nth great grandchild relationship</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002038"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A lineal family relationship from a person and an ancestor who is more than three generations removed (e.g. preceding a great grandparent)</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
     </owl:Class>
     
@@ -27129,6 +27174,7 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002051">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">collateral family relationship</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002037"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A biological family relationship between persons whoe are not linked through a direct line of descent.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
     </owl:Class>
     
@@ -27139,6 +27185,7 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002052">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cousin relationship</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002051"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A collateral family relationship of a person to thier cousin.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
     </owl:Class>
     
@@ -27149,6 +27196,7 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002053">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">maternal cousin relationship</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002052"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A collateral family relationship of a person to thier maternal cousin.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
     </owl:Class>
     
@@ -27159,6 +27207,7 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002054">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">paternal cousin relationship</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002052"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A collateral family relationship of a person to thier paternal cousin.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
     </owl:Class>
     
@@ -27169,6 +27218,7 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002055">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aunt/uncle relationship</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002051"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A collateral family relationship of a person to thier aunt or uncle.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
     </owl:Class>
     
@@ -27179,6 +27229,7 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002056">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">maternal aunt/uncle relationship</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002055"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A collateral family relationship of a person to thier maternal aunt or uncle.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
     </owl:Class>
     
@@ -27189,6 +27240,7 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002057">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">paternal aunt/uncle relationship</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002055"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A collateral family relationship of a person to thier paternal aunt or uncle.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
     </owl:Class>
     
@@ -27199,6 +27251,7 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002058">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">niece/nephew relationship</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002051"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A collateral family relationship of a person to thier niece or nephew.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
     </owl:Class>
     
@@ -27209,6 +27262,7 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002059">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">maternal niece/nephew relationship</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002058"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A collateral family relationship of a person to thier maternal niece or nephew.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
     </owl:Class>
     
@@ -27219,6 +27273,7 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002060">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">paternal niece/nephew relationship</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002058"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A collateral family relationship of a person to thier paternal niece or nephew.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
     </owl:Class>
     
@@ -27229,6 +27284,7 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002061">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-biological family relationship</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002033"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A family relationship between persons linked through marraige or adoption.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
     </owl:Class>
     
@@ -27258,6 +27314,8 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002064">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arab</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001972"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ethnic group comprised of a Semitic people inhabiting the Arabian peninsula or other countries of the Middle East and North Africa.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MeSH: M01.686.754.167</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -27330,6 +27388,9 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002072">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Slavic</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001976"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ethnic group comprised of Indo-European persons with origins in Central Europe, Eastern Europe, Southeast Europe, North Asia and Central Asia, who speak the Indo-European Slavic languages, and share, to varying degrees, certain cultural traits and historical backgrounds.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Slavic_people</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -27339,6 +27400,9 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002073">
         <rdfs:label>Nordic</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001976"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ethnic group comprised of persons having origins in any of the original peoples of the northern European countries  of Scandinavia, Finland, Iceland, and the Faroe Islands.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Nordic_race</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -27348,6 +27412,7 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002074">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nordic, Swedish</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002073"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -27357,6 +27422,7 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002075">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nordic, Norwegian</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002073"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -27366,6 +27432,7 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002076">
         <rdfs:label>Nordic, Icelandic</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002073"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -27375,6 +27442,7 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002077">
         <rdfs:label>Nordic, Danish</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002073"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -27384,6 +27452,7 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002078">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Euro-Caucasian, German</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001976"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -27393,6 +27462,7 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002079">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Euro-Caucasian, French</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001976"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -27402,6 +27472,7 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002080">
         <rdfs:label>Euro-Caucasian, English</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001976"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -27411,6 +27482,7 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002081">
         <rdfs:label>Euro-Caucasian, Spanish</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001976"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -27420,6 +27492,7 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002082">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Euro-Caucasian, Greek</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001976"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -27429,6 +27502,7 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002083">
         <rdfs:label>Euro-Caucasian, Italian</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001976"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -27438,6 +27512,9 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002084">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Caucasian of Russian descent</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001975"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ethnic group comprised of persons having origins in any of the original peoples the Russian territories.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -27446,7 +27523,9 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002085">
         <rdfs:label>Jewish</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001977"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001975"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ethnic group originating from the Israelites (Hebrews) of the Ancient Near East.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -27456,6 +27535,7 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002087">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Latino, Carribean</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001980"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -27465,6 +27545,7 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002088">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Latino, North American</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001980"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -27474,6 +27555,7 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002089">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Latino, Central American</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001980"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -27483,6 +27565,7 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002090">
         <rdfs:label>Latino, South American</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001980"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
     </owl:Class>
     
 
