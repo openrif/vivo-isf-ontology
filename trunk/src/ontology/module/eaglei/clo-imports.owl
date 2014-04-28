@@ -108,7 +108,7 @@
     <!-- http://purl.obolibrary.org/obo/CLO_0000031 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0000031">
-        <rdfs:label xml:lang="en">cell line*</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell line</rdfs:label>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cultured cell population that represents a genetically stable and homogenous population of cultured cells that shares a common propagation history (i.e. has been successively passaged together in culture).  </obo:IAO_0000115>
         <obo:IAO_0000117>MB, SS, JZ, MAH, BP, CS, YH</obo:IAO_0000117>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
@@ -120,7 +120,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0009828">
         <rdfs:label xml:lang="en">immortal cell line</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000009"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000031"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cell line that is expected to be capable of indefinite propagation in an vitro culture.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI-CLO Alignment Working Group (Spring 2013)</obo:IAO_0000119>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">permanent cell line</obo:IAO_0000118>
@@ -133,7 +133,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0009829">
         <rdfs:label xml:lang="en">mortal cell line</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000009"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000031"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cell line is able to support only a limited number of passages in vitro.</obo:IAO_0000115>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mortal cell line is not capable of supporting indefinite propagation in vitro, being limited by entry of its cells into senescence.</rdfs:comment>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI-CLO Alignment Working Group (Spring 2013)</obo:IAO_0000119>
@@ -141,12 +141,6 @@
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary cell line</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
     </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000009 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000009"/>
 </rdf:RDF>
 
 
