@@ -52,25 +52,25 @@
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_AdminData"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
-    <owl:AnnotationProperty rdf:about="http://eagle-i.org/ont/app/1.0/inClassGroup"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    <owl:AnnotationProperty rdf:about="http://eagle-i.org/ont/app/1.0/inClassGroup"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000231"/>
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#isCyclic">
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId">
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#isCyclic">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
-    <owl:AnnotationProperty rdf:about="http://eagle-i.org/ont/app/1.0/preferredLabel"/>
     <owl:AnnotationProperty rdf:about="http://purl.org/net/OCRe/statistics.owl#curator">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://eagle-i.org/ont/app/1.0/preferredLabel"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
     <owl:AnnotationProperty rdf:about="http://eagle-i.org/ont/app/1.0/domainConstraint"/>
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasURI">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
@@ -1165,14 +1165,6 @@
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Developed by</app:preferredLabel>
         <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person or organization that developed or helped develop the resource.</app:preferredDefinition>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001720"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
-                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -1184,6 +1176,14 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -1383,8 +1383,8 @@
     <!-- http://purl.obolibrary.org/obo/ERO_0001973 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001973">
+        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The ethnic group of the human subject. For persons of mixed ethnicity, select &apos;Mixed ethnicity&apos; and optionally use the &apos;+&apos; button to add a new filed for any significant contributing ethnicity. </app:preferredDefinition>
         <app:preferredLabel>Ethnicity</app:preferredLabel>
-        <app:preferredDefinition>The ethnic group of the human subject.</app:preferredDefinition>
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_SecondaryProperty"/>
     </owl:ObjectProperty>
     
@@ -15173,11 +15173,11 @@ Laboratory personnel have specific training in handling pathogenic and potential
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0002060">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paternal niece/nephew relationship</app:preferredLabel>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0002004">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Genome-corrected iPS cell line</app:preferredLabel>
-    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0002061">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Non-biological family relationship</app:preferredLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0002004">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Genome-corrected iPS cell line</app:preferredLabel>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0002062">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adopted</app:preferredLabel>
@@ -15220,7 +15220,7 @@ Laboratory personnel have specific training in handling pathogenic and potential
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organic molecule</app:preferredLabel>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0002055">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aunt/uncle</app:preferredLabel>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aunt/Uncle</app:preferredLabel>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000988">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hematopoietic cell</app:preferredLabel>
@@ -15245,7 +15245,7 @@ Laboratory personnel have specific training in handling pathogenic and potential
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maternal niece/nephew relationship</app:preferredLabel>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0002058">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Niece/nephew</app:preferredLabel>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Niece/Nephew</app:preferredLabel>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CLO_0000031">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cell line</app:preferredLabel>
@@ -15445,7 +15445,7 @@ Laboratory personnel have specific training in handling pathogenic and potential
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0002051">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Collateral relationship</app:preferredLabel>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Collateral family relationship</app:preferredLabel>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0002050">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nth great grandchild</app:preferredLabel>
@@ -15497,6 +15497,9 @@ Laboratory personnel have specific training in handling pathogenic and potential
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001214">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dye-terminator sequencing</app:preferredLabel>
     </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0002032">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mixed ethnicity</app:preferredLabel>
+    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000545">
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></obo:IAO_0000115>
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Library Description</app:preferredLabel>
@@ -15507,6 +15510,9 @@ Laboratory personnel have specific training in handling pathogenic and potential
         <app:referencedTaxonomyIRI>http://eagle-i.org/ont/app/1.0/eagle-i-core-app.owl</app:referencedTaxonomyIRI>
         <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_ReferencedTaxonomy"/>
     </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0002038">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lineal family relationship</app:preferredLabel>
+    </rdf:Description>
     <rdf:Description rdf:about="http://www.ifomis.org/obo/ro/1.0#transformedInto">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
@@ -15515,9 +15521,6 @@ Laboratory personnel have specific training in handling pathogenic and potential
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Provides Training</app:preferredLabel>
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0002038">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lineal family relationship</app:preferredLabel>
-    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001008">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gas chromatograph</app:preferredLabel>
     </rdf:Description>
@@ -15525,7 +15528,7 @@ Laboratory personnel have specific training in handling pathogenic and potential
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sibling</app:preferredLabel>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0002036">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is Proband</app:preferredLabel>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Subject is proband</app:preferredLabel>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000549">
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></obo:IAO_0000115>
