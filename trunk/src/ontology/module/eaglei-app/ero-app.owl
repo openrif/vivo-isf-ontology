@@ -1202,14 +1202,6 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">resource_developer</rdfs:label>
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Developed</app:preferredLabel>
         <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Resource or resources developed by this person.</app:preferredDefinition>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
-                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -1221,6 +1213,14 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
     </owl:ObjectProperty>
     
 
@@ -1339,8 +1339,8 @@
     <!-- http://purl.obolibrary.org/obo/ERO_0001966 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001966">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sex</app:preferredLabel>
         <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The phenotypic sex of an organism (select Male, Female, or Hermaphrodite).</app:preferredDefinition>
-        <app:preferredLabel>Phenotypic sex</app:preferredLabel>
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_SecondaryProperty"/>
     </owl:ObjectProperty>
     
@@ -1684,7 +1684,7 @@
     <!-- http://purl.obolibrary.org/obo/RO_0002202 -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002202">
-        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cell types into which line has been shown to be capable of differentiating.</app:preferredDefinition>
+        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cell types into which the stem cell line has been shown to be capable of differentiating.</app:preferredDefinition>
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Differentiated Cell Types</app:preferredLabel>
         <app:rangeConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/CL_0000548</app:rangeConstraint>
         <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/ERO_0002003</app:domainConstraint>
@@ -12173,14 +12173,14 @@ Laboratory personnel have specific training in handling pathogenic and potential
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001607">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0002018"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0002020"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001305"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001305"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0002018"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0002020"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Exome sequencing</app:preferredLabel>
@@ -14850,45 +14850,12 @@ Laboratory personnel have specific training in handling pathogenic and potential
     
 
 
-    <!-- http://purl.obolibrary.org/obo/PATO_0000047 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000047">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological sex</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001995"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organismal quality inhering in a bearer by virtue of the bearer&apos;s ability to undergo sexual reproduction in order to differentiate the individuals or types involved.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/PATO_0000169 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000169">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">viability</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001995"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organismal quality inhering in a bearer or a population by virtue of the bearer&apos;s disposition to survive and develop normally or the number of surviving individuals in a given population.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PATO_0000383 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000383">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">female</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001894"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A biological sex quality inhering in an individual or a population that only produces gametes that can be fertilised by male gametes.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PATO_0000384 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000384">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">male</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001894"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A biological sex quality inhering in an individual or a population whose sex organs contain only male gametes.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
     </owl:Class>
     
@@ -14912,18 +14879,6 @@ Laboratory personnel have specific training in handling pathogenic and potential
     
 
 
-    <!-- http://purl.obolibrary.org/obo/PATO_0001340 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001340">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hermaphrodite</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001894"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A biological sex quality inhering in an organism or a population with both male and female sexual organs in one individual.</obo:IAO_0000115>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">intersex</obo:IAO_0000118>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/PATO_0001421 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001421">
@@ -14941,16 +14896,6 @@ Laboratory personnel have specific training in handling pathogenic and potential
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dead</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000169"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A viability quality inhering in a bearer by virtue of the cessation of the bearer&apos;s life.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PATO_0001894 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001894">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phenotypic sex</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000047"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
     </owl:Class>
     
@@ -14979,6 +14924,18 @@ Laboratory personnel have specific training in handling pathogenic and potential
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000061 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000061">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anatomical structure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Material anatomical entity that has inherent 3D shape and is generated by coordinated expression of the organism&apos;s own genome.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological structure</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UBERON_0000105 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000105">
@@ -14987,12 +14944,9 @@ Laboratory personnel have specific training in handling pathogenic and potential
         <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_ReferencedTaxonomy"/>
     </owl:Class>
     
-	
-	
-	
-	
-	
-	 <!-- http://purl.obolibrary.org/obo/UBERON_0000465 -->
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000465 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000465">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">material anatomical entity</rdfs:label>
@@ -15000,8 +14954,9 @@ Laboratory personnel have specific training in handling pathogenic and potential
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anatomical entity that has mass.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
     </owl:Class>
-		
-		
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UBERON_0000479 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000479">
@@ -15014,71 +14969,7 @@ Laboratory personnel have specific training in handling pathogenic and potential
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
     </owl:Class>
     
-	
-    <!-- http://purl.obolibrary.org/obo/UBERON_0000061 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000061">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anatomical structure</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Material anatomical entity that has inherent 3D shape and is generated by coordinated expression of the organism&apos;s own genome.</obo:IAO_0000115>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological structure</obo:IAO_0000118>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
-    </owl:Class>
-    
-
-	
-	
-    <!-- http://purl.obolibrary.org/obo/UBERON_0001062 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001062">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anatomical entity</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
-        <owl:disjointWith rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anatomical entity</app:preferredLabel>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species.</obo:IAO_0000115>
-        <app:referencedTaxonomyIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://eagle-i.org/ont/app/1.0/uberon-import-app.owl</app:referencedTaxonomyIRI>
-        <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_ReferencedTaxonomy"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0002050 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002050">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">embryonic structure</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000061"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005423"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anatomical structure that is part of an embryo.</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Note in FMA embryo is_a embryonic structure</rdfs:comment>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">developing embryonic structure</obo:IAO_0000118>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">embryonic anatomical structure</obo:IAO_0000118>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0005291 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0005291">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">embryonic tissue</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000479"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002050"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A portion of tissue that is part of an embryo.</obo:IAO_0000115>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">portion of embryonic tissue</obo:IAO_0000118>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0005423 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0005423">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">developing anatomical structure</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
-    </owl:Class>
-	
-	
 
     <!-- http://purl.obolibrary.org/obo/UBERON_0000923 -->
 
@@ -15129,6 +15020,35 @@ Laboratory personnel have specific training in handling pathogenic and potential
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001062 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001062">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anatomical entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
+        <owl:disjointWith rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anatomical entity</app:preferredLabel>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species.</obo:IAO_0000115>
+        <app:referencedTaxonomyIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://eagle-i.org/ont/app/1.0/uberon-import-app.owl</app:referencedTaxonomyIRI>
+        <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_ReferencedTaxonomy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002050 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002050">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">embryonic structure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000061"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005423"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anatomical structure that is part of an embryo.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Note in FMA embryo is_a embryonic structure</rdfs:comment>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">developing embryonic structure</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">embryonic anatomical structure</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UBERON_0002342 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002342">
@@ -15143,7 +15063,24 @@ Laboratory personnel have specific training in handling pathogenic and potential
 
     <!-- http://purl.obolibrary.org/obo/UBERON_0005291 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0005291"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0005291">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">embryonic tissue</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000479"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002050"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A portion of tissue that is part of an embryo.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">portion of embryonic tissue</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0005423 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0005423">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">developing anatomical structure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
+    </owl:Class>
     
 
 
@@ -15156,10 +15093,6 @@ Laboratory personnel have specific training in handling pathogenic and potential
     </owl:Class>
     
 
-	
-	
-	
-	
 
     <!-- http://purl.org/net/OCRe/research.owl#Interventional_study -->
 
@@ -15469,6 +15402,9 @@ Laboratory personnel have specific training in handling pathogenic and potential
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000956">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fluorescence DNA analyzer</app:preferredLabel>
     </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0002094">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sex</app:preferredLabel>
+    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000355">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Therapeutic intervention</app:preferredLabel>
     </rdf:Description>
@@ -15764,7 +15700,6 @@ Laboratory personnel have specific training in handling pathogenic and potential
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000887">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bioassay system</app:preferredLabel>
     </rdf:Description>
-
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000607">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gene expression profiling</app:preferredLabel>
     </rdf:Description>
@@ -15871,9 +15806,6 @@ Laboratory personnel have specific training in handling pathogenic and potential
         <app:referencedTaxonomyIRI>http://eagle-i.org/ont/app/1.0/eagle-i-core-app.owl</app:referencedTaxonomyIRI>
         <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_ReferencedTaxonomy"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0002038">
-        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lineal family relationship</app:preferredLabel>
-    </rdf:Description>
     <rdf:Description rdf:about="http://www.ifomis.org/obo/ro/1.0#transformedInto">
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
     </rdf:Description>
@@ -15881,6 +15813,9 @@ Laboratory personnel have specific training in handling pathogenic and potential
         <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Name of the instruments, software, or techniques for which training is provided.</app:preferredDefinition>
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Provides Training</app:preferredLabel>
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0002038">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lineal family relationship</app:preferredLabel>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001008">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gas chromatograph</app:preferredLabel>
