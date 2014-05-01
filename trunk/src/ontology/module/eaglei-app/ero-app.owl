@@ -220,6 +220,7 @@
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CLO_0009829"/>
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000020"/>
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0002003"/>
                 </owl:unionOf>
@@ -993,7 +994,7 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001065">
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Source Specimen</app:preferredLabel>
-        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Where applicable, indicate the biological specimen from which the resource is derived.</app:preferredDefinition>
+        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Where applicable, indicate a biological specimen from which the resource is derived.</app:preferredDefinition>
         <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_SecondaryProperty"/>
     </owl:ObjectProperty>
     
@@ -3121,6 +3122,12 @@ Laboratory personnel have specific training in handling pathogenic and potential
         </rdfs:subClassOf>
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cell line</app:preferredLabel>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLO_0009829 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0009829"/>
     
 
 
