@@ -1,0 +1,3734 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://eagle-i.org/ont/app/1.0/obi-imports-app.owl#"
+     xml:base="http://eagle-i.org/ont/app/1.0/obi-imports-app.owl"
+     xmlns:app="http://eagle-i.org/ont/app/1.0/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://eagle-i.org/ont/app/1.0/obi-imports-app.owl">
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">${eaglei.ontology.version}</owl:versionInfo>
+        <owl:imports rdf:resource="http://eagle-i.org/ont/app/1.0/eagle-i-app-def.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ero/dev/obi-imports.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="http://eagle-i.org/ont/app/1.0/preferredDefinition"/>
+    <owl:AnnotationProperty rdf:about="http://eagle-i.org/ont/app/1.0/referencedTaxonomyIRI"/>
+    <owl:AnnotationProperty rdf:about="http://eagle-i.org/ont/app/1.0/inClassGroup"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000231"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
+    <owl:AnnotationProperty rdf:about="http://eagle-i.org/ont/app/1.0/preferredLabel"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000038 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000038">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chromatography column</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000041 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000041">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pump valve switch</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000043 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000043">
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Animal-human transplantation</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Heterograft</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Heterologous transplantation</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Xenogeneic transplantation</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Xenograft</obo:IAO_0000118>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Xenotransplantation</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000048 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000048">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chromatography device</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000049 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000049">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mass spectrometer</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000050 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000050">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Platform</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000051">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Liquid chromatography mass spectrometry platform</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000052 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000052">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Microarray platform</app:preferredLabel>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">array station</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000057 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000057">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Allotransplantation</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000059 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000059">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gamma counter</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000070 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000070">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Assay</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000073 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000073">
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sample modification for assay</obo:IAO_0000118>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sample preparation for assay</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000094 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000094">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Material processing technique</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000105 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000105">
+        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A surgical procedure used to replace an organ or tissue of an organism.</app:preferredDefinition>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transplant procedure</obo:IAO_0000118>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transplantation</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000136 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000136">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Incubator</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000153 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000153">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cell co-culturing</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000171 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000171">
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Autogenous transplantation</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Autogenous transplantation procedure</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Autografting</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Autologous Transplantation</obo:IAO_0000118>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Autotransplantation</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000182 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000182">
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NMR</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NMR assay</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NMR spectroscopy assay</obo:IAO_0000118>
+        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NMR spectroscopy is a process which exploits the magnetic properties of certain nuclei (those with a spin) to resonate when placed in particular magnetic field conditions. Instruments recording NMR spectrum and sets of analysis can be used to deduce  identity of chemical as well as composition of complex chemical mixtures.</app:preferredDefinition>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nuclear magnetic resonance assay</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000185 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000185">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Imaging assay</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000192 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000192">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Microtiter plate</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000201 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000201">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Radioactivity assay</app:preferredLabel>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Radioactivity detection</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000231 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000231">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Enzymatic cleavage</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000253 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000253">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Experimental nucleic acid hybridization</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000272 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000272">
+        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protocol is a detailed plan specification designed to allow experts to independently reproduce the process.</app:preferredDefinition>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Protocol</app:preferredLabel>
+        <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_PrimaryResourceType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000288 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000288">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Protein-protein interaction detection</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000291 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000291">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transcription factor binding site  identification</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000341 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000341">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Histological sample preparation</app:preferredLabel>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tissue processing</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000345 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000345">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mass analyzer</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000361 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000361">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ion source</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000364 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000364">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ion detector</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000366 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000366">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Metabolite profiling</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000373 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000373">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ionize process</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000389 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000389">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Isoelectric focusing device</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000394 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000394">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blot module</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000404 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000404">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gel dryer</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000407 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000407">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Viral RNA extraction</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000410 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000410">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Plasmid</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000413 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000413">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cell cycle synchronization</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000415 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000415">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polymerase chain reaction</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000418 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000418">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measuring glucose concentration in blood serum</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000422 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000422">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Syringe</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000424 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000424">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transcription profiling</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000435 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000435">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Genotyping</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000443 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000443">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analyte assay</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000445 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000445">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mass measurement assay</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000447 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000447">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Intra cellular electrophysiology recording</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000448 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000448">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Packed column</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000454 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000454">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Extra cellular electrophysiology recording</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000457 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000457">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Device manufacturing</app:preferredLabel>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Instrument manufacturing</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000463 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000463">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Column chromatography detector</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000465 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000465">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organic acid column</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000466 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000466">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thermal conductivity detector</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000468 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000468">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Protein column</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000469 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000469">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Solvent mixer</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000470 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000470">
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mass spec</obo:IAO_0000118>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mass spectrometry</app:preferredLabel>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mass spectrometry</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000474 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000474">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nano pump system</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000476 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000476">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Manual injection system</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000478 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000478">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Column connector</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000479 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000479">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Solid NMR probe</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000481 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000481">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chromatography detector</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000482 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000482">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Normal phase column</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000485 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000485">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chromatography instrument</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000486 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000486">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Continuous wave NMR instrument</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000487 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000487">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fourier transformation NMR instrument</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000489 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000489">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nitrogen phosphorous detector</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000490 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000490">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cation exchange column</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000491 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000491">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Direct detection NMR probe</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000493 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000493">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rapid resolution column</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000494 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000494">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Liquid chromatography autosampler</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000495 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000495">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vacuum degasser</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000496 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000496">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Capillary column</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000497 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000497">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sample inlet</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000500 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000500">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dual loop autosampler</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000501 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000501">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Variable wavelength detector</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000504 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000504">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sample injection system</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000505 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000505">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Multiple wavelength detector</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000506 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000506">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Photoionization detector</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000507 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000507">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gas generator</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000508 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000508">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Column jacket</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000509 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000509">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electron capture detector</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000510 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000510">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reversed phase column</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000511 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000511">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Injector lubricant</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000512 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000512">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Isolation of cell population</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000515 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000515">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chromatofocusing column</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000518 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000518">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trap column</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000519 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000519">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flow probe</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000520 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000520">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clinical chemistry assay</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000521 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000521">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flame ionization detector</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000522 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000522">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vial</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000523 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000523">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Magic angle spinning rotor</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000525 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000525">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Splitless GC injector</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000526 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000526">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Preparative autosampler
+</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000527 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000527">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flow high resolution probe</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000532 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000532">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Column cartridge</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000533 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000533">
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></obo:IAO_0000118>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Affinity column</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000535 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000535">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gel filtration column</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000536 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000536">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fraction collector
+</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000537 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000537">
+        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A nucleic acid assay which aims to provide information about lost or amplified genomic regions of DNA by comparing genomic DNA originated from tissues from same or different individuals using specific techniques such as CGH, array CGH or SNP genotyping.</app:preferredDefinition>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Copy number variation profiling</app:preferredLabel>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">copy number variation analysis</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000538 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000538">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In-line filter</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000539 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000539">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Imaging NMR probe</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000542 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000542">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gas chromatography equipment</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000543 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000543">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Syringe filter</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000545 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000545">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Column compartment</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000546 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000546">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Capillary pump system</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000547 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000547">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Evaporative light scattering detector</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000549 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000549">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Column cartridger
+</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000550 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000550">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nitrogen generator</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000551 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000551">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Needle assembly</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000552 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000552">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reverse transcribed polymerase chain reaction</app:preferredLabel>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reverse transcription polymerase chain reaction</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000554 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000554">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gas chromatography oven</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000555 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000555">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Autosampler</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000556 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000556">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Isocratic pump system</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000557 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000557">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flash pump system</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000559 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000559">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Liquid NMR probe</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000560 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000560">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ion exchange column</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000562 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000562">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anion trap column</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000563 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000563">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fluorescein detector</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000564 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000564">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tecmag EAGLE probe</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000565 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000565">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electrical conductivity detector</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000568 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000568">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Piston-seal</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000569 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000569">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mass selective detector</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000570 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000570">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spin column</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000572 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000572">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transfer line</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000573 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000573">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gradient pump system</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000574 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000574">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">High temperature column</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000581 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000581">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Y-column connector</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000583 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000583">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Refractive index detector</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000584 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000584">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anion exchange column</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000586 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000586">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Plunger column</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000588 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000588">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flame photometric detector</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000589 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000589">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chromatography pump system</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000592 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000592">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chromatography detector filter</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000593 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000593">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cation trap column</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000594 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000594">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Column adapter</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000595 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000595">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pulsed amperometric detector</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000598 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000598">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ozone-induced chemiluminescence detector</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000601 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000601">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chromatography consumable</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000602 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000602">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Column frit</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000603 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000603">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Liquid chromatography column</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000604 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000604">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detector lamp</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000605 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000605">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chart recorder</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000606 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000606">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Open tubular column</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000607 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000607">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">High resolution magic angle spin probe</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000608 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000608">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hydrogen generator</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000609 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000609">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Glass column</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000610 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000610">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Auto injector</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000614 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000614">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Guard column</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000615 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000615">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Protein expression profiling</app:preferredLabel>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Proteomic profiling</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Proteomics</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000616 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000616">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">High resolution probe with automatic tuning and matching</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000617 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000617">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fluorine-induced chemiluminescence detector</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000618 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000618">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Size exclusion column</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000619 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000619">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chromatography splitter</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000621 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000621">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Custom made column</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000622 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000622">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gel permeation column</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000626 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000626">
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CE DNA sequencing</obo:IAO_0000118>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DNA sequencing assay</app:preferredLabel>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">capillary sequencing</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000627 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000627">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quaternary pump system</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000628 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000628">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Carbon nanotube column</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000630 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000630">
+        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A technique to assay blood or blood producing organs.</app:preferredDefinition>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blood assay</obo:IAO_0000118>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hematology assay</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000633 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000633">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Column heater</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000636 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000636">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Acquisition computer</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000637 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000637">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gas chromatography detector</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000638 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000638">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gas purifier</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000640 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000640">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indirect detection probe</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000642 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000642">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic emission detector</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000659 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000659">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Specimen creation</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000664 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000664">
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Bromodeoxyuridine immunocytochemistry</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Bromodeoxyuridine incorporation assay</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000665 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000665">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Intracellular cytokine staining assay</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000669 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000669">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tritiated thymidine incorporation assay</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000687 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000687">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nucleotide overhang cloning</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000690 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000690">
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IP</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Immune Precipitation</obo:IAO_0000118>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Immunoprecipitation</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000692 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000692">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Recombination enzyme based cloning</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000695 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000695">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chain termination sequencing</app:preferredLabel>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dideoxy chain termination DNA sequencing</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000706 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000706">
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sequencing by Oligonucleotide Ligation and Detection</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000708 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000708">
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Animal husbandry</obo:IAO_0000118>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Laboratory animal care</app:preferredLabel>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Laboratory animal husbandry</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Laboratory animal maintenance</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000711 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000711">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nucleic acid library preparation</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000719 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000719">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vaccine preparation</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000721 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000721">
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GTT</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Glucose challenge test</obo:IAO_0000118>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Glucose tolerance test</app:preferredLabel>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OGTT</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oral glucose tolerance test</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000724 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000724">
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Illumina sequencing</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000730 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000730">
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deep Sequencings</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deep sequencing</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HTPS</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">High-throughput pyrosequencing
+</obo:IAO_0000118>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Long read sequencing</rdfs:comment>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pyrosequencing</app:preferredLabel>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sequencing, Deep</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sequencing, Deep
+</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sequencings, Deep</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000738 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000738">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Restriction enzyme based cloning</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000743 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000743">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cellular immune response assay</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000744 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000744">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Material sampling process</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000748 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000748">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bisulfite sequencing</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000788 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000788">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fluorescently labeled MHC multimer</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000790 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000790">
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Recombinant BAC cloning</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000795 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000795">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Glucometer</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000799 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000799">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Recombinant phage cloning</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000800 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000800">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cross linking</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000802 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000802">
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT assay</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Plasma prothrombin test</obo:IAO_0000118>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prothrombin time assay</app:preferredLabel>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prothrombin time test</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000803 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000803">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Denaturing</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000816 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000816">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Micro electrode</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000820 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000820">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Activated partial thromboplastin time (aPTT) assay</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000822 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000822">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Single blind study execution</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000823 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000823">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thrombin time assay</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000824 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000824">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Recombinant YAC cloning</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000826 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000826">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Treatment portion of study execution</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000840 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000840">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unblinding process</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000854 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000854">
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Immunoblot</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Protein blot</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Western analysis</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Western blot </obo:IAO_0000118>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Western blot analysis</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000892 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000892">
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DNA blotting</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Southern analysis</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Southern blot hybridization</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000916 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000916">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flow cytometry assay</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000930 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000930">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calorimeter</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000933 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000933">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Positron emission tomography scanner</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000935 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000935">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Micromanipulator</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000940 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000940">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Optical microscope</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000945 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000945">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vibration isolation table</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000948 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000948">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oscilloscope</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000955 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000955">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electrode puller</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000959 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000959">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vibratome</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000982 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000982">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Computed tomography scanner</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000990 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000990">
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EM</obo:IAO_0000118>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electron microscope</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001044 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001044">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Angiograph</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001045 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001045">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Capillary blotter</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001046 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001046">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bioreactor</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001048 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001048">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Digital camera</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001049 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001049">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chip spotting device</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001052 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001052">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Two-photon laser/detector</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001053 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001053">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electrophoresis system</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001055 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001055">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spinning-disk confocal microscope</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001057 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001057">
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HPLC instrument</obo:IAO_0000118>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">High performance liquid chromatography instrument</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001058 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001058">
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></obo:IAO_0000112>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Microplate reader</app:preferredLabel>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">multi-well plate reader</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plate reader</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001060 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001060">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spot cutter</app:preferredLabel>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spot picker</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001061 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001061">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Microwave synthesis system</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001062 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001062">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Densitometer</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001063 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001063">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Automatic staining machine</app:preferredLabel>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">autostainer</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001064 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001064">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Automatic tissue processor</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001065 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001065">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stereo microscope</app:preferredLabel>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dissecting microscope</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001066 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001066">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Top loading balance</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001067 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001067">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Perfusion station</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001070 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001070">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scintillation counter</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001071 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001071">
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PAM</obo:IAO_0000118>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Programmable array microscope</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001072 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001072">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cryostat</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001073 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001073">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Microtome knife maker</app:preferredLabel>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glass knife maker</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001074 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001074">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cryofixation device</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001075 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001075">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hybridization oven</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001076 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001076">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Incubator shaker</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001077 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001077">
+        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A device that is used to image small laboratory animals (e.g., rats and mice) in vivo.
+</app:preferredDefinition>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Small-animal image acquisition device</app:preferredLabel>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">in vivo imaging device</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001078 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001078">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Infrared image acquisition device</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001079 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001079">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confocal microscope</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001080 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001080">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Patch clamp device</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001081 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001081">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gel imaging system</app:preferredLabel>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gel documentation imaging system</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001082 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001082">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Protein separation apparatus</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001083 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001083">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Multichannel electronic pipette</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001084 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001084">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vitrification apparatus</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001085 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001085">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Radiography instrument</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001086 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001086">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Radiation measurement device</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001087 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001087">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lyophilizer</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001088 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001088">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tandem mass spectrometer</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001089 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001089">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Microhardness tester</app:preferredLabel>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">micro durometer</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001090 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001090">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Multimode microplate reader</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001091 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001091">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mechanical balance</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001092 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001092">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Computer cluster</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001093 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001093">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Microtome knife sharpener</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001094 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001094">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Plate shaker</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001095 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001095">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coagulation analyzer</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001096 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001096">
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Laser capture microdissection microscope</obo:IAO_0000111>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001097 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001097">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Liquid extraction robot</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001098 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001098">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ultrasound machine</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001099 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001099">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Immunoblot scanner</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001100 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001100">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Microcentrifuge</app:preferredLabel>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">microcentrifuge</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001101 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001101">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electronic repeater pipette</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001102 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001102">
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EPR spectrometer</obo:IAO_0000118>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electron paramagnetic resonance spectrometer</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001103 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001103">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rocker</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001104 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001104">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analytical balance</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001105 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001105">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scanning force microscope</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001106 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001106">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pulsed-field gel electrophoresis system</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001107 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001107">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tissue embedding station</app:preferredLabel>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">paraffin embedding station</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001109 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001109">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bead array reader</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001110 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001110">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q-PCR machine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RT PCR machine</obo:IAO_0000118>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Real-time PCR machine</app:preferredLabel>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quantitative PCR machine</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001111 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001111">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paraffin oven</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001112 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001112">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Autoclave</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001113 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001113">
+        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A device that is used to wash immunoassays in microwell strips and plates with professional accuracy.</app:preferredDefinition>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Microplate washer</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001114 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001114">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nucleic acid extraction/purification instrument</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001116 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001116">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vacuum manifold</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001118 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001118">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Multichannel pipette</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001119 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001119">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cell harvester</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001120 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001120">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Portable fluorometer</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001121 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001121">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gel electrophoresis system</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001122 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001122">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diffractometer</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001123 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001123">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Microdissection instrument</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001124 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001124">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Micropipette puller</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001125 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001125">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Laser scanning confocal microscope</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001126 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001126">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Digital microscope</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001127 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001127">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Freeze substitution system</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001128 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001128">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Micropipette</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001129 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001129">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Voltage clamp device</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001130 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001130">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vacuum oven</app:preferredLabel>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vacuum furnace</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001131 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001131">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Slide warmer</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001132 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001132">
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></obo:IAO_0000112>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Capillary electrophoresis instrument</app:preferredLabel>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bioanalyzer</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001133 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001133">
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DHPLC machine</obo:IAO_0000118>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Denaturing high-performance liquid chromatography instrument</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001134 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001134">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Agarose gel electrophoresis system</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001135 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001135">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Balance</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001136 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001136">
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biacore</obo:IAO_0000118>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Surface plasmon resonance instrument</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001137 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001137">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Protein sequencer</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001139 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001139">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Liquid chromatography instrument</app:preferredLabel>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">liquid chromatograph</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0200000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0200000">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data processing technique</app:preferredLabel>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data transformation technique</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0200081 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0200081">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sequence analysis objective</app:preferredLabel>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The objective here is to analyze the sequence of some macromolecule. Objectives to analyze non-sequence related properties of macromolecules, such as genetic linkage analysis or analysis of physical properties of a macromolecule, are classified under &#39;molecular data analysis objective&#39;.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0200111 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0200111">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Visualization</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0200166 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0200166">
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changed label from &#39;data transformation objective&#39; to &#39;data processing objective&#39; will feedback requirement to OBI.</obo:IAO_0000116>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Software purpose</app:preferredLabel>
+        <app:referencedTaxonomyIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://eagle-i.org/ont/app/1.0/eagle-i-core-app.owl</app:referencedTaxonomyIRI>
+        <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_ReferencedTaxonomy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0302736 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0302736">
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alkaline comet assay</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alkaline single-cell gel electrophoresis assay</obo:IAO_0000118>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Comet assay</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0302884 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0302884">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Extraction</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0302885 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0302885">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Filtration</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0302886 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0302886">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Centrifugation</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0302887 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0302887">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Staining</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0302889 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0302889">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Irradiation</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0302890 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0302890">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polymerization</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0302891 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0302891">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trypsination</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0302892 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0302892">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Enzymatic ligation</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0302895 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0302895">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electrocution</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0302896 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0302896">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cervical dislocation</app:preferredLabel>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Closed dislocation cervical spine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Closed dislocation of cervical vertebra</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Closed dislocation of neck</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0302897 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0302897">
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asphyxia</obo:IAO_0000118>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asphyxiation</app:preferredLabel>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Suffocating</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Suffocation</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0302898 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0302898">
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deliberate OD</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Intentional OD</obo:IAO_0000118>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Intentional overdosing</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0302899 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0302899">
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Traumatic amputation at neck level</obo:IAO_0000118>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Decapitation</app:preferredLabel>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Traumatic amputation of head</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0302902 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0302902">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Immobilization</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0302905 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0302905">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Elution</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0302911 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0302911">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Validation</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0302912 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0302912">
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electropermeabilisation</obo:IAO_0000118>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electroporation</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400007">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analog-to-digital converter</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400008">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flow cytometer analyzer</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400009">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arc lamp</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400010">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Argon ion laser</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400011">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Avalanche photodiode</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400013">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Band pass filter</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400019">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Charge plate</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400030">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dichroic filter</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400031">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dichroic mirror</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400032">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Differential pressure gauge</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400033">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diode laser</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400034">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dye laser</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400043 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400043">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flow cell</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400044 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400044">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flow cytometer</app:preferredLabel>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell cytometer</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400045 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400045">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fluid pressure regulator</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400047 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400047">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gas laser</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400052 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400052">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Helium cadmium ion laser</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400053 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400053">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Helium neon ion laser</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400060 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400060">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ion laser</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400062 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400062">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Krypton ion laser</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400064 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400064">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Laser</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400065 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400065">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Light source</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400066 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400066">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Logarithmic voltage amplifier</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400067 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400067">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Long pass filter</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400073 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400073">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Metal vapor laser</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400074 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400074">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mixed argon-krypton gas laser</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400076 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400076">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Multi-well plate</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400077 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400077">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neodymium-YAG laser</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400078 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400078">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Obscuration bar</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400079 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400079">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Optical filter</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400080 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400080">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Optical subsystem</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400081 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400081">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Particle delivery vessel</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400082 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400082">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Photodetector</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400083 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400083">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Photodiode</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400084 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400084">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Photomultiplier tube</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400085 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400085">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Piezo electric crystal</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400086 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400086">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Plate loader</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400087 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400087">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Preamplifier</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400088 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400088">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quartz cuvette flow chamber</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400094 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400094">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sheath tank</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400095 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400095">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Short pass filter</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400096 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400096">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Solid state laser</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400099 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400099">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flow cytometer sorter</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400100 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400100">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Syringe pump</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400101 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400101">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Voltage amplifier</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400103 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400103">
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nucleic acid sequencer</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400104 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400104">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Array scanner</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400105 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400105">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arrayer</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400106 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400106">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Centrifuge</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400107 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400107">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Computer</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400108 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400108">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Heating block</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400109 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400109">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Homogenizer</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400110 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400110">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hybridization chamber</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400111 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400111">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hybridization station</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400112 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400112">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Liquid handler</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400113 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400113">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oligonucleotide synthesizer</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400114 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400114">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sonicator</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400115 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400115">
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spectrometer</obo:IAO_0000118>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spectrophotometer</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400116 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400116">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thermal cycler</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400117 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400117">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vacuum dryer</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400118 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400118">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vortexer</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400119 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400119">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Microarray wash station</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400120 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400120">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Temperature control bath</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400121 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400121">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Molecular crosslinker</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400135 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400135">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Image cytometer</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400137 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400137">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cytometer</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400140 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400140">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gel tank</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400142 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400142">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Power supply</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400143 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400143">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fluorometer</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400146 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400146">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Multispectral imaging flow cytometer</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400147 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400147">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Microarray</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400153 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400153">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Droplet sorter</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400155 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400155">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Water bath</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400157 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400157">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oil bath</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400158 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400158">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Digital-to-analog converter</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400168 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400168">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Microtome</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400169 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400169">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Microscope</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400171 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400171">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Animal cage</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600002">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tumor grading</app:preferredLabel>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tumor staging</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600003">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clinical diagnosis</app:preferredLabel>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medical diagnosis</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600005">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Specimen collection from organism</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600012">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Environmental material collection</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600014">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Material component separation</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600017">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biomolecular label detection</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600020">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Histology</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600021">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cell fixation</app:preferredLabel>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cell preservation</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600022 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600022">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Excision</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600023">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Non specific enzymatic cleavage</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600024">
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cell culture techniques</obo:IAO_0000118>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cell culturing</app:preferredLabel>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maintaining cell culture</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600026">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Weight assessment</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600027">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cell lysis</app:preferredLabel>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cell membrane lysis</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600028 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600028">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Experimental reverse transcription</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600029">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Isolation of cell culture supernatant</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600030">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Experimental induction of disease </app:preferredLabel>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Experimental modeling of disease </obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600031">
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Enzyme linked immunospot assay</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600032">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Experimental DNA repair</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600033">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cell permeabilization</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600034">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Precipitation</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600036 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600036">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Establishing cell culture</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600037 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600037">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cell culture splitting</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600038 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600038">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chemical labeling</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600039 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600039">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Experimental methylation</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600040">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Synthesis</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600041 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600041">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Concentration</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600042 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600042">
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DNA cloning</obo:IAO_0000118>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Recombinant plasmid cloning</app:preferredLabel>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cloning</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cloning molecular constructs</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600043 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600043">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Genetic transformation</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600044 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600044">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lavage</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600046 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600046">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chromatography</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600047 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600047">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sequencing</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600048 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600048">
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amplification of a plasmid in E.Coli.</obo:IAO_0000112>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Host cell mediated amplification</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600050 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600050">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Specific enzymatic cleavage</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600051">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gradient separation</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600052 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600052">
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CAVH</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Continuous arteriovenous hemofiltration</obo:IAO_0000118>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dialysis</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600053 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600053">
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EP</obo:IAO_0000118>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electrophoresis</app:preferredLabel>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zone electrophoresis measurement </obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600056 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600056">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Protease cleavage</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600058 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600058">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Enzymatic amplification</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600064 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600064">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Recombinant construct cloning </app:preferredLabel>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Recombinant vector cloning</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0666667 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0666667">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nucleic acid extraction
+</app:preferredLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_1110055 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_1110055">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease</app:preferredLabel>
+        <app:referencedTaxonomyIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://eagle-i.org/ont/app/1.0/mesh-disease-import-app.owl</app:referencedTaxonomyIRI>
+        <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_ReferencedTaxonomy"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000705">
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Edman protein sequencing</obo:IAO_0000118>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000704">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Decision tree induction objective</app:preferredLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001204">
+        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A DNA microarray used to detect polymorphisms in DNA samples.
+</app:preferredDefinition>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0200078">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Descriptive statistical calculation objective</app:preferredLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization">
+        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An entity that can play roles, has participants, and has a set of organizational rules or goals. Participants are either organizations themselves or individual people.</app:preferredDefinition>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organization</app:preferredLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000634">
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">global methylation analysis</obo:IAO_0000118>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0600055">
+        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An enzymatic cleavage technique which makes use of enzymes to cut DNA molecules for the study of DNA through cleavage, mapping, and analysis of the fragments.</app:preferredDefinition>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">restriction digestion analysis</obo:IAO_0000118>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0200186">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Error correction objective</app:preferredLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0400149">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Protein microarray</app:preferredLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_1110023">
+        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An entity capable of eliciting an immune response when introduced to components of the immune system.</app:preferredDefinition>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Immunogen</app:preferredLabel>
+        <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_DataModelExclude"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0200173">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Background correction objective</app:preferredLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0100026">
+        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A living system that is capable of replicating or reproducing in the right environment. Examples: animal, plant, bacteria, fungus or virus.</app:preferredDefinition>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organism or Virus</app:preferredLabel>
+        <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_InstanceCreate"/>
+        <app:inClassGroup rdf:resource="http://eagle-i.org/ont/app/1.0/ClassGroup_PrimaryResourceType"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0200031">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Differential expression analysis objective</app:preferredLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0200168">
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data correction objective</app:preferredLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001307">
+        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A DNA microarray which has short fragments of nucleic acid immobilized on a substrate. These are designed to cover the whole genome of the target species. Tiling arrays are used to determine genome binding in ChIP assays or to identify transcribed regions.</app:preferredDefinition>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.1.0.1642) http://owlapi.sourceforge.net -->
+

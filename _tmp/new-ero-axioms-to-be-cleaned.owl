@@ -1,0 +1,597 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://isf/new-ero-axioms-to-be-cleaned.owl#"
+     xml:base="http://isf/new-ero-axioms-to-be-cleaned.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:app="http://eagle-i.org/ont/app/1.0/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:statistics="http://purl.org/net/OCRe/statistics.owl#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:OBO_REL="http://purl.org/obo/owl/OBO_REL#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://isf/new-ero-axioms-to-be-cleaned.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description">
+        <rdfs:comment xml:lang="en-us">An account of the content of the resource.</rdfs:comment>
+        <dc:description xml:lang="en-us">Description may include but is not limited to: an abstract,
+         table of contents, reference to a graphical representation
+         of content or a free-text account of the content.</dc:description>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasSynonymType"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#isCyclic"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/subject">
+        <rdfs:label xml:lang="en-us">Subject and Keywords</rdfs:label>
+        <rdfs:comment xml:lang="en-us">The topic of the content of the resource.</rdfs:comment>
+        <dc:description xml:lang="en-us">Typically, a Subject will be expressed as keywords,
+         key phrases or classification codes that describe a topic
+         of the resource.  Recommended best practice is to select 
+         a value from a controlled vocabulary or formal 
+         classification scheme.</dc:description>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#savedBy"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasSynonym"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OBI_9991118"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#deprecated">
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#replacedBy"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/identifier">
+        <rdfs:label xml:lang="en-us">Resource Identifier</rdfs:label>
+        <rdfs:comment xml:lang="en-us">An unambiguous reference to the resource within a given context.</rdfs:comment>
+        <dc:description xml:lang="en-us">Recommended best practice is to identify the resource by means
+         of a string or number conforming to a formal identification
+         system.
+         Example formal identification systems include the Uniform
+         Resource Identifier (URI) (including the Uniform Resource
+         Locator (URL)), the Digital Object Identifier (DOI) and the
+         International Standard Book Number (ISBN).</dc:description>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDefaultNamespace"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date">
+        <rdfs:label xml:lang="en-us">Date</rdfs:label>
+        <rdfs:comment xml:lang="en-us">A date associated with an event in the life cycle of the
+         resource.</rdfs:comment>
+        <dc:description xml:lang="en-us">Typically, Date will be associated with the creation or
+         availability of the resource.  Recommended best practice
+         for encoding the date value is defined in a profile of
+         ISO 8601 [W3CDTF] and follows the YYYY-MM-DD format.</dc:description>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#consider"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDefinition"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
+    <owl:AnnotationProperty rdf:about="http://protege.stanford.edu/plugins/owl/protege#defaultLanguage"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/relation">
+        <rdfs:label xml:lang="en-us">Relation</rdfs:label>
+        <dc:description xml:lang="en-us">
+         Recommended best practice is to reference the resource by means
+         of a string or number conforming to a formal identification
+         system.
+    </dc:description>
+        <rdfs:comment xml:lang="en-us">A reference to a related resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.org/net/OCRe/statistics.owl#definition">
+        <rdfs:label>Ocre Definition</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasSubset"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDate"/>
+    <owl:AnnotationProperty rdf:about="http://eagle-i.org/ont/app/1.0/inPropertyGroup"/>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
+        <rdfs:label xml:lang="en">definition</rdfs:label>
+    </rdf:Description>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/language">
+        <rdfs:label xml:lang="en-us">Language</rdfs:label>
+        <rdfs:comment xml:lang="en-us">A language of the intellectual content of the resource.</rdfs:comment>
+        <dc:description xml:lang="en-us">Recommended best practice is to use RFC 3066 [RFC3066],
+         which, in conjunction with ISO 639 [ISO639], defines two-
+         and three-letter primary language tags with optional
+         subtags.  Examples include &quot;en&quot; or &quot;eng&quot; for English,
+         &quot;akk&quot; for Akkadian, and &quot;en-GB&quot; for English used in the
+         United Kingdom.</dc:description>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/type">
+        <rdfs:label xml:lang="en-us">Resource Type</rdfs:label>
+        <rdfs:comment xml:lang="en-us">The nature or genre of the content of the resource.</rdfs:comment>
+        <dc:description xml:lang="en-us">Type includes terms describing general categories, functions,
+         genres, or aggregation levels for content. Recommended best
+         practice is to select a value from a controlled vocabulary
+         (for example, the DCMI Type Vocabulary [DCMITYPE]). To 
+         describe the physical or digital manifestation of the 
+         resource, use the Format element.</dc:description>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    </owl:AnnotationProperty>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
+        <rdfs:label xml:lang="en">term editor</rdfs:label>
+        <obo:IAO_0000111 xml:lang="en">term editor</obo:IAO_0000111>
+    </rdf:Description>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source">
+        <rdfs:label xml:lang="en-us">Source</rdfs:label>
+        <rdfs:comment xml:lang="en-us">A reference to a resource from which the present resource
+         is derived.</rdfs:comment>
+        <dc:description xml:lang="en-us">The present resource may be derived from the Source resource
+         in whole or in part.  Recommended best practice is to reference
+         the resource by means of a string or number conforming to a
+         formal identification system.</dc:description>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    </owl:AnnotationProperty>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
+        <rdfs:label xml:lang="en">editor preferred label</rdfs:label>
+    </rdf:Description>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000316"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher">
+        <rdfs:label xml:lang="en-us">Publisher</rdfs:label>
+        <rdfs:comment xml:lang="en-us">An entity responsible for making the resource available</rdfs:comment>
+        <dc:description xml:lang="en-us">Examples of a Publisher include a person, an organisation,
+         or a service.
+         Typically, the name of a Publisher should be used to
+         indicate the entity.</dc:description>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000052"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasVersion"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasURI"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000833"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/coverage">
+        <rdfs:label xml:lang="en-us">Coverage</rdfs:label>
+        <dc:description xml:lang="en-us">Coverage will typically include spatial location (a place name
+         or geographic coordinates), temporal period (a period label,
+         date, or date range) or jurisdiction (such as a named
+         administrative entity).
+         Recommended best practice is to select a value from a
+         controlled vocabulary (for example, the Thesaurus of Geographic
+         Names [TGN]) and that, where appropriate, named places or time
+         periods be used in preference to numeric identifiers such as
+         sets of coordinates or date ranges.</dc:description>
+        <rdfs:comment xml:lang="en-us">The extent or scope of the content of the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000284"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000285"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/format">
+        <rdfs:label xml:lang="en-us">Format</rdfs:label>
+        <rdfs:comment xml:lang="en-us">The physical or digital manifestation of the resource.</rdfs:comment>
+        <dc:description xml:lang="en-us">Typically, Format may include the media-type or dimensions of
+         the resource. Format may be used to determine the software,
+         hardware or other equipment needed to display or operate the
+         resource. Examples of dimensions include size and duration.
+         Recommended best practice is to select a value from a
+         controlled vocabulary (for example, the list of Internet Media
+         Types [MIME] defining computer media formats).</dc:description>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights">
+        <rdfs:label xml:lang="en-us">Rights Management</rdfs:label>
+        <dc:description xml:lang="en-us">
+          Typically, a Rights element will contain a rights 
+          management statement for the resource, or reference 
+          a service providing such information. Rights information 
+          often encompasses Intellectual Property Rights (IPR), 
+          Copyright, and various Property Rights. 
+          If the Rights element is absent, no assumptions can be made 
+          about the status of these and other rights with respect to 
+          the resource.
+    </dc:description>
+        <rdfs:comment xml:lang="en-us">Information about rights held in and over the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+ 
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000021 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000021">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_contact</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Name of the primary person responsible for the resource.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000119>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The lab manager who maintains an instrument in the lab.</obo:IAO_0000112>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has contact</obo:IAO_0000111>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001047"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000004"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000005"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000006"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000015"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000020"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000071"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000595"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001716"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000272"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0100026"/>
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+  
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001047 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001047">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is_contact_for</rdfs:label>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000117>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Resources for which the person is a contact.</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The PI is the contact for an instrument.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000004"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000005"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000006"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000015"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000020"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000595"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001716"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000272"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0100026"/>
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    
+
+    
+
+
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/swo/SWO_0000741 -->
+
+
+
+    
+
+
+    <!-- http://www.obofoundry.org/ro/ro.owl#agent_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#agent_in">
+        <rdfs:label xml:lang="en">agent_in</rdfs:label>
+        <oboInOwl:hasOBONamespace>relationship</oboInOwl:hasOBONamespace>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000056"/>
+        <owl:inverseOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.obofoundry.org/ro/ro.owl#derived_into -->
+
+    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#derived_into">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:label xml:lang="en">derived_into</rdfs:label>
+        <oboInOwl:hasOBONamespace>relationship</oboInOwl:hasOBONamespace>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0001000"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.obofoundry.org/ro/ro.owl#has_agent -->
+
+    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#has_agent">
+        <oboInOwl:hasOBONamespace>relationship</oboInOwl:hasOBONamespace>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.obofoundry.org/ro/ro.owl#has_integral_part -->
+
+    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#has_integral_part">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:label xml:lang="en">has_integral_part</rdfs:label>
+        <oboInOwl:hasOBONamespace>relationship</oboInOwl:hasOBONamespace>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <owl:inverseOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#integral_part_of"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.obofoundry.org/ro/ro.owl#has_proper_part -->
+
+    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#has_proper_part">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:label xml:lang="en">has_proper_part</rdfs:label>
+        <oboInOwl:hasOBONamespace>relationship</oboInOwl:hasOBONamespace>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <owl:inverseOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#proper_part_of"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.obofoundry.org/ro/ro.owl#integral_part_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#integral_part_of">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:label xml:lang="en">integral_part_of</rdfs:label>
+        <oboInOwl:hasOBONamespace>relationship</oboInOwl:hasOBONamespace>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.obofoundry.org/ro/ro.owl#preceded_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#preceded_by">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:label xml:lang="en">preceded_by</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An example is: translation preceded_by transcription; aging preceded_by development (not however death preceded_by aging). Where derives_from links classes of continuants, preceded_by links classes of processes. Clearly, however, these two relations are not independent of each other. Thus if cells of type C1 derive_from cells of type C, then any cell division involving an instance of C1 in a given lineage is preceded_by cellular processes involving an instance of C.    The assertion P preceded_by P1 tells us something about Ps in general: that is, it tells us something about what happened earlier, given what we know about what happened later. Thus it does not provide information pointing in the opposite direction, concerning instances of P1 in general; that is, that each is such as to be succeeded by some instance of P. Note that an assertion to the effect that P preceded_by P1 is rather weak; it tells us little about the relations between the underlying instances in virtue of which the preceded_by relation obtains. Typically we will be interested in stronger relations, for example in the relation immediately_preceded_by, or in relations which combine preceded_by with a condition to the effect that the corresponding instances of P and P1 share participants, or that their participants are connected by relations of derivation, or (as a first step along the road to a treatment of causality) that the one process in some way affects (for example, initiates or regulates) the other.</rdfs:comment>
+        <oboInOwl:hasOBONamespace>relationship</oboInOwl:hasOBONamespace>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <owl:inverseOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#precedes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.obofoundry.org/ro/ro.owl#precedes -->
+
+    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#precedes">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:label xml:lang="en">precedes</rdfs:label>
+        <oboInOwl:hasOBONamespace>relationship</oboInOwl:hasOBONamespace>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.obofoundry.org/ro/ro.owl#proper_part_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#proper_part_of">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:label xml:lang="en">proper_part_of</rdfs:label>
+        <oboInOwl:hasOBONamespace>relationship</oboInOwl:hasOBONamespace>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.obofoundry.org/ro/ro.owl#relationship -->
+
+    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#relationship">
+        <rdfs:label xml:lang="en">relationship</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">this relation was superfluous, so it has been obsoleted</rdfs:comment>
+        <oboInOwl:hasOBONamespace>relationship</oboInOwl:hasOBONamespace>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.obofoundry.org/ro/ro.owl#transformation_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#transformation_of">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:label xml:lang="en">transformation_of</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">When an embryonic oenocyte (a type of insect cell) is transformed into a larval oenocyte, one and the same continuant entity preserves its identity while instantiating distinct classes at distinct times. The class-level relation transformation_of obtains between continuant classes C and C1 wherever each instance of the class C is such as to have existed at some earlier time as an instance of the distinct class C1 (see Figure 2 in paper). This relation is illustrated first of all at the molecular level of granularity by the relation between mature RNA and the pre-RNA from which it is processed, or between (UV-induced) thymine-dimer and thymine dinucleotide. At coarser levels of granularity it is illustrated by the transformations involved in the creation of red blood cells, for example, from reticulocyte to erythrocyte, and by processes of development, for example, from larva to pupa, or from (post-gastrular) embryo to fetus or from child to adult. It is also manifest in pathological transformations, for example, of normal colon into carcinomatous colon. In each such case, one and the same continuant entity instantiates distinct classes at different times in virtue of phenotypic changes.</rdfs:comment>
+        <oboInOwl:hasOBONamespace>relationship</oboInOwl:hasOBONamespace>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.obofoundry.org/ro/ro.owl#transformed_into -->
+
+    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#transformed_into">
+        <rdfs:label xml:lang="en">transformed_into</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Obsoleted</rdfs:comment>
+        <oboInOwl:hasOBONamespace>relationship</oboInOwl:hasOBONamespace>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+    <rdf:Description rdf:about="http://purl.org/net/OCRe/study_design.owl#Single_group_study">
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A single group study is an interventional study that has only a single allocation group and no contemporaneuos comparison group.
+
+A study in which an individual acts has his/her own comparison does not fall into this category, since an individual is not a group.</obo:IAO_0000115>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001277">
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Use of viral strains as markers of a cellâ€™s connectivity to the injection site. </obo:IAO_0000112>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000009">
+        <rdfs:label xml:lang="en">label</rdfs:label>
+        <obo:IAO_0000111 xml:lang="en">label</obo:IAO_0000111>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/license/SWO_9000085">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3 clause BSD License</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000987">
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0100254">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sequence-based nucleic acid structure prediction objective</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0100258">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sequence-based protein structure prediction objective</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0100255">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sequence-based nucleic acid secondary structure prediction objective</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0100256">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sequence-based nucleic acid tertiary structure prediction objective</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0100299">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Placeholder for EDAM operation class. ; a type of detection in which there is some statistical uncertainty as to whether the detected feature is valid</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.ebi.ac.uk/swo/data/SWO_3000037">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SBML file</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000160">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">From Richard: RNAi, plasmid, phage, chemical, viral, [also cell libraries] ; Placeholder for class to be imported from the Reagent Ontology (ReO).</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000284">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Placeholder for class to be imported from the Reagent Ontology (ReO). ; this is an expression library, and has part some construct</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000584">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Placeholder for class to be imported from the Reagent Ontology (ReO). ; The definition of a compound requires a fixed ratio. Thus table salt, NaCl, is a compound but not a molecule, cecause it is composed of 2 or more elements in a fixed ratio (1:1, satisfying the definition of a compound) but does not have a well-defined number of atoms (so it does not meet the criteria for a molecule). It is instead an array of any number (not fixed) of Na+ and Cl- ions arranged in a 1:1 ratio.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000585">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Placeholder for class to be imported from the Reagent Ontology (ReO). ; The definition of a compound requires a fixed ratio. Thus table salt, NaCl, is a compound but not a molecule, cecause it is composed of 2 or more elements in a fixed ratio (1:1, satisfying the definition of a compound) but does not have a well-defined number of atoms (so it does not meet the criteria for a molecule). It is instead an array of any number (not fixed) of Na+ and Cl- ions arranged in a 1:1 ratio.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0100261">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sequence-based protein tertiary structure prediction objective</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000581">
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The prokaryotes (pronounced /proʊˈkæri.oʊts/ or /proʊˈkæriəts/) are a group of organisms that lack a cell nucleus (= karyon), or any other membrane-bound organelles.</obo:IAO_0000115>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0100260">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sequence-based protein secondary structure prediction objective</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000583">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Placeholder for class to be imported from the Reagent Ontology (ReO). ; The definition of a compound requires a fixed ratio. Thus table salt, NaCl, is a compound but not a molecule, cecause it is composed of 2 or more elements in a fixed ratio (1:1, satisfying the definition of a compound) but does not have a well-defined number of atoms (so it does not meet the criteria for a molecule). It is instead an array of any number (not fixed) of Na+ and Cl- ions arranged in a 1:1 ratio.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/title">
+        <dc:description xml:lang="en-us">
+        Typically, a Title will be a name by which the resource is
+         formally known.
+    </dc:description>
+        <rdfs:comment xml:lang="en-us">A name given to the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001662">
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein assay used to identify the binding sites, or ‘epitopes’, that are recognized by antibodies.</obo:IAO_0000115>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/creator">
+        <rdfs:comment xml:lang="en-us">An entity primarily responsible for making the content 
+         of the resource.</rdfs:comment>
+        <dc:description xml:lang="en-us">Examples of a Creator include a person, an organisation,
+         or a service.  Typically, the name of a Creator should 
+         be used to indicate the entity.</dc:description>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/contributor">
+        <rdfs:comment xml:lang="en-us">An entity responsible for making contributions to the
+         content of the resource.</rdfs:comment>
+        <dc:description xml:lang="en-us">Examples of a Contributor include a person, an 
+         organisation, or a service.  Typically, the name of a 
+         Contributor should be used to indicate the entity.</dc:description>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000686">
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An apoptosis assay used to detect apoptosis at a very early stage. This assay takes advantage of the fact that phosphatidylserine (PS; 1–3) is translocated from the inner (cytoplasmic) leaflet of the plasma membrane to the outer (cell surface) leaflet soon after the induction of apoptosis, and that the annexin V protein has a strong, specific affinity for PS (4–6). PS on the outer leaflet is available to bind labeled annexin V, providing the basis for a simple staining assay.</obo:IAO_0000115>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001739">
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An assay used to measure the set of metabolites in biofluids, which can reflect an individual’s health status. </obo:IAO_0000115>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0100287">
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000693">
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID: 18612301. A Bayesian deconvolution strategy for immunoprecipitation-based DNA methylome analysis. Down TA, Rakyan VK, Turner DJ, Flicek P, Li H, Kulesha E, Gräf S, Johnson N, Herrero J, Tomazou EM, Thorne NP, Bäckdahl L, Herberth M, Howe KL, Jackson DK, Miretti MM, Marioni JC, Birney E, Hubbard TJ, Durbin R, Tavaré S, Beck S. Nat Biotechnol. 2008 Jul;26(7):779-85.</obo:IAO_0000112>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000162">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">From Richard: unique rare ; Placeholder for class to be imported from the Reagent Ontology (ReO).</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001007">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To be logically defined based on its participation in a microsurgical process.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001767">
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A technique that utilizes standardized tests and questionnaires in an effort to identify a student’s strengths and weaknesses across many areas of functioning and attributes. </obo:IAO_0000115>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000637">
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Elshal and McCoy (2006) Methods. 38(4): 317–323.</obo:IAO_0000119>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000579">
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organism’s source environment or clinical setting.</obo:IAO_0000115>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001760">
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Epstein–Barr virus transformation</obo:IAO_0000118>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000892">
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID: 9452032. Germline mutations detected in the von Hippel-Lindau disease tumor suppressor gene by Southern blot and direct genomic DNA sequencing. Li C, Weber G, Ekman P, Lagercrantz J, Norlen BJ, Akerström G, Nordenskjöld M, Bergerheim US. Hum Mutat. 1998;Suppl 1:S31-3.</obo:IAO_0000112>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2018) http://owlapi.sourceforge.net -->
+
