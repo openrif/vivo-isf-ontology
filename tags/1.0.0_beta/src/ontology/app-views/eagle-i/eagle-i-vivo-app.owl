@@ -1,0 +1,749 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/arg/app-views/eagle-i/eagle-i-vivo-app.owl#"
+     xml:base="http://purl.obolibrary.org/obo/arg/app-views/eagle-i/eagle-i-vivo-app.owl"
+     xmlns:app="http://eagle-i.org/ont/app/1.0/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/arg/app-views/eagle-i/eagle-i-vivo-app.owl">
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">${eaglei.ontology.version}</owl:versionInfo>
+        <owl:imports rdf:resource="http://eagle-i.org/ont/app/1.0/eagle-i-app-def.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/arg/module/vivo/vivo.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    
+
+
+    <!-- http://purl.org/spar/c4o/hasGlobalCitationFrequency -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/c4o/hasGlobalCitationFrequency">
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.org/ontology/bibo/Document</app:domainConstraint>
+        <app:rangeConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.org/spar/c4o/GlobalCitationCount</app:rangeConstraint>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#dateIssued -->
+
+    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#dateIssued">
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.org/ontology/bibo/Patent</app:domainConstraint>
+        <app:rangeConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vivoweb.org/ontology/core#DateTimeValue</app:rangeConstraint>
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vivoweb.org/ontology/core#IssuedCredential</app:domainConstraint>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#dateTimeInterval -->
+
+    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#dateTimeInterval">
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/ERO_0000595</app:domainConstraint>
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.org/NET/c4dm/event.owl#Event</app:domainConstraint>
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vivoweb.org/ontology/core#AdvisingRelationship</app:domainConstraint>
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vivoweb.org/ontology/core#AwardReceipt</app:domainConstraint>
+        <app:rangeConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vivoweb.org/ontology/core#DateTimeInterval</app:rangeConstraint>
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vivoweb.org/ontology/core#EducationalTraining</app:domainConstraint>
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vivoweb.org/ontology/core#EventSeries</app:domainConstraint>
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vivoweb.org/ontology/core#Position</app:domainConstraint>
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vivoweb.org/ontology/core#Project</app:domainConstraint>
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://xmlns.com/foaf/0.1/Organization</app:domainConstraint>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#dateTimeValue -->
+
+    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#dateTimeValue">
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vivoweb.org/ontology/core#AwardReceipt</app:domainConstraint>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#expirationDate -->
+
+    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#expirationDate"/>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#features -->
+
+    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#features"/>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#geographicFocus -->
+
+    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#geographicFocus">
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.org/NET/c4dm/event.owl#Event</app:domainConstraint>
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vivoweb.org/ontology/core#EventSeries</app:domainConstraint>
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vivoweb.org/ontology/core#Project</app:domainConstraint>
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://xmlns.com/foaf/0.1/Person</app:domainConstraint>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#geographicFocusOf -->
+
+    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#geographicFocusOf">
+        <app:rangeConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.org/NET/c4dm/event.owl#Event</app:rangeConstraint>
+        <app:rangeConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vivoweb.org/ontology/core#EventSeries</app:rangeConstraint>
+        <app:rangeConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vivoweb.org/ontology/core#Project</app:rangeConstraint>
+        <app:rangeConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://xmlns.com/foaf/0.1/Person</app:rangeConstraint>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#geographicallyWithin -->
+
+    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#geographicallyWithin">
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vivoweb.org/ontology/core#County</app:domainConstraint>
+        <app:rangeConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vivoweb.org/ontology/core#StateOrProvince</app:rangeConstraint>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#hasGeographicLocation -->
+
+    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#hasGeographicLocation">
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.org/NET/c4dm/event.owl#Event</app:domainConstraint>
+        <app:rangeConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vivoweb.org/ontology/core#GeographicLocation</app:rangeConstraint>
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://xmlns.com/foaf/0.1/Organization</app:domainConstraint>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#hasPublicationVenue -->
+
+    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#hasPublicationVenue">
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.org/ontology/bibo/AcademicArticle</app:domainConstraint>
+        <app:rangeConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.org/ontology/bibo/Journal</app:rangeConstraint>
+        <app:rangeConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vivoweb.org/ontology/core#Blog</app:rangeConstraint>
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vivoweb.org/ontology/core#BlogPosting</app:domainConstraint>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#publisher -->
+
+    <owl:ObjectProperty rdf:about="http://vivoweb.org/ontology/core#publisher">
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.org/ontology/bibo/Document</app:domainConstraint>
+        <app:rangeConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vivoweb.org/ontology/core#Publisher</app:rangeConstraint>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/ontology/bibo/abstract -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/abstract"/>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/doi -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/doi">
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.org/ontology/bibo/Article</app:domainConstraint>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/eanucc13 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/eanucc13">
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.org/ontology/bibo/AcademicArticle</app:domainConstraint>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/edition -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/edition">
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.org/ontology/bibo/Book</app:domainConstraint>
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.org/ontology/bibo/BookSection</app:domainConstraint>
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.org/ontology/bibo/EditedBook</app:domainConstraint>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/eissn -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/eissn">
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.org/ontology/bibo/Periodical</app:domainConstraint>
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.org/ontology/bibo/Series</app:domainConstraint>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/issn -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/issn">
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.org/ontology/bibo/Periodical</app:domainConstraint>
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.org/ontology/bibo/Series</app:domainConstraint>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/lccn -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/lccn">
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.org/ontology/bibo/Book</app:domainConstraint>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/numPages -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/numPages">
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.org/ontology/bibo/Book</app:domainConstraint>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/oclcnum -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/oclcnum">
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.org/ontology/bibo/Collection</app:domainConstraint>
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.org/ontology/bibo/Document</app:domainConstraint>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/pageEnd -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/pageEnd">
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.org/ontology/bibo/Article</app:domainConstraint>
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.org/ontology/bibo/BookSection</app:domainConstraint>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/pageStart -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/bibo/pageStart">
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.org/ontology/bibo/Article</app:domainConstraint>
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.org/ontology/bibo/BookSection</app:domainConstraint>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#abbreviation -->
+
+    <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#abbreviation">
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.org/ontology/bibo/Conference</app:domainConstraint>
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.org/ontology/bibo/Journal</app:domainConstraint>
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.org/ontology/bibo/Thesis</app:domainConstraint>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#courseCredits -->
+
+    <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#courseCredits"/>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#description -->
+
+    <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#description"/>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#freetextKeyword -->
+
+    <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#freetextKeyword">
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vivoweb.org/ontology/core#Equipment</app:domainConstraint>
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://xmlns.com/foaf/0.1/Agent</app:domainConstraint>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#placeOfPublication -->
+
+    <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#placeOfPublication">
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.org/ontology/bibo/Book</app:domainConstraint>
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.org/ontology/bibo/DocumentPart</app:domainConstraint>
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.org/ontology/bibo/EditedBook</app:domainConstraint>
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.org/ontology/bibo/Thesis</app:domainConstraint>
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vivoweb.org/ontology/core#Catalog</app:domainConstraint>
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vivoweb.org/ontology/core#WorkingPaper</app:domainConstraint>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#rank -->
+
+    <owl:DatatypeProperty rdf:about="http://vivoweb.org/ontology/core#rank">
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vivoweb.org/ontology/core#Position</app:domainConstraint>
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vivoweb.org/ontology/core#URLLink</app:domainConstraint>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000595 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000595"/>
+    
+
+
+    <!-- http://purl.org/NET/c4dm/event.owl#Event -->
+
+    <owl:Class rdf:about="http://purl.org/NET/c4dm/event.owl#Event"/>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/AcademicArticle -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/AcademicArticle">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ontology/bibo/eanucc13"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Article -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Article"/>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Book -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Book"/>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/BookSection -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/BookSection"/>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/CollectedDocument -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/CollectedDocument"/>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Collection -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Collection"/>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Conference -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Conference"/>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Document -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Document"/>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/DocumentPart -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/DocumentPart"/>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/EditedBook -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/EditedBook"/>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Journal -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Journal"/>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Patent -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Patent"/>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Periodical -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Periodical"/>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Series -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Series"/>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Thesis -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Thesis"/>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/Website -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Website"/>
+    
+
+
+    <!-- http://purl.org/spar/c4o/GlobalCitationCount -->
+
+    <owl:Class rdf:about="http://purl.org/spar/c4o/GlobalCitationCount"/>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#AcademicDepartment -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#AcademicDepartment"/>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#AdvisingRelationship -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#AdvisingRelationship"/>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#Authorship -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Authorship"/>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#AwardReceipt -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#AwardReceipt"/>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#Blog -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Blog"/>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#BlogPosting -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#BlogPosting"/>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#Catalog -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Catalog"/>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#Committee -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Committee"/>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#ConferencePaper -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#ConferencePaper"/>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#Consortium -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Consortium"/>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#County -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#County"/>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#Course -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Course"/>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#DateTimeInterval -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#DateTimeInterval"/>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#DateTimeValue -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#DateTimeValue"/>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#Equipment -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Equipment"/>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#EventSeries -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#EventSeries"/>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#FacultyAdministrativePosition -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#FacultyAdministrativePosition"/>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#FacultyPosition -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#FacultyPosition"/>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#GeographicLocation -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#GeographicLocation"/>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#GeographicRegion -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#GeographicRegion"/>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#Grant -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Grant"/>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#IssuedCredential -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#IssuedCredential"/>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#Laboratory -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Laboratory"/>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#LibrarianPosition -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#LibrarianPosition"/>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#NonAcademicPosition -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#NonAcademicPosition"/>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#NonFacultyAcademicPosition -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#NonFacultyAcademicPosition"/>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#Position -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Position"/>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#Project -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Project"/>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#StateOrProvince -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#StateOrProvince"/>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#Team -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Team"/>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#URLLink -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#URLLink"/>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#WorkingPaper -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#WorkingPaper"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Organization -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#narrower">
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2004/02/skos/core#Concept</app:domainConstraint>
+        <app:rangeConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2004/02/skos/core#Concept</app:rangeConstraint>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/obo/owl/OBO_REL#role_of">
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ifomis.org/bfo/1.1/snap#Role</app:domainConstraint>
+        <app:rangeConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://xmlns.com/foaf/0.1/Agent</app:rangeConstraint>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#publisherOf">
+        <app:rangeConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.org/ontology/bibo/Document</app:rangeConstraint>
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vivoweb.org/ontology/core#Publisher</app:domainConstraint>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#geographicLocationOf">
+        <app:rangeConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.org/NET/c4dm/event.owl#Event</app:rangeConstraint>
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vivoweb.org/ontology/core#GeographicLocation</app:domainConstraint>
+        <app:rangeConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://xmlns.com/foaf/0.1/Organization</app:rangeConstraint>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#related">
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2004/02/skos/core#Concept</app:domainConstraint>
+        <app:rangeConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2004/02/skos/core#Concept</app:rangeConstraint>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#supplementalInformation">
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vivoweb.org/ontology/core#EducationalTraining</app:domainConstraint>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2006/vcard/ns#email">
+        <app:rangeConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2006/vcard/ns#Internet</app:rangeConstraint>
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2006/vcard/ns#VCard</app:domainConstraint>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002350">
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://xmlns.com/foaf/0.1/Agent</app:domainConstraint>
+        <app:rangeConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://xmlns.com/foaf/0.1/Group</app:rangeConstraint>
+        <app:rangeConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://xmlns.com/foaf/0.1/Organization</app:rangeConstraint>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#dateTimePrecision">
+        <app:rangeConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vivoweb.org/ontology/core#DateTimeValuePrecision</app:rangeConstraint>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002351">
+        <app:rangeConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://xmlns.com/foaf/0.1/Agent</app:rangeConstraint>
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://xmlns.com/foaf/0.1/Group</app:domainConstraint>
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://xmlns.com/foaf/0.1/Organization</app:domainConstraint>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/ontology/bibo/status">
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.org/ontology/bibo/DocumentStatus</app:domainConstraint>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002234">
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000316">
+        <app:rangeConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ifomis.org/bfo/1.1/snap#Role</app:rangeConstraint>
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://xmlns.com/foaf/0.1/Agent</app:domainConstraint>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#broader">
+        <app:rangeConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2004/02/skos/core#Concept</app:rangeConstraint>
+        <app:domainConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2004/02/skos/core#Concept</app:domainConstraint>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002353">
+        <app:inPropertyGroup rdf:resource="http://eagle-i.org/ont/app/1.0/PropertyGroup_DataModelExclude"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
+
