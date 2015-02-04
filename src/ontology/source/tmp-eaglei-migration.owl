@@ -26860,6 +26860,138 @@
         </rdfs:domain>
     </owl:ObjectProperty>
 
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0000031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001000"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000086"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000009">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete_cell line</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
+        <obo:IAO_0100001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CLO:0000031 cell line</obo:IAO_0100001>
+        <obo:IAO_0000231 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Replaced with CLO:cell line class (CLO:0000031 cell line)</obo:IAO_0000231>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+        <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000334">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gel image</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/swo/SWO_0000580"/>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An image of an agarose gel stained with Ethidium bromide.</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Images that are obtained from gels, such as polyacrylamide or agarose gels used to analyze protein or DNA.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000354">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001965"/>
+    </owl:Class>
+    <!-- http://purl.obolibrary.org/obo/ERO_0000698 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000698">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001286"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001305"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <!-- http://purl.obolibrary.org/obo/ERO_0001396 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001396">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002001"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A transformed cell line that is derived from cells part of a malignant tumor, and is capable of forming tumors when injected into imunologically compromised organisms</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cancer cell line</obo:IAO_0000118>
+    </owl:Class>
+        <!-- http://purl.obolibrary.org/obo/ERO_0001397 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001397">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0009828"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cell line derived from an embryo and immortalized in vitro. Does not include embryonic stem cells.</rdfs:comment>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An immortalized cell line derived from an embryo.</obo:IAO_0000115>
+    </owl:Class>
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001400 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001400">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stem cell-differentiated cell line</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000031"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cell line that results from in vitro differentiation of stem cells into a more lineage-restricted cell type. </obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Placeholder for class to be imported from the Reagent Ontology (ReO). </rdfs:comment>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">differentiated stem cell line</obo:IAO_0000118>
+    </owl:Class>
+        <!-- http://purl.obolibrary.org/obo/ERO_0001440 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001440">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0009828"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An immortal cell line that derives from a hybrid cell resulting from the fusion of a lymphocyte and a tumor cell; used to culture a specific monoclonal antibody.</obo:IAO_0000115>
+    </owl:Class>
+        <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001554">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Most of the data subclasses canbe defined as output of a specific assay. </rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Note that this class was created to replace IAO:data item, in order to exclude children metadata classes &apos;data about an ontology part&apos; from the application. Their meaning is identical</rdfs:comment>
+    </owl:Class>
+        <!-- http://purl.obolibrary.org/obo/ERO_0001564 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001564">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000401"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0100361"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+
+        
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0009829">
+        <rdfs:label xml:lang="en">mortal cell line</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000031"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cell line is able to support only a limited number of passages in vitro.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mortal cell line is not capable of supporting indefinite propagation in vitro, being limited by entry of its cells into senescence.</rdfs:comment>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI-CLO Alignment Working Group (Spring 2013)</obo:IAO_0000119>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">finite cell line</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary cell line</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+    </owl:Class>
+
+    <!-- http://purl.obolibrary.org/obo/CLO_0009828 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0009828">
+        <rdfs:label xml:lang="en">immortal cell line</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000031"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cell line that is expected to be capable of indefinite propagation in an vitro culture.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI-CLO Alignment Working Group (Spring 2013)</obo:IAO_0000119>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">permanent cell line</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+    </owl:Class>
+        <!-- http://purl.obolibrary.org/obo/CLO_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0000031">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell line</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cultured cell population that represents a genetically stable and homogenous population of cultured cells that shares a common propagation history (i.e. has been successively passaged together in culture).</obo:IAO_0000115>
+        <obo:IAO_0000117>MB, SS, JZ, MAH, BP, CS, YH</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+    </owl:Class>
+
 </rdf:RDF>
 
 
