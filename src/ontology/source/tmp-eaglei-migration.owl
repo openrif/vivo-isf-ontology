@@ -27995,6 +27995,2200 @@
     <!-- http://xmlns.com/foaf/0.1/Person -->
 
     <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001665">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002176"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An isobaric labeling technique that uses stable isotope labeled molecules that can be covalent bonded to the N-terminus and side chain amines of proteins. iTRAQ is used in proteomics to study quantitative changes in the proteome.</obo:IAO_0000115>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001963">
+        <rdfs:label xml:lang="en">establishing induced pluripotent cell line</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001867"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0001962"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A material production technique in which non-pluripotent cells are induced in culture to revert to pluripotency by initiating expression of specific genes, and propagated in culture to establish a cell line.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">establishing iPS cell line</obo:IAO_0000118>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Induced_pluripotent_stem_cell</obo:IAO_0000119>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iPS cells are typically derived by transfection of certain stem cell-associated genes into non-pluripotent cells, such as adult fibroblasts. Transfection is typically achieved through viral vectors, such as retroviruses. Transfected genes include the master transcriptional regulators Oct-3/4 (Pou5f1) and Sox2, although it is suggested that other genes enhance the efficiency of induction. After 3–4 weeks, small numbers of transfected cells begin to become morphologically and biochemically similar to pluripotent stem cells, and are typically isolated through morphological selection, doubling time, or through a reporter gene and antibiotic selection.  Notably, a DNA transfection-based this technique is becoming less popular since it is known to be prone to inducing cancer formation.  A strictly protein mediated approach has also been demonstrated to work.</rdfs:comment>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001964">
+        <rdfs:label xml:lang="en">human subject</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0001965"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A homo sapiens that bears an experimental subject role which is realized through his/her participation in a scientific technique as the subject of interest (ie as the subject about which data is generated in an assay or study, or the entity that is transformed or modified in a material processing technique).</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A patient in a clinical trial. A person from whom a biological sample is extracted.</obo:IAO_0000112>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000119>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001965">
+        <rdfs:label xml:lang="en">experimental subject role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A role that inheres in a material that is input as the subject of interest in a scientific technique - either as an entity about which data is generated in an assay or study, or an entity that is transformed or modified in a material processing technique (e.g. the source from which a biological sample is taken)</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000117>
+    </owl:Class>
+    
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001972">
+        <rdfs:label xml:lang="en">ethnic group</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Group"/>
+        <obo:IAO_0000119>NCI Thesaurus C16564 ‘Ethnic Group’</obo:IAO_0000119>
+        <obo:IAO_0000117>PERSON: Matthew Brush</obo:IAO_0000117>
+        <obo:IAO_0000115>A social group characterized by a distinctive social and cultural tradition that is maintained from generation to generation. Members share a common history and origin and a sense of identification with the group. They have similar and distinctive features in their lifestyle habits and shared experiences. They often have a common genetic heritage which may be reflected in their experience of health and disease.</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001974 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001974">
+        <rdfs:label xml:lang="en">African American</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001972"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A term used in the United States to categorize a population group comprised of persons having origins in any of the black racial groups of Africa. Includes population subgroups (e.g., Kenyan, Nigerian, Haitian).</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIt:C16352</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001975 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001975">
+        <rdfs:label xml:lang="en">Caucasian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001972"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ethnic group comprised of persons having origins in any of the original peoples of Europe, the Middle East, or North Africa.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIt:C41261</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001976 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001976">
+        <rdfs:label xml:lang="en">Caucasian of European descent</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001975"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ethnic group comprised of persons having origins in any of the original peoples the European countries.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001978 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001978">
+        <rdfs:label xml:lang="en">Ashkenazi Jew</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002085"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Jewish ethnic group comprised of persons who are descendants of Jews from Germany, Poland, Austria and Eastern Europe.
+</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIt:C17950</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001979 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001979">
+        <rdfs:label xml:lang="en">Sephardic Jew</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002085"/>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Jewish ethnic group comprised of persons whose ancestors lived in North Africa, the Middle East, Portugal or Spain.</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIt:C103283</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001980 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001980">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Latino</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001972"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ethnic group comprised of persons with origins in the countries of Latin America.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001981 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001981">
+        <rdfs:label xml:lang="en">Asian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001972"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ethnic group comprised of persons having origins in any of the original peoples of the Far East, Southeast Asia, or the Indian subcontinent, including for example, Cambodia, China, India, Japan, Korea, Malaysia, Pakistan, the Philippine Islands, Thailand, and Vietnam.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIt:C41260</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001982 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001982">
+        <rdfs:label xml:lang="en">Pacific Islander</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001972"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ethnic group comprised of persons having origins in any of the original peoples of Hawaii, Guam, Samoa, or other Pacific Islands. The term covers particularly people who identify themselves as part-Hawaiian, Native Hawaiian, Guamanian or Chamorro, Carolinian, Samoan, Chuukese (Trukese), Fijian, Kosraean, Melanesian, Micronesian, Northern Mariana Islander, Palauan, Papua New Guinean, Pohnpeian, Polynesian, Solomon Islander, Tahitian, Tokelauan, Tongan, Yapese, or Pacific Islander, not specified.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EFO_0003154</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001983 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001983">
+        <rdfs:label xml:lang="en">African</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001972"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ethnic group comprised of persons with African ancestral origins who self identify, or are identified, as African.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIt:C42331</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001984 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001984">
+        <rdfs:label xml:lang="en">Native American</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001972"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ethnic group comprised of persons having origins in any of the original peoples of North and South America (including Central America) and who maintains tribal affiliation or community attachment.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIt:C41259</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001991">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electric discharge machining</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A material processing technique whereby a desired shape is obtained using electrical discharges (sparks). Material is removed from the workpiece by a series of rapidly recurring current discharges between two electrodes, separated by a dielectric liquid and subject to an electric voltage. One of the electrodes is called the tool-electrode, or simply the ‘tool’ or ‘electrode’, while the other is called the workpiece-electrode, or ‘workpiece’.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Scott Hoffmann</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">die sinking</obo:IAO_0000118>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Electrical_discharge_machining</obo:IAO_0000119>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spark eroding</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spark machining</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wire erosion</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001992 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001992">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">additive manufacturing</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3D printing</obo:IAO_0000118>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A material processing technique used for making a three-dimensional solid object of virtually any shape from a digital model. 3D printing is achieved using an additive process, where successive layers of material are laid down in different shapes. 3D printing is considered distinct from traditional machining techniques, which mostly rely on the removal of material by methods such as cutting or drilling (subtractive processes).</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Scott Hoffmann</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/3D_printing</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001993 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001993">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">repository</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organization where things are deposited, stored, or offered for sale.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000117>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Developmental Studies Hybridoma Bank</obo:IAO_0000112>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://dictionary.reference.com/browse/repository</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001995 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001995">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electrolyte analysis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000520"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A clinical chemistry assay that tests the basic chemicals in the body; sodium, potassium, chloride, and bicarbonate.
+</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.shoestring-graphics.com/CP2020/medtech/glossary/er.htm#e</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001996 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001996">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mortal adherent cell line</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0009829"/>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000117>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a mortal cell line that is propagated in culture as cells adhering to a solid substrate.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001997 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001997">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mortal fibroblast cell line</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001996"/>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">an mortal adherent cell line comprised of fibroblast cells that grow with  a particular flattened morphology, and are derived from a connective tissue cell that makes and secretes collagen proteins.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001998 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001998">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mortal suspension cell line</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0009829"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a mortal cell line comprised of cells that are propagated while floating in culture medium, as opposed to adhering to some fixed substrate.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001999 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001999">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mortal lymphocyte cell line</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001998"/>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a mortal suspension cell line comprised of lymphocytes, derived from a blood biospecimen containing non-adherent white blood cells</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002001">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transformed cell line</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0009828"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An immortalized cell line that has acquired the ability to form tumors after injection into immunologically compromised animals</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cells comprising a transformed cell line can be transformed through endogenous pathological processes in an organism, or through experimental genetic modifications made to cells in vitro. </rdfs:comment>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002003"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002009">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stem cell analysis study</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000471"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A study that aims to investigate characteristics of stem cells, specifically biological phenomenon at the level of or occuring within stem cells, where the cells are the primary subject of study.  This includes their capacity to differentiate to form specific cell and tissue types.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002010">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">undifferentiated stem cell study</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002009"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A study that aims to investigate characteristics of stem cells in an undifferentiated state.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002011">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stem cell differentiation study</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002009"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cell analysis study that investigates the capability of cells to  differentiate into specific cell types and/or form specific tissue types.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002012">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">embryoid body formation study</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002011"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A differentiated cell study wherein stem cells are used to generate embryoid bodies and their capacity to differentiate to form specific cell types and tissues is determined.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Embryoid_body</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002013">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">teratoma formation study</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002011"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A differentiated cell study wherein stem cells are used to generate teratomas and their capacity to differentiate to form specific cell and tissue types is determined.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002014">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tetraploid complementation study</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002011"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cell differentiation study wherein a tetraploid embryo (either at the morula or blastocyst stage) is used to support formation of a viable embryo from diploid stem cells of interest.  The tetraploid embryo develops in utero into extra-embryonic tissue (placenta etc.) that support embryo formation by the diploid cells.  If a viable animal can be produced from stem cells using the tetraploid complementation assay, then the cells are deemed equivalent to embryonic stem cells.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Tetraploid_complementation_assay</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002016">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">whole genome sequencing</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001286"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001305"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A genotyping assay that determines the complete DNA sequence of a cell or organism&apos;s genome at a single time.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes chromosomal and mitochondiral genomes, and chloroplast genomes in plants.</rdfs:comment>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">complete genome sequencing</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">entire genome sequencing</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">full genome sequencing</obo:IAO_0000118>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Whole_genome_sequencing</obo:IAO_0000119>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">whole genome sequence analysis</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002017">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sterility assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sterility assay</app:preferredLabel>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">an assay to determine the sterility of some material, by assaying the presence of microorganisms or other contaminating entities.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002020"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002025 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002025">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell line validation report</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A document that describes the resutls of a study to characterize the molecular and cellular attributes of a cell line, including gene and protein expression patterns, morphological features, genetic variations, and sterility.</obo:IAO_0000115>
+        <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cell line QC report</app:preferredLabel>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell line quality control report</obo:IAO_0000118>
+        <obo:IAO_0000118>cell line QC report</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002032">
+        <rdfs:label>mixed ethnicity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001972"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ethnic group that includes persons with significant ethnic contributions from more than one group.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002033">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">family relationship</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Relationship"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relationship between persons related as members of a domestic group, or a number of domestic groups linked through descent from a common ancestor, marriage, or adoption</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adapted from PCO_0000020 (family). </obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002036 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002036">
+        <rdfs:label>self</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Relationship"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a relationship between an individual and itself</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002037 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002037">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological family relationship</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002033"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A family relationship between persons linked through descent from a common ancestor.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002038 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002038">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lineal family relationship</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002037"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A biological family relationship between persons linked through a direct line of descent.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002039 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002039">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sibling relationship</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002038"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A lineal family relationship between two persons with at least one shared parent.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002040">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">twin relationship</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002039"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A sibling relationship between twins.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002041 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002041">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">identical twin relationship</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002040"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A sibling relationship between paternal twins.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002042 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002042">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fraternal twin relationship</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002040"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A sibling relationship between fraternal twins.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002043 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002043">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">parent relationship</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002038"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A lineal family relationship from a parent to their biological offspring.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002044 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002044">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">grandparent relationship</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002038"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A lineal family relationship from a person and their biological grandchild.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002045 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002045">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">great grandparent relationship</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002038"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A lineal family relationship from a person and their biological great grandchild.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002046 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002046">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nth great grandparent relationship</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002038"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A lineal family relationship from a person and their descendent who is more than three generations removed (e.g. subsequent to a great grandchild)</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002047 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002047">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">child relationship</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002038"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A lineal family relationship from a person to their biological parent.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002048 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002048">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">grandchild relationship</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002038"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A lineal family relationship from a person to their biological grandparent.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002049 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002049">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">great grandchild relationship</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002038"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A lineal family relationship from a person to their biological great grandparent.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002050 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002050">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nth great grandchild relationship</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002038"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A lineal family relationship from a person and an ancestor who is more than three generations removed (e.g. preceding a great grandparent)</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002051">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">collateral family relationship</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002037"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A biological family relationship between persons whoe are not linked through a direct line of descent.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002052 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002052">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cousin relationship</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002051"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A collateral family relationship of a person to thier cousin.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002053 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002053">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">maternal cousin relationship</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002052"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A collateral family relationship of a person to thier maternal cousin.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002054 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002054">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">paternal cousin relationship</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002052"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A collateral family relationship of a person to thier paternal cousin.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002055 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002055">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aunt/uncle relationship</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002051"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A collateral family relationship of a person to thier aunt or uncle.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002056 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002056">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">maternal aunt/uncle relationship</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002055"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A collateral family relationship of a person to thier maternal aunt or uncle.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002057 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002057">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">paternal aunt/uncle relationship</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002055"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A collateral family relationship of a person to thier paternal aunt or uncle.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002058 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002058">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">niece/nephew relationship</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002051"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A collateral family relationship of a person to thier niece or nephew.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002059 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002059">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">maternal niece/nephew relationship</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002058"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A collateral family relationship of a person to thier maternal niece or nephew.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002060 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002060">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">paternal niece/nephew relationship</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002058"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A collateral family relationship of a person to thier paternal niece or nephew.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002061 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002061">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-biological family relationship</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002033"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A family relationship between persons linked through marraige or adoption.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002062 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002062">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">adopted relationship</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002061"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002063 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002063">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">relationship by marriage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002061"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002064 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002064">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arab</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001972"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ethnic group comprised of a Semitic people inhabiting the Arabian peninsula or other countries of the Middle East and North Africa.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MeSH: M01.686.754.167</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002065 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002065">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asian, Chinese</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001981"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002066 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002066">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asian, Indian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001981"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002067 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002067">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asian, Irani</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001981"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002068 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002068">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asian, Iraqi</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001981"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002069 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002069">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asian, Japanese</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001981"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002070 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002070">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asian, Pakistani</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001981"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002071 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002071">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asian, Vietnamese</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001981"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002072 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002072">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Slavic</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001976"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ethnic group comprised of Indo-European persons with origins in Central Europe, Eastern Europe, Southeast Europe, North Asia and Central Asia, who speak the Indo-European Slavic languages, and share, to varying degrees, certain cultural traits and historical backgrounds.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Slavic_people</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002073 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002073">
+        <rdfs:label>Nordic</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001976"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ethnic group comprised of persons having origins in any of the original peoples of the northern European countries  of Scandinavia, Finland, Iceland, and the Faroe Islands.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Nordic_race</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002074 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002074">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nordic, Swedish</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002073"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002075 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002075">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nordic, Norwegian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002073"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002076 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002076">
+        <rdfs:label>Nordic, Icelandic</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002073"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002077 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002077">
+        <rdfs:label>Nordic, Danish</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002073"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002078 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002078">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Euro-Caucasian, German</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001976"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002079 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002079">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Euro-Caucasian, French</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001976"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002080 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002080">
+        <rdfs:label>Euro-Caucasian, English</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001976"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002081 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002081">
+        <rdfs:label>Euro-Caucasian, Spanish</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001976"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002082 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002082">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Euro-Caucasian, Greek</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001976"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002083 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002083">
+        <rdfs:label>Euro-Caucasian, Italian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001976"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002084 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002084">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Caucasian of Russian descent</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001975"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ethnic group comprised of persons having origins in any of the original peoples the Russian territories.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002085 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002085">
+        <rdfs:label>Jewish</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001975"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ethnic group originating from the Israelites (Hebrews) of the Ancient Near East.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002087 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002087">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Latino, Carribean</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001980"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002088 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002088">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Latino, North American</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001980"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002089 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002089">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Latino, Central American</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001980"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002090 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002090">
+        <rdfs:label>Latino, South American</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001980"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002097 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002097">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">intersex</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001894"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A phenotypic sex characterized by variation in sex characteristics including chromosomes, gonads, or genitals that do not allow an individual to be distinctly identified as male or female. Includes cases of ambiguous genitalia, ovotestes, and true hermaphroditism.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Intersex/</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002103 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002103">
+        <rdfs:label>pluripotency induction technique</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A technique through which a cell or cell line is induced to pluripotency.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002104 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002104">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">induction by genomically integrated transformant</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002103"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A pluripotency induction technique that employs stabile insertion of genetic information into the target genome of a cell.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002105 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002105">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">induction by episomal transformant</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002103"/>
+        <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A pluripotency induction technique that employs the transfer of stabile genetic material into the nucleus of a cellular target without permanent integration into the target’s genome.</app:preferredDefinition>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002106 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002106">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">induction by labile transformant</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002103"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A pluripotency induction technique that employs the transfer of labile or unstable transformant materials, typically mRNA or siRNA, into the cytoplasm of a cellular target, such that there is  no long term effect on the nucleus of the cell.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002107 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002107">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">induction by chemical transformant</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002103"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A pluripotency induction technique that employs a exogenous chemical treatment of a cellular target resulting in a transformation of cellular behavior.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002112 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002112">
+        <rdfs:label>relationship to proband</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0002036"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0002037"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0002061"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Relationship"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A reified relationship between a human subject in a biomedical study, and the proband in that study.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002113 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002113">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text mining</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001309"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data analysis technique that involves the process of deriving high-quality information from text, typically derived through the devising of patterns and trends through means such as statistical pattern learning. </obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Tenille Johnson</obo:IAO_0000117>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Text mining usually involves the process of structuring the input text (usually parsing, along with the addition of some derived linguistic features and the removal of others, and subsequent insertion into a database), deriving patterns within the structured data, and finally evaluation and interpretation of the output.</rdfs:comment>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Text_mining</obo:IAO_0000119>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text data mining</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002114 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002114">
+        <rdfs:label xml:lang="en">S language</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000025"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Tenille Johnson</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002115 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002115">
+        <rdfs:label xml:lang="en">failure time data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001554"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data item that is about the time duration until one or more events happen, such as death in biological organisms and failure in mechanical systems.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Tenille Johnson</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Survival_analysis</obo:IAO_0000119>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">time to event data</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">time to failure data</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002163 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002163">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">induction by Sendai virus transformant</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002103"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A pluripotency induction technique that employs Sendai virus vectors to force expression of a combination of genes sufficient to induce pluripotency without integration or alteration of the cellular genome.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Tenille Johnson</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Tenille Johnson</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002165 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002165">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">recombinase-mediated cassette exchange</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001297"/>
+        <obo:IAO_0000117>PERSON:Tenille Johnson</obo:IAO_0000117>
+        <obo:IAO_0000118>RMCE</obo:IAO_0000118>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Recombinase-mediated_cassette_exchange</obo:IAO_0000119>
+        <obo:IAO_0000112>Can be used to delete genes and replace them with genomic regions of choice.</obo:IAO_0000112>
+        <obo:IAO_0000115>An experimental genetic modification technique that involves the clean exchange of a preexisting gene cassette for an analogous cassette carrying the &quot;gene of interest&quot; (GOI).</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002167 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002167">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Excel</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000025"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Tenille Johnson</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002168 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002168">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Random forest</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <obo:IAO_0000117>PERSON:Tenille Johnson</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002169 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002169">
+        <rdfs:label xml:lang="en">luciferase assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001902"/>
+        <obo:IAO_0000117>PERSON:Tenille Johnson</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.promega.com/products/reporter-assays-and-transfection/reporter-assays/luciferase-assay-system/</obo:IAO_0000119>
+        <obo:IAO_0000115>A bioluminescent assay that detects and quantifies the emission of light by firefly luciferase.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002173 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002173">
+        <rdfs:label xml:lang="en">reference genome data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001573"/>
+        <obo:IAO_0000115>DNA sequence data that is a representative example of a species&apos; set of genes.</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON:Tenille Johnson</obo:IAO_0000117>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Reference_genome</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002174 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002174">
+        <rdfs:label xml:lang="en">mass spectrometry labeling</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0600038"/>
+        <obo:IAO_0000115>A labeling technique that involves labeling proteins with various chemical groups to permit their differentiation in MS experiments.</obo:IAO_0000115>
+        <obo:IAO_0000119>PERSON:Robert Garces</obo:IAO_0000119>
+        <obo:IAO_0000117>PERSON:Tenille Johnson</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002175 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002175">
+        <rdfs:label xml:lang="en">TMT quantitation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002176"/>
+        <obo:IAO_0000117>PERSON:Tenille Johnson</obo:IAO_0000117>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Tandem_mass_tag</obo:IAO_0000119>
+        <obo:IAO_0000118>Tandem mass tags</obo:IAO_0000118>
+        <obo:IAO_0000115>An isobaric labeling technique that uses tags containing four regions with the same total molecular weights and structure, so that during chromatographic or electrophoretic separation and in single MS mode, molecules labelled with different tags are indistinguishable.</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002176 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002176">
+        <rdfs:label xml:lang="en">isobaric labeling</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002174"/>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Isobaric_labeling</obo:IAO_0000119>
+        <obo:IAO_0000115>A mass spectrometry labeling technique in which peptides or proteins are labeled with various chemical groups that are isobaric, or the same in mass, but which fragment during tandem mass spectrometry to yield reporter ions of different mass.</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON:Tenille Johnson</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002177 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002177">
+        <rdfs:label xml:lang="en">stable isotope labeling by amino acids in cell culture</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002174"/>
+        <obo:IAO_0000115>A mass spectrometry labeling technique that detects differences in protein abundance among samples using non-radioactive isotopic labeling.</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON:Tenille Johnson</obo:IAO_0000117>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Stable_isotope_labeling_by_amino_acids_in_cell_culture</obo:IAO_0000119>
+        <obo:IAO_0000118>SILAC</obo:IAO_0000118>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002178 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002178">
+        <rdfs:label xml:lang="en">functional magnetic resonance imaging</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001235"/>
+        <obo:IAO_0000118>fMRI</obo:IAO_0000118>
+        <obo:IAO_0000118>functional MRI</obo:IAO_0000118>
+        <obo:IAO_0000117>PERSON:Tenille Johnson</obo:IAO_0000117>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Functional_magnetic_resonance_imaging</obo:IAO_0000119>
+        <obo:IAO_0000115>A magnetic resonance imaging technique that measures brain activity by detecting associated changes in blood flow. The procedure is similar to MRI but uses the change in magnetization between oxygen-rich and oxygen-poor blood as its basic measure. </obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002182 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002182">
+        <rdfs:label xml:lang="en">body fat meter</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001002"/>
+        <obo:IAO_0000118>body fat analyzer</obo:IAO_0000118>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Bioelectrical_impedance_analysis</obo:IAO_0000119>
+        <obo:IAO_0000117>PERSON:Tenille Johnson</obo:IAO_0000117>
+        <obo:IAO_0000118>impedance meter</obo:IAO_0000118>
+        <obo:IAO_0000115>A body composition analyzer used to estimate body fat, often using BIA (bioelectrical impedance analysis).
+</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002183 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002183">
+        <rdfs:label xml:lang="en">body composition measurement</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001292"/>
+        <obo:IAO_0000117>PERSON:Tenille Johnson</obo:IAO_0000117>
+        <app:preferredLabel>http://en.wikipedia.org/wiki/Body_composition</app:preferredLabel>
+        <obo:IAO_0000115>A physiological assay used to measure the percentages of fat, bone, water and muscle in human bodies.</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002184 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002184">
+        <rdfs:label xml:lang="en">bioelectrical impedance analysis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002183"/>
+        <obo:IAO_0000117>PERSON:Tenille Johnson</obo:IAO_0000117>
+        <obo:IAO_0000115>A body composition measurement method that uses the resistance of electrical flow through the body to estimate body fat.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Bioelectrical_impedance_analysis</obo:IAO_0000119>
+        <obo:IAO_0000118>BIA</obo:IAO_0000118>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002185 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002185">
+        <rdfs:label xml:lang="en">air displacement plethysmography</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002183"/>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Whole-body_air_displacement_plethysmography</obo:IAO_0000119>
+        <obo:IAO_0000118>whole-Body air displacement plethysmography</obo:IAO_0000118>
+        <obo:IAO_0000115>A body composition measurement method that indirectly measures the volume of an object by determining the volume of air it displaces inside an enclosed chamber (plethysmograph).</obo:IAO_0000115>
+        <obo:IAO_0000118>ADP</obo:IAO_0000118>
+        <obo:IAO_0000117>PERSON:Tenille Johnson</obo:IAO_0000117>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002188 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002188">
+        <rdfs:label xml:lang="en">bone densitometer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001138"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>PERSON:Tenille Johnson</obo:IAO_0000117>
+        <obo:IAO_0000115>An X-ray apparatus that measures the calcium content of bone to reflect bone density by generating two X-ray beams and using the difference between how much energy is passed through the bone to determine the extent of bone loss.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.news-medical.net/Bone-Densitometers</obo:IAO_0000119>
+        <obo:IAO_0000112>A DXA scanning device.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002190 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002190">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">resource collection</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Group"/>
+        <obo:IAO_0000115>A group of physical or digital resources that share a common identity, purpose, or theme.</obo:IAO_0000115>
+        <obo:IAO_0000119>PERSON:Tenille Johnson</obo:IAO_0000119>
+        <obo:IAO_0000117>PERSON:Tenille Johnson</obo:IAO_0000117>
+        <obo:IAO_0000112>A panel of iPS cell lines grouped by a related disease.</obo:IAO_0000112>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100002">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0001908"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0100315"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100004">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0001908"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0100307"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100010">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0001908"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0100312"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100030">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0001908"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0100306"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100031">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0001908"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0100292"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100034">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0100036"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000833"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0100316"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/efo/swo/SWO_0000624"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100036 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100036">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0001908"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0100288"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100037 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100037">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0001908"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0100290"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100038 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100038">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0001908"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0100304"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100040">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0100002"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000833"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0100316"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0100286"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100041 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100041">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0100002"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000833"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0100316"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/efo/swo/SWO_0000624"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100044 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100044">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0001908"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0100310"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100045 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100045">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0001908"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0100311"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100046 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100046">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0001908"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0100312"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100047 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100047">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0001908"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0100313"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100049 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100049">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0001908"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0100313"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100051">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0001908"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0100313"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100052 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100052">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0001908"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0100313"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100054 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100054">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0001908"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0100307"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100059 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100059">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0001908"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0100313"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100086 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100086">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0001908"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0100292"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100087 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100087">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0001908"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0100295"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100096 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100096">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0001908"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0100292"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100099 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100099">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0001908"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0100303"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100101 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100101">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000833"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0100316"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/efo/swo/SWO_0000624"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100102 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100102">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0001908"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0100304"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100103 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100103">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0001908"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0100301"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100114 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100114">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0001908"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0100290"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100122 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100122">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0100036"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000833"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0100316"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0100284"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100123 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100123">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0100036"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000833"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0100316"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/efo/swo/SWO_0000140"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100124 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100124">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0100036"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000833"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0100316"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0100286"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100127 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100127">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0001908"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0100303"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100134 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100134">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0001908"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0100304"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100138 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100138">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0001908"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0100304"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100139 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100139">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0001908"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0100303"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100141 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100141">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0001908"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0100301"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100147 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100147">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0001908"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0100301"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100148 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100148">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0001908"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0100304"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100169 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100169">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0001908"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0100290"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100221 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100221">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0001908"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0100304"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100226 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100226">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0001908"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0100301"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100234 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100234">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0001908"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0100304"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100237 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100237"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100239 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100239">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0001908"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0100290"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100240 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100240">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0001908"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0100292"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100241 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100241">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0001908"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0100304"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100243 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100243">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0001908"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0100290"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100244 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100244">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0001908"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0100292"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100259 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100259">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0001908"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0100304"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100262 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100262">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0100237"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0001908"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0100290"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100263 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100263">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0100237"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0001908"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0100292"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100265 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100265">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0001908"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0100295"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100267 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100267">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0001908"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0100304"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100272 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100272">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0001908"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0100304"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0100275 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0100275">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ERO_0001908"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0100304"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0002065 -->
+
+
 </rdf:RDF>
 
 
