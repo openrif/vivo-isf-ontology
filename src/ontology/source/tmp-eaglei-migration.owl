@@ -2,162 +2,14 @@
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/arg/tmp-eaglei-migration.owl#"
      xml:base="http://purl.obolibrary.org/obo/arg/tmp-eaglei-migration.owl"
      xmlns:app="http://eagle-i.org/ont/app/1.0/"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:obo="http://purl.obolibrary.org/obo/">
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/arg/tmp-eaglei-migration.owl"/>
     
-  
-    <!-- http://purl.obolibrary.org/obo/ERO_0000234 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000234">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000005"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000014"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001716"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0002190"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000272"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-    </owl:ObjectProperty>
-    
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000460">
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000004"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000005"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000006"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000014"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000020"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000071"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001716"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0002190"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000272"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0100026"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-    </owl:ObjectProperty>
-
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000542">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CLO_0000031"/>
-    </owl:ObjectProperty>
-
-  <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000543">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CLO_0000031"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000004"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000005"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000071"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000161"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000162"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000285"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000630"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001194"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001200"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001716"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0002190"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0100026"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0400147"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-    </owl:ObjectProperty>
-    
-    <!-- http://purl.obolibrary.org/obo/ERO_0000573 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000573">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CLO_0000031"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000161"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000630"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001964"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0100026"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-    </owl:ObjectProperty>
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000597 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000597">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000004"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000006"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000014"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000020"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000071"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000595"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001716"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0002190"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0100026"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-    </owl:ObjectProperty>
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0001065 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001065">
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DNA derived from breast cancer tissue. </obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a relation between a biological resource and a biological specimen from which it is derived, such as a tissue sample, DNA or protein isolate.</obo:IAO_0000115>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CLO_0009829"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000020"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-    </owl:ObjectProperty>
-        <!-- http://purl.obolibrary.org/obo/ERO_0001401 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001401">
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CLO_0000031"/>
-    </owl:ObjectProperty>
-        <!-- http://purl.obolibrary.org/obo/ERO_0001516 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001516">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CLO_0000031"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000020"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-    </owl:ObjectProperty>
-    
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0001517 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001517">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CLO_0000031"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000008"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000020"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-    </owl:ObjectProperty>
 
 
     <!-- 
@@ -394,8 +246,8 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is_member_of_organization</rdfs:label>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A graduate student in the lab.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Identifies the organization or laboratory in which this individual is a member.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000117>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is member of</obo:IAO_0000111>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001768"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -409,6 +261,179 @@
     <!-- http://purl.obolibrary.org/obo/ERO_0000037 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000037"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000234 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000234">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000005"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000014"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001716"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0002190"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000272"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000460 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000460">
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000004"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000005"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000006"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000014"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000020"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000071"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001716"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0002190"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000272"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0100026"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000542 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000542">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CLO_0000031"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000543 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000543">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CLO_0000031"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000004"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000005"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000071"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000161"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000162"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000285"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000630"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001194"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001200"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001716"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0002190"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0100026"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0400147"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000573 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000573">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CLO_0000031"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000161"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000630"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001964"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0100026"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000597 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000597">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000004"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000006"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000014"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000020"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000071"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000595"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001716"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0002190"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0100026"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001065 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001065">
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DNA derived from breast cancer tissue. </obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a relation between a biological resource and a biological specimen from which it is derived, such as a tissue sample, DNA or protein isolate.</obo:IAO_0000115>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CLO_0009829"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000020"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001401 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001401">
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CLO_0000031"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001516 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001516">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CLO_0000031"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000020"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001517 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001517">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CLO_0000031"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000008"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0000020"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
     
 
 
@@ -455,8 +480,8 @@
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001966">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_phenotypic_sex</rdfs:label>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Describes the phenotypic sex of an organism.</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000119>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0001964"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ERO_0002094"/>
     </owl:ObjectProperty>
@@ -483,8 +508,8 @@
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Describes other cell lines that were co-developed concurrently from the same biological source.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000117>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CLO_0000031"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CLO_0000031"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CLO_0000031"/>
     </owl:ObjectProperty>
     
 
@@ -494,10 +519,10 @@
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001969">
         <rdfs:label xml:lang="en">derives_from_cell_line</rdfs:label>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Describes derivation of a cell line from an existing cell line, through spontaneous evolution or a directed modification or differentiation protocol.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000119>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CLO_0000031"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000117>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CLO_0000031"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CLO_0000031"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0001000"/>
     </owl:ObjectProperty>
     
@@ -521,8 +546,8 @@
         <rdfs:label>has_application_toward</rdfs:label>
         <obo:IAO_0000119>PERSON:Matthew Brush</obo:IAO_0000119>
         <obo:IAO_0000117>PERSON:Matthew Brush</obo:IAO_0000117>
-        <obo:IAO_0000116>Note that not every instance of a class defined as having application toward some objective need realize this objective.  For example, an assertion that a &apos;karyotyping assay&apos; has_application_toward some &apos;cell line characterization objective&apos; does not mean that every instance of a karyotyping assay need to be applied toward this end. Only that instances are commonly applied toward this end. In essence, this property attempts to &apos;fake&apos; a some-some pattern which is not formally allowed in OWL. </obo:IAO_0000116>
         <obo:IAO_0000115>A relation betwen a planned process and an objective it can be used to achieve.</obo:IAO_0000115>
+        <obo:IAO_0000116>Note that not every instance of a class defined as having application toward some objective need realize this objective.  For example, an assertion that a &apos;karyotyping assay&apos; has_application_toward some &apos;cell line characterization objective&apos; does not mean that every instance of a karyotyping assay need to be applied toward this end. Only that instances are commonly applied toward this end. In essence, this property attempts to &apos;fake&apos; a some-some pattern which is not formally allowed in OWL. </obo:IAO_0000116>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
         <rdfs:domain>
             <owl:Class>
@@ -540,8 +565,8 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0002031">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_relationship_to_proband</rdfs:label>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a property holding between a human subject and a &apos;reified relationship&apos; that describes the subjects relationship with a &apos;proband&apos; in the context of a biomedical investigation, i.e. the related family member who is the first affected subject identified in a study.</obo:IAO_0000115>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0001964"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ERO_0002112"/>
@@ -569,8 +594,8 @@
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0002100">
         <rdfs:label>has_diagnosis</rdfs:label>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relation between a human subject or patient and a diagnosis of some disease or phenotype, as made by a medical professional or the patient his/herself.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0001964"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000073"/>
     </owl:ObjectProperty>
@@ -581,9 +606,9 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0002191">
         <rdfs:label xml:lang="en">is_member_of_resource_collection</rdfs:label>
-        <obo:IAO_0000115>A relation between a resource and the resource collection to which it belongs.</obo:IAO_0000115>
         <obo:IAO_0000117>PERSON:Tenille Johnson</obo:IAO_0000117>
         <obo:IAO_0000119>PERSON:Tenille Johnson</obo:IAO_0000119>
+        <obo:IAO_0000115>A relation between a resource and the resource collection to which it belongs.</obo:IAO_0000115>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ERO_0002190"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002350"/>
         <rdfs:domain>
@@ -841,8 +866,8 @@
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002202">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">develops into</rdfs:label>
-        <obo:IAO_0000114>http://purl.obolibrary.org/obo/IAO_0000125</obo:IAO_0000114>
         <obo:IAO_0000117 xml:lang="en">Chris Mungall</obo:IAO_0000117>
+        <obo:IAO_0000114>http://purl.obolibrary.org/obo/IAO_0000125</obo:IAO_0000114>
         <obo:IAO_0000117 xml:lang="en">David Osumi-Sutherland</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">Terry Meehan</obo:IAO_0000117>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
@@ -865,11 +890,11 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002350">
         <rdfs:label xml:lang="en">member of</rdfs:label>
-        <obo:IAO_0000112>An organism that is a member of a population of organisms</obo:IAO_0000112>
-        <obo:IAO_0000118>is member of</obo:IAO_0000118>
-        <obo:IAO_0000119>SIO</obo:IAO_0000119>
         <obo:IAO_0000115>is member of is a mereological relation between a item and a collection.</obo:IAO_0000115>
+        <obo:IAO_0000112>An organism that is a member of a population of organisms</obo:IAO_0000112>
+        <obo:IAO_0000119>SIO</obo:IAO_0000119>
         <obo:IAO_0000118>member part of</obo:IAO_0000118>
+        <obo:IAO_0000118>is member of</obo:IAO_0000118>
         <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
@@ -895,8 +920,8 @@
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0003001">
         <rdfs:label xml:lang="en">produced_by</rdfs:label>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Melissa Haendel</obo:IAO_0000117>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0003000"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
     </owl:ObjectProperty>
@@ -934,8 +959,8 @@
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001971">
         <rdfs:label xml:lang="en">age_at_time_of_sampling</rdfs:label>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indicates the age of an organism or human subject at the time a biospecimen was collected, and was used to generate a product such as a cell line. </obo:IAO_0000115>
-        <obo:IAO_0000117>PERSON: Matthew Brush</obo:IAO_0000117>
         <obo:IAO_0000119>PERSON: Matthew Brush</obo:IAO_0000119>
+        <obo:IAO_0000117>PERSON: Matthew Brush</obo:IAO_0000117>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:domain>
             <owl:Class>
@@ -967,8 +992,8 @@
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001986">
         <rdfs:label xml:lang="en">obsolete_is_member_of_family</rdfs:label>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indicates a family of which a human is a member.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000117>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ERO_0001964"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
@@ -6629,8 +6654,8 @@
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">M-cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">microfold cell</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasBroadSynonym xml:lang="en">M cell</oboInOwl:hasBroadSynonym>
         <rdfs:comment>Should double check and see if M cells are particular to a specific region.</rdfs:comment>
+        <oboInOwl:hasBroadSynonym xml:lang="en">M cell</oboInOwl:hasBroadSynonym>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
     
@@ -9746,8 +9771,8 @@
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tc1 T-cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tc1 T-lymphocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
-        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &apos;Tc1 CD8+ T cell&apos;, but its logical definition includes additional known characteristics of Tc1 T cells.</rdfs:comment>
         <oboInOwl:hasExactSynonym>Tc1 CD8+ T cell</oboInOwl:hasExactSynonym>
+        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &apos;Tc1 CD8+ T cell&apos;, but its logical definition includes additional known characteristics of Tc1 T cells.</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
     
@@ -10118,9 +10143,9 @@
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NK cell that has the phenotype CD56-bright, CD16-negative, and CD84-positive with the function to secrete interferon-gamma but is not cytotoxic.</obo:IAO_0000115>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This cell type is compatible with the HIPC Lyoplate markers for &apos;CD16-CD56bright NK cell&apos;. Markers are associated with human cell types.</rdfs:comment>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasExactSynonym>CD16-CD56bright NK cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>CD56-bright cytokine secreting natural killer cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>CD16-negative, CD56-bright NK cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>CD16-CD56bright NK cell</oboInOwl:hasExactSynonym>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
     
@@ -10135,13 +10160,13 @@
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This cell type is compatible with the HIPC Lyoplate markers for &apos;CD16+CD56+ NK cell&apos;. Markers are associated with human cell types.</rdfs:comment>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cytotoxic CD56-dim NK cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>CD16-positive, CD56-low NK cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>CD16-positive, CD56-low natural killer cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>cytotoxic CD56-dim natural killer cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>CD16-positive, CD56-positive natural killer cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>CD16-positive, CD56-positive NK cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>CD16-positive, CD56-dim NK cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>CD16+CD56+ NK cell</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>CD16-positive, CD56-positive NK cell</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>CD16-positive, CD56-low NK cell</oboInOwl:hasExactSynonym>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
     
@@ -11612,12 +11637,12 @@
         <rdfs:label>activated CD4-positive, alpha-beta T cell, human</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000896"/>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
-        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &apos;activated CD4+ T cell&apos;, but includes via logical inference from its parent additional markers known to be expressed on activated CD4+ T cells.  The inclusion of HLA-DRA in the definition restricts this definition to human activated CD4+ T cells, as activated mouse T cells do not express MHC class II.</rdfs:comment>
         <oboInOwl:hasBroadSynonym>activated CD4+ T cell</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasExactSynonym>activated CD4-positive, alpha-beta T-lymphocyte, human</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>activated CD4-positive, alpha-beta T-cell, human</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000115>A recently activated CD4-positive, alpha-beta T cell with the phenotype HLA-DRA-positive, CD38-positive, CD69-positive, CD62L-negative, CD127-negative, and CD25-positive.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>activated CD4-positive, alpha-beta T lymphocyte, human</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>A recently activated CD4-positive, alpha-beta T cell with the phenotype HLA-DRA-positive, CD38-positive, CD69-positive, CD62L-negative, CD127-negative, and CD25-positive.</obo:IAO_0000115>
+        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &apos;activated CD4+ T cell&apos;, but includes via logical inference from its parent additional markers known to be expressed on activated CD4+ T cells.  The inclusion of HLA-DRA in the definition restricts this definition to human activated CD4+ T cells, as activated mouse T cells do not express MHC class II.</rdfs:comment>
+        <oboInOwl:hasExactSynonym>activated CD4-positive, alpha-beta T-cell, human</oboInOwl:hasExactSynonym>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
     
@@ -11647,13 +11672,13 @@
         <rdfs:label>naive CCR4-positive regulatory T cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0001047"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002677"/>
-        <oboInOwl:hasExactSynonym>naive CCR4-positive regulatory T-lymphocyte</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>naive CCR4-positive regulatory T-cell</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>naive CCR4-positive regulatory T lymphocyte</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000115>A naive regulatory T cell with the phenotype CD4-positive, CD25-positive, CD127lo, CCR4-positive, and CD45RO-negative.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>naive CCR4+ Treg</oboInOwl:hasExactSynonym>
-        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &apos;naive CCR4+ Treg&apos;.  The definition is valid for human; its applicability for mouse and other species is unknown.</rdfs:comment>
         <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115>A naive regulatory T cell with the phenotype CD4-positive, CD25-positive, CD127lo, CCR4-positive, and CD45RO-negative.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>naive CCR4-positive regulatory T-lymphocyte</oboInOwl:hasExactSynonym>
+        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &apos;naive CCR4+ Treg&apos;.  The definition is valid for human; its applicability for mouse and other species is unknown.</rdfs:comment>
+        <oboInOwl:hasExactSynonym>naive CCR4+ Treg</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>naive CCR4-positive regulatory T lymphocyte</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>naive CCR4-positive regulatory T-cell</oboInOwl:hasExactSynonym>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
     
@@ -11665,13 +11690,13 @@
         <rdfs:label>memory CCR4-positive regulatory T cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0001047"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002678"/>
-        <oboInOwl:hasExactSynonym>memory CCR4-positive regulatory T lymphocyte</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>memory CCR4-positive regulatory T-cell</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>memory CCR4+ Treg</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
-        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &apos;memory CCR4+ Treg&apos;.  The definition is valid for human; its applicability for mouse and other species is unknown.</rdfs:comment>
-        <oboInOwl:hasExactSynonym>memory CCR4-positive regulatory T-lymphocyte</oboInOwl:hasExactSynonym>
         <obo:IAO_0000115>A memory regulatory T cell with phenotype CD4-positive, CD25-positive, CD127lo, CCR4-positive, and CD45RO-positive.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym>memory CCR4-positive regulatory T lymphocyte</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>memory CCR4-positive regulatory T-lymphocyte</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>memory CCR4-positive regulatory T-cell</oboInOwl:hasExactSynonym>
+        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &apos;memory CCR4+ Treg&apos;.  The definition is valid for human; its applicability for mouse and other species is unknown.</rdfs:comment>
+        <oboInOwl:hasExactSynonym>memory CCR4+ Treg</oboInOwl:hasExactSynonym>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
     
@@ -11682,13 +11707,13 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0001047">
         <rdfs:label>CD4-positive, CD25-positive, CCR4-positive, alpha-beta regulatory T cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000792"/>
-        <oboInOwl:hasExactSynonym>CD4-positive, CD25-positive, CCR4-positive, alpha-beta regulatory T-cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>CD4-positive, CD25-positive, CCR4-positive, alpha-beta regulatory T lymphocyte</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasExactSynonym>CD4-positive, CD25-positive, CCR4-positive, alpha-beta regulatory T-lymphocyte</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>CD4-positive, CD25-positive, CCR4-positive, alpha-beta regulatory T-cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>CCR+ Treg</oboInOwl:hasExactSynonym>
-        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &apos;CCR4+ Treg&apos;.  The definition is valid for human; its applicability for mouse and other species is unknown.</rdfs:comment>
         <obo:IAO_0000115>A CD4-positive, CD25-positive, alpha-beta regulatory T cell with the additional phenotype CCR4-positive.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>CD4-positive, CD25-positive, CCR4-positive, alpha-beta regulatory T-lymphocyte</oboInOwl:hasExactSynonym>
+        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &apos;CCR4+ Treg&apos;.  The definition is valid for human; its applicability for mouse and other species is unknown.</rdfs:comment>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
     
@@ -11699,13 +11724,13 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0001048">
         <rdfs:label>activated CD4-positive, CD25-positive, CCR4-positive, alpha-beta regulatory T cell, human</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0001047"/>
-        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
-        <obo:IAO_0000115>A CD4-positive, CD25-positive, CCR4-positive, alpha-beta T regulatory cell with the phenotype HLA-DRA-positive, indicating recent activation.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>activated CD4-positive, CD25-positive, CCR4-positive, alpha-beta regulatory T-lymphocyte</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>activated CD4-positive, CD25-positive, CCR4-positive, alpha-beta regulatory T lymphocyte</oboInOwl:hasExactSynonym>
-        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &apos;activated CCR4+ Treg&apos;.  The inclusion of HLA-DRA in the definition restricts this definition to human activated CD4+ T cells, as activated mouse T cells do not express MHC class II.</rdfs:comment>
-        <oboInOwl:hasExactSynonym>activated CCR4+ Treg</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>activated CD4-positive, CD25-positive, CCR4-positive, alpha-beta regulatory T-cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>activated CD4-positive, CD25-positive, CCR4-positive, alpha-beta regulatory T lymphocyte</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>activated CD4-positive, CD25-positive, CCR4-positive, alpha-beta regulatory T-lymphocyte</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>A CD4-positive, CD25-positive, CCR4-positive, alpha-beta T regulatory cell with the phenotype HLA-DRA-positive, indicating recent activation.</obo:IAO_0000115>
+        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &apos;activated CCR4+ Treg&apos;.  The inclusion of HLA-DRA in the definition restricts this definition to human activated CD4+ T cells, as activated mouse T cells do not express MHC class II.</rdfs:comment>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym>activated CCR4+ Treg</oboInOwl:hasExactSynonym>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
     
@@ -11716,13 +11741,13 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0001049">
         <rdfs:label>activated CD8-positive, alpha-beta T cell, human</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000906"/>
-        <oboInOwl:hasExactSynonym>activated CD8-positive, alpha-beta T lymphocyte, human</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000115>A recently activated CD8-positive, alpha-beta T cell with the phenotype HLA-DRA-positive, CD38-positive, CD69-positive, CD62L-negative, CD127-negative, CCR7-negative, and CD25-positive.</obo:IAO_0000115>
-        <oboInOwl:hasBroadSynonym>activated CD8+ T cell</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasExactSynonym>activated CD8-positive, alpha-beta T-lymphocyte, human</oboInOwl:hasExactSynonym>
         <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &apos;activated CD8+ T cell&apos;, but includes via logical inference from its parent additional markers known to be expressed on activated CD8+ T cells.  The inclusion of HLA-DRA in the definition restricts this definition to human activated CD8+ T cells, as activated mouse T cells do not express MHC class II.</rdfs:comment>
         <oboInOwl:hasExactSynonym>activated CD8-positive, alpha-beta T-cell, human</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasBroadSynonym>activated CD8+ T cell</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym>activated CD8-positive, alpha-beta T lymphocyte, human</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>A recently activated CD8-positive, alpha-beta T cell with the phenotype HLA-DRA-positive, CD38-positive, CD69-positive, CD62L-negative, CD127-negative, CCR7-negative, and CD25-positive.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
     
@@ -11734,13 +11759,13 @@
         <rdfs:label>effector CD8-positive, alpha-beta T cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000625"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000911"/>
-        <oboInOwl:hasExactSynonym>effector CD8-positive, alpha-beta T-cell</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
         <oboInOwl:hasBroadSynonym>effector CD8+ T cell</oboInOwl:hasBroadSynonym>
-        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &apos;effector CD8+ T cell&apos;.  The functional characteristics of this cell type currently undefined in CL, which affects its proper placement within the hierarchy.</rdfs:comment>
-        <oboInOwl:hasExactSynonym>effector CD8-positive, alpha-beta T-lymphocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>effector CD8-positive, alpha-beta T lymphocyte</oboInOwl:hasExactSynonym>
         <obo:IAO_0000115>A CD8-positive, alpha-beta T cell with the phenotype CCR7-negative, CD45RA-positive.</obo:IAO_0000115>
+        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &apos;effector CD8+ T cell&apos;.  The functional characteristics of this cell type currently undefined in CL, which affects its proper placement within the hierarchy.</rdfs:comment>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym>effector CD8-positive, alpha-beta T-lymphocyte</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>effector CD8-positive, alpha-beta T-cell</oboInOwl:hasExactSynonym>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
     
@@ -11751,13 +11776,13 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0001051">
         <rdfs:label>CD4-positive, CXCR3-negative, CCR6-negative, alpha-beta T cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000624"/>
-        <oboInOwl:hasExactSynonym>CD4-positive, CXCR3-negative, CCR6-negative, alpha-beta T lymphocyte</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000115>A CD4-positive, alpha-beta T cell that has the phenotype CXCR3-negative, CCR6-negative.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>CD4-positive, CXCR3-negative, CCR6-negative, alpha-beta T-lymphocyte</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
         <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &apos;non-Th1/Th17 CD4+ T cell&apos;.  Cells of this phenotype may include T-helper 2 T cells and some naive CD4+ T cells.</rdfs:comment>
-        <oboInOwl:hasExactSynonym>CD4-positive, CXCR3-negative, CCR6-negative, alpha-beta T-cell</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>A CD4-positive, alpha-beta T cell that has the phenotype CXCR3-negative, CCR6-negative.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
         <oboInOwl:hasBroadSynonym>non-Th1/Th17 CD4+ T cell</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasExactSynonym>CD4-positive, CXCR3-negative, CCR6-negative, alpha-beta T-lymphocyte</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>CD4-positive, CXCR3-negative, CCR6-negative, alpha-beta T lymphocyte</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>CD4-positive, CXCR3-negative, CCR6-negative, alpha-beta T-cell</oboInOwl:hasExactSynonym>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
     
@@ -11768,13 +11793,13 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0001052">
         <rdfs:label>CD8-positive, CXCR3-negative, CCR6-negative, alpha-beta T cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000625"/>
-        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasExactSynonym>CD8-positive, CXCR3-negative, CCR6-negative, alpha-beta T-cell</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasBroadSynonym>non-Tc1/Tc17 CD8+ T cell</oboInOwl:hasBroadSynonym>
-        <obo:IAO_0000115>A CD8-positive, alpha-beta T cell that has the phenotype CXCR3-negative, CCR6-negative.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>CD8-positive, CXCR3-negative, CCR6-negative, alpha-beta T-lymphocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>CD8-positive, CXCR3-negative, CCR6-negative, alpha-beta T lymphocyte</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>A CD8-positive, alpha-beta T cell that has the phenotype CXCR3-negative, CCR6-negative.</obo:IAO_0000115>
         <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &apos;non-Tc1/Tc17 CD8+ T cell&apos;.  Cells of this phenotype may include Tc2 T cells and some naive CD8+ T cells.</rdfs:comment>
+        <oboInOwl:hasExactSynonym>CD8-positive, CXCR3-negative, CCR6-negative, alpha-beta T-cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasBroadSynonym>non-Tc1/Tc17 CD8+ T cell</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasExactSynonym>CD8-positive, CXCR3-negative, CCR6-negative, alpha-beta T-lymphocyte</oboInOwl:hasExactSynonym>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
     
@@ -11785,8 +11810,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0001053">
         <rdfs:label>IgD-negative memory B cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000787"/>
-        <oboInOwl:hasExactSynonym>IgD- memory B cell</oboInOwl:hasExactSynonym>
         <obo:IAO_0000115>A memory B cell that lacks expression of surface IgD.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>IgD- memory B cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
         <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &apos;IgD- memory B cell&apos;.  The majority of these cells are class-switched, though some are IgM-positive.</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
@@ -11799,8 +11824,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0001054">
         <rdfs:label>CD14-positive monocyte</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000576"/>
-        <oboInOwl:hasNarrowSynonym>monocyte</oboInOwl:hasNarrowSynonym>
         <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &apos;monocyte&apos;. Note that while CD14 is considered a reliable marker for human monocytes, it is only expressed on approximately 85% of mouse monocytes.</rdfs:comment>
+        <oboInOwl:hasNarrowSynonym>monocyte</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
         <obo:IAO_0000115>A monocyte that expresses CD14 and is negative for the lineage markers CD3, CD19, and CD20.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
@@ -11814,8 +11839,8 @@
         <rdfs:label>CD14-positive, CD16-low monocyte</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002393"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002397"/>
-        <oboInOwl:hasExactSynonym>intermediate monocyte, human</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym>intermediate monocyte, human</oboInOwl:hasExactSynonym>
         <rdfs:comment>Definition is valid for human intermediate monocytes.</rdfs:comment>
         <obo:IAO_0000115>An intermediate monocyte that is CD14-positive and with low amounts of CD16.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
@@ -11828,10 +11853,10 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0001056">
         <rdfs:label>dendritic cell, human</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000451"/>
-        <oboInOwl:hasBroadSynonym>dendritic cell</oboInOwl:hasBroadSynonym>
-        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &apos;dendritic cell&apos;. The inclusion of HLA-DRA in the definition restricts this definition to human dendritic cells.</rdfs:comment>
         <obo:IAO_0000115>A dendritic cell with the phenotype HLA-DRA-positive.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
+        <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &apos;dendritic cell&apos;. The inclusion of HLA-DRA in the definition restricts this definition to human dendritic cells.</rdfs:comment>
+        <oboInOwl:hasBroadSynonym>dendritic cell</oboInOwl:hasBroadSynonym>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
     
@@ -11843,10 +11868,10 @@
         <rdfs:label>myeloid dendritic cell, human</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000782"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0001056"/>
-        <oboInOwl:hasBroadSynonym>myeloid dendritic cell</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
         <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &apos;myeloid dendritic cell&apos;. The inclusion of HLA-DRA in the definition restricts this definition to human myeloid dendritic cells.</rdfs:comment>
+        <oboInOwl:hasBroadSynonym>myeloid dendritic cell</oboInOwl:hasBroadSynonym>
         <obo:IAO_0000115>A myeloid dendritic cell with the phenotype HLA-DRA-positive.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
     
@@ -11858,10 +11883,10 @@
         <rdfs:label>plasmacytoid dendritic cell, human</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000784"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0001056"/>
-        <obo:IAO_0000115>A plasmacytoid dendritic cell with the phenotype HLA-DRA-positive, CD123-positive, and CD11c-negative.</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
         <oboInOwl:hasBroadSynonym>plasmacytoid dendritic cell</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
         <rdfs:comment>This cell type is compatible with the HIPC Lyoplate markers for &apos;plasmacytoid dendritic cell&apos;. The inclusion of HLA-DRA in the definition restricts this definition to human plasmacytoid dendritic cells.</rdfs:comment>
+        <obo:IAO_0000115>A plasmacytoid dendritic cell with the phenotype HLA-DRA-positive, CD123-positive, and CD11c-negative.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
     
@@ -11872,17 +11897,17 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0001059">
         <rdfs:label>common myeloid progenitor, CD34-positive</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000049"/>
-        <oboInOwl:hasRelatedSynonym>pluripotent stem cell (bone marrow)</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasBroadSynonym>CMP</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasRelatedSynonym>CFU-S</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasExactSynonym>common myeloid precursor, CD34-positive</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000115>A progenitor cell committed to myeloid lineage, including the megakaryocyte and erythroid lineages. These cells are CD34-positive, and express Gata1, Gata2, C/EBPa, and Pu.1.</obo:IAO_0000115>
-        <oboInOwl:hasRelatedSynonym>CFU-GEMM</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>multipotential myeloid stem cell</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>colony forming unit granulocyte, erythrocyte, macrophage, and megakaryocyte</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasBroadSynonym>CMP</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasExactSynonym>common myeloid precursor, CD34-positive</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>CFU-GEMM</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>CFU-S</oboInOwl:hasRelatedSynonym>
         <rdfs:comment>CMP are reportedly CD16-positive, CD32-positive, CD38-positive, CD45RA-negative, CD110-negative, CD117-positive, CD123-positive, and SCA1-negative.</rdfs:comment>
         <oboInOwl:hasRelatedSynonym>myeloid stem cell</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>colony forming unit granulocyte, erythrocyte, macrophage, and megakaryocyte</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>pluripotent stem cell (bone marrow)</oboInOwl:hasRelatedSynonym>
+        <obo:IAO_0000115>A progenitor cell committed to myeloid lineage, including the megakaryocyte and erythroid lineages. These cells are CD34-positive, and express Gata1, Gata2, C/EBPa, and Pu.1.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
     
@@ -11907,10 +11932,10 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0001062">
         <rdfs:label>effector memory CD8-positive, alpha-beta T cell, terminally differentiated</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000625"/>
-        <rdfs:comment>This cell type is seen human but not found in the mouse.</rdfs:comment>
         <oboInOwl:hasOBONamespace>cell</oboInOwl:hasOBONamespace>
         <oboInOwl:hasExactSynonym>TEMRA</oboInOwl:hasExactSynonym>
         <obo:IAO_0000115>A CD8-positive, alpha beta memory T cell with the phenotype CD45RA-positive, CD45RO-negative, and CCR7-negative.</obo:IAO_0000115>
+        <rdfs:comment>This cell type is seen human but not found in the mouse.</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
     
@@ -12805,8 +12830,8 @@
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This cell type is compatible with the HIPC Lyoplate markers for &apos;CD16- monocyte&apos;. The markers used in the definition are associated with human monocytes.</rdfs:comment>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tmeehan</oboInOwl:created_by>
-        <oboInOwl:hasExactSynonym>CD16- monocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>CD16-negative monocyte</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>CD16- monocyte</oboInOwl:hasExactSynonym>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
     
@@ -20929,9 +20954,9 @@
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fat cell of breast</oboInOwl:hasExactSynonym>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tmeehan</oboInOwl:created_by>
-        <oboInOwl:hasExactSynonym>breast adipocyte</oboInOwl:hasExactSynonym>
         <rdfs:comment>Adipocytes found in the subcutaneous adipose tissue of breast. The breast consists of three main components, the skin, the subcutaneous adipose tissue and the functional glandular tissue that comprises both parenchyma and stroma.[CALOHA]</rdfs:comment>
         <oboInOwl:hasDbXref>CALOHA:TS-2377</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>breast adipocyte</oboInOwl:hasExactSynonym>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
     
@@ -21754,8 +21779,8 @@
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This cell type has been described as CD45RA-negative, but this doesn&apos;t fit with our current definition of naive T cell.</rdfs:comment>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</oboInOwl:hasOBONamespace>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tmeehan</oboInOwl:created_by>
-        <oboInOwl:hasExactSynonym>naive regulatory T-lymphocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>naive regulatory T lymphocyte</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>naive regulatory T-lymphocyte</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>naive regulatory T-cell</oboInOwl:hasExactSynonym>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
@@ -21984,10 +22009,10 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0005023">
         <rdfs:label xml:lang="en">branchiomotor neuron</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0015000"/>
+        <oboInOwl:hasExactSynonym>branchi  motor neuron </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDbXref>PMID:14699587 </oboInOwl:hasDbXref>
         <obo:IAO_0000115>Cranial motor neuron which innervates muscles derived from the branchial (pharyngeal) arches.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>special visceral motor neuron</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasDbXref>PMID:14699587 </oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym>branchi  motor neuron </oboInOwl:hasExactSynonym>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
     
@@ -22011,9 +22036,9 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0005025">
         <rdfs:label xml:lang="en">visceromotor neuron</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000100"/>
-        <rdfs:comment>Note that these neurons do not synapse directly onto muscles</rdfs:comment>
-        <oboInOwl:hasExactSynonym>general visceral motor neuron</oboInOwl:hasExactSynonym>
         <obo:IAO_0000115>A motor neuron that synapses to parasympathetic neurons that innervate tear glands, sweat glands, and the smooth muscles and glands of the pulmonary, cardiovascular, and gastrointestinal systems.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>general visceral motor neuron</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Note that these neurons do not synapse directly onto muscles</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
     
@@ -22253,8 +22278,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0008015">
         <rdfs:label xml:lang="en">inhibitory motor neuron</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000100"/>
-        <rdfs:comment>In vertebrates, all motor neurons are excitatory, but various types of inhibitory motor neurons exist in invertebrates.</rdfs:comment>
         <obo:IAO_0000115>A motor neuron that is capable of directly inhibiting muscle contraction.</obo:IAO_0000115>
+        <rdfs:comment>In vertebrates, all motor neurons are excitatory, but various types of inhibitory motor neurons exist in invertebrates.</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
     
@@ -22442,8 +22467,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0011002">
         <rdfs:label>lateral motor column neuron</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011001"/>
-        <obo:IAO_0000115>A motor neuron that is generated only on limb levels and send axons into the limb mesenchyme.</obo:IAO_0000115>
         <rdfs:comment>Need to MIREOT in &apos;spinal cord lateral column&apos; from Uberon</rdfs:comment>
+        <obo:IAO_0000115>A motor neuron that is generated only on limb levels and send axons into the limb mesenchyme.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
     
@@ -22454,8 +22479,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0011003">
         <rdfs:label>magnocellular neurosecretory cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000381"/>
-        <obo:IAO_0000115>A neurosecretory neuron residing mainly in the hypothalamic supraoptic and paraventricular nuclei and in a number of smaller accessory cell groups between these two nuclei, that secretes the hormones oxytocin and vasopressin.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>magnocellular neuron</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>A neurosecretory neuron residing mainly in the hypothalamic supraoptic and paraventricular nuclei and in a number of smaller accessory cell groups between these two nuclei, that secretes the hormones oxytocin and vasopressin.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
     
@@ -22466,8 +22491,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0011004">
         <rdfs:label>lens fiber cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002222"/>
-        <obo:IAO_0000115>A vetebrate lens cell that is any of the elongated, tightly packed cells that make up the bulk of the mature lens in a camera-type eye.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>lens fibre cell</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>A vetebrate lens cell that is any of the elongated, tightly packed cells that make up the bulk of the mature lens in a camera-type eye.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
     
@@ -22580,8 +22605,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0011107">
         <rdfs:label>Muller cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000681"/>
-        <oboInOwl:hasExactSynonym>Muller glia </oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Müller cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Muller glia </oboInOwl:hasExactSynonym>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
     
@@ -22592,8 +22617,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0011108">
         <rdfs:label>colon epithelial cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002253"/>
-        <oboInOwl:hasExactSynonym>colonic epithelial cell</oboInOwl:hasExactSynonym>
         <obo:IAO_0000115>Epithelial cell that is part of the colon epithelium. </obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>colonic epithelial cell</oboInOwl:hasExactSynonym>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
     
@@ -22604,8 +22629,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0011109">
         <rdfs:label>hypocretin-secreting neuron</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000540"/>
-        <obo:IAO_0000115>A neuron that releases hypocretin as a neurotransmitter.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>orexin</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>A neuron that releases hypocretin as a neurotransmitter.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
     
@@ -22627,9 +22652,9 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0011111">
         <rdfs:label>gonadotropin releasing neuron</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011112"/>
-        <oboInOwl:hasExactSynonym>GnRH-secreting neuron</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>GnRH neuron</oboInOwl:hasExactSynonym>
         <obo:IAO_0000115>Neuroendocrine cells that are born in the nasal placode during embryonic development and migrate through the nose and forebrain to the hypothalamus, where they regulate reproduction.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>GnRH-secreting neuron</oboInOwl:hasExactSynonym>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
     
@@ -22701,8 +22726,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0015000">
         <rdfs:label>cranial motor neuron</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000100"/>
-        <oboInOwl:hasExactSynonym>cranial motoneuron</oboInOwl:hasExactSynonym>
         <obo:IAO_0000115>Motor neuron that innervate muscles that control eye, jaw, and facial movements of the vertebrate head and parasympathetic neurons that innervate certain glands and organs. </obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>cranial motoneuron</oboInOwl:hasExactSynonym>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
     </owl:Class>
     
@@ -27432,8 +27457,8 @@
         </rdfs:subClassOf>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A flow cytometry core laboratory at a university.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Laboratory that has the mission of providing services. Core Laboratories often charge fees for services or are funded via their affiliated organizations.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000117>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#Facility_Core
 Definition: As defined in http://dictionary.reference.com/browse/facility
 requested in OBI 2894859</rdfs:comment>
@@ -27468,6 +27493,12 @@ requested in OBI 2894859</rdfs:comment>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ERO_0000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000008"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ERO_0000009 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000009">
@@ -27477,6 +27508,12 @@ requested in OBI 2894859</rdfs:comment>
         <obo:IAO_0000231 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Replaced with CLO:cell line class (CLO:0000031 cell line)</obo:IAO_0000231>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000014"/>
     
 
 
@@ -27528,9 +27565,27 @@ requested in OBI 2894859</rdfs:comment>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ERO_0000161 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000161"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000162 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000162"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ERO_0000278 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000278"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000285 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000285"/>
     
 
 
@@ -27547,8 +27602,8 @@ requested in OBI 2894859</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/swo/SWO_0000580"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An image of an agarose gel stained with Ethidium bromide.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Images that are obtained from gels, such as polyacrylamide or agarose gels used to analyze protein or DNA.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000117>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
     </owl:Class>
     
@@ -27589,6 +27644,12 @@ requested in OBI 2894859</rdfs:comment>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ERO_0000630 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000630"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ERO_0000698 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000698">
@@ -27612,6 +27673,18 @@ requested in OBI 2894859</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/ERO_0001002 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001002"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001194 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001194"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001200 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001200"/>
     
 
 
@@ -27810,8 +27883,8 @@ requested in OBI 2894859</rdfs:comment>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A stem cell line comprised of pluripotent stem cells experimentally derived from a non-pluripotent cells, typically an adult somatic cell, by inducing a forced expression of specific genes.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000117>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iPS cell line</obo:IAO_0000118>
-        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Induced_pluripotent_stem_cell</obo:IAO_0000119>
         <obo:IAO_0000118>iPSC</obo:IAO_0000118>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Induced_pluripotent_stem_cell</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -27855,8 +27928,8 @@ requested in OBI 2894859</rdfs:comment>
         <rdfs:label xml:lang="en">experimental subject role</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A role that inheres in a material that is input as the subject of interest in a scientific technique - either as an entity about which data is generated in an assay or study, or an entity that is transformed or modified in a material processing technique (e.g. the source from which a biological sample is taken)</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -27866,9 +27939,9 @@ requested in OBI 2894859</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001972">
         <rdfs:label xml:lang="en">ethnic group</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Group"/>
-        <obo:IAO_0000119>NCI Thesaurus C16564 ‘Ethnic Group’</obo:IAO_0000119>
         <obo:IAO_0000117>PERSON: Matthew Brush</obo:IAO_0000117>
         <obo:IAO_0000115>A social group characterized by a distinctive social and cultural tradition that is maintained from generation to generation. Members share a common history and origin and a sense of identification with the group. They have similar and distinctive features in their lifestyle habits and shared experiences. They often have a common genetic heritage which may be reflected in their experience of health and disease.</obo:IAO_0000115>
+        <obo:IAO_0000119>NCI Thesaurus C16564 ‘Ethnic Group’</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -27902,8 +27975,8 @@ requested in OBI 2894859</rdfs:comment>
         <rdfs:label xml:lang="en">Caucasian of European descent</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001975"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ethnic group comprised of persons having origins in any of the original peoples the European countries.</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -28102,8 +28175,8 @@ requested in OBI 2894859</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001996">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mortal adherent cell line</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0009829"/>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000119>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a mortal cell line that is propagated in culture as cells adhering to a solid substrate.</obo:IAO_0000115>
     </owl:Class>
     
@@ -28126,8 +28199,8 @@ requested in OBI 2894859</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001998">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mortal suspension cell line</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0009829"/>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a mortal cell line comprised of cells that are propagated while floating in culture medium, as opposed to adhering to some fixed substrate.</obo:IAO_0000115>
     </owl:Class>
     
@@ -28138,8 +28211,8 @@ requested in OBI 2894859</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001999">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mortal lymphocyte cell line</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001998"/>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a mortal suspension cell line comprised of lymphocytes, derived from a blood biospecimen containing non-adherent white blood cells</obo:IAO_0000115>
     </owl:Class>
     
@@ -28152,8 +28225,8 @@ requested in OBI 2894859</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0009828"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An immortalized cell line that has acquired the ability to form tumors after injection into immunologically compromised animals</obo:IAO_0000115>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cells comprising a transformed cell line can be transformed through endogenous pathological processes in an organism, or through experimental genetic modifications made to cells in vitro. </rdfs:comment>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -28212,8 +28285,8 @@ requested in OBI 2894859</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hematopoietic stem cell line</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002003"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A stem cell line comprised of cells that exhibit traits of mesodermally derived blood cells and can be further differentiated into mature blood cell types.</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -28224,8 +28297,8 @@ requested in OBI 2894859</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">somatic cell nuclear transfer stem cell line</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002003"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A stem cell line developed through the transfer of a somatic cell nucleus into an enucleated oocyte.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCNT stem cell line</obo:IAO_0000118>
     </owl:Class>
     
@@ -28237,8 +28310,8 @@ requested in OBI 2894859</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stem cell analysis study</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000471"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A study that aims to investigate characteristics of stem cells, specifically biological phenomenon at the level of or occuring within stem cells, where the cells are the primary subject of study.  This includes their capacity to differentiate to form specific cell and tissue types.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -28261,8 +28334,8 @@ requested in OBI 2894859</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stem cell differentiation study</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002009"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cell analysis study that investigates the capability of cells to  differentiate into specific cell types and/or form specific tissue types.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -28352,8 +28425,8 @@ requested in OBI 2894859</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002017">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sterility assay</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
         <app:preferredLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sterility assay</app:preferredLabel>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">an assay to determine the sterility of some material, by assaying the presence of microorganisms or other contaminating entities.</obo:IAO_0000115>
     </owl:Class>
@@ -28405,8 +28478,8 @@ requested in OBI 2894859</rdfs:comment>
         <rdfs:label>mixed ethnicity</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001972"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ethnic group that includes persons with significant ethnic contributions from more than one group.</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -28428,8 +28501,8 @@ requested in OBI 2894859</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002036">
         <rdfs:label>self</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Relationship"/>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a relationship between an individual and itself</obo:IAO_0000115>
     </owl:Class>
     
@@ -28933,8 +29006,8 @@ requested in OBI 2894859</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Caucasian of Russian descent</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001975"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ethnic group comprised of persons having origins in any of the original peoples the Russian territories.</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -29038,8 +29111,8 @@ requested in OBI 2894859</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">induction by episomal transformant</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002103"/>
         <app:preferredDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A pluripotency induction technique that employs the transfer of stabile genetic material into the nucleus of a cellular target without permanent integration into the target’s genome.</app:preferredDefinition>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -29050,8 +29123,8 @@ requested in OBI 2894859</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">induction by labile transformant</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002103"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A pluripotency induction technique that employs the transfer of labile or unstable transformant materials, typically mRNA or siRNA, into the cytoplasm of a cellular target, such that there is  no long term effect on the nucleus of the cell.</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -29083,8 +29156,8 @@ requested in OBI 2894859</rdfs:comment>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Relationship"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A reified relationship between a human subject in a biomedical study, and the proband in that study.</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Matthew Brush</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -29132,11 +29205,11 @@ requested in OBI 2894859</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002123">
         <rdfs:label xml:lang="en">optical tweezers</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000004"/>
+        <obo:IAO_0000118>single-beam gradient force trap</obo:IAO_0000118>
         <obo:IAO_0000119>http://en.wikipedia.org/wiki/Optical_tweezers</obo:IAO_0000119>
         <obo:IAO_0000117>PERSON:Tenille Johnson</obo:IAO_0000117>
-        <obo:IAO_0000115>An instrument that uses a highly focused laser beam to provide an attractive or repulsive force (typically on the order of piconewtons), depending on the refractive index mismatch to physically hold and move microscopic dielectric objects.</obo:IAO_0000115>
-        <obo:IAO_0000118>single-beam gradient force trap</obo:IAO_0000118>
         <rdfs:comment>See also: http://purl.obolibrary.org/obo/CHMO_0000946</rdfs:comment>
+        <obo:IAO_0000115>An instrument that uses a highly focused laser beam to provide an attractive or repulsive force (typically on the order of piconewtons), depending on the refractive index mismatch to physically hold and move microscopic dielectric objects.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -29158,10 +29231,10 @@ requested in OBI 2894859</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002165">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">recombinase-mediated cassette exchange</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001297"/>
-        <obo:IAO_0000117>PERSON:Tenille Johnson</obo:IAO_0000117>
         <obo:IAO_0000118>RMCE</obo:IAO_0000118>
         <obo:IAO_0000119>http://en.wikipedia.org/wiki/Recombinase-mediated_cassette_exchange</obo:IAO_0000119>
         <obo:IAO_0000112>Can be used to delete genes and replace them with genomic regions of choice.</obo:IAO_0000112>
+        <obo:IAO_0000117>PERSON:Tenille Johnson</obo:IAO_0000117>
         <obo:IAO_0000115>An experimental genetic modification technique that involves the clean exchange of a preexisting gene cassette for an analogous cassette carrying the &quot;gene of interest&quot; (GOI).</obo:IAO_0000115>
     </owl:Class>
     
@@ -29206,9 +29279,9 @@ requested in OBI 2894859</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002169">
         <rdfs:label xml:lang="en">luciferase assay</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001902"/>
-        <obo:IAO_0000117>PERSON:Tenille Johnson</obo:IAO_0000117>
-        <obo:IAO_0000119>https://www.promega.com/products/reporter-assays-and-transfection/reporter-assays/luciferase-assay-system/</obo:IAO_0000119>
         <obo:IAO_0000115>A bioluminescent assay that detects and quantifies the emission of light by firefly luciferase.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.promega.com/products/reporter-assays-and-transfection/reporter-assays/luciferase-assay-system/</obo:IAO_0000119>
+        <obo:IAO_0000117>PERSON:Tenille Johnson</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -29229,8 +29302,8 @@ requested in OBI 2894859</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002173">
         <rdfs:label xml:lang="en">reference genome data</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001573"/>
-        <obo:IAO_0000115>DNA sequence data that is a representative example of a species&apos; set of genes.</obo:IAO_0000115>
         <obo:IAO_0000117>PERSON:Tenille Johnson</obo:IAO_0000117>
+        <obo:IAO_0000115>DNA sequence data that is a representative example of a species&apos; set of genes.</obo:IAO_0000115>
         <obo:IAO_0000119>http://en.wikipedia.org/wiki/Reference_genome</obo:IAO_0000119>
     </owl:Class>
     
@@ -29241,9 +29314,9 @@ requested in OBI 2894859</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002174">
         <rdfs:label xml:lang="en">mass spectrometry labeling</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0600038"/>
-        <obo:IAO_0000115>A labeling technique that involves labeling proteins with various chemical groups to permit their differentiation in MS experiments.</obo:IAO_0000115>
-        <obo:IAO_0000119>PERSON:Robert Garces</obo:IAO_0000119>
         <obo:IAO_0000117>PERSON:Tenille Johnson</obo:IAO_0000117>
+        <obo:IAO_0000119>PERSON:Robert Garces</obo:IAO_0000119>
+        <obo:IAO_0000115>A labeling technique that involves labeling proteins with various chemical groups to permit their differentiation in MS experiments.</obo:IAO_0000115>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
     </owl:Class>
     
@@ -29254,9 +29327,9 @@ requested in OBI 2894859</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002175">
         <rdfs:label xml:lang="en">TMT quantitation</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002176"/>
-        <obo:IAO_0000117>PERSON:Tenille Johnson</obo:IAO_0000117>
-        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Tandem_mass_tag</obo:IAO_0000119>
         <obo:IAO_0000118>Tandem mass tags</obo:IAO_0000118>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Tandem_mass_tag</obo:IAO_0000119>
+        <obo:IAO_0000117>PERSON:Tenille Johnson</obo:IAO_0000117>
         <obo:IAO_0000115>An isobaric labeling technique that uses tags containing four regions with the same total molecular weights and structure, so that during chromatographic or electrophoretic separation and in single MS mode, molecules labelled with different tags are indistinguishable.</obo:IAO_0000115>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
     </owl:Class>
@@ -29268,9 +29341,9 @@ requested in OBI 2894859</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002176">
         <rdfs:label xml:lang="en">isobaric labeling</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002174"/>
-        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Isobaric_labeling</obo:IAO_0000119>
-        <obo:IAO_0000115>A mass spectrometry labeling technique in which peptides or proteins are labeled with various chemical groups that are isobaric, or the same in mass, but which fragment during tandem mass spectrometry to yield reporter ions of different mass.</obo:IAO_0000115>
         <obo:IAO_0000117>PERSON:Tenille Johnson</obo:IAO_0000117>
+        <obo:IAO_0000115>A mass spectrometry labeling technique in which peptides or proteins are labeled with various chemical groups that are isobaric, or the same in mass, but which fragment during tandem mass spectrometry to yield reporter ions of different mass.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Isobaric_labeling</obo:IAO_0000119>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
     </owl:Class>
     
@@ -29282,8 +29355,8 @@ requested in OBI 2894859</rdfs:comment>
         <rdfs:label xml:lang="en">stable isotope labeling by amino acids in cell culture</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002174"/>
         <obo:IAO_0000115>A mass spectrometry labeling technique that detects differences in protein abundance among samples using non-radioactive isotopic labeling.</obo:IAO_0000115>
-        <obo:IAO_0000117>PERSON:Tenille Johnson</obo:IAO_0000117>
         <obo:IAO_0000119>http://en.wikipedia.org/wiki/Stable_isotope_labeling_by_amino_acids_in_cell_culture</obo:IAO_0000119>
+        <obo:IAO_0000117>PERSON:Tenille Johnson</obo:IAO_0000117>
         <obo:IAO_0000118>SILAC</obo:IAO_0000118>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
     </owl:Class>
@@ -29295,11 +29368,11 @@ requested in OBI 2894859</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002178">
         <rdfs:label xml:lang="en">functional magnetic resonance imaging</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001235"/>
+        <obo:IAO_0000115>A magnetic resonance imaging technique that measures brain activity by detecting associated changes in blood flow. The procedure is similar to MRI but uses the change in magnetization between oxygen-rich and oxygen-poor blood as its basic measure. </obo:IAO_0000115>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Functional_magnetic_resonance_imaging</obo:IAO_0000119>
+        <obo:IAO_0000117>PERSON:Tenille Johnson</obo:IAO_0000117>
         <obo:IAO_0000118>fMRI</obo:IAO_0000118>
         <obo:IAO_0000118>functional MRI</obo:IAO_0000118>
-        <obo:IAO_0000117>PERSON:Tenille Johnson</obo:IAO_0000117>
-        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Functional_magnetic_resonance_imaging</obo:IAO_0000119>
-        <obo:IAO_0000115>A magnetic resonance imaging technique that measures brain activity by detecting associated changes in blood flow. The procedure is similar to MRI but uses the change in magnetization between oxygen-rich and oxygen-poor blood as its basic measure. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -29309,12 +29382,12 @@ requested in OBI 2894859</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002182">
         <rdfs:label xml:lang="en">body fat meter</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001002"/>
-        <obo:IAO_0000118>body fat analyzer</obo:IAO_0000118>
         <obo:IAO_0000119>http://en.wikipedia.org/wiki/Bioelectrical_impedance_analysis</obo:IAO_0000119>
-        <obo:IAO_0000117>PERSON:Tenille Johnson</obo:IAO_0000117>
+        <obo:IAO_0000118>body fat analyzer</obo:IAO_0000118>
         <obo:IAO_0000118>impedance meter</obo:IAO_0000118>
         <obo:IAO_0000115>A body composition analyzer used to estimate body fat, often using BIA (bioelectrical impedance analysis).
 </obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON:Tenille Johnson</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -29325,8 +29398,8 @@ requested in OBI 2894859</rdfs:comment>
         <rdfs:label xml:lang="en">body composition measurement</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001292"/>
         <obo:IAO_0000117>PERSON:Tenille Johnson</obo:IAO_0000117>
-        <app:preferredLabel>http://en.wikipedia.org/wiki/Body_composition</app:preferredLabel>
         <obo:IAO_0000115>A physiological assay used to measure the percentages of fat, bone, water and muscle in human bodies.</obo:IAO_0000115>
+        <app:preferredLabel>http://en.wikipedia.org/wiki/Body_composition</app:preferredLabel>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
     </owl:Class>
     
@@ -29339,8 +29412,8 @@ requested in OBI 2894859</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002183"/>
         <obo:IAO_0000117>PERSON:Tenille Johnson</obo:IAO_0000117>
         <obo:IAO_0000115>A body composition measurement method that uses the resistance of electrical flow through the body to estimate body fat.</obo:IAO_0000115>
-        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Bioelectrical_impedance_analysis</obo:IAO_0000119>
         <obo:IAO_0000118>BIA</obo:IAO_0000118>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Bioelectrical_impedance_analysis</obo:IAO_0000119>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
     </owl:Class>
     
@@ -29351,11 +29424,11 @@ requested in OBI 2894859</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002185">
         <rdfs:label xml:lang="en">air displacement plethysmography</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0002183"/>
-        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Whole-body_air_displacement_plethysmography</obo:IAO_0000119>
-        <obo:IAO_0000118>whole-Body air displacement plethysmography</obo:IAO_0000118>
         <obo:IAO_0000115>A body composition measurement method that indirectly measures the volume of an object by determining the volume of air it displaces inside an enclosed chamber (plethysmograph).</obo:IAO_0000115>
-        <obo:IAO_0000118>ADP</obo:IAO_0000118>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Whole-body_air_displacement_plethysmography</obo:IAO_0000119>
         <obo:IAO_0000117>PERSON:Tenille Johnson</obo:IAO_0000117>
+        <obo:IAO_0000118>whole-Body air displacement plethysmography</obo:IAO_0000118>
+        <obo:IAO_0000118>ADP</obo:IAO_0000118>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
     </owl:Class>
     
@@ -29366,8 +29439,8 @@ requested in OBI 2894859</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002186">
         <rdfs:label xml:lang="en">meal preparation</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000007"/>
-        <obo:IAO_0000112>Used by dietitians in clinical settings for study participants.</obo:IAO_0000112>
         <obo:IAO_0000119>PERSON:Hannah Fox</obo:IAO_0000119>
+        <obo:IAO_0000112>Used by dietitians in clinical settings for study participants.</obo:IAO_0000112>
         <obo:IAO_0000117>PERSON:Tenille Johnson</obo:IAO_0000117>
         <obo:IAO_0000115>A technique involving preparation of food items based on an individualized nutrient controlled diet.</obo:IAO_0000115>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
@@ -29386,10 +29459,10 @@ requested in OBI 2894859</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A measurement instrument that captures changes in volume within an organ or whole body (usually resulting from fluctuations in the amount of blood or air it contains).</obo:IAO_0000115>
-        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Plethysmograph</obo:IAO_0000119>
         <obo:IAO_0000117>PERSON:Tenille Johnson</obo:IAO_0000117>
         <obo:IAO_0000112>The BOD POD composition tracking system.</obo:IAO_0000112>
+        <obo:IAO_0000115>A measurement instrument that captures changes in volume within an organ or whole body (usually resulting from fluctuations in the amount of blood or air it contains).</obo:IAO_0000115>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Plethysmograph</obo:IAO_0000119>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
     </owl:Class>
     
@@ -29406,9 +29479,9 @@ requested in OBI 2894859</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000117>PERSON:Tenille Johnson</obo:IAO_0000117>
         <obo:IAO_0000115>An X-ray apparatus that measures the calcium content of bone to reflect bone density by generating two X-ray beams and using the difference between how much energy is passed through the bone to determine the extent of bone loss.</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.news-medical.net/Bone-Densitometers</obo:IAO_0000119>
+        <obo:IAO_0000117>PERSON:Tenille Johnson</obo:IAO_0000117>
         <obo:IAO_0000112>A DXA scanning device.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
     </owl:Class>
@@ -29420,9 +29493,9 @@ requested in OBI 2894859</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002190">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">resource collection</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Group"/>
-        <obo:IAO_0000115>A group of physical or digital resources that share a common identity, purpose, or theme.</obo:IAO_0000115>
-        <obo:IAO_0000119>PERSON:Tenille Johnson</obo:IAO_0000119>
         <obo:IAO_0000117>PERSON:Tenille Johnson</obo:IAO_0000117>
+        <obo:IAO_0000119>PERSON:Tenille Johnson</obo:IAO_0000119>
+        <obo:IAO_0000115>A group of physical or digital resources that share a common identity, purpose, or theme.</obo:IAO_0000115>
         <obo:IAO_0000112>A panel of iPS cell lines grouped by a related disease.</obo:IAO_0000112>
     </owl:Class>
     
@@ -30604,9 +30677,9 @@ requested in OBI 2894859</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0100361"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000119 xml:lang="en">EFO_0002770 transcription profiling by high throughput sequencing</obo:IAO_0000119>
         <obo:IAO_0000232>JZ: should be inferred as &apos;DNA sequencing&apos;. Will check in the future.</obo:IAO_0000232>
         <obo:IAO_0000115 xml:lang="en">An assay in which sequencing technology (e.g. Solexa/454) is used to generate RNA sequence, analyse the transcibed regions of the genome, and or to quantitate transcript abundance</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">EFO_0002770 transcription profiling by high throughput sequencing</obo:IAO_0000119>
         <obo:IAO_0000117 xml:lang="en">PERSON: James Malone</obo:IAO_0000117>
         <obo:IAO_0000111 xml:lang="en">RNA-seq assay</obo:IAO_0000111>
         <obo:IAO_0000118 xml:lang="en">transcription profiling by high throughput sequencing</obo:IAO_0000118>
@@ -30677,6 +30750,12 @@ requested in OBI 2894859</rdfs:comment>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0400147 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400147"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0600038 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600038"/>
@@ -30695,9 +30774,9 @@ requested in OBI 2894859</rdfs:comment>
         <rdfs:label>diagnosis</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
-        <obo:IAO_0000232>creation date: 2009-06-23T12:42:23Z</obo:IAO_0000232>
-        <obo:IAO_0000119>http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
         <obo:IAO_0000115 xml:lang="en">The representation of a conclusion of a diagnostic process.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+        <obo:IAO_0000232>creation date: 2009-06-23T12:42:23Z</obo:IAO_0000232>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
     </owl:Class>
     
@@ -30894,9 +30973,26 @@ requested in OBI 2894859</rdfs:comment>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/ERO_0000316"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biosafety level 4</rdfs:label>
     </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001399">
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ERO_0001398">
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </rdf:Description>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
 
