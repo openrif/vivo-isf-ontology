@@ -244,6 +244,16 @@
     
 
 
+    <!-- http://edamontology.org/format_1912 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_1912">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nexus format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/data/SWO_3000041"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
     <!-- http://edamontology.org/format_1930 -->
 
     <owl:Class rdf:about="http://edamontology.org/format_1930">
@@ -264,6 +274,28 @@
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">html, or HyperText Markup Language in full, is a data format specification is a markup language for web pages and is the publishing language of the World Wide Web.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/TR/html401/</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/swo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/format_2573 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_2573">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.sam</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/data/SWO_3000041"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sequence Alignment/Map format</obo:IAO_0000118>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/format_3005 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3005">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.wig</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/data/SWO_3000041"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wiggle format</obo:IAO_0000118>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
     </owl:Class>
     
 
@@ -21594,50 +21626,6 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/ERO_0001887 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001887">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.sql</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/data/SWO_3000041"/>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SQL format</obo:IAO_0000118>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0001888 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001888">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.mysql</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/data/SWO_3000041"/>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MySQL format</obo:IAO_0000118>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0001894 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001894">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.wig</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/data/SWO_3000041"/>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wiggle format</obo:IAO_0000118>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0001895 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001895">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.sam</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/data/SWO_3000041"/>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sequence Alignment/Map format</obo:IAO_0000118>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/ERO_0001896 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001896">
@@ -21957,16 +21945,6 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An instrument for non-invasive measurement of physiological signals in both humans and animals specifically during sleep.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Faith Coldren</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Scott Hoffmann</obo:IAO_0000117>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0001943 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001943">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nexus format</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/data/SWO_3000041"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
     </owl:Class>
     
@@ -49360,6 +49338,28 @@ there is a trade name &apos;nucleofactor&apos;</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.csv</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/data/SWO_3000041"/>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Comma-separated values</obo:IAO_0000118>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000084 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/data/SWO_3000084">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.mysql</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/data/SWO_3000041"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MySQL format</obo:IAO_0000118>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/swo/data/SWO_3000085 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/data/SWO_3000085">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.sql</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/data/SWO_3000041"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SQL format</obo:IAO_0000118>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
     </owl:Class>
     
