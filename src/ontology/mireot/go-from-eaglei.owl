@@ -1,595 +1,183 @@
-<?xml version="1.0"?>
-
-
-<!DOCTYPE rdf:RDF [
-    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
-    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
-    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
-    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
-    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-]>
-
-
-<rdf:RDF xmlns="&obo;arg/go-mireot-from-eaglei.owl#"
-     xml:base="&obo;arg/go-mireot-from-eaglei.owl"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-    <owl:Ontology rdf:about="&obo;arg/go-mireot-from-eaglei.owl"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotation properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
-
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
-
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000118"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
-
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000412"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Classes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0001525 -->
-
-    <owl:Class rdf:about="&obo;GO_0001525">
-        <rdfs:label rdf:datatype="&xsd;string">angiogenesis</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;GO_0044767"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0003006 -->
-
-    <owl:Class rdf:about="&obo;GO_0003006">
-        <rdfs:label rdf:datatype="&xsd;string">developmental process involved in reproduction</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;GO_0022414"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0006629 -->
-
-    <owl:Class rdf:about="&obo;GO_0006629">
-        <rdfs:label rdf:datatype="&xsd;string">lipid metabolic process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;GO_0044710"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0006807 -->
-
-    <owl:Class rdf:about="&obo;GO_0006807">
-        <rdfs:label rdf:datatype="&xsd;string">nitrogen compound metabolic process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;GO_0008152"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0006810 -->
-
-    <rdf:Description rdf:about="&obo;GO_0006810">
-        <rdfs:label rdf:datatype="&xsd;string">transport</rdfs:label>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0006811 -->
-
-    <owl:Class rdf:about="&obo;GO_0006811">
-        <rdfs:label rdf:datatype="&xsd;string">ion transport</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;GO_0044765"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0006869 -->
-
-    <owl:Class rdf:about="&obo;GO_0006869">
-        <rdfs:label rdf:datatype="&xsd;string">lipid transport</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;GO_0044765"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0007420 -->
-
-    <owl:Class rdf:about="&obo;GO_0007420">
-        <rdfs:label rdf:datatype="&xsd;string">brain development</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;GO_0044767"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0007568 -->
-
-    <owl:Class rdf:about="&obo;GO_0007568">
-        <rdfs:label rdf:datatype="&xsd;string">aging</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;GO_0044767"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0007617 -->
-
-    <rdf:Description rdf:about="&obo;GO_0007617">
-        <rdfs:label rdf:datatype="&xsd;string">mating behavior</rdfs:label>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0007619 -->
-
-    <owl:Class rdf:about="&obo;GO_0007619">
-        <rdfs:label rdf:datatype="&xsd;string">courtship behavior</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;GO_0007617"/>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">The behavioral interactions between organisms for the purpose of attracting sexual partners.</obo:IAO_0000115>
-        <obo:IAO_0000118 rdf:datatype="&xsd;string">courtship behaviour</obo:IAO_0000118>
-        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0008150 -->
-
-    <owl:Class rdf:about="&obo;GO_0008150">
-        <rdfs:label rdf:datatype="&xsd;string">biological_process</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0008152 -->
-
-    <rdf:Description rdf:about="&obo;GO_0008152">
-        <rdfs:label rdf:datatype="&xsd;string">metabolic process</rdfs:label>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0009914 -->
-
-    <owl:Class rdf:about="&obo;GO_0009914">
-        <rdfs:label rdf:datatype="&xsd;string">hormone transport</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;GO_0044765"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0009987 -->
-
-    <rdf:Description rdf:about="&obo;GO_0009987">
-        <rdfs:label rdf:datatype="&xsd;string">cellular process</rdfs:label>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0010033 -->
-
-    <rdf:Description rdf:about="&obo;GO_0010033">
-        <rdfs:label rdf:datatype="&xsd;string">response to organic substance</rdfs:label>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0014070 -->
-
-    <owl:Class rdf:about="&obo;GO_0014070">
-        <rdfs:label rdf:datatype="&xsd;string">response to organic cyclic compound</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;GO_0010033"/>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of an organic cyclic compound stimulus.</obo:IAO_0000115>
-        <obo:IAO_0000118 rdf:datatype="&xsd;string">response to organic cyclic substance</obo:IAO_0000118>
-        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0015837 -->
-
-    <owl:Class rdf:about="&obo;GO_0015837">
-        <rdfs:label rdf:datatype="&xsd;string">amine transport</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;GO_0044765"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0015849 -->
-
-    <owl:Class rdf:about="&obo;GO_0015849">
-        <rdfs:label rdf:datatype="&xsd;string">organic acid transport</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;GO_0044765"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0015850 -->
-
-    <owl:Class rdf:about="&obo;GO_0015850">
-        <rdfs:label rdf:datatype="&xsd;string">organic hydroxy compound transport</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;GO_0044765"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0018958 -->
-
-    <owl:Class rdf:about="&obo;GO_0018958">
-        <rdfs:label rdf:datatype="&xsd;string">phenol-containing compound metabolic process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;GO_1901360"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0019048 -->
-
-    <rdf:Description rdf:about="&obo;GO_0019048">
-        <rdfs:label rdf:datatype="&xsd;string">virus-host interaction</rdfs:label>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0019054 -->
-
-    <owl:Class rdf:about="&obo;GO_0019054">
-        <rdfs:label rdf:datatype="&xsd;string">modulation by virus of host process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;GO_0019048"/>
-        <rdfs:subClassOf rdf:resource="&obo;GO_0044068"/>
-        <rdfs:subClassOf rdf:resource="&obo;GO_0044792"/>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">The process in which a virus effects a change in the processes and activities of its host organism.</obo:IAO_0000115>
-        <obo:IAO_0000118 rdf:datatype="&xsd;string">modification by virus of host cellular process</obo:IAO_0000118>
-        <obo:IAO_0000118 rdf:datatype="&xsd;string">regulation by virus of host cellular process</obo:IAO_0000118>
-        <obo:IAO_0000118 rdf:datatype="&xsd;string">regulation of cellular process in host by virus</obo:IAO_0000118>
-        <obo:IAO_0000118 rdf:datatype="&xsd;string">regulation of host cellular process by virus</obo:IAO_0000118>
-        <obo:IAO_0000118 rdf:datatype="&xsd;string">viral host cell process manipulation</obo:IAO_0000118>
-        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0019827 -->
-
-    <owl:Class rdf:about="&obo;GO_0019827">
-        <rdfs:label rdf:datatype="&xsd;string">stem cell maintenance</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;GO_0044707"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0021854 -->
-
-    <owl:Class rdf:about="&obo;GO_0021854">
-        <rdfs:label rdf:datatype="&xsd;string">hypothalamus development</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;GO_0044767"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0022414 -->
-
-    <rdf:Description rdf:about="&obo;GO_0022414">
-        <rdfs:label rdf:datatype="&xsd;string">reproductive process</rdfs:label>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0022602 -->
-
-    <owl:Class rdf:about="&obo;GO_0022602">
-        <rdfs:label rdf:datatype="&xsd;string">ovulation cycle process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;GO_0044699"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0031016 -->
-
-    <owl:Class rdf:about="&obo;GO_0031016">
-        <rdfs:label rdf:datatype="&xsd;string">pancreas development</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;GO_0044767"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0032502 -->
-
-    <rdf:Description rdf:about="&obo;GO_0032502">
-        <rdfs:label rdf:datatype="&xsd;string">developmental process</rdfs:label>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0033032 -->
-
-    <owl:Class rdf:about="&obo;GO_0033032">
-        <rdfs:label rdf:datatype="&xsd;string">regulation of myeloid cell apoptotic process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;GO_0042981"/>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">Any process that modulates the frequency, rate, or extent of myeloid cell apoptotic process.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0042981 -->
-
-    <rdf:Description rdf:about="&obo;GO_0042981">
-        <rdfs:label rdf:datatype="&xsd;string">regulation of apoptotic process</rdfs:label>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0043934 -->
-
-    <owl:Class rdf:about="&obo;GO_0043934">
-        <rdfs:label rdf:datatype="&xsd;string">sporulation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;GO_0044767"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0044003 -->
-
-    <rdf:Description rdf:about="&obo;GO_0044003">
-        <rdfs:label rdf:datatype="&xsd;string">modification by symbiont of host morphology or physiology</rdfs:label>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">The process in which a symbiont organism effects a change in the structure or processes of its host organism.</obo:IAO_0000115>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0044068 -->
-
-    <owl:Class rdf:about="&obo;GO_0044068">
-        <rdfs:label rdf:datatype="&xsd;string">modulation by symbiont of host cellular process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;GO_0044003"/>
-        <rdfs:subClassOf rdf:resource="&obo;GO_0050794"/>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">Any process in which a symbiont organism modulates the frequency, rate or extent of a cellular process, any process that is carried out at the cellular level, but not necessarily restricted to a single cell, in its host organism.</obo:IAO_0000115>
-        <obo:IAO_0000118 rdf:datatype="&xsd;string">modulation of host cellular process by symbiont</obo:IAO_0000118>
-        <obo:IAO_0000118 rdf:datatype="&xsd;string">regulation by symbiont of host cellular process </obo:IAO_0000118>
-        <obo:IAO_0000118 rdf:datatype="&xsd;string">regulation of host cellular process by symbiont</obo:IAO_0000118>
-        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0044237 -->
-
-    <owl:Class rdf:about="&obo;GO_0044237">
-        <rdfs:label rdf:datatype="&xsd;string">cellular metabolic process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;GO_0009987"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0044699 -->
-
-    <rdf:Description rdf:about="&obo;GO_0044699">
-        <rdfs:label rdf:datatype="&xsd;string">single-organism process</rdfs:label>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0044707 -->
-
-    <rdf:Description rdf:about="&obo;GO_0044707">
-        <rdfs:label rdf:datatype="&xsd;string">single-multicellular organism process</rdfs:label>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0044710 -->
-
-    <rdf:Description rdf:about="&obo;GO_0044710">
-        <rdfs:label rdf:datatype="&xsd;string">single-organism metabolic process</rdfs:label>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0044765 -->
-
-    <owl:Class rdf:about="&obo;GO_0044765">
-        <rdfs:label rdf:datatype="&xsd;string">single-organism transport</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;GO_0006810"/>
-        <rdfs:subClassOf rdf:resource="&obo;GO_0044699"/>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of substances (such as macromolecules, small molecules, ions) into, out of or within a cell, or between cells, or within a multicellular organism by means of some agent such as a transporter or pore, involving a single organism.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0044767 -->
-
-    <owl:Class rdf:about="&obo;GO_0044767">
-        <rdfs:label rdf:datatype="&xsd;string">single-organism developmental process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;GO_0032502"/>
-        <rdfs:subClassOf rdf:resource="&obo;GO_0044699"/>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">A biological process whose specific outcome is the progression of an integrated living unit: an anatomical structure (which may be a subcellular structure, cell, tissue, or organ), or organism over time from an initial condition to a later condition, involving only one organism.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0044792 -->
-
-    <owl:Class rdf:about="&obo;GO_0044792">
-        <rdfs:label rdf:datatype="&xsd;string">modulation by virus of host morphology or physiology</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;GO_0044003"/>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">The process in which a virus effects a change in the structure or processes of its host organism.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0046730 -->
-
-    <owl:Class rdf:about="&obo;GO_0046730">
-        <rdfs:label rdf:datatype="&xsd;string">induction of host immune response by virus</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;GO_0019054"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0048468 -->
-
-    <owl:Class rdf:about="&obo;GO_0048468">
-        <rdfs:label rdf:datatype="&xsd;string">cell development</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;GO_0044767"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0048511 -->
-
-    <owl:Class rdf:about="&obo;GO_0048511">
-        <rdfs:label rdf:datatype="&xsd;string">rhythmic process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;GO_0008150"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0048736 -->
-
-    <owl:Class rdf:about="&obo;GO_0048736">
-        <rdfs:label rdf:datatype="&xsd;string">appendage development</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;GO_0044767"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0048821 -->
-
-    <owl:Class rdf:about="&obo;GO_0048821">
-        <rdfs:label rdf:datatype="&xsd;string">erythrocyte development</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;GO_0061515"/>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">The process whose specific outcome is the progression of an erythrocyte over time, from its formation to the mature structure.</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0050794 -->
-
-    <rdf:Description rdf:about="&obo;GO_0050794">
-        <rdfs:label rdf:datatype="&xsd;string">regulation of cellular process</rdfs:label>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0061515 -->
-
-    <owl:Class rdf:about="&obo;GO_0061515">
-        <rdfs:label rdf:datatype="&xsd;string">myeloid cell development</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;GO_0048468"/>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">The process whose specific outcome is the progression of a myeloid cell over time, from its formation to the mature structure.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0071425 -->
-
-    <owl:Class rdf:about="&obo;GO_0071425">
-        <rdfs:label rdf:datatype="&xsd;string">hematopoietic stem cell proliferation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;GO_0072089"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0071704 -->
-
-    <owl:Class rdf:about="&obo;GO_0071704">
-        <rdfs:label rdf:datatype="&xsd;string">organic substance metabolic process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;GO_0008152"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0072089 -->
-
-    <rdf:Description rdf:about="&obo;GO_0072089">
-        <rdfs:label rdf:datatype="&xsd;string">stem cell proliferation</rdfs:label>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0097068 -->
-
-    <owl:Class rdf:about="&obo;GO_0097068">
-        <rdfs:label rdf:datatype="&xsd;string">response to thyroxine stimulus</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;GO_0014070"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0097094 -->
-
-    <owl:Class rdf:about="&obo;GO_0097094">
-        <rdfs:label rdf:datatype="&xsd;string">craniofacial suture morphogenesis</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;GO_0044767"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_1901360 -->
-
-    <rdf:Description rdf:about="&obo;GO_1901360">
-        <rdfs:label rdf:datatype="&xsd;string">organic cyclic compound metabolic process</rdfs:label>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_2000109 -->
-
-    <owl:Class rdf:about="&obo;GO_2000109">
-        <rdfs:label rdf:datatype="&xsd;string">regulation of macrophage apoptotic process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;GO_0033032"/>
-    </owl:Class>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description rdf:about="&obo;GO_0010243">
-        <rdfs:label rdf:datatype="&xsd;string">response to organonitrogen compound</rdfs:label>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of an organonitrogen stimulus. An organonitrogen compound is formally a compound containing at least one carbon-nitrogen bond.</obo:IAO_0000115>
-        <obo:IAO_0000118 rdf:datatype="&xsd;string">response to organic nitrogen</obo:IAO_0000118>
-    </rdf:Description>
-</rdf:RDF>
-
-
-
-<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
-
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://purl.obolibrary.org/obo/arg/go-mireot-from-eaglei.owl>
+
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0001525>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0003006>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0006629>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0006807>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0006811>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0006869>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0007420>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0007568>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0007619>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0008150>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0009914>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0014070>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0015837>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0015849>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0015850>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0018958>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0019054>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0019827>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0021854>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0022602>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0031016>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0033032>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0043934>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0044068>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0044237>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0044765>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0044767>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0044792>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0046730>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0048468>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0048511>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0048736>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0048821>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0061515>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0071425>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0071704>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0097068>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0097094>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_2000109>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000118>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000412>))
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0001525> "angiogenesis"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0001525> <http://purl.obolibrary.org/obo/GO_0044767>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0003006> "developmental process involved in reproduction"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0003006> <http://purl.obolibrary.org/obo/GO_0022414>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0006629> "lipid metabolic process"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0006629> <http://purl.obolibrary.org/obo/GO_0044710>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0006807> "nitrogen compound metabolic process"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0006807> <http://purl.obolibrary.org/obo/GO_0008152>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0006810> "transport"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0006811> "ion transport"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0006811> <http://purl.obolibrary.org/obo/GO_0044765>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0006869> "lipid transport"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0006869> <http://purl.obolibrary.org/obo/GO_0044765>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0007420> "brain development"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0007420> <http://purl.obolibrary.org/obo/GO_0044767>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0007568> "aging"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0007568> <http://purl.obolibrary.org/obo/GO_0044767>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0007617> "mating behavior"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0007619> "courtship behavior"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0007619> "The behavioral interactions between organisms for the purpose of attracting sexual partners."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/GO_0007619> <http://purl.obolibrary.org/obo/go.owl>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/GO_0007619> "courtship behaviour"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0007619> <http://purl.obolibrary.org/obo/GO_0007617>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0008150> "biological_process"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0008152> "metabolic process"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0009914> "hormone transport"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0009914> <http://purl.obolibrary.org/obo/GO_0044765>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0009987> "cellular process"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0010033> "response to organic substance"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/GO_0014070> <http://purl.obolibrary.org/obo/go.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0014070> "response to organic cyclic compound"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/GO_0014070> "response to organic cyclic substance"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0014070> "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of an organic cyclic compound stimulus."^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0014070> <http://purl.obolibrary.org/obo/GO_0010033>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0015837> "amine transport"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0015837> <http://purl.obolibrary.org/obo/GO_0044765>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0015849> "organic acid transport"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0015849> <http://purl.obolibrary.org/obo/GO_0044765>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0015850> "organic hydroxy compound transport"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0015850> <http://purl.obolibrary.org/obo/GO_0044765>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0018958> "phenol-containing compound metabolic process"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0018958> <http://purl.obolibrary.org/obo/GO_1901360>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0019048> "virus-host interaction"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0019054> "The process in which a virus effects a change in the processes and activities of its host organism."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/GO_0019054> "viral host cell process manipulation"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/GO_0019054> "regulation by virus of host cellular process"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/GO_0019054> "regulation of cellular process in host by virus"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0019054> "modulation by virus of host process"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/GO_0019054> <http://purl.obolibrary.org/obo/go.owl>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/GO_0019054> "regulation of host cellular process by virus"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/GO_0019054> "modification by virus of host cellular process"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0019054> <http://purl.obolibrary.org/obo/GO_0019048>)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0019054> <http://purl.obolibrary.org/obo/GO_0044068>)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0019054> <http://purl.obolibrary.org/obo/GO_0044792>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0019827> "stem cell maintenance"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0019827> <http://purl.obolibrary.org/obo/GO_0044707>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0021854> "hypothalamus development"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0021854> <http://purl.obolibrary.org/obo/GO_0044767>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0022414> "reproductive process"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0022602> "ovulation cycle process"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0022602> <http://purl.obolibrary.org/obo/GO_0044699>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0031016> "pancreas development"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0031016> <http://purl.obolibrary.org/obo/GO_0044767>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0032502> "developmental process"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0033032> "Any process that modulates the frequency, rate, or extent of myeloid cell apoptotic process."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0033032> "regulation of myeloid cell apoptotic process"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/GO_0033032> <http://purl.obolibrary.org/obo/go.owl>)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0033032> <http://purl.obolibrary.org/obo/GO_0042981>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0042981> "regulation of apoptotic process"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0043934> "sporulation"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0043934> <http://purl.obolibrary.org/obo/GO_0044767>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0044003> "modification by symbiont of host morphology or physiology"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0044003> "The process in which a symbiont organism effects a change in the structure or processes of its host organism."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/GO_0044068> "regulation of host cellular process by symbiont"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/GO_0044068> "modulation of host cellular process by symbiont"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0044068> "Any process in which a symbiont organism modulates the frequency, rate or extent of a cellular process, any process that is carried out at the cellular level, but not necessarily restricted to a single cell, in its host organism."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/GO_0044068> <http://purl.obolibrary.org/obo/go.owl>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/GO_0044068> "regulation by symbiont of host cellular process "^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0044068> "modulation by symbiont of host cellular process"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0044068> <http://purl.obolibrary.org/obo/GO_0044003>)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0044068> <http://purl.obolibrary.org/obo/GO_0050794>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0044237> "cellular metabolic process"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0044237> <http://purl.obolibrary.org/obo/GO_0009987>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0044699> "single-organism process"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0044707> "single-multicellular organism process"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0044710> "single-organism metabolic process"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0044765> "single-organism transport"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/GO_0044765> <http://purl.obolibrary.org/obo/go.owl>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0044765> "The directed movement of substances (such as macromolecules, small molecules, ions) into, out of or within a cell, or between cells, or within a multicellular organism by means of some agent such as a transporter or pore, involving a single organism."^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0044765> <http://purl.obolibrary.org/obo/GO_0006810>)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0044765> <http://purl.obolibrary.org/obo/GO_0044699>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0044767> "single-organism developmental process"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0044767> "A biological process whose specific outcome is the progression of an integrated living unit: an anatomical structure (which may be a subcellular structure, cell, tissue, or organ), or organism over time from an initial condition to a later condition, involving only one organism."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/GO_0044767> <http://purl.obolibrary.org/obo/go.owl>)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0044767> <http://purl.obolibrary.org/obo/GO_0032502>)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0044767> <http://purl.obolibrary.org/obo/GO_0044699>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0044792> "The process in which a virus effects a change in the structure or processes of its host organism."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0044792> "modulation by virus of host morphology or physiology"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/GO_0044792> <http://purl.obolibrary.org/obo/go.owl>)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0044792> <http://purl.obolibrary.org/obo/GO_0044003>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0046730> "induction of host immune response by virus"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0046730> <http://purl.obolibrary.org/obo/GO_0019054>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0048468> "cell development"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0048468> <http://purl.obolibrary.org/obo/GO_0044767>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0048511> "rhythmic process"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0048511> <http://purl.obolibrary.org/obo/GO_0008150>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0048736> "appendage development"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0048736> <http://purl.obolibrary.org/obo/GO_0044767>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0048821> "erythrocyte development"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0048821> "The process whose specific outcome is the progression of an erythrocyte over time, from its formation to the mature structure."^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0048821> <http://purl.obolibrary.org/obo/GO_0061515>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0050794> "regulation of cellular process"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/GO_0061515> <http://purl.obolibrary.org/obo/go.owl>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0061515> "The process whose specific outcome is the progression of a myeloid cell over time, from its formation to the mature structure."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0061515> "myeloid cell development"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0061515> <http://purl.obolibrary.org/obo/GO_0048468>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0071425> "hematopoietic stem cell proliferation"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0071425> <http://purl.obolibrary.org/obo/GO_0072089>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0071704> "organic substance metabolic process"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0071704> <http://purl.obolibrary.org/obo/GO_0008152>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0072089> "stem cell proliferation"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0097068> "response to thyroxine stimulus"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0097068> <http://purl.obolibrary.org/obo/GO_0014070>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0097094> "craniofacial suture morphogenesis"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0097094> <http://purl.obolibrary.org/obo/GO_0044767>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_1901360> "organic cyclic compound metabolic process"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_2000109> "regulation of macrophage apoptotic process"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_2000109> <http://purl.obolibrary.org/obo/GO_0033032>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0010243> "response to organonitrogen compound"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0010243> "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of an organonitrogen stimulus. An organonitrogen compound is formally a compound containing at least one carbon-nitrogen bond."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/GO_0010243> "response to organic nitrogen"^^xsd:string)
+)
