@@ -1,27 +1,70 @@
-Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
-Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
-Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
-Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
-Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/arg/mapping-bfo-ro-properties-to-numerical.owl#"
+     xml:base="http://purl.obolibrary.org/obo/arg/mapping-bfo-ro-properties-to-numerical.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owlcl="http://owl.essaid.com/owlcl/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/arg/mapping-bfo-ro-properties-to-numerical.owl">
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
+        <owl:imports rdf:resource="http://purl.org/obo/owl/ro"/>
+        <owl:imports rdf:resource="https://raw.github.com/ShahimEssaid/OwlCL/master/owl/owlcl.owl"/>
+    </owl:Ontology>
+    
 
 
-Ontology(<http://purl.obolibrary.org/obo/arg/mapping-bfo-ro-properties-to-numerical.owl>
-Import(<http://purl.obolibrary.org/obo/bfo.owl>)
-Import(<https://raw.github.com/ShahimEssaid/OwlCL/master/owl/owlcl.owl>)
-Import(<http://purl.obolibrary.org/obo/ro.owl>)
-Import(<http://purl.org/obo/owl/ro>)
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
-AnnotationAssertion(<http://owl.essaid.com/owlcl/owlcl_iri_mappes_to> <http://www.obofoundry.org/ro/ro.owl#adjacent_to> <http://purl.obolibrary.org/obo/RO_0002220>)
-AnnotationAssertion(<http://owl.essaid.com/owlcl/owlcl_iri_mappes_to> <http://www.obofoundry.org/ro/ro.owl#derived_into> <http://purl.obolibrary.org/obo/RO_0001001>)
-AnnotationAssertion(<http://owl.essaid.com/owlcl/owlcl_iri_mappes_to> <http://www.obofoundry.org/ro/ro.owl#location_of> <http://purl.obolibrary.org/obo/RO_0001015>)
-AnnotationAssertion(<http://owl.essaid.com/owlcl/owlcl_iri_mappes_to> <http://www.obofoundry.org/ro/ro.owl#contained_in> <http://purl.obolibrary.org/obo/RO_0001018>)
-AnnotationAssertion(<http://owl.essaid.com/owlcl/owlcl_iri_mappes_to> <http://www.obofoundry.org/ro/ro.owl#part_of> <http://purl.obolibrary.org/obo/BFO_0000050>)
-AnnotationAssertion(<http://owl.essaid.com/owlcl/owlcl_iri_mappes_to> <http://www.obofoundry.org/ro/ro.owl#located_in> <http://purl.obolibrary.org/obo/RO_0001025>)
-AnnotationAssertion(<http://owl.essaid.com/owlcl/owlcl_iri_mappes_to> <http://www.obofoundry.org/ro/ro.owl#preceded_by> <http://purl.obolibrary.org/obo/BFO_0000062>)
-AnnotationAssertion(<http://owl.essaid.com/owlcl/owlcl_iri_mappes_to> <http://www.obofoundry.org/ro/ro.owl#participates_in> <http://purl.obolibrary.org/obo/RO_0000056>)
-AnnotationAssertion(<http://owl.essaid.com/owlcl/owlcl_iri_mappes_to> <http://www.obofoundry.org/ro/ro.owl#contains> <http://purl.obolibrary.org/obo/RO_0001019>)
-AnnotationAssertion(<http://owl.essaid.com/owlcl/owlcl_iri_mappes_to> <http://www.obofoundry.org/ro/ro.owl#has_part> <http://purl.obolibrary.org/obo/BFO_0000051>)
-AnnotationAssertion(<http://owl.essaid.com/owlcl/owlcl_iri_mappes_to> <http://www.obofoundry.org/ro/ro.owl#precedes> <http://purl.obolibrary.org/obo/BFO_0000063>)
-AnnotationAssertion(<http://owl.essaid.com/owlcl/owlcl_iri_mappes_to> <http://www.obofoundry.org/ro/ro.owl#has_participant> <http://purl.obolibrary.org/obo/RO_0000057>)
-AnnotationAssertion(<http://owl.essaid.com/owlcl/owlcl_iri_mappes_to> <http://www.obofoundry.org/ro/ro.owl#derives_from> <http://purl.obolibrary.org/obo/RO_0001000>)
-)
+    <rdf:Description rdf:about="http://www.obofoundry.org/ro/ro.owl#contains">
+        <owlcl:owlcl_iri_mappes_to rdf:resource="http://purl.obolibrary.org/obo/RO_0001019"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.obofoundry.org/ro/ro.owl#location_of">
+        <owlcl:owlcl_iri_mappes_to rdf:resource="http://purl.obolibrary.org/obo/RO_0001015"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.obofoundry.org/ro/ro.owl#contained_in">
+        <owlcl:owlcl_iri_mappes_to rdf:resource="http://purl.obolibrary.org/obo/RO_0001018"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.obofoundry.org/ro/ro.owl#part_of">
+        <owlcl:owlcl_iri_mappes_to rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.obofoundry.org/ro/ro.owl#derived_into">
+        <owlcl:owlcl_iri_mappes_to rdf:resource="http://purl.obolibrary.org/obo/RO_0001001"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.obofoundry.org/ro/ro.owl#has_participant">
+        <owlcl:owlcl_iri_mappes_to rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.obofoundry.org/ro/ro.owl#located_in">
+        <owlcl:owlcl_iri_mappes_to rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.obofoundry.org/ro/ro.owl#adjacent_to">
+        <owlcl:owlcl_iri_mappes_to rdf:resource="http://purl.obolibrary.org/obo/RO_0002220"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.obofoundry.org/ro/ro.owl#has_part">
+        <owlcl:owlcl_iri_mappes_to rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.obofoundry.org/ro/ro.owl#precedes">
+        <owlcl:owlcl_iri_mappes_to rdf:resource="http://purl.obolibrary.org/obo/BFO_0000063"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.obofoundry.org/ro/ro.owl#preceded_by">
+        <owlcl:owlcl_iri_mappes_to rdf:resource="http://purl.obolibrary.org/obo/BFO_0000062"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.obofoundry.org/ro/ro.owl#participates_in">
+        <owlcl:owlcl_iri_mappes_to rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.obofoundry.org/ro/ro.owl#derives_from">
+        <owlcl:owlcl_iri_mappes_to rdf:resource="http://purl.obolibrary.org/obo/RO_0001000"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

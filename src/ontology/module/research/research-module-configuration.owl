@@ -1,123 +1,448 @@
-Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
-Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
-Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
-Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
-Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/arg/research-module-configuration.owl#"
+     xml:base="http://purl.obolibrary.org/obo/arg/research-module-configuration.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:arg="http://purl.obolibrary.org/obo/arg/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owlcl="http://owl.essaid.com/owlcl/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/arg/research-module-configuration.owl">
+        <owlcl:owlcl_module_unclassified_builders rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></owlcl:owlcl_module_unclassified_builders>
+        <owlcl:owlcl_module_classified_builders rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></owlcl:owlcl_module_classified_builders>
+        <owlcl:owlcl_module_classified_addlegacy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</owlcl:owlcl_module_classified_addlegacy>
+        <owlcl:owlcl_module_classified_cleanlegacy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</owlcl:owlcl_module_classified_cleanlegacy>
+        <owlcl:owlcl_module_is_unclassified rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</owlcl:owlcl_module_is_unclassified>
+        <owlcl:owlcl_module_unclassified_addlegacy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</owlcl:owlcl_module_unclassified_addlegacy>
+        <owlcl:owlcl_module_unclassified_cleanlegacy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</owlcl:owlcl_module_unclassified_cleanlegacy>
+        <owlcl:owlcl_module_is_classified rdf:datatype="http://www.w3.org/2001/XMLSchema#string">false</owlcl:owlcl_module_is_classified>
+        <arg:isftools-module-source-exclude rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/arg/isf-tools.owl</arg:isftools-module-source-exclude>
+        <owlcl:owlcl_module_classified_iri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/arg/research-module-classified.owl</owlcl:owlcl_module_classified_iri>
+        <arg:isftools-module-iri-inferred rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/arg/research-module-inferred.owl</arg:isftools-module-iri-inferred>
+        <owlcl:owlcl_module_unclassified_iri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/arg/research-module-unclassified.owl</owlcl:owlcl_module_unclassified_iri>
+        <arg:isftools-module-iri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/arg/research-module.owl</arg:isftools-module-iri>
+        <arg:isftools-module-builders-inferred rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no-builders</arg:isftools-module-builders-inferred>
+        <arg:isftools-module-builders rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no-builders</arg:isftools-module-builders>
+        <owlcl:owlcl_module_classified_filename rdf:datatype="http://www.w3.org/2001/XMLSchema#string">research-module-classified.owl</owlcl:owlcl_module_classified_filename>
+        <arg:isftools-module-file-name-inferred rdf:datatype="http://www.w3.org/2001/XMLSchema#string">research-module-inferred.owl</arg:isftools-module-file-name-inferred>
+        <owlcl:owlcl_module_unclassified_filename rdf:datatype="http://www.w3.org/2001/XMLSchema#string">research-module-unclassified.owl</owlcl:owlcl_module_unclassified_filename>
+        <arg:isftools-module-file-name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">research-module.owl</arg:isftools-module-file-name>
+        <arg:isftools-module-generate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</arg:isftools-module-generate>
+        <arg:isftools-module-generate-inferred rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</arg:isftools-module-generate-inferred>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/arg/isf-dev.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/arg/research-module-source.owl"/>
+        <owl:imports rdf:resource="https://raw.github.com/ShahimEssaid/OwlCL/master/owl/owlcl.owl"/>
+    </owl:Ontology>
+    
 
 
-Ontology(<http://purl.obolibrary.org/obo/arg/research-module-configuration.owl>
-Import(<http://purl.obolibrary.org/obo/arg/research-module-source.owl>)
-Import(<http://purl.obolibrary.org/obo/arg/isf-dev.owl>)
-Import(<https://raw.github.com/ShahimEssaid/OwlCL/master/owl/owlcl.owl>)
-Annotation(<http://owl.essaid.com/owlcl/owlcl_module_classified_cleanlegacy> "false"^^xsd:string)
-Annotation(<http://owl.essaid.com/owlcl/owlcl_module_classified_builders> ""^^xsd:string)
-Annotation(<http://owl.essaid.com/owlcl/owlcl_module_unclassified_builders> ""^^xsd:string)
-Annotation(<http://owl.essaid.com/owlcl/owlcl_module_classified_addlegacy> "false"^^xsd:string)
-Annotation(<http://owl.essaid.com/owlcl/owlcl_module_unclassified_filename> "research-module-unclassified.owl"^^xsd:string)
-Annotation(<http://purl.obolibrary.org/obo/arg/isftools-module-generate> "true"^^xsd:string)
-Annotation(<http://owl.essaid.com/owlcl/owlcl_module_unclassified_cleanlegacy> "false"^^xsd:string)
-Annotation(<http://purl.obolibrary.org/obo/arg/isftools-module-file-name-inferred> "research-module-inferred.owl"^^xsd:string)
-Annotation(<http://purl.obolibrary.org/obo/arg/isftools-module-file-name> "research-module.owl"^^xsd:string)
-Annotation(<http://purl.obolibrary.org/obo/arg/isftools-module-generate-inferred> "true"^^xsd:string)
-Annotation(<http://purl.obolibrary.org/obo/arg/isftools-module-iri> "http://purl.obolibrary.org/obo/arg/research-module.owl"^^xsd:string)
-Annotation(<http://purl.obolibrary.org/obo/arg/isftools-module-builders> "no-builders"^^xsd:string)
-Annotation(<http://owl.essaid.com/owlcl/owlcl_module_classified_iri> "http://purl.obolibrary.org/obo/arg/research-module-classified.owl"^^xsd:string)
-Annotation(<http://owl.essaid.com/owlcl/owlcl_module_is_unclassified> "false"^^xsd:string)
-Annotation(<http://purl.obolibrary.org/obo/arg/isftools-module-builders-inferred> "no-builders"^^xsd:string)
-Annotation(<http://owl.essaid.com/owlcl/owlcl_module_is_classified> "false"^^xsd:string)
-Annotation(<http://purl.obolibrary.org/obo/arg/isftools-module-iri-inferred> "http://purl.obolibrary.org/obo/arg/research-module-inferred.owl"^^xsd:string)
-Annotation(<http://owl.essaid.com/owlcl/owlcl_module_unclassified_addlegacy> "false"^^xsd:string)
-Annotation(<http://owl.essaid.com/owlcl/owlcl_module_unclassified_iri> "http://purl.obolibrary.org/obo/arg/research-module-unclassified.owl"^^xsd:string)
-Annotation(<http://owl.essaid.com/owlcl/owlcl_module_classified_filename> "research-module-classified.owl"^^xsd:string)
-Annotation(<http://purl.obolibrary.org/obo/arg/isftools-module-source-exclude> "http://purl.obolibrary.org/obo/arg/isf-tools.owl"^^xsd:string)
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
-Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000023>))
-Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000034>))
-Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000040>))
-Declaration(Class(<http://purl.obolibrary.org/obo/ERO_0000004>))
-Declaration(Class(<http://purl.obolibrary.org/obo/ERO_0000005>))
-Declaration(Class(<http://purl.obolibrary.org/obo/ERO_0000006>))
-Declaration(Class(<http://purl.obolibrary.org/obo/ERO_0000007>))
-Declaration(Class(<http://purl.obolibrary.org/obo/ERO_0000020>))
-Declaration(Class(<http://purl.obolibrary.org/obo/ERO_0000071>))
-Declaration(Class(<http://purl.obolibrary.org/obo/ERO_0000322>))
-Declaration(Class(<http://purl.obolibrary.org/obo/ERO_0001716>))
-Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000272>))
-Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0100026>))
-Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0400147>))
-Declaration(Class(<http://purl.obolibrary.org/obo/SO_0001059>))
-Declaration(Class(<http://vivoweb.org/ontology/core#CoreLaboratory>))
-Declaration(Class(<http://vivoweb.org/ontology/core#Laboratory>))
-Declaration(Class(<http://xmlns.com/foaf/0.1/Organization>))
-Declaration(Class(<http://xmlns.com/foaf/0.1/Person>))
-Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
-Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/ERO_0000022>))
-Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/ERO_0000031>))
-Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/ERO_0000070>))
-Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/ERO_0000543>))
-Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/ERO_0000573>))
-Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/ERO_0000618>))
-Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/ERO_0001055>))
-Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/ERO_0001056>))
-Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/ERO_0001905>))
-Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000136>))
-Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000293>))
-Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000299>))
-Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000306>))
-Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000308>))
-Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000312>))
-Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000316>))
-Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000417>))
-Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000643>))
-Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000833>))
-Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000052>))
-Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000057>))
-Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0001000>))
-Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0001025>))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/isftools-module-include>))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/isftools-module-include-subs>))
-Declaration(Datatype(rdf:PlainLiteral))
-AnnotationAssertion(<http://purl.obolibrary.org/obo/isftools-module-include> <http://purl.obolibrary.org/obo/BFO_0000023> "")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/isftools-module-include> <http://purl.obolibrary.org/obo/BFO_0000034> "")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/isftools-module-include> <http://purl.obolibrary.org/obo/BFO_0000040> "")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/isftools-module-include-subs> <http://purl.obolibrary.org/obo/ERO_0000004> "")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/isftools-module-include-subs> <http://purl.obolibrary.org/obo/ERO_0000005> "")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/isftools-module-include-subs> <http://purl.obolibrary.org/obo/ERO_0000006> "")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/isftools-module-include-subs> <http://purl.obolibrary.org/obo/ERO_0000007> "")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/isftools-module-include-subs> <http://purl.obolibrary.org/obo/ERO_0000020> "")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/isftools-module-include-subs> <http://purl.obolibrary.org/obo/ERO_0000071> "")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/isftools-module-include> <http://purl.obolibrary.org/obo/ERO_0000322> "")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/isftools-module-include> <http://purl.obolibrary.org/obo/ERO_0001716> "")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/isftools-module-include-subs> <http://purl.obolibrary.org/obo/OBI_0000272> "")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/isftools-module-include-subs> <http://purl.obolibrary.org/obo/OBI_0100026> "")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/isftools-module-include-subs> <http://purl.obolibrary.org/obo/OBI_0400147> "")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/isftools-module-include-subs> <http://purl.obolibrary.org/obo/SO_0001059> "")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/isftools-module-include-subs> <http://vivoweb.org/ontology/core#CoreLaboratory> "")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/isftools-module-include-subs> <http://vivoweb.org/ontology/core#Laboratory> "")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/isftools-module-include> <http://xmlns.com/foaf/0.1/Organization> "")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/isftools-module-include> <http://xmlns.com/foaf/0.1/Person> "")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/isftools-module-include> <http://purl.obolibrary.org/obo/BFO_0000051> "")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/isftools-module-include> <http://purl.obolibrary.org/obo/ERO_0000022> "")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/isftools-module-include> <http://purl.obolibrary.org/obo/ERO_0000031> "")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/isftools-module-include> <http://purl.obolibrary.org/obo/ERO_0000070> "")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/isftools-module-include> <http://purl.obolibrary.org/obo/ERO_0000543> "")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/isftools-module-include> <http://purl.obolibrary.org/obo/ERO_0000573> "")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/isftools-module-include> <http://purl.obolibrary.org/obo/ERO_0000618> "")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/isftools-module-include> <http://purl.obolibrary.org/obo/ERO_0001055> "")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/isftools-module-include> <http://purl.obolibrary.org/obo/ERO_0001056> "")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/isftools-module-include> <http://purl.obolibrary.org/obo/ERO_0001905> "")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/isftools-module-include> <http://purl.obolibrary.org/obo/IAO_0000136> "")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/isftools-module-include> <http://purl.obolibrary.org/obo/OBI_0000293> "")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/isftools-module-include> <http://purl.obolibrary.org/obo/OBI_0000299> "")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/isftools-module-include> <http://purl.obolibrary.org/obo/OBI_0000306> "")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/isftools-module-include> <http://purl.obolibrary.org/obo/OBI_0000308> "")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/isftools-module-include> <http://purl.obolibrary.org/obo/OBI_0000312> "")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/isftools-module-include> <http://purl.obolibrary.org/obo/OBI_0000316> "")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/isftools-module-include> <http://purl.obolibrary.org/obo/OBI_0000417> "")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/isftools-module-include> <http://purl.obolibrary.org/obo/OBI_0000643> "")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/isftools-module-include> <http://purl.obolibrary.org/obo/OBI_0000833> "")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/isftools-module-include-subs> <http://purl.obolibrary.org/obo/RO_0000052> "")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/isftools-module-include> <http://purl.obolibrary.org/obo/RO_0000057> "")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/isftools-module-include-subs> <http://purl.obolibrary.org/obo/RO_0001000> "")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/isftools-module-include> <http://purl.obolibrary.org/obo/RO_0001025> "")
-)
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/isftools-module-include -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/isftools-module-include"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/isftools-module-include-subs -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/isftools-module-include-subs"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000022 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000022">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000031 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000031">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000070 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000070">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000543 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000543">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000573 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000573">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000618 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0000618">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001055 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001055">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001056 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001056">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001905 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ERO_0001905">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000293 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000293">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000299 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000299">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000306 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000306">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000308 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000308">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000312 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000312">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000316 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000316">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000417 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000417">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000643 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000643">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000833 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000833">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000052 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000052">
+        <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000057 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000057">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0001000 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001000">
+        <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0001025 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001025">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000023">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000034">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000004">
+        <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000005">
+        <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000006">
+        <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000007">
+        <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000020">
+        <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000071 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000071">
+        <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000322 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000322">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001716 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001716">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000272 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000272">
+        <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0100026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100026">
+        <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0400147 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0400147">
+        <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_0001059 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0001059">
+        <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#CoreLaboratory -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#CoreLaboratory">
+        <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
+    </owl:Class>
+    
+
+
+    <!-- http://vivoweb.org/ontology/core#Laboratory -->
+
+    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Laboratory">
+        <obo:isftools-module-include-subs></obo:isftools-module-include-subs>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Organization -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person">
+        <obo:isftools-module-include></obo:isftools-module-include>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.8) http://owlapi.sourceforge.net -->
+
