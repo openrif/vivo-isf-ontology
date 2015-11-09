@@ -1,99 +1,31 @@
-<?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/arg/ocre-from-isf.owl#"
-     xml:base="http://purl.obolibrary.org/obo/arg/ocre-from-isf.owl"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/arg/ocre-from-isf.owl"/>
-    
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotation properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+Ontology(<http://purl.obolibrary.org/obo/arg/ocre-from-isf.owl>
 
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description rdf:about="http://purl.org/net/OCRe/study_design.owl#Phase_1">
-        <rdfs:label xml:lang="en">phase 1</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/net/OCRe/study_design.owl#Phase_2">
-        <rdfs:label xml:lang="en">phase 2</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/net/OCRe/research.owl#Cross-sectional_study">
-        <rdfs:label xml:lang="en">cross-sectional study</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/net/OCRe/study_design.owl#Phase_3">
-        <rdfs:label xml:lang="en">phase 3</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/net/OCRe/study_design.owl#Phase_4">
-        <rdfs:label xml:lang="en">phase 4</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/net/OCRe/research.owl#Qualitative_human_study">
-        <rdfs:label xml:lang="en">qualitative human study</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/net/OCRe/research.owl#Quantitative_human_study">
-        <rdfs:label xml:lang="en">quantitative human study</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/net/OCRe/research.owl#Interventional_study">
-        <rdfs:label xml:lang="en">interventional study</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/net/OCRe/research.owl#Parallel_group_study">
-        <rdfs:label xml:lang="en">parallel group study</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/net/OCRe/research.owl#Case_crossover_study">
-        <rdfs:label xml:lang="en">case-crossover study</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/net/OCRe/study_design.owl#Crossover_study">
-        <rdfs:label xml:lang="en">crossover study</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/net/OCRe/research.owl#Case_control_study">
-        <rdfs:label xml:lang="en">case-control study</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/net/OCRe/research.owl#Observational_study">
-        <rdfs:label xml:lang="en">observational study</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/net/OCRe/study_design.owl#Phase_0">
-        <rdfs:label xml:lang="en">phase 0</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/net/OCRe/study_design.owl#Single_group_study">
-        <rdfs:label xml:lang="en">single group study</rdfs:label>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A single group study is an interventional study that has only a single allocation group and no contemporaneuos comparison group.
-A study in which an individual acts has his/her own comparison does not fall into this category, since an individual is not a group.</obo:IAO_0000115>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/net/OCRe/study_design.owl#OCRE100038">
-        <rdfs:label xml:lang="en">phase (ocre)</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/net/OCRe/research.owl#Cohort_study">
-        <rdfs:label xml:lang="en">cohort study</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/net/OCRe/study_design.owl#N-of-1_crossover_study">
-        <rdfs:label xml:lang="en">n-of-1 crossover study</rdfs:label>
-    </rdf:Description>
-</rdf:RDF>
-
-
-
-<!-- Generated by the OWL API (version 3.4.8) http://owlapi.sourceforge.net -->
-
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
+AnnotationAssertion(rdfs:label <http://purl.org/net/OCRe/study_design.owl#Phase_3> "phase 3"@en)
+AnnotationAssertion(rdfs:label <http://purl.org/net/OCRe/study_design.owl#Phase_4> "phase 4"@en)
+AnnotationAssertion(rdfs:label <http://purl.org/net/OCRe/research.owl#Interventional_study> "interventional study"@en)
+AnnotationAssertion(rdfs:label <http://purl.org/net/OCRe/research.owl#Parallel_group_study> "parallel group study"@en)
+AnnotationAssertion(rdfs:label <http://purl.org/net/OCRe/study_design.owl#OCRE100038> "phase (ocre)"@en)
+AnnotationAssertion(rdfs:label <http://purl.org/net/OCRe/study_design.owl#Phase_1> "phase 1"@en)
+AnnotationAssertion(rdfs:label <http://purl.org/net/OCRe/research.owl#Observational_study> "observational study"@en)
+AnnotationAssertion(rdfs:label <http://purl.org/net/OCRe/study_design.owl#Phase_2> "phase 2"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.org/net/OCRe/study_design.owl#Single_group_study> "A single group study is an interventional study that has only a single allocation group and no contemporaneuos comparison group.
+A study in which an individual acts has his/her own comparison does not fall into this category, since an individual is not a group."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.org/net/OCRe/study_design.owl#Single_group_study> "single group study"@en)
+AnnotationAssertion(rdfs:label <http://purl.org/net/OCRe/study_design.owl#N-of-1_crossover_study> "n-of-1 crossover study"@en)
+AnnotationAssertion(rdfs:label <http://purl.org/net/OCRe/research.owl#Cohort_study> "cohort study"@en)
+AnnotationAssertion(rdfs:label <http://purl.org/net/OCRe/research.owl#Quantitative_human_study> "quantitative human study"@en)
+AnnotationAssertion(rdfs:label <http://purl.org/net/OCRe/research.owl#Case_crossover_study> "case-crossover study"@en)
+AnnotationAssertion(rdfs:label <http://purl.org/net/OCRe/research.owl#Qualitative_human_study> "qualitative human study"@en)
+AnnotationAssertion(rdfs:label <http://purl.org/net/OCRe/study_design.owl#Crossover_study> "crossover study"@en)
+AnnotationAssertion(rdfs:label <http://purl.org/net/OCRe/study_design.owl#Phase_0> "phase 0"@en)
+AnnotationAssertion(rdfs:label <http://purl.org/net/OCRe/research.owl#Case_control_study> "case-control study"@en)
+AnnotationAssertion(rdfs:label <http://purl.org/net/OCRe/research.owl#Cross-sectional_study> "cross-sectional study"@en)
+)

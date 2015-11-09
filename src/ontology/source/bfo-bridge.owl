@@ -1,420 +1,129 @@
-<?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/arg/bfo-bridge.owl#"
-     xml:base="http://purl.obolibrary.org/obo/arg/bfo-bridge.owl"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/arg/bfo-bridge.owl"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Classes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ARG_0000006 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ARG_0000006">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000001 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000001">
-        <rdfs:label>entity</rdfs:label>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000002 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000002">
-        <rdfs:label>continuant</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000003 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000003">
-        <rdfs:label>occurrent</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000004 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000004">
-        <rdfs:label xml:lang="en">independent_continuant</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000006 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000006">
-        <rdfs:label xml:lang="en">spatial region</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000008 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000008">
-        <rdfs:label>temporal region</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015">
-        <rdfs:label xml:lang="en">process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000016 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000016">
-        <rdfs:label>disposition (bfo)</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000017 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000017">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000019 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019">
-        <rdfs:label>quality</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000020 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000020">
-        <rdfs:label xml:lang="en">specifically_dependent_continuant</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000023 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000023">
-        <rdfs:label xml:lang="en">role (bfo)</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000029 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000029">
-        <rdfs:label xml:lang="en">site</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000031 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000031">
-        <rdfs:label xml:lang="en">generically dependent continuant</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000034 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000034">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">function</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000038 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000038">
-        <rdfs:label xml:lang="en">one-dimensional temporal region</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040">
-        <rdfs:label xml:lang="en">material_entity</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000141 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000141">
-        <rdfs:label>immaterial entity</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000148 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000148">
-        <rdfs:label xml:lang="en">zero-dimensional temporal region</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000595 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000595">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030"/>
-    
-
-
-    <!-- http://purl.org/NET/c4dm/event.owl#Event -->
-
-    <owl:Class rdf:about="http://purl.org/NET/c4dm/event.owl#Event">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-    </owl:Class>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#AdministratorRole -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#AdministratorRole">
-        <rdfs:label xml:lang="en">administrator role</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-    </owl:Class>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#AdvisingProcess -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#AdvisingProcess">
-        <rdfs:label xml:lang="en">advising process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-    </owl:Class>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#AttendeeRole -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#AttendeeRole">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-    </owl:Class>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#AttendingProcess -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#AttendingProcess">
-        <rdfs:label xml:lang="en">attending process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-    </owl:Class>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#DateTimeInterval -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#DateTimeInterval">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
-    </owl:Class>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#DateTimeValue -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#DateTimeValue">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000148"/>
-    </owl:Class>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#EditorRole -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#EditorRole">
-        <rdfs:label xml:lang="en">editor role</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-    </owl:Class>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#EducationalProcess -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#EducationalProcess">
-        <rdfs:label xml:lang="en">educational process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-    </owl:Class>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#Equipment -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Equipment">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-    </owl:Class>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#EventSeries -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#EventSeries">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-    </owl:Class>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#Facility -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Facility">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
-    </owl:Class>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#LeaderRole -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#LeaderRole">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-    </owl:Class>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#Location -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Location">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
-    </owl:Class>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#MemberRole -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#MemberRole">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-    </owl:Class>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#OrganizerRole -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#OrganizerRole">
-        <rdfs:label xml:lang="en">organizer role</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-    </owl:Class>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#OrganizingProcess -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#OrganizingProcess">
-        <rdfs:label xml:lang="en">organizing process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-    </owl:Class>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#OutreachProviderRole -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#OutreachProviderRole">
-        <rdfs:label xml:lang="en">outreach provider role</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-    </owl:Class>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#PresenterRole -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#PresenterRole">
-        <rdfs:label xml:lang="en">presenter role</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-    </owl:Class>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#PresentingProcess -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#PresentingProcess">
-        <rdfs:label xml:lang="en">presenting process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-    </owl:Class>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#Project -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Project">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-    </owl:Class>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#Relationship -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#Relationship">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
-    </owl:Class>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#ReviewerRole -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#ReviewerRole">
-        <rdfs:label xml:lang="en">reviewer role</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-    </owl:Class>
-    
-
-
-    <!-- http://vivoweb.org/ontology/core#TeacherRole -->
-
-    <owl:Class rdf:about="http://vivoweb.org/ontology/core#TeacherRole">
-        <rdfs:label xml:lang="en">teacher role</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-    </owl:Class>
-</rdf:RDF>
-
-
-
-<!-- Generated by the OWL API (version 3.4.8) http://owlapi.sourceforge.net -->
-
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://purl.obolibrary.org/obo/arg/bfo-bridge.owl>
+
+Declaration(Class(<http://purl.obolibrary.org/obo/ARG_0000006>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000003>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000004>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000006>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000008>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000016>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000017>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000019>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000020>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000023>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000029>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000031>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000034>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000038>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000040>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000141>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000148>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ERO_0000595>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000030>))
+Declaration(Class(<http://purl.org/NET/c4dm/event.owl#Event>))
+Declaration(Class(<http://vivoweb.org/ontology/core#AdministratorRole>))
+Declaration(Class(<http://vivoweb.org/ontology/core#AdvisingProcess>))
+Declaration(Class(<http://vivoweb.org/ontology/core#AttendeeRole>))
+Declaration(Class(<http://vivoweb.org/ontology/core#AttendingProcess>))
+Declaration(Class(<http://vivoweb.org/ontology/core#DateTimeInterval>))
+Declaration(Class(<http://vivoweb.org/ontology/core#DateTimeValue>))
+Declaration(Class(<http://vivoweb.org/ontology/core#EditorRole>))
+Declaration(Class(<http://vivoweb.org/ontology/core#EducationalProcess>))
+Declaration(Class(<http://vivoweb.org/ontology/core#Equipment>))
+Declaration(Class(<http://vivoweb.org/ontology/core#EventSeries>))
+Declaration(Class(<http://vivoweb.org/ontology/core#Facility>))
+Declaration(Class(<http://vivoweb.org/ontology/core#LeaderRole>))
+Declaration(Class(<http://vivoweb.org/ontology/core#Location>))
+Declaration(Class(<http://vivoweb.org/ontology/core#MemberRole>))
+Declaration(Class(<http://vivoweb.org/ontology/core#OrganizerRole>))
+Declaration(Class(<http://vivoweb.org/ontology/core#OrganizingProcess>))
+Declaration(Class(<http://vivoweb.org/ontology/core#OutreachProviderRole>))
+Declaration(Class(<http://vivoweb.org/ontology/core#PresenterRole>))
+Declaration(Class(<http://vivoweb.org/ontology/core#PresentingProcess>))
+Declaration(Class(<http://vivoweb.org/ontology/core#Project>))
+Declaration(Class(<http://vivoweb.org/ontology/core#Relationship>))
+Declaration(Class(<http://vivoweb.org/ontology/core#ReviewerRole>))
+Declaration(Class(<http://vivoweb.org/ontology/core#TeacherRole>))
+SubClassOf(<http://purl.obolibrary.org/obo/ARG_0000006> <http://purl.obolibrary.org/obo/BFO_0000017>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000001> "entity")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000002> "continuant")
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000002> <http://purl.obolibrary.org/obo/BFO_0000001>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000003> "occurrent")
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000003> <http://purl.obolibrary.org/obo/BFO_0000001>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000004> "independent_continuant"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000004> <http://purl.obolibrary.org/obo/BFO_0000002>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000006> "spatial region"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000006> <http://purl.obolibrary.org/obo/BFO_0000141>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000008> "temporal region")
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000008> <http://purl.obolibrary.org/obo/BFO_0000003>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000015> "process"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000015> <http://purl.obolibrary.org/obo/BFO_0000003>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000016> "disposition (bfo)")
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000016> <http://purl.obolibrary.org/obo/BFO_0000017>)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000017> <http://purl.obolibrary.org/obo/BFO_0000020>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000019> "quality")
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000019> <http://purl.obolibrary.org/obo/BFO_0000020>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000020> "specifically_dependent_continuant"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000020> <http://purl.obolibrary.org/obo/BFO_0000002>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000023> "role (bfo)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000023> <http://purl.obolibrary.org/obo/BFO_0000017>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000029> "site"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000029> <http://purl.obolibrary.org/obo/BFO_0000141>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000031> "generically dependent continuant"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000031> <http://purl.obolibrary.org/obo/BFO_0000002>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000034> "function"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000034> <http://purl.obolibrary.org/obo/BFO_0000016>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000038> "one-dimensional temporal region"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000038> <http://purl.obolibrary.org/obo/BFO_0000008>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000040> "material_entity"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000040> <http://purl.obolibrary.org/obo/BFO_0000004>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000141> "immaterial entity")
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000141> <http://purl.obolibrary.org/obo/BFO_0000004>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000148> "zero-dimensional temporal region"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000148> <http://purl.obolibrary.org/obo/BFO_0000008>)
+SubClassOf(<http://purl.obolibrary.org/obo/ERO_0000595> <http://purl.obolibrary.org/obo/BFO_0000017>)
+SubClassOf(<http://purl.org/NET/c4dm/event.owl#Event> <http://purl.obolibrary.org/obo/BFO_0000015>)
+AnnotationAssertion(rdfs:label <http://vivoweb.org/ontology/core#AdministratorRole> "administrator role"@en)
+SubClassOf(<http://vivoweb.org/ontology/core#AdministratorRole> <http://purl.obolibrary.org/obo/BFO_0000023>)
+AnnotationAssertion(rdfs:label <http://vivoweb.org/ontology/core#AdvisingProcess> "advising process"@en)
+SubClassOf(<http://vivoweb.org/ontology/core#AdvisingProcess> <http://purl.obolibrary.org/obo/BFO_0000015>)
+SubClassOf(<http://vivoweb.org/ontology/core#AttendeeRole> <http://purl.obolibrary.org/obo/BFO_0000023>)
+AnnotationAssertion(rdfs:label <http://vivoweb.org/ontology/core#AttendingProcess> "attending process"@en)
+SubClassOf(<http://vivoweb.org/ontology/core#AttendingProcess> <http://purl.obolibrary.org/obo/BFO_0000015>)
+SubClassOf(<http://vivoweb.org/ontology/core#DateTimeInterval> <http://purl.obolibrary.org/obo/BFO_0000038>)
+SubClassOf(<http://vivoweb.org/ontology/core#DateTimeValue> <http://purl.obolibrary.org/obo/BFO_0000148>)
+AnnotationAssertion(rdfs:label <http://vivoweb.org/ontology/core#EditorRole> "editor role"@en)
+SubClassOf(<http://vivoweb.org/ontology/core#EditorRole> <http://purl.obolibrary.org/obo/BFO_0000023>)
+AnnotationAssertion(rdfs:label <http://vivoweb.org/ontology/core#EducationalProcess> "educational process"@en)
+SubClassOf(<http://vivoweb.org/ontology/core#EducationalProcess> <http://purl.obolibrary.org/obo/BFO_0000015>)
+SubClassOf(<http://vivoweb.org/ontology/core#Equipment> <http://purl.obolibrary.org/obo/BFO_0000040>)
+SubClassOf(<http://vivoweb.org/ontology/core#EventSeries> <http://purl.obolibrary.org/obo/BFO_0000015>)
+SubClassOf(<http://vivoweb.org/ontology/core#Facility> <http://purl.obolibrary.org/obo/BFO_0000029>)
+SubClassOf(<http://vivoweb.org/ontology/core#LeaderRole> <http://purl.obolibrary.org/obo/BFO_0000023>)
+SubClassOf(<http://vivoweb.org/ontology/core#Location> <http://purl.obolibrary.org/obo/BFO_0000006>)
+SubClassOf(<http://vivoweb.org/ontology/core#MemberRole> <http://purl.obolibrary.org/obo/BFO_0000023>)
+AnnotationAssertion(rdfs:label <http://vivoweb.org/ontology/core#OrganizerRole> "organizer role"@en)
+SubClassOf(<http://vivoweb.org/ontology/core#OrganizerRole> <http://purl.obolibrary.org/obo/BFO_0000023>)
+AnnotationAssertion(rdfs:label <http://vivoweb.org/ontology/core#OrganizingProcess> "organizing process"@en)
+SubClassOf(<http://vivoweb.org/ontology/core#OrganizingProcess> <http://purl.obolibrary.org/obo/BFO_0000015>)
+AnnotationAssertion(rdfs:label <http://vivoweb.org/ontology/core#OutreachProviderRole> "outreach provider role"@en)
+SubClassOf(<http://vivoweb.org/ontology/core#OutreachProviderRole> <http://purl.obolibrary.org/obo/BFO_0000023>)
+AnnotationAssertion(rdfs:label <http://vivoweb.org/ontology/core#PresenterRole> "presenter role"@en)
+SubClassOf(<http://vivoweb.org/ontology/core#PresenterRole> <http://purl.obolibrary.org/obo/BFO_0000023>)
+AnnotationAssertion(rdfs:label <http://vivoweb.org/ontology/core#PresentingProcess> "presenting process"@en)
+SubClassOf(<http://vivoweb.org/ontology/core#PresentingProcess> <http://purl.obolibrary.org/obo/BFO_0000015>)
+SubClassOf(<http://vivoweb.org/ontology/core#Project> <http://purl.obolibrary.org/obo/BFO_0000015>)
+SubClassOf(<http://vivoweb.org/ontology/core#Relationship> <http://purl.obolibrary.org/obo/BFO_0000020>)
+AnnotationAssertion(rdfs:label <http://vivoweb.org/ontology/core#ReviewerRole> "reviewer role"@en)
+SubClassOf(<http://vivoweb.org/ontology/core#ReviewerRole> <http://purl.obolibrary.org/obo/BFO_0000023>)
+AnnotationAssertion(rdfs:label <http://vivoweb.org/ontology/core#TeacherRole> "teacher role"@en)
+SubClassOf(<http://vivoweb.org/ontology/core#TeacherRole> <http://purl.obolibrary.org/obo/BFO_0000023>)
+)
