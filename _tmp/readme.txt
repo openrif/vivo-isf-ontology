@@ -1,0 +1,1 @@
+A temporary area for holding trash, work, etc. files that shouldn't be visible in trunk, tags, and branches.
