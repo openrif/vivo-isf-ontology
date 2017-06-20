@@ -3,9 +3,10 @@ https://docs.google.com/document/d/1FVxKmYHfDglgrBHseKcssBZ5NUXMgQ9lBJVWyNpgpdA/
 
 Volunteer committers and reviewers, please add your username to the list below.  
 
-1. @marijane
+1. Marijane White
+2. 
 
 
-Need an invite to this organization?  Contact @marijane at whimar@ohsu.edu.
+Need an invite to this organization?  Contact Marijane White at whimar@ohsu.edu.
 
 Also, we have a Gitter chat room at https://gitter.im/openrif/vivo-isf-ontology where you can come and chat if you like.
