@@ -3,7 +3,7 @@ https://docs.google.com/document/d/1FVxKmYHfDglgrBHseKcssBZ5NUXMgQ9lBJVWyNpgpdA/
 
 Volunteer committers and reviewers, please add your username to the list below.  
 
-1. Marijane White
+1. Marijane White (OHSU)
 2. Muhammad Javed (Cornell)
 
 
