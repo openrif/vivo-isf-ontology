@@ -4,7 +4,7 @@ https://docs.google.com/document/d/1FVxKmYHfDglgrBHseKcssBZ5NUXMgQ9lBJVWyNpgpdA/
 Volunteer committers and reviewers, please add your username to the list below.  
 
 1. Marijane White
-2. 
+2. Muhammad Javed (Cornell)
 
 
 Need an invite to this organization?  Contact Marijane White at whimar@ohsu.edu.
