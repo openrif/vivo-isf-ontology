@@ -6,6 +6,7 @@ Volunteer committers and reviewers, please add your username to the list below.
 1. Marijane White (OHSU)
 2. Muhammad Javed (Cornell)
 3. Mike Conlon (Duraspace)
+4. Anna Kasprzik (TIB Hannover, Germany)
 
 Need an invite to this organization?  Contact Marijane White at whimar@ohsu.edu.
 
