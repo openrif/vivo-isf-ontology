@@ -7,7 +7,7 @@ Volunteer committers and reviewers, please add your username to the list below.
 2. Muhammad Javed (Cornell)
 3. Mike Conlon (Duraspace)
 4. Anna Kasprzik (TIB Hannover, Germany)  
-5. Violeta Ilik
+5. Violeta Ilik (Stony Brook)
 6. Alexander Garcia (UPM, Spain)
 
 Need an invite to this organization?  Contact Marijane White at whimar@ohsu.edu.
