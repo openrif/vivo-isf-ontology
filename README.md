@@ -4,10 +4,10 @@ https://docs.google.com/document/d/1FVxKmYHfDglgrBHseKcssBZ5NUXMgQ9lBJVWyNpgpdA/
 Volunteer committers and reviewers, please add your username to the list below.  
 
 1. Marijane White (OHSU)
-2. Muhammad Javed (Cornell)
-3. Mike Conlon (Duraspace)
-4. Anna Kasprzik (TIB Hannover, Germany)  
-5. Violeta Ilik (Stony Brook)
+2. Muhammad Javed (Masatercard)
+3. Mike Conlon (University of Florida)
+4. Anna Kasprzik (ZBW Leibniz Information Centre for Economics)  
+5. Violeta Ilik (Columbia)
 6. Alexander Garcia (UPM, Spain)
 
 Need an invite to this organization?  Contact Marijane White at whimar@ohsu.edu.
