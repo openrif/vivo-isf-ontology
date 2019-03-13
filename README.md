@@ -3,11 +3,11 @@ https://docs.google.com/document/d/1FVxKmYHfDglgrBHseKcssBZ5NUXMgQ9lBJVWyNpgpdA/
 
 Volunteer committers and reviewers, please add your username to the list below.  
 
-1. Marijane White (OHSU)
-2. Muhammad Javed (Masatercard)
+1. Marijane White (Oregon Health & Science Univresity)
+2. Muhammad Javed (Mastercard)
 3. Mike Conlon (University of Florida)
 4. Anna Kasprzik (ZBW Leibniz Information Centre for Economics)  
-5. Violeta Ilik (Columbia)
+5. Violeta Ilik (Columbia University)
 6. Alexander Garcia (UPM, Spain)
 
 Need an invite to this organization?  Contact Marijane White at whimar@ohsu.edu.
